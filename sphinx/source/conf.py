@@ -108,7 +108,7 @@ bokeh_plot_pyfile_include_dirs = ['docs']
 
 # Whether to allow builds to succeed if a Google API key is not defined and plots
 # containing "GOOGLE_API_KEY" are processed
-bokeh_missing_google_api_key_ok = False
+bokeh_missing_google_api_key_ok = True
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
@@ -275,3 +275,6 @@ intersphinx_mapping = {
     'pandas': ('http://pandas.pydata.org/pandas-docs/stable/', None),
     'numpy': ('https://docs.scipy.org/doc/numpy/', None)
 }
+
+locale_dirs = ['locale/']
+gettext_compact = False
