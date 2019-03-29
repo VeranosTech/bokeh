@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/dev_guide/models.rst:4
+msgid "Bokeh Models"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:7
+msgid "Low-level Interface"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:9
+msgid ""
+"Below is a notional diagram that shows many of the most common kinds of "
+"models that comprise the Bokeh object system. To create Bokeh plots, "
+"these objects are created and assembled, and then this object graph is "
+"serialized to JSON. This JSON representation is consumed by the BokehJS "
+"client library, which uses it to render the plot."
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:15
+msgid ""
+"Where space permits, the attributes of the model are show inline. Not all"
+" objects are shown below; see the :ref:`refguide` for full details."
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:22
+msgid "Models and Properties"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:24
+msgid ""
+"The primary components of the low-level API are models, which are objects"
+" that have attributes that can be automatically serialized in a way that "
+"lets them be reconstituted as BokehJS models. Technically, models are "
+"classes that inherit from `HasProps` at some point::"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:34
+msgid ""
+"Models can derive from other models as well as mixins that provide common"
+" sets of properties (e.g. see "
+":class:`~bokeh.core.property_mixins.LineProps`, etc. in "
+":ref:`bokeh.core.property_mixins`). An example might look like this::"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:41
+msgid ""
+"Models contain properties, which are class attributes of type "
+":class:`~bokeh.core.properties.Property`, e.g::"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:50
+msgid ""
+"The `IntProps` model represents objects that have three integer values, "
+"``prop1``, ``prop2``, and ``prop3``, that can be automatically serialized"
+" from python, and unserialized by BokehJS."
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:55
+msgid ""
+"Technically, ``prop1`` isn't an instance of ``Int``, but ``HasFields`` "
+"uses a metaclass that automatically instantiates `Property` classes when "
+"necessary, so ``prop1`` and ``prop2`` are equivalent (though independent)"
+" properties. This is useful for readability; if you don't need to pass "
+"any arguments to property's constructor then prefer the former over the "
+"later."
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:61
+msgid ""
+"There is wide variety of property types, ranging from primitive types "
+"such as:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:63
+msgid ":class:`~bokeh.core.properties.Byte`"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:64
+msgid ":class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:65
+msgid ":class:`~bokeh.core.properties.Float`"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:66
+msgid ":class:`~bokeh.core.properties.Complex`"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:67
+msgid ":class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:69
+msgid ""
+"As well as container-like properties, that take other Properties as "
+"parameters:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:71
+msgid ""
+":class:`~bokeh.core.properties.List` --- for a list of one type of "
+"objects: ``List(Int)``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:72
+msgid ""
+":class:`~bokeh.core.properties.Dict` --- for a mapping between two type: "
+"``Dict(String, Double)``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:74
+msgid "and finally some specialized types like"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:76
+msgid ""
+":class:`~bokeh.core.properties.Instance` --- to hold a reference to "
+"another model: ``Instance(Plot)``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:77
+msgid ""
+":class:`~bokeh.core.properties.Enum` --- to represent enumerated values: "
+"``Enum(\"foo\", \"bar\", \"baz\")``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:78
+msgid ""
+":class:`~bokeh.core.properties.Either` --- to create a union type: "
+"``Either(Int, String)``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:79
+msgid ""
+":class:`~bokeh.core.properties.Range` --- to restrict values to a given "
+"range: ``Instance(Plot)``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:81
+msgid ""
+"The primary benefit of these property types is that validation can be "
+"performed and meaningful error reporting can occur when an attempt is "
+"made to assign an invalid type or value."
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:86
+msgid ""
+"There is an :class:`~bokeh.core.properties.Any` that is the super-type of"
+" all other types, and will accept any type of value. Since this "
+"circumvents all type validation, make sure to use it sparingly, if at "
+"all."
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:90
+msgid "See :ref:`bokeh.core.properties` for full details."
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:92
+msgid "An example of a more complex, realistic model might look like this::"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:103
+msgid ""
+"There is a special property-like type named "
+":class:`~bokeh.core.properties.Include`, that make it simpler to mix in "
+"in properties from a mixin using a prefix, e.g.::"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:111
+msgid ""
+"In this case there is a placeholder property `some_props`, that will be "
+"removed and automatically replaced with all the properties from "
+":class:`~bokeh.core.property_mixins.FillProps`, each with `some_` "
+"appended as a prefix."
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:116
+msgid ""
+"The prefix can be a valid identifier. If it ends with ``_props`` then "
+"``props`` will be removed. Adding ``_props`` isn't necessary, but can be "
+"useful if a property ``some`` already exists in parallel (see "
+"``Plot.title`` as an example)."
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:120
+msgid "Using :class:`~bokeh.core.properties.Include` is equivalent to writing::"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:128
+msgid ""
+"Note that you could inherit from "
+":class:`~bokeh.core.property_mixins.FillProps` in this case, as well::"
+msgstr ""
+
+#: ../../source/docs/dev_guide/models.rst:137
+msgid "but note that this is  equivalent to::"
+msgstr ""
+

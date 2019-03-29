@@ -1,0 +1,245 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/renderers.rst:4
+msgid "bokeh.models.renderers"
+msgstr ""
+
+#: bokeh.models.renderers:1 of
+msgid ""
+"Models (mostly base classes) for the various kinds of renderer types that"
+" Bokeh supports."
+msgstr ""
+
+#: bokeh.models.renderers.DataRenderer:1 bokeh.models.renderers.GuideRenderer:1
+#: of
+msgid "Bases: :class:`bokeh.models.renderers.Renderer`"
+msgstr ""
+
+#: bokeh.models.renderers.DataRenderer:1 of
+msgid ""
+"An abstract base class for data renderer types (e.g. ``GlyphRenderer``, "
+"``TileRenderer``, ``GraphRenderer``)."
+msgstr ""
+
+#: bokeh.models.renderers.DataRenderer:5 bokeh.models.renderers.GuideRenderer:6
+#: bokeh.models.renderers.Renderer:5 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A particular (named) x-range to use for computing screen locations when "
+"rendering glyphs on the plot. If unset, use the default x-range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A particular (named) y-range to use for computing screen locations when "
+"rendering glyphs on the plot. If unset, use the default y-range."
+msgstr ""
+
+#: bokeh.models.renderers.GlyphRenderer:1
+#: bokeh.models.renderers.GraphRenderer:1 bokeh.models.renderers.TileRenderer:1
+#: of
+msgid "Bases: :class:`bokeh.models.renderers.DataRenderer`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.sources.DataSource`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Local data source to use when rendering glyphs on the plot."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.glyphs.Glyph`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The glyph to render, in conjunction with the supplied data source and "
+"ranges."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"An optional glyph used for inspected points, e.g., those that are being "
+"hovered over by a ``HoverTool``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Bool`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Auto` , "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.glyphs.Glyph`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"An optional glyph used for explicitly non-selected points (i.e., non-"
+"selected when there are other points that are selected, but not when no "
+"points at all are selected.)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"If set to \"auto\" then a glyph with a low alpha value (0.1) will be used"
+" for non-selected points."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An optional glyph used for selected points."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"If set to \"auto\" then the standard glyph will be used for selected "
+"points."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.sources.CDSView`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A view into the data source to use when rendering glyphs. A default view "
+"of the entire data source is created when a view is not passed in during "
+"initialization."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.renderers.GlyphRenderer`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Instance of a ``GlyphRenderer`` containing an ``MultiLine`` Glyph that "
+"will be rendered as the graph edges."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.graphs.GraphHitTestPolicy`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"An instance of a ``GraphHitTestPolicy`` that provides the logic for "
+"inspection of graph components."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.graphs.LayoutProvider`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"An instance of a ``LayoutProvider`` that supplies the layout of the "
+"network graph in cartesian space."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Instance of a ``GlyphRenderer`` containing an ``XYGlyph`` that will be "
+"rendered as the graph nodes."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"An instance of a ``GraphHitTestPolicy`` that provides the logic for "
+"selection of graph components."
+msgstr ""
+
+#: bokeh.models.renderers.GuideRenderer:1 of
+msgid ""
+"A base class for all guide renderer types. ``GuideRenderer`` is not "
+"generally useful to instantiate on its own."
+msgstr ""
+
+#: bokeh.models.renderers.Renderer:1 of
+msgid "Bases: :class:`bokeh.model.Model`"
+msgstr ""
+
+#: bokeh.models.renderers.Renderer:1 of
+msgid "An abstract base class for renderer types."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.RenderLevel`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Specifies the level in which to paint this renderer."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Is the renderer visible."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Float`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "tile opacity 0.0 - 1.0"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Flag enable/disable drawing of parent tiles while waiting for new tiles "
+"to arrive. Default value is True."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Enable image smoothing for the rendered tiles."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.tiles.TileSource`  )"
+msgstr ""
+

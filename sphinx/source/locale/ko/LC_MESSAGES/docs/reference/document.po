@@ -1,0 +1,566 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/document.rst:4
+msgid "bokeh.document"
+msgstr ""
+
+#: bokeh.document.document:1 of
+msgid ""
+"Provide the ``Document`` class, which is a container for Bokeh Models to "
+"be reflected to the client side BokehJS library."
+msgstr ""
+
+#: bokeh.document.document:4 of
+msgid ""
+"As a concrete example, consider a column layout with ``Slider`` and "
+"``Select`` widgets, and a plot with some tools, an axis and grid, and a "
+"glyph renderer for circles. A simplified representation oh this document "
+"might look like the figure below:"
+msgstr ""
+
+#: bokeh.document.document:13 of
+msgid ""
+"A Bokeh Document is a collection of Bokeh Models (e.g. plots, tools, "
+"glyphs, etc.) that can be serialized as a single collection."
+msgstr ""
+
+#: bokeh.document.document.Document:1 of
+msgid "The basic unit of serialization for Bokeh."
+msgstr ""
+
+#: bokeh.document.document.Document:3 of
+msgid ""
+"Document instances collect Bokeh models (e.g. plots, layouts, widgets, "
+"etc.) so that they may be reflected into the BokehJS client runtime. "
+"Because models may refer to other models (e.g., a plot *has* a list of "
+"renderers), it is not generally useful or meaningful to convert "
+"individual models to JSON. Accordingly,  the ``Document`` is thus the "
+"smallest unit of serialization for Bokeh."
+msgstr ""
+
+#: bokeh.document.document.Document.add_next_tick_callback:1 of
+msgid "Add callback to be invoked once on the next tick of the event loop."
+msgstr ""
+
+#: bokeh.document.document.Document.add_next_tick_callback
+#: bokeh.document.document.Document.add_periodic_callback
+#: bokeh.document.document.Document.add_root
+#: bokeh.document.document.Document.add_timeout_callback
+#: bokeh.document.document.Document.apply_json_patch
+#: bokeh.document.document.Document.apply_json_patch_string
+#: bokeh.document.document.Document.get_model_by_id
+#: bokeh.document.document.Document.get_model_by_name
+#: bokeh.document.document.Document.hold
+#: bokeh.document.document.Document.remove_next_tick_callback
+#: bokeh.document.document.Document.remove_periodic_callback
+#: bokeh.document.document.Document.remove_root
+#: bokeh.document.document.Document.remove_timeout_callback
+#: bokeh.document.document.Document.select
+#: bokeh.document.document.Document.select_one
+#: bokeh.document.document.Document.set_select
+#: bokeh.document.document.Document.to_json_string of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.document.document.Document.add_next_tick_callback:3 of
+msgid "A callback function to execute on the next tick."
+msgstr ""
+
+#: bokeh.document.document.Document.add_next_tick_callback
+#: bokeh.document.document.Document.add_periodic_callback
+#: bokeh.document.document.Document.add_timeout_callback
+#: bokeh.document.document.Document.apply_json_patch
+#: bokeh.document.document.Document.apply_json_patch_string
+#: bokeh.document.document.Document.clear
+#: bokeh.document.document.Document.from_json
+#: bokeh.document.document.Document.from_json_string
+#: bokeh.document.document.Document.get_model_by_id
+#: bokeh.document.document.Document.get_model_by_name
+#: bokeh.document.document.Document.hold
+#: bokeh.document.document.Document.remove_next_tick_callback
+#: bokeh.document.document.Document.remove_periodic_callback
+#: bokeh.document.document.Document.remove_timeout_callback
+#: bokeh.document.document.Document.replace_with_json
+#: bokeh.document.document.Document.select
+#: bokeh.document.document.Document.select_one
+#: bokeh.document.document.Document.set_select
+#: bokeh.document.document.Document.to_json
+#: bokeh.document.document.Document.to_json_string
+#: bokeh.document.document.Document.unhold
+#: bokeh.document.document.Document.validate of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.document.document.Document.add_next_tick_callback:6 of
+msgid "can be used with ``remove_next_tick_callback``"
+msgstr ""
+
+#: bokeh.document.document.Document.add_next_tick_callback
+#: bokeh.document.document.Document.add_periodic_callback
+#: bokeh.document.document.Document.add_timeout_callback
+#: bokeh.document.document.Document.from_json
+#: bokeh.document.document.Document.from_json_string of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.document.document.Document.add_next_tick_callback:10 of
+msgid ""
+"Next tick callbacks only work within the context of a Bokeh server "
+"session. This function will no effect when Bokeh outputs to standalone "
+"HTML or Jupyter notebook cells."
+msgstr ""
+
+#: bokeh.document.document.Document.add_periodic_callback:1 of
+msgid "Add a callback to be invoked on a session periodically."
+msgstr ""
+
+#: bokeh.document.document.Document.add_periodic_callback:3 of
+msgid "A callback function to execute periodically"
+msgstr ""
+
+#: bokeh.document.document.Document.add_periodic_callback:5 of
+msgid "Number of milliseconds between each callback execution."
+msgstr ""
+
+#: bokeh.document.document.Document.add_periodic_callback:8 of
+msgid "can be used with ``remove_periodic_callback``"
+msgstr ""
+
+#: bokeh.document.document.Document.add_periodic_callback:12 of
+msgid ""
+"Periodic callbacks only work within the context of a Bokeh server "
+"session. This function will no effect when Bokeh outputs to standalone "
+"HTML or Jupyter notebook cells."
+msgstr ""
+
+#: bokeh.document.document.Document.add_root:1 of
+msgid "Add a model as a root of this Document."
+msgstr ""
+
+#: bokeh.document.document.Document.add_root:3 of
+msgid ""
+"Any changes to this model (including to other models referred to by it) "
+"will trigger ``on_change`` callbacks registered on this document."
+msgstr ""
+
+#: bokeh.document.document.Document.add_root:7
+#: bokeh.document.document.Document.remove_root:7 of
+msgid "The model to add as a root of this document."
+msgstr ""
+
+#: bokeh.document.document.Document.add_root:9
+#: bokeh.document.document.Document.apply_json_patch:5
+#: bokeh.document.document.Document.remove_root:9 of
+msgid ""
+"This is used to prevent \"boomerang\" updates to Bokeh apps. (default: "
+"None)  In the context of a Bokeh server application, incoming updates to "
+"properties will be annotated with the session that is doing the updating."
+" This value is propagated through any subsequent change notifications "
+"that the update triggers. The session can compare the event setter to "
+"itself, and suppress any updates that originate from itself."
+msgstr ""
+
+#: bokeh.document.document.Document.add_root:9
+#: bokeh.document.document.Document.apply_json_patch:5
+#: bokeh.document.document.Document.remove_root:9 of
+msgid ""
+"This is used to prevent \"boomerang\" updates to Bokeh apps. (default: "
+"None)"
+msgstr ""
+
+#: bokeh.document.document.Document.add_root:12
+#: bokeh.document.document.Document.apply_json_patch:8
+#: bokeh.document.document.Document.remove_root:12 of
+msgid ""
+"In the context of a Bokeh server application, incoming updates to "
+"properties will be annotated with the session that is doing the updating."
+" This value is propagated through any subsequent change notifications "
+"that the update triggers. The session can compare the event setter to "
+"itself, and suppress any updates that originate from itself."
+msgstr ""
+
+#: bokeh.document.document.Document.add_timeout_callback:1 of
+msgid "Add callback to be invoked once, after a specified timeout passes."
+msgstr ""
+
+#: bokeh.document.document.Document.add_timeout_callback:3 of
+msgid "A callback function to execute after timeout"
+msgstr ""
+
+#: bokeh.document.document.Document.add_timeout_callback:5 of
+msgid "Number of milliseconds before callback execution."
+msgstr ""
+
+#: bokeh.document.document.Document.add_timeout_callback:8 of
+msgid "can be used with ``remove_timeout_callback``"
+msgstr ""
+
+#: bokeh.document.document.Document.add_timeout_callback:12 of
+msgid ""
+"Timeout callbacks only work within the context of a Bokeh server session."
+" This function will no effect when Bokeh outputs to standalone HTML or "
+"Jupyter notebook cells."
+msgstr ""
+
+#: bokeh.document.document.Document.apply_json_patch:1 of
+msgid "Apply a JSON patch object and process any resulting events."
+msgstr ""
+
+#: bokeh.document.document.Document.apply_json_patch:3 of
+msgid "The JSON-object containing the patch to apply."
+msgstr ""
+
+#: bokeh.document.document.Document.apply_json_patch:16
+#: bokeh.document.document.Document.apply_json_patch_string:6
+#: bokeh.document.document.Document.clear:3
+#: bokeh.document.document.Document.hold:29
+#: bokeh.document.document.Document.remove_next_tick_callback:5
+#: bokeh.document.document.Document.remove_periodic_callback:5
+#: bokeh.document.document.Document.remove_timeout_callback:5
+#: bokeh.document.document.Document.replace_with_json:7
+#: bokeh.document.document.Document.set_select:9
+#: bokeh.document.document.Document.unhold:3
+#: bokeh.document.document.Document.validate:3 of
+msgid "None"
+msgstr ""
+
+#: bokeh.document.document.Document.apply_json_patch_string:1 of
+msgid "Apply a JSON patch provided as a string."
+msgstr ""
+
+#: bokeh.document.document.Document.clear:1 of
+msgid "Remove all content from the document but do not reset title."
+msgstr ""
+
+#: bokeh.document.document.Document.delete_modules:1 of
+msgid ""
+"Clean up after any modules created by this Document when its session is "
+"destroyed."
+msgstr ""
+
+#: bokeh.document.document.Document.from_json:1
+#: bokeh.document.document.Document.from_json_string:1 of
+msgid "Load a document from JSON."
+msgstr ""
+
+#: bokeh.document.document.Document.from_json:4
+#: bokeh.document.document.Document.replace_with_json:5 of
+msgid "json (JSON-data) :"
+msgstr ""
+
+#: bokeh.document.document.Document.from_json:4 of
+msgid "A JSON-encoded document to create a new Document from."
+msgstr ""
+
+#: bokeh.document.document.Document.from_json_string:5 of
+msgid "json (str) :"
+msgstr ""
+
+#: bokeh.document.document.Document.from_json_string:4 of
+msgid "A string with a JSON-encoded document to create a new Document from."
+msgstr ""
+
+#: bokeh.document.document.Document.get_model_by_id:1 of
+msgid ""
+"Find the model for the given ID in this document, or ``None`` if it is "
+"not found."
+msgstr ""
+
+#: bokeh.document.document.Document.get_model_by_id:4 of
+msgid "The ID of the model to search for"
+msgstr ""
+
+#: bokeh.document.document.Document.get_model_by_id:7
+#: bokeh.document.document.Document.get_model_by_name:7
+#: bokeh.document.document.Document.select_one:9 of
+msgid "Model or None"
+msgstr ""
+
+#: bokeh.document.document.Document.get_model_by_name:1 of
+msgid ""
+"Find the model for the given name in this document, or ``None`` if it is "
+"not found."
+msgstr ""
+
+#: bokeh.document.document.Document.get_model_by_name:4 of
+msgid "The name of the model to search for"
+msgstr ""
+
+#: bokeh.document.document.Document.hold:1 of
+msgid "Activate a document hold."
+msgstr ""
+
+#: bokeh.document.document.Document.hold:3 of
+msgid ""
+"While a hold is active, no model changes will be applied, or trigger "
+"callbacks. Once ``unhold`` is called, the events collected during the "
+"hold will be applied according to the hold policy."
+msgstr ""
+
+#: bokeh.document.document.Document.hold:7 of
+msgid ""
+"Whether events collected during a hold should attempt to be combined "
+"(default: 'combine')  When set to ``'collect'`` all events will be "
+"collected and replayed in order as-is when ``unhold`` is called.  When "
+"set to ``'combine'`` Bokeh will attempt to combine compatible events "
+"together. Typically, different events that change the same property on "
+"the same mode can be combined. For example, if the following sequence "
+"occurs:  .. code-block:: python      doc.hold('combine')     slider.value"
+" = 10     slider.value = 11     slider.value = 12  Then only *one* "
+"callback, for the last ``slider.value = 12`` will be triggered."
+msgstr ""
+
+#: bokeh.document.document.Document.hold:7 of
+msgid ""
+"Whether events collected during a hold should attempt to be combined "
+"(default: 'combine')"
+msgstr ""
+
+#: bokeh.document.document.Document.hold:10 of
+msgid ""
+"When set to ``'collect'`` all events will be collected and replayed in "
+"order as-is when ``unhold`` is called."
+msgstr ""
+
+#: bokeh.document.document.Document.hold:13 of
+msgid ""
+"When set to ``'combine'`` Bokeh will attempt to combine compatible events"
+" together. Typically, different events that change the same property on "
+"the same mode can be combined. For example, if the following sequence "
+"occurs:"
+msgstr ""
+
+#: bokeh.document.document.Document.hold:25 of
+msgid ""
+"Then only *one* callback, for the last ``slider.value = 12`` will be "
+"triggered."
+msgstr ""
+
+#: bokeh.document.document.Document.hold:32 of
+msgid ""
+"``hold`` only applies to document change events, i.e. setting properties "
+"on models. It does not apply to events such as ``ButtonClick``, etc."
+msgstr ""
+
+#: bokeh.document.document.Document.on_change:1 of
+msgid ""
+"Provide callbacks to invoke if the document or any Model reachable from "
+"its roots changes."
+msgstr ""
+
+#: bokeh.document.document.Document.on_session_destroyed:1 of
+msgid ""
+"Provide callbacks to invoke when the session serving the Document is "
+"destroyed"
+msgstr ""
+
+#: bokeh.document.document.Document.remove_next_tick_callback:1 of
+msgid "Remove a callback added earlier with ``add_next_tick_callback``."
+msgstr ""
+
+#: bokeh.document.document.Document.remove_next_tick_callback:3 of
+msgid "a value returned from ``add_next_tick_callback``"
+msgstr ""
+
+#: bokeh.document.document.Document.remove_next_tick_callback
+#: bokeh.document.document.Document.remove_on_change
+#: bokeh.document.document.Document.remove_periodic_callback
+#: bokeh.document.document.Document.remove_timeout_callback of
+msgid "raises"
+msgstr ""
+
+#: bokeh.document.document.Document.remove_next_tick_callback:7 of
+msgid ""
+"ValueError, if the callback was never added or has already been run or "
+"removed"
+msgstr ""
+
+#: bokeh.document.document.Document.remove_on_change:1 of
+msgid "Remove a callback added earlier with ``on_change``."
+msgstr ""
+
+#: bokeh.document.document.Document.remove_on_change:3 of
+msgid "KeyError, if the callback was never added"
+msgstr ""
+
+#: bokeh.document.document.Document.remove_periodic_callback:1 of
+msgid "Remove a callback added earlier with ``add_periodic_callback``"
+msgstr ""
+
+#: bokeh.document.document.Document.remove_periodic_callback:3 of
+msgid "a value returned from ``add_periodic_callback``"
+msgstr ""
+
+#: bokeh.document.document.Document.remove_periodic_callback:7 of
+msgid "ValueError, if the callback was never added or has already been removed"
+msgstr ""
+
+#: bokeh.document.document.Document.remove_root:1 of
+msgid "Remove a model as root model from this Document."
+msgstr ""
+
+#: bokeh.document.document.Document.remove_root:3 of
+msgid ""
+"Changes to this model may still trigger ``on_change`` callbacks on this "
+"document, if the model is still referred to by other root models."
+msgstr ""
+
+#: bokeh.document.document.Document.remove_timeout_callback:1 of
+msgid "Remove a callback added earlier with ``add_timeout_callback``."
+msgstr ""
+
+#: bokeh.document.document.Document.remove_timeout_callback:3 of
+msgid "a value returned from ``add_timeout_callback``"
+msgstr ""
+
+#: bokeh.document.document.Document.remove_timeout_callback:7 of
+msgid ""
+"ValueError, if the callback was never added or has alraedy been run or "
+"removed"
+msgstr ""
+
+#: bokeh.document.document.Document.replace_with_json:1 of
+msgid "Overwrite everything in this document with the JSON-encoded document."
+msgstr ""
+
+#: bokeh.document.document.Document.replace_with_json:5 of
+msgid "A JSON-encoded document to overwrite this one."
+msgstr ""
+
+#: bokeh.document.document.Document.select:1 of
+msgid "Query this document for objects that match the given selector."
+msgstr ""
+
+#: bokeh.document.document.Document.select:3
+#: bokeh.document.document.Document.select_one:5 of
+msgid ""
+"you can query by type or by name, e.g. ``{\"type\": HoverTool}``, "
+"``{\"name\": \"mycircle\"}``"
+msgstr ""
+
+#: bokeh.document.document.Document.select:7 of
+msgid "seq[Model]"
+msgstr ""
+
+#: bokeh.document.document.Document.select_one:1 of
+msgid ""
+"Query this document for objects that match the given selector. Raises an "
+"error if more than one object is found.  Returns single matching object, "
+"or None if nothing is found"
+msgstr ""
+
+#: bokeh.document.document.Document.set_select:1 of
+msgid ""
+"Update objects that match a given selector with the specified "
+"attribute/value updates."
+msgstr ""
+
+#: bokeh.document.document.Document.set_select:4 of
+msgid ""
+"you can query by type or by name,i e.g. ``{\"type\": HoverTool}``, "
+"``{\"name\": \"mycircle\"}`` updates (dict) :"
+msgstr ""
+
+#: bokeh.document.document.Document.to_json:1 of
+msgid "Convert this document to a JSON object."
+msgstr ""
+
+#: bokeh.document.document.Document.to_json:3 of
+msgid "JSON-data"
+msgstr ""
+
+#: bokeh.document.document.Document.to_json_string:1 of
+msgid "Convert the document to a JSON string."
+msgstr ""
+
+#: bokeh.document.document.Document.to_json_string:3 of
+msgid ""
+"number of spaces to indent, or None to suppress all newlines and "
+"indentation (default: None)"
+msgstr ""
+
+#: bokeh.document.document.Document.to_json_string:7 of
+msgid "str"
+msgstr ""
+
+#: bokeh.document.document.Document.unhold:1 of
+msgid "Turn off any active document hold and apply any collected events."
+msgstr ""
+
+#: bokeh.document.document.Document.validate:1 of
+msgid "Perform integrity checks on the modes in this document."
+msgstr ""
+
+#: bokeh.document.document.Document.roots:1 of
+msgid "A list of all the root models in this Document."
+msgstr ""
+
+#: bokeh.document.document.Document.session_callbacks:1 of
+msgid "A list of all the session callbacks on this document."
+msgstr ""
+
+#: bokeh.document.document.Document.session_context:1 of
+msgid "The ``SessionContext`` for this document."
+msgstr ""
+
+#: bokeh.document.document.Document.session_destroyed_callbacks:1 of
+msgid "A list of all the on_session_destroyed callbacks on this document."
+msgstr ""
+
+#: bokeh.document.document.Document.template:1 of
+msgid "A Jinja2 template to use for rendering this document."
+msgstr ""
+
+#: bokeh.document.document.Document.template_variables:1 of
+msgid ""
+"A dictionary of template variables to pass when rendering "
+"``self.template``."
+msgstr ""
+
+#: bokeh.document.document.Document.theme:1 of
+msgid "The current ``Theme`` instance affecting models in this Document."
+msgstr ""
+
+#: bokeh.document.document.Document.theme:3 of
+msgid ""
+"Setting this to ``None`` sets the default theme. (i.e this property never"
+" returns ``None``.)"
+msgstr ""
+
+#: bokeh.document.document.Document.theme:6 of
+msgid ""
+"Changing theme may trigger model change events on the models in the "
+"document if the theme modifies any model properties."
+msgstr ""
+
+#: bokeh.document.document.Document.title:1 of
+msgid "A title for this document."
+msgstr ""
+
+#: bokeh.document.document.Document.title:3 of
+msgid ""
+"This title will be set on standalone HTML documents, but not e.g. when "
+"``autoload_server`` is used."
+msgstr ""
+
+#: ../../source/docs/reference/document.rst:9
+msgid "Navigate the tree on the left for information about each subcommand."
+msgstr ""
+

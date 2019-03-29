@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/server/connection.rst:4
+msgid "bokeh.server.connection"
+msgstr ""
+
+#: bokeh.server.connection:1 of
+msgid "Provides the ``ServerSession`` class."
+msgstr ""
+
+#: bokeh.server.connection.ServerConnection:1 of
+msgid "Wraps a websocket connection to a client."
+msgstr ""
+
+#: bokeh.server.connection.ServerConnection.detach_session:1 of
+msgid ""
+"Allow the session to be discarded and don't get change notifications from"
+" it anymore"
+msgstr ""
+
+#: bokeh.server.connection.ServerConnection.send_patch_document:1 of
+msgid ""
+"Sends a PATCH-DOC message, returning a Future that's completed when it's "
+"written out."
+msgstr ""
+

@@ -1,0 +1,303 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/core/enums.rst:4
+msgid "bokeh.core.enums"
+msgstr ""
+
+#: bokeh.core.enums:1 of
+msgid "Common enumerations to be used together with |Enum| property."
+msgstr ""
+
+#: bokeh.core.enums:3 of
+msgid ""
+"This module provides many pre-defined enumerations, as well as functions "
+"for creating new enumerations."
+msgstr ""
+
+#: bokeh.core.enums:6 of
+msgid "New enumerations can be created using the |enumeration| function:"
+msgstr ""
+
+#: bokeh.core.enums:13 of
+msgid "Typically, enumerations are used to define |Enum| properties:"
+msgstr ""
+
+#: bokeh.core.enums:26 of
+msgid "Enumerations have a defined order and support iteration:"
+msgstr ""
+
+#: bokeh.core.enums:36 of
+msgid "as well as containment tests:"
+msgstr ""
+
+#: bokeh.core.enums:43 of
+msgid ""
+"Enumerations can be easily documented in Sphinx documentation with the "
+":ref:`bokeh.sphinxext.bokeh_enum` Sphinx extension."
+msgstr ""
+
+#: bokeh.core.enums.enumeration:1 of
+msgid "Create an |Enumeration| object from a sequence of values."
+msgstr ""
+
+#: bokeh.core.enums.enumeration:3 of
+msgid ""
+"Call ``enumeration`` with a sequence of (unique) strings to create an "
+"Enumeration object:"
+msgstr ""
+
+#: bokeh.core.enums.enumeration of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.core.enums.enumeration:11 of
+msgid ""
+"string enumeration values, passed as positional arguments  The order of "
+"arguments is the order of the enumeration, and the first element will be "
+"considered the default value when used to create |Enum| properties."
+msgstr ""
+
+#: bokeh.core.enums.enumeration:11 of
+msgid "string enumeration values, passed as positional arguments"
+msgstr ""
+
+#: bokeh.core.enums.enumeration:13 of
+msgid ""
+"The order of arguments is the order of the enumeration, and the first "
+"element will be considered the default value when used to create |Enum| "
+"properties."
+msgstr ""
+
+#: bokeh.core.enums.enumeration of
+msgid "Keyword Arguments"
+msgstr ""
+
+#: bokeh.core.enums.enumeration:18 of
+msgid "Whether validation should consider case or not (default: True)"
+msgstr ""
+
+#: bokeh.core.enums.enumeration of
+msgid "raises"
+msgstr ""
+
+#: bokeh.core.enums.enumeration:21 of
+msgid "ValueError if values empty, if any value is not a string or not unique"
+msgstr ""
+
+#: bokeh.core.enums.enumeration of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.core.enums.enumeration:23 of
+msgid "Enumeration"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify an anchor position on a box/frame"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify the units for an angle value"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a style for button widgets"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a named dashing patter for stroking lines"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a format for printing dates"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a date/time scale"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a vertical/horizontal dimension"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a vertical/horizontal dimensions"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a stroke direction for circles, wedges, etc."
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify the font style for rendering text"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid ""
+"Specify whether events should be combined or collected as-is when a "
+"Document hold is in effect"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a horizontal location in plot layouts"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a distribution to use for the Jitter class"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify whether a dimension or coordinate is latitude or longitude"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify how a legend should respond to click events"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a fixed location for a Bokeh legend"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify how stroked lines should be terminated"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a named dash pattern for stroking lines"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify how stroked lines should be joined together"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a location in plot layouts"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a style for a Google map"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify one of the built-in marker types"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify one of the 137 named CSS colors"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a locale for printing numeric values"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a vertical/horizontal orientation for something"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify an output backend to render a plot area onto"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid ""
+"Whether range padding should be interpreted a percentage or and absolute "
+"quantity"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify the name of a palette from :ref:`bokeh.palettes`"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a position in the render order for a Bokeh renderer"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid ""
+"Specify a render mode for renderers that support both Canvas or CSS "
+"rendering"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a policy for  how numbers should be rounded"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Sizing mode policies"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify different callback policies for the slider widget"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify sorting directions"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify units for mapping values"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a start/end value"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a mode for stepwise interpolation"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify the horizontal alignment for rendering text"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify the baseline location for rendering text"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify how axis tick labels are oriented with respect to the axis"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify an attachment for tooltips"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify how a format string for a tooltip field should be interpreted"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify the vertical alignment for rendering text"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a vertical location in plot layouts"
+msgstr ""
+
+#: bokeh.core.enums.Enumeration:1 of
+msgid "Represent an enumerated collection of values."
+msgstr ""
+
+#: bokeh.core.enums.Enumeration:4 of
+msgid ""
+"Instances of ``Enumeration`` typically should not be constructed "
+"directly. Instead, use the |enumeration| function."
+msgstr ""
+

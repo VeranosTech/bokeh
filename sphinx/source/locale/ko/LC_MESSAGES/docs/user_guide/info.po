@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/info.rst:4
+msgid "Learning More"
+msgstr ""
+
+#: ../../source/docs/user_guide/info.rst:6
+msgid "Hopefully this User Guide gets you started with the basics of using Bokeh."
+msgstr ""
+
+#: ../../source/docs/user_guide/info.rst:8
+msgid ""
+"For detailed information about all modules, classes, models, and objects,"
+" consult the :ref:`refguide`. If you are interested in learning how to "
+"build and develop Bokeh, or for information about how to create a new "
+"language binding, see the :ref:`devguide`."
+msgstr ""
+
+#: ../../source/docs/user_guide/info.rst:13
+msgid ""
+"To see ready-made examples of how you might use Bokeh with your own data,"
+" check out the :ref:`gallery` on the main documentation site, as well as "
+"the `Bokeh NBViewer Gallery`_."
+msgstr ""
+
+#: ../../source/docs/user_guide/info.rst:17
+msgid ""
+"For questions and technical assistance, come join the `Bokeh mailing "
+"list`_, or visit the `Gitter chat channel`_."
+msgstr ""
+
+#: ../../source/docs/user_guide/info.rst:20
+msgid "Visit the `Bokeh GitHub repository`_ and try the examples."
+msgstr ""
+
+#: ../../source/docs/user_guide/info.rst:22
+msgid "Be sure to follow us on Twitter `@bokehplots <Twitter_>`_ and `Youtube`_!"
+msgstr ""
+

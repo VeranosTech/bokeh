@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/server.rst:4
+msgid "bokeh.server"
+msgstr ""
+
+#: bokeh.server:1 of
+msgid "Provide a customizable Bokeh Server Tornadocore application."
+msgstr ""
+
+#: bokeh.server:3 of
+msgid ""
+"The architecture of Bokeh is such that high-level \"model objects\" "
+"(representing things like plots, ranges, axes, glyphs, etc.) are created "
+"in Python, and then converted to a JSON format that is consumed by the "
+"client library, BokehJS. (See :ref:`userguide_concepts` for a more "
+"detailed discussion.) By itself, this flexible and decoupled design "
+"offers advantages, for instance it is easy to have other languages (R, "
+"Scala, Lua, ...) drive the exact same Bokeh plots and visualizations in "
+"the browser."
+msgstr ""
+
+#: bokeh.server:11 of
+msgid ""
+"However, if it were possible to keep the \"model objects\" in python and "
+"in the browser in sync with one another, then more additional and "
+"powerful possibilities immediately open up:"
+msgstr ""
+
+#: bokeh.server:15 of
+msgid ""
+"respond to UI and tool events generated in a browser with computations or"
+" queries using the full power of python"
+msgstr ""
+
+#: bokeh.server:17 of
+msgid ""
+"automatically push server-side updates to the UI (i.e. widgets or plots "
+"in a browser)"
+msgstr ""
+
+#: bokeh.server:18 of
+msgid ""
+"use periodic, timeout, and asynchronous callbacks to drive streaming "
+"updates"
+msgstr ""
+
+#: bokeh.server:20 of
+msgid ""
+"**This capability to synchronize between python and the browser is the "
+"main purpose of the Bokeh Server.**"
+msgstr ""
+
+#: ../../source/docs/reference/server.rst:8
+msgid ""
+"By far the most flexible way to create interactive data visualizations "
+"using the Bokeh server is to create Bokeh Applications, and serve them "
+"with a Bokeh server. In this scenario, a Bokeh server uses the "
+"application code to create sessions and documents for all clients "
+"(typically browsers) that connect:"
+msgstr ""
+
+#: ../../source/docs/reference/server.rst:17
+msgid ""
+"A Bokeh server (left) uses Application code to create Bokeh Documents. "
+"Every new connection from a browser (right) results in the Bokeh server "
+"creating a new document, just for that session."
+msgstr ""
+
+#: ../../source/docs/reference/server.rst:21
+msgid ""
+"The application code is executed in the Bokeh server every time a new "
+"connection is made, to create the new Bokeh ``Document`` that will be "
+"synced to the browser. The application code also sets up any callbacks "
+"that should be run whenever properties such as widget values are changes."
+msgstr ""
+
+#: ../../source/docs/reference/server.rst:26
+msgid ""
+"The reference links in the sidebar document the details of the Bokeh "
+"Server. Most users will probably not need to be concerned with these "
+"details, unless they have specialized requirements, and should refer to "
+"the User's Guide chapter :ref:`userguide_server` for information about "
+"using the Bokeh Server."
+msgstr ""
+

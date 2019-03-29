@@ -1,0 +1,1383 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/widgets.tables.rst:4
+msgid "bokeh.models.widgets.tables"
+msgstr ""
+
+#: bokeh.models.widgets.tables:1 of
+msgid "Various kinds of data table (data grid) widgets."
+msgstr ""
+
+#: bokeh.models.widgets.tables.BooleanFormatter:1
+#: bokeh.models.widgets.tables.DateFormatter:1
+#: bokeh.models.widgets.tables.HTMLTemplateFormatter:1
+#: bokeh.models.widgets.tables.StringFormatter:1 of
+msgid "Bases: :class:`bokeh.models.widgets.tables.CellFormatter`"
+msgstr ""
+
+#: bokeh.models.widgets.tables.BooleanFormatter:1 of
+msgid "Boolean (check mark) cell formatter."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+"Enumeration(check, check-circle, check-circle-o, check-square, check-"
+"square-o) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The icon visualizing the check mark."
+msgstr ""
+
+#: bokeh.models.widgets.tables.CellEditor:1
+#: bokeh.models.widgets.tables.CellFormatter:1
+#: bokeh.models.widgets.tables.TableColumn:1 of
+msgid "Bases: :class:`bokeh.model.Model`"
+msgstr ""
+
+#: bokeh.models.widgets.tables.CellFormatter:1 of
+msgid "Abstract base class for data table's cell formatters."
+msgstr ""
+
+#: bokeh.models.widgets.tables.CellEditor:5
+#: bokeh.models.widgets.tables.CellFormatter:5
+#: bokeh.models.widgets.tables.TableWidget:5 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: bokeh.models.widgets.tables.CellEditor:1 of
+msgid "Abstract base class for data table's cell editors."
+msgstr ""
+
+#: bokeh.models.widgets.tables.CheckboxEditor:1
+#: bokeh.models.widgets.tables.DateEditor:1
+#: bokeh.models.widgets.tables.IntEditor:1
+#: bokeh.models.widgets.tables.NumberEditor:1
+#: bokeh.models.widgets.tables.PercentEditor:1
+#: bokeh.models.widgets.tables.SelectEditor:1
+#: bokeh.models.widgets.tables.StringEditor:1
+#: bokeh.models.widgets.tables.TextEditor:1
+#: bokeh.models.widgets.tables.TimeEditor:1 of
+msgid "Bases: :class:`bokeh.models.widgets.tables.CellEditor`"
+msgstr ""
+
+#: bokeh.models.widgets.tables.CheckboxEditor:1 of
+msgid "Boolean value cell editor."
+msgstr ""
+
+#: bokeh.models.widgets.tables.DataTable:1 of
+msgid "Bases: :class:`bokeh.models.widgets.tables.TableWidget`"
+msgstr ""
+
+#: bokeh.models.widgets.tables.DataTable:1 of
+msgid "Two dimensional grid for visualisation and editing large amounts of data."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.widgets.tables.TableColumn`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The list of child column widgets."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Bool`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Allows to edit table's contents. Needs cell editors to be configured on "
+"columns that are required to be editable."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether columns should be fit to the available width. This results in no "
+"horizontal scrollbar showing up, but data can get unreadable if there is "
+"no enough space available. If set to ``True``, columns' width is "
+"understood as maximum width."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Whether to show a header row with column names at the top of the table."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The column header to display for the index column, if it is present."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Where among the list of columns to insert a column displaying the row "
+"index. Negative indices are supported, and specify an index position from"
+" the end of the list of columns (i.e. standard Python behaviour)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "To prevent the index column from being added, set to None."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"If the absolute value of index_position  is larger than the length of the"
+" columns, then the index will appear at the beginning or end, depending "
+"on the sign."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The width of the index column, if present."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Allows the reordering of a table's columns. To reorder a column, click "
+"and drag a table's header to the desired location in the table. The "
+"columns on either side will remain in their previous order."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The height of each row in pixels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whenever a selection is made on the data source, scroll the selected rows"
+" into the table's viewport if none of the selected rows are already in "
+"the viewport."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Bool` , "
+":class:`~bokeh.core.properties.Enum` ( Enumeration(checkbox) ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether a table's rows can be selected or not. Using ``checkbox`` is "
+"equivalent  to ``True``, but makes selection visible through a checkbox "
+"for each row,  instead of highlighting rows. Multiple selection is "
+"allowed and can be achieved by either clicking multiple checkboxes (if "
+"enabled) or using Shift + click on rows."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Allows to sort table's contents. By default natural order is preserved. "
+"To sort a column, click on it's header. Clicking one more time changes "
+"sort direction. Use Ctrl + click to return to natural order. Use Shift + "
+"click to sort multiple columns simultaneously."
+msgstr ""
+
+#: bokeh.models.widgets.tables.DateEditor:1 of
+msgid "Calendar-based date cell editor."
+msgstr ""
+
+#: bokeh.models.widgets.tables.DateFormatter:1 of
+msgid "Date cell formatter."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.DateFormat`  ), "
+":class:`~bokeh.core.properties.String`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The date format can be any standard  `strftime`_ format string, as well "
+"as any of the following predefined format names:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Format name(s)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Format string"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Example Output"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``ATOM`` / ``W3C`` / ``RFC-3339`` / ``ISO-8601``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "``\"%Y-%m-%d\"``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "2014-03-01"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``COOKIE``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "``\"%a, %d %b %Y\"``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Sat, 01 Mar 2014"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``RFC-850``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "``\"%A, %d-%b-%y\"``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Saturday, 01-Mar-14"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``RFC-1123`` / ``RFC-2822``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "``\"%a, %e %b %Y\"``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Sat, 1 Mar 2014"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``RSS`` / ``RFC-822`` / ``RFC-1036``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "``\"%a, %e %b %y\"``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Sat, 1 Mar 14"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``TIMESTAMP``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "(ms since epoch)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1393632000000"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Note that in the table some of the format names are synonymous, with "
+"identical format names separated by slashes."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "This list of supported `strftime`_ format codes is reproduced below."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%a"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The abbreviated name of the day of the week according to the current "
+"locale."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%A"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The full name of the day of the week according to the current locale."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%b"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The abbreviated month name according to the current locale."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%B"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The full month name according to the current locale."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "%c"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The preferred date and time representation for the current locale."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%C"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The century number (year/100) as a 2-digit integer."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "%d"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The day of the month as a decimal number (range 01 to 31)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%D"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid ""
+"Equivalent to %m/%d/%y.  (Americans should note that in many other "
+"countries %d/%m/%y is rather common. This means that in international "
+"context this format is ambiguous and should not be used.)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "%e"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid ""
+"Like %d, the day of the month as a decimal number, but a leading zero is "
+"replaced by a space."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "%f"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Microsecond as a decimal number, zero-padded on the left (range "
+"000000-999999). This is an extension to the set of directives available "
+"to `timezone`_."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "%F"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "Equivalent to %Y-%m-%d (the ISO 8601 date format)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "%G"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The ISO 8601 week-based year with century as a decimal number. The "
+"4-digit year corresponding to the ISO week number (see %V). This has the "
+"same format and value as %Y, except that if the ISO week number belongs "
+"to the previous or next year, that year is used instead."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "%g"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "Like %G, but without century, that is, with a 2-digit year (00-99)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%h"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Equivalent to %b."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%H"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The hour as a decimal number using a 24-hour clock (range 00 to 23)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%I"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The hour as a decimal number using a 12-hour clock (range 01 to 12)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%j"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The day of the year as a decimal number (range 001 to 366)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%k"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The hour (24-hour clock) as a decimal number (range 0 to 23). Single "
+"digits are preceded by a blank.  (See also %H.)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%l"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The hour (12-hour clock) as a decimal number (range 1 to 12). Single "
+"digits are preceded by a blank.  (See also %I.)  (TZ)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%m"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The month as a decimal number (range 01 to 12)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%M"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The minute as a decimal number (range 00 to 59)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%n"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A newline character. Bokeh text does not currently support newline "
+"characters."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%N"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Nanosecond as a decimal number, zero-padded on the left (range "
+"000000000-999999999). Supports a padding width specifier, i.e. %3N "
+"displays 3 leftmost digits. However, this is only accurate to the "
+"millisecond level of precision due to limitations of `timezone`_."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%p"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Either \"AM\" or \"PM\" according to the given time value, or the "
+"corresponding strings for the current locale.  Noon is treated as \"PM\" "
+"and midnight as \"AM\"."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%P"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Like %p but in lowercase: \"am\" or \"pm\" or a corresponding string for "
+"the current locale."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "%r"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The time in a.m. or p.m. notation.  In the POSIX locale this is "
+"equivalent to %I:%M:%S %p."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%R"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The time in 24-hour notation (%H:%M). For a version including the "
+"seconds, see %T below."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "%s"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The number of seconds since the Epoch, 1970-01-01 00:00:00 +0000 (UTC)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%S"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The second as a decimal number (range 00 to 60).  (The range is up to 60 "
+"to allow for occasional leap seconds.)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%t"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A tab character. Bokeh text does not currently support tab characters."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%T"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The time in 24-hour notation (%H:%M:%S)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "%u"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The day of the week as a decimal, range 1 to 7, Monday being 1. See also "
+"%w."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%U"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The week number of the current year as a decimal number, range 00 to 53, "
+"starting with the first Sunday as the first day of week 01.  See also %V "
+"and %W."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%V"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The ISO 8601 week number (see NOTES) of the current year as a decimal "
+"number, range 01 to 53, where week 1 is the first week that has at least "
+"4 days in the new year.  See also %U and %W."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%w"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid ""
+"The day of the week as a decimal, range 0 to 6, Sunday being 0. See also "
+"%u."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%W"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The week number of the current year as a decimal number, range 00 to 53, "
+"starting with the first Monday as the first day of week 01."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "%x"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The preferred date representation for the current locale without the time."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "%X"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The preferred time representation for the current locale without the date."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%y"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The year as a decimal number without a century (range 00 to 99)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%Y"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The year as a decimal number including the century."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%z"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The +hhmm or -hhmm numeric timezone (that is, the hour and minute offset "
+"from UTC)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "%Z"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The timezone name or abbreviation."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "%%"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A literal '%' character."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The client library BokehJS uses the `timezone`_ library to format "
+"datetimes. The inclusion of the list below is based on the claim that "
+"`timezone`_ makes to support \"the full compliment of GNU date format "
+"specifiers.\" However, this claim has not been tested exhaustively "
+"against this list. If you find formats that do not function as expected, "
+"please submit a `github issue`_, so that the documentation can be updated"
+" appropriately."
+msgstr ""
+
+#: bokeh.models.widgets.tables.HTMLTemplateFormatter:1 of
+msgid ""
+"HTML formatter using a template. This uses Underscore's `template` method"
+" and syntax.  http://underscorejs.org/#template The formatter has access "
+"other items in the row via the `dataContext` object passed to the "
+"formatter. So, for example, if another column in the datasource was named"
+" `url`, the template could access it as:"
+msgstr ""
+
+#: bokeh.models.widgets.tables.HTMLTemplateFormatter:10 of
+msgid ""
+"To use a different set of template delimiters, pass the appropriate "
+"values for `evaluate`, `interpolate', or `escape`.  See the Underscore "
+"`template` documentation for more information.  "
+"http://underscorejs.org/#template"
+msgstr ""
+
+#: bokeh.models.widgets.tables.HTMLTemplateFormatter:13 of
+msgid "Example: Simple HTML template to format the column value as code."
+msgstr ""
+
+#: bokeh.models.widgets.tables.HTMLTemplateFormatter:19 of
+msgid ""
+"Example: Use values from other columns (`manufacturer` and `model`) to "
+"build a hyperlink."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Template string to be used by Underscore's template method."
+msgstr ""
+
+#: bokeh.models.widgets.tables.IntEditor:1 of
+msgid "Spinner-based integer cell editor."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The major step value."
+msgstr ""
+
+#: bokeh.models.widgets.tables.NumberEditor:1 of
+msgid "Spinner-based number cell editor."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Float`"
+msgstr ""
+
+#: bokeh.models.widgets.tables.NumberFormatter:1 of
+msgid "Bases: :class:`bokeh.models.widgets.tables.StringFormatter`"
+msgstr ""
+
+#: bokeh.models.widgets.tables.NumberFormatter:1 of
+msgid "Number cell formatter."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The number format, as defined in the following tables:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "**NUMBERS**:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Number"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Format"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "String"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "10000"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0,0.0000'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "10,000.0000"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "10000.23"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0,0'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "10,000"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'+0,0'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "+10,000"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-10000"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0,0.0'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-10,000.0"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "10000.1234"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0.000'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "10000.123"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0[.]00000'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "10000.12340"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'(0,0.0000)'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "(10,000.0000)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-0.23"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'.00'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-.23"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'(.00)'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "(.23)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "0.23"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0.00000'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "0.23000"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0.0[0000]'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1230974"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0.0a'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1.2m"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1460"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0 a'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1 k"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-104000"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0a'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-104k"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0o'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1st"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "52"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "52nd"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "23"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "23rd"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "100"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "100th"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "**CURRENCY**:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1000.234"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'$0,0.00'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "$1,000.23"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1000.2"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0,0[.]00 $'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1,000.20 $"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1001"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'$ 0,0[.]00'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "$ 1,001"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-1000.234"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'($0,0)'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "($1,000)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'$0.00'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-$1000.23"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'($ 0.00 a)'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "$ 1.23 m"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "**BYTES**:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0b'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "100B"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "2048"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0 b'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "2 KB"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "7884486213"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0.0b'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "7.3GB"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "3467479682787"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0.000 b'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "3.154 TB"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "**PERCENTAGES**:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0%'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "100%"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "0.974878234"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0.000%'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "97.488%"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-0.43"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0 %'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-43 %"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "0.43"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'(0.000 %)'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "43.000 %"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "**TIME**:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "25"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'00:00:00'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "0:00:25"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "238"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "0:03:58"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "63846"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "17:44:06"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "For the complete specification, see http://numbrojs.com/format.html"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.NumeralLanguage`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The language to use for formatting language-specific features (e.g. "
+"thousands separator)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.RoundingFunction`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Rounding functions (round, floor, ceil) and their synonyms (nearest, "
+"rounddown, roundup)."
+msgstr ""
+
+#: bokeh.models.widgets.tables.PercentEditor:1 of
+msgid "``IntEditor`` optimized for editing percentages."
+msgstr ""
+
+#: bokeh.models.widgets.tables.SelectEditor:1 of
+msgid "Select cell editor."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.String`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The list of options to select from."
+msgstr ""
+
+#: bokeh.models.widgets.tables.StringEditor:1 of
+msgid "Basic string cell editor with auto-completion."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An optional list of completion strings."
+msgstr ""
+
+#: bokeh.models.widgets.tables.StringFormatter:1 of
+msgid "Basic string cell formatter."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.FontStyle`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An optional text font style, e.g. bold, italic."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.TextAlign`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An optional text align, i.e. left, center or right."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Color`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"An optional text color. See :class:`bokeh.core.properties.Color` for "
+"details."
+msgstr ""
+
+#: bokeh.models.widgets.tables.TableColumn:1 of
+msgid "Table column widget."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+"Enumeration(ascending, descending) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The default sorting order. By default ``ascending`` order is used."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.widgets.tables.CellEditor`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The cell editor for this column. By default, a simple string editor is "
+"used."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The name of the field mapping to a column in the data source."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.widgets.tables.CellFormatter`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The cell formatter for this column. By default, a simple string formatter"
+" is used."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether this column is sortable or not. Note that data table has to have "
+"sorting enabled to allow sorting in general."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The title of this column. If not set, column's data field is used instead."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The width or maximum width (depending on data table's configuration) in "
+"pixels of this column."
+msgstr ""
+
+#: bokeh.models.widgets.tables.TextEditor:1 of
+msgid "Multi-line string cell editor."
+msgstr ""
+
+#: bokeh.models.widgets.tables.TimeEditor:1 of
+msgid "Spinner-based time cell editor."
+msgstr ""
+
+#: bokeh.models.widgets.tables.TableWidget:1 of
+msgid "Bases: :class:`bokeh.models.widgets.widget.Widget`"
+msgstr ""
+
+#: bokeh.models.widgets.tables.TableWidget:1 of
+msgid "Abstract base class for data table (data grid) widgets."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.sources.DataSource`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The source of data for the widget."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.sources.CDSView`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A view into the data source to use when rendering table rows. A default "
+"view of the entire data source is created if a view is not passed in "
+"during initialization."
+msgstr ""
+

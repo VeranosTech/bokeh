@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/command/bootstrap.rst:4
+msgid "bokeh.command.bootstrap"
+msgstr ""
+
+#: bokeh.command.bootstrap:1 of
+msgid "Provide a ``main`` function to run bokeh commands."
+msgstr ""
+
+#: bokeh.command.bootstrap:3 of
+msgid "The following are equivalent:"
+msgstr ""
+
+#: bokeh.command.bootstrap:5 of
+msgid "Running the ``bokeh`` command line script:"
+msgstr ""
+
+#: bokeh.command.bootstrap:11 of
+msgid "Using ``python -m bokeh``:"
+msgstr ""
+
+#: bokeh.command.bootstrap:17 of
+msgid "Executing ``main`` programmatically:"
+msgstr ""
+
+#: bokeh.command.bootstrap.main:1 of
+msgid "Execute the Bokeh command."
+msgstr ""
+
+#: bokeh.command.bootstrap.main of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.command.bootstrap.main:3 of
+msgid "a list of command line arguments to process"
+msgstr ""
+
+#: bokeh.command.bootstrap.main of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.command.bootstrap.main:6 of
+msgid "None"
+msgstr ""
+
+#: bokeh.command.bootstrap.main:8 of
+msgid ""
+"The first item in ``argv`` is typically \"bokeh\", and the second should "
+"be the name of one of the available subcommands:"
+msgstr ""
+
+#: bokeh.command.bootstrap.main:11 of
+msgid ":ref:`html <bokeh.command.subcommands.html>`"
+msgstr ""
+
+#: bokeh.command.bootstrap.main:12 of
+msgid ":ref:`info <bokeh.command.subcommands.info>`"
+msgstr ""
+
+#: bokeh.command.bootstrap.main:13 of
+msgid ":ref:`json <bokeh.command.subcommands.json>`"
+msgstr ""
+
+#: bokeh.command.bootstrap.main:14 of
+msgid ":ref:`png <bokeh.command.subcommands.png>`"
+msgstr ""
+
+#: bokeh.command.bootstrap.main:15 of
+msgid ":ref:`sampledata <bokeh.command.subcommands.sampledata>`"
+msgstr ""
+
+#: bokeh.command.bootstrap.main:16 of
+msgid ":ref:`secret <bokeh.command.subcommands.secret>`"
+msgstr ""
+
+#: bokeh.command.bootstrap.main:17 of
+msgid ":ref:`serve <bokeh.command.subcommands.serve>`"
+msgstr ""
+
+#: bokeh.command.bootstrap.main:18 of
+msgid ":ref:`static <bokeh.command.subcommands.static>`"
+msgstr ""
+
+#: bokeh.command.bootstrap.main:19 of
+msgid ":ref:`svg <bokeh.command.subcommands.svg>`"
+msgstr ""
+

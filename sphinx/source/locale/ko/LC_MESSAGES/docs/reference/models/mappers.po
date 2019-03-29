@@ -1,0 +1,275 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/mappers.rst:4
+msgid "bokeh.models.mappers"
+msgstr ""
+
+#: bokeh.models.mappers:1 of
+msgid ""
+"Models for mapping values from one range or space to another in the "
+"client."
+msgstr ""
+
+#: bokeh.models.mappers:3 of
+msgid "Mappers (as opposed to scales) are not presumed to be invertible."
+msgstr ""
+
+#: bokeh.models.mappers.Mapper:1 of
+msgid "Bases: :class:`bokeh.models.transforms.Transform`"
+msgstr ""
+
+#: bokeh.models.mappers.Mapper:1 of
+msgid "Base class for mappers."
+msgstr ""
+
+#: bokeh.models.mappers.CategoricalMapper:5 bokeh.models.mappers.ColorMapper:5
+#: bokeh.models.mappers.ContinuousColorMapper:5 bokeh.models.mappers.Mapper:5
+#: of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: bokeh.models.mappers.CategoricalMapper:1 bokeh.models.mappers.ColorMapper:1
+#: of
+msgid "Bases: :class:`bokeh.models.mappers.Mapper`"
+msgstr ""
+
+#: bokeh.models.mappers.ColorMapper:1 of
+msgid "Base class for color mapper types."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Color`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Color to be used if data is NaN or otherwise not mappable. (Default: "
+"'gray')"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.Color`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A sequence of colors to use as the target palette for mapping."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This property can also be set as a ``String``, to the name of any of the "
+"palettes shown in :ref:`bokeh.palettes`."
+msgstr ""
+
+#: bokeh.models.mappers.CategoricalMapper:1 of
+msgid "Base class for mappers that map categorical factors to other values."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A start index to \"slice\" data factors with before mapping."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"For example, if the data to color map consists of 2-level factors such as"
+" ``[\"2016\", \"sales\"]`` and ``[\"2017\", \"marketing\"]``, then "
+"setting ``end=1`` will perform color mapping only based on the first sub-"
+"factor (i.e. in this case based on the year ``\"2016\"`` or ``\"2017\"``)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"If ``None`` then all sub-factors from ``start`` to the end of the factor "
+"will be used for color mapping."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.String`  ), "
+":class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.String`  ) ), "
+":class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.String`  ) ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A sequence of factors / categories that map to the some target range. For"
+" example the following color mapper:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "will map the factor ``\"foo\"`` to red and the factor ``\"bar\"`` to blue."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"For example, if the data to color map consists of 2-level factors such as"
+" ``[\"2016\", \"sales\"]`` and ``[\"2016\", \"marketing\"]``, then "
+"setting ``start=1`` will perform color mapping only based on the second "
+"sub-factor (i.e. in this case based on the department ``\"sales\"`` or "
+"``\"marketing\"``)"
+msgstr ""
+
+#: bokeh.models.mappers.CategoricalColorMapper:1 of
+msgid ""
+"Bases: :class:`bokeh.models.mappers.CategoricalMapper`, "
+":class:`bokeh.models.mappers.ColorMapper`"
+msgstr ""
+
+#: bokeh.models.mappers.CategoricalColorMapper:1 of
+msgid "Map categorical factors to colors."
+msgstr ""
+
+#: bokeh.models.mappers.CategoricalColorMapper:3 of
+msgid ""
+"Values that are passed to this mapper that are not in the factors list "
+"will be mapped to ``nan_color``."
+msgstr ""
+
+#: bokeh.models.mappers.CategoricalMarkerMapper:1 of
+msgid "Bases: :class:`bokeh.models.mappers.CategoricalMapper`"
+msgstr ""
+
+#: bokeh.models.mappers.CategoricalMarkerMapper:1 of
+msgid "Map categorical factors to marker types."
+msgstr ""
+
+#: bokeh.models.mappers.CategoricalMarkerMapper:3 of
+msgid ""
+"Values that are passed to this mapper that are not in the factors list "
+"will be mapped to ``default_value``."
+msgstr ""
+
+#: bokeh.models.mappers.CategoricalMarkerMapper:7 of
+msgid ""
+"This mappers is primarily only useful with the ``Scatter`` marker glyph "
+"that be parameterized by marker type."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.MarkerType` ( "
+":class:`~bokeh.core.enums.MarkerType`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A marker type to use in case an unrecognized factor is passed in to be "
+"mapped."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.MarkerType` ( "
+":class:`~bokeh.core.enums.MarkerType`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A sequence of marker types to use as the target for mapping."
+msgstr ""
+
+#: bokeh.models.mappers.ContinuousColorMapper:1 of
+msgid "Bases: :class:`bokeh.models.mappers.ColorMapper`"
+msgstr ""
+
+#: bokeh.models.mappers.ContinuousColorMapper:1 of
+msgid "Base class for continuous color mapper types."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Float`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The maximum value of the range to map into the palette. Values above this"
+" are clamped to ``high``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Color to be used if data is higher than ``high`` value. If None, values "
+"higher than ``high`` are mapped to the last color in the palette."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The minimum value of the range to map into the palette. Values below this"
+" are clamped to ``low``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Color to be used if data is lower than ``low`` value. If None, values "
+"lower than ``low`` are mapped to the first color in the palette."
+msgstr ""
+
+#: bokeh.models.mappers.LinearColorMapper:1
+#: bokeh.models.mappers.LogColorMapper:1 of
+msgid "Bases: :class:`bokeh.models.mappers.ContinuousColorMapper`"
+msgstr ""
+
+#: bokeh.models.mappers.LinearColorMapper:1 of
+msgid ""
+"Map numbers in a range [*low*, *high*] linearly into a sequence of colors"
+" (a palette)."
+msgstr ""
+
+#: bokeh.models.mappers.LinearColorMapper:4 of
+msgid ""
+"For example, if the range is [0, 99] and the palette is ``['red', "
+"'green', 'blue']``, the values would be mapped as follows::"
+msgstr ""
+
+#: bokeh.models.mappers.LogColorMapper:1 of
+msgid ""
+"Map numbers in a range [*low*, *high*] into a sequence of colors (a "
+"palette) on a natural logarithm scale."
+msgstr ""
+
+#: bokeh.models.mappers.LogColorMapper:4 of
+msgid ""
+"For example, if the range is [0, 25] and the palette is ``['red', "
+"'green', 'blue']``, the values would be mapped as follows::"
+msgstr ""
+
+#: bokeh.models.mappers.LogColorMapper:14 of
+msgid ""
+"The ``LogColorMapper`` only works for images with scalar values that are "
+"non-negative."
+msgstr ""
+

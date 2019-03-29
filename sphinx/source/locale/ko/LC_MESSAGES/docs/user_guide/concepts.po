@@ -1,0 +1,351 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/concepts.rst:4
+msgid "Defining Key Concepts"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:9
+msgid "Glossary"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:11
+msgid ""
+"In order to make the best use of this User Guide, it is important to have"
+" context for some high level concepts and terms. Here is a small glossary"
+" of some of the most important concepts in Bokeh."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:19
+msgid "Application"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:18
+msgid ""
+"A Bokeh application is a recipe for generating Bokeh documents. Typically"
+" this is Python code run by a Bokeh server when new sessions are created."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:27
+msgid "BokehJS"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:22
+msgid ""
+"The JavaScript client library that actually renders the visuals and "
+"handles the UI interactions for Bokeh plots and widgets in the browser. "
+"Typically, users will not have to think about this aspect of Bokeh much "
+"*(\"We write the JavaScript, so you don't have to!\")* but it is good to "
+"have basic knowledge of this dichotomy. For full details, see the "
+":ref:`devguide_bokehjs` chapter of the :ref:`devguide`."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:32
+msgid "Documents"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:30
+msgid ""
+"An organizing data structure for Bokeh applications. Documents contain "
+"all the Bokeh Models and data needed to render an interactive "
+"visualization or application in the browser."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:37
+msgid "Embedding"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:35
+msgid ""
+"Various methods of including Bokeh plots and widgets into web apps and "
+"pages, or the IPython notebook. See :ref:`userguide_embed` for more "
+"details."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:43
+msgid "Glyphs"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:40
+msgid ""
+"The basic visual building blocks of Bokeh plots, e.g. lines, rectangles, "
+"squares, wedges, patches, etc. The ``bokeh.plotting`` interface provides "
+"a convenient way to create plots centered around glyphs. See "
+":ref:`userguide_plotting` for more information."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:51
+msgid "Models"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:46
+msgid ""
+"The lowest-level objects that comprise Bokeh \"scenegraphs\". These live "
+"in the ``bokeh.models`` interface. *Most users will not use this level of"
+" interface to assemble plots directly.* However, ultimately all Bokeh "
+"plots consist of collections of models, so it is important to understand "
+"them enough to configure their attributes and properties. See "
+":ref:`userguide_styling` for more information."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:57
+msgid "Server"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:54
+msgid ""
+"The Bokeh server is an optional component that can be used for sharing "
+"and publishing Bokeh plots and apps, for handling streaming of large data"
+" sets, or for enabling sophisticated user interactions based off of "
+"widgets and selections. See :ref:`userguide_server` for more explanation."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:64
+msgid "Widgets"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:60
+msgid ""
+"User interface elements outside of a Bokeh plot such as sliders, drop "
+"down menus, buttons, etc. Events and updates from widgets can inform "
+"additional computations, or cause Bokeh plots to update. Widgets can be "
+"used in both standalone applications or with the Bokeh server. For "
+"examples and information, see :ref:`userguide_interaction`."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:71
+msgid "Output Methods"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:73
+msgid ""
+"As we will see demonstrated frequently throughout the User Guide, there "
+"are various ways to generate output for Bokeh documents. The most common "
+"for interactive usage are:"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:78
+msgid "``output_file``"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:78
+msgid "For generating simple standalone HTML documents for Bokeh visualizations."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:81
+msgid "``output_notebook``"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:81
+msgid ""
+"For displaying Bokeh visualizations inline in Jupyter/Zeppelin notebook "
+"cells."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:83
+msgid ""
+"These functions are most often used together with the ``show`` or "
+"``save`` functions. Scripts that output with these typically look "
+"something like:"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:97
+msgid ""
+"If this script is called ``foo.py`` then executing ``python foo.py`` will"
+" result in an HTML file ``output.html`` being generated with the line "
+"plot. These functions are often useful in interactive settings, or for "
+"creating standalone Bokeh documents to serve from (Flask, Django, etc.) "
+"web applications."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:103
+msgid ""
+"However, Bokeh also comes with a powerful command line tool ``bokeh`` "
+"that can also be used to generate various kinds of output:"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:108
+msgid "``bokeh html``"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:107
+msgid ""
+"Create standalone HTML documents from any kind of Bokeh application "
+"source: e.g., python scripts, app directories, JSON files, and others."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:112
+msgid "``bokeh json``"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:111
+msgid ""
+"Generate a serialized JSON representation of a Bokeh document from any "
+"kind of Bokeh application source."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:115
+msgid "``bokeh serve``"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:115
+msgid "Publish Bokeh documents as interactive web applications."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:117
+msgid ""
+"An advantage of using the ``bokeh`` command is that the code you write "
+"does not have to specify any particular output method or format. You can "
+"write *just the visualization code* once, and decide later to output in "
+"different ways. The above example would be simplified to:"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:130
+msgid ""
+"Now, you can run ``bokeh html foo.py`` to generate a standalone HTML "
+"file, or ``bokeh serve foo.py`` to start serving this document as a web "
+"application. For more information on the command line tool see "
+":ref:`userguide_cli`."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:137
+msgid "Interfaces"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:139
+msgid ""
+"Bokeh is intended to provide a quick and simple interface to data "
+"scientists and domain experts who do not want to be distracted by the "
+"details of the software, and also provide a richly detailed interface to "
+"application developers and software engineers who may want more control "
+"or access to more sophisticated features. Because of this, Bokeh takes a "
+"layered approach and offers different programming interfaces appropriate "
+"to different levels of use. This section provides an overview of the "
+"various interfaces that are available to Bokeh users, as well as more "
+"context about the most important concepts central to the library. If "
+"you'd like to jump right into basic plotting, go to "
+":ref:`userguide_plotting`."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:151
+msgid "*bokeh.models*"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:153
+msgid "Bokeh is actually composed of two library components."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:155
+msgid ""
+"The first component is a JavaScript library, BokehJS, that runs in the "
+"browser. This library is responsible for all of the rendering and user "
+"interaction. Its input is a collection of declarative JSON objects that "
+"comprise a \"scenegraph\". The objects in this scenegraph describe "
+"everything that BokehJS should handle: what plots and widgets are present"
+" and in what arrangement, what tools and renderers and axes the plots "
+"will have, etc. These JSON objects are converted into BokehJS Models in "
+"the browser, and are rendered by corresponding BokehJS Views."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:164
+msgid ""
+"The second component is a library in Python (or |other languages|) that "
+"can generate the JSON described above. In the Python Bokeh library, this "
+"is accomplished at the lowest level by exposing a set of \"model\" "
+"classes that exactly mirror the set of BokehJS Models that are created in"
+" the browser. These python model classes know how to validate their "
+"content and attributes, and also how to serialize themselves to JSON. All"
+" of these low level models live in the **low-level** |bokeh.models| "
+"interface. Most of the models are very simple, usually consisting of a "
+"few property attributes and no methods. Model attributes can either be "
+"configured when the model is created, or later by setting attribute "
+"values on the model object. Here are some examples for a |Rect| glyph "
+"object: ::"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:184
+msgid ""
+"These methods of configuration work in general for all Bokeh models. "
+"Because of that, and because all Bokeh interfaces ultimately produce "
+"collections of Bokeh models, styling and configuring plots and widgets is"
+" accomplished in basically the same way, regardless of which interface is"
+" used."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:189
+msgid ""
+"Using the |bokeh.models| interface provides complete control over how "
+"Bokeh plots and Bokeh widgets are put together and configured. However, "
+"it provides no help with assembling the models in meaningful or correct "
+"ways. It is entirely up to developers to build the scenegraph \"by "
+"hand\". For this reason, most users will probably want to use the "
+"|bokeh.plotting| interface described below, unless they have specialized "
+"requirements that necessitate finer control. For more information about "
+"the details of all Bokeh models, consult the :ref:`refguide`."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:199
+msgid "*bokeh.plotting*"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:201
+msgid ""
+"Bokeh provides a **mid-level** general purpose |bokeh.plotting| "
+"interface, which is similar in specificity to Matplotlib_ or Matlab_ "
+"style plotting interfaces. It is centered around having users relate the "
+"visual glyphs they would like to have displayed to their data, and "
+"otherwise taking care of putting together plots with sensible default "
+"axes, grids, and tools. All the hard work to assemble the appropriate "
+"Bokeh Models to form a scenegraph that BokehJS can render is handled "
+"automatically."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:209
+msgid ""
+"The main class in the |bokeh.plotting| interface is the |figure| "
+"function. This creates a |Figure| model, that includes methods for adding"
+" different kinds of glyphs to a plot. Additionally it composes default "
+"axes, grids, and tools in the proper way without any extra effort."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:214
+msgid ""
+"A prototypical example of the |bokeh.plotting| usage is show below, along"
+" with the resulting plot:"
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:220
+msgid ""
+"The main observation is that the typical usage involves creating plots "
+"objects with the |figure| function, then using the glyph methods like "
+"|Figure.circle| to add renderers for our data. We do not have to worry "
+"about configuring any axes or grids (although we can configure them if we"
+" need to), and specifying tools is done simply with the names of tools to"
+" add. Finally we use some output functions to display our plot."
+msgstr ""
+
+#: ../../source/docs/user_guide/concepts.rst:227
+msgid ""
+"There are many other possibilities: saving our plot instead of showing "
+"it, styling or removing the axes or grids, adding additional renderers, "
+"and laying out multiple plots together. The :ref:`userguide_plotting` "
+"section of this :ref:`userguide` will walk through many more examples and"
+" common use cases of using the |bokeh.plotting| interface."
+msgstr ""
+

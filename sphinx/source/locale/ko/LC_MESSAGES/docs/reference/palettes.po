@@ -1,0 +1,489 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/palettes.rst:4
+msgid "bokeh.palettes"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:1 of
+msgid "Provide a collection of palettes for color mapping."
+msgstr ""
+
+#: ../../docstring bokeh.palettes:3 of
+msgid ""
+"In the context of Bokeh, a *palette* is a simple plain Python list of "
+"(hex) RGB color strings. For example the ``Blues8`` palette which looks "
+"like :bokeh-palette:`Blues8` is defined as:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:11 of
+msgid "This module contains the following sets of palettes:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:13 of
+msgid "All `ColorBrewer`_ palettes"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:14 of
+msgid "Categorical `D3`_ palettes"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:15 of
+msgid "The `Matplotlib`_ palettes Magma, Inferno, Plasma, and Viridis"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:16 of
+msgid "Palettes designed for color-deficient usability"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:18 of
+msgid ""
+"Additionally, you can also use any of the 256-color perceptually uniform "
+"Bokeh palettes from the external `colorcet`_ package, if it is installed."
+msgstr ""
+
+#: ../../docstring bokeh.palettes:23 of
+msgid ""
+"Every pre-built palette is available as a module attributes, e.g. "
+"``bokeh.palettes.YlGn3`` or ``bokeh.palettes.Viridis256``. The name of "
+"each pre-built palette can be found in the ``__palettes__`` module "
+"attribute."
+msgstr ""
+
+#: ../../docstring bokeh.palettes:27 of
+msgid ""
+"There are also functions such as :func:`~bokeh.palettes.magma` and "
+":func:`~bokeh.palettes.viridis` that can generate lists of colors of "
+"arbitrary size from special larger palettes."
+msgstr ""
+
+#: ../../docstring bokeh.palettes:31 of
+msgid ""
+"The Brewer palettes are also collected and grouped by name in a "
+"``brewer`` dictionary, e.g.: ``brewer['Spectral'][6]``. Similarly there "
+"are attributes ``d3``, ``mpl``, and ``colorblind`` that have dictionaries"
+" corresponding to the those groups of palettes."
+msgstr ""
+
+#: ../../docstring bokeh.palettes:36 of
+msgid ""
+"Finally, all palettes are collected in the ``all_palettes`` palettes "
+"module attribute, and the \"small\" palettes (i.e. excluding the ones "
+"with 256 colors) are collected and in a ``small_palettes`` attribute."
+msgstr ""
+
+#: ../../docstring bokeh.palettes:41 of
+msgid "Built-in Palettes"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:44 of
+msgid "Matplotlib Palettes"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:46 of
+msgid ""
+"Bokeh includes the `Matplotlib`_ palettes Magma, Inferno, Plasma, and "
+"Viridis. This section shows the pre-defined small palettes in this group."
+" There are also large 256-color versions of these palettes, shown below "
+"in the `Large Palettes`_ section."
+msgstr ""
+
+#: ../../docstring bokeh.palettes:54 of
+msgid "D3 Palettes"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:56 of
+msgid "Bokeh includes the categorical palettes from `D3`_, which are shown below:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:61 of
+msgid "Brewer Palettes"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:63 of
+msgid "Bokeh includes all the `ColorBrewer`_ palettes, shown below:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:68 of
+msgid "Usability Palettes"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:70 of
+msgid ""
+"Bokeh includes some palettes that are useful for addressing color "
+"deficiencies. These are shown below."
+msgstr ""
+
+#: ../../docstring bokeh.palettes:76 of
+msgid "Large Palettes"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:78 of
+msgid ""
+"In addition to all the palettes shown above, which are available in the "
+"``small_palettes`` attribute, the ``bokeh.palettes`` module also has some"
+" larger palettes with 256 colors. These are shown below:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes of
+msgid "Greys256"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:82 of
+msgid ":bokeh-palette:`grey(256)` (brewer)"
+msgstr ""
+
+#: ../../docstring bokeh.palettes of
+msgid "Inferno256"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:84 of
+msgid ":bokeh-palette:`inferno(256)` (mpl)"
+msgstr ""
+
+#: ../../docstring bokeh.palettes of
+msgid "Magma256"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:86 of
+msgid ":bokeh-palette:`magma(256)` (mpl)"
+msgstr ""
+
+#: ../../docstring bokeh.palettes of
+msgid "Plasma256"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:88 of
+msgid ":bokeh-palette:`plasma(256)` (mpl)"
+msgstr ""
+
+#: ../../docstring bokeh.palettes of
+msgid "Viridis256"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:90 of
+msgid ":bokeh-palette:`viridis(256)` (mpl)"
+msgstr ""
+
+#: ../../docstring bokeh.palettes of
+msgid "Cividis256"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:92 of
+msgid ":bokeh-palette:`cividis(256)` (mpl)"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:95 of
+msgid ""
+"Many other 256-color perceptually uniform palettes are available in the "
+"external `colorcet`_ package."
+msgstr ""
+
+#: ../../docstring bokeh.palettes:99 of
+msgid "Other Attributes"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:101 of
+msgid ""
+"In addition to all the palettes described in the section above, there are"
+" the following notable attributes in the ``bokeh.palettes`` module:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:106 of
+msgid ""
+"An alphabetical list of the names of all individual palettes in this "
+"module."
+msgstr ""
+
+#: ../../docstring bokeh.palettes:109 of
+msgid "For example, the first eight palette names are:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:118 of
+msgid ""
+"The full list of all palettes is also available as an enumeration from "
+"``bokeh.core.enums``:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:127 of
+msgid ""
+"All built-in palette groups. This dictionary is indexed with a palette "
+"name to obtain a complete group of palettes, e.g. ``Viridis``, and then "
+"further indexed with an integer to select a palette of a specific size "
+"from the group:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:137 of
+msgid ""
+"The resulting palette looks like: :bokeh-"
+"palette:`all_palettes['Viridis'][4]`"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:141 of
+msgid ""
+"Palette groups included from `ColorBrewer`_. This dictionary is indexed "
+"with a palette name to obtain a complete group of palettes, e.g. "
+"``YlGnBu``, and then further indexed with an integer to select a palette "
+"of a specific size from the group:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:151 of
+msgid "The resulting palette looks like: :bokeh-palette:`brewer['YlGnBu'][4]`"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:155 of
+msgid ""
+"Categorical palette groups included from `D3`_. This dictionary is "
+"indexed with a palette name to obtain a complete group of palettes, e.g. "
+"``Category20b``, and then further indexed with an integer to select a "
+"palette of a specific size from the group:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:165 of
+msgid "The resulting palette looks like: :bokeh-palette:`d3['Category20b'][4]`"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:167 of
+msgid ""
+"The names of the D3 palette groups are: ``Category10``, ``Category20``, "
+"``Category20b``, ``Category20c``"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:172 of
+msgid ""
+"Palette groups included from `Matplotlib`_. This dictionary is indexed "
+"with a palette name to obtain a complete group of palettes, e.g. "
+"``Plasma``, and then further indexed with an integer to select a palette "
+"of a specific size from the group:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:182 of
+msgid "The resulting palette looks like: :bokeh-palette:`mpl['Plasma'][4]`"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:184 of
+msgid ""
+"The names of the MPL palette groups are: ``Inferno``, ``Magma`` "
+"``Plasma``, ``Viridis``"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:189 of
+msgid ""
+"All palette groups, excluding 256-length palettes. This dictionary is "
+"indexed with a palette name to obtain a complete group of palettes, e.g. "
+"``Viridis``, and then further indexed with an integer to select a palette"
+" of a specific size from the group:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:199 of
+msgid ""
+"The resulting palette looks like: :bokeh-"
+"palette:`small_palettes['Viridis'][4]`"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:202 of
+msgid "Functions"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:204 of
+msgid ""
+"The ``bokeh.palettes`` module also has several functions that can be used"
+" to generate palettes of arbitrary size."
+msgstr ""
+
+#: ../../docstring bokeh.palettes.cividis:1 of
+msgid "Generate a palette of colors or from the Cividis palette."
+msgstr ""
+
+#: ../../docstring bokeh.palettes.cividis:3 of
+msgid ""
+"The full Cividis palette that serves as input for deriving new palettes "
+"has 256 colors, and looks like:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.cividis:6 of
+msgid ":bokeh-palette:`cividis(256)`"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.cividis bokeh.palettes.gray
+#: bokeh.palettes.grey bokeh.palettes.inferno bokeh.palettes.linear_palette
+#: bokeh.palettes.magma bokeh.palettes.viridis of
+msgid "Parameters"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.cividis:8 bokeh.palettes.gray:8
+#: bokeh.palettes.grey:8 bokeh.palettes.inferno:8 bokeh.palettes.magma:8
+#: bokeh.palettes.viridis:8 of
+msgid "size of the palette to generate"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.cividis bokeh.palettes.gray
+#: bokeh.palettes.grey bokeh.palettes.inferno bokeh.palettes.linear_palette
+#: bokeh.palettes.magma bokeh.palettes.viridis of
+msgid "Returns"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.cividis:11 bokeh.palettes.gray:11
+#: bokeh.palettes.grey:11 bokeh.palettes.inferno:11
+#: bokeh.palettes.linear_palette:6 bokeh.palettes.linear_palette:11
+#: bokeh.palettes.magma:11 bokeh.palettes.viridis:11 of
+msgid "a list of hex RGB color strings"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.cividis bokeh.palettes.gray
+#: bokeh.palettes.grey bokeh.palettes.inferno bokeh.palettes.linear_palette
+#: bokeh.palettes.magma bokeh.palettes.viridis of
+msgid "Return type"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.cividis bokeh.palettes.gray
+#: bokeh.palettes.grey bokeh.palettes.inferno bokeh.palettes.linear_palette
+#: bokeh.palettes.magma bokeh.palettes.viridis of
+msgid "raises"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.cividis:14 bokeh.palettes.gray:14
+#: bokeh.palettes.grey:14 bokeh.palettes.inferno:14 bokeh.palettes.magma:14
+#: bokeh.palettes.viridis:14 of
+msgid "``ValueError`` if n is greater than the base palette length of 256"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.cividis:16 bokeh.palettes.gray:16
+#: bokeh.palettes.grey:16 bokeh.palettes.inferno:16 bokeh.palettes.magma:16
+#: bokeh.palettes.viridis:16 of
+msgid "Examples:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.cividis:23 of
+msgid "The resulting palette looks like: :bokeh-palette:`cividis(6)`"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.gray:1 bokeh.palettes.grey:1 of
+msgid "Generate a palette of colors or from the Greys palette."
+msgstr ""
+
+#: ../../docstring bokeh.palettes.gray:3 bokeh.palettes.grey:3 of
+msgid ""
+"The full Greys palette that serves as input for deriving new palettes has"
+" 256 colors, and looks like:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.gray:6 bokeh.palettes.grey:6 of
+msgid ":bokeh-palette:`grey(256)`"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.gray:23 of
+msgid "The resulting palette looks like: :bokeh-palette:`grey(6)`"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.gray:26 of
+msgid "This function also has the alternate spelling ``grey``"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.grey:23 of
+msgid "The resulting palette looks like: :bokeh-palette:`gray(6)`"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.grey:26 of
+msgid "This function also has the alternate spelling ``gray``"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.inferno:1 of
+msgid "Generate a palette of colors or from the Inferno palette."
+msgstr ""
+
+#: ../../docstring bokeh.palettes.inferno:3 of
+msgid ""
+"The full Inferno palette that serves as input for deriving new palettes "
+"has 256 colors, and looks like:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.inferno:6 of
+msgid ":bokeh-palette:`inferno(256)`"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.inferno:23 of
+msgid "The resulting palette looks like: :bokeh-palette:`inferno(6)`"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.linear_palette:1 of
+msgid "Generate a new palette as a subset of a given palette."
+msgstr ""
+
+#: ../../docstring bokeh.palettes.linear_palette:3 of
+msgid ""
+"Given an input ``palette``, take ``n`` colors from it by dividing its "
+"length into ``n`` (approximately) evenly spaced indices."
+msgstr ""
+
+#: ../../docstring bokeh.palettes.linear_palette:8 of
+msgid "the size of the output palette to generate"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.linear_palette:14 of
+msgid "``ValueError`` if ``n > len(palette)``"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.magma:1 of
+msgid "Generate a palette of colors or from the Magma palette."
+msgstr ""
+
+#: ../../docstring bokeh.palettes.magma:3 of
+msgid ""
+"The full Magma palette that serves as input for deriving new palettes has"
+" 256 colors, and looks like:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.magma:6 of
+msgid ":bokeh-palette:`magma(256)`"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.magma:23 of
+msgid "The resulting palette looks like: :bokeh-palette:`magma(6)`"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.viridis:1 of
+msgid "Generate a palette of colors or from the Viridis palette."
+msgstr ""
+
+#: ../../docstring bokeh.palettes.viridis:3 of
+msgid ""
+"The full Viridis palette that serves as input for deriving new palettes "
+"has 256 colors, and looks like:"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.viridis:6 of
+msgid ":bokeh-palette:`viridis(256)`"
+msgstr ""
+
+#: ../../docstring bokeh.palettes.viridis:23 of
+msgid "The resulting palette looks like: :bokeh-palette:`viridis(6)`"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:216 of
+msgid "Licenses"
+msgstr ""
+
+#: ../../docstring bokeh.palettes:218 of
+msgid ""
+"The respective licenses for all the palettes included in Bokeh are "
+"viewable as a comment at the top of the :bokeh-tree:`bokeh/palettes.py` "
+"source file."
+msgstr ""
+

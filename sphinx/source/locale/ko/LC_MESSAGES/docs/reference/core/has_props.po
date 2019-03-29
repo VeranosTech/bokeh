@@ -1,0 +1,391 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/core/has_props.rst:4
+msgid "bokeh.core.has_props"
+msgstr ""
+
+#: bokeh.core.has_props:1 of
+msgid ""
+"Provide a base class for objects that can have declarative, typed, "
+"serializable properties."
+msgstr ""
+
+#: bokeh.core.has_props:5 of
+msgid ""
+"These classes form part of the very low-level machinery that implements "
+"the Bokeh model and property system. It is unlikely that any of these "
+"classes or their methods will be applicable to any standard usage or to "
+"anyone who is not directly developing on Bokeh's own infrastructure."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps:1 of
+msgid "Base class for all class types that have Bokeh properties."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.apply_theme:1 of
+msgid ""
+"Apply a set of theme values which will be used rather than defaults, but "
+"will not override application-set values."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.apply_theme:4 of
+msgid ""
+"The passed-in dictionary may be kept around as-is and shared with other "
+"instances to save memory (so neither the caller nor the |HasProps| "
+"instance should modify it)."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.apply_theme
+#: bokeh.core.has_props.HasProps.equals bokeh.core.has_props.HasProps.lookup
+#: bokeh.core.has_props.HasProps.properties
+#: bokeh.core.has_props.HasProps.properties_with_values
+#: bokeh.core.has_props.HasProps.query_properties_with_values
+#: bokeh.core.has_props.HasProps.set_from_json
+#: bokeh.core.has_props.HasProps.update_from_json
+#: bokeh.core.has_props.accumulate_dict_from_superclasses
+#: bokeh.core.has_props.accumulate_from_superclasses of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.apply_theme:8 of
+msgid "theme values to use in place of defaults"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.apply_theme
+#: bokeh.core.has_props.HasProps.dataspecs
+#: bokeh.core.has_props.HasProps.dataspecs_with_props
+#: bokeh.core.has_props.HasProps.equals bokeh.core.has_props.HasProps.lookup
+#: bokeh.core.has_props.HasProps.properties
+#: bokeh.core.has_props.HasProps.properties_containers
+#: bokeh.core.has_props.HasProps.properties_with_refs
+#: bokeh.core.has_props.HasProps.properties_with_values
+#: bokeh.core.has_props.HasProps.query_properties_with_values
+#: bokeh.core.has_props.HasProps.set_from_json
+#: bokeh.core.has_props.HasProps.themed_values
+#: bokeh.core.has_props.HasProps.unapply_theme
+#: bokeh.core.has_props.HasProps.update
+#: bokeh.core.has_props.HasProps.update_from_json of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.apply_theme:11
+#: bokeh.core.has_props.HasProps.set_from_json:20
+#: bokeh.core.has_props.HasProps.unapply_theme:3
+#: bokeh.core.has_props.HasProps.update:3
+#: bokeh.core.has_props.HasProps.update_from_json:19 of
+msgid "None"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.dataspecs:1 of
+msgid "Collect the names of all ``DataSpec`` properties on this class."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.dataspecs:3
+#: bokeh.core.has_props.HasProps.dataspecs_with_props:4
+#: bokeh.core.has_props.HasProps.properties_containers:3
+#: bokeh.core.has_props.HasProps.properties_with_refs:4
+#: bokeh.core.has_props.HasProps.properties_with_values:3 of
+msgid ""
+"This method *always* traverses the class hierarchy and includes "
+"properties defined on any parent classes."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.dataspecs:6 of
+msgid "names of ``DataSpec`` properties"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.dataspecs
+#: bokeh.core.has_props.HasProps.dataspecs_with_props
+#: bokeh.core.has_props.HasProps.lookup
+#: bokeh.core.has_props.HasProps.properties
+#: bokeh.core.has_props.HasProps.properties_containers
+#: bokeh.core.has_props.HasProps.properties_with_refs
+#: bokeh.core.has_props.HasProps.properties_with_values
+#: bokeh.core.has_props.HasProps.query_properties_with_values of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.dataspecs_with_props:1 of
+msgid ""
+"Collect a dict mapping the names of all ``DataSpec`` properties on this "
+"class to the associated properties."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.dataspecs_with_props:7 of
+msgid "mapping of names and ``DataSpec`` properties"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.equals:1 of
+msgid "Structural equality of models."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.equals:3 of
+msgid "the other instance to compare to"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.equals:6 of
+msgid "True, if properties are structurally equal, otherwise False"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.lookup:1 of
+msgid ""
+"Find the ``PropertyDescriptor`` for a Bokeh property on a class, given "
+"the property name."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.lookup:4 of
+msgid "name of the property to search for"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.lookup:7 of
+msgid "descriptor for property named ``name``"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.properties:1 of
+msgid "Collect the names of properties on this class."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.properties:3 of
+msgid ""
+"This method *optionally* traverses the class hierarchy and includes "
+"properties defined on any parent classes."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.properties:6 of
+msgid ""
+"Whether to include properties defined on parent classes in the results. "
+"(default: True)"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.properties:10 of
+msgid "property names"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.properties_containers:1 of
+msgid "Collect the names of all container properties on this class."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.properties_containers:6 of
+msgid "names of container properties"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.properties_with_refs:1 of
+msgid ""
+"Collect the names of all properties on this class that also have "
+"references."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.properties_with_refs:7 of
+msgid "names of properties that have references"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.properties_with_values:1 of
+msgid "Collect a dict mapping property names to their values."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.properties_with_values:6 of
+msgid ""
+"Non-serializable properties are skipped and property values are in "
+"\"serialized\" format which may be slightly different from the values you"
+" would normally read from the properties; the intent of this method is to"
+" return the information needed to losslessly reconstitute the object "
+"instance."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.properties_with_values:12 of
+msgid ""
+"Whether to include properties that haven't been explicitly set since the "
+"object was created. (default: True)"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.properties_with_values:16 of
+msgid "mapping from property names to their values"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.query_properties_with_values:1 of
+msgid "Query the properties values of |HasProps| instances with a predicate."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.query_properties_with_values:4 of
+msgid "A callable that accepts property descriptors and returns True or False"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.query_properties_with_values:7 of
+msgid ""
+"Whether to include properties that have not been explicitly set by a user"
+" (default: True)"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.query_properties_with_values:11 of
+msgid "mapping of property names and values for matching properties"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.set_from_json:1 of
+msgid "Set a property value on this object from JSON."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.set_from_json:3 of
+msgid "(str) : name of the attribute to set"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.set_from_json:4 of
+msgid "(JSON-value) : value to set to the attribute to"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.set_from_json:5
+#: bokeh.core.has_props.HasProps.update_from_json:4 of
+msgid ""
+"Mapping of model ids to models (default: None)  This is needed in cases "
+"where the attributes to update also have values that have references."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.set_from_json:5
+#: bokeh.core.has_props.HasProps.update_from_json:4 of
+msgid "Mapping of model ids to models (default: None)"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.set_from_json:7
+#: bokeh.core.has_props.HasProps.update_from_json:6 of
+msgid ""
+"This is needed in cases where the attributes to update also have values "
+"that have references."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.set_from_json:10
+#: bokeh.core.has_props.HasProps.update_from_json:9 of
+msgid ""
+"This is used to prevent \"boomerang\" updates to Bokeh apps.  In the "
+"context of a Bokeh server application, incoming updates to properties "
+"will be annotated with the session that is doing the updating. This value"
+" is propagated through any subsequent change notifications that the "
+"update triggers. The session can compare the event setter to itself, and "
+"suppress any updates that originate from itself."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.set_from_json:10
+#: bokeh.core.has_props.HasProps.update_from_json:9 of
+msgid "This is used to prevent \"boomerang\" updates to Bokeh apps."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.set_from_json:12
+#: bokeh.core.has_props.HasProps.update_from_json:11 of
+msgid ""
+"In the context of a Bokeh server application, incoming updates to "
+"properties will be annotated with the session that is doing the updating."
+" This value is propagated through any subsequent change notifications "
+"that the update triggers. The session can compare the event setter to "
+"itself, and suppress any updates that originate from itself."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.themed_values:1 of
+msgid "Get any theme-provided overrides."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.themed_values:3 of
+msgid ""
+"Results are returned as a dict from property name to value, or ``None`` "
+"if no theme overrides any values for this instance."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.themed_values:6 of
+msgid "dict or None"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.unapply_theme:1 of
+msgid "Remove any themed values and restore defaults."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.update:1 of
+msgid "Updates the object's properties from the given keyword arguments."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.update:6 of
+msgid "Examples"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.update:7 of
+msgid "The following are equivalent:"
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.update_from_json:1 of
+msgid "Updates the object's properties from a JSON attributes dictionary."
+msgstr ""
+
+#: bokeh.core.has_props.HasProps.update_from_json:3 of
+msgid "(JSON-dict) : attributes and values to update"
+msgstr ""
+
+#: bokeh.core.has_props.MetaHasProps:1 of
+msgid "Specialize the construction of |HasProps| classes."
+msgstr ""
+
+#: bokeh.core.has_props.MetaHasProps:3 of
+msgid ""
+"This class is a `metaclass`_ for |HasProps| that is responsible for "
+"creating and adding the |PropertyDescriptor| instances that delegate "
+"validation and serialization to |Property| attributes."
+msgstr ""
+
+#: bokeh.core.has_props.abstract:1 of
+msgid "A decorator to mark abstract base classes derived from |HasProps|."
+msgstr ""
+
+#: bokeh.core.has_props.accumulate_dict_from_superclasses:1 of
+msgid ""
+"Traverse the class hierarchy and accumulate the special dicts "
+"``MetaHasProps`` stores on classes:"
+msgstr ""
+
+#: bokeh.core.has_props.accumulate_dict_from_superclasses:4 of
+msgid ""
+"name of the special attribute to collect.  Typically meaningful values "
+"are: ``__dataspecs__``, ``__overridden_defaults__``"
+msgstr ""
+
+#: bokeh.core.has_props.accumulate_dict_from_superclasses:4
+#: bokeh.core.has_props.accumulate_from_superclasses:4 of
+msgid "name of the special attribute to collect."
+msgstr ""
+
+#: bokeh.core.has_props.accumulate_dict_from_superclasses:6 of
+msgid ""
+"Typically meaningful values are: ``__dataspecs__``, "
+"``__overridden_defaults__``"
+msgstr ""
+
+#: bokeh.core.has_props.accumulate_from_superclasses:1 of
+msgid ""
+"Traverse the class hierarchy and accumulate the special sets of names "
+"``MetaHasProps`` stores on classes:"
+msgstr ""
+
+#: bokeh.core.has_props.accumulate_from_superclasses:4 of
+msgid ""
+"name of the special attribute to collect.  Typically meaningful values "
+"are: ``__container_props__``, ``__properties__``, "
+"``__properties_with_refs__``"
+msgstr ""
+
+#: bokeh.core.has_props.accumulate_from_superclasses:6 of
+msgid ""
+"Typically meaningful values are: ``__container_props__``, "
+"``__properties__``, ``__properties_with_refs__``"
+msgstr ""
+

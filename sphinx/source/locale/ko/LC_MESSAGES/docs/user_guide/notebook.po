@@ -1,0 +1,321 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/notebook.rst:4
+msgid "Working in the Notebook"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:9
+msgid "Inline Plots"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:12
+msgid "Classic Notebook"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:14
+msgid ""
+"To display Bokeh plots inline in a classic Jupyter notebooks, use the "
+"|output_notebook| function from |bokeh.io| instead of (or in addition to)"
+" the |output_file| function we have seen previously. No other "
+"modifications are required. When |show| is called, the plot will be "
+"displayed inline in the next notebook output cell. You can see a Jupyter "
+"screenshot below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:24
+msgid ""
+"Multiple plots can be displayed in a single notebook output cell by "
+"calling |show| multiple times in the input cell. The plots will be "
+"displayed in order."
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:32
+msgid "JupyterLab"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:34
+msgid ""
+"In order to embed Bokeh plots inside of JupyterLab, you need to install "
+"the \"jupyterlab_bokeh\" JupyterLab extension. This can be done by "
+"running the command: ``jupyter labextension install jupyterlab_bokeh``."
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:43
+msgid "JupyterHub"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:45
+msgid ""
+"In order to embed Bokeh plots that don't use the Bokeh server, you can "
+"follow instructions contained in the JupyterLab section and stop there."
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:48
+msgid ""
+"If you want to use the Bokeh server, run the JupyterLab instructions then"
+" continue with the following instructions."
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:51
+msgid ""
+"If you want to run a Bokeh plot that utilizes the python-based Bokeh "
+"server, there are some additional steps you must follow to enable network"
+" connectivity between the client browser and the Bokeh server running in "
+"the JupyterLab cell.  This is because your browser needs to connect to "
+"the port the Bokeh server is listening on, but JupyterHub is acting as a "
+"reverse proxy between your browser and your JupyterLab container."
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:59
+msgid ""
+"First, you must install the \"nbserverproxy\" server extension (requires "
+"python3).  This can be done by running the command: ``pip install "
+"nbserverproxy && jupyter serverextension enable --py nbserverproxy``."
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:63
+msgid ""
+"Second, you must define a function to help create the URL that the "
+"browser uses to connect to the Bokeh server.  This will be passed into "
+"|show| in the final step.  A reference implementation is provided here, "
+"although you must either modify it or define the environment variable "
+"``EXTERNAL_URL`` to the URL of your JupyterHub installation.  By default,"
+" JupyterHub will set ``JUPYTERHUB_SERVICE_PREFIX``."
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:95
+msgid ""
+"Finally, you can pass the function you defined in step 2 to |show| as the"
+" notebook_url keyword argument, which Bokeh will call while setting up "
+"the server and creating the URL for loading the graph:"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:103
+msgid ""
+"At this point, the Bokeh graph should load and execute python callbacks "
+"defined in your JupyterLab environment."
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:107
+msgid "Zeppelin"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:109
+msgid ""
+"By defaults, |output_notebook| apply to only to Juypter. If you want to "
+"use Bokeh to display inline plots in Zeppelin notebooks, you need to "
+"install the separate `bkzep`_ package, and specify `notebook_type` to "
+"`zeppelin` in |output_notebook|:"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:121
+msgid "Trusting notebooks"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:123
+msgid ""
+"Depending on the version of the Notebook in use, it may be necessary to "
+"\"trust\" the notebook in order for Bokeh plots to re-render when the "
+"notebook is closed and subsequently re-opened. The \"Trust Notebook\" "
+"option is typically located under the \"File\" menu:"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:133
+msgid "Notebook Slides"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:135
+msgid ""
+"It is possible to use the Jupyter notebook in conjunction with "
+"`Reveal.js`_ to generate slideshows from notebook cell content. It is "
+"also possible to include standalone (i.e. non-server) Bokeh plots in such"
+" sideshows, however some steps must be followed for output to correctly "
+"display. Primarily:"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:140
+msgid "**The cell containing** ``output_notebook`` **must not be skipped**."
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:142
+msgid ""
+"The rendered cell output of the ``output_notebook`` call is responsible "
+"for making sure the BokehJS library is loaded. Without that, Bokeh plots "
+"cannot function. If this cell type is marked *\"skip\"* then BokehJS will"
+" not be loaded, and Bokeh plots will not display. An alternative, if you "
+"wish to hide this cell, is to mark it as the *\"notes\"* slide type."
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:151
+msgid "Notebook Handles"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:153
+msgid ""
+"It is possible to update a previously shown plot in-place. When the "
+"argument ``notebook_handle=True`` is passed to |show| then a handle "
+"object is returned. This handle object can be used with the "
+"|push_notebook| function to update the plot with any recent changes to "
+"plots properties, data source values, etc. This `notebook handle` "
+"functionality is only supported in classic Jupyter notebooks and is not "
+"implemented in JupyterLab or Zeppelin yet."
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:160
+msgid ""
+"The following screenshots walk through the basic usage of notebook "
+"handles."
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:162
+msgid "First, import standard functions, as well as |push_notebook|:"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:168
+msgid ""
+"Next, create some plots, and make sure to pass ``notebook_handle=True`` "
+"to |show|:"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:175
+msgid ""
+"Looking at the handle, see that it is associated with the output cell for"
+" ``In[2]`` that was just displayed:"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:182
+msgid ""
+"Now, update any properties of the plot, then call |push_notebook| with "
+"the handle:"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:189
+msgid ""
+"After doing so, note that the earlier output cell for ``In[2]`` has "
+"changed (*without* being re-executed)"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:197
+msgid ""
+"More detailed demonstrations of using notebook handles can be found in "
+"the following example notebooks:"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:200
+msgid ":bokeh-tree:`examples/howto/notebook_comms/Basic Usage.ipynb`"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:201
+msgid ":bokeh-tree:`examples/howto/notebook_comms/Jupyter Interactors.ipynb`"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:206
+msgid "Jupyter Interactors"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:208
+msgid ""
+"It is possible to drive updates to Bokeh plots using Jupyter notebook "
+"widgets, known as `interactors`_. The key doing this is the "
+"|push_notebook| function described above. Typically it is called in the "
+"update callback for the interactors, to update the plot from widget "
+"values. A screenshot of the :bokeh-"
+"tree:`examples/howto/notebook_comms/Jupyter Interactors.ipynb` example "
+"notebook is shown below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:236
+msgid "More Example Notebooks"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:238
+msgid ""
+"Many more examples using Jupyter Notebook can be found in the `bokeh-"
+"notebook`_ repository. First clone the repo locally:"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:241
+msgid "git clone https://github.com/bokeh/bokeh-notebooks.git"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:243
+msgid ""
+"Then launch Jupyter Notebook in your web browser. Alternatively, live "
+"notebooks that can be run immediately online are hosted by `Binder`_."
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:246
+msgid ""
+"Additionally, there are some notebooks under `examples`_ in the main "
+"`Bokeh`_ repo:"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:248
+msgid "`categorical data`_"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:249
+msgid "`hover callback`_"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:250
+msgid "`linked panning`_"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:251
+msgid "`range update callback`_"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:252
+msgid "`embed server in notebook`_"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:253
+msgid "`US marriages and divorces interactive`_"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:254
+msgid "`color scatterplot`_"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:255
+msgid "`glyphs`_"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:257
+msgid "Notebook comms examples:"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:259
+msgid "`basic usage`_"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:260
+msgid "`continuous updating`_"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:261
+msgid "`Jupyter interactors`_"
+msgstr ""
+
+#: ../../source/docs/user_guide/notebook.rst:262
+msgid "`Numba image example`_"
+msgstr ""
+

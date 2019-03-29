@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/interaction.rst:4
+msgid "Adding Interactions"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction.rst:15
+msgid ":ref:`userguide_interaction_linking`"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction.rst:13
+msgid ""
+"Bokeh makes it simple to add certain kinds of linked interactions between"
+" plots, such as linked ranges when panning and zooming, or linked "
+"highlighting when making selections."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction.rst:19
+msgid ":ref:`userguide_interaction_legends`"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction.rst:18
+msgid ""
+"Bokeh ``Legends`` can be configure to allow for easily hiding or muting "
+"corresponding glyphs."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction.rst:24
+msgid ":ref:`userguide_interaction_widgets`"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction.rst:22
+msgid ""
+"Bokeh comes with a rich set of widgets that can be used with either "
+"client-side JavaScript callbacks, or with real python code in a Bokeh "
+"server application."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction.rst:27
+msgid ":ref:`userguide_interaction_jscallbacks`"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction.rst:27
+msgid ""
+"See how to attach ``CustomJS`` callbacks to various widgets and events in"
+" Bokeh documents."
+msgstr ""
+

@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/graph.rst:4
+msgid "Visualizing Network Graphs"
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:6
+msgid ""
+"Bokeh has added native support for creating network graph visualizations "
+"with configurable interactions between edges and nodes."
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:10
+msgid "Edge and Node Renderers"
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:12
+msgid ""
+"The key feature of the ``GraphRenderer`` is that it maintains separate "
+"sub-GlyphRenderers for the graph nodes and the graph edges. This allows "
+"for customizing the nodes by modifying the GraphRenderer's "
+"``node_renderer`` property. It's possible to replace the default Circle "
+"node glyph with any XYGlyph instance, for example a Rect or Oval glyph. "
+"Similarly, the style properties of the edges can modified through the "
+"``edge_renderer`` property. The edge glyph is currently limited to a "
+"MultiLine glyph."
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:20
+msgid ""
+"There are a couple requirements for the data sources belonging to these "
+"sub-renderers:"
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:23
+msgid ""
+"The ColumnDataSource associated with the node sub-renderer must have a "
+"column named ``\"index\"`` that contains the unique indices of the nodes."
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:25
+msgid ""
+"The ColumnDataSource associated with the edge sub-renderer has two "
+"required columns: ``\"start\"`` and ``\"end\"``. These columns contain "
+"the node indices of for the start and end of the edges."
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:29
+msgid ""
+"It's possible to add extra meta-data to these data sources to in order to"
+" add vectorized glyph styling or make data available for callbacks or "
+"hover tooltips."
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:33
+msgid "Here's a code snippet that:"
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:35
+msgid "replaces the node glyph with an Oval"
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:36
+msgid "sets the ``height`` and ``width`` attributes of the Oval as scalar values"
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:37
+msgid ""
+"sets the ``fill_color`` attribute of the Oval as a vectorized field and "
+"adds the values to the node data source."
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:65
+msgid ""
+"No graph will be rendered by running the above code snippet because we "
+"haven't specified how to arrange the graph in 2D space. You can learn how"
+" to do that in the following section."
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:70
+msgid "Layout Providers"
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:72
+msgid ""
+"Bokeh uses a separate ``LayoutProvider`` model in order to supply the "
+"coordinates of a graph in Cartesian space. Currently the only built-in "
+"provider is the :class:`~bokeh.models.graphs.StaticLayoutProvider` model,"
+" which contains a dictionary of (x,y) coordinates for the nodes."
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:77
+msgid "This example adds a provider to the above code snippet:"
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:83
+msgid "Explicit Paths"
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:85
+msgid ""
+"By default the :class:`~bokeh.models.graphs.StaticLayoutProvider` will "
+"draw straight-line paths between the supplied node positions. In order to"
+" supply explicit edge paths you may also supply lists of paths to the "
+"``edge_renderer`` :class:`bokeh.models.sources.ColumnDataSource`. The "
+":class:`~bokeh.models.graphs.StaticLayoutProvider` will look for these "
+"paths on the ``\"xs\"`` and ``\"ys\"`` columns of the data source. Note "
+"that these paths should be in the same order as the ``\"start\"`` and "
+"``\"end\"`` points. Also note that there is no validation that they match"
+" up with the node positions so be extra careful when setting explicit "
+"paths."
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:97
+msgid ""
+"This example extends the example from above to draw quadratic bezier "
+"paths between the nodes:"
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:104
+msgid "Networkx Integration"
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:106
+msgid ""
+"Bokeh supports quickly plotting a network graph with its networkx "
+"integration. The ``bokeh.models.graphs.from_networkx`` convenience method"
+" accepts a ``networkx.Graph`` object and a networkx layout method in "
+"order to return a configured GraphRenderer instance."
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:111
+msgid ""
+"Here is an example of using the ``networkx.spring_layout`` method to "
+"layout networkx's built-in \"Zachary's Karate Club graph\" dataset:"
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:118
+msgid "Interaction Policies"
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:120
+msgid ""
+"It's possible to configure the selection or inspection behavior of graphs"
+" by setting the GraphRenderer's ``selection_policy`` and "
+"``inspection_policy`` attributes. These policy attributes accept a "
+"special ``GraphHitTestPolicy`` model instance."
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:125
+msgid ""
+"For example, setting ``selection_policy=NodesAndLinkedEdges()`` will "
+"cause a selected node to also select the associated edges. Similarly, "
+"setting ``inspection_policy=EdgesAndLinkedNodes()`` will cause the start "
+"and end nodes of an edge to also be inspected upon hovering an edge with "
+"the HoverTool."
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:130
+msgid ""
+"Users may want to customize the ``selection_glyph``, "
+"``nonselection_glyph``, and/or ``hover_glyph`` attributes of the edge and"
+" node sub-renderers in order to add dynamic visual elements to their "
+"graph interactions."
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:134
+msgid "Here's a graph example with added node and edge interactions:"
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:140
+msgid "Node and Edge Attributes"
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:142
+msgid ""
+"In ``from_networkx``, NetworkX's node/edge attributes are converted for "
+"GraphRenderer's ``node_renderer``/``edge_renderer``."
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:145
+msgid ""
+"For example, \"Zachary's Karate Club graph\" dataset has a node attribute"
+" named \"club\". It's possible to hover these information using the node "
+"attributes converted in ``from_networkx``. Similarly, node/edge "
+"attributes can also be used for color information."
+msgstr ""
+
+#: ../../source/docs/user_guide/graph.rst:150
+msgid ""
+"Here’s a graph example that hovers node attributes and changes colors "
+"with edge attributes:"
+msgstr ""
+

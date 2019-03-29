@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/command/subcommands/info.rst:4
+msgid "info"
+msgstr ""
+
+#: bokeh.command.subcommands.info:1 of
+msgid ""
+"To display information about Bokeh and Bokeh server configuration, type "
+"``bokeh info`` on the command line."
+msgstr ""
+
+#: bokeh.command.subcommands.info:8 of
+msgid ""
+"This will print general information to standard output, such as Python "
+"and Bokeh versions:"
+msgstr ""
+
+#: bokeh.command.subcommands.info:19 of
+msgid ""
+"Sometimes it can be useful to get just paths to the BokehJS static files "
+"in order to configure other servers or processes. To do this, use the "
+"``--static`` option"
+msgstr ""
+
+#: bokeh.command.subcommands.info:26 of
+msgid "This will produce output like what is shown below"
+msgstr ""
+
+#: bokeh.command.subcommands.info.Info:1 of
+msgid ""
+"Subcommand to print information about Bokeh and Bokeh server "
+"configuration."
+msgstr ""
+
+#: bokeh.command.subcommands.info.Info.name:1 of
+msgid "name for this subcommand"
+msgstr ""
+

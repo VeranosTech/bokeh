@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/application/handlers/function.rst:4
+msgid "bokeh.application.handlers.function"
+msgstr ""
+
+#: bokeh.application.handlers.function:1 of
+msgid ""
+"Provide a Bokeh Application Handler to build up documents by running a "
+"specified Python function."
+msgstr ""
+
+#: bokeh.application.handlers.function:4 of
+msgid ""
+"This Handler is not used by the Bokeh server command line tool, but is "
+"often useful if users wish to embed the Bokeh server programmatically:"
+msgstr ""
+
+#: bokeh.application.handlers.function:21 of
+msgid ""
+"For complete examples of this technique, see :bokeh-"
+"tree:`examples/howto/server_embed`"
+msgstr ""
+
+#: bokeh.application.handlers.function.FunctionHandler:1 of
+msgid ""
+"A Handler that accepts a plain python function to use for modifying Bokeh"
+" Documents."
+msgstr ""
+
+#: bokeh.application.handlers.function.FunctionHandler:4 of
+msgid ""
+"For example, the following code configures a handler with a function that"
+" adds an empty plot to a Document:"
+msgstr ""
+
+#: bokeh.application.handlers.function.FunctionHandler:16 of
+msgid ""
+"This handler could be configured on an Application, and the Application "
+"would run this function every time a new session is created."
+msgstr ""
+
+#: bokeh.application.handlers.function.FunctionHandler.__init__ of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.application.handlers.function.FunctionHandler.__init__:1 of
+msgid ""
+"a function to modify and return a Bokeh Document. The function should "
+"have the form:  .. code-block:: python      def func(doc):         # "
+"modify doc         return doc  and it  should return the passed-in "
+"document after making any modifications in-place."
+msgstr ""
+
+#: bokeh.application.handlers.function.FunctionHandler.__init__:1 of
+msgid ""
+"a function to modify and return a Bokeh Document. The function should "
+"have the form:"
+msgstr ""
+
+#: bokeh.application.handlers.function.FunctionHandler.__init__:10 of
+msgid ""
+"and it  should return the passed-in document after making any "
+"modifications in-place."
+msgstr ""
+
+#: bokeh.application.handlers.function.FunctionHandler.modify_document:1 of
+msgid "Execute the configured ``func`` to modify the document."
+msgstr ""
+
+#: bokeh.application.handlers.function.FunctionHandler.modify_document:3 of
+msgid ""
+"After this method is first executed, ``safe_to_fork`` will return "
+"``False``."
+msgstr ""
+
+#: bokeh.application.handlers.function.FunctionHandler.safe_to_fork:1 of
+msgid "Whether it is still safe for the Bokeh server to fork new workers."
+msgstr ""
+
+#: bokeh.application.handlers.function.FunctionHandler.safe_to_fork:3 of
+msgid "``False`` if ``modify_doc`` has already been called."
+msgstr ""
+

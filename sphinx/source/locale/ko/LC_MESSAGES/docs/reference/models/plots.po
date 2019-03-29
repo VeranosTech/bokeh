@@ -1,0 +1,657 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/plots.rst:4
+msgid "bokeh.models.plots"
+msgstr ""
+
+#: bokeh.models.plots:1 of
+msgid "Models for representing top-level plot objects."
+msgstr ""
+
+#: bokeh.models.plots.Plot:1 of
+msgid "Bases: :class:`bokeh.models.layouts.LayoutDOM`"
+msgstr ""
+
+#: bokeh.models.plots.Plot:1 of
+msgid "Model representing a plot, containing glyphs, guides, annotations."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.renderers.Renderer`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A list of renderers to occupy the area above of the plot."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Float`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A value to be given for increased aspect ratio control. This value is "
+"added multiplicatively to the calculated value required for "
+"``match_aspect``. ``aspect_scale`` is defined as the ratio of width over "
+"height of the figure."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"For example, a plot with ``aspect_scale`` value of 2 will result in a "
+"square in *data units* to be drawn on the screen as a rectangle with a "
+"pixel width twice as long as its pixel height."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "This setting only takes effect if ``match_aspect`` is set to ``True``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.NumberSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill alpha for the plot background style."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.ColorSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill color for the plot background style."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A list of renderers to occupy the area below of the plot."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill alpha for the plot border style."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill color for the plot border style."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A list of renderers to occupy the center area (frame) of the plot."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Dict` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.ranges.Range`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Additional named ranges to make available for mapping x-coordinates."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "This is useful for adding additional axes."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Additional named ranges to make available for mapping y-coordinates."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The height of a plot frame or the inner height of a plot, excluding any "
+"axes, titles, border padding, etc."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The width of a plot frame or the inner width of a plot, excluding any "
+"axes, titles, border padding, etc."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Bool`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Whether to use HiDPI mode when available."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This is the exact height of the plotting canvas, i.e. the height of the "
+"actual plot, without toolbars etc. Note this is computed in a web "
+"browser, so this property will work only in backends capable of "
+"bidirectional communication (server, notebook)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "This is an experimental feature and the API may change in near future."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This is the exact width of the plotting canvas, i.e. the width of the "
+"actual plot, without toolbars etc. Note this is computed in a web "
+"browser, so this property will work only in backends capable of "
+"bidirectional communication (server, notebook)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A list of renderers to occupy the area to the left of the plot."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Decimation factor to use when applying level-of-detail decimation."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Interval (in ms) during which an interactive tool event will enable "
+"level-of-detail downsampling."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A number of data points, above which level-of-detail downsampling may be "
+"performed by glyph renderers. Set to ``None`` to disable any level-of-"
+"detail downsampling."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Timeout (in ms) for checking whether interactive tool events are still "
+"occurring. Once level-of-detail mode is enabled, a check is made every "
+"``lod_timeout`` ms. If no interactive tool events have happened, level-"
+"of-detail mode is disabled."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Specify the aspect ratio behavior of the plot. Aspect ratio is defined as"
+" the ratio of width over height. This property controls whether Bokeh "
+"should attempt the match the (width/height) of *data space* to the "
+"(width/height) in pixels of *screen space*."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Default is ``False`` which indicates that the *data* aspect ratio and the"
+" *screen* aspect ratio vary independently. ``True`` indicates that the "
+"plot aspect ratio of the axes will match the aspect ratio of the pixel "
+"extent the axes. The end result is that a 1x1 area in data space is a "
+"square in pixels, and conversely that a 1x1 pixel is a square in data "
+"units."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This setting only takes effect when there are two dataranges. This "
+"setting only sets the initial plot draw and subsequent resets. It is "
+"possible for tools (single axis zoom, unconstrained box zoom) to change "
+"the aspect ratio."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This setting is incompatible with linking dataranges across multiple "
+"plots. Doing so may result in undefined behaviour."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A convenience property to set all all the ``min_border_X`` properties to "
+"the same value. If an individual border property is explicitly set, it "
+"will override ``min_border``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Minimum size in pixels of the padding region below the bottom of the "
+"central plot region."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This is a *minimum*. The padding region may expand as needed to "
+"accommodate titles or axes, etc."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Minimum size in pixels of the padding region to the left of the central "
+"plot region."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Minimum size in pixels of the padding region to the right of the central "
+"plot region."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Minimum size in pixels of the padding region above the top of the central"
+" plot region."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This is the exact height of the layout, i.e. the height of the actual "
+"plot, with toolbars etc. Note this is computed in a web browser, so this "
+"property will work only in backends capable of bidirectional "
+"communication (server, notebook)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This is the exact width of the layout, i.e. the height of the actual "
+"plot, with toolbars etc. Note this is computed in a web browser, so this "
+"property will work only in backends capable of bidirectional "
+"communication (server, notebook)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha for the plot border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LineCap`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap for the plot border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color for the plot border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.DashPattern`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash for the plot border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset for the plot border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LineJoin`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join for the plot border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width for the plot border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.OutputBackend`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Specify the output backend for the plot area. Default is HTML5 Canvas."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"When set to ``webgl``, glyphs without a WebGL rendering implementation "
+"will fall back to rendering onto 2D canvas."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The outer height of a plot, including any axes, titles, border padding, "
+"etc."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "This corresponds directly to the height of the HTML canvas."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The outer width of a plot, including any axes, titles, border padding, "
+"etc."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "This corresponds directly to the width of the HTML canvas."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A list of all renderers for this plot, including guides and annotations "
+"in addition to glyphs and markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This property can be manipulated by hand, but the ``add_glyph`` and "
+"``add_layout`` methods are recommended to help make sure all necessary "
+"setup is performed."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A list of renderers to occupy the area to the right of the plot."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.annotations.Title`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A title for the plot. Can be a text string or a Title annotation."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.Location`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Where the title will be located. Titles on the left or right side will be"
+" rotated."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.tools.Toolbar`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The toolbar associated with this plot which holds all the tools. It is "
+"automatically created with the plot if necessary."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Where the toolbar will be located. If set to None, no toolbar will be "
+"attached to the plot."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Stick the toolbar to the edge of the plot. Default: True. If False, the "
+"toolbar will be outside of the axes, titles etc."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.ranges.Range`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The (default) data range of the horizontal dimension of the plot."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.scales.Scale`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"What kind of scale to use to convert x-coordinates in data space into "
+"x-coordinates in screen space."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The (default) data range of the vertical dimension of the plot."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"What kind of scale to use to convert y-coordinates in data space into "
+"y-coordinates in screen space."
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_glyph:1 of
+msgid "Adds a glyph to the plot with associated data sources and ranges."
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_glyph:3 of
+msgid ""
+"This function will take care of creating and configuring a Glyph object, "
+"and then add it to the plot's list of renderers."
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_glyph bokeh.models.plots.Plot.add_layout
+#: bokeh.models.plots.Plot.add_tile bokeh.models.plots.Plot.add_tools
+#: bokeh.models.plots.Plot.column bokeh.models.plots.Plot.row
+#: bokeh.models.plots.Plot.select of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_glyph:6 of
+msgid "a data source for the glyphs to all use"
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_glyph:8 of
+msgid "the glyph to add to the Plot"
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_glyph bokeh.models.plots.Plot.add_tile
+#: bokeh.models.plots.Plot.select of
+msgid "Keyword Arguments"
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_glyph bokeh.models.plots.Plot.add_layout
+#: bokeh.models.plots.Plot.add_tile bokeh.models.plots.Plot.add_tools
+#: bokeh.models.plots.Plot.column bokeh.models.plots.Plot.row
+#: bokeh.models.plots.Plot.select of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_glyph:14 of
+msgid "GlyphRenderer"
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_layout:1 of
+msgid "Adds an object to the plot in a specified place."
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_layout:3 of
+msgid "the object to add to the Plot"
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_layout:5 of
+msgid ""
+"where to add the object (default: 'center') Valid places are: 'left', "
+"'right', 'above', 'below', 'center'."
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_layout:9 bokeh.models.plots.Plot.add_tools:6 of
+msgid "None"
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_tile:1 of
+msgid "Adds new ``TileRenderer`` into ``Plot.renderers``"
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_tile:3 of
+msgid "a tile source instance which contain tileset configuration"
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_tile:8 of
+msgid "TileRenderer"
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_tile of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_tools:1 of
+msgid "Adds tools to the plot."
+msgstr ""
+
+#: bokeh.models.plots.Plot.add_tools:3 of
+msgid "the tools to add to the Plot"
+msgstr ""
+
+#: bokeh.models.plots.Plot.column:1 of
+msgid "Return whether this plot is in a given column of a GridPlot."
+msgstr ""
+
+#: bokeh.models.plots.Plot.column:3 of
+msgid "index of the column to test"
+msgstr ""
+
+#: bokeh.models.plots.Plot.column:5 bokeh.models.plots.Plot.row:5 of
+msgid "the GridPlot to check"
+msgstr ""
+
+#: bokeh.models.plots.Plot.column:8 bokeh.models.plots.Plot.row:8 of
+msgid "bool"
+msgstr ""
+
+#: bokeh.models.plots.Plot.row:1 of
+msgid "Return whether this plot is in a given row of a GridPlot."
+msgstr ""
+
+#: bokeh.models.plots.Plot.row:3 of
+msgid "index of the row to test"
+msgstr ""
+
+#: bokeh.models.plots.Plot.select:1 of
+msgid ""
+"Query this object and all of its references for objects that match the "
+"given selector."
+msgstr ""
+
+#: bokeh.models.plots.Plot.select:4 of
+msgid ""
+"There are a few different ways to call the ``select`` method. The most "
+"general is to supply a JSON-like query dictionary as the single argument "
+"or as keyword arguments:"
+msgstr ""
+
+#: bokeh.models.plots.Plot.select:8 of
+msgid "some sample text"
+msgstr ""
+
+#: bokeh.models.plots.Plot.select:11 of
+msgid "query dict key/values as keyword arguments"
+msgstr ""
+
+#: bokeh.models.plots.Plot.select:13 of
+msgid ""
+"Additionally, for compatibility with ``Model.select``, a selector dict "
+"may be passed as ``selector`` keyword argument, in which case the value "
+"of ``kwargs['selector']`` is used for th query."
+msgstr ""
+
+#: bokeh.models.plots.Plot.select:17 of
+msgid ""
+"For convenience, queries on just names can be made by supplying the "
+"``name`` string as the single parameter:"
+msgstr ""
+
+#: bokeh.models.plots.Plot.select:20 of
+msgid "the name to query on"
+msgstr ""
+
+#: bokeh.models.plots.Plot.select:23 of
+msgid ""
+"Also queries on just type can be made simply by supplying the ``Model`` "
+"subclass as the single parameter:"
+msgstr ""
+
+#: bokeh.models.plots.Plot.select:26 of
+msgid "the type to query on"
+msgstr ""
+
+#: bokeh.models.plots.Plot.select:29 of
+msgid "seq[Model]"
+msgstr ""
+
+#: bokeh.models.plots.Plot.select:32 of
+msgid "Examples"
+msgstr ""
+
+#: bokeh.models.plots.Plot.axis:1 of
+msgid "Splattable list of :class:`~bokeh.models.axes.Axis` objects."
+msgstr ""
+
+#: bokeh.models.plots.Plot.grid:1 of
+msgid "Splattable list of :class:`~bokeh.models.grids.Grid` objects."
+msgstr ""
+
+#: bokeh.models.plots.Plot.hover:1 of
+msgid "Splattable list of :class:`~bokeh.models.tools.HoverTool` objects."
+msgstr ""
+
+#: bokeh.models.plots.Plot.legend:1 of
+msgid "Splattable list of :class:`~bokeh.models.annotations.Legend` objects."
+msgstr ""
+
+#: bokeh.models.plots.Plot.xaxis:1 of
+msgid ""
+"Splattable list of :class:`~bokeh.models.axes.Axis` objects for the x "
+"dimension."
+msgstr ""
+
+#: bokeh.models.plots.Plot.xgrid:1 of
+msgid ""
+"Splattable list of :class:`~bokeh.models.grids.Grid` objects for the x "
+"dimension."
+msgstr ""
+
+#: bokeh.models.plots.Plot.yaxis:1 of
+msgid ""
+"Splattable list of :class:`~bokeh.models.axes.Axis` objects for the y "
+"dimension."
+msgstr ""
+
+#: bokeh.models.plots.Plot.ygrid:1 of
+msgid ""
+"Splattable list of :class:`~bokeh.models.grids.Grid` objects for the y "
+"dimension."
+msgstr ""
+

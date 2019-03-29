@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/filters.rst:4
+msgid "bokeh.models.filters"
+msgstr ""
+
+#: bokeh.models.filters.BooleanFilter:1 bokeh.models.filters.CustomJSFilter:1
+#: bokeh.models.filters.GroupFilter:1 bokeh.models.filters.IndexFilter:1 of
+msgid "Bases: :class:`bokeh.models.filters.Filter`"
+msgstr ""
+
+#: bokeh.models.filters.BooleanFilter:1 of
+msgid ""
+"A ``BooleanFilter`` filters data by returning the subset of data "
+"corresponding to indices where the values of the booleans array is True."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.Bool`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A list of booleans indicating which rows of data to select."
+msgstr ""
+
+#: bokeh.models.filters.CustomJSFilter:1 of
+msgid "Filter data sources with a custom defined JavaScript function."
+msgstr ""
+
+#: bokeh.models.filters.CustomJSFilter:4 of
+msgid ""
+"The explicit purpose of this Bokeh Model is to embed *raw JavaScript "
+"code* for a browser to execute. If any part of the code is derived from "
+"untrusted user inputs, then you must take appropriate care to sanitize "
+"the user input prior to passing to Bokeh."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Dict` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.AnyRef`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A mapping of names to Python objects. In particular those can be bokeh's "
+"models. These objects are made available to the callback's code snippet "
+"as the values of named parameters to the callback."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A snippet of JavaScript code to filter data contained in a columnar data "
+"source. The code is made into the body of a function, and all of of the "
+"named objects in ``args`` are available as parameters that the code can "
+"use. The variable ``source`` will contain the data source that is "
+"associated with the ``CDSView`` this filter is added to."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The code should either return the indices of the subset or an array of "
+"booleans to use to subset data source rows."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Example:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Use ``CustomJS.from_coffeescript()`` for CoffeeScript source code."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Bool`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Enables or disables automatic insertion of ``\"use strict\";`` into "
+"``code``."
+msgstr ""
+
+#: bokeh.models.filters.CustomJSFilter.from_coffeescript:1 of
+msgid ""
+"Create a ``CustomJSFilter`` instance from CoffeeScript snippets. The "
+"function bodies are translated to JavaScript functions using node and "
+"therefore require return statements."
+msgstr ""
+
+#: bokeh.models.filters.CustomJSFilter.from_coffeescript:5 of
+msgid ""
+"The ``code`` function namespace will contain the variable ``source`` at "
+"render time. This will be the data source associated with the ``CDSView``"
+" that this filter is added to."
+msgstr ""
+
+#: bokeh.models.filters.CustomJSFilter.from_py_func:1 of
+msgid ""
+"Create a ``CustomJSFilter`` instance from a Python function. The function"
+" is translated to JavaScript using PScript."
+msgstr ""
+
+#: bokeh.models.filters.CustomJSFilter.from_py_func:4 of
+msgid ""
+"The ``func`` function namespace will contain the variable ``source`` at "
+"render time. This will be the data source associated with the ``CDSView``"
+" that this filter is added to."
+msgstr ""
+
+#: bokeh.models.filters.Filter:1 of
+msgid "Bases: :class:`bokeh.model.Model`"
+msgstr ""
+
+#: bokeh.models.filters.Filter:1 of
+msgid ""
+"A Filter model represents a filtering operation that returns a row-wise "
+"subset of data when applied to a ``ColumnDataSource``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Seq` ( :class:`~bokeh.core.properties.Int`"
+"  ), :class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.Bool`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A list that can be either integer indices or booleans representing a row-"
+"wise subset of data."
+msgstr ""
+
+#: bokeh.models.filters.GroupFilter:1 of
+msgid ""
+"A ``GroupFilter`` represents the rows of a ``ColumnDataSource`` where the"
+" values of the categorical column column_name match the group variable."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The name of the column to perform the group filtering operation on."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The value of the column indicating the rows of data to keep."
+msgstr ""
+
+#: bokeh.models.filters.IndexFilter:1 of
+msgid ""
+"An ``IndexFilter`` filters data by returning the subset of data at a "
+"given set of indices."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.Int`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A list of integer indices representing the subset of data to select."
+msgstr ""
+

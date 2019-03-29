@@ -1,0 +1,524 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/ranges.rst:4
+msgid "bokeh.models.ranges"
+msgstr ""
+
+#: bokeh.models.ranges:1 of
+msgid ""
+"Models for describing different kinds of ranges of values in different "
+"kinds of spaces (e.g., continuous or categorical) and with options for "
+"\"auto sizing\"."
+msgstr ""
+
+#: bokeh.models.ranges.DataRange:1 bokeh.models.ranges.FactorRange:1
+#: bokeh.models.ranges.Range1d:1 of
+msgid "Bases: :class:`bokeh.models.ranges.Range`"
+msgstr ""
+
+#: bokeh.models.ranges.DataRange:1 of
+msgid "A base class for all data range types."
+msgstr ""
+
+#: bokeh.models.ranges.DataRange:5 bokeh.models.ranges.Range:5 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.String`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A list of names to query for. If set, only renderers that have a matching"
+" value for their ``name`` attribute will be used for autoranging."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.renderers.Renderer`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"An explicit list of renderers to autorange against. If unset, defaults to"
+" all renderers on a plot."
+msgstr ""
+
+#: bokeh.models.ranges.DataRange1d:1 of
+msgid "Bases: :class:`bokeh.models.ranges.DataRange`"
+msgstr ""
+
+#: bokeh.models.ranges.DataRange1d:1 of
+msgid "An auto-fitting range in a continuous scalar dimension."
+msgstr ""
+
+#: bokeh.models.ranges.DataRange1d:3 of
+msgid ""
+"By default the ``start`` and ``end`` of the range automatically assume "
+"min and max values of the data for associated renderers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.MinMaxBounds`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The bounds that the range is allowed to go to. Typically used to prevent "
+"the user from panning/zooming/etc away from the data."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"By default, the bounds will be None, allowing your plot to pan/zoom as "
+"far as you want. If bounds are 'auto' they will be computed to be the "
+"same as the start and end of the ``DataRange1d``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Bounds are provided as a tuple of ``(min, max)`` so regardless of whether"
+" your range is increasing or decreasing, the first item should be the "
+"minimum value of the range and the second item should be the maximum. "
+"Setting ``min > max`` will result in a ``ValueError``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"If you only want to constrain one end of the plot, you can set ``min`` or"
+" ``max`` to ``None`` e.g. ``DataRange1d(bounds=(None, 12))``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Float` , "
+":class:`~bokeh.core.properties.TimeDelta`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A default width for the interval, in case ``start`` is equal to ``end`` "
+"(if used with a log axis, default_span is in powers of 10)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Float` , "
+":class:`~bokeh.core.properties.Datetime` , "
+":class:`~bokeh.core.properties.TimeDelta`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"An explicitly supplied range end. If provided, will override "
+"automatically computed end value."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Bool`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether the range should be \"flipped\" from its normal direction when "
+"auto-ranging."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.StartEnd`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Configure the data to follow one or the other data extreme, with a "
+"maximum range size of ``follow_interval``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"If set to ``\"start\"`` then the range will adjust so that ``start`` "
+"always corresponds to the minimum data value (or maximum, if ``flipped`` "
+"is ``True``)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"If set to ``\"end\"`` then the range will adjust so that ``end`` always "
+"corresponds to the maximum data value (or minimum, if ``flipped`` is "
+"``True``)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"If set to ``None`` (default), then auto-ranging does not follow, and the "
+"range will encompass both the minimum and maximum data values."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"``follow`` cannot be used with bounds, and if set, bounds will be set to "
+"``None``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"If ``follow`` is set to ``\"start\"`` or ``\"end\"`` then the range will "
+"always be constrained to that::"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "is maintained."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The level that the range is allowed to zoom out, expressed as the maximum"
+" visible interval. Note that ``bounds`` can impose an implicit constraint"
+" on the maximum interval as well."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The level that the range is allowed to zoom in, expressed as the minimum "
+"visible interval. If set to ``None`` (default), the minimum interval is "
+"not bound."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "How much padding to add around the computed data bounds."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"When ``range_padding_units`` is set to ``\"percent\"``, the span of the "
+"range span is expanded to make the range ``range_padding`` percent "
+"larger."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"When ``range_padding_units`` is set to ``\"absolute\"``, the start and "
+"end of the range span are extended by the amount ``range_padding``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.PaddingUnits`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether the ``range_padding`` should be interpreted as a percentage, or "
+"as an absolute quantity. (default: ``\"percent\"``)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"An explicitly supplied range start. If provided, will override "
+"automatically computed start value."
+msgstr ""
+
+#: bokeh.models.ranges.FactorRange:1 of
+msgid "A Range of values for a categorical dimension."
+msgstr ""
+
+#: bokeh.models.ranges.FactorRange:3 of
+msgid ""
+"In addition to supplying ``factors`` as a keyword argument to the "
+"``FactorRange`` initializer, you may also instantiate with a sequence of "
+"positional arguments:"
+msgstr ""
+
+#: bokeh.models.ranges.FactorRange:11 of
+msgid "Users will normally supply categorical values directly:"
+msgstr ""
+
+#: bokeh.models.ranges.FactorRange:17 of
+msgid ""
+"BokehJS will create a mapping from ``\"foo\"`` and ``\"bar\"`` to a "
+"numerical coordinate system called *synthetic coordinates*. In the "
+"simplest cases, factors are separated by a distance of 1.0 in synthetic "
+"coordinates, however the exact mapping from factors to synthetic "
+"coordinates is affected by he padding properties as well as whether the "
+"number of levels the factors have."
+msgstr ""
+
+#: bokeh.models.ranges.FactorRange:24 of
+msgid ""
+"Users typically do not need to worry about the details of this mapping, "
+"however it can be useful to fine tune positions by adding offsets. When "
+"supplying factors as coordinates or values, it is possible to add an "
+"offset in the synthetic coordinate space by adding a final number value "
+"to a factor tuple. For example:"
+msgstr ""
+
+#: bokeh.models.ranges.FactorRange:34 of
+msgid ""
+"will position the first circle at an ``x`` position that is offset by "
+"adding 0.3 to the synthetic coordinate for ``\"foo\"``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The bounds (in synthetic coordinates) that the range is allowed to go to."
+" Typically used to prevent the user from panning/zooming/etc away from "
+"the data."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Synthetic coordinates are only computed in the browser, based on the "
+"factors and various padding properties. Some experimentation may be "
+"required to arrive at bounds suitable for specific situations."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"By default, the bounds will be None, allowing your plot to pan/zoom as "
+"far as you want. If bounds are 'auto' they will be computed to be the "
+"same as the start and end of the ``FactorRange``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Float`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The end of the range, in synthetic coordinates."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Synthetic coordinates are only computed in the browser, based on the "
+"factors and various padding properties. The value of ``end`` will only be"
+" available in situations where bidirectional communication is available "
+"(e.g. server, notebook)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"How much padding to add in between all lowest-level factors. When "
+"``factor_padding`` is non-zero, every factor in every group will have the"
+" padding value applied."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.String`  ), "
+":class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.String`  ) ), "
+":class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.String`  ) ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A sequence of factors to define this categorical range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Factors may have 1, 2, or 3 levels. For 1-level factors, each factor is "
+"simply a string. For example:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"defines a range with three simple factors that might represent different "
+"units of a business."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "For 2- and 3- level factors, each factor is a tuple of strings:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"defines a range with six 2-level factors that might represent the three "
+"business units, grouped by year."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Note that factors and sub-factors *may only be strings*."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"How much padding to add in between top-level groups of factors. This "
+"property only applies when the overall range factors have either two or "
+"three levels. For example, with:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The top level groups correspond to ``\"foo\"` and ``\"bar\"``, and the "
+"group padding will be applied between the factors ``[\"foo\", \"2']`` and"
+" ``[\"bar\", \"1\"]``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The level that the range is allowed to zoom out, expressed as the maximum"
+" visible interval in synthetic coordinates.. Note that ``bounds`` can "
+"impose an implicit constraint on the maximum interval as well."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The default \"width\" of a category is 1.0 in synthetic coordinates. "
+"However, the distance between factors is affected by the various padding "
+"properties and whether or not factors are grouped."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The level that the range is allowed to zoom in, expressed as the minimum "
+"visible interval in synthetic coordinates. If set to ``None`` (default), "
+"the minimum interval is not bounded."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "How much padding to add around the outside of computed range bounds."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The start of the range, in synthetic coordinates."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"How much padding to add in between mid-level groups of factors. This "
+"property only applies when the overall factors have three levels. For "
+"example with:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This property dictates how much padding to add between the three factors "
+"in the `['foo', 'A']` group, and between the two factors in the the "
+"[`bar`]"
+msgstr ""
+
+#: bokeh.models.ranges.Range:1 of
+msgid "Bases: :class:`bokeh.model.Model`"
+msgstr ""
+
+#: bokeh.models.ranges.Range:1 of
+msgid "A base class for all range types."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.callbacks.Callback`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A callback to run in the browser whenever the range is updated."
+msgstr ""
+
+#: bokeh.models.ranges.Range1d:1 of
+msgid "A fixed, closed range [start, end] in a continuous scalar dimension."
+msgstr ""
+
+#: bokeh.models.ranges.Range1d:4 of
+msgid ""
+"In addition to supplying ``start`` and ``end`` keyword arguments to the "
+"``Range1d`` initializer, you can also instantiate with the convenience "
+"syntax::"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"If set to ``'auto'``, the bounds will be computed to the start and end of"
+" the Range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Bounds are provided as a tuple of ``(min, max)`` so regardless of whether"
+" your range is increasing or decreasing, the first item should be the "
+"minimum value of the range and the second item should be the maximum. "
+"Setting min > max will result in a ``ValueError``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"By default, bounds are ``None`` and your plot to pan/zoom as far as you "
+"want. If you only want to constrain one end of the plot, you can set min "
+"or max to None."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Examples:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The end of the range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The level that the range is allowed to zoom out, expressed as the maximum"
+" visible interval. Can be a ``TimeDelta``. Note that ``bounds`` can "
+"impose an implicit constraint on the maximum interval as well."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The level that the range is allowed to zoom in, expressed as the minimum "
+"visible interval. If set to ``None`` (default), the minimum interval is "
+"not bound. Can be a ``TimeDelta``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The end of the range to apply when resetting. If set to ``None`` defaults"
+" to the ``end`` value during initialization."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The start of the range to apply after reset. If set to ``None`` defaults "
+"to the ``start`` value during initialization."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The start of the range."
+msgstr ""
+

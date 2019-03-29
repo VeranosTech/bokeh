@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/command/subcommand.rst:4
+msgid "bokeh.command.subcommand"
+msgstr ""
+
+#: bokeh.command.subcommand:1 of
+msgid ""
+"Provides a base class for defining subcommands of the Bokeh command line "
+"application."
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand:1 of
+msgid "Abstract base class for subcommands"
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand:3 of
+msgid ""
+"Subclasses should implement an ``invoke(self, args)`` method that accepts"
+" a set of argparse processed arguments as input."
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand:6 of
+msgid "Subclasses should also define the following class attributes:"
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand:8 of
+msgid "``name`` a name for this subcommand"
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand:10 of
+msgid "``help`` a help string for argparse to use for this subcommand"
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand:12 of
+msgid "``args`` the parameters to pass to ``parser.add_argument``"
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand:14 of
+msgid "The format of the ``args`` should be a sequence of tuples of the form:"
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand:24 of
+msgid "Example"
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand:25 of
+msgid "A simple subcommand \"foo\" might look like this:"
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand:46 of
+msgid "Then executing ``bokeh foo --yell`` would print ``FOO!`` at the console."
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand.__init__:1 of
+msgid "Initialize the subcommand with its parser"
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand.__init__
+#: bokeh.command.subcommand.Subcommand.invoke of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand.__init__:3 of
+msgid ""
+"an Argparse ``Parser`` instance to configure with the args for this "
+"subcommand."
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand.__init__:7 of
+msgid ""
+"This method will automatically add all the arguments described in "
+"``self.args``. Subclasses can perform any additional customizations on "
+"``self.parser``."
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand.invoke:1 of
+msgid "Takes over main program flow to perform the subcommand."
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand.invoke:3 of
+msgid "*This method must be implemented by subclasses.*"
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand.invoke:5 of
+msgid "command line arguments for the subcommand to parse"
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand.invoke of
+msgid "raises"
+msgstr ""
+
+#: bokeh.command.subcommand.Subcommand.invoke:8 of
+msgid ":exc:`NotImplementedError`"
+msgstr ""
+

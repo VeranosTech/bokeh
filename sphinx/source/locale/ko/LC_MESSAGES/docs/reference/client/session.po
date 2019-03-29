@@ -1,0 +1,401 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/client/session.rst:4
+msgid "bokeh.client.session"
+msgstr ""
+
+#: bokeh.client.session:1 of
+msgid ""
+"Provide a session object to service Bokeh documents in external Python "
+"clients to a Bokeh server."
+msgstr ""
+
+#: bokeh.client.session:5 of
+msgid "Use-Cases"
+msgstr ""
+
+#: bokeh.client.session:7 of
+msgid "A client session has two primary uses:"
+msgstr ""
+
+#: bokeh.client.session:9 of
+msgid ""
+"Implementing automated testing infrastructure around Bokeh server "
+"applications."
+msgstr ""
+
+#: bokeh.client.session:12 of
+msgid ""
+"Creating and customizing specific sessions of a Bokeh server application "
+"(running *in the Bokeh server*) before passing them on to a specific "
+"viewer."
+msgstr ""
+
+#: bokeh.client.session.ClientSession:1 of
+msgid "Represents a websocket connection to a server-side session."
+msgstr ""
+
+#: bokeh.client.session.ClientSession:3 of
+msgid ""
+"Each server session stores a Document, which is kept in sync with the "
+"corresponding Document for this ``ClientSession`` instance. Updates on "
+"either side of the connection will automatically propagate to the other "
+"side, as long as the connection is open."
+msgstr ""
+
+#: bokeh.client.session.ClientSession:8 of
+msgid ""
+"ClientSession objects can (and usually should) be used as a context "
+"manager so that the session is properly closed:"
+msgstr ""
+
+#: bokeh.client.session.ClientSession:18 of
+msgid ""
+"If you do not use ``ClientSession`` in this way, it is up to you to "
+"ensure that ``mysession.close()`` is called."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.__init__:1 of
+msgid "A connection which attaches to a particular named session on the server."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.__init__:4 of
+msgid ""
+"Always call either pull() or push() immediately after creating the "
+"session (until these are called ``session.document`` will be ``None``)."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.__init__:7 of
+msgid ""
+"The :func:`~bokeh.client.session.push_session` and "
+":func:`~bokeh.client.session.pull_session()` functions will construct a "
+"``ClientSession`` and push or pull in one step, so they are a good way to"
+" obtain a ``ClientSession``."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.__init__
+#: bokeh.client.session.ClientSession.push
+#: bokeh.client.session.ClientSession.show bokeh.client.session.pull_session
+#: bokeh.client.session.push_session bokeh.client.session.show_session of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.client.session.ClientSession.__init__:12 of
+msgid "The name of the session or None to generate one"
+msgstr ""
+
+#: bokeh.client.session.ClientSession.__init__:14 of
+msgid "Websocket URL to connect to"
+msgstr ""
+
+#: bokeh.client.session.ClientSession.__init__:16 of
+msgid "The IOLoop to use for the websocket"
+msgstr ""
+
+#: bokeh.client.session.ClientSession.__init__:18
+#: bokeh.client.session.pull_session:36 of
+msgid ""
+"A dictionary of key/values to be passed as HTTP request arguments to "
+"Bokeh application code (default: None)  Note that should only be provided"
+" when pulling new sessions. If ``session_id`` is not None, or a session "
+"with ``session_id`` already exists, these arguments will have no effect."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.__init__:18
+#: bokeh.client.session.pull_session:36 of
+msgid ""
+"A dictionary of key/values to be passed as HTTP request arguments to "
+"Bokeh application code (default: None)"
+msgstr ""
+
+#: bokeh.client.session.ClientSession.__init__:21
+#: bokeh.client.session.pull_session:39 of
+msgid ""
+"Note that should only be provided when pulling new sessions. If "
+"``session_id`` is not None, or a session with ``session_id`` already "
+"exists, these arguments will have no effect."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.close:1 of
+msgid "Close the connection to the server."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.connect:1 of
+msgid "Connect to a Bokeh server at the configured URL."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.force_roundtrip:1 of
+msgid ""
+"Force a round-trip request/reply to the server, sometimes needed to avoid"
+" race conditions. Mostly useful for testing."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.force_roundtrip:4 of
+msgid ""
+"Outside of test suites, this method hurts performance and should not be "
+"needed."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.force_roundtrip
+#: bokeh.client.session.ClientSession.request_server_info
+#: bokeh.client.session.pull_session bokeh.client.session.push_session of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.client.session.ClientSession.force_roundtrip:7 of
+msgid "None"
+msgstr ""
+
+#: bokeh.client.session.ClientSession.loop_until_closed:1 of
+msgid ""
+"Execute a blocking loop that runs and executes event callbacks until the "
+"connection is closed (e.g. by hitting Ctrl-C)."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.loop_until_closed:4 of
+msgid ""
+"While this method can be used to run Bokeh application code \"outside\" "
+"the Bokeh server, this practice is HIGHLY DISCOURAGED for any real use "
+"case. This function is intented to facilitate testing ONLY."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.pull:1 of
+msgid "Pull the server's state and set it as session.document."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.pull:3 of
+msgid ""
+"If this is called more than once, session.document will be the same "
+"object instance but its contents will be overwritten."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.pull:6 of
+msgid "Automatically calls :func:`connect` before pulling."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.push:1 of
+msgid "Push the given document to the server and record it as session.document."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.push:3 of
+msgid ""
+"If this is called more than once, the Document has to be the same (or "
+"None to mean \"session.document\")."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.push:7 of
+msgid "Automatically calls :func:`~connect` before pushing."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.push:9 of
+msgid ""
+"The document which will be kept in sync with the server document. None to"
+" use session.document or create a new document."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.request_server_info:1 of
+msgid "Ask for information about the server."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.request_server_info:3 of
+msgid "A dictionary of server attributes."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.show:1 of
+msgid "Open a browser displaying this session."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.show:3 of
+msgid ""
+"a Layout (Row/Column), Plot or Widget object to display. The object will "
+"be added to the session's document."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.show:7
+#: bokeh.client.session.show_session:15 of
+msgid ""
+"browser to show with (default: None) For systems that support it, the "
+"**browser** argument allows specifying which browser to display in, e.g. "
+"\"safari\", \"firefox\", \"opera\", \"windows-default\" (see the "
+"``webbrowser`` module documentation in the standard lib for more "
+"details)."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.show:13
+#: bokeh.client.session.show_session:21 of
+msgid ""
+"new file output mode (default: \"tab\") For file-based output, opens or "
+"raises the browser window showing the current output file.  If **new** is"
+" 'tab', then opens a new tab. If **new** is 'window', then opens a new "
+"window."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.connected:1 of
+msgid "Whether this session is currently connected."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.document:1 of
+msgid ""
+"A :class:`~bokeh.document.Document` that will be kept in sync with the "
+"corresponding Document on the server."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.document:4 of
+msgid ""
+"This value is initialized when :func:`pull` or :func:`push` succeeds. It "
+"will be ``None`` until then."
+msgstr ""
+
+#: bokeh.client.session.ClientSession.id:1 of
+msgid "A unique ID for this session."
+msgstr ""
+
+#: bokeh.client.session.pull_session:1 of
+msgid "Create a session by loading the current server-side document."
+msgstr ""
+
+#: bokeh.client.session.pull_session:3 of
+msgid ""
+"``session.document`` will be a fresh document loaded from the server. "
+"While the connection to the server is open, changes made on the server "
+"side will be applied to this document, and changes made on the client "
+"side will be synced to the server."
+msgstr ""
+
+#: bokeh.client.session.pull_session:9 of
+msgid ""
+"If you don't plan to modify ``session.document`` you probably don't need "
+"to use this function; instead you can directly ``show_session()`` or "
+"``server_session()`` without downloading the session's document into your"
+" process first. It's much more efficient to avoid downloading the session"
+" if you don't need to."
+msgstr ""
+
+#: bokeh.client.session.pull_session:16 bokeh.client.session.push_session:9 of
+msgid ""
+"In a production scenario, the ``session_id`` should be unique for each "
+"browser tab, which keeps users from stomping on each other. It's neither "
+"scalable nor secure to use predictable session IDs or to share session "
+"IDs across users."
+msgstr ""
+
+#: bokeh.client.session.pull_session:22 bokeh.client.session.push_session:14 of
+msgid ""
+"For a notebook running on a single machine, ``session_id`` could be "
+"something human-readable such as ``\"default\"`` for convenience."
+msgstr ""
+
+#: bokeh.client.session.pull_session:26 of
+msgid ""
+"If you allow ``pull_session()`` to generate a unique ``session_id``, you "
+"can obtain the generated ID with the ``id`` property on the returned "
+"``ClientSession``."
+msgstr ""
+
+#: bokeh.client.session.pull_session:30 bokeh.client.session.show_session:8 of
+msgid "The name of the session, None to autogenerate a random one (default: None)"
+msgstr ""
+
+#: bokeh.client.session.pull_session:32 bokeh.client.session.push_session:25
+#: bokeh.client.session.show_session:10 of
+msgid ""
+"(str, optional): The URL to a Bokeh application on a Bokeh server can "
+"also be `\"default\"` which will connect to the default app URL"
+msgstr ""
+
+#: bokeh.client.session.pull_session:34 of
+msgid "The ``IOLoop`` to use for the websocket"
+msgstr ""
+
+#: bokeh.client.session.pull_session:44 of
+msgid "A new ``ClientSession`` connected to the server"
+msgstr ""
+
+#: bokeh.client.session.pull_session of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.client.session.push_session:1 of
+msgid ""
+"Create a session by pushing the given document to the server, overwriting"
+" any existing server-side document."
+msgstr ""
+
+#: bokeh.client.session.push_session:4 of
+msgid ""
+"``session.document`` in the returned session will be your supplied "
+"document. While the connection to the server is open, changes made on the"
+" server side will be applied to this document, and changes made on the "
+"client side will be synced to the server."
+msgstr ""
+
+#: bokeh.client.session.push_session:17 of
+msgid ""
+"If you allow ``push_session()`` to generate a unique ``session_id``, you "
+"can obtain the generated ID with the ``id`` property on the returned "
+"``ClientSession``."
+msgstr ""
+
+#: bokeh.client.session.push_session:21 of
+msgid ""
+"(bokeh.document.Document) The document to be pushed and set as "
+"session.document"
+msgstr ""
+
+#: bokeh.client.session.push_session:23 of
+msgid ""
+"(string, optional) The name of the session, None to autogenerate a random"
+" one (default: None)"
+msgstr ""
+
+#: bokeh.client.session.push_session:27 of
+msgid "(tornado.ioloop.IOLoop, optional) The IOLoop to use for the websocket"
+msgstr ""
+
+#: bokeh.client.session.push_session:30 of
+msgid "ClientSession     A new ClientSession connected to the server"
+msgstr ""
+
+#: bokeh.client.session.push_session:32 of
+msgid "ClientSession"
+msgstr ""
+
+#: bokeh.client.session.push_session:33 of
+msgid "A new ClientSession connected to the server"
+msgstr ""
+
+#: bokeh.client.session.show_session:1 of
+msgid "Open a browser displaying a session document."
+msgstr ""
+
+#: bokeh.client.session.show_session:3 of
+msgid ""
+"If you have a session from ``pull_session()`` or ``push_session`` you can"
+" ``show_session(session=mysession)``. If you don't need to open a "
+"connection to the server yourself, you can show a new session in a "
+"browser by providing just the ``url``."
+msgstr ""
+
+#: bokeh.client.session.show_session:12 of
+msgid ""
+"session to get session ID and server URL from If you specify this, you "
+"don't need to specify session_id and url"
+msgstr ""
+

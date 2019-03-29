@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/core.rst:4
+msgid "bokeh.core"
+msgstr ""
+
+#: bokeh.core:1 of
+msgid ""
+"The ``bokeh.core`` package provides modules that are useful for "
+"implementing Bokeh itself. Documentation for all of them can be accessed "
+"through the sidebar menu. Most of the modules here are probably not of "
+"general interest to most users. However, some are more useful, especially"
+" to anyone writing custom extensions to Bokeh. These are listed below:"
+msgstr ""
+
+#: bokeh.core:11 of
+msgid ":ref:`bokeh.core.enums`"
+msgstr ""
+
+#: bokeh.core:8 of
+msgid ""
+"Properties on Bokeh models support automatic type validation, including "
+"specifying and validating enumerated values. There are many enumerations "
+"used across Bokeh. This section has documentation on all the ones that "
+"are built-in, as well as information about how to create new ones."
+msgstr ""
+
+#: bokeh.core:19 of
+msgid ":ref:`bokeh.core.properties`"
+msgstr ""
+
+#: bokeh.core:14 of
+msgid ""
+"The fundamental building block of Bokeh apps and documents is the Bokeh "
+"models, for instance plots, ranges, axes, etc. Bokeh models are comrpised"
+" of properties, which are named attributes with specified types. Model "
+"properties can automatically validate and serialize themselves. This "
+"section describes all the property types that can be attached to Bokeh "
+"models, which is of interest when creating custom extensions."
+msgstr ""
+
+#: bokeh.core:25 of
+msgid ":ref:`bokeh.core.property_mixins`"
+msgstr ""
+
+#: bokeh.core:22 of
+msgid ""
+"Some collections of properties appear together often. Property mixins are"
+" groups of properties, such as a ``fill_color`` and ``fill_alpha``, that "
+"make up a single unit that can be easily applied to Bokeh models all at "
+"once."
+msgstr ""
+
+#: bokeh.core:32 of
+msgid ":ref:`bokeh.core.validation`"
+msgstr ""
+
+#: bokeh.core:28 of
+msgid ""
+"When serializing a Document for use by BokehJS, the Bokeh python library "
+"attempts to detect potential or actual usage problems. These are reported"
+" as validation warnings or errors, which have unique numeric codes and "
+"names associated with them. This section is useful to find out more "
+"specifics about such warnings and errors."
+msgstr ""
+

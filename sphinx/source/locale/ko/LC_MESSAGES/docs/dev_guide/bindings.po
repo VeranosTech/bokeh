@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/dev_guide/bindings.rst:4
+msgid "Language Bindings"
+msgstr ""
+
+#: ../../source/docs/dev_guide/bindings.rst:6
+msgid ""
+"Because the input accepted by BokehJS is an object graph, represented by "
+"declarative bits of JSON, any language that can generate the right JSON "
+"can generate Bokeh plots in the browser."
+msgstr ""
+
+#: ../../source/docs/dev_guide/bindings.rst:11
+msgid "Resources for Authors"
+msgstr ""
+
+#: ../../source/docs/dev_guide/bindings.rst:13
+msgid ""
+"Since the low-level object interface in Python mirrors the JSON schema "
+"exactly, the best, most authoritative source of information for anyone "
+"writing bindings for Bokeh are the reference guide sections for the "
+":ref:`bokeh.core.properties` and :ref:`bokeh.models`. In particular, the "
+"models reference has a JSON prototype for every models in the Bokeh "
+"object system."
+msgstr ""
+
+#: ../../source/docs/dev_guide/bindings.rst:20
+msgid ""
+"Additionally, there is a very low-traffic ``bokeh-dev`` mailing list that"
+" is intended to be a high-signal communication channel for Bokeh language"
+" binding developers. If you are interested in being added to this mailing"
+" list, please contact us."
+msgstr ""
+
+#: ../../source/docs/dev_guide/bindings.rst:26
+msgid "Known Bindings"
+msgstr ""
+
+#: ../../source/docs/dev_guide/bindings.rst:28
+msgid ""
+"These are the currently known projects that expose Bokeh to languages "
+"other than Python. If you know of any that are not on this list, or if "
+"you want to work on a new language binding for Bokeh and need some help, "
+"please let us know."
+msgstr ""
+
+#: ../../source/docs/dev_guide/bindings.rst:35
+msgid "rbokeh"
+msgstr ""
+
+#: ../../source/docs/dev_guide/bindings.rst:34
+msgid ""
+"The `rbokeh <bokeh_r_>`_ project, started by `@hafen <hafen_>`_, adds "
+"support for Bokeh to the R language."
+msgstr ""
+
+#: ../../source/docs/dev_guide/bindings.rst:42
+msgid "bokeh.jl"
+msgstr ""
+
+#: ../../source/docs/dev_guide/bindings.rst:38
+msgid ""
+"Originally created by `@samuelcolvin <samuelcolvin_>`_, the `bokeh.jl "
+"<bokeh_jl_>`_ project brings Bokeh to Julia users."
+msgstr ""
+
+#: ../../source/docs/dev_guide/bindings.rst:41
+msgid ""
+"**The bokeh.jl binding is currently unmaintained**. If you are interested"
+" in picking up the bokeh.jl work, please contact the core devs."
+msgstr ""
+
+#: ../../source/docs/dev_guide/bindings.rst:46
+msgid "bokeh-scala"
+msgstr ""
+
+#: ../../source/docs/dev_guide/bindings.rst:45
+msgid ""
+"The `bokeh-scala <bokeh_scala_>`_ exposes Bokeh in the Scala language. "
+"The project was created by the Bokeh core dev team's own `@mattpap "
+"<mattpap_>`_."
+msgstr ""
+

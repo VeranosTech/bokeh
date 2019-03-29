@@ -1,0 +1,356 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/events.rst:4
+msgid "bokeh.events"
+msgstr ""
+
+#: bokeh.events:1 of
+msgid "Represent granular events that can be used to trigger callbacks."
+msgstr ""
+
+#: bokeh.events:3 of
+msgid ""
+"Bokeh documents and applications are capable of supporting various kinds "
+"of interactions. These are often associated with events, such as mouse or"
+" touch events, interactive downsampling mode activation, widget or tool "
+"events, and others. The classes in this module represent these different "
+"events, so that callbacks can be attached and executed when they occur."
+msgstr ""
+
+#: bokeh.events:9 of
+msgid ""
+"It is possible to respond to events with ``CustomJS`` callbacks, which "
+"will function with or without a Bokeh server. This can be accomplished by"
+" passing and event class, and a ``CustomJS`` model to the "
+":func:`~bokeh.model.Model.js_on_event` method. When the ``CustomJS`` is "
+"executed in the browser, its ``cb_obj`` argument will contain the "
+"concrete event object that triggered the callback."
+msgstr ""
+
+#: bokeh.events:25 of
+msgid ""
+"Alternatively it is possible to trigger Python code to run when events "
+"happen, in the context of a Bokeh application running on a Bokeh server. "
+"This can accomplished by passing an event class, and a callback function "
+"to the the :func:`~bokeh.model.Model.on_event` method. The callback "
+"should accept a single argument ``event``, which will be passed the "
+"concrete event object that triggered the callback."
+msgstr ""
+
+#: bokeh.events:45 of
+msgid ""
+"There is no throttling of events. Some events such as ``MouseMove`` may "
+"trigger at a very high rate."
+msgstr ""
+
+#: bokeh.events.ButtonClick:1 of
+msgid "Announce a button click event on a Bokeh button widget."
+msgstr ""
+
+#: bokeh.events.DoubleTap:1 of
+msgid "Announce a double-tap or double-click event on a Bokeh plot."
+msgstr ""
+
+#: bokeh.events.DoubleTap:5 bokeh.events.MouseEnter:5 bokeh.events.MouseLeave:5
+#: bokeh.events.MouseMove:5 bokeh.events.MouseWheel:11 bokeh.events.Pan:23
+#: bokeh.events.PanEnd:5 bokeh.events.PanStart:5 bokeh.events.Pinch:11
+#: bokeh.events.PinchEnd:5 bokeh.events.PinchStart:5 bokeh.events.PointEvent:5
+#: bokeh.events.Press:5 bokeh.events.Tap:5 of
+msgid "x-coordinate of the event in *screen* space"
+msgstr ""
+
+#: bokeh.events.DoubleTap bokeh.events.MouseEnter bokeh.events.MouseLeave
+#: bokeh.events.MouseMove bokeh.events.MouseWheel bokeh.events.Pan
+#: bokeh.events.PanEnd bokeh.events.PanStart bokeh.events.Pinch
+#: bokeh.events.PinchEnd bokeh.events.PinchStart bokeh.events.PointEvent
+#: bokeh.events.Press bokeh.events.SelectionGeometry bokeh.events.Tap of
+msgid "type"
+msgstr ""
+
+#: bokeh.events.DoubleTap:7 bokeh.events.DoubleTap:13 bokeh.events.DoubleTap:19
+#: bokeh.events.DoubleTap:25 bokeh.events.MouseEnter:7
+#: bokeh.events.MouseEnter:13 bokeh.events.MouseEnter:19
+#: bokeh.events.MouseEnter:25 bokeh.events.MouseLeave:7
+#: bokeh.events.MouseLeave:13 bokeh.events.MouseLeave:19
+#: bokeh.events.MouseLeave:25 bokeh.events.MouseMove:7
+#: bokeh.events.MouseMove:13 bokeh.events.MouseMove:19
+#: bokeh.events.MouseMove:25 bokeh.events.MouseWheel:7
+#: bokeh.events.MouseWheel:13 bokeh.events.MouseWheel:19
+#: bokeh.events.MouseWheel:25 bokeh.events.MouseWheel:31 bokeh.events.Pan:7
+#: bokeh.events.Pan:13 bokeh.events.Pan:19 bokeh.events.Pan:25
+#: bokeh.events.Pan:31 bokeh.events.Pan:37 bokeh.events.Pan:43
+#: bokeh.events.PanEnd:7 bokeh.events.PanEnd:13 bokeh.events.PanEnd:19
+#: bokeh.events.PanEnd:25 bokeh.events.PanStart:7 bokeh.events.PanStart:13
+#: bokeh.events.PanStart:19 bokeh.events.PanStart:25 bokeh.events.Pinch:7
+#: bokeh.events.Pinch:13 bokeh.events.Pinch:19 bokeh.events.Pinch:25
+#: bokeh.events.Pinch:31 bokeh.events.PinchEnd:7 bokeh.events.PinchEnd:13
+#: bokeh.events.PinchEnd:19 bokeh.events.PinchEnd:25 bokeh.events.PinchStart:7
+#: bokeh.events.PinchStart:13 bokeh.events.PinchStart:19
+#: bokeh.events.PinchStart:25 bokeh.events.PointEvent:7
+#: bokeh.events.PointEvent:13 bokeh.events.PointEvent:19
+#: bokeh.events.PointEvent:25 bokeh.events.Press:7 bokeh.events.Press:13
+#: bokeh.events.Press:19 bokeh.events.Press:25 bokeh.events.Tap:7
+#: bokeh.events.Tap:13 bokeh.events.Tap:19 bokeh.events.Tap:25 of
+msgid "float"
+msgstr ""
+
+#: bokeh.events.DoubleTap:11 bokeh.events.MouseEnter:11
+#: bokeh.events.MouseLeave:11 bokeh.events.MouseMove:11
+#: bokeh.events.MouseWheel:17 bokeh.events.Pan:29 bokeh.events.PanEnd:11
+#: bokeh.events.PanStart:11 bokeh.events.Pinch:17 bokeh.events.PinchEnd:11
+#: bokeh.events.PinchStart:11 bokeh.events.PointEvent:11 bokeh.events.Press:11
+#: bokeh.events.Tap:11 of
+msgid "y-coordinate of the event in *screen* space"
+msgstr ""
+
+#: bokeh.events.DoubleTap:17 bokeh.events.MouseEnter:17
+#: bokeh.events.MouseLeave:17 bokeh.events.MouseMove:17
+#: bokeh.events.MouseWheel:23 bokeh.events.Pan:35 bokeh.events.PanEnd:17
+#: bokeh.events.PanStart:17 bokeh.events.Pinch:23 bokeh.events.PinchEnd:17
+#: bokeh.events.PinchStart:17 bokeh.events.PointEvent:17 bokeh.events.Press:17
+#: bokeh.events.Tap:17 of
+msgid "x-coordinate of the event in *data* space"
+msgstr ""
+
+#: bokeh.events.DoubleTap:23 bokeh.events.MouseEnter:23
+#: bokeh.events.MouseLeave:23 bokeh.events.MouseMove:23
+#: bokeh.events.MouseWheel:29 bokeh.events.Pan:41 bokeh.events.PanEnd:23
+#: bokeh.events.PanStart:23 bokeh.events.Pinch:29 bokeh.events.PinchEnd:23
+#: bokeh.events.PinchStart:23 bokeh.events.PointEvent:23 bokeh.events.Press:23
+#: bokeh.events.Tap:23 of
+msgid "y-coordinate of the event in *data* space"
+msgstr ""
+
+#: bokeh.events.Event:1 of
+msgid "Base class for all Bokeh events."
+msgstr ""
+
+#: bokeh.events.Event:3 of
+msgid "This base class is not typically useful to instantiate on its own."
+msgstr ""
+
+#: bokeh.events.Event.__init__:1 of
+msgid "Create a new base event."
+msgstr ""
+
+#: bokeh.events.Event.__init__ bokeh.events.Event.decode_json of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.events.Event.__init__:3 of
+msgid "a Bokeh model to register event callbacks on"
+msgstr ""
+
+#: bokeh.events.Event.decode_json:1 of
+msgid "Custom JSON decoder for Events."
+msgstr ""
+
+#: bokeh.events.Event.decode_json:3 of
+msgid ""
+"Can be used as the ``object_hook`` argument of ``json.load`` or "
+"``json.loads``."
+msgstr ""
+
+#: bokeh.events.Event.decode_json:6 of
+msgid ""
+"a JSON dictionary to decode The dictionary should have keys "
+"``event_name`` and ``event_values``"
+msgstr ""
+
+#: bokeh.events.Event.decode_json of
+msgid "raises"
+msgstr ""
+
+#: bokeh.events.Event.decode_json:10 of
+msgid "ValueError, if the event_name is unknown"
+msgstr ""
+
+#: bokeh.events.Event.decode_json:13 of
+msgid "Examples"
+msgstr ""
+
+#: bokeh.events.LODStart:1 of
+msgid "Announce the start of \"interactive level-of-detail\" mode on a plot."
+msgstr ""
+
+#: bokeh.events.LODStart:3 of
+msgid ""
+"During interactive actions such as panning or zooming, Bokeh can "
+"optionally, temporarily draw a reduced set of the data, in order to "
+"maintain high interactive rates. This is referred to as interactive "
+"Level-of-Detail (LOD) mode. This event fires whenever a LOD mode has just"
+" begun."
+msgstr ""
+
+#: bokeh.events.LODEnd:1 of
+msgid "Announce the end of \"interactive level-of-detail\" mode on a plot."
+msgstr ""
+
+#: bokeh.events.LODEnd:3 of
+msgid ""
+"During interactive actions such as panning or zooming, Bokeh can "
+"optionally, temporarily draw a reduced set of the data, in order to "
+"maintain high interactive rates. This is referred to as interactive "
+"Level-of-Detail (LOD) mode. This event fires whenever a LOD mode has just"
+" ended."
+msgstr ""
+
+#: bokeh.events.MenuItemClick:1 of
+msgid "Announce a button click event on a Bokeh menu item."
+msgstr ""
+
+#: bokeh.events.MouseEnter:1 of
+msgid "Announce a mouse enter event onto a Bokeh plot."
+msgstr ""
+
+#: bokeh.events.MouseEnter:28 of
+msgid ""
+"The enter event is generated when the mouse leaves the entire Plot "
+"canvas, including any border padding and space for axes or legends."
+msgstr ""
+
+#: bokeh.events.MouseLeave:1 of
+msgid "Announce a mouse leave event from a Bokeh plot."
+msgstr ""
+
+#: bokeh.events.MouseLeave:28 of
+msgid ""
+"The leave event is generated when the mouse leaves the entire Plot "
+"canvas, including any border padding and space for axes or legends."
+msgstr ""
+
+#: bokeh.events.MouseMove:1 of
+msgid "Announce a mouse movement event over a Bokeh plot."
+msgstr ""
+
+#: bokeh.events.MouseMove:28 of
+msgid ""
+"This event can fire at a very high rate, potentially increasing network "
+"traffic or CPU load."
+msgstr ""
+
+#: bokeh.events.MouseWheel:1 of
+msgid "Announce a mouse wheel event on a Bokeh plot."
+msgstr ""
+
+#: bokeh.events.MouseWheel:5 of
+msgid "the (signed) scroll speed"
+msgstr ""
+
+#: bokeh.events.MouseWheel:34 of
+msgid ""
+"By default, Bokeh plots do not prevent default scroll events unless a "
+"``WheelZoomTool`` or ``WheelPanTool`` is active. This may change in "
+"future releases."
+msgstr ""
+
+#: bokeh.events.Pan:1 of
+msgid "Announce a pan event on a Bokeh plot."
+msgstr ""
+
+#: bokeh.events.Pan:5 of
+msgid "the amount of scroll in the x direction"
+msgstr ""
+
+#: bokeh.events.Pan:11 of
+msgid "the amount of scroll in the y direction"
+msgstr ""
+
+#: bokeh.events.Pan:17 of
+msgid "the direction of scroll (1 or -1)"
+msgstr ""
+
+#: bokeh.events.PanEnd:1 of
+msgid "Announce the end of a pan event on a Bokeh plot."
+msgstr ""
+
+#: bokeh.events.PanStart:1 of
+msgid "Announce the start of a pan event on a Bokeh plot."
+msgstr ""
+
+#: bokeh.events.Pinch:1 of
+msgid "Announce a pinch event on a Bokeh plot."
+msgstr ""
+
+#: bokeh.events.Pinch:5 of
+msgid "the (signed) amount of scaling"
+msgstr ""
+
+#: bokeh.events.Pinch:34 bokeh.events.PinchEnd:28 bokeh.events.PinchStart:28 of
+msgid "This event is only applicable for touch-enabled devices."
+msgstr ""
+
+#: bokeh.events.PinchEnd:1 of
+msgid "Announce the end of a pinch event on a Bokeh plot."
+msgstr ""
+
+#: bokeh.events.PinchStart:1 of
+msgid "Announce the start of a pinch event on a Bokeh plot."
+msgstr ""
+
+#: bokeh.events.PlotEvent:1 of
+msgid "The base class for all events applicable to Plot models."
+msgstr ""
+
+#: bokeh.events.PointEvent:1 of
+msgid "Base class for UI events associated with a specific (x,y) point."
+msgstr ""
+
+#: bokeh.events.PointEvent:27 of
+msgid ""
+"Note that data space coordinates are relative to the default range, not "
+"any extra ranges, and the the screen space origin is at the top left of "
+"the HTML canvas."
+msgstr ""
+
+#: bokeh.events.Press:1 of
+msgid "Announce a press event on a Bokeh plot."
+msgstr ""
+
+#: bokeh.events.Reset:1 of
+msgid "Announce a button click event on a plot ``ResetTool``."
+msgstr ""
+
+#: bokeh.events.SelectionGeometry:1 of
+msgid "Announce the coordinates of a selection event on a plot."
+msgstr ""
+
+#: bokeh.events.SelectionGeometry:5 of
+msgid "a dictionary containing the coordinates of the selection event."
+msgstr ""
+
+#: bokeh.events.SelectionGeometry:8 of
+msgid "dict"
+msgstr ""
+
+#: bokeh.events.SelectionGeometry:12 of
+msgid ""
+"whether the selection event is the last selection event in the case of "
+"selections on every mousemove."
+msgstr ""
+
+#: bokeh.events.SelectionGeometry:15 of
+msgid "bool"
+msgstr ""
+
+#: bokeh.events.Tap:1 of
+msgid "Announce a tap or click event on a Bokeh plot."
+msgstr ""
+

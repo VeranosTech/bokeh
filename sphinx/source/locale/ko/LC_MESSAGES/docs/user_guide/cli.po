@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/cli.rst:4
+msgid "Using ``bokeh`` Commands"
+msgstr ""
+
+#: ../../source/docs/user_guide/cli.rst:6
+msgid ""
+"It is possible to generate various kinds of output from Bokeh "
+"programmatically. The use of ``output_file``, ``output_notebook``, etc. "
+"has been demonstrated previously in many areas of the User Guide. "
+"However, Bokeh also provides a command line tool ``bokeh`` that can often"
+" offer a more flexible way to generate different kinds of output from the"
+" same source code, as well as making it easier to and faster to iterate."
+msgstr ""
+
+#: ../../source/docs/user_guide/cli.rst:14
+msgid "See the Reference Guide section :ref:`bokeh.command` for details."
+msgstr ""
+

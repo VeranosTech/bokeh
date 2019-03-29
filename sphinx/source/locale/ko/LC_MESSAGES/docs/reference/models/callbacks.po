@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/callbacks.rst:4
+msgid "bokeh.models.callbacks"
+msgstr ""
+
+#: bokeh.models.callbacks:1 of
+msgid "Client-side interactivity."
+msgstr ""
+
+#: bokeh.models.callbacks.Callback:1 of
+msgid "Bases: :class:`bokeh.model.Model`"
+msgstr ""
+
+#: bokeh.models.callbacks.Callback:1 of
+msgid "Base class for interactive callback."
+msgstr ""
+
+#: bokeh.models.callbacks.Callback:5 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: bokeh.models.callbacks.CustomJS:1 bokeh.models.callbacks.OpenURL:1 of
+msgid "Bases: :class:`bokeh.models.callbacks.Callback`"
+msgstr ""
+
+#: bokeh.models.callbacks.OpenURL:1 of
+msgid "Open a URL in a new or current tab or window."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Bool`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Open URL in a new (`False`, default) or current (`True`) tab or window. "
+"For `same_tab=False`, whether tab or window will be opened is browser "
+"dependent."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The URL to direct the web browser to. This can be a template string, "
+"which will be formatted with data from the data source."
+msgstr ""
+
+#: bokeh.models.callbacks.CustomJS:1 of
+msgid "Execute a JavaScript function."
+msgstr ""
+
+#: bokeh.models.callbacks.CustomJS:4 of
+msgid ""
+"The explicit purpose of this Bokeh Model is to embed *raw JavaScript "
+"code* for a browser to execute. If any part of the code is derived from "
+"untrusted user inputs, then you must take appropriate care to sanitize "
+"the user input prior to passing to Bokeh."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Dict` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.AnyRef`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A mapping of names to Python objects. In particular those can be bokeh's "
+"models. These objects are made available to the callback's code snippet "
+"as the values of named parameters to the callback."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A snippet of JavaScript code to execute in the browser. The code is made "
+"into the body of a function, and all of of the named objects in ``args`` "
+"are available as parameters that the code can use. Additionally, a "
+"``cb_obj`` parameter contains the object that triggered the callback and "
+"an optional ``cb_data`` parameter that contains any tool-specific data "
+"(i.e. mouse coordinates and hovered glyph indices for the ``HoverTool``)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Use ``CustomJS.from_coffeescript()`` for CoffeeScript source code."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Enables or disables automatic insertion of ``\"use strict\";`` into "
+"``code``."
+msgstr ""
+
+#: bokeh.models.callbacks.CustomJS.from_coffeescript:1 of
+msgid "Create a ``CustomJS`` instance from CoffeeScript code."
+msgstr ""
+
+#: bokeh.models.callbacks.CustomJS.from_py_func:1 of
+msgid ""
+"Create a ``CustomJS`` instance from a Python function. The function is "
+"translated to JavaScript using PScript."
+msgstr ""
+

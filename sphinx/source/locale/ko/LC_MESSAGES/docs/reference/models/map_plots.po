@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/map_plots.rst:4
+msgid "bokeh.models.map_plots"
+msgstr ""
+
+#: bokeh.models.map_plots:1 of
+msgid "Models for displaying maps in Bokeh plots."
+msgstr ""
+
+#: bokeh.models.map_plots.GMapOptions:1 of
+msgid "Bases: :class:`bokeh.models.map_plots.MapOptions`"
+msgstr ""
+
+#: bokeh.models.map_plots.GMapOptions:1 of
+msgid "Options for ``GMapPlot`` objects."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.MapType`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The `map type`_ to use for the ``GMapPlot``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Bool`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Whether the Google map should display its distance scale control."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.JSON`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A JSON array of `map styles`_ to use for the ``GMapPlot``. Many example "
+"styles can `be found here`_."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"`Tilt`_ angle of the map. The only allowed values are 0 and 45. Only has "
+"an effect on 'satellite' and 'hybrid' map types. A value of 0 causes the "
+"map to always use a 0 degree overhead view. A value of 45 causes the tilt"
+" angle to switch to 45 imagery if available."
+msgstr ""
+
+#: bokeh.models.map_plots.GMapPlot:1 of
+msgid "Bases: :class:`bokeh.models.map_plots.MapPlot`"
+msgstr ""
+
+#: bokeh.models.map_plots.GMapPlot:1 of
+msgid "A Bokeh Plot with a `Google Map`_ displayed underneath."
+msgstr ""
+
+#: bokeh.models.map_plots.GMapPlot:3 of
+msgid ""
+"Data placed on this plot should be specified in decimal lat/lon "
+"coordinates e.g. ``(37.123, -122.404)``. It will be automatically "
+"converted into the web mercator projection to display properly over "
+"google maps tiles."
+msgstr ""
+
+#: bokeh.models.map_plots.GMapPlot:7 of
+msgid ""
+"Please also note that only ``Range1d`` ranges are supported by "
+"``GMapPlot``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Google Maps API requires an API key. See "
+"https://developers.google.com/maps/documentation/javascript/get-api-key "
+"for more information on how to obtain your own."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.map_plots.GMapOptions`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Options for displaying the plot."
+msgstr ""
+
+#: bokeh.models.map_plots.MapOptions:1 of
+msgid "Bases: :class:`bokeh.model.Model`"
+msgstr ""
+
+#: bokeh.models.map_plots.MapOptions:1 of
+msgid "Abstract base class for map options' models."
+msgstr ""
+
+#: bokeh.models.map_plots.MapOptions:5 bokeh.models.map_plots.MapPlot:5 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Float`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The latitude where the map should be centered."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The longitude where the map should be centered."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The initial zoom level to use when displaying the map."
+msgstr ""
+
+#: bokeh.models.map_plots.MapPlot:1 of
+msgid "Bases: :class:`bokeh.models.plots.Plot`"
+msgstr ""
+
+#: bokeh.models.map_plots.MapPlot:1 of
+msgid "Abstract base class for map plot models."
+msgstr ""
+

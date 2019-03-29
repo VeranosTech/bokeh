@@ -1,0 +1,260 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/tickers.rst:4
+msgid "bokeh.models.tickers"
+msgstr ""
+
+#: bokeh.models.tickers:1 of
+msgid "Models for computing good tick locations on different kinds of plots."
+msgstr ""
+
+#: bokeh.models.tickers.Ticker:1 of
+msgid "Bases: :class:`bokeh.model.Model`"
+msgstr ""
+
+#: bokeh.models.tickers.Ticker:1 of
+msgid "A base class for all ticker types."
+msgstr ""
+
+#: bokeh.models.tickers.ContinuousTicker:5 bokeh.models.tickers.Ticker:5 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: bokeh.models.tickers.CategoricalTicker:1
+#: bokeh.models.tickers.ContinuousTicker:1 of
+msgid "Bases: :class:`bokeh.models.tickers.Ticker`"
+msgstr ""
+
+#: bokeh.models.tickers.ContinuousTicker:1 of
+msgid "A base class for non-categorical ticker types."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A desired target number of major tick positions to generate across the "
+"plot range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The number of minor tick positions to generate between adjacent major "
+"tick values."
+msgstr ""
+
+#: bokeh.models.tickers.AdaptiveTicker:1 bokeh.models.tickers.CompositeTicker:1
+#: bokeh.models.tickers.FixedTicker:1
+#: bokeh.models.tickers.SingleIntervalTicker:1 of
+msgid "Bases: :class:`bokeh.models.tickers.ContinuousTicker`"
+msgstr ""
+
+#: bokeh.models.tickers.FixedTicker:1 of
+msgid "Generate ticks at fixed, explicitly supplied locations."
+msgstr ""
+
+#: bokeh.models.tickers.FixedTicker:4 of
+msgid "The ``desired_num_ticks`` property is ignored by this Ticker."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.Float`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "List of minor tick locations."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "List of major tick locations."
+msgstr ""
+
+#: bokeh.models.tickers.AdaptiveTicker:1 of
+msgid "Generate \"nice\" round ticks at any magnitude."
+msgstr ""
+
+#: bokeh.models.tickers.AdaptiveTicker:3 of
+msgid ""
+"Creates ticks that are \"base\" multiples of a set of given mantissas. "
+"For example, with ``base=10`` and ``mantissas=[1, 2, 5]``, the ticker "
+"will generate the sequence::"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Float`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The multiplier to use for scaling mantissas."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The acceptable list numbers to generate multiples of."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The largest allowable interval between two adjacent ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "To specify an unbounded interval, set to ``None``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The smallest allowable interval between two adjacent ticks."
+msgstr ""
+
+#: bokeh.models.tickers.CompositeTicker:1 of
+msgid "Combine different tickers at different scales."
+msgstr ""
+
+#: bokeh.models.tickers.CompositeTicker:3 of
+msgid ""
+"Uses the ``min_interval`` and ``max_interval`` interval attributes of the"
+" tickers to select the appropriate ticker at different scales."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.tickers.Ticker`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A list of Ticker objects to combine at different scales in order to "
+"generate tick values. The supplied tickers should be in order. "
+"Specifically, if S comes before T, then it should be the case that::"
+msgstr ""
+
+#: bokeh.models.tickers.SingleIntervalTicker:1 of
+msgid "Generate evenly spaced ticks at a fixed interval regardless of scale."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The interval between adjacent ticks."
+msgstr ""
+
+#: bokeh.models.tickers.DaysTicker:1 bokeh.models.tickers.MonthsTicker:1
+#: bokeh.models.tickers.YearsTicker:1 of
+msgid "Bases: :class:`bokeh.models.tickers.SingleIntervalTicker`"
+msgstr ""
+
+#: bokeh.models.tickers.DaysTicker:1 of
+msgid "Generate ticks spaced apart by specific, even multiples of days."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.Int`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The intervals of days to use."
+msgstr ""
+
+#: bokeh.models.tickers.MonthsTicker:1 of
+msgid "Generate ticks spaced apart by specific, even multiples of months."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The intervals of months to use."
+msgstr ""
+
+#: bokeh.models.tickers.YearsTicker:1 of
+msgid "Generate ticks spaced apart even numbers of years."
+msgstr ""
+
+#: bokeh.models.tickers.BasicTicker:1 bokeh.models.tickers.LogTicker:1 of
+msgid "Bases: :class:`bokeh.models.tickers.AdaptiveTicker`"
+msgstr ""
+
+#: bokeh.models.tickers.BasicTicker:1 of
+msgid "Generate ticks on a linear scale."
+msgstr ""
+
+#: bokeh.models.tickers.BasicTicker:4 of
+msgid "This class may be renamed to ``LinearTicker`` in the future."
+msgstr ""
+
+#: bokeh.models.tickers.LogTicker:1 of
+msgid "Generate ticks on a log scale."
+msgstr ""
+
+#: bokeh.models.tickers.MercatorTicker:1 of
+msgid "Bases: :class:`bokeh.models.tickers.BasicTicker`"
+msgstr ""
+
+#: bokeh.models.tickers.MercatorTicker:1 of
+msgid "Generate nice lat/lon ticks form underlying WebMercator coordinates."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LatLon`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Specify whether to generate ticks for Latitude or Longitude."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Projected coordinates are not separable, computing Latitude and Longitude"
+" tick locations from Web Mercator requires considering coordinates from "
+"both dimensions together. Use this property to specify which result "
+"should be returned."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Typically, if the ticker is for an x-axis, then dimension should be "
+"``\"lon\"`` and if the ticker is for a y-axis, then the dimension should "
+"be `\"lat\"``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"In order to prevent hard to debug errors, there is no default value for "
+"dimension. Using an un-configured ``MercatorTicker`` will result in a "
+"validation error and a JavaScript console error."
+msgstr ""
+
+#: bokeh.models.tickers.CategoricalTicker:1 of
+msgid "Generate ticks for categorical ranges."
+msgstr ""
+
+#: bokeh.models.tickers.DatetimeTicker:1 of
+msgid "Bases: :class:`bokeh.models.tickers.CompositeTicker`"
+msgstr ""
+
+#: bokeh.models.tickers.DatetimeTicker:1 of
+msgid "Generate nice ticks across different date and time scales."
+msgstr ""
+

@@ -1,0 +1,328 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/installation.rst:4
+msgid "Installation"
+msgstr ""
+
+#: ../../source/docs/installation.rst:6
+msgid ""
+"This section provides complete details about Bokeh's required and "
+"optional dependencies as well as information about how to install Bokeh "
+"in different situations. To get up and running as fast as possible, see "
+"the :ref:`userguide_quickstart_install` section of the "
+":ref:`userguide_quickstart`."
+msgstr ""
+
+#: ../../source/docs/installation.rst:15
+msgid "Supported Platforms"
+msgstr ""
+
+#: ../../source/docs/installation.rst:17
+msgid ""
+"Bokeh is officially supported (and continuously tested) on CPython "
+"versions 2.7 and 3.5+ only. Other Python versions or implementations may "
+"function, possibly limited capacity, but no guarantees or support is "
+"provided."
+msgstr ""
+
+#: ../../source/docs/installation.rst:24
+msgid "Required Dependencies"
+msgstr ""
+
+#: ../../source/docs/installation.rst:26
+msgid "For basic usage, have the following libraries installed:"
+msgstr ""
+
+#: ../../source/docs/installation.rst:39
+msgid ""
+"To use the Bokeh server with Python 2.7, you also must install the "
+"Futures package."
+msgstr ""
+
+#: ../../source/docs/installation.rst:45
+msgid "Optional Dependencies"
+msgstr ""
+
+#: ../../source/docs/installation.rst:47
+msgid ""
+"In addition to the required dependencies above, some additional packages "
+"are necessary for certain optional features:"
+msgstr ""
+
+#: ../../source/docs/installation.rst:52
+msgid "NodeJS"
+msgstr ""
+
+#: ../../source/docs/installation.rst:51
+msgid ""
+"Necessary for :ref:`userguide_extensions` or for defining ``CustomJS`` "
+"implementations in CoffeeScript or TypeScript."
+msgstr ""
+
+#: ../../source/docs/installation.rst:57
+msgid "Pandas"
+msgstr ""
+
+#: ../../source/docs/installation.rst:55
+msgid ""
+"Necessary for the `hexbin` function. Additionally, some usage is "
+"simplified by using Pandas e.g. Pandas DataFrames will be converted "
+"automatically to Bokeh data sources by glyph functions."
+msgstr ""
+
+#: ../../source/docs/installation.rst:60
+msgid "psutil"
+msgstr ""
+
+#: ../../source/docs/installation.rst:60
+msgid "Necessary to enable detailed memory logging in the Bokeh server."
+msgstr ""
+
+#: ../../source/docs/installation.rst:64
+msgid "NetworkX"
+msgstr ""
+
+#: ../../source/docs/installation.rst:63
+msgid ""
+"Necessary to use the `from_networkx` function to generate Bokeh graph "
+"renderers directly from NetworkX data."
+msgstr ""
+
+#: ../../source/docs/installation.rst:67
+msgid "Selenium, PhantomJS"
+msgstr ""
+
+#: ../../source/docs/installation.rst:67
+msgid "Necessary for :ref:`userguide_export` to PNG and SVG images."
+msgstr ""
+
+#: ../../source/docs/installation.rst:71
+msgid "Sphinx"
+msgstr ""
+
+#: ../../source/docs/installation.rst:70
+msgid ""
+"Necessary to make use of the ``bokeh.sphinxext`` Sphinx extension for "
+"including Bokeh plots in Sphinx documentation."
+msgstr ""
+
+#: ../../source/docs/installation.rst:76
+msgid "Standard Releases"
+msgstr ""
+
+#: ../../source/docs/installation.rst:78
+msgid ""
+"These Bokeh dependencies are best obtained via the `Anaconda Python "
+"Distribution`_, which was designed to include robust versions of popular "
+"libraries for the Python scientific and data analysis stacks."
+msgstr ""
+
+#: ../../source/docs/installation.rst:83
+msgid "If you are already an Anaconda user, you can simply run the command:"
+msgstr ""
+
+#: ../../source/docs/installation.rst:89
+msgid ""
+"This will install the most recent published Bokeh release from the "
+"`Anaconda, Inc.`_ package repository, along with all dependencies."
+msgstr ""
+
+#: ../../source/docs/installation.rst:92
+msgid "Alternatively, it is possible to install from PyPI using ``pip``:"
+msgstr ""
+
+#: ../../source/docs/installation.rst:101
+msgid "Sample Data"
+msgstr ""
+
+#: ../../source/docs/installation.rst:103
+msgid ""
+"Some of the Bokeh examples rely on sample data that is not included in "
+"the Bokeh GitHub repository or released packages, due to their size. Once"
+" Bokeh is installed, the sample data can be obtained by executing the "
+"following command at a Bash or Windows prompt:"
+msgstr ""
+
+#: ../../source/docs/installation.rst:112
+msgid ""
+"Alternatively, the following statements can be executed in a Python "
+"interpreter:"
+msgstr ""
+
+#: ../../source/docs/installation.rst:120
+msgid ""
+"Finally, the location that the sample data is stored can be configured. "
+"By default, data is downloaded and stored to a directory "
+"``$HOME/.bokeh/data``. (The directory is created if it does not already "
+"exist.) Bokeh looks for a YAML configuration file at "
+"``$HOME/.bokeh/config``. The YAML key ``sampledata_dir`` can be set to "
+"the absolute path of a directory where the data should be stored. For "
+"instance adding the following line to the config file:"
+msgstr ""
+
+#: ../../source/docs/installation.rst:132
+msgid "will cause the sample data to be stored in ``/tmp/bokeh_data``."
+msgstr ""
+
+#: ../../source/docs/installation.rst:135
+msgid "Verifying Installation"
+msgstr ""
+
+#: ../../source/docs/installation.rst:137
+msgid ""
+"The first check you can make is to make sure you can ``import bokeh`` and"
+" verify ``bokeh.__version__`` from a running python interpreter. If you "
+"execute both of those lines in a python interpreter, the result should "
+"look something like this:"
+msgstr ""
+
+#: ../../source/docs/installation.rst:146
+msgid ""
+"The next check you can make is to produce a very simple plot. Execute the"
+" following few lines of python code, either by copying them into a script"
+" and executing the script, or by running the lines by hand in a python "
+"interpreter:"
+msgstr ""
+
+#: ../../source/docs/installation.rst:158
+msgid ""
+"This should save a ``test.html`` file locally, and open a browser tab to "
+"view the file. The result should look like this:"
+msgstr ""
+
+#: ../../source/docs/installation.rst:166
+msgid "Advanced Cases"
+msgstr ""
+
+#: ../../source/docs/installation.rst:168
+msgid ""
+"In addition to the standard installation methods above, Bokeh can also be"
+" installed in some specialized ways for advanced usage or development."
+msgstr ""
+
+#: ../../source/docs/installation.rst:174
+msgid "Source Code"
+msgstr ""
+
+#: ../../source/docs/installation.rst:176
+msgid ""
+"Installing Bokeh from source requires rebuilding the BokehJS library from"
+" its TypeScript sources. Some additional toolchain support is required. "
+"Please consult the :ref:`devguide_setup` section of the :ref:`devguide` "
+"for detailed instructions."
+msgstr ""
+
+#: ../../source/docs/installation.rst:184
+msgid "Developer Builds"
+msgstr ""
+
+#: ../../source/docs/installation.rst:186
+msgid ""
+"An easier way to obtain the most recent Bokeh updates without having to "
+"worry about building Bokeh yourself is to install a developer build. "
+"Developer builds are not published on any particular schedule but often "
+"come out a few times a month or more."
+msgstr ""
+
+#: ../../source/docs/installation.rst:191
+msgid ""
+"These builds are made available on the \"bokeh\" channel of "
+"`anaconda.org`_. If you are using Anaconda, you can install with conda by"
+" issuing the command from a Bash or Windows command prompt:"
+msgstr ""
+
+#: ../../source/docs/installation.rst:199
+msgid ""
+"Alternatively you can install with pip from a Bash or Windows command "
+"prompt:"
+msgstr ""
+
+#: ../../source/docs/installation.rst:205
+msgid ""
+"We attempt to make sure the developer builds are relatively stable, "
+"however please be aware they they are not tested as rigorously as "
+"standard releases. Any problems or issues reported on the GitHub issue "
+"tracker are appreciated."
+msgstr ""
+
+#: ../../source/docs/installation.rst:210
+msgid ""
+"**BokehJS resources for developer builds are not guaranteed to be "
+"permanently available**. You should never use any artifacts made by a "
+"developer build \"in production\"."
+msgstr ""
+
+#: ../../source/docs/installation.rst:217
+msgid "BokehJS"
+msgstr ""
+
+#: ../../source/docs/installation.rst:219
+msgid ""
+"If you would like to use BokehJS as a standalone JavaScript library, "
+"released versions of BokehJS are available for download from CDN at "
+"pydata.org, under the following naming scheme::"
+msgstr ""
+
+#: ../../source/docs/installation.rst:234
+msgid ""
+"The ``\"-widgets\"`` files are only necessary if you are using any of the"
+" widgets built into Bokeh in ``bokeh.models.widgets`` in your documents. "
+"Similarly, the ``\"-tables\"`` files are only necessary if you are using "
+"Bokeh data tables in your document. The ``\"bokeh-api\"`` files are "
+"required to use the BokehJS API, and must be loaded *after* the core "
+"BokehJS library."
+msgstr ""
+
+#: ../../source/docs/installation.rst:240
+msgid "As a concrete example, the links for version ``1.0.0`` are:"
+msgstr ""
+
+#: ../../source/docs/installation.rst:242
+msgid "http://cdn.pydata.org/bokeh/release/bokeh-1.0.0.min.css"
+msgstr ""
+
+#: ../../source/docs/installation.rst:243
+msgid "http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.0.0.min.css"
+msgstr ""
+
+#: ../../source/docs/installation.rst:244
+msgid "http://cdn.pydata.org/bokeh/release/bokeh-tables-1.0.0.min.css"
+msgstr ""
+
+#: ../../source/docs/installation.rst:246
+msgid "and"
+msgstr ""
+
+#: ../../source/docs/installation.rst:248
+msgid "http://cdn.pydata.org/bokeh/release/bokeh-1.0.0.min.js"
+msgstr ""
+
+#: ../../source/docs/installation.rst:249
+msgid "http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.0.0.min.js"
+msgstr ""
+
+#: ../../source/docs/installation.rst:250
+msgid "http://cdn.pydata.org/bokeh/release/bokeh-tables-1.0.0.min.js"
+msgstr ""
+
+#: ../../source/docs/installation.rst:251
+msgid "http://cdn.pydata.org/bokeh/release/bokeh-api-1.0.0.min.js"
+msgstr ""
+

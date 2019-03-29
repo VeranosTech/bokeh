@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/widgets.buttons.rst:4
+msgid "bokeh.models.widgets.buttons"
+msgstr ""
+
+#: bokeh.models.widgets.buttons:1 of
+msgid "Various kinds of button widgets."
+msgstr ""
+
+#: bokeh.models.widgets.buttons.AbstractButton:1 of
+msgid ""
+"Bases: :class:`bokeh.models.widgets.widget.Widget`, "
+":class:`bokeh.models.widgets.buttons.ButtonLike`"
+msgstr ""
+
+#: bokeh.models.widgets.buttons.AbstractButton:1 of
+msgid "A base class that defines common properties for all button types."
+msgstr ""
+
+#: bokeh.models.widgets.buttons.AbstractButton:5
+#: bokeh.models.widgets.buttons.ButtonLike:5 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.callbacks.Callback`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A callback to run in the browser whenever the button is activated."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.widgets.icons.AbstractIcon`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An optional image appearing to the left of button's text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text label for the button to display."
+msgstr ""
+
+#: bokeh.models.widgets.buttons.Button:1
+#: bokeh.models.widgets.buttons.Dropdown:1
+#: bokeh.models.widgets.buttons.Toggle:1 of
+msgid "Bases: :class:`bokeh.models.widgets.buttons.AbstractButton`"
+msgstr ""
+
+#: bokeh.models.widgets.buttons.Button:1 of
+msgid "A click button."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A private property that used to trigger ``on_click`` event handler."
+msgstr ""
+
+#: bokeh.models.widgets.buttons.Button.js_on_click:1 of
+msgid "Set up a JavaScript handler for button clicks."
+msgstr ""
+
+#: bokeh.models.widgets.buttons.Button.on_click:1 of
+msgid "Set up a handler for button clicks."
+msgstr ""
+
+#: bokeh.models.widgets.buttons.Button.on_click
+#: bokeh.models.widgets.buttons.Dropdown.on_click
+#: bokeh.models.widgets.buttons.Toggle.on_click of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.models.widgets.buttons.Button.on_click:3 of
+msgid "handler function to call when button is clicked."
+msgstr ""
+
+#: bokeh.models.widgets.buttons.Button.on_click
+#: bokeh.models.widgets.buttons.Dropdown.on_click
+#: bokeh.models.widgets.buttons.Toggle.on_click of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.models.widgets.buttons.Button.on_click:6
+#: bokeh.models.widgets.buttons.Dropdown.on_click:6
+#: bokeh.models.widgets.buttons.Toggle.on_click:6 of
+msgid "None"
+msgstr ""
+
+#: bokeh.models.widgets.buttons.ButtonLike:1 of
+msgid "Shared properties for button-like widgets."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.ButtonType`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A style for the button, signifying it's role."
+msgstr ""
+
+#: bokeh.models.widgets.buttons.Dropdown:1 of
+msgid "A dropdown button."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A default value to set when a split Dropdown's top button is clicked."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Setting this property will cause the Dropdown to be rendered as split."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.callbacks.Callback`  ) ) ) ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Button's dropdown menu consisting of entries containing item's text and "
+"value name. Use ``None`` as a menu separator."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Bool`"
+msgstr ""
+
+#: bokeh.models.widgets.buttons.Dropdown.js_on_click:1 of
+msgid "Set up a JavaScript handler for button or menu item clicks."
+msgstr ""
+
+#: bokeh.models.widgets.buttons.Dropdown.on_click:1 of
+msgid "Set up a handler for button or menu item clicks."
+msgstr ""
+
+#: bokeh.models.widgets.buttons.Dropdown.on_click:3 of
+msgid "handler function to call when button is activated."
+msgstr ""
+
+#: bokeh.models.widgets.buttons.Toggle:1 of
+msgid "A two-state toggle button."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The initial state of a button. Also used to trigger ``on_click`` event "
+"handler."
+msgstr ""
+
+#: bokeh.models.widgets.buttons.Toggle.js_on_click:1 of
+msgid "Set up a JavaScript handler for button state changes (clicks)."
+msgstr ""
+
+#: bokeh.models.widgets.buttons.Toggle.on_click:1 of
+msgid "Set up a handler for button state changes (clicks)."
+msgstr ""
+
+#: bokeh.models.widgets.buttons.Toggle.on_click:3 of
+msgid "handler function to call when button is toggled."
+msgstr ""
+

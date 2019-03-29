@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/contact.rst:6
+msgid "Contact"
+msgstr ""
+
+#: ../../source/docs/contact.rst:8
+msgid ""
+"For questions and technical assistance, join the `Bokeh mailing list`_, "
+"or the `Gitter chat channel`_. You can also ask, answer, and read "
+"questions on `StackOverflow`_ with the ``#bokeh`` tag."
+msgstr ""
+
+#: ../../source/docs/contact.rst:12
+msgid ""
+"To download the source code or submit issues to the issue tracker (for "
+"bug reports and feature requests), visit the `Bokeh GitHub repository`_."
+msgstr ""
+
+#: ../../source/docs/contact.rst:15
+msgid ""
+"To financially support the Bokeh project, you or your organization can "
+"make a `donation through NumFOCUS`_."
+msgstr ""
+
+#: ../../source/docs/contact.rst:18
+msgid ""
+"For information about commercial development, custom visualization "
+"development or embedding Bokeh in your applications, please contact "
+"sales@anaconda.com."
+msgstr ""
+
+#: ../../source/docs/contact.rst:21
+msgid ""
+"For up to date announcements and news, be sure to follow us on Twitter "
+"`@BokehPlots <Twitter_>`_!"
+msgstr ""
+

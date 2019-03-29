@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/arrow_heads.rst:4
+msgid "bokeh.models.arrow_heads"
+msgstr ""
+
+#: bokeh.models.arrow_heads:1 of
+msgid ""
+"Models for various kinds of arrow heads that can be added to Arrow "
+"annotations."
+msgstr ""
+
+#: bokeh.models.arrow_heads.ArrowHead:1 of
+msgid "Bases: :class:`bokeh.models.annotations.Annotation`"
+msgstr ""
+
+#: bokeh.models.arrow_heads.ArrowHead:1 of
+msgid "Base class for arrow heads."
+msgstr ""
+
+#: bokeh.models.arrow_heads.ArrowHead:5 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: bokeh.models.arrow_heads.NormalHead:1 bokeh.models.arrow_heads.OpenHead:1
+#: bokeh.models.arrow_heads.TeeHead:1 bokeh.models.arrow_heads.VeeHead:1 of
+msgid "Bases: :class:`bokeh.models.arrow_heads.ArrowHead`"
+msgstr ""
+
+#: bokeh.models.arrow_heads.NormalHead:1 of
+msgid "Render a closed-body arrow head."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.NumberSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill alpha values for the arrow head interior."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.ColorSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill color values for the arrow head interior."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha values for the arrow head outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LineCap`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap values for the arrow head outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color values for the arrow head outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.DashPattern`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash values for the arrow head outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset values for the arrow head outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LineJoin`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join values for the arrow head outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width values for the arrow head outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Float`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The size, in pixels, of the arrow head."
+msgstr ""
+
+#: bokeh.models.arrow_heads.OpenHead:1 of
+msgid "Render an open-body arrow head."
+msgstr ""
+
+#: bokeh.models.arrow_heads.TeeHead:1 of
+msgid "Render a tee-style arrow head."
+msgstr ""
+
+#: bokeh.models.arrow_heads.VeeHead:1 of
+msgid "Render a vee-style arrow head."
+msgstr ""
+

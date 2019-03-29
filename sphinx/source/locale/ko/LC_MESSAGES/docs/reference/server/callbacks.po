@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/server/callbacks.rst:4
+msgid "bokeh.server.callbacks"
+msgstr ""
+
+#: bokeh.server.callbacks:1 of
+msgid ""
+"Provide classes to represent callback code that can be associate with "
+"Bokeh Documents and Sessions."
+msgstr ""
+
+#: bokeh.server.callbacks.NextTickCallback:1 of
+msgid "Represent a callback to execute on the next ``IOLoop`` \"tick\"."
+msgstr ""
+
+#: bokeh.server.callbacks.NextTickCallback.__init__
+#: bokeh.server.callbacks.PeriodicCallback.__init__
+#: bokeh.server.callbacks.SessionCallback.__init__
+#: bokeh.server.callbacks.TimeoutCallback.__init__ of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.server.callbacks.PeriodicCallback:1 of
+msgid ""
+"Represent a callback to execute periodically on the ``IOLoop`` at a "
+"specified periodic time interval."
+msgstr ""
+
+#: bokeh.server.callbacks.PeriodicCallback.period:1 of
+msgid ""
+"The period time (in milliseconds) that this callback should repeat "
+"execution at."
+msgstr ""
+
+#: bokeh.server.callbacks.SessionCallback:1 of
+msgid ""
+"A base class for callback objects associated with Bokeh Documents and "
+"Sessions."
+msgstr ""
+
+#: bokeh.server.callbacks.SessionCallback.callback:1 of
+msgid "The callable that this callback wraps."
+msgstr ""
+
+#: bokeh.server.callbacks.SessionCallback.id:1 of
+msgid "A unique ID for this callback"
+msgstr ""
+
+#: bokeh.server.callbacks.TimeoutCallback:1 of
+msgid ""
+"Represent a callback to execute once on the ``IOLoop`` after a specified "
+"time interval passes."
+msgstr ""
+
+#: bokeh.server.callbacks.TimeoutCallback.timeout:1 of
+msgid "The timeout (in milliseconds) that the callback should run after."
+msgstr ""
+

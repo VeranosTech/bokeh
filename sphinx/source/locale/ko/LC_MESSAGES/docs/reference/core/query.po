@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/core/query.rst:4
+msgid "bokeh.core.query"
+msgstr ""
+
+#: bokeh.core.query:1 of
+msgid ""
+"The query module provides functions for searching collections of Bokeh "
+"models for instances that match specified criteria."
+msgstr ""
+
+#: bokeh.core.query.EQ:1 of
+msgid "Predicate to test if property values are equal to some value."
+msgstr ""
+
+#: bokeh.core.query.EQ:3 of
+msgid ""
+"Construct and ``EQ`` predicate as a dict with ``EQ`` as the key, and a "
+"value to compare against."
+msgstr ""
+
+#: bokeh.core.query.GEQ:1 of
+msgid ""
+"Predicate to test if property values are greater than or equal to some "
+"value."
+msgstr ""
+
+#: bokeh.core.query.GEQ:4 of
+msgid ""
+"Construct and ``GEQ`` predicate as a dict with ``GEQ`` as the key, and a "
+"value to compare against."
+msgstr ""
+
+#: bokeh.core.query.GT:1 of
+msgid "Predicate to test if property values are greater than some value."
+msgstr ""
+
+#: bokeh.core.query.GT:3 of
+msgid ""
+"Construct and ``GT`` predicate as a dict with ``GT`` as the key, and a "
+"value to compare against."
+msgstr ""
+
+#: bokeh.core.query.IN:1 of
+msgid "Predicate to test if property values are in some collection."
+msgstr ""
+
+#: bokeh.core.query.IN:3 of
+msgid ""
+"Construct and ``IN`` predicate as a dict with ``IN`` as the key, and a "
+"list of values to check against."
+msgstr ""
+
+#: bokeh.core.query.LEQ:1 of
+msgid "Predicate to test if property values are less than or equal to some value."
+msgstr ""
+
+#: bokeh.core.query.LEQ:4 of
+msgid ""
+"Construct and ``LEQ`` predicate as a dict with ``LEQ`` as the key, and a "
+"value to compare against."
+msgstr ""
+
+#: bokeh.core.query.LT:1 of
+msgid "Predicate to test if property values are less than some value."
+msgstr ""
+
+#: bokeh.core.query.LT:3 of
+msgid ""
+"Construct and ``LT`` predicate as a dict with ``LT`` as the key, and a "
+"value to compare against."
+msgstr ""
+
+#: bokeh.core.query.NEQ:1 of
+msgid "Predicate to test if property values are unequal to some value."
+msgstr ""
+
+#: bokeh.core.query.NEQ:3 of
+msgid ""
+"Construct and ``NEQ`` predicate as a dict with ``NEQ`` as the key, and a "
+"value to compare against."
+msgstr ""
+
+#: bokeh.core.query.OR:1 of
+msgid "Form disjunctions from other query predicates."
+msgstr ""
+
+#: bokeh.core.query.OR:3 of
+msgid ""
+"Construct an ``OR`` expression by making a dict with ``OR`` as the key, "
+"and a list of other query expressions as the value:"
+msgstr ""
+
+#: bokeh.core.query.find:1 of
+msgid ""
+"Query a collection of Bokeh models and yield any that match the a "
+"selector."
+msgstr ""
+
+#: bokeh.core.query.find bokeh.core.query.match of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.core.query.find:4 bokeh.core.query.match:3 of
+msgid "object to test"
+msgstr ""
+
+#: bokeh.core.query.find:6 bokeh.core.query.match:5 of
+msgid "query selector"
+msgstr ""
+
+#: bokeh.core.query.find:8 bokeh.core.query.match:7 of
+msgid "kwargs to supply callable query attributes"
+msgstr ""
+
+#: bokeh.core.query.find of
+msgid "Yields"
+msgstr ""
+
+#: bokeh.core.query.find:11 of
+msgid "*Model* -- objects that match the query"
+msgstr ""
+
+#: bokeh.core.query.find:13 of
+msgid ""
+"Queries are specified as selectors similar to MongoDB style query "
+"selectors, as described for :func:`~bokeh.core.query.match`."
+msgstr ""
+
+#: bokeh.core.query.find:17 of
+msgid "Examples"
+msgstr ""
+
+#: bokeh.core.query.match:1 of
+msgid "Test whether a given Bokeh model matches a given selector."
+msgstr ""
+
+#: bokeh.core.query.match of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.core.query.match:10 of
+msgid "True if the object matches, False otherwise"
+msgstr ""
+
+#: bokeh.core.query.match of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.core.query.match:13 of
+msgid "In general, the selectors have the form:"
+msgstr ""
+
+#: bokeh.core.query.match:19 of
+msgid ""
+"Where a predicate is constructed from the operators ``EQ``, ``GT``, etc. "
+"and is used to compare against values of model attributes named "
+"``attrname``."
+msgstr ""
+
+#: bokeh.core.query.match:23 of
+msgid "For example:"
+msgstr ""
+
+#: bokeh.core.query.match:36 of
+msgid ""
+"There are two selector keys that are handled especially. The first is "
+"'type', which will do an isinstance check:"
+msgstr ""
+
+#: bokeh.core.query.match:51 of
+msgid ""
+"There is also a ``'tags'`` attribute that ``Model`` objects have, that is"
+" a list of user-supplied values. The ``'tags'`` selector key can be used "
+"to query against this list of tags. An object matches if any of the tags "
+"in the selector match any of the tags on the object:"
+msgstr ""
+

@@ -1,0 +1,1820 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/tools.rst:4
+msgid "bokeh.models.tools"
+msgstr ""
+
+#: bokeh.models.tools:1 of
+msgid "Bokeh comes with a number of interactive tools."
+msgstr ""
+
+#: bokeh.models.tools:3 of
+msgid "There are five types of tool interactions:"
+msgstr ""
+
+#: bokeh.models.tools:8 of
+msgid "Pan/Drag"
+msgstr ""
+
+#: bokeh.models.tools:9 of
+msgid "Click/Tap"
+msgstr ""
+
+#: bokeh.models.tools:10 of
+msgid "Scroll/Pinch"
+msgstr ""
+
+#: bokeh.models.tools:11 of
+msgid "Actions"
+msgstr ""
+
+#: bokeh.models.tools:12 of
+msgid "Inspectors"
+msgstr ""
+
+#: bokeh.models.tools:14 of
+msgid ""
+"For the first three comprise the category of gesture tools, and only one "
+"tool for each gesture can be active at any given time. The active tool is"
+" indicated on the toolbar by a highlight next to the tool. Actions are "
+"immediate or modal operations that are only activated when their button "
+"in the toolbar is pressed. Inspectors are passive tools that merely "
+"report information or annotate the plot in some way, and may always be "
+"active regardless of what other tools are currently active."
+msgstr ""
+
+#: bokeh.models.tools.Action:1 bokeh.models.tools.Gesture:1 of
+msgid "Bases: :class:`bokeh.models.tools.Tool`"
+msgstr ""
+
+#: bokeh.models.tools.Action:1 of
+msgid "A base class for tools that are buttons in the toolbar."
+msgstr ""
+
+#: bokeh.models.tools.Action:5 bokeh.models.tools.Drag:5
+#: bokeh.models.tools.EditTool:5 bokeh.models.tools.Gesture:5
+#: bokeh.models.tools.Inspection:5 bokeh.models.tools.Scroll:5
+#: bokeh.models.tools.Tap:5 bokeh.models.tools.Tool:5
+#: bokeh.models.tools.ToolbarBase:5 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: bokeh.models.tools.BoxEditTool:1 bokeh.models.tools.FreehandDrawTool:1
+#: bokeh.models.tools.PointDrawTool:1 bokeh.models.tools.PolyDrawTool:1
+#: bokeh.models.tools.PolyEditTool:1 of
+msgid ""
+"Bases: :class:`bokeh.models.tools.EditTool`, "
+":class:`bokeh.models.tools.Drag`, :class:`bokeh.models.tools.Tap`"
+msgstr ""
+
+#: bokeh.models.tools.BoxEditTool:1 of
+msgid "*toolbar icon*: |box_edit_icon|"
+msgstr ""
+
+#: bokeh.models.tools.BoxEditTool:3 of
+msgid ""
+"Allows drawing, dragging and deleting ``Rect`` glyphs on one or more "
+"renderers by editing the underlying ``ColumnDataSource`` data. Like other"
+" drawing tools, the renderers that are to be edited must be supplied "
+"explicitly as a list. When drawing a new box the data will always be "
+"added to the ``ColumnDataSource`` on the first supplied renderer."
+msgstr ""
+
+#: bokeh.models.tools.BoxEditTool:9 of
+msgid ""
+"The tool will automatically modify the columns on the data source "
+"corresponding to the ``x``, ``y``, ``width`` and ``height`` values of the"
+" glyph. Any additional columns in the data source will be padded with the"
+" declared ``empty_value``, when adding a new box."
+msgstr ""
+
+#: bokeh.models.tools.BoxEditTool:14 bokeh.models.tools.FreehandDrawTool:11
+#: bokeh.models.tools.PointDrawTool:21 bokeh.models.tools.PolyDrawTool:19
+#: bokeh.models.tools.PolyEditTool:14 of
+msgid "The supported actions include:"
+msgstr ""
+
+#: bokeh.models.tools.BoxEditTool:16 of
+msgid ""
+"Add box: Hold shift then click and drag anywhere on the plot or double "
+"tap once to start drawing, move the mouse and double tap again to finish "
+"drawing."
+msgstr ""
+
+#: bokeh.models.tools.BoxEditTool:20 of
+msgid ""
+"Move box: Click and drag an existing box, the box will be dropped once "
+"you let go of the mouse button."
+msgstr ""
+
+#: bokeh.models.tools.BoxEditTool:23 of
+msgid ""
+"Delete box: Tap a box to select it then press <<backspace>> key while the"
+" mouse is within the plot area."
+msgstr ""
+
+#: bokeh.models.tools.BoxEditTool:26 of
+msgid "To **Move** or **Delete** multiple boxes at once:"
+msgstr ""
+
+#: bokeh.models.tools.BoxEditTool:28 of
+msgid ""
+"Move selection: Select box(es) with <<shift>>+tap (or another selection "
+"tool) then drag anywhere on the plot. Selecting and then dragging on a "
+"specific box will move both."
+msgstr ""
+
+#: bokeh.models.tools.BoxEditTool:32 of
+msgid ""
+"Delete selection: Select box(es) with <<shift>>+tap (or another selection"
+" tool) then press <<backspace>> while the mouse is within the plot area."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.Dimensions`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Which dimensions the box drawing is to be free in. By default, users may "
+"freely draw boxes with any dimensions. If only \"width\" is supplied, the"
+" box will be constrained to span the entire vertical space of the plot, "
+"only the horizontal dimension can be controlled. If only \"height\" is "
+"supplied, the box will be constrained to span the entire horizontal space"
+" of the plot, and the vertical dimension can be controlled."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Defines a limit on the number of boxes that can be drawn. By default "
+"there is no limit on the number of objects, but if enabled the oldest "
+"drawn box will be dropped to make space for the new box being added."
+msgstr ""
+
+#: bokeh.models.tools.BoxSelectTool:1 bokeh.models.tools.BoxZoomTool:1
+#: bokeh.models.tools.LassoSelectTool:1 bokeh.models.tools.PanTool:1
+#: bokeh.models.tools.RangeTool:1 of
+msgid "Bases: :class:`bokeh.models.tools.Drag`"
+msgstr ""
+
+#: bokeh.models.tools.BoxSelectTool:1 of
+msgid "*toolbar icon*: |box_select_icon|"
+msgstr ""
+
+#: bokeh.models.tools.BoxSelectTool:3 of
+msgid ""
+"The box selection tool allows users to make selections on a Plot by "
+"indicating a rectangular region by dragging the mouse or a finger over "
+"the plot region. The end of the drag event indicates the selection region"
+" is ready."
+msgstr ""
+
+#: bokeh.models.tools.BoxSelectTool:8 bokeh.models.tools.LassoSelectTool:8
+#: bokeh.models.tools.PolySelectTool:9 bokeh.models.tools.TapTool:6 of
+msgid ""
+"See :ref:`userguide_styling_selected_unselected_glyphs` for information "
+"on styling selected and unselected glyphs."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.callbacks.Callback`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A callback to run in the browser on completion of drawing a selection "
+"box. The ``cb_data`` parameter that is available to the Callback code "
+"will contain one ``BoxSelectTool``-specific field:"
+msgstr ""
+
+#: ../../<bokeh-prop>
+msgid "geometry"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "object containing the coordinates of the selection box"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Which dimensions the box selection is to be free in. By default, users "
+"may freely draw selections boxes with any dimensions. If only \"width\" "
+"is supplied, the box will be constrained to span the entire vertical "
+"space of the plot, only the horizontal dimension can be controlled. If "
+"only \"height\" is supplied, the box will be constrained to span the "
+"entire horizontal space of the plot, and the vertical dimension can be "
+"controlled."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.String`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A list of names to query for. If set, only renderers that have a matching"
+" value for their ``name`` attribute will be used."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+"Enumeration(corner, center) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Indicates whether the rectangular selection area should originate from a "
+"corner (top-left or bottom-right depending on direction) or the center of"
+" the box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.annotations.BoxAnnotation`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A shaded annotation drawn to indicate the selection region."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Auto` , "
+":class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.renderers.Renderer`  ) ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"An explicit list of renderers to hit test against. If unset, defaults to "
+"all renderers on a plot."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Bool`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether a selection computation should happen on every mouse event, or "
+"only once, when the selection region is completed. Default: False"
+msgstr ""
+
+#: bokeh.models.tools.BoxZoomTool:1 of
+msgid "*toolbar icon*: |box_zoom_icon|"
+msgstr ""
+
+#: bokeh.models.tools.BoxZoomTool:3 of
+msgid ""
+"The box zoom tool allows users to define a rectangular region of a Plot "
+"to zoom to by dragging he mouse or a finger over the plot region. The end"
+" of the drag event indicates the selection region is ready."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Which dimensions the zoom box is to be free in. By default, users may "
+"freely draw zoom boxes with any dimensions. If only \"width\" is "
+"supplied, the box will be constrained to span the entire vertical space "
+"of the plot, only the horizontal dimension can be controlled. If only "
+"\"height\" is supplied, the box will be constrained to span the entire "
+"horizontal space of the plot, and the vertical dimension can be "
+"controlled."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether the box zoom region should be restricted to have the same aspect "
+"ratio as the plot region."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "If the tool is restricted to one dimension, this value has no effect."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Indicates whether the rectangular zoom area should originate from a "
+"corner (top-left or bottom-right depending on direction) or the center of"
+" the box."
+msgstr ""
+
+#: bokeh.models.tools.CrosshairTool:1 bokeh.models.tools.HoverTool:1 of
+msgid "Bases: :class:`bokeh.models.tools.Inspection`"
+msgstr ""
+
+#: bokeh.models.tools.CrosshairTool:1 bokeh.models.tools.HoverTool:1 of
+msgid "*toolbar icon*: |crosshair_icon|"
+msgstr ""
+
+#: bokeh.models.tools.CrosshairTool:3 of
+msgid ""
+"The crosshair tool is a passive inspector tool. It is generally on at all"
+" times, but can be configured in the inspector's menu associated with the"
+" *toolbar icon* shown above."
+msgstr ""
+
+#: bokeh.models.tools.CrosshairTool:7 of
+msgid ""
+"The crosshair tool draws a crosshair annotation over the plot, centered "
+"on the current mouse position. The crosshair tool may be configured to "
+"draw across only one dimension by setting the ``dimension`` property to "
+"only ``width`` or ``height``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Which dimensions the crosshair tool is to track. By default, both a "
+"vertical and horizontal line will be drawn. If only \"width\" is "
+"supplied, only a horizontal line will be drawn. If only \"height\" is "
+"supplied, only a vertical line will be drawn."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Float`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An alpha value to use to stroke paths with."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Acceptable values are floating point numbers between 0 (transparent) and "
+"1 (opaque)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Color`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A color to use to stroke paths with."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Acceptable values are:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "any of the 147 named `CSS colors`_, e.g ``'green'``, ``'indigo'``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "an RGB(A) hex value, e.g., ``'#FF0000'``, ``'#44444444'``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "a 3-tuple of integers (r,g,b) between 0 and 255"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"a 4-tuple of (r,g,b,a) where r,g,b are integers between 0..255 and a is "
+"between 0..1"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Stroke width in units of pixels."
+msgstr ""
+
+#: bokeh.models.tools.CustomAction:1 bokeh.models.tools.HelpTool:1
+#: bokeh.models.tools.RedoTool:1 bokeh.models.tools.ResetTool:1
+#: bokeh.models.tools.SaveTool:1 bokeh.models.tools.UndoTool:1
+#: bokeh.models.tools.ZoomInTool:1 bokeh.models.tools.ZoomOutTool:1 of
+msgid "Bases: :class:`bokeh.models.tools.Action`"
+msgstr ""
+
+#: bokeh.models.tools.CustomAction:1 of
+msgid ""
+"Execute a custom action, e.g. ``CustomJS`` callback when a toolbar icon "
+"is activated."
+msgstr ""
+
+#: bokeh.models.tools.CustomAction:5 bokeh.models.tools.CustomJSHover:25 of
+msgid "Example"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Tooltip displayed when hovering over the custom action icon."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A Bokeh callback to execute when the custom action icon is activated."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Image`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An icon to display in the toolbar."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The icon can provided as a string filename for an image, a PIL ``Image`` "
+"object, or an RGB(A) NumPy array."
+msgstr ""
+
+#: bokeh.models.tools.CustomJSHover:1 bokeh.models.tools.Tool:1
+#: bokeh.models.tools.ToolbarBase:1 of
+msgid "Bases: :class:`bokeh.model.Model`"
+msgstr ""
+
+#: bokeh.models.tools.CustomJSHover:1 of
+msgid "Define a custom formatter to apply to a hover tool field."
+msgstr ""
+
+#: bokeh.models.tools.CustomJSHover:3 of
+msgid ""
+"This model can be configured with JavaScript code to format hover "
+"tooltips. The JavaScript code has access to the current value to format, "
+"some special variables, and any format configured on the tooltip. The "
+"variable ``value`` will contain the untransformed value. The variable "
+"``special_vars`` will provide a dict with the following contents:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1 bokeh.models.tools.CustomJSHover:9 of
+msgid "``x`` data-space x-coordinate of the mouse"
+msgstr ""
+
+#: ../../<bokeh-prop>:1 bokeh.models.tools.CustomJSHover:10 of
+msgid "``y`` data-space y-coordinate of the mouse"
+msgstr ""
+
+#: ../../<bokeh-prop>:1 bokeh.models.tools.CustomJSHover:11 of
+msgid "``sx`` screen-space x-coordinate of the mouse"
+msgstr ""
+
+#: ../../<bokeh-prop>:1 bokeh.models.tools.CustomJSHover:12 of
+msgid "``sy`` screen-space y-coordinate of the mouse"
+msgstr ""
+
+#: ../../<bokeh-prop>:1 bokeh.models.tools.CustomJSHover:13 of
+msgid "``data_x`` data-space x-coordinate of the hovered glyph"
+msgstr ""
+
+#: ../../<bokeh-prop>:1 bokeh.models.tools.CustomJSHover:14 of
+msgid "``data_y`` data-space y-coordinate of the hovered glyph"
+msgstr ""
+
+#: ../../<bokeh-prop>:1 bokeh.models.tools.CustomJSHover:15 of
+msgid "``indices`` column indices of all currently hovered glyphs"
+msgstr ""
+
+#: bokeh.models.tools.CustomJSHover:16 of
+msgid "``name`` value of the ``name`` property of the hovered glyph renderer"
+msgstr ""
+
+#: ../../<bokeh-prop>:1 bokeh.models.tools.CustomJSHover:18 of
+msgid ""
+"If the hover is over a \"multi\" glyph such as ``Patches`` or "
+"``MultiLine`` then a ``segment_index`` key will also be present."
+msgstr ""
+
+#: ../../<bokeh-prop>:1 bokeh.models.tools.CustomJSHover:21 of
+msgid ""
+"Finally, the value of the format passed in the tooltip specification is "
+"available as the ``format`` variable."
+msgstr ""
+
+#: bokeh.models.tools.CustomJSHover:26 of
+msgid ""
+"As an example, the following code adds a custom formatter to format "
+"WebMercator northing coordinates (in meters) as a latitude:"
+msgstr ""
+
+#: bokeh.models.tools.CustomJSHover:45 of
+msgid ""
+"The explicit purpose of this Bokeh Model is to embed *raw JavaScript "
+"code* for a browser to execute. If any part of the code is derived from "
+"untrusted user inputs, then you must take appropriate care to sanitize "
+"the user input prior to passing to Bokeh."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Dict` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.Instance` ( :class:`~bokeh.model.Model`  )"
+" )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A mapping of names to Bokeh plot objects. These objects are made "
+"available to the callback code snippet as the values of named parameters "
+"to the callback."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A snippet of JavaScript code to transform a single value. The variable "
+"``value`` will contain the untransformed value and can be expected to be "
+"present in the function namespace at render time. Additionally, the "
+"variable ``special_vars`` will be available, and will provide a dict with"
+" the following contents:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The snippet will be made into the body of a function and therefore "
+"requires a return statement."
+msgstr ""
+
+#: ../../<bokeh-prop>:1 bokeh.models.tools.CustomJSHover.from_coffeescript:9 of
+msgid "Example:"
+msgstr ""
+
+#: bokeh.models.tools.CustomJSHover.from_coffeescript:1 of
+msgid ""
+"Create a CustomJSHover instance from a CoffeeScript snippet. The function"
+" bodies are translated to JavaScript functions using node and therefore "
+"require return statements."
+msgstr ""
+
+#: bokeh.models.tools.CustomJSHover.from_coffeescript:5 of
+msgid ""
+"The ``code`` snippet namespace will contain the variable ``value`` (the "
+"untransformed value) at render time as well as ``format`` and "
+"``special_vars`` as described in the class description."
+msgstr ""
+
+#: bokeh.models.tools.CustomJSHover.from_coffeescript
+#: bokeh.models.tools.CustomJSHover.from_py_func of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.models.tools.CustomJSHover.from_coffeescript:15 of
+msgid "A coffeescript snippet to transform a single ``value`` value"
+msgstr ""
+
+#: bokeh.models.tools.CustomJSHover.from_coffeescript
+#: bokeh.models.tools.CustomJSHover.from_py_func of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.models.tools.CustomJSHover.from_coffeescript:18
+#: bokeh.models.tools.CustomJSHover.from_py_func:15 of
+msgid "CustomJSHover"
+msgstr ""
+
+#: bokeh.models.tools.CustomJSHover.from_py_func:1 of
+msgid ""
+"Create a ``CustomJSHover`` instance from a Python functions. The function"
+" is translated to JavaScript using PScript."
+msgstr ""
+
+#: bokeh.models.tools.CustomJSHover.from_py_func:4 of
+msgid ""
+"The python functions must have no positional arguments. It's possible to "
+"pass Bokeh models (e.g. a ``ColumnDataSource``) as keyword arguments to "
+"the functions."
+msgstr ""
+
+#: bokeh.models.tools.CustomJSHover.from_py_func:8 of
+msgid ""
+"The ``code`` function namespace will contain the variable ``value`` (the "
+"untransformed value) at render time as well as ``format`` and "
+"``special_vars`` as described in the class description."
+msgstr ""
+
+#: bokeh.models.tools.CustomJSHover.from_py_func:12 of
+msgid "a scalar function to transform a single ``value``"
+msgstr ""
+
+#: bokeh.models.tools.Drag:1 bokeh.models.tools.EditTool:1
+#: bokeh.models.tools.Inspection:1 bokeh.models.tools.Scroll:1
+#: bokeh.models.tools.Tap:1 of
+msgid "Bases: :class:`bokeh.models.tools.Gesture`"
+msgstr ""
+
+#: bokeh.models.tools.Drag:1 bokeh.models.tools.Gesture:1 of
+msgid "A base class for tools that respond to drag events."
+msgstr ""
+
+#: bokeh.models.tools.EditTool:1 of
+msgid "A base class for all interactive draw tool types."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A custom tooltip label to override the default name."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Bool` , "
+":class:`~bokeh.core.properties.Int` , "
+":class:`~bokeh.core.properties.Float` , "
+":class:`~bokeh.core.properties.Date` , "
+":class:`~bokeh.core.properties.Datetime` , "
+":class:`~bokeh.core.properties.Color`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Defines the value to insert on non-coordinate columns when a new glyph is"
+" inserted into the ``ColumnDataSource`` columns, e.g. when a circle glyph"
+" defines 'x', 'y' and 'color' columns, adding a new point will add the x "
+"and y-coordinates to 'x' and 'y' columns and the color column will be "
+"filled with the defined empty value."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.renderers.Renderer`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"An explicit list of renderers corresponding to scatter glyphs that may be"
+" edited."
+msgstr ""
+
+#: bokeh.models.tools.FreehandDrawTool:1 of
+msgid "*toolbar icon*: |freehand_draw_icon|"
+msgstr ""
+
+#: bokeh.models.tools.FreehandDrawTool:3 of
+msgid ""
+"Allows freehand drawing of ``Patches`` and ``MultiLine`` glyphs. The "
+"glyph to draw may be defined via the ``renderers`` property."
+msgstr ""
+
+#: bokeh.models.tools.FreehandDrawTool:6 bokeh.models.tools.PolyDrawTool:9
+#: bokeh.models.tools.PolyEditTool:9 of
+msgid ""
+"The tool will automatically modify the columns on the data source "
+"corresponding to the ``xs`` and ``ys`` values of the glyph. Any "
+"additional columns in the data source will be padded with the declared "
+"``empty_value``, when adding a new point."
+msgstr ""
+
+#: bokeh.models.tools.FreehandDrawTool:13 of
+msgid "Draw vertices: Click and drag to draw a line"
+msgstr ""
+
+#: bokeh.models.tools.FreehandDrawTool:15 bokeh.models.tools.PolyDrawTool:30 of
+msgid ""
+"Delete patch/multi-line: Tap a patch/multi-line to select it then press "
+"<<backspace>> key while the mouse is within the plot area."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Defines a limit on the number of patches or multi-lines that can be "
+"drawn. By default there is no limit on the number of objects, but if "
+"enabled the oldest drawn patch or multi-line will be overwritten when the"
+" limit is reached."
+msgstr ""
+
+#: bokeh.models.tools.HelpTool:1 of
+msgid "A button tool to provide a \"help\" link to users."
+msgstr ""
+
+#: bokeh.models.tools.HelpTool:3 of
+msgid ""
+"The hover text can be customized through the ``help_tooltip`` attribute "
+"and the redirect site overridden as well."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Tooltip displayed when hovering over the help icon."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Site to be redirected through upon click."
+msgstr ""
+
+#: bokeh.models.tools.HoverTool:3 of
+msgid ""
+"The hover tool is a passive inspector tool. It is generally on at all "
+"times, but can be configured in the inspector's menu associated with the "
+"*toolbar icon* shown above."
+msgstr ""
+
+#: bokeh.models.tools.HoverTool:7 of
+msgid ""
+"By default, the hover tool displays informational tooltips whenever the "
+"cursor is directly over a glyph. The data to show comes from the glyph's "
+"data source, and what is to be displayed is configurable with the "
+"``tooltips`` attribute that maps display names to columns in the data "
+"source, or to special known variables."
+msgstr ""
+
+#: bokeh.models.tools.HoverTool:13 of
+msgid "Here is an example of how to configure and use the hover tool::"
+msgstr ""
+
+#: bokeh.models.tools.HoverTool:28 of
+msgid ""
+"You can also supply a ``Callback`` to the ``HoverTool``, to build custom "
+"interactions on hover. In this case you may want to turn the tooltips off"
+" by setting ``tooltips=None``."
+msgstr ""
+
+#: bokeh.models.tools.HoverTool:33 of
+msgid ""
+"When supplying a callback or custom template, the explicit intent of this"
+" Bokeh Model is to embed *raw HTML and  JavaScript code* for a browser to"
+" execute. If any part of the code is derived from untrusted user inputs, "
+"then you must take appropriate care to sanitize the user input prior to "
+"passing to Bokeh."
+msgstr ""
+
+#: bokeh.models.tools.HoverTool:39 of
+msgid "Hover tool does not currently work with the following glyphs:"
+msgstr ""
+
+#: bokeh.models.tools.HoverTool:44 of
+msgid "annulus"
+msgstr ""
+
+#: bokeh.models.tools.HoverTool:45 of
+msgid "arc"
+msgstr ""
+
+#: bokeh.models.tools.HoverTool:46 of
+msgid "bezier"
+msgstr ""
+
+#: bokeh.models.tools.HoverTool:47 of
+msgid "image"
+msgstr ""
+
+#: bokeh.models.tools.HoverTool:48 of
+msgid "image_rgba"
+msgstr ""
+
+#: bokeh.models.tools.HoverTool:49 of
+msgid "image_url"
+msgstr ""
+
+#: bokeh.models.tools.HoverTool:50 of
+msgid "oval"
+msgstr ""
+
+#: bokeh.models.tools.HoverTool:51 of
+msgid "patch"
+msgstr ""
+
+#: bokeh.models.tools.HoverTool:52 of
+msgid "quadratic"
+msgstr ""
+
+#: bokeh.models.tools.HoverTool:53 of
+msgid "ray"
+msgstr ""
+
+#: bokeh.models.tools.HoverTool:54 of
+msgid "text"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LegendLocation`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"If point policy is set to `\"snap_to_data\"`, `anchor` defines the "
+"attachment point of a tooltip. The default is to attach to the center of "
+"a glyph."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.TooltipAttachment`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether the tooltip should be displayed to the left or right of the "
+"cursor position or above or below it, or if it should be automatically "
+"placed in the horizontal or vertical dimension."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A callback to run in the browser whenever the input's value changes. The "
+"``cb_data`` parameter that is available to the Callback code will contain"
+" two ``HoverTool`` specific fields:"
+msgstr ""
+
+#: ../../<bokeh-prop>
+msgid "index"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "object containing the indices of the hovered points in the data source"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "object containing the coordinates of the hover cursor"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Dict` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.TooltipFieldFormatter`  ), "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.tools.CustomJSHover`  ) ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Specify the formatting scheme for data source columns, e.g."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"will cause format specifications for the \"date\" column to be "
+"interpreted according to the \"datetime\" formatting scheme. The "
+"following schemes are available:"
+msgstr ""
+
+#: ../../<bokeh-prop>
+msgid "``\"numeral\"``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Provides a wide variety of formats for numbers, currency, bytes, times, "
+"and percentages. The full set of formats can be found in the "
+"|NumeralTickFormatter| reference documentation."
+msgstr ""
+
+#: ../../<bokeh-prop>
+msgid "``\"datetime\"``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Provides formats for date and time values. The full set of formats is "
+"listed in the |DatetimeTickFormatter| reference documentation."
+msgstr ""
+
+#: ../../<bokeh-prop>
+msgid "``\"printf\"``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Provides formats similar to C-style \"printf\" type specifiers. See the "
+"|PrintfTickFormatter| reference documentation for complete details."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"If no formatter is specified for a column name, the default "
+"``\"numeral\"`` formatter is assumed."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( Enumeration(prev,"
+" next, nearest, interp, none) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"When showing tooltips for lines, designates whether the tooltip position "
+"should be the \"previous\" or \"next\" points on the line, the "
+"\"nearest\" point to the current mouse position, or \"interpolate\" along"
+" the line to the current mouse position."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+"Enumeration(mouse, hline, vline) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether to consider hover pointer as a point (x/y values), or a span on h"
+" or v directions."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+"Enumeration(snap_to_data, follow_mouse, none) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether the tooltip position should snap to the \"center\" (or other "
+"anchor) position of the associated glyph, or always follow the current "
+"mouse cursor position."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Whether tooltip's arrow should be shown."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.String`  ) ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The (name, field) pairs describing what the hover tool should display "
+"when there is a hit."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Field names starting with \"@\" are interpreted as columns on the data "
+"source. For instance, \"@temp\" would look up values to display from the "
+"\"temp\" column of the data source."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Field names starting with \"$\" are special, known fields:"
+msgstr ""
+
+#: ../../<bokeh-prop>
+msgid "$index"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "index of hovered point in the data source"
+msgstr ""
+
+#: ../../<bokeh-prop>
+msgid "$name"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "value of the ``name`` property of the hovered glyph renderer"
+msgstr ""
+
+#: ../../<bokeh-prop>
+msgid "$x"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "x-coordinate under the cursor in data space"
+msgstr ""
+
+#: ../../<bokeh-prop>
+msgid "$y"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "y-coordinate under the cursor in data space"
+msgstr ""
+
+#: ../../<bokeh-prop>
+msgid "$sx"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "x-coordinate under the cursor in screen (canvas) space"
+msgstr ""
+
+#: ../../<bokeh-prop>
+msgid "$sy"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "y-coordinate under the cursor in screen (canvas) space"
+msgstr ""
+
+#: ../../<bokeh-prop>
+msgid "$color"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"color data from data source, with the syntax: "
+"``$color[options]:field_name``. The available options are: 'hex' (to "
+"display the color as a hex value), and 'swatch' to also display a small "
+"color swatch."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Field names that begin with ``@`` are associated with columns in a "
+"``ColumnDataSource``. For instance the field name ``\"@price\"`` will "
+"display values from the ``\"price\"`` column whenever a hover is "
+"triggered. If the hover is for the 17th glyph, then the hover tooltip "
+"will correspondingly display the 17th price value."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Note that if a column name contains spaces, the it must be supplied by "
+"surrounding it in curly braces, e.g. ``@{adjusted close}`` will display "
+"values from a column named ``\"adjusted close\"``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Sometimes (especially with stacked charts) it is desirable to allow the "
+"name of the column be specified indirectly. The field name ``@$name`` is "
+"distinguished in that it will look up the ``name`` field on the hovered "
+"glyph renderer, and use that value as the column name. For instance, if a"
+" user hovers with the name ``\"US East\"``, then ``@$name`` is equivalent"
+" to ``@{US East}``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"By default, values for fields (e.g. ``@foo``) are displayed in a basic "
+"numeric format. However it is possible to control the formatting of "
+"values more precisely. Fields can be modified by appending a format "
+"specified to the end in curly braces. Some examples are below."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Specifying a format ``{safe}`` after a field name will override automatic"
+" escaping of the tooltip data source. Any HTML tags in the data tags will"
+" be rendered as HTML in the resulting HoverTool output. See "
+":ref:`custom_hover_tooltip` for a more detailed example."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"``None`` is also a valid value for tooltips. This turns off the rendering"
+" of tooltips. This is mostly useful when supplying other actions on hover"
+" via the callback property."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The tooltips attribute can also be configured with a mapping type, e.g. "
+"``dict`` or ``OrderedDict``. However, if a ``dict`` is used, the visual "
+"presentation order is unspecified."
+msgstr ""
+
+#: bokeh.models.tools.Inspection:1 of
+msgid "A base class for tools that perform \"inspections\", e.g. ``HoverTool``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether an on/off toggle button should appear in the toolbar for this "
+"inspection tool. If ``False``, the viewers of a plot will not be able to "
+"toggle the inspector on or off using the toolbar."
+msgstr ""
+
+#: bokeh.models.tools.LassoSelectTool:1 of
+msgid "*toolbar icon*: |lasso_select_icon|"
+msgstr ""
+
+#: bokeh.models.tools.LassoSelectTool:3 of
+msgid ""
+"The lasso selection tool allows users to make selections on a Plot by "
+"indicating a free-drawn \"lasso\" region by dragging the mouse or a "
+"finger over the plot region. The end of the drag event indicates the "
+"selection region is ready."
+msgstr ""
+
+#: bokeh.models.tools.LassoSelectTool:12 bokeh.models.tools.PolySelectTool:13
+#: bokeh.models.tools.TapTool:13 of
+msgid ""
+"Selections can be comprised of multiple regions, even those made by "
+"different selection tools. Hold down the <<shift>> key while making a "
+"selection to append the new selection to any previous selection that "
+"might exist."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A callback to run in the browser on every selection of a lasso area. The "
+"``cb_data`` parameter that is available to the Callback code will contain"
+" one ``LassoSelectTool``-specific field:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "object containing the coordinates of the lasso area"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.annotations.PolyAnnotation`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether a selection computation should happen on every mouse event, or "
+"only once, when the selection region is completed. Default: True"
+msgstr ""
+
+#: bokeh.models.tools.PanTool:1 of
+msgid "*toolbar icon*: |pan_icon|"
+msgstr ""
+
+#: bokeh.models.tools.PanTool:3 of
+msgid ""
+"The pan tool allows the user to pan a Plot by left-dragging a mouse, or "
+"on touch devices by dragging a finger or stylus, across the plot region."
+msgstr ""
+
+#: bokeh.models.tools.PanTool:7 of
+msgid ""
+"The pan tool also activates the border regions of a Plot for \"single "
+"axis\" panning. For instance, dragging in the vertical border or axis "
+"will effect a pan in the vertical direction only, with the horizontal "
+"dimension kept fixed."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Which dimensions the pan tool is constrained to act in. By default the "
+"pan tool will pan in any dimension, but can be configured to only pan "
+"horizontally across the width of the plot, or vertically across the "
+"height of the plot."
+msgstr ""
+
+#: bokeh.models.tools.PointDrawTool:1 of
+msgid "*toolbar icon*: |point_draw_icon|"
+msgstr ""
+
+#: bokeh.models.tools.PointDrawTool:3 of
+msgid ""
+"The PointDrawTool allows adding, dragging and deleting point-like glyphs "
+"(of ``XYGlyph`` type) on one or more renderers by editing the underlying "
+"``ColumnDataSource`` data. Like other drawing tools, the renderers that "
+"are to be edited must be supplied explicitly as a list. Any newly added "
+"points will be inserted on the ``ColumnDataSource`` of the first supplied"
+" renderer."
+msgstr ""
+
+#: bokeh.models.tools.PointDrawTool:10 of
+msgid ""
+"The tool will automatically modify the columns on the data source "
+"corresponding to the ``x`` and ``y`` values of the glyph. Any additional "
+"columns in the data source will be padded with the given ``empty_value`` "
+"when adding a new point."
+msgstr ""
+
+#: bokeh.models.tools.PointDrawTool:16 of
+msgid ""
+"The data source updates will trigger data change events continuously "
+"throughout the edit operations on the BokehJS side. In Bokeh server apps,"
+" the data source will only be synced once, when the edit operation "
+"finishes."
+msgstr ""
+
+#: bokeh.models.tools.PointDrawTool:23 of
+msgid "Add point: Tap anywhere on the plot"
+msgstr ""
+
+#: bokeh.models.tools.PointDrawTool:25 of
+msgid ""
+"Move point: Tap and drag an existing point, the point will be dropped "
+"once you let go of the mouse button."
+msgstr ""
+
+#: bokeh.models.tools.PointDrawTool:28 of
+msgid ""
+"Delete point: Tap a point to select it then press <<backspace>> key while"
+" the mouse is within the plot area."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Enables adding of new points on tap events."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Enables dragging of existing points on pan events."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Defines a limit on the number of points that can be drawn. By default "
+"there is no limit on the number of objects, but if enabled the oldest "
+"drawn point will be dropped to make space for the new point."
+msgstr ""
+
+#: bokeh.models.tools.PolyDrawTool:1 of
+msgid "*toolbar icon*: |poly_draw_icon|"
+msgstr ""
+
+#: bokeh.models.tools.PolyDrawTool:3 of
+msgid ""
+"The PolyDrawTool allows drawing, selecting and deleting ``Patches`` and "
+"``MultiLine`` glyphs on one or more renderers by editing the underlying "
+"``ColumnDataSource`` data. Like other drawing tools, the renderers that "
+"are to be edited must be supplied explicitly as a list."
+msgstr ""
+
+#: bokeh.models.tools.PolyDrawTool:14 of
+msgid ""
+"If a ``vertex_renderer`` with an point-like glyph is supplied the "
+"``PolyDrawTool`` will use it to display the vertices of the multi-"
+"lines/patches on all supplied renderers. This also enables the ability to"
+" snap to existing vertices while drawing."
+msgstr ""
+
+#: bokeh.models.tools.PolyDrawTool:21 of
+msgid ""
+"Add patch/multi-line: Double tap to add the first vertex, then use tap to"
+" add each subsequent vertex, to finalize the draw action double tap to "
+"insert the final vertex or press the <<esc> key."
+msgstr ""
+
+#: bokeh.models.tools.PolyDrawTool:26 of
+msgid ""
+"Move patch/multi-line: Tap and drag an existing patch/multi-line, the "
+"point will be dropped once you let go of the mouse button."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Enables dragging of existing patches and multi-lines on pan events."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Defines a limit on the number of patches or multi-lines that can be "
+"drawn. By default there is no limit on the number of objects, but if "
+"enabled the oldest drawn patch or multi-line will be dropped to make "
+"space for the new patch or multi-line."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.renderers.GlyphRenderer`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The renderer used to render the vertices of a selected line or polygon."
+msgstr ""
+
+#: bokeh.models.tools.PolyEditTool:1 of
+msgid "*toolbar icon*: |poly_edit_icon|"
+msgstr ""
+
+#: bokeh.models.tools.PolyEditTool:3 of
+msgid ""
+"The PolyEditTool allows editing the vertices of one or more ``Patches`` "
+"or ``MultiLine`` glyphs. The glyphs to be edited can be defined via the "
+"``renderers`` property and the renderer for the vertices can be defined "
+"via the ``vertex_renderer``, which must render a point-like Glyph (of "
+"``XYGlyph`` type)."
+msgstr ""
+
+#: bokeh.models.tools.PolyEditTool:16 of
+msgid "Show vertices: Double tap an existing patch or multi-line"
+msgstr ""
+
+#: bokeh.models.tools.PolyEditTool:18 of
+msgid ""
+"Add vertex: Double tap an existing vertex to select it, the tool will "
+"draw the next point, to add it tap in a new location. To finish editing "
+"and add a point double tap otherwise press the <<esc> key to cancel."
+msgstr ""
+
+#: bokeh.models.tools.PolyEditTool:23 of
+msgid ""
+"Move vertex: Drag an existing vertex and let go of the mouse button to "
+"release it."
+msgstr ""
+
+#: bokeh.models.tools.PolyEditTool:26 of
+msgid ""
+"Delete vertex: After selecting one or more vertices press <<backspace>> "
+"while the mouse cursor is within the plot area."
+msgstr ""
+
+#: bokeh.models.tools.PolySelectTool:1 bokeh.models.tools.TapTool:1 of
+msgid "Bases: :class:`bokeh.models.tools.Tap`"
+msgstr ""
+
+#: bokeh.models.tools.PolySelectTool:1 of
+msgid "*toolbar icon*: |poly_select_icon|"
+msgstr ""
+
+#: bokeh.models.tools.PolySelectTool:3 of
+msgid ""
+"The polygon selection tool allows users to make selections on a Plot by "
+"indicating a polygonal region with mouse clicks. single clicks (or taps) "
+"add successive points to the definition of the polygon, and a double "
+"click (or tap) indicates the selection region is ready."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A callback to run in the browser on completion of drawing a polygon. The "
+"``cb_data`` parameter that is available to the Callback code will contain"
+" one PolySelectTool-specific field:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "object containing the coordinates of the polygon"
+msgstr ""
+
+#: bokeh.models.tools.ProxyToolbar:1 bokeh.models.tools.Toolbar:1 of
+msgid "Bases: :class:`bokeh.models.tools.ToolbarBase`"
+msgstr ""
+
+#: bokeh.models.tools.ProxyToolbar:1 of
+msgid ""
+"A toolbar that allow to merge and proxy tools of toolbars in multiple "
+"plots."
+msgstr ""
+
+#: bokeh.models.tools.RangeTool:1 of
+msgid "*toolbar icon*: |range_icon|"
+msgstr ""
+
+#: bokeh.models.tools.RangeTool:3 of
+msgid ""
+"The range tool allows the user to update range objects for either or both"
+" of the x- or y-dimensions by dragging a corresponding shaded annotation "
+"to move it or change its boundaries."
+msgstr ""
+
+#: bokeh.models.tools.RangeTool:7 of
+msgid ""
+"A common use case is to add this tool to a plot with a large fixed range,"
+" but to configure the tool range from a different plot. When the user "
+"manipulates the overlay, the range of the second plot will be updated "
+"automatically."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A shaded annotation drawn to indicate the configured ranges."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether to respond to horizontal pan motions when an ``x_range`` is "
+"present."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"By default, when an ``x_range`` is specified, it is possible to adjust "
+"the horizontal position of the range box by panning horizontally inside "
+"the box, or along the top or bottom edge of the box. To disable this, and"
+" fix the  range box in place horizontally, set to False. (The box will "
+"still update if the ``x_range`` is updated programmatically.)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.ranges.Range1d`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A range synchronized to the x-dimension of the overlay. If None, the "
+"overlay will span the entire x-dimension."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Whether to respond to vertical pan motions when a ``y_range`` is present."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"By default, when a ``y_range`` is specified, it is possible to adjust the"
+" vertical position of the range box by panning vertically inside the box,"
+" or along the top or bottom edge of the box. To disable this, and fix the"
+" range box in place vertically, set to False. (The box will still update "
+"if the ``y_range`` is updated programmatically.)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A range synchronized to the y-dimension of the overlay. If None, the "
+"overlay will span the entire y-dimension."
+msgstr ""
+
+#: bokeh.models.tools.RedoTool:1 of
+msgid "*toolbar icon*: |redo_icon|"
+msgstr ""
+
+#: bokeh.models.tools.RedoTool:3 of
+msgid "Redo tool reverses the last action performed by undo tool."
+msgstr ""
+
+#: bokeh.models.tools.ResetTool:1 of
+msgid "*toolbar icon*: |reset_icon|"
+msgstr ""
+
+#: bokeh.models.tools.ResetTool:3 of
+msgid ""
+"The reset tool is an action. When activated in the toolbar, the tool "
+"resets the data bounds of the plot to their values when the plot was "
+"initially created."
+msgstr ""
+
+#: bokeh.models.tools.ResetTool:7 of
+msgid ""
+"Optionally, the reset tool also resets the plat canvas dimensions to "
+"their original size"
+msgstr ""
+
+#: bokeh.models.tools.SaveTool:1 of
+msgid "*toolbar icon*: |save_icon|"
+msgstr ""
+
+#: bokeh.models.tools.SaveTool:3 of
+msgid ""
+"The save tool is an action. When activated, the tool opens a download "
+"dialog which allows to save an image reproduction of the plot in PNG "
+"format. If automatic download is not support by a web browser, the tool "
+"falls back to opening the generated image in a new tab or window. User "
+"then can manually save it by right clicking on the image and choosing "
+"\"Save As\" (or similar) menu item."
+msgstr ""
+
+#: bokeh.models.tools.Scroll:1 of
+msgid "A base class for tools that respond to scroll events."
+msgstr ""
+
+#: bokeh.models.tools.Tap:1 of
+msgid "A base class for tools that respond to tap/click events."
+msgstr ""
+
+#: bokeh.models.tools.TapTool:1 of
+msgid "*toolbar icon*: |tap_icon|"
+msgstr ""
+
+#: bokeh.models.tools.TapTool:3 of
+msgid ""
+"The tap selection tool allows the user to select at single points by "
+"left-clicking a mouse, or tapping with a finger."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+"Enumeration(select, inspect) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This tool can be configured to either make selections or inspections on "
+"associated data sources. The difference is that selection changes "
+"propagate across bokeh and other components (e.g. selection glyph) will "
+"be notified. Inspections don't act like this, so it's useful to configure"
+" `callback` when setting `behavior='inspect'`."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A callback to execute *whenever a glyph is \"hit\"* by a mouse click or "
+"tap."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This is often useful with the  :class:`~bokeh.models.callbacks.OpenURL` "
+"model to open URLs based on a user clicking or tapping a specific glyph."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"However, it may also be a :class:`~bokeh.models.callbacks.CustomJS` which"
+" can execute arbitrary JavaScript code in response to clicking or tapping"
+" glyphs. The callback will be executed for each individual glyph that is "
+"it hit by a click or tap, and will receive the ``TapTool`` model as  "
+"``cb_obj``. The optional ``cb_data`` will have the data source as its "
+"``.source`` attribute and the selection geometry as its ``.geometries`` "
+"attribute."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The ``.geometries`` attribute has 5 members. ``.type`` is the geometry "
+"type, which always a ``.point`` for a tap event. ``.sx`` and ``.sy`` are "
+"the screen X and Y coordinates where the tap occurred. ``.x`` and ``.y`` "
+"are the converted data coordinates for the item that has been selected. "
+"The ``.x`` and ``.y`` values are based on the axis assigned to that "
+"glyph."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This callback does *not* execute on every tap, only when a glyph is "
+"\"hit\". If you would like to execute a callback on every mouse tap, "
+"please see "
+":ref:`userguide_interaction_jscallbacks_customjs_interactions`."
+msgstr ""
+
+#: bokeh.models.tools.Tool:1 of
+msgid "A base class for all interactive tool types."
+msgstr ""
+
+#: bokeh.models.tools.Toolbar:1 of
+msgid "Collect tools to display for a single plot."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Auto` , "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.tools.Drag`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Specify a drag tool to be active when the plot is displayed."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Auto` , "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.tools.Inspection`  ), "
+":class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.tools.Inspection`  ) ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Specify an inspection tool or sequence of inspection tools to be active "
+"when the plot is displayed."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.tools.Gesture`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Specify an active multi-gesture tool, for instance an edit tool or a "
+"range tool."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Note that activating a multi-gesture tool will deactivate any other "
+"gesture tools as appropriate. For example, if a pan tool is set as the "
+"active drag, and this property is set to a ``BoxEditTool`` instance, the "
+"pan tool will be deactivated (i.e. the multi-gesture tool will take "
+"precedence)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Auto` , "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.tools.Scroll`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Specify a scroll/pinch tool to be active when the plot is displayed."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Auto` , "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.tools.Tap`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Specify a tap/click tool to be active when the plot is displayed."
+msgstr ""
+
+#: bokeh.models.tools.ToolbarBase:1 of
+msgid "A base class for different toolbars."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether the toolbar will be hidden by default. Default: False. If True, "
+"hides toolbar when cursor is not in canvas."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+"Enumeration(normal, grey) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"What version of the Bokeh logo to display on the toolbar. If set to None,"
+" no logo will be displayed."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.tools.Tool`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A list of tools to add to the plot."
+msgstr ""
+
+#: bokeh.models.tools.ToolbarBox:1 of
+msgid "Bases: :class:`bokeh.models.layouts.LayoutDOM`"
+msgstr ""
+
+#: bokeh.models.tools.ToolbarBox:1 of
+msgid ""
+"A layoutable toolbar that can accept the tools of multiple plots, and can"
+" merge the tools into a single button for convenience."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.tools.ToolbarBase`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A toolbar associated with a plot which holds all its tools."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.Location`  )"
+msgstr ""
+
+#: bokeh.models.tools.UndoTool:1 of
+msgid "*toolbar icon*: |undo_icon|"
+msgstr ""
+
+#: bokeh.models.tools.UndoTool:3 of
+msgid "Undo tool allows to restore previous state of the plot."
+msgstr ""
+
+#: bokeh.models.tools.WheelPanTool:1 bokeh.models.tools.WheelZoomTool:1 of
+msgid "Bases: :class:`bokeh.models.tools.Scroll`"
+msgstr ""
+
+#: bokeh.models.tools.WheelPanTool:1 of
+msgid "*toolbar icon*: |wheel_pan_icon|"
+msgstr ""
+
+#: bokeh.models.tools.WheelPanTool:3 of
+msgid ""
+"The wheel pan tool allows the user to pan the plot along the configured "
+"dimension using the scroll wheel."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.Dimension`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Which dimension the wheel pan tool is constrained to act in. By default "
+"the wheel pan tool will pan the plot along the x-axis."
+msgstr ""
+
+#: bokeh.models.tools.WheelZoomTool:1 of
+msgid "*toolbar icon*: |wheel_zoom_icon|"
+msgstr ""
+
+#: bokeh.models.tools.WheelZoomTool:3 of
+msgid ""
+"The wheel zoom tool will zoom the plot in and out, centered on the "
+"current mouse location."
+msgstr ""
+
+#: bokeh.models.tools.WheelZoomTool:6 of
+msgid ""
+"The wheel zoom tool also activates the border regions of a Plot for "
+"\"single axis\" zooming. For instance, zooming in the vertical border or "
+"axis will effect a zoom in the vertical direction only, with the "
+"horizontal dimension kept fixed."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Which dimensions the wheel zoom tool is constrained to act in. By default"
+" the wheel zoom tool will zoom in any dimension, but can be configured to"
+" only zoom horizontally across the width of the plot, or vertically "
+"across the height of the plot."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether or not zooming tool maintains its focus position. Setting it to "
+"False results in a more \"gliding\" behavior, allowing one to zoom out "
+"more smoothly, at the cost of losing the focus position."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Speed at which the wheel zooms. Default is 1/600. Optimal range is "
+"between 0.001 and 0.09. High values will be clipped. Speed may very "
+"between browsers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether scrolling on an axis (outside the central plot area) should zoom "
+"that dimension."
+msgstr ""
+
+#: bokeh.models.tools.ZoomInTool:1 of
+msgid "*toolbar icon*: |zoom_in_icon|"
+msgstr ""
+
+#: bokeh.models.tools.ZoomInTool:3 of
+msgid ""
+"The zoom-in tool allows users to click a button to zoom in by a fixed "
+"amount."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Which dimensions the zoom-in tool is constrained to act in. By default "
+"the zoom-in zoom tool will zoom in any dimension, but can be configured "
+"to only zoom horizontally across the width of the plot, or vertically "
+"across the height of the plot."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Percent`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Percentage to zoom for each click of the zoom-in tool."
+msgstr ""
+
+#: bokeh.models.tools.ZoomOutTool:1 of
+msgid "*toolbar icon*: |zoom_out_icon|"
+msgstr ""
+
+#: bokeh.models.tools.ZoomOutTool:3 of
+msgid ""
+"The zoom-out tool allows users to click a button to zoom out by a fixed "
+"amount."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Which dimensions the zoom-out tool is constrained to act in. By default "
+"the zoom-out tool will zoom in any dimension, but can be configured to "
+"only zoom horizontally across the width of the plot, or vertically across"
+" the height of the plot."
+msgstr ""
+

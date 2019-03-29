@@ -1,0 +1,303 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/dev_guide/env_vars.rst:4
+msgid "Environment Variables"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:6
+msgid "There are several environment variables that can be useful for developers:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:9
+msgid "``BOKEH_ALLOW_WS_ORIGIN``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:10
+msgid ""
+"List of websocket origins allowed to access bokeh. Comma separated list "
+"of domains that need to access bokeh websocket interface. This can also "
+"be provided using the --allow-websocket-origin parameter."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:14
+msgid "Note: This option overrides the --allow-websocket-origin flag"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:17
+msgid "``BOKEH_BROWSER``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:18
+msgid ""
+"What browser to use when opening plots Valid values are any of the "
+"browser names understood by the python standard library webbrowser_ "
+"module."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:23
+msgid "``BOKEH_DEV``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:24
+msgid ""
+"Whether to use development mode This uses absolute paths to development "
+"(non-minified) BokehJS components, sets logging to ``debug``, makes "
+"generated HTML and JSON human-readable, etc."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:29
+msgid "This is a meta variable equivalent to the following environment variables:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:31
+msgid "``BOKEH_BROWSER=none``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:32
+msgid "``BOKEH_LOG_LEVEL=debug``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:33
+msgid "``BOKEH_MINIFIED=false``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:34
+msgid "``BOKEH_PRETTY=true``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:35
+msgid "``BOKEH_PY_LOG_LEVEL=debug``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:36
+msgid "``BOKEH_RESOURCES=absolute-dev``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:38
+msgid "Accepted values are ``yes``/``no``, ``true``/``false`` or ``0``/``1``."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:41
+msgid ""
+"When running server and notebook examples, the ``BOKEH_RESOURCES`` "
+"setting that ``BOKEH_DEV`` sets will cause rendering problems."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:44
+msgid ""
+"We recommend manually setting ``BOKEH_RESOURCES`` to ``server`` for "
+"server work, and ``inline`` for notebooks (other "
+":class:`~bokeh.resources.Resources` settings may also work)"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:49
+msgid "``BOKEH_DOCS_CDN``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:50
+msgid "What version of BokehJS to use when building sphinx docs."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:52
+msgid ""
+"To build and display the docs using a locally built BokehJS, set to "
+"``local``. For example:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:59
+msgid ""
+"Will build a fresh copy of the docs using the locally built BokehJS and "
+"open a new browser tab to view hem."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:62
+msgid ""
+"To build test docs to deploy to a one-off location on the docs site, set "
+"to ``test:<location>``. For example:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:69
+msgid "will build docs that can be deployed with ``fab deploy:newthing``."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:71
+msgid "Otherwise, the value is interpreted a version for CDN:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:77
+msgid ""
+"will build docs that use BokehJS version ``0.12.7rc1`` from CDN (whether "
+"viewed locally or deployed to the docs site)."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:81
+msgid "``BOKEH_DOCS_VERSION``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:82
+msgid ""
+"What version of Bokeh to show when building sphinx docs locally. Useful "
+"if it is necessary to re-deploy old docs with hotfixes."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:86
+msgid "``BOKEH_LOG_LEVEL``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:87
+msgid ""
+"The BokehJS console logging level to use Valid values are, in order of "
+"increasing severity:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:89
+#: ../../source/docs/dev_guide/env_vars.rst:117
+msgid "``trace``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:90
+#: ../../source/docs/dev_guide/env_vars.rst:118
+msgid "``debug``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:91
+#: ../../source/docs/dev_guide/env_vars.rst:119
+msgid "``info``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:92
+#: ../../source/docs/dev_guide/env_vars.rst:120
+msgid "``warn``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:93
+#: ../../source/docs/dev_guide/env_vars.rst:121
+msgid "``error``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:94
+#: ../../source/docs/dev_guide/env_vars.rst:122
+msgid "``fatal``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:96
+msgid "The default logging level is ``info``."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:99
+msgid ""
+"When running server examples, it is the value of this ``BOKEH_LOG_LEVEL``"
+" that is set for the server that matters."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:103
+msgid "``BOKEH_MINIFIED``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:104
+msgid ""
+"Whether to emit minified JavaScript for ``bokeh.js`` Accepted values are "
+"``yes``/``no``, ``true``/``false`` or ``0``/``1``."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:108
+msgid "``BOKEH_PRETTY``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:109
+msgid ""
+"Whether to emit \"pretty printed\" JSON Accepted values are "
+"``yes``/``no``, ``true``/``false`` or ``0``/``1``."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:113
+msgid "``BOKEH_PY_LOG_LEVEL``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:114
+msgid ""
+"The Python logging level to set As in the JS side, valid values are, in "
+"order of increasing severity:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:123
+msgid "``none``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:125
+msgid "The default logging level is ``none``."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:128
+msgid "``BOKEH_RESOURCES``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:129
+msgid ""
+"What kind of BokehJS resources to configure For example:  ``inline``, "
+"``cdn``, ``server``. See the :class:`~bokeh.resources.Resources` class "
+"reference for full details."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:134
+msgid "``BOKEH_ROOTDIR``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:135
+msgid ""
+"Root directory to use with ``relative`` resources See the "
+":class:`~bokeh.resources.Resources` class reference for full details."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:140
+msgid "``BOKEH_SIMPLE_IDS``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:141
+msgid ""
+"Whether to generate human-friendly object IDs Accepted values are "
+"``yes``/``no``, ``true``/``false`` or ``0``/``1``. Normally Bokeh "
+"generates UUIDs for object identifiers. Setting this variable to an "
+"affirmative value will result in more friendly simple numeric IDs "
+"counting up from 1000."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:148
+msgid "``BOKEH_VALIDATE_DOC``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:149
+msgid ""
+"Whether to perform a validation check on the document before outputting. "
+"Accepted values are ``yes``/``no``, ``true``/``false`` or ``0``/``1``. "
+"Setting this variable to a negative value for a document that is known to"
+" be correctly configured may yield performance improvements."
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:155
+msgid "``BOKEH_VERSION``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/env_vars.rst:156
+msgid ""
+"What version of BokehJS to use with ``cdn`` resources See the "
+":class:`~bokeh.resources.Resources` class reference for full details."
+msgstr ""
+

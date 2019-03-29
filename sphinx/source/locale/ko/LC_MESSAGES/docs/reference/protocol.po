@@ -1,0 +1,595 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/protocol.rst:4
+msgid "bokeh.protocol"
+msgstr ""
+
+#: bokeh.protocol:1 of
+msgid ""
+"Implement and provide message protocols for communication between Bokeh "
+"Servers and clients."
+msgstr ""
+
+#: bokeh.protocol.Protocol:1 of
+msgid ""
+"Provide a message factory for a given version of the Bokeh Server message"
+" protocol."
+msgstr ""
+
+#: bokeh.protocol.Protocol bokeh.protocol.Protocol.assemble
+#: bokeh.protocol.Protocol.create bokeh.protocol.message.Message.__init__
+#: bokeh.protocol.message.Message.add_buffer
+#: bokeh.protocol.message.Message.assemble
+#: bokeh.protocol.message.Message.assemble_buffer
+#: bokeh.protocol.message.Message.create_header
+#: bokeh.protocol.message.Message.send
+#: bokeh.protocol.message.Message.write_buffers
+#: bokeh.protocol.messages.error.error_1.create
+#: bokeh.protocol.messages.ok.ok_1.create
+#: bokeh.protocol.messages.patch_doc.patch_doc_1.create
+#: bokeh.protocol.messages.patch_doc.process_document_events
+#: bokeh.protocol.messages.pull_doc_reply.pull_doc_reply_1.create
+#: bokeh.protocol.messages.server_info_reply.server_info_reply_1.create
+#: bokeh.protocol.receiver.Receiver.__init__
+#: bokeh.protocol.receiver.Receiver.consume of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.protocol.Protocol:4 of
+msgid "a string identifying a protocol version, e.g. \"1.0\""
+msgstr ""
+
+#: bokeh.protocol.Protocol.assemble:1 of
+msgid "Create a Message instance assembled from json fragments."
+msgstr ""
+
+#: bokeh.protocol.Protocol.assemble bokeh.protocol.message.Message.add_buffer
+#: bokeh.protocol.message.Message.assemble
+#: bokeh.protocol.message.Message.assemble_buffer
+#: bokeh.protocol.message.Message.complete
+#: bokeh.protocol.message.Message.create_header
+#: bokeh.protocol.message.Message.send
+#: bokeh.protocol.message.Message.write_buffers
+#: bokeh.protocol.messages.patch_doc.process_document_events of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.protocol.Protocol.assemble:10 of
+msgid "message"
+msgstr ""
+
+#: bokeh.protocol.Protocol.create:1 of
+msgid "Create a new Message instance for the given type."
+msgstr ""
+
+#: ../../source/docs/reference/protocol.rst:12
+msgid "bokeh.protocol.exceptions"
+msgstr ""
+
+#: bokeh.protocol.exceptions:1 of
+msgid ""
+"Provide named exceptions having to do with handling Bokeh Protocol "
+"messages."
+msgstr ""
+
+#: bokeh.protocol.exceptions.MessageError:1 of
+msgid "Indicate an error in constructing a Bokeh Message object."
+msgstr ""
+
+#: bokeh.protocol.exceptions.MessageError:3 of
+msgid ""
+"This exception usually indicates that the JSON fragments of a message "
+"cannot be decoded at all."
+msgstr ""
+
+#: bokeh.protocol.exceptions.ProtocolError:1 of
+msgid "Indicate an error in processing wire protocol fragments."
+msgstr ""
+
+#: bokeh.protocol.exceptions.ProtocolError:3 of
+msgid ""
+"This exception indicates that decoded message fragments cannot be "
+"properly assembled."
+msgstr ""
+
+#: bokeh.protocol.exceptions.ValidationError:1 of
+msgid "Indicate an error validating wire protocol fragments."
+msgstr ""
+
+#: bokeh.protocol.exceptions.ValidationError:3 of
+msgid ""
+"This exception typically indicates that a binary message fragment was "
+"received when a text fragment was expected, or vice-versa."
+msgstr ""
+
+#: ../../source/docs/reference/protocol.rst:20
+msgid "bokeh.protocol.message"
+msgstr ""
+
+#: bokeh.protocol.message:1 of
+msgid "Provide a base class for all Bokeh Server Protocol message types."
+msgstr ""
+
+#: bokeh.protocol.message:3 of
+msgid ""
+"Boker messages are comprised of a sequence of JSON fragments. Specified "
+"as Python JSON-like data, messages have the general form:"
+msgstr ""
+
+#: bokeh.protocol.message:20 bokeh.protocol.receiver.Receiver:24 of
+msgid "The ``header`` fragment will have the form:"
+msgstr ""
+
+#: bokeh.protocol.message:33 bokeh.protocol.receiver.Receiver:37 of
+msgid ""
+"The ``metadata`` fragment may contain any arbitrary information. It is "
+"not processed by Bokeh for any purpose, but may be useful for external "
+"monitoring or instrumentation tools."
+msgstr ""
+
+#: bokeh.protocol.message:37 bokeh.protocol.receiver.Receiver:41 of
+msgid "The ``content`` fragment is defined by the specific message type."
+msgstr ""
+
+#: bokeh.protocol.message.Message:1 of
+msgid ""
+"The Message base class encapsulates creating, assembling, and validating "
+"the integrity of Bokeh Server messages. Additionally, it provide hooks"
+msgstr ""
+
+#: bokeh.protocol.message.Message.__init__:1 of
+msgid "Initialize a new message from header, metadata, and content dictionaries."
+msgstr ""
+
+#: bokeh.protocol.message.Message.__init__:4 of
+msgid ""
+"To assemble a message from existing JSON fragments, use the ``assemble`` "
+"method."
+msgstr ""
+
+#: bokeh.protocol.message.Message.__init__:7 of
+msgid ""
+"To create new messages with automatically generated headers, use subclass"
+" ``create`` methods."
+msgstr ""
+
+#: bokeh.protocol.message.Message.add_buffer:1 of
+msgid "Associate a buffer header and payload with this message."
+msgstr ""
+
+#: bokeh.protocol.message.Message.add_buffer:3
+#: bokeh.protocol.message.Message.assemble_buffer:6 of
+msgid "a buffer header"
+msgstr ""
+
+#: bokeh.protocol.message.Message.add_buffer:5
+#: bokeh.protocol.message.Message.assemble_buffer:8 of
+msgid "a buffer payload"
+msgstr ""
+
+#: bokeh.protocol.message.Message.add_buffer:8
+#: bokeh.protocol.message.Message.assemble_buffer:11 of
+msgid "None"
+msgstr ""
+
+#: bokeh.protocol.message.Message.add_buffer
+#: bokeh.protocol.message.Message.assemble
+#: bokeh.protocol.message.Message.assemble_buffer
+#: bokeh.protocol.messages.push_doc.push_doc_1.push_to_document of
+msgid "raises"
+msgstr ""
+
+#: bokeh.protocol.message.Message.add_buffer:10
+#: bokeh.protocol.message.Message.assemble:12 of
+msgid ":exc:`MessageError`"
+msgstr ""
+
+#: bokeh.protocol.message.Message.assemble:1 of
+msgid "Creates a new message, assembled from JSON fragments."
+msgstr ""
+
+#: bokeh.protocol.message.Message.assemble:10 of
+msgid "Message subclass"
+msgstr ""
+
+#: bokeh.protocol.message.Message.assemble_buffer:1 of
+msgid "Add a buffer header and payload that we read from the socket."
+msgstr ""
+
+#: bokeh.protocol.message.Message.assemble_buffer:3 of
+msgid ""
+"This differs from add_buffer() because we're validating vs. the header's "
+"num_buffers, instead of filling in the header."
+msgstr ""
+
+#: bokeh.protocol.message.Message.assemble_buffer:13
+#: bokeh.protocol.messages.push_doc.push_doc_1.push_to_document:1 of
+msgid ":exc:`ProtocolError`"
+msgstr ""
+
+#: bokeh.protocol.message.Message.create_header:1 of
+msgid "Return a message header fragment dict."
+msgstr ""
+
+#: bokeh.protocol.message.Message.create_header:3 of
+msgid "Message ID of the message this message replies to"
+msgstr ""
+
+#: bokeh.protocol.message.Message.create_header:6 of
+msgid "a message header"
+msgstr ""
+
+#: bokeh.protocol.message.Message.complete
+#: bokeh.protocol.message.Message.create_header
+#: bokeh.protocol.message.Message.send
+#: bokeh.protocol.message.Message.write_buffers
+#: bokeh.protocol.messages.patch_doc.process_document_events of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.protocol.message.Message.send:1 of
+msgid "Send the message on the given connection."
+msgstr ""
+
+#: bokeh.protocol.message.Message.send:3 of
+msgid "a WebSocketHandler to send messages"
+msgstr ""
+
+#: bokeh.protocol.message.Message.send:6
+#: bokeh.protocol.message.Message.write_buffers:9 of
+msgid "number of bytes sent"
+msgstr ""
+
+#: bokeh.protocol.message.Message.write_buffers:1 of
+msgid "Write any buffer headers and payloads to the given connection."
+msgstr ""
+
+#: bokeh.protocol.message.Message.write_buffers:3 of
+msgid ""
+"May be any object with a ``write_message`` method. Typically, a Tornado "
+"``WSHandler`` or ``WebSocketClientConnection``"
+msgstr ""
+
+#: bokeh.protocol.message.Message.complete:1 of
+msgid "Returns whether all required parts of a message are present."
+msgstr ""
+
+#: bokeh.protocol.message.Message.complete:3 of
+msgid "True if the message is complete, False otherwise"
+msgstr ""
+
+#: ../../source/docs/reference/protocol.rst:26
+msgid "bokeh.protocol.messages"
+msgstr ""
+
+#: bokeh.protocol.messages.register:1 of
+msgid "Decorator to add a Message (and its revision) to the Protocol index."
+msgstr ""
+
+#: bokeh.protocol.messages.register:4 of
+msgid "Example"
+msgstr ""
+
+#: ../../source/docs/reference/protocol.rst:33
+msgid "``ACK``"
+msgstr ""
+
+#: bokeh.protocol.messages.ack.ack_1:1 of
+msgid ""
+"Define the ``ACK`` message (revision 1) for acknowledging successful "
+"client connection to a Bokeh server."
+msgstr ""
+
+#: bokeh.protocol.messages.ack.ack_1:4 bokeh.protocol.messages.ok.ok_1:4
+#: bokeh.protocol.messages.pull_doc_req.pull_doc_req_1:4
+#: bokeh.protocol.messages.server_info_req.server_info_req_1:4 of
+msgid "The ``content`` fragment of for this message is empty."
+msgstr ""
+
+#: bokeh.protocol.messages.ack.ack_1.create:1 of
+msgid "Create an ``ACK`` message"
+msgstr ""
+
+#: bokeh.protocol.messages.ack.ack_1.create:3
+#: bokeh.protocol.messages.pull_doc_req.pull_doc_req_1.create:3
+#: bokeh.protocol.messages.server_info_req.server_info_req_1.create:3 of
+msgid ""
+"Any keyword arguments will be put into the message ``metadata`` fragment "
+"as-is."
+msgstr ""
+
+#: ../../source/docs/reference/protocol.rst:39
+msgid "``EVENT``"
+msgstr ""
+
+#: bokeh.protocol.messages.event.event_1:1 of
+msgid ""
+"Define the ``EVENT`` message (revision 1) for sending events between a "
+"Bokeh server and clients."
+msgstr ""
+
+#: bokeh.protocol.messages.event.event_1:4 of
+msgid "This message is currently only generated by clients."
+msgstr ""
+
+#: ../../source/docs/reference/protocol.rst:45
+msgid "``ERROR``"
+msgstr ""
+
+#: bokeh.protocol.messages.error.error_1:1 of
+msgid ""
+"Define the ``ERROR`` message (revision 1) for reporting error conditions "
+"back to a Bokeh server."
+msgstr ""
+
+#: bokeh.protocol.messages.error.error_1:4
+#: bokeh.protocol.messages.patch_doc.patch_doc_1:4
+#: bokeh.protocol.messages.pull_doc_reply.pull_doc_reply_1:4
+#: bokeh.protocol.messages.push_doc.push_doc_1:4
+#: bokeh.protocol.messages.server_info_reply.server_info_reply_1:4 of
+msgid "The ``content`` fragment of for this message is has the form:"
+msgstr ""
+
+#: bokeh.protocol.messages.error.error_1.create:1 of
+msgid "Create an ``ERROR`` message"
+msgstr ""
+
+#: bokeh.protocol.messages.error.error_1.create:3 of
+msgid "The message ID for the message the precipitated the error."
+msgstr ""
+
+#: bokeh.protocol.messages.error.error_1.create:5 of
+msgid "The text of any error message or traceback, etc."
+msgstr ""
+
+#: bokeh.protocol.messages.error.error_1.create:8
+#: bokeh.protocol.messages.ok.ok_1.create:6
+#: bokeh.protocol.messages.patch_doc.patch_doc_1.create:6
+#: bokeh.protocol.messages.pull_doc_reply.pull_doc_reply_1.create:8
+#: bokeh.protocol.messages.server_info_reply.server_info_reply_1.create:6 of
+msgid ""
+"Any additional keyword arguments will be put into the message "
+"``metadata`` fragment as-is."
+msgstr ""
+
+#: ../../source/docs/reference/protocol.rst:51
+msgid "``OK``"
+msgstr ""
+
+#: bokeh.protocol.messages.ok.ok_1:1 of
+msgid ""
+"Define the ``OK`` message (revision 1) for acknowledging successful "
+"handling of a previous message."
+msgstr ""
+
+#: bokeh.protocol.messages.ok.ok_1.create:1 of
+msgid "Create an ``OK`` message"
+msgstr ""
+
+#: bokeh.protocol.messages.ok.ok_1.create:3 of
+msgid "The message ID for the message the precipitated the OK."
+msgstr ""
+
+#: ../../source/docs/reference/protocol.rst:57
+msgid "``PATCH-DOC``"
+msgstr ""
+
+#: bokeh.protocol.messages.patch_doc.patch_doc_1:1 of
+msgid ""
+"Define the ``PATCH-DOC`` message (revision 1) for sending Document patch "
+"events between remote documents."
+msgstr ""
+
+#: bokeh.protocol.messages.patch_doc.patch_doc_1.create:1 of
+msgid "Create a ``PATCH-DOC`` message"
+msgstr ""
+
+#: bokeh.protocol.messages.patch_doc.patch_doc_1.create:3 of
+msgid "A list of patch events to apply to a document"
+msgstr ""
+
+#: bokeh.protocol.messages.patch_doc.process_document_events:1 of
+msgid ""
+"Create a JSON string describing a patch to be applied as well as any "
+"optional buffers."
+msgstr ""
+
+#: bokeh.protocol.messages.patch_doc.process_document_events:4 of
+msgid "list of events to be translated into patches"
+msgstr ""
+
+#: bokeh.protocol.messages.patch_doc.process_document_events:6 of
+msgid ""
+"JSON string which can be applied to make the given updates to obj as well"
+" as any optional buffers"
+msgstr ""
+
+#: ../../source/docs/reference/protocol.rst:63
+msgid "``PULL-DOC-REPLY``"
+msgstr ""
+
+#: bokeh.protocol.messages.pull_doc_reply.pull_doc_reply_1:1 of
+msgid ""
+"Define the ``PULL-DOC-REPLY`` message (revision 1) for replying to "
+"Document pull requests from clients"
+msgstr ""
+
+#: bokeh.protocol.messages.pull_doc_reply.pull_doc_reply_1.create:1 of
+msgid "Create an ``PULL-DOC-REPLY`` message"
+msgstr ""
+
+#: bokeh.protocol.messages.pull_doc_reply.pull_doc_reply_1.create:3 of
+msgid "The message ID for the message that issues the pull request"
+msgstr ""
+
+#: bokeh.protocol.messages.pull_doc_reply.pull_doc_reply_1.create:5 of
+msgid "The Document to reply with"
+msgstr ""
+
+#: ../../source/docs/reference/protocol.rst:69
+msgid "``PULL-DOC-REQ``"
+msgstr ""
+
+#: bokeh.protocol.messages.pull_doc_req.pull_doc_req_1:1 of
+msgid ""
+"Define the ``PULL-DOC-REQ`` message (revision 1) for requesting a Bokeh "
+"server reply with a new Bokeh Document."
+msgstr ""
+
+#: bokeh.protocol.messages.pull_doc_req.pull_doc_req_1.create:1 of
+msgid "Create an ``PULL-DOC-REQ`` message"
+msgstr ""
+
+#: ../../source/docs/reference/protocol.rst:75
+msgid "``PUSH-DOC``"
+msgstr ""
+
+#: bokeh.protocol.messages.push_doc.push_doc_1:1 of
+msgid ""
+"Define the ``PUSH-DOC`` message (revision 1) for pushing Documents from "
+"clients to a Bokeh server."
+msgstr ""
+
+#: ../../source/docs/reference/protocol.rst:81
+msgid "``SERVER-INFO-REPLY``"
+msgstr ""
+
+#: bokeh.protocol.messages.server_info_reply.server_info_reply_1:1 of
+msgid ""
+"Define the ``SERVER-INFO-REPLY`` message (revision 1) for replying to "
+"Server info requests from clients."
+msgstr ""
+
+#: bokeh.protocol.messages.server_info_reply.server_info_reply_1.create:1 of
+msgid "Create an ``SERVER-INFO-REPLY`` message"
+msgstr ""
+
+#: bokeh.protocol.messages.server_info_reply.server_info_reply_1.create:3 of
+msgid "The message ID for the message that issues the info request"
+msgstr ""
+
+#: ../../source/docs/reference/protocol.rst:87
+msgid "``SERVER-INFO-REQ``"
+msgstr ""
+
+#: bokeh.protocol.messages.server_info_req.server_info_req_1:1 of
+msgid ""
+"Define the ``SERVER-INFO-REQ`` message (revision 1) for requesting a "
+"Bokeh server provide information about itself."
+msgstr ""
+
+#: bokeh.protocol.messages.server_info_req.server_info_req_1.create:1 of
+msgid "Create an ``SERVER-INFO-REQ`` message"
+msgstr ""
+
+#: ../../source/docs/reference/protocol.rst:95
+msgid "bokeh.protocol.receiver"
+msgstr ""
+
+#: bokeh.protocol.receiver:1 of
+msgid ""
+"Assemble WebSocket wire message fragments into complete Bokeh Server "
+"message objects that can be processed."
+msgstr ""
+
+#: bokeh.protocol.receiver.Receiver:1 of
+msgid ""
+"Receive wire message fragments and assemble complete Bokeh server message"
+" objects."
+msgstr ""
+
+#: bokeh.protocol.receiver.Receiver:4 of
+msgid ""
+"On ``MessageError`` or ``ValidationError``, the receiver will reset its "
+"state and attempt to consume a new message."
+msgstr ""
+
+#: bokeh.protocol.receiver.Receiver:7 of
+msgid ""
+"The *fragment* received can be either bytes or unicode, depending on the "
+"transport's semantics (WebSocket allows both)."
+msgstr ""
+
+#: bokeh.protocol.receiver.Receiver.__init__:1 of
+msgid "Configure a Receiver with a specific Bokeh protocol version."
+msgstr ""
+
+#: bokeh.protocol.receiver.Receiver.__init__:3 of
+msgid "A Bokeh protocol object to use to assemble collected message fragments."
+msgstr ""
+
+#: bokeh.protocol.receiver.Receiver.consume:1 of
+msgid "Consume individual protocol message fragments."
+msgstr ""
+
+#: bokeh.protocol.receiver.Receiver.consume:3 of
+msgid ""
+"A message fragment to assemble. When a complete message is assembled, the"
+" receiver state will reset to begin consuming a new message."
+msgstr ""
+
+#: ../../source/docs/reference/protocol.rst:103
+msgid "bokeh.protocol.versions"
+msgstr ""
+
+#: bokeh.protocol.versions:1 of
+msgid "Provide definitions for Bokeh WebSocket protocol versions."
+msgstr ""
+
+#: bokeh.protocol.versions:3 of
+msgid "A *protocol specification* is a sequence of tuples of the form:"
+msgstr ""
+
+#: bokeh.protocol.versions:13 of
+msgid ""
+"Where ``<message_type>`` is string that identifies a message type, e.g, "
+"``'ACK'``, ``'SERVER-INFO-REQ'``, etc. and ``<revision>`` is an integer "
+"that identifies what revision of the message this version of the protocol"
+" uses."
+msgstr ""
+
+#: bokeh.protocol.versions:17 of
+msgid ""
+"A *protocol version* is a string of the form ``'<major>.<minor>'``. The "
+"guidelines for updating the major or minor version are:"
+msgstr ""
+
+#: bokeh.protocol.versions:22 of
+msgid "``<major>``"
+msgstr ""
+
+#: bokeh.protocol.versions:21 of
+msgid ""
+"bump when new messages are added or deleted (and reset minor version to "
+"zero)"
+msgstr ""
+
+#: bokeh.protocol.versions:25 of
+msgid "``<minor>``"
+msgstr ""
+
+#: bokeh.protocol.versions:25 of
+msgid "bump when existing message revisions change"
+msgstr ""
+
+#: bokeh.protocol.versions:30 of
+msgid "A mapping of protocol versions to protocol specifications."
+msgstr ""
+

@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/command/subcommands/file_output.rst:4
+msgid "file_output"
+msgstr ""
+
+#: bokeh.command.subcommands.file_output:1 of
+msgid "Abstract base class for subcommands that output to a file (or stdout)."
+msgstr ""
+
+#: bokeh.command.subcommands.file_output.FileOutputSubcommand:1 of
+msgid "Abstract subcommand to output applications as some type of file."
+msgstr ""
+
+#: bokeh.command.subcommands.file_output.FileOutputSubcommand.file_contents:1
+#: of
+msgid ""
+"Subtypes must override this to return the contents of the output file for"
+" the given doc."
+msgstr ""
+
+#: bokeh.command.subcommands.file_output.FileOutputSubcommand.files_arg:1 of
+msgid ""
+"Returns a positional arg for ``files`` to specify file inputs to the "
+"command."
+msgstr ""
+
+#: bokeh.command.subcommands.file_output.FileOutputSubcommand.files_arg:4 of
+msgid "Subclasses should include this to their class ``args``."
+msgstr ""
+
+#: bokeh.command.subcommands.file_output.FileOutputSubcommand.files_arg:7
+#: bokeh.command.subcommands.file_output.FileOutputSubcommand.other_args:8 of
+msgid "Example"
+msgstr ""
+
+#: bokeh.command.subcommands.file_output.FileOutputSubcommand.other_args:1 of
+msgid ""
+"Return args for ``-o`` / ``--output`` to specify where output should be "
+"written, and for a ``--args`` to pass on any additional command line args"
+" to the subcommand."
+msgstr ""
+
+#: bokeh.command.subcommands.file_output.FileOutputSubcommand.other_args:5 of
+msgid "Subclasses should append these to their class ``args``."
+msgstr ""
+

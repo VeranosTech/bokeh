@@ -1,0 +1,386 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/command/subcommands/serve.rst:4
+msgid "serve"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:1 of
+msgid ""
+"To run a Bokeh application on a Bokeh server from a single Python script,"
+" pass the script name to ``bokeh serve`` on the command line:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:8 of
+msgid ""
+"By default, the Bokeh application will be served by the Bokeh server on a"
+" default port (5006) at localhost, under the path ``/app_script``, i.e.,"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:16 of
+msgid "It is also possible to run the same commmand with jupyter notebooks:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:22 of
+msgid ""
+"This will generate the same results as described with a python script and"
+" the application will be served on a default port (5006) at localhost, "
+"under the path ``/app_notebook``"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:26 of
+msgid ""
+"Applications can also be created from directories. The directory should "
+"contain a ``main.py`` (and any other helper modules that are required) as"
+" well as any additional assets (e.g., theme files). Pass the directory "
+"name to ``bokeh serve`` to run the application:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:35 of
+msgid "It is possible to run multiple applications at once:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:41 of
+msgid ""
+"If you would like to automatically open a browser to display the HTML "
+"page(s), you can pass the ``--show`` option on the command line:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:48 of
+msgid ""
+"This will open two pages, for ``/app_script`` and ``/app_dir``, "
+"respectively."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:51 of
+msgid ""
+"If you would like to pass command line arguments to Bokeh applications, "
+"you can pass the ``--args`` option as the LAST option on the command "
+"line:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:59 of
+msgid ""
+"Everything that follows ``--args`` will be included in ``sys.argv`` when "
+"the application runs. In this case, when ``myapp.py`` executes, the "
+"contents of ``sys.argv`` will be ``['myapp.py', 'foo', 'bar', '--baz']``,"
+" consistent with standard Python expectations for ``sys.argv``."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:64 of
+msgid ""
+"Note that if multiple scripts or directories are provided, they all "
+"receive the same set of command line arguments (if any) given by "
+"``--args``."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:68 of
+msgid ""
+"If you have only one application, the server root will redirect to it. "
+"Otherwise, You can see an index of all running applications at the server"
+" root:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:75 of
+msgid ""
+"This index can be disabled with the ``--disable-index`` option, and the "
+"redirect behavior can be disabled with the ``--disable-index-redirect`` "
+"option."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:79 of
+msgid "Network Configuration"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:81 of
+msgid ""
+"To control the port that the Bokeh server listens on, use the ``--port`` "
+"argument:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:88 of
+msgid ""
+"To listen on an arbitrary port, pass ``0`` as the port number.  The "
+"actual port number will be logged at startup."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:91 of
+msgid ""
+"Similarly, a specific network address can be specified with the "
+"``--address`` argument. For example:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:98 of
+msgid "will have the Bokeh server listen all available network addresses."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:100 of
+msgid ""
+"Bokeh server can fork the underlying tornado server into multiprocess.  "
+"This is useful when trying to handle multiple connections especially in "
+"the context of apps which require high computational loads.  Default "
+"behavior is one process. using 0 will auto-detect the number of cores and"
+" spin up corresponding number of processes"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:110 of
+msgid ""
+"Note that due to limitations inherent in Tornado, Windows does not "
+"support ``--num-procs`` values greater than one! In this case consider "
+"running multiple Bokeh server instances behind a load balancer."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:114 of
+msgid ""
+"By default, cross site connections to the Bokeh server websocket are not "
+"allowed. You can enable websocket connections originating from additional"
+" hosts by specifying them with the ``BOKEH_ALLOW_WS_ORIGIN`` environment "
+"variable or the ``--allow-websocket-origin`` option:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:123 of
+msgid ""
+"It is possible to specify multiple allowed websocket origins by adding "
+"the ``--allow-websocket-origin`` option multiple times and to provide a "
+"comma separated list of hosts to ``BOKEH_ALLOW_WS_ORIGIN``"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:127 of
+msgid ""
+"The Bokeh server can also add an optional prefix to all URL paths. This "
+"can often be useful in conjunction with \"reverse proxy\" setups."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:134 of
+msgid "Then the application will be served under the following URL:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:140 of
+msgid ""
+"If needed, Bokeh server can send keep-alive pings at a fixed interval. To"
+" configure this feature, set the ``--keep-alive`` option:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:147 of
+msgid ""
+"The value is specified in milliseconds. The default keep-alive interval "
+"is 37 seconds. Give a value of 0 to disable keep-alive pings."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:150 of
+msgid ""
+"To control how often statistic logs are written, set the ``--stats-log-"
+"frequency`` option:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:157 of
+msgid ""
+"The value is specified in milliseconds. The default interval for logging "
+"stats is 15 seconds. Only positive integer values are accepted."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:160 of
+msgid ""
+"Bokeh can also optionally log process memory usage. This feature requires"
+" the optional ``psutil`` package to be installed. To enable memory "
+"logging set the ``--mem-log-frequency`` option:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:164 of
+msgid ". code-block:: sh"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:166 of
+msgid "bokeh serve app_script.py --mem-log-frequency 30000"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:168 of
+msgid ""
+"The value is specified in milliseconds. The default interval for logging "
+"stats is 0 (disabled). Only positive integer values are accepted."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:171 of
+msgid ""
+"To have the Bokeh server override the remote IP and URI scheme/protocol "
+"for all requests with ``X-Real-Ip``, ``X-Forwarded-For``, ``X-Scheme``, "
+"``X-Forwarded-Proto``  headers (if they are provided), set the ``--use-"
+"xheaders`` option:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:180 of
+msgid ""
+"This is typically needed when running a Bokeh server behind a reverse "
+"proxy that is SSL-terminated."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:184 of
+msgid ""
+"It is not advised to set this option on a Bokeh server directly facing "
+"the Internet."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:188 of
+msgid "Session ID Options"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:190 of
+msgid ""
+"Typically, each browser tab connected to a Bokeh server will have its own"
+" session ID. When the server generates an ID, it will make it "
+"cryptographically unguessable. This keeps users from accessing one "
+"another's sessions."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:195 of
+msgid ""
+"To control who can use a Bokeh application, the server can sign sessions "
+"with a secret key and reject \"made up\" session names. There are three "
+"modes, controlled by the ``--session-ids`` argument:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:204 of
+msgid "The available modes are: unsigned, signed or external-signed"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:206 of
+msgid ""
+"In ``unsigned`` mode, the server will accept any session ID provided to "
+"it in the URL. For example, ``http://localhost/app_script?bokeh-session-"
+"id=foo`` will create a session ``foo``. In ``unsigned`` mode, if the "
+"session ID isn't provided with ``?bokeh-session-id=`` in the URL, the "
+"server will still generate a cryptographically-unguessable ID. However, "
+"the server allows clients to create guessable or deliberately-shared "
+"sessions if they want to."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:215 of
+msgid ""
+"``unsigned`` mode is most useful when the server is running locally for "
+"development, for example you can have multiple processes access a fixed "
+"session name such as ``default``. ``unsigned`` mode is also convenient "
+"because there's no need to generate or configure a secret key."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:221 of
+msgid ""
+"In ``signed`` mode, the session ID must be in a special format and signed"
+" with a secret key. Attempts to use the application with an invalid "
+"session ID will fail, but if no ``?bokeh-session-id=`` parameter is "
+"provided, the server will generate a fresh, signed session ID. The result"
+" of ``signed`` mode is that only secure session IDs are allowed but "
+"anyone can connect to the server."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:228 of
+msgid ""
+"In ``external-signed`` mode, the session ID must be signed but the server"
+" itself won't generate a session ID; the ``?bokeh-session-id=`` parameter"
+" will be required. To use this mode, you would need some sort of external"
+" process (such as another web app) which would use the "
+"``bokeh.util.session_id.generate_session_id()`` function to create valid "
+"session IDs. The external process and the Bokeh server must share the "
+"same ``BOKEH_SECRET_KEY`` environment variable."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:237 of
+msgid ""
+"``external-signed`` mode is useful if you want another process to "
+"authenticate access to the Bokeh server; if someone is permitted to use "
+"the Bokeh application, you would generate a session ID for them, then "
+"redirect them to the Bokeh server with that valid session ID. If you "
+"don't generate a session ID for someone, then they can't load the app "
+"from the Bokeh server."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:244 of
+msgid ""
+"In both ``signed`` and ``external-signed`` mode, the secret key must be "
+"kept secret; anyone with the key can generate a valid session ID."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:248 of
+msgid ""
+"The secret key should be set in a ``BOKEH_SECRET_KEY`` environment "
+"variable and should be a cryptographically random string with at least "
+"256 bits (32 bytes) of entropy.  You can generate a new secret key with "
+"the ``bokeh secret`` command."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:254 of
+msgid "Session Expiration Options"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:256 of
+msgid ""
+"To configure how often to check for unused sessions. set the --check-"
+"unused-sessions option:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:263 of
+msgid ""
+"The value is specified in milliseconds. The default interval for checking"
+" for unused sessions is 17 seconds. Only positive integer values are "
+"accepted."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:267 of
+msgid ""
+"To configure how often unused sessions last. set the --unused-session-"
+"lifetime option:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:274 of
+msgid ""
+"The value is specified in milliseconds. The default lifetime interval for"
+" unused sessions is 15 seconds. Only positive integer values are "
+"accepted."
+msgstr ""
+
+#: bokeh.command.subcommands.serve:279 of
+msgid "Logging Options"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:281 of
+msgid "The logging level can be controlled by the ``--log-level`` argument:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:287 of
+msgid ""
+"The available log levels are: trace, debug, info, warning, error or "
+"critical"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:289 of
+msgid "The log format can be controlled by the ``--log-format`` argument:"
+msgstr ""
+
+#: bokeh.command.subcommands.serve:295 of
+#, python-format
+msgid "The default log format is ``\"%(asctime)s %(message)s\"``"
+msgstr ""
+
+#: bokeh.command.subcommands.serve.Serve:1 of
+msgid "Subcommand to launch the Bokeh server."
+msgstr ""
+
+#: bokeh.command.subcommands.serve.Serve.name:1 of
+msgid "name for this subcommand"
+msgstr ""
+

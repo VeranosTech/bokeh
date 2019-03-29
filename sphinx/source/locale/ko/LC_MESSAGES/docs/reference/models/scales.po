@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/scales.rst:4
+msgid "bokeh.models.scales"
+msgstr ""
+
+#: bokeh.models.scales.CategoricalScale:1 of
+msgid "Bases: :class:`bokeh.models.scales.LinearScale`"
+msgstr ""
+
+#: bokeh.models.scales.LinearScale:1 bokeh.models.scales.LogScale:1 of
+msgid "Bases: :class:`bokeh.models.scales.Scale`"
+msgstr ""
+
+#: bokeh.models.scales.Scale:1 of
+msgid "Bases: :class:`bokeh.models.transforms.Transform`"
+msgstr ""
+
+#: bokeh.models.scales.Scale:1 of
+msgid ""
+"Base class for ``Scale`` models that represent an invertible computation "
+"to be carried out on the client-side."
+msgstr ""
+
+#: bokeh.models.scales.Scale:4 of
+msgid "JavaScript implementations should implement the following methods:"
+msgstr ""
+
+#: bokeh.models.scales.Scale:22 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+

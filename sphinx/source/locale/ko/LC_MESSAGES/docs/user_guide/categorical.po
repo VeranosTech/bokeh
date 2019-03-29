@@ -1,0 +1,476 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/categorical.rst:4
+msgid "Handling Categorical Data"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:7
+msgid ""
+"Several examples in this chapter use `Pandas`_, for ease of presentation "
+"and because it is a common tool for data manipulation. However, "
+"``Pandas`` is not required to create anything shown here."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:14
+msgid "Bars"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:19
+msgid "Basic"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:21
+msgid ""
+"Bokeh make it simple to create basic bar charts using the "
+":func:`~bokeh.plotting.figure.Figure.hbar` and "
+":func:`~bokeh.plotting.figure.Figure.vbar` glyphs methods. In the example"
+" below, we have the following sequence of simple 1-level factors:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:30
+msgid ""
+"To inform Bokeh that the x-axis is categorical, we pass this list of "
+"factors as the ``x_range`` argument to "
+":fund:``~bokeh.plotting.figure.figure``:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:37
+msgid ""
+"Note that passing the list of factors is a convenient shorthand notation "
+"for creating a :class:`~bokeh.models.ranges.FactorRange`. The equivalent "
+"explicit notation is:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:45
+msgid ""
+"This more explicit for is useful when you want to customize the "
+"``FactorRange``, e.g. by changing the range or category padding."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:48
+msgid ""
+"Next we can call ``vbar`` with the list of fruit name factors as the "
+"``x`` coordinate, the bar height as the ``top`` coordinate, and "
+"optionally any ``width`` or other properties that we would like to set:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:56
+msgid "All put together, we see the output:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:61
+msgid ""
+"As usual, the data could also be put into a ``ColumnDataSource`` supplied"
+" as the ``source`` parameter to ``vbar`` instead of passing the data "
+"directly as parameters. Later examples will demonstrate this."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:68
+msgid "Sorting"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:70
+msgid ""
+"Since Bokeh displays bars in the order the factors are given for the "
+"range, \"sorting\" bars in a bar plot is identical to sorting the factors"
+" for the range."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:73
+msgid ""
+"In the example below the fruit factors are sorted in increasing order "
+"according to their corresponding counts, causing the bars to be sorted:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:82
+msgid "Colors"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:84
+msgid ""
+"Often times we may want to have bars that are shaded some color. This can"
+" be accomplished in different ways. One way is to supply all the colors "
+"up front. This can be done by putting all the data, including the colors "
+"for each bar, in a ``ColumnDataSource``. Then the name of the column "
+"containing the colors is passed to ``figure`` as the ``color`` (or "
+"``line_color``/``fill_color``) arguments. This is shown below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:94
+msgid ""
+"Another way to shade the bars is to use a ``CategoricalColorMapper`` that"
+" colormaps the bars inside the browser. There is a function "
+":func:`~bokeh.transform.factor_cmap` that makes this simple to do:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:102
+msgid ""
+"This can be passed to ``figure`` in the same way as the column name in "
+"the previous example. Putting everything together we obtain the same plot"
+" in a different way:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:113
+msgid "Grouped"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:115
+msgid ""
+"When creating bar charts, it is often desirable to visually display the "
+"data according to sub-groups. There are two basic methods that can be "
+"used, depending on your use case: using nested categorical coordinates, "
+"or applying vidual dodges."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:123
+msgid "Nested Categories"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:125
+msgid ""
+"If the coordinates of a plot range and data have two or three levels, "
+"then Bokeh will automatically group the factors on the axis, including a "
+"hierarchical tick labeling with separators between the groups. In the "
+"case of bar charts, this results in bars grouped together by the top-"
+"level factors. This is probably the most common way to achieve grouped "
+"bars, especially if you are starting from \"tidy\" data."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:132
+msgid ""
+"The example below shows this approach by creating a single column of "
+"coordinates that are each 2-tuples of the form ``(fruit, year)``. "
+"Accordingly, the plot groups the axes by fruit type, with a single call "
+"to ``vbar``:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:139
+msgid ""
+"We can also apply a color mapping, similar to the earlier example. To "
+"obtain same grouped bar plot of fruits data as above, except with the "
+"bars shaded by the year, changethe ``vbar`` function call to use "
+"``factor_cmap`` for the ``fill_color``:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:152
+msgid ""
+"Recall that the factors are of the for ``(fruit, year)``. The ``start=1``"
+" and ``end=2`` in the call to ``factor_cmap`` select the second part of "
+"data factors to use when color mapping."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:162
+msgid "Visual Dodge"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:164
+msgid ""
+"Another method for achieving grouped bars is to explicitly specify a "
+"visual displacement for the bars. Such a visual offset is also referred "
+"to as a *dodge*."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:168
+msgid ""
+"In this scenario, our data is not \"tidy\". Instead a single table with "
+"rows indexed by factors ``(fruit, year)``, we have separate series for "
+"each year. We can plot all the year series using separate calls to "
+"``vbar`` but since every bar in each group has the same ``fruit`` factor,"
+" the bars would overlap visually. We can prevent this overlap and "
+"distinguish the bars visually by using the :func:`~bokeh.transform.dodge`"
+" function to provide an offset for each different call to ``vbar``:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:182
+msgid "Stacked"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:184
+msgid ""
+"Another common operation or bar charts is to stack bars on top of one "
+"another. Bokeh makes this easy to do with the specialized "
+":func:`~bokeh.plotting.figure.Figure.hbar_stack` and "
+":func:`~bokeh.plotting.figure.Figure.vbar_stack` functions. The example "
+"below shows the fruits data from above, but with the bars for each fruit "
+"type stacked instead of grouped:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:194
+msgid ""
+"Note that behing the scenes, these functions work by stacking up the "
+"successive columns in separate calls to ``vbar`` or ``hbar``. This kind "
+"of operation is akin the to dodge example above (i.e. the data in this "
+"case is *not* in a \"tidy\" data format)."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:199
+msgid ""
+"Sometimes we may want to stack bars that have both positive and negative "
+"extents. The example below shows how it is possible to create such a "
+"stacked bar chart that is split by positive and negative values:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:207
+msgid "Hover Tools"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:209
+msgid ""
+"For stacked bar plots, Bokeh provides some special hover variables that "
+"are useful for common cases."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:212
+msgid ""
+"When stacking bars, Bokeh automatically sets the ``name`` property for "
+"each layer in the stack to be the value of the stack column for that "
+"layer. This name value is accessible to hover tools via the ``$name`` "
+"special variable."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:216
+msgid ""
+"Additionally, the hover variable ``@$name`` can be used to look up values"
+" from the stack column for each layer. For instance, if a user hovers "
+"over a stack glyph with the name ``\"US East\"``, then ``@$name`` is "
+"equivalent to ``@{US East}``."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:221
+msgid "The example below demonstrates both of these hover variables:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:226
+msgid ""
+"Note that it is also possible to override the value of ``name`` by "
+"passing it manually to ``vbar_stack`` and ``hbar_stack``. In this case, "
+"``$@name`` will look up the column names provided by the user."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:230
+msgid ""
+"It may also sometimes be desirable to have a different hover tool for "
+"each layer in the stack. For such cases, the ``hbar_stack`` and "
+"``vbar_stack`` functions return a list of all the renderers created (one "
+"for each stack). These can be used to customize different hover tools for"
+" each layer:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:251
+msgid "Mixed Factors"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:253
+msgid ""
+"When dealing with hierarchical categories of two or three levels, it's "
+"possible to use just the \"higher level\" portion of a coordinate to "
+"position glyphs. For example, if you have range with the hierarchical "
+"factors"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:264
+msgid ""
+"Then it is possible to use just `\"Sales\"` and `\"Marketing\"` etc. as "
+"positions for glyphs. In this case the position is the center of the "
+"entire group. The example below shows bars for each month, grouped by "
+"financial quarter, and also adds a line (perhaps for a quarterly average)"
+" at the coordinates for ``Q1``, ``Q2``, etc.:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:273
+msgid ""
+"This example also demonstrates that other glyphs such as lines also "
+"function with categorical coordinates."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:279
+msgid "Stacked and Grouped"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:281
+msgid ""
+"The above techiques for stacking and grouping may also be used together "
+"to crate a stacked, grouped bar plot."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:284
+msgid ""
+"Continuing the example above with bars grouped by quarter, we might stack"
+" each individual bar by region."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:293
+msgid "Pandas"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:295
+msgid ""
+"`Pandas`_ is a powerful and common tool for doing data analysis on "
+"tabular and timeseries data in Python. Although it is not *required* by "
+"Bokeh, Bokeh tries to make life easier when you do."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:299
+msgid ""
+"Below is a plot that demonstrates some advantages when using Pandas with "
+"Bokeh:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:302
+msgid ""
+"Pandas ``GroupBy`` objects can be used to initialize a "
+"``CoumnDataSource``, automatically creating columns for many statistical "
+"measures such as the group mean or count"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:306
+msgid ""
+"``GroupBy`` objects may also be passed directly as a range argument to "
+"``figure``."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:312
+msgid ""
+"Not that in the example above, we grouped by the column ``'cyl'`` so our "
+"CDS has a column ``'cyl'`` for this index. Additionally, other non-"
+"grouped columns like ``'mpg'`` have had associated columns such "
+"``'mpg_mean'`` added, that give the mean MPG value for each group."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:317
+msgid ""
+"This usage also works when the grouping is multi-level. The example below"
+" shows how grouping the same data by ``('cyl', 'mfr')`` results in a "
+"hierarchical nested axis. In this case, the index column name "
+"``'cyl_mfr'`` is made by joining the names of the grouped columns "
+"together."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:328
+msgid "Intervals"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:330
+msgid ""
+"So far we have seen the bar glyphs used to create bar charts, which imply"
+" bars drawn from a common baseline. However, the bar glyphs can also be "
+"used to represent arbitrary intervals across a range."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:334
+msgid ""
+"The example below uses ``hbar`` with both ``left`` and ``right`` "
+"properties supplied, to show the spread in times between bronze and gold "
+"medalists in Olympic sprinting over many years:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:344
+msgid "Scatters"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:352
+msgid "Adding Jitter"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:354
+msgid ""
+"When plotting many scatter points in a single categorical category, it is"
+" common for points to start to visually overlap. In this case, Bokeh "
+"provides a :func:`~bokeh.transform.jitter` function that can "
+"automatically apply a random dodge to every point."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:359
+msgid ""
+"The example below shows a scatter plot of every commit time for a GitHub "
+"user between 2012 and 2016, grouped by day of the week. A naive plot of "
+"this data would result in thousands of points overlapping in a narrow "
+"line for each day. By using ``jitter`` we can differentiate the points to"
+" obtain a useful plot:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:370
+msgid "Categorical Offsets"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:372
+msgid ""
+"We've seen above how categorical locations can be modified by operations "
+"like *dodge* and *jitter*.  It is also possible to supply an offset to a "
+"categorical location explicitly. This is done by adding a numeric value "
+"to the end of a category, e.g. ``[\"Jan\", 0.2]`` is the category \"Jan\""
+" offset by a value of 0.2. For hierachical categories, the value is added"
+" at the end of the existing list, e.g. ``[\"West\", \"Sales\", -0,2]``. "
+"Any numeric value at the end of a list of categories is always "
+"interpreted as an offset."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:380
+msgid ""
+"As an example, suppose we took our first example from the beginning and "
+"modified it like this:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:394
+msgid ""
+"Then the resulting plot has bars that are horizontally shifted by the "
+"amount of each corresponding offset:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:400
+msgid ""
+"Below is a more sophisticated example of a Ridge Plot that displays "
+"timeseries associated with different categories. It uses categorical "
+"offsets to specify patch coordinates for the timeseries inside each "
+"category."
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:410
+msgid "Heat Maps"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:412
+msgid ""
+"In all of the cases above, we have had one categorical axis, and one "
+"continuous axis. It is possible to have plots with two categorical axes. "
+"If we shade the rectangle that defines each pair of categories, we end up"
+" with a *Categorical Heatmap*"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:417
+msgid ""
+"The plot below shows such a plot, where the x-axis categories are a list "
+"of years from 1948 to 2016, and the y-axis categories are the months of "
+"the years. Each rectangle corresponding to a ``(year, month)`` "
+"combination is color mapped by the unemployment rate for that month and "
+"year. Since the unemployment rate is a continuous variable, a "
+"``LinearColorMapper`` is used to colormap the plot, and is also passed to"
+" a color bar to provide a visual legend on the right:"
+msgstr ""
+
+#: ../../source/docs/user_guide/categorical.rst:428
+msgid ""
+"A final example combines many of the techniques in this chapter: color "
+"mappers, visual dodges, and Pandas DataFrames. These are used to create a"
+" different sort of \"heatmap\" that results in a periodic table of the "
+"elements. A hover tool as also been added so that additional information "
+"about each element can be inspected:"
+msgstr ""
+

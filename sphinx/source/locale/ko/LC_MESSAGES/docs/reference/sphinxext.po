@@ -1,0 +1,615 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/sphinxext.rst:4
+msgid "bokeh.sphinxext"
+msgstr ""
+
+#: ../../source/docs/reference/sphinxext.rst:6
+msgid ""
+"In order to help automate and simplify the generation of Bokeh "
+"documentation, several Sphinx extensions have been created. Most of these"
+" will not be of general interest, except for "
+"`bokeh.sphinxext.bokeh_plot`_, which allows anyone to include and embed "
+"bokeh plots directly in their own Sphinx docs."
+msgstr ""
+
+#: ../../source/docs/reference/sphinxext.rst:15
+msgid "bokeh_autodoc"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_autodoc:1 of
+msgid "Integrate Bokeh extensions into Sphinx autodoc."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_autodoc:3 of
+msgid ""
+"Ensures that autodoc directives such as ``autoclass`` automatically make "
+"use of Bokeh-specific directives when appropriate. The following Bokeh "
+"extensions are configured:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_autodoc:7 of
+msgid ":ref:`bokeh.sphinxext.bokeh_color`"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_autodoc:8 of
+msgid ":ref:`bokeh.sphinxext.bokeh_enum`"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_autodoc:9 of
+msgid ":ref:`bokeh.sphinxext.bokeh_model`"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_autodoc:10 of
+msgid ":ref:`bokeh.sphinxext.bokeh_prop`"
+msgstr ""
+
+#: ../../source/docs/reference/sphinxext.rst:22
+msgid "bokeh_color"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_color:1 of
+msgid "Document Bokeh named colors."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_color:3 of
+msgid "The ``bokeh-color`` directive accepts a named color as its argument:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_color:9 of
+msgid "and generates a labeled color swatch as output."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_color:13 of
+msgid ""
+"The ``bokeh-color`` direction may be used explicitly, but it can also be "
+"used in conjunction with the :ref:`bokeh.sphinxext.bokeh_autodoc` "
+"extension."
+msgstr ""
+
+#: ../../source/docs/reference/sphinxext.rst:29
+msgid "bokeh_enum"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_enum:1 of
+msgid "Thoroughly document Bokeh enumerations"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_enum:3 of
+msgid ""
+"The ``bokeh-enum`` directive generates useful documentation for "
+"enumerations, including all the allowable values. If the number of values"
+" is large, the full list is put in a collapsible code block."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_enum:7 of
+msgid ""
+"This directive takes the name of a Bokeh enum variable as the argument "
+"and the module name as an option. An optional description may be added as"
+" content:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_enum:18 bokeh.sphinxext.bokeh_github:15
+#: bokeh.sphinxext.bokeh_model:16 bokeh.sphinxext.bokeh_options:15
+#: bokeh.sphinxext.bokeh_plot:47 bokeh.sphinxext.bokeh_prop:16
+#: bokeh.sphinxext.collapsible_code_block:22 of
+msgid "Examples"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_enum:19 of
+msgid "The directive above will generate the following output:"
+msgstr ""
+
+#: ../../<bokeh-enum>:1
+msgid "Specify a baz style"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_enum:26 of
+msgid ""
+"Although ``bokeh-enum`` may be used explicitly, it is more often "
+"convenient in conjunction with the :ref:`bokeh.sphinxext.bokeh_autodoc` "
+"extension. Together, the same output above will be generated directly "
+"from the following code:"
+msgstr ""
+
+#: ../../source/docs/reference/sphinxext.rst:36
+msgid "bokeh_gallery"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_gallery:1 of
+msgid "Generate a gallery of Bokeh plots from a configuration file."
+msgstr ""
+
+#: ../../source/docs/reference/sphinxext.rst:43
+msgid "bokeh_github"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_github:1 of
+msgid "Simplify linking to Bokeh Github resources."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_github:3 of
+msgid ""
+"This module proved four new roles that can be uses to easily link to "
+"various resources in the Bokeh Github repository:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_github:6 of
+msgid "``:bokeh-commit:`` : link to a specific commit"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_github:8 of
+msgid "``:bokeh-issue:`` : link to an issue"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_github:10 of
+msgid "``:bokeh-pull:`` : link to a pull request"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_github:12 of
+msgid "``:bokeh-tree:`` : (versioned) link to a source tree URL"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_github:16 of
+msgid "The following code:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_github:24 of
+msgid "yields the output:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_github:26 of
+msgid ""
+"The repo history shows that :bokeh-commit:`bf19bcb` was made in in "
+":bokeh-pull:`1698`,which closed :bokeh-issue:`1694`. This included "
+"updating all of the files in the :bokeh-tree:`examples` subdirectory."
+msgstr ""
+
+#: ../../source/docs/reference/sphinxext.rst:50
+msgid "bokeh_jinja"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_jinja:1 of
+msgid "Automatically document Bokeh Jinja2 templates."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_jinja:3 of
+msgid ""
+"This directive takes the module path to an attribute name that defines a "
+"Jinja2 template:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_jinja:10 of
+msgid ""
+"Any template parameters will be displayed and the template source code "
+"will be rendered in a collapsible code block. For example, the usage "
+"above will generate the following output:"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "Renders Bokeh models into a basic .html file."
+msgstr ""
+
+#: ../../<bokeh-jinja>
+msgid "Parameters"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "value for ``<title>`` tags"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "typically the output of RESOURCES"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "typically the output of PLOT_SCRIPT"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid ""
+"Users can customize the file output by providing their own Jinja2 "
+"template that accepts these same parameters."
+msgstr ""
+
+#: ../../source/docs/reference/sphinxext.rst:57
+msgid "bokeh_model"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_model:1 of
+msgid "Thoroughly document Bokeh model classes."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_model:3 of
+msgid ""
+"The ``bokeh-model`` directive will automatically document all the "
+"attributes (including Bokeh properties) of a Bokeh Model subclass. A JSON"
+" prototype showing all the possible JSON fields will also be generated."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_model:7 of
+msgid ""
+"This directive takes the name of a Bokeh model class as an argument and "
+"its module as an option:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_model:17 of
+msgid "For the following definition of ``bokeh.sphinxext.sample.Foo``:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_model:26 bokeh.sphinxext.bokeh_options:26
+#: bokeh.sphinxext.bokeh_prop:25 of
+msgid "the above usage yields the output:"
+msgstr ""
+
+#: bokeh.sphinxext.sample.Foo:1 of
+msgid "Bases: :class:`bokeh.model.Model`"
+msgstr ""
+
+#: bokeh.sphinxext.sample.Foo:1 of
+msgid "This is a Foo model."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Auto` , "
+":class:`~bokeh.core.properties.Enum` ( Enumeration(abc, def, xzy) ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "doc for index"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.Float` , "
+":class:`~bokeh.core.properties.Float`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "doc for value"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_model:31 of
+msgid ""
+"The ``bokeh-model`` direction may be used explicitly, but it can also be "
+"used in conjunction with the :ref:`bokeh.sphinxext.bokeh_autodoc` "
+"extension."
+msgstr ""
+
+#: ../../source/docs/reference/sphinxext.rst:64
+msgid "bokeh_options"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_options:1 of
+msgid "Thoroughly document Bokeh options classes."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_options:3 of
+msgid ""
+"The ``bokeh-options`` directive will automatically document all the "
+"properties of a Bokeh Options class under a heading of \"Keyword Args\"."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_options:6 of
+msgid ""
+"This directive takes the name of a Bokeh Options subclass as the "
+"argument, and its module as an option:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_options:16 of
+msgid "For the following definition of ``bokeh.sphinxext.sample.Opts``:"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid "Keyword Args:"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid ""
+"host (:class:`~bokeh.core.properties.String` ) : a host to connect to "
+"(default: 'localhost')"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid ""
+"port (:class:`~bokeh.core.properties.Int` ) : a port to connect to "
+"(default: 5890)"
+msgstr ""
+
+#: ../../source/docs/reference/sphinxext.rst:71
+msgid "bokeh_palette"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_palette:1 of
+msgid "Generate an inline visual representations of a single color palette."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_palette:3 of
+msgid ""
+"The ``:bokeh-palette:`` role can be used with by providing any of the "
+"following:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_palette:6 of
+msgid "a palette name from ``bokeh.palettes``, e.g. ``Spectral9``"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_palette:8 of
+msgid ""
+"a palette function from ``bokeh.palettes`` called with argument, e.g. "
+"``viridis(12)``"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_palette:10 of
+msgid ""
+"An explicit list of colors: ``['#000000', '#333333', '#666666', "
+"'#999999', '#cccccc', '#ffffff']``"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_palette:12 of
+msgid "The following usage of the the directive:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_palette:22 bokeh.sphinxext.bokeh_palette_group:14 of
+msgid "Generates the output:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_palette:24 of
+msgid "by name: :bokeh-palette:`Spectral9`"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_palette:26 of
+msgid "by function: :bokeh-palette:`viridis(12)`"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_palette:28 of
+msgid ""
+"by list: :bokeh-palette:`['#000000', '#333333', '#666666', '#999999', "
+"'#cccccc', '#ffffff']`"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_palette:30 of
+msgid ""
+"Palette swatches are 20 pixels in height. For palettes short than 20 "
+"colors, the default width for the swatches is 20 pixels. If larger "
+"palettes are given, the width of the HTML spans is progressively reduced,"
+" down to a minimum of one pixel. For instance displaying the full Viridis"
+" palette with the expression"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_palette:39 of
+msgid "Will generate the output:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_palette:41 of
+msgid ":bokeh-palette:`viridis(256)`"
+msgstr ""
+
+#: ../../source/docs/reference/sphinxext.rst:78
+msgid "bokeh_palette_group"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_palette_group:1 of
+msgid "Generate visual representations of palettes in Bokeh palette groups."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_palette_group:3 of
+msgid ""
+"The ``bokeh.palettes`` modules expose attributes such as ``mpl``, "
+"``brewer``, and ``d3`` that provide groups of palettes. The ``bokeh-"
+"palette-group`` directive accepts the name of one of these groups, and "
+"generates a visual matrix of colors for every palette in the group."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_palette_group:8 of
+msgid "As an example, the following usage of the the directive:"
+msgstr ""
+
+#: ../../source/docs/reference/sphinxext.rst:85
+msgid "bokeh_plot"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_plot:1 of
+msgid "Include Bokeh plots in Sphinx HTML documentation."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_plot:3 of
+msgid ""
+"For other output types, the placeholder text ``[graph]`` will be "
+"generated."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_plot:6 of
+msgid "The ``bokeh-plot`` directive can be used by either supplying:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_plot:8 of
+msgid "**A path to a source file** as the argument to the directive::"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_plot:13 of
+msgid ""
+".py scripts are not scanned automatically! In order to include certain "
+"directories into .py scanning process use following directive in sphinx "
+"conf.py file: bokeh_plot_pyfile_include_dirs = [\"dir1\",\"dir2\"]"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_plot:17 of
+msgid "**Inline code** as the content of the directive::"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_plot:34 of
+msgid ""
+"This directive also works in conjunction with Sphinx autodoc, when used "
+"in docstrings."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_plot:37 of
+msgid "The ``bokeh-plot`` directive accepts the following options:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_plot:41 of
+msgid "source-position"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_plot:40 of
+msgid "enum('above', 'below', 'none')"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_plot:40 of
+msgid "Where to locate the the block of formatted source code (if anywhere)."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_plot:44 of
+msgid "linenos"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_plot:43 of
+msgid "flag"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_plot:44 of
+msgid "Whether to display line numbers along with the source."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_plot:48 bokeh.sphinxext.collapsible_code_block:23 of
+msgid "The inline example code above produces the following output:"
+msgstr ""
+
+#: ../../source/docs/reference/sphinxext.rst:92
+msgid "bokeh_prop"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_prop:1 of
+msgid "Thoroughly document Bokeh property attributes."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_prop:3 of
+msgid ""
+"The ``bokeh-prop`` directive generates documentation for Bokeh model "
+"properties, including cross links to the relevant property types. "
+"Additionally, any per-attribute help strings are also displayed."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_prop:7 of
+msgid ""
+"This directive takes the name *(class.attr)* of a Bokeh property as its "
+"argument and the module as an option:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_prop:17 of
+msgid "For the following definition of ``bokeh.sphinxext.sample.Bar``:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Int`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "doc for thing"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_prop:30 of
+msgid ""
+"The ``bokeh-prop`` direction may be used explicitly, but it can also be "
+"used in conjunction with the :ref:`bokeh.sphinxext.bokeh_autodoc` "
+"extension."
+msgstr ""
+
+#: ../../source/docs/reference/sphinxext.rst:99
+msgid "bokeh_releases"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_releases:1 of
+msgid "Publish all Bokeh release notes on to a single page."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_releases:3 of
+msgid ""
+"This directive collect all the release notes files in the "
+"``docs/releases`` subdirectory, and includes them in *reverse version "
+"order*. Typical usage:"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_releases:14 of
+msgid ""
+"To avoid warnings about orphaned files, add the following to the Sphinx "
+"``conf.py`` file:"
+msgstr ""
+
+#: ../../source/docs/reference/sphinxext.rst:106
+msgid "bokeh_sitemap"
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_sitemap:1 of
+msgid "Generate a ``sitemap.txt`` to aid with search indexing."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_sitemap:3 of
+msgid ""
+"``sitemap.txt`` is a plain text list of all the pages in the docs site. "
+"Each URL is listed on a line in the text file. It is machine readable and"
+" used by search engines to know what pages are available for indexing."
+msgstr ""
+
+#: bokeh.sphinxext.bokeh_sitemap:7 of
+msgid ""
+"All that is required to generate the sitemap is to list this module "
+"``bokeh.sphinxext.sitemap`` in the list of extensions in the Sphinx "
+"configuration file ``conf.py``."
+msgstr ""
+
+#: ../../source/docs/reference/sphinxext.rst:113
+msgid "collapsible_code_block"
+msgstr ""
+
+#: bokeh.sphinxext.collapsible_code_block:1 of
+msgid "Display code blocks in collapsible sections when outputting to HTML."
+msgstr ""
+
+#: bokeh.sphinxext.collapsible_code_block:3 of
+msgid "This directive takes a heading to use for the collapsible code block:"
+msgstr ""
+
+#: bokeh.sphinxext.collapsible_code_block:14 of
+msgid ""
+"This directive is identical to the standard ``code-block`` directive that"
+" Sphinx supplies, with the addition of one new option:"
+msgstr ""
+
+#: bokeh.sphinxext.collapsible_code_block:19 of
+msgid "heading"
+msgstr ""
+
+#: bokeh.sphinxext.collapsible_code_block:18 of
+msgid "string"
+msgstr ""
+
+#: bokeh.sphinxext.collapsible_code_block:18 of
+msgid ""
+"A heading to put for the collapsible block. Clicking the heading expands "
+"or collapses the block"
+msgstr ""
+

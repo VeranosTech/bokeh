@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/client/states.rst:4
+msgid "bokeh.client.states"
+msgstr ""
+
+#: bokeh.client.states:1 of
+msgid ""
+"Provide a set of objects to represent different stages of a connection to"
+" a Bokeh server."
+msgstr ""
+
+#: bokeh.client.states.CONNECTED_BEFORE_ACK:1 of
+msgid ""
+"The ``ClientConnection`` connected to a Bokeh server, but has not yet "
+"received an ACK from it."
+msgstr ""
+
+#: bokeh.client.states.CONNECTED_AFTER_ACK:1 of
+msgid ""
+"The ``ClientConnection`` connected to a Bokeh server, and has received an"
+" ACK from it."
+msgstr ""
+
+#: bokeh.client.states.DISCONNECTED:1 of
+msgid ""
+"The ``ClientConnection`` was connected to a Bokeh server, but is now "
+"disconnected."
+msgstr ""
+
+#: bokeh.client.states.NOT_YET_CONNECTED:1 of
+msgid "The ``ClientConnection`` is not yet connected."
+msgstr ""
+
+#: bokeh.client.states.WAITING_FOR_REPLY:1 of
+msgid ""
+"The ``ClientConnection`` has sent a message to the Bokeh Server which "
+"should generate a paired reply, and is waiting for the reply."
+msgstr ""
+
+#: bokeh.client.states.WAITING_FOR_REPLY.reply:1 of
+msgid "The reply from the server. (``None`` until the reply arrives)"
+msgstr ""
+
+#: bokeh.client.states.WAITING_FOR_REPLY.reqid:1 of
+msgid "The request ID of the originating message."
+msgstr ""
+

@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/application/handlers/script.rst:4
+msgid "bokeh.application.handlers.script"
+msgstr ""
+
+#: bokeh.application.handlers.script:1 of
+msgid ""
+"Provide a Bokeh Application Handler to build up documents by running the "
+"code from Python script (``.py``) files."
+msgstr ""
+
+#: bokeh.application.handlers.script:4 of
+msgid ""
+"This handler is configured with the filename of a Python module. When a "
+"Bokeh application calls ``modify_doc``, the contents of the module are "
+"run to process a new Document for a session. When the script code is "
+"executed, the Document being modified will be available as ``curdoc``, "
+"and any optionally provided ``args`` will be available as ``sys.argv``."
+msgstr ""
+
+#: bokeh.application.handlers.script:10 of
+msgid "As an example, consider the following Python module ``myapp.py``"
+msgstr ""
+
+#: bokeh.application.handlers.script:25 of
+msgid ""
+"The a ``ScriptHandler`` configured with this script will modify new Bokeh"
+" Documents by adding an empty plot with a title taken from ``args``."
+msgstr ""
+
+#: bokeh.application.handlers.script.ScriptHandler:1 of
+msgid "Modify Bokeh documents by executing code from Python scripts."
+msgstr ""
+
+#: bokeh.application.handlers.script.ScriptHandler.__init__:1 of
+msgid "Keywords:"
+msgstr ""
+
+#: bokeh.application.handlers.script.ScriptHandler.__init__:2 of
+msgid "filename (str) : a path to a Python source (\".py\") file"
+msgstr ""
+

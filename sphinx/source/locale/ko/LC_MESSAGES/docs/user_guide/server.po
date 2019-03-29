@@ -1,0 +1,996 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/server.rst:4
+msgid "Running a Bokeh Server"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:9
+msgid "Purpose"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:11
+msgid ""
+"The architecture of Bokeh is such that high-level \"model objects\" "
+"(representing things like plots, ranges, axes, glyphs, etc.) are created "
+"in Python, and then converted to a JSON format that is consumed by the "
+"client library, BokehJS. (See :ref:`userguide_concepts` for a more "
+"detailed discussion.) By itself, this flexible and decoupled design "
+"offers advantages, for instance it is easy to have other languages (R, "
+"Scala, Lua, ...) drive the exact same Bokeh plots and visualizations in "
+"the browser."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:19
+msgid ""
+"However, if it were possible to keep the \"model objects\" in python and "
+"in the browser in sync with one another, then more additional and "
+"powerful possibilities immediately open up:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:23
+msgid ""
+"respond to UI and tool events generated in a browser with computations or"
+" queries using the full power of python"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:25
+msgid ""
+"automatically push server-side updates to the UI (i.e. widgets or plots "
+"in a browser)"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:26
+msgid ""
+"use periodic, timeout, and asynchronous callbacks to drive streaming "
+"updates"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:28
+msgid ""
+"**This capability to synchronize between python and the browser is the "
+"main purpose of the Bokeh Server.**"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:33
+msgid ""
+"The simple example below, embedded from `demo.bokeh.org`_, illustrates "
+"this."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:53
+msgid ""
+"When the controls are manipulated, their new values are automatically "
+"synced in the Bokeh server. Callbacks are triggered that also update the "
+"data for the plot in the server. These changes are automatically synced "
+"back to the browser, and the plot updates."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:61
+msgid "Use Case Scenarios"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:63
+msgid ""
+"Now that we know what the Bokeh server is for, and what it is capable of "
+"doing, it's worth considering a few different scenarios when you might "
+"want to use a Bokeh Server."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:70
+msgid "Local or Individual Use"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:72
+msgid ""
+"One way that you might want to use the Bokeh server is during exploratory"
+" data analysis, possibly in a Jupyter notebook. Alternatively, you might "
+"want to create a small app that you can run locally, or that you can send"
+" to colleagues to run locally. The Bokeh server is very useful and easy "
+"to use in this scenario. Both of the methods here below can be used "
+"effectively:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:78
+msgid ":ref:`userguide_server_bokeh_client`"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:79
+msgid ":ref:`userguide_server_applications`"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:81
+msgid ""
+"For the most flexible approach, that could transition most directly to a "
+"deployable application, it is suggested to follow the techniques in "
+":ref:`userguide_server_applications`."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:88
+msgid "Creating Deployable Applications"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:90
+msgid ""
+"Another way that you might want to use the Bokeh server is to publish "
+"interactive data visualizations and applications that can be viewed and "
+"used by a wider audience (perhaps on the internet, or perhaps on an "
+"internal company network). The Bokeh Server is also well-suited to this "
+"usage, and you will want to first consult the sections:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:96
+msgid ""
+":ref:`userguide_server_applications` - how to create Bokeh Applications, "
+"and then refer to the section"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:97
+msgid ""
+":ref:`userguide_server_deployment` - how to deploy the Bokeh server with "
+"your application."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:103
+msgid "Shared Publishing"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:105
+msgid ""
+"Both of the scenarios above involve a *single creator* making "
+"applications on the server, either for their own local use, or for "
+"consumption by a larger audience. Another scenario is the case where a "
+"group of *several creators* all want publish different applications to "
+"the same server. **This is not a good use-case for single Bokeh server.**"
+" Because it is possible to create applications that execute arbitrary "
+"python code, process isolation and security concerns make this kind of "
+"shared tenancy prohibitive."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:113
+msgid ""
+"In order to support this kind of multi-creator, multi-application "
+"environment, one approach is to build up infrastructure that can run as "
+"many Bokeh servers as-needed, either on a per-app, or at least a per-user"
+" basis. It is possible that we may create a public service to enable just"
+" this kind of usage in the future, and it would also certainly be "
+"possible for third parties to build their own private infrastructure to "
+"do so as well, but that is beyond the scope of this User's Guide."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:121
+msgid ""
+"Another possibility is to have a single centrally created app (perhaps by"
+" an organization), that can access data or other artifacts published by "
+"many different people (possibly with access controls). This sort of "
+"scenario *is* possible with the Bokeh server, but often involves "
+"integrating a Bokeh server with other web application frameworks."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:130
+msgid "Building Bokeh Applications"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:132
+msgid ""
+"By far the most flexible way to create interactive data visualizations "
+"using the Bokeh server is to create Bokeh Applications, and serve them "
+"with the ``bokeh serve`` command. In this scenario, a Bokeh server uses "
+"the application code to create sessions and documents for all browsers "
+"that connect:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:141
+msgid ""
+"A Bokeh server (left) uses Application code to create Bokeh Documents. "
+"Every new connection from a browser (right) results in the Bokeh server "
+"creating a new document, just for that session."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:145
+msgid ""
+"The application code is executed in the Bokeh server every time a new "
+"connection is made, to create the new Bokeh ``Document`` that will be "
+"synced to the browser. The application code also sets up any callbacks "
+"that should be run whenever properties such as widget values are changes."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:150
+msgid "There are a few different ways to provide the application code."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:155
+msgid "Single module format"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:157
+msgid ""
+"Let's look again at a complete example and then examine some specific "
+"parts in more detail:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:207
+msgid ""
+"Notice that we have not specified an output or connection method anywhere"
+" in this code. It is a simple script that creates and updates objects. "
+"The flexibility of the ``bokeh`` command line tool means that we can "
+"defer output options until the end. We could, e.g., run ``bokeh json "
+"myapp.py`` to get a JSON serialized version of the application. But in "
+"this case, we would like to run the app on a Bokeh server, so we execute:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:218
+msgid ""
+"The ``--show`` option will cause a browser to open up a new tab "
+"automatically to the address of the running application, which in this "
+"case is:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:225
+msgid ""
+"If you have only one application, the server root will redirect to it. "
+"Otherwise, You can see an index of all running applications at the server"
+" root:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:232
+msgid ""
+"This index can be disabled with the ``--disable-index`` option, and the "
+"redirect behavior can be disabled with the ``--disable-index-redirect`` "
+"option."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:235
+msgid ""
+"In addition to creating Bokeh applications from single python files, it "
+"is also possible to create applications from directories."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:242
+msgid "Directory format"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:244
+msgid ""
+"Bokeh applications may also be created by creating and populating a "
+"filesystem directory with the appropriate files. To start a directory "
+"application in a directory ``myapp``, execute ``bokeh serve`` with the "
+"name of the directory, for instance:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:253
+msgid ""
+"At a minimum, the directory must contain a ``main.py`` that constructs a "
+"Document for the Bokeh Server to serve:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:262
+msgid "The full set of files that Bokeh server knows about is:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:275
+msgid "The optional components are"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:277
+msgid ""
+"A ``server_lifecycle.py`` file that allows optional callbacks to be "
+"triggered at different stages of application creation, as described in "
+":ref:`userguide_server_applications_lifecycle`."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:279
+msgid ""
+"A ``static`` subdirectory that can be used to serve static resources "
+"associated with this application."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:281
+msgid ""
+"A ``theme.yaml`` file that declaratively defines default attributes to be"
+" applied to Bokeh model types."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:283
+msgid ""
+"A ``templates`` subdirectory with ``index.html`` Jinja template file. The"
+" directory may contain additional Jinja templates for ``index.html`` to "
+"refer to. The template should have the same parameters as the "
+":class:`~bokeh.core.templates.FILE` template."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:285
+msgid ""
+"Custom variables can be passed to the template via the "
+"``curdoc().template_variables`` dictionary in place:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:296
+msgid ""
+"When executing your ``main.py`` Bokeh server ensures that the standard "
+"``__file__`` module attribute works as you would expect. So it is "
+"possible to include data files or custom user defined models in your "
+"directory however you like. Additionally, the application directory is "
+"also added to ``sys.path`` so that python modules in the application "
+"directory may be easily imported."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:303
+msgid "An example might be:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:334
+msgid "In this case you might have code similar to:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:343
+msgid ""
+"And similar code to load the JavaScript implementation for a custom model"
+" from ``models/custom.js``"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:349
+msgid "Accessing the HTTP Request"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:351
+msgid ""
+"When a session is created for a Bokeh application, the session context is"
+" made available as ``curdoc().session_context``. The most useful function"
+" of the session context is to make the Tornado HTTP request object "
+"available to the application as ``session_context.request``. Due to an "
+"incompatibility issue with the usage of ``--num-procs`` only the "
+"``arguments`` attribute can be accessed. Attempting to access any other "
+"attribute on ``request`` will result in an error."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:358
+msgid ""
+"As an example, the following code will access the request ``arguments`` "
+"to set a value for a variable ``N`` (perhaps controlling the number of "
+"points in a plot):"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:375
+msgid ""
+"The request object is provided so that values such as ``arguments`` may "
+"be easily inspected. Calling any of the Tornado methods such as "
+"``finish()`` or writing directly to ``request.connection`` is unsupported"
+" and will result in undefined behavior."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:383
+msgid "Callbacks and Events"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:385
+msgid ""
+"Before jumping in to callbacks and events specifically in the context of "
+"the Bokeh Server, it's worth discussing different use-cases for callbacks"
+" in general."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:390
+msgid "JavaScript Callbacks in the Browser"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:392
+msgid ""
+"Regardless of whether there is a Bokeh Server involved, it is possible to"
+" create callbacks that execute in the browser, using ``CustomJS`` and "
+"other methods. See :ref:`userguide_interaction_jscallbacks` for more "
+"detailed information and examples."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:397
+msgid ""
+"It is critical to note that **no python code is ever executed when a "
+"CustomJS callback is used**. This is true even when the call back is "
+"supplied as python code to be translated to JavaScript. A ``CustomJS`` "
+"callback is only executed inside the browser's JavaScript interpreter, "
+"and thus can only directly interact with JavaScript data and functions "
+"(e.g., BokehJS models)."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:404
+msgid "Python Callbacks with Jupyter Interactors"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:406
+msgid ""
+"If you are working in the Jupyter Notebook, it is possible to use Jupyter"
+" interactors to quickly create simple GUI forms automatically. Updates to"
+" the widgets in the GUI can trigger python callback functions that "
+"execute in the Jupyter Python kernel. It is often useful to have these "
+"callbacks call :func:`~bokeh.io.push_notebook` to push updates to "
+"displayed plots. For more detailed information, see "
+":ref:`userguide_notebook_jupyter_interactors`."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:414
+msgid ""
+"It is currently possible to push updates from python, to BokehJS (i.e., "
+"to update plots, etc.) using :func:`~bokeh.io.push_notebook`. To add two-"
+"way communication (e.g. to have a range or selection update trigger a "
+"python callback) embed a Bokeh Server in the notebook. See :bokeh-"
+"tree:`examples/howto/server_embed/notebook_embed.ipynb`"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:421
+msgid "Updating From Threads"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:423
+msgid ""
+"If the app needs to perform blocking computation, it is possible to "
+"perform that work in a separate thread. However, updates to the Document "
+"must be scheduled via a next-tick callback.  The callback will execute as"
+" soon as possible on the next iteration of the Tornado event loop, and "
+"will automatically acquire necessary locks to update the document state "
+"safely."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:431
+msgid ""
+"The ONLY safe operations to perform on a document from a different thread"
+" is :func:`~bokeh.document.Document.add_next_tick_callback` and "
+":func:`~bokeh.document.Document.remove_next_tick_callback`"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:435
+msgid ""
+"It is important to emphasize that the document update must be scheduled "
+"in a \"next tick callback\". Any usage that directly updates the document"
+" state from another thread, either by calling other document methods, or "
+"by setting properties on Bokeh models, risks data and protocol "
+"corruption."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:440
+msgid ""
+"It is also important to save a local copy of ``curdoc()`` so that all "
+"threads have access to the same document. This is illustrated in the "
+"example below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:484
+msgid ""
+"To see this example in action, save it to a python file, e.g. "
+"``testapp.py`` and then execute"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:492
+msgid ""
+"There is currently no locking around adding next tick callbacks to "
+"documents. It is recommended that at most one thread add callbacks to the"
+" document. It is planned to add more fine grained locking to callback "
+"methods in the future."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:498
+msgid "Updating from Unlocked Callbacks"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:500
+msgid ""
+"Normally Bokeh session callbacks recursively lock the document until all "
+"future work they initiate is completed.  However, you may want to drive "
+"blocking computations from callbacks using Tornado's "
+"``ThreadPoolExecutor`` in an asynchronous callback. This can work, but "
+"requires the Bokeh provided :func:`~bokeh.document.without_document_lock`"
+" decorator to suppress the normal locking behavior."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:507
+msgid ""
+"As with the thread example above, **all actions that update document "
+"state must go through a next-tick callback**."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:510
+msgid ""
+"The following example demonstrates an application that drives a blocking "
+"computation from one unlocked Bokeh session callback, by yielding to a "
+"blocking function that runs on the thread pool executor and updates by "
+"using a next-tick callback. The example also updates the state simply "
+"from a standard locked session callback on a different update rate."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:566
+msgid ""
+"As before, you can run this example by saving to a python file and "
+"running ``bokeh serve`` on it."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:572
+msgid "Lifecycle Hooks"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:574
+msgid ""
+"Sometimes it is desirable to have code execute at specific times in a "
+"server or session lifetime. For instance, if you are using a Bokeh Server"
+" along side a Django server, you would need to call ``django.setup()`` "
+"once, as each Bokeh server starts, to initialize Django properly for use "
+"by Bokeh application code."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:580
+msgid ""
+"Bokeh provides this capability through a set of *Lifecycle Hooks*. To use"
+" these hooks, you must create your application in "
+":ref:`userguide_server_applications_directory`, and include a designated "
+"file called ``server_lifecycle.py`` in the directory. In this file you "
+"can include any or all of the following conventionally named functions:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:604
+msgid ""
+"Additionally, ``on_session_destroyed`` lifecycle hooks may also be "
+"defined directly on the ``Document`` being served. Since the task of "
+"cleaning up after a user closes a session is common, e.g. to shut down a "
+"database connection, this provides an easy route to performing such "
+"actions without bundling a separate file. To declare such a callback "
+"define a function and register it with the "
+"``Document.on_session_destroyed`` method:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:624
+msgid "Embedding Bokeh Server as a Library"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:626
+msgid ""
+"It can be useful to embed the Bokeh Server in a larger Tornado "
+"application, or the Jupyter notebook, and use the already existing "
+"Tornado ``IOloop``.  Here is the basis of how to integrate Bokeh in such "
+"a scenario:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:644
+msgid ""
+"It is also possible to create and control an ``IOLoop`` directly. This "
+"can be useful to create standalone \"normal\" python scripts that serve "
+"Bokeh apps, or to embed a Bokeh application into a framework like Flask "
+"or Django without having to run a separate Bokeh server process. Some "
+"examples of this technique can be found in the examples directory:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:650
+msgid ":bokeh-tree:`examples/howto/server_embed/flask_embed.py`"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:651
+msgid ":bokeh-tree:`examples/howto/server_embed/notebook_embed.ipynb`"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:652
+msgid ":bokeh-tree:`examples/howto/server_embed/standalone_embed.py`"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:653
+msgid ":bokeh-tree:`examples/howto/server_embed/tornado_embed.py`"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:658
+msgid "Connecting with ``bokeh.client``"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:660
+msgid ""
+"There is also a client API for interacting directly with a Bokeh Server. "
+"The client API can be used to make modifications Bokeh documents in "
+"existing sessions in a Bokeh server."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:668
+msgid ""
+"Typically web browsers make connections to a Bokeh server, but it is "
+"possible to connect from python by using the ``bokeh.client`` module."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:671
+msgid ""
+"This can be useful, for example, to make user-specific customizations to "
+"a Bokeh app that is embedded by another web framework such as Flask or "
+"Django. An example of this is shown below. In this scenario, the "
+"\"sliders\" example is running separately, e.g. via ``bokeh serve "
+"sliders.py``. A Flask endpoint embeds the sliders app, but changes the "
+"plot title *before* passing to the user:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:704
+msgid ""
+"It is possible to use ``bokeh.client`` to build up apps \"from scratch\","
+" outside a Bokeh server, including running and servicing callbacks by "
+"making a blocking call to ``session.loop_until_closed`` in the external "
+"Python process using ``bokeh.client``. This usage has a number of "
+"inherent technical disadvantages, and should be considered unsupported."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:713
+msgid "Deployment Scenarios"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:715
+msgid ""
+"With an application we are developing, we can run it locally any time we "
+"want to interact with it. To share it with other people who are able to "
+"install the required python stack, we can share the application with "
+"them, and let them run it locally themselves in the same manner. However,"
+" we might also want to deploy the application in a way that other people "
+"can access it as a service:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:721
+msgid "without having to install all of the prerequisites"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:722
+msgid "without needing to have the source code"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:723
+msgid "like any other webpage"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:725
+msgid ""
+"This section describes some of the considerations that arise when "
+"deploying Bokeh server applications as a service for others to use."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:731
+msgid "Standalone Bokeh Server"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:733
+msgid ""
+"First, it is possible to simply run the Bokeh server on a network for "
+"users to interact with directly. Depending on the computational burden of"
+" your application code, the number of users, the power of the machine "
+"used to run on, etc., this could be a simple and immediate option for "
+"deployment an internal network."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:739
+msgid ""
+"However, it is often the case that there are needs around authentication,"
+" scaling, and uptime. In these cases, more sophisticated deployment "
+"configurations are needed. In the following sections we discuss some of "
+"these considerations."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:745
+msgid "SSH Tunnels"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:747
+msgid ""
+"It may be convenient or necessary to run a standalone instance of the "
+"Bokeh server on a host to which direct access cannot be allowed. In such "
+"cases, SSH can be used to \"tunnel\" to the server."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:751
+msgid ""
+"In the simplest scenario, the Bokeh server will run on one host and will "
+"be accessed from another location, e.g., a laptop, with no intermediary "
+"machines."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:754
+msgid "Run the server as usual on the **remote host**:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:760
+msgid ""
+"Next, issue the following command on the **local machine** to establish "
+"an SSH tunnel to the remote host:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:767
+msgid ""
+"Replace *user* with your username on the remote host and *remote.host* "
+"with the hostname/IP address of the system hosting the Bokeh server. You "
+"may be prompted for login credentials for the remote system. After the "
+"connection is set up you will be able to navigate to ``localhost:5006`` "
+"as though the Bokeh server were running on the local machine."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:773
+msgid ""
+"The second, slightly more complicated case occurs when there is a gateway"
+" between the server and the local machine.  In that situation a reverse "
+"tunnel must be established from the server to the gateway. Additionally "
+"the tunnel from the local machine will also point to the gateway."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:778
+msgid ""
+"Issue the following commands on the **remote host** where the Bokeh "
+"server will run:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:786
+msgid ""
+"Replace *user* with your username on the gateway and *gateway.host* with "
+"the hostname/IP address of the gateway. You may be prompted for login "
+"credentials for the gateway."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:790
+msgid ""
+"Now set up the other half of the tunnel, from the local machine to the "
+"gateway. On the **local machine**:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:797
+msgid ""
+"Again, replace *user* with your username on the gateway and "
+"*gateway.host* with the hostname/IP address of the gateway. You should "
+"now be able to access the Bokeh server from the local machine by "
+"navigating to ``localhost:5006`` on the local machine, as if the Bokeh "
+"server were running on the local machine. You can even set up client "
+"connections from a Jupyter notebook running on the local machine."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:805
+msgid ""
+"We intend to expand this section with more guidance for other tools and "
+"configurations. If have experience with other web deployment scenarios "
+"and wish to contribute your knowledge here, please `contact us on the "
+"mailing list`_."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:813
+msgid "Basic Reverse Proxy Setup"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:815
+msgid ""
+"If the goal is to serve an web application to the general Internet, it is"
+" often desirable to host the application on an internal network, and "
+"proxy connections to it through some dedicated HTTP server. This sections"
+" provides guidance for basic configuration behind some common reverse "
+"proxies."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:823
+msgid "Nginx"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:825
+msgid ""
+"One very common HTTP and reverse-proxying server is Nginx. A sample "
+"server configuration block is shown below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:849
+msgid ""
+"The above ``server`` block sets up Nginx to to proxy incoming connections"
+" to ``127.0.0.1`` on port 80 to ``127.0.0.1:5100`` internally. To work in"
+" this configuration, we will need to use some of the command line options"
+" to configure the Bokeh Server. In particular we need to use ``--port`` "
+"to specify that the Bokeh Server should listen itself on port 5100."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:859
+msgid ""
+"Note that in the basic server block above we have not configured any "
+"special handling for static resources, e.g., the Bokeh JS and CSS files. "
+"This means that these files are served directly by the Bokeh server "
+"itself. While this works, it places an unnecessary additional load on the"
+" Bokeh server, since Nginx has a fast static asset handler. To utilize "
+"Nginx to serve Bokeh's static assets, you can add a new stanza inside the"
+" `server` block above, similar to this:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:873
+msgid ""
+"Be careful that the file permissions of the Bokeh resources are "
+"accessible to whatever user account is running the Nginx server process. "
+"Alternatively, you can copy the resources to a global static directory "
+"during your deployment process."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:878
+msgid "Apache"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:880
+msgid ""
+"Another common HTTP server and proxy is Apache. Here is sample "
+"configuration for running a Bokeh server behind Apache:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:911
+msgid ""
+"The above configuration aliases `/static` to the location of the Bokeh "
+"static resources directory, however it is also possible (and probably "
+"preferable) to copy the Bokeh static resources to whatever standard "
+"static files location is configured for Apache as part of the deployment."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:916
+msgid ""
+"Note that you may also need to enable some modules for the above "
+"configuration:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:926
+msgid "These might need to be run with ``sudo``, depending on your system."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:928
+msgid "As before, you would run the Bokeh server with the command:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:937
+msgid "Reverse Proxying with Nginx and SSL"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:939
+msgid ""
+"If you would like to deploy a Bokeh Server behind an SSL-terminated Nginx"
+" proxy, then a few additional customizations are needed. In particular, "
+"the Bokeh server must be configured with the ``--use-xheaders`` flag:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:947
+msgid ""
+"The ``--use-xheaders`` option causes Bokeh to override the remote IP and "
+"URI scheme/protocol for all requests with ``X-Real-Ip``, ``X-Forwarded-"
+"For``, ``X-Scheme``, ``X-Forwarded-Proto`` headers when they are "
+"available."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:951
+msgid ""
+"You must also customize Nginx. In particular, you must configure Nginx to"
+" send the ``X-Forwarded-Proto`` header, as well as configure Nginx for "
+"SSL termination. Optionally, you may want to redirect all HTTP traffic to"
+" HTTPS. The complete details of this configuration (e.g. how and where to"
+" install SSL certificates and keys) will vary by platform, but a "
+"reference ``nginx.conf`` is provided below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1001
+msgid ""
+"This configuration will proxy all incoming HTTPS connections to "
+"``foo.com`` to a Bokeh server running internally on "
+"``http://127.0.0.1:5100``."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1007
+msgid "Load Balancing with Nginx"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1009
+msgid ""
+"The architecture of the Bokeh server is specifically designed to be "
+"scalable---by and large, if you need more capacity, you simply run "
+"additional servers. Often in this situation it is desired to run all the "
+"Bokeh server instances behind a load balancer, so that new connections "
+"are distributed amongst the individual servers."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1019
+msgid ""
+"The Bokeh server is horizontally scalable. To add more capacity, more "
+"servers can be run behind a load balancer."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1022
+msgid ""
+"Nginx offers a load balancing capability. We will describe some of the "
+"basics of one possible configuration, but please also refer to the `Nginx"
+" load balancer documentation`_. For instance, there are various different"
+" strategies available for choosing what server to connect to next."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1027
+msgid ""
+"First we need to add an ``upstream`` stanza to our NGinx configuration, "
+"typically above the ``server`` stanza. This section looks something like:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1042
+msgid ""
+"We have labeled this ``upstream`` stanza as ``myapp``. We will use this "
+"name below. Additionally, we have listed the internal connection "
+"information for six different Bokeh server instances (each running on a "
+"different port) inside the stanza. You can run and list as many Bokeh "
+"servers as you need."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1047
+msgid "You would run the Bokeh servers with commands similar to:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1055
+msgid ""
+"Next, in the ``location`` stanza for our Bokeh server, change the "
+"``proxy_pass`` value to refer to the ``upstream`` stanza we created "
+"above. In this case we use ``proxy_pass http://myapp;`` as shown here:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1081
+msgid "Process Control with Supervisord"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1083
+msgid ""
+"It is often desired to use process control and monitoring tools when "
+"deploying web applications. One popular such tool is `Supervisor`_, which"
+" can automatically start and stop process, as well as re-start processes "
+"if they terminate unexpectedly. Supervisor is configured using INI style "
+"config files. A sample file that might be used to start a single Bokeh "
+"Server app is below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1124
+msgid ""
+"The standard location for the supervisor config file varies from system "
+"to system. Consult the `Supervisor configuration documentation`_ for more"
+" details. It is also possible to specify a config file explicity. To do "
+"this, execute:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1133
+msgid ""
+"to start the Supervisor process. Then to control processes execute "
+"``supervisorctl`` commands. For instance to start all processes, run:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1140
+msgid "To stop all processes run:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1146
+msgid "And to update the process control after editing the config file, run:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1155
+msgid "Scaling the server"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1157
+msgid ""
+"You can fork multiple server processes with the `num-procs` option. For "
+"example, to fork 3 processes:"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1164
+msgid ""
+"Note that the forking operation happens in the underlying Tornado Server,"
+" see notes in the `Tornado docs`_."
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1170
+msgid "Further Reading"
+msgstr ""
+
+#: ../../source/docs/user_guide/server.rst:1171
+msgid ""
+"Now that you are familiar with the concepts of :ref:`userguide_server`, "
+"you may be interested in learning more about the internals of the Bokeh "
+"server in :ref:`devguide_server`"
+msgstr ""
+

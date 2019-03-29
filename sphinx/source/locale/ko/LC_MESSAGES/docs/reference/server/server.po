@@ -1,0 +1,466 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/server/server.rst:4
+msgid "bokeh.server.server"
+msgstr ""
+
+#: bokeh.server.server:1 of
+msgid ""
+"Provide basic Bokeh server objects that use a Tornado ``HTTPServer`` and "
+"``BokeTornado`` Tornado Application to service Bokeh Server Applications."
+" There are two public classes in this module:"
+msgstr ""
+
+#: bokeh.server.server:8 of
+msgid ":class:`~bokeh.server.server.BaseServer`"
+msgstr ""
+
+#: bokeh.server.server:6 of
+msgid ""
+"This is a lightweight class to explicitly coordinate the components "
+"needed to run a Bokeh server (A "
+":class:`~bokeh.server.tornado.BokehTornado` instance, and Tornado "
+"``HTTPServer`` and a Tornado ``IOLoop``)"
+msgstr ""
+
+#: bokeh.server.server:14 of
+msgid ":class:`~bokeh.server.server.Server`"
+msgstr ""
+
+#: bokeh.server.server:11 of
+msgid ""
+"This higher-level convenience class only needs to be configured with "
+"Bokeh :class:`~bokeh.application.application.Application` instances, and "
+"will automatically create and coordinate the lower level Tornado "
+"components."
+msgstr ""
+
+#: bokeh.server.server.BaseServer:1 of
+msgid ""
+"Explicitly coordinate the level Tornado components required to run a "
+"Bokeh server:"
+msgstr ""
+
+#: bokeh.server.server.BaseServer:4 bokeh.server.server.Server:6 of
+msgid "A Tornado ``IOLoop`` to run the Bokeh server machinery."
+msgstr ""
+
+#: bokeh.server.server.BaseServer:6 bokeh.server.server.Server:8 of
+msgid ""
+"a ``BokehTornado`` Tornado application that defines the Bokeh server "
+"machinery."
+msgstr ""
+
+#: bokeh.server.server.BaseServer:9 bokeh.server.server.Server:11 of
+msgid "a Tornado ``HTTPServer`` to direct HTTP requests"
+msgstr ""
+
+#: bokeh.server.server.BaseServer:11 of
+msgid ""
+"All three of these components must be passed to ``BaseServer``, which "
+"will initialize the ``BokehTornado`` instance on the ``io_loop``. The "
+"``http_server`` must have been previously created and initialized with "
+"the ``BokehTornado`` instance."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.__init__:1 of
+msgid "Create a ``BaseServer`` instance."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.__init__
+#: bokeh.server.server.BaseServer.get_session
+#: bokeh.server.server.BaseServer.get_sessions
+#: bokeh.server.server.BaseServer.show bokeh.server.server.BaseServer.stop
+#: bokeh.server.server.Server.__init__ of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.server.server.BaseServer.__init__:3 of
+msgid "A Tornado ``IOLoop`` to run the Bokeh Tornado application on."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.__init__:5 of
+msgid ""
+"An instance of the Bokeh Tornado application that generates Bokeh "
+"Documents and Sessions."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.__init__:8 of
+msgid ""
+"A Tornado ``HTTPServer`` to service HTTP requests for Bokeh applications."
+" Should have already be configured with the ``tornado_app`` when created."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.get_session:1 of
+msgid "Get an active a session by name application path and session ID."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.get_session:3 of
+msgid ""
+"The configured application path for the application to return a session "
+"for."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.get_session:6 of
+msgid "The session ID of the session to retrieve."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.get_session
+#: bokeh.server.server.BaseServer.get_sessions
+#: bokeh.server.server.BaseServer.run_until_shutdown
+#: bokeh.server.server.BaseServer.show bokeh.server.server.BaseServer.stop
+#: bokeh.server.server.BaseServer.unlisten of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.server.server.BaseServer.get_session:9 of
+msgid "ServerSession"
+msgstr ""
+
+#: bokeh.server.server.BaseServer.get_sessions:1 of
+msgid "Gets all currently active sessions for applications."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.get_sessions:3 of
+msgid ""
+"The configured application path for the application to return sessions "
+"for. If None, return active sessions for all applications. (default: "
+"None)"
+msgstr ""
+
+#: bokeh.server.server.BaseServer.get_sessions:8 of
+msgid "list[ServerSession]"
+msgstr ""
+
+#: bokeh.server.server.BaseServer.run_until_shutdown:1 of
+msgid ""
+"Run the Bokeh Server until shutdown is requested by the user, either via "
+"a Keyboard interrupt (Ctrl-C) or SIGTERM."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.run_until_shutdown:4 of
+msgid ""
+"Calling this method will start the Tornado ``IOLoop`` and block all "
+"execution in the calling process."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.run_until_shutdown:7
+#: bokeh.server.server.BaseServer.show:21 bokeh.server.server.BaseServer.stop:9
+#: bokeh.server.server.BaseServer.unlisten:4 of
+msgid "None"
+msgstr ""
+
+#: bokeh.server.server.BaseServer.show:1 of
+msgid "Opens an app in a browser window or tab."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.show:3 of
+msgid ""
+"This method is useful for testing or running Bokeh server applications on"
+" a local machine but should not call when running Bokeh server for an "
+"actual deployment."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.show:7 of
+msgid ""
+"the app path to open The part of the URL after the hostname:port, with "
+"leading slash."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.show:10 of
+msgid ""
+"browser to show with (default: None) For systems that support it, the "
+"**browser** argument allows specifying which browser to display in, e.g. "
+"\"safari\", \"firefox\", \"opera\", \"windows-default\" (see the "
+"``webbrowser`` module documentation in the standard lib for more "
+"details)."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.show:16 of
+msgid ""
+"window or tab (default: \"tab\") If ``new`` is 'tab', then opens a new "
+"tab. If ``new`` is 'window', then opens a new window."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.start:1 of
+msgid "Install the Bokeh Server and its background tasks on a Tornado ``IOLoop``."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.start:4 of
+msgid ""
+"This method does *not* block and does *not* affect the state of the "
+"Tornado ``IOLoop``  You must start and stop the loop yourself, i.e. this "
+"method is typically useful when you are already explicitly managing an "
+"``IOLoop`` yourself."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.start:9 of
+msgid ""
+"To start a Bokeh server and immediately \"run forever\" in a blocking "
+"manner, see :func:`~bokeh.server.server.BaseServer.run_until_shutdown`."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.stop:1 of
+msgid "Stop the Bokeh Server."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.stop:3 of
+msgid ""
+"This stops and removes all Bokeh Server ``IOLoop`` callbacks, as well as "
+"stops the ``HTTPServer`` that this instance was configured with."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.stop:6 of
+msgid "Whether to wait for orderly cleanup (default: True)"
+msgstr ""
+
+#: bokeh.server.server.BaseServer.unlisten:1 of
+msgid ""
+"Stop listening on ports. The server will no longer be usable after "
+"calling this function."
+msgstr ""
+
+#: bokeh.server.server.BaseServer.io_loop:1 of
+msgid "The Tornado ``IOLoop`` that this Bokeh Server is running on."
+msgstr ""
+
+#: bokeh.server.server.Server:1 of
+msgid "A high level convenience class to run a Bokeh server."
+msgstr ""
+
+#: bokeh.server.server.Server:3 of
+msgid ""
+"This class can automatically coordinate the three the base level "
+"components required to run a Bokeh server:"
+msgstr ""
+
+#: bokeh.server.server.Server:13 of
+msgid ""
+"This high level ``Server`` class has some limitations. In particular, it "
+"is not possible to set an explicit ``io_loop`` and ``num_procs`` other "
+"than 1 at the same time. To do that, it is necessary to use "
+"``BaseServer`` and coordinate the three components above explicitly."
+msgstr ""
+
+#: bokeh.server.server.Server.__init__:1 of
+msgid "Create a ``Server`` instance."
+msgstr ""
+
+#: bokeh.server.server.Server.__init__:3 of
+msgid ""
+"A mapping from URL paths to Application instances, or a single "
+"Application to put at the root URL.  The Application is a factory for "
+"Documents, with a new Document initialized for each Session. Each "
+"application is identified by a path that corresponds to a URL, like \"/\""
+" or \"/myapp\"  If a single Application is provided, it is mapped to the "
+"URL path \"/\" automatically.  As a convenience, a callable may also be "
+"provided, in which an Application will be created for it using "
+"``FunctionHandler``."
+msgstr ""
+
+#: bokeh.server.server.Server.__init__:3 of
+msgid ""
+"A mapping from URL paths to Application instances, or a single "
+"Application to put at the root URL."
+msgstr ""
+
+#: bokeh.server.server.Server.__init__:6 of
+msgid ""
+"The Application is a factory for Documents, with a new Document "
+"initialized for each Session. Each application is identified by a path "
+"that corresponds to a URL, like \"/\" or \"/myapp\""
+msgstr ""
+
+#: bokeh.server.server.Server.__init__:10 of
+msgid ""
+"If a single Application is provided, it is mapped to the URL path \"/\" "
+"automatically."
+msgstr ""
+
+#: bokeh.server.server.Server.__init__:13 of
+msgid ""
+"As a convenience, a callable may also be provided, in which an "
+"Application will be created for it using ``FunctionHandler``."
+msgstr ""
+
+#: bokeh.server.server.Server.__init__:17 of
+msgid ""
+"An explicit Tornado ``IOLoop`` to run Bokeh Server code on. If None, "
+"``IOLoop.current()`` will be used (default: None)"
+msgstr ""
+
+#: bokeh.server.server.Server.__init__:20 of
+msgid ""
+"Extra arguments passed to ``tornado.httpserver.HTTPServer``.  E.g. "
+"``max_buffer_size`` to specify the maximum upload size. More details can "
+"be found at:  http://www.tornadoweb.org/en/stable/httpserver.html#http-"
+"server  If None, no extra arguments are passed (default: None)"
+msgstr ""
+
+#: bokeh.server.server.Server.__init__:20 of
+msgid "Extra arguments passed to ``tornado.httpserver.HTTPServer``."
+msgstr ""
+
+#: bokeh.server.server.Server.__init__:22 of
+msgid ""
+"E.g. ``max_buffer_size`` to specify the maximum upload size. More details"
+" can be found at:"
+msgstr ""
+
+#: bokeh.server.server.Server.__init__:25 of
+msgid "http://www.tornadoweb.org/en/stable/httpserver.html#http-server"
+msgstr ""
+
+#: bokeh.server.server.Server.__init__:27 of
+msgid "If None, no extra arguments are passed (default: None)"
+msgstr ""
+
+#: bokeh.server.server.Server.__init__:30 of
+msgid ""
+"Additionally, the following options may be passed to configure the "
+"operation of ``Server``:"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid "Keyword Args:"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid "address (class`~bokeh.core.properties.String` )"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid "The address the server should listen on for HTTP requests. (default: None)"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid ""
+"allow_websocket_origin (class`~bokeh.core.properties.List` "
+"(class`~bokeh.core.properties.String`  ))"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid "A list of hosts that can connect to the websocket."
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid ""
+"This is typically required when embedding a Bokeh server app in an "
+"external web site using :func:`~bokeh.embed.server_document` or similar."
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid "If None, \"localhost\" is used. (default: None)"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid "index (class`~bokeh.core.properties.String` )"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid "A path to a Jinja2 template to use for the index \"/\" (default: None)"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid "num_procs (class`~bokeh.core.properties.Int` )"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid ""
+"The number of worker processes to start for the HTTP server. If an "
+"explicit ``io_loop`` is also configured, then ``num_procs=1`` is the only"
+" compatible value. Use ``BaseServer`` to coordinate an explicit "
+"``IOLoop`` with a multi-process HTTP server."
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid "A value of 0 will auto detect number of cores."
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid ""
+"Note that due to limitations inherent in Tornado, Windows does not "
+"support ``num_procs`` values greater than one! In this case consider "
+"running multiple Bokeh server instances behind a load balancer. (default:"
+" 1)"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid "port (class`~bokeh.core.properties.Int` )"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid ""
+"The port number the server should listen on for HTTP requests. (default: "
+"5006)"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid "prefix (class`~bokeh.core.properties.String` )"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid "A URL prefix to use for all Bokeh server paths. (default: '')"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid "use_xheaders (class`~bokeh.core.properties.Bool` )"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid ""
+"Whether to have the Bokeh server override the remote IP and URI scheme "
+"and protocol for all requests with ``X-Real-Ip``, ``X-Forwarded-For``, "
+"``X-Scheme``, ``X-Forwarded-Proto`` headers (if they are provided). "
+"(default: False)"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid "websocket_max_message_size (class`~bokeh.core.properties.Int` )"
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid "Set the Tornado ``websocket_max_message_size`` value."
+msgstr ""
+
+#: ../../<bokeh-options>:1
+msgid "NOTE: This setting has effect ONLY for Tornado>=4.5 (default: 20971520)"
+msgstr ""
+
+#: bokeh.server.server.Server.__init__:36 of
+msgid "Any remaining keyword arguments will be passed as-is to ``BokehTornado``."
+msgstr ""
+
+#: bokeh.server.server.Server.address:1 of
+msgid "The configured address that the server listens on for HTTP requests."
+msgstr ""
+
+#: bokeh.server.server.Server.index:1 of
+msgid "A path to a Jinja2 template to use for index at \"/\""
+msgstr ""
+
+#: bokeh.server.server.Server.port:1 of
+msgid "The configured port number that the server listens on for HTTP requests."
+msgstr ""
+
+#: bokeh.server.server.Server.prefix:1 of
+msgid "The configured URL prefix to use for all Bokeh server paths."
+msgstr ""
+

@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/contribute.rst:6
+msgid "Contribute"
+msgstr ""
+
+#: ../../source/docs/contribute.rst:8
+msgid ""
+"We are always looking for contributors, and want to grow the developer "
+"base for Bokeh. The `Gitter chat channel`_ and the `public mailing list`_"
+" are great places to get in touch with core developers, and the "
+":ref:`devguide` is a great place to get set up for working on Bokeh. We "
+"are eager to assist and mentor new contributors."
+msgstr ""
+
+#: ../../source/docs/contribute.rst:14
+msgid ""
+"*If you are a developer proficient in R, Julia, Swift, or other "
+"languages, you can help make Bokeh available to entire new audiences.*"
+msgstr ""
+
+#: ../../source/docs/contribute.rst:19
+msgid ""
+"*If you are a JavaScript developer, you can help make Bokeh easier to use"
+" directly from JavaScript.*"
+msgstr ""
+
+#: ../../source/docs/contribute.rst:24
+msgid ""
+"*If you are a designer, you can help improve the look of Bokeh plots and "
+"documentation.*"
+msgstr ""
+
+#: ../../source/docs/contribute.rst:29
+msgid ""
+"*If you are a user and have built something awesome with Bokeh you can "
+"add it to our showcase.*"
+msgstr ""
+
+#: ../../source/docs/contribute.rst:32
+msgid "Specific areas we could use help and expertise with:"
+msgstr ""
+
+#: ../../source/docs/contribute.rst:34
+msgid "Support for mobile and touch platforms"
+msgstr ""
+
+#: ../../source/docs/contribute.rst:35
+msgid "Maintenance of RBokeh and other language bindings"
+msgstr ""
+
+#: ../../source/docs/contribute.rst:36
+msgid "Windows support and testing"
+msgstr ""
+
+#: ../../source/docs/contribute.rst:37
+msgid "Visual design and styling"
+msgstr ""
+
+#: ../../source/docs/contribute.rst:38
+msgid "WebGL performance optimization"
+msgstr ""
+
+#: ../../source/docs/contribute.rst:40
+msgid ""
+"Of course, we can also use monetary contributions to help with costs "
+"associated with running the project. If you would like to contribute "
+"financially to Bokeh, please make a `donation through NumFOCUS`_."
+msgstr ""
+

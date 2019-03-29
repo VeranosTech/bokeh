@@ -1,0 +1,590 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/core/property/descriptors.rst:5
+msgid "bokeh.core.property.descriptors"
+msgstr ""
+
+#: bokeh.core.property.descriptors:1 of
+msgid "Provide Python descriptors for delegating to Bokeh properties."
+msgstr ""
+
+#: bokeh.core.property.descriptors:3 of
+msgid ""
+"The Python `descriptor protocol`_ allows fine-grained control over all "
+"attribute access on instances (\"You control the dot\"). Bokeh uses the "
+"descriptor protocol to provide easy-to-use, declarative, type-based class"
+" properties that can automatically validate and serialize their values, "
+"as well as help provide sophisticated documentation."
+msgstr ""
+
+#: bokeh.core.property.descriptors:9 of
+msgid ""
+"A Bokeh property really consist of two parts: a familiar \"property\" "
+"portion, such as ``Int``, ``String``, etc., as well as an associated "
+"Python descriptor that delegates attribute access to the property "
+"instance."
+msgstr ""
+
+#: bokeh.core.property.descriptors:13 of
+msgid "For example, a very simplified definition of a range-like object might be:"
+msgstr ""
+
+#: bokeh.core.property.descriptors:25 of
+msgid ""
+"When this class is created, the ``MetaHasProps`` metaclass wires up both "
+"the ``start`` and ``end`` attributes to a ``Float`` property. Then, when "
+"a user accesses those attributes, the descriptor delegates all get and "
+"set operations to the ``Float`` property."
+msgstr ""
+
+#: bokeh.core.property.descriptors:42 of
+msgid ""
+"More sophisticated properties such as ``DataSpec`` and its subclasses can"
+" exert control over how values are serialized. Consider this example with"
+" the ``Circle`` glyph and its ``x`` attribute that is a ``NumberSpec``:"
+msgstr ""
+
+#: bokeh.core.property.descriptors:56 of
+msgid ""
+"There are many other examples like this throughout Bokeh. In this way "
+"users may operate simply and naturally, and not be concerned with the "
+"low-level details around validation, serialization, and documentation."
+msgstr ""
+
+#: bokeh.core.property.descriptors:60 of
+msgid ""
+"This module provides the class |PropertyDescriptor| and various "
+"subclasses that can be used to attach Bokeh properties to Bokeh models."
+msgstr ""
+
+#: bokeh.core.property.descriptors:64 of
+msgid ""
+"These classes form part of the very low-level machinery that implements "
+"the Bokeh model and property system. It is unlikely that any of these "
+"classes or their methods will be applicable to any standard usage or to "
+"anyone who is not directly developing on Bokeh's own infrastructure."
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor:1 of
+msgid ""
+"Base class for a python descriptor that delegates access for a named "
+"attribute to a Bokeh |Property| instance."
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.__init__:1 of
+msgid ""
+"Create a descriptor for a hooking up a named Bokeh property as an "
+"attribute on a |HasProps| class."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__delete__
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__get__
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__init__
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__set__
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.class_default
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.instance_default
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.set_from_json
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.trigger_if_changed
+#: bokeh.core.property.descriptors.ColumnDataPropertyDescriptor.__set__
+#: bokeh.core.property.descriptors.DataSpecPropertyDescriptor.set_from_json
+#: bokeh.core.property.descriptors.PropertyDescriptor.__delete__
+#: bokeh.core.property.descriptors.PropertyDescriptor.__get__
+#: bokeh.core.property.descriptors.PropertyDescriptor.__init__
+#: bokeh.core.property.descriptors.PropertyDescriptor.__set__
+#: bokeh.core.property.descriptors.PropertyDescriptor.add_prop_descriptor_to_class
+#: bokeh.core.property.descriptors.PropertyDescriptor.serializable_value
+#: bokeh.core.property.descriptors.PropertyDescriptor.set_from_json
+#: bokeh.core.property.descriptors.PropertyDescriptor.trigger_if_changed
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.__init__
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.__set__
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.set_from_json of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.__init__:4 of
+msgid "the attribute name that this descriptor is for"
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.__str__:1 of
+msgid "Basic string representation of ``PropertyDescriptor``."
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.__delete__:8
+#: bokeh.core.property.descriptors.PropertyDescriptor.__get__:13
+#: bokeh.core.property.descriptors.PropertyDescriptor.__set__:27
+#: bokeh.core.property.descriptors.PropertyDescriptor.__str__:3
+#: bokeh.core.property.descriptors.PropertyDescriptor.class_default:6
+#: bokeh.core.property.descriptors.PropertyDescriptor.has_ref:7
+#: bokeh.core.property.descriptors.PropertyDescriptor.readonly:13
+#: bokeh.core.property.descriptors.PropertyDescriptor.serialized:10
+#: bokeh.core.property.descriptors.PropertyDescriptor.trigger_if_changed:11 of
+msgid "**Subclasses must implement this to serve their specific needs.**"
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__get__:1
+#: bokeh.core.property.descriptors.PropertyDescriptor.__get__:1 of
+msgid "Implement the getter for the Python `descriptor protocol`_."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__get__:6
+#: bokeh.core.property.descriptors.PropertyDescriptor.__get__:3 of
+msgid ""
+"The instance to set a new property value on (for instance attribute "
+"access), or None (for class attribute access)"
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__get__:9
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__set__:10
+#: bokeh.core.property.descriptors.ColumnDataPropertyDescriptor.__set__:15
+#: bokeh.core.property.descriptors.PropertyDescriptor.__get__:6
+#: bokeh.core.property.descriptors.PropertyDescriptor.__set__:10
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.__set__:15 of
+msgid "The new value to set the property to"
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__get__
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__set__
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.class_default
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.instance_default
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.set_from_json
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.trigger_if_changed
+#: bokeh.core.property.descriptors.ColumnDataPropertyDescriptor.__set__
+#: bokeh.core.property.descriptors.DataSpecPropertyDescriptor.set_from_json
+#: bokeh.core.property.descriptors.PropertyDescriptor.__get__
+#: bokeh.core.property.descriptors.PropertyDescriptor.__set__
+#: bokeh.core.property.descriptors.PropertyDescriptor.add_prop_descriptor_to_class
+#: bokeh.core.property.descriptors.PropertyDescriptor.serializable_value
+#: bokeh.core.property.descriptors.PropertyDescriptor.set_from_json
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.__set__
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.set_from_json of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__get__:12
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__set__:23
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.set_from_json:22
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.trigger_if_changed:9
+#: bokeh.core.property.descriptors.ColumnDataPropertyDescriptor.__set__:28
+#: bokeh.core.property.descriptors.DataSpecPropertyDescriptor.set_from_json:22
+#: bokeh.core.property.descriptors.PropertyDescriptor.__get__:9
+#: bokeh.core.property.descriptors.PropertyDescriptor.__set__:23
+#: bokeh.core.property.descriptors.PropertyDescriptor.add_prop_descriptor_to_class:22
+#: bokeh.core.property.descriptors.PropertyDescriptor.set_from_json:21
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.__set__:28
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.set_from_json:26
+#: of
+msgid "None"
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.__delete__
+#: bokeh.core.property.descriptors.PropertyDescriptor.__get__
+#: bokeh.core.property.descriptors.PropertyDescriptor.__set__
+#: bokeh.core.property.descriptors.PropertyDescriptor.class_default
+#: bokeh.core.property.descriptors.PropertyDescriptor.has_ref
+#: bokeh.core.property.descriptors.PropertyDescriptor.readonly
+#: bokeh.core.property.descriptors.PropertyDescriptor.serialized
+#: bokeh.core.property.descriptors.PropertyDescriptor.trigger_if_changed of
+msgid "raises"
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.__delete__:6
+#: bokeh.core.property.descriptors.PropertyDescriptor.__get__:11
+#: bokeh.core.property.descriptors.PropertyDescriptor.__set__:25
+#: bokeh.core.property.descriptors.PropertyDescriptor.class_default:4
+#: bokeh.core.property.descriptors.PropertyDescriptor.has_ref:5
+#: bokeh.core.property.descriptors.PropertyDescriptor.readonly:11
+#: bokeh.core.property.descriptors.PropertyDescriptor.serialized:8
+#: bokeh.core.property.descriptors.PropertyDescriptor.trigger_if_changed:9 of
+msgid ":exc:`NotImplementedError`"
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__set__:1
+#: bokeh.core.property.descriptors.ColumnDataPropertyDescriptor.__set__:1
+#: bokeh.core.property.descriptors.PropertyDescriptor.__set__:1
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.__set__:1 of
+msgid "Implement the setter for the Python `descriptor protocol`_."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__set__:4
+#: bokeh.core.property.descriptors.ColumnDataPropertyDescriptor.__set__:9
+#: bokeh.core.property.descriptors.PropertyDescriptor.__set__:4
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.__set__:9 of
+msgid ""
+"An optional argument ``setter`` has been added to the standard setter "
+"arguments. When needed, this value should be provided by explicitly "
+"invoking ``__set__``. See below for more information."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__set__:8
+#: bokeh.core.property.descriptors.ColumnDataPropertyDescriptor.__set__:13
+#: bokeh.core.property.descriptors.PropertyDescriptor.__set__:8
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.__set__:13 of
+msgid "The instance to set a new property value on"
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__set__:12
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.set_from_json:11
+#: bokeh.core.property.descriptors.ColumnDataPropertyDescriptor.__set__:17
+#: bokeh.core.property.descriptors.DataSpecPropertyDescriptor.set_from_json:11
+#: bokeh.core.property.descriptors.PropertyDescriptor.__set__:12
+#: bokeh.core.property.descriptors.PropertyDescriptor.set_from_json:10
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.__set__:17
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.set_from_json:15
+#: of
+msgid ""
+"This is used to prevent \"boomerang\" updates to Bokeh apps. (default: "
+"None)  In the context of a Bokeh server application, incoming updates to "
+"properties will be annotated with the session that is doing the updating."
+" This value is propagated through any subsequent change notifications "
+"that the update triggers. The session can compare the event setter to "
+"itself, and suppress any updates that originate from itself."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__set__:12
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.set_from_json:11
+#: bokeh.core.property.descriptors.ColumnDataPropertyDescriptor.__set__:17
+#: bokeh.core.property.descriptors.DataSpecPropertyDescriptor.set_from_json:11
+#: bokeh.core.property.descriptors.PropertyDescriptor.__set__:12
+#: bokeh.core.property.descriptors.PropertyDescriptor.set_from_json:10
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.__set__:17
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.set_from_json:15
+#: of
+msgid ""
+"This is used to prevent \"boomerang\" updates to Bokeh apps. (default: "
+"None)"
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__set__:15
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.set_from_json:14
+#: bokeh.core.property.descriptors.ColumnDataPropertyDescriptor.__set__:20
+#: bokeh.core.property.descriptors.DataSpecPropertyDescriptor.set_from_json:14
+#: bokeh.core.property.descriptors.PropertyDescriptor.__set__:15
+#: bokeh.core.property.descriptors.PropertyDescriptor.set_from_json:13
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.__set__:20
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.set_from_json:18
+#: of
+msgid ""
+"In the context of a Bokeh server application, incoming updates to "
+"properties will be annotated with the session that is doing the updating."
+" This value is propagated through any subsequent change notifications "
+"that the update triggers. The session can compare the event setter to "
+"itself, and suppress any updates that originate from itself."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__delete__:1
+#: bokeh.core.property.descriptors.PropertyDescriptor.__delete__:1 of
+msgid "Implement the deleter for the Python `descriptor protocol`_."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__delete__:3
+#: bokeh.core.property.descriptors.PropertyDescriptor.__delete__:3 of
+msgid "An instance to delete this property from"
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.add_prop_descriptor_to_class:1
+#: of
+msgid ""
+"``MetaHasProps`` calls this during class creation as it iterates over "
+"properties to add, to update its registry of new properties."
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.add_prop_descriptor_to_class:4
+#: of
+msgid ""
+"The parameters passed in are mutable and this function is expected to "
+"update them accordingly."
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.add_prop_descriptor_to_class:7
+#: of
+msgid "name of the class this descriptor is added to"
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.add_prop_descriptor_to_class:9
+#: of
+msgid ""
+"mapping of attribute names to PropertyDescriptor that this function will "
+"update"
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.add_prop_descriptor_to_class:12
+#: of
+msgid ""
+"set of all property names for properties that also have references, that "
+"this function will update"
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.add_prop_descriptor_to_class:15
+#: of
+msgid ""
+"set of all property names for properties that are container props, that "
+"this function will update"
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.add_prop_descriptor_to_class:18
+#: of
+msgid ""
+"mapping of attribute names to PropertyDescriptor for DataSpec properties "
+"that this function will update"
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.class_default:1 of
+msgid ""
+"The default as computed for a certain class, ignoring any per-instance "
+"theming."
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.serializable_value:1 of
+msgid "Produce the value as it should be serialized."
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.serializable_value:3 of
+msgid ""
+"Sometimes it is desirable for the serialized value to differ from the "
+"``__get__`` in order for the ``__get__`` value to appear simpler for user"
+" or developer convenience."
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.serializable_value:7 of
+msgid "the object to get the serialized attribute for"
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.serializable_value:10 of
+msgid "JSON-like"
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.set_from_json:1
+#: bokeh.core.property.descriptors.DataSpecPropertyDescriptor.set_from_json:1
+#: bokeh.core.property.descriptors.PropertyDescriptor.set_from_json:1
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.set_from_json:1
+#: of
+msgid "Sets the value of this property from a JSON value."
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.set_from_json:3
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.set_from_json:8
+#: of
+msgid "(HasProps) : instance to set the property value on"
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.set_from_json:4
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.set_from_json:9
+#: of
+msgid "(JSON-value) : value to set to the attribute to"
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.set_from_json:5
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.set_from_json:10
+#: of
+msgid ""
+"Mapping of model ids to models (default: None)  This is needed in cases "
+"where the attributes to update also have values that have references."
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.set_from_json:5
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.set_from_json:10
+#: of
+msgid "Mapping of model ids to models (default: None)"
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.set_from_json:7
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.set_from_json:12
+#: of
+msgid ""
+"This is needed in cases where the attributes to update also have values "
+"that have references."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.trigger_if_changed:1
+#: bokeh.core.property.descriptors.PropertyDescriptor.trigger_if_changed:1 of
+msgid ""
+"Send a change event notification if the property is set to a value is not"
+" equal to ``old``."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.trigger_if_changed:4
+#: bokeh.core.property.descriptors.PropertyDescriptor.trigger_if_changed:4 of
+msgid "The object the property is being set on."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.trigger_if_changed:6
+#: bokeh.core.property.descriptors.PropertyDescriptor.trigger_if_changed:6 of
+msgid "The previous value of the property to compare"
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.has_ref:1
+#: bokeh.core.property.descriptors.PropertyDescriptor.has_ref:1 of
+msgid "Whether the property can refer to another ``HasProps`` instance."
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.has_ref:3 of
+msgid "This is typically True for container properties, ``Instance``, etc."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.readonly:1
+#: bokeh.core.property.descriptors.PropertyDescriptor.readonly:1 of
+msgid "Whether this property is read-only."
+msgstr ""
+
+#: bokeh.core.property.descriptors.PropertyDescriptor.readonly:3 of
+msgid ""
+"Read-only properties may only be modified by the client (i.e., by "
+"BokehJS, in the browser). Read only properties are useful for quantities "
+"that originate or that can only be computed in the browser, for instance "
+"the \"inner\" plot dimension of a plot area, which depend on the current "
+"layout state. It is useful for Python callbacks to be able to know these "
+"values, but they can only be computed in the actual browser."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.serialized:1
+#: bokeh.core.property.descriptors.PropertyDescriptor.serialized:1 of
+msgid "Whether the property should be serialized when serializing an object."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.serialized:4
+#: bokeh.core.property.descriptors.PropertyDescriptor.serialized:4 of
+msgid ""
+"This would be False for a \"virtual\" or \"convenience\" property that "
+"duplicates information already available in other properties, for "
+"example."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor:1 of
+msgid ""
+"A ``PropertyDescriptor`` for basic Bokeh properties (e.g, ``Int``, "
+"``String``, ``Float``, etc.) with simple get/set and serialization "
+"behavior."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__init__:1 of
+msgid "Create a PropertyDescriptor for basic Bokeh properties."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__init__:3
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.__init__:1 of
+msgid "The attribute name that this property is for"
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__init__:5
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.__init__:3 of
+msgid "A basic property to create a descriptor for"
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__str__:1 of
+msgid "Basic string representation of ``BasicPropertyDescriptor``."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__str__:3 of
+msgid "Delegates to ``self.property.__str__``"
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__get__:3 of
+msgid ""
+"For instance attribute access, we delegate to the |Property|. For class "
+"attribute access, we return ourself."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.__get__:15 of
+msgid "Examples"
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.class_default:1 of
+msgid ""
+"Get the default value for a specific subtype of ``HasProps``, which may "
+"not be used for an individual instance."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.class_default:4 of
+msgid "The class to get the default value for."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.class_default:7
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.instance_default:6
+#: of
+msgid "object"
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.instance_default:1
+#: of
+msgid "Get the default value that will be used for a specific instance."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.instance_default:3
+#: of
+msgid "The instance to get the default value for."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.set_from_json:3
+#: bokeh.core.property.descriptors.DataSpecPropertyDescriptor.set_from_json:3
+#: of
+msgid "This method first"
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.has_ref:3 of
+msgid ""
+"For basic properties, delegate to the ``has_ref`` attribute on the "
+"|Property|."
+msgstr ""
+
+#: bokeh.core.property.descriptors.BasicPropertyDescriptor.readonly:3 of
+msgid ""
+"Read-only properties may only be modified by the client (i.e., by BokehJS"
+" in the browser)."
+msgstr ""
+
+#: bokeh.core.property.descriptors.ColumnDataPropertyDescriptor:1 of
+msgid ""
+"A ``PropertyDescriptor`` specialized to handling ``ColumnData`` "
+"properties."
+msgstr ""
+
+#: bokeh.core.property.descriptors.ColumnDataPropertyDescriptor.__set__:3
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.__set__:3 of
+msgid ""
+"This method first separately extracts and removes any ``units`` field in "
+"the JSON, and sets the associated units property directly. The remaining "
+"value is then passed to the superclass ``__set__`` to be handled."
+msgstr ""
+
+#: bokeh.core.property.descriptors.DataSpecPropertyDescriptor:1 of
+msgid ""
+"A ``PropertyDescriptor`` for Bokeh |DataSpec| properties that serialize "
+"to field/value dictionaries."
+msgstr ""
+
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor:1 of
+msgid ""
+"A ``PropertyDecscriptor`` for Bokeh |UnitsSpec| properties that "
+"contribute associated ``_units`` properties automatically as a side "
+"effect."
+msgstr ""
+
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.__init__:5 of
+msgid "An associated property to hold units information"
+msgstr ""
+
+#: bokeh.core.property.descriptors.UnitsSpecPropertyDescriptor.set_from_json:3
+#: of
+msgid ""
+"This method first separately extracts and removes any ``units`` field in "
+"the JSON, and sets the associated units property directly. The remaining "
+"JSON is then passed to the superclass ``set_from_json`` to be handled."
+msgstr ""
+

@@ -1,0 +1,249 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/settings.rst:4
+msgid "bokeh.settings"
+msgstr ""
+
+#: bokeh.settings:1 of
+msgid ""
+"Control global configuration options with environment variables. A global"
+" settings object that other parts of Bokeh can refer to."
+msgstr ""
+
+#: bokeh.settings:4 of
+msgid ""
+"``BOKEH_ALLOW_WS_ORIGIN`` --- List of websocket origins allowed to access"
+" bokeh."
+msgstr ""
+
+#: bokeh.settings:6 of
+msgid ""
+"Comma separated list of domains that need to access bokeh websocket "
+"interface. This can also be provided using the --allow-websocket-origin "
+"parameter."
+msgstr ""
+
+#: bokeh.settings:9 of
+msgid "Note: This option overrides the --allow-websocket-origin flag"
+msgstr ""
+
+#: bokeh.settings:11 of
+msgid "``BOKEH_BROWSER`` --- What browser to use when opening plots."
+msgstr ""
+
+#: bokeh.settings:13 of
+msgid ""
+"Valid values are any of the browser names understood by the python "
+"standard library webbrowser_ module."
+msgstr ""
+
+#: bokeh.settings:16 of
+msgid "``BOKEH_DEV`` --- Whether to use development mode."
+msgstr ""
+
+#: bokeh.settings:18 of
+msgid ""
+"This uses absolute paths to development (non-minified) BokehJS "
+"components, sets logging to ``debug``, makes generated HTML and JSON "
+"human-readable, etc."
+msgstr ""
+
+#: bokeh.settings:22 of
+msgid "This is a meta variable equivalent to the following environment variables:"
+msgstr ""
+
+#: bokeh.settings:24 of
+msgid "``BOKEH_BROWSER=none``"
+msgstr ""
+
+#: bokeh.settings:25 of
+msgid "``BOKEH_LOG_LEVEL=debug``"
+msgstr ""
+
+#: bokeh.settings:26 of
+msgid "``BOKEH_MINIFIED=false``"
+msgstr ""
+
+#: bokeh.settings:27 of
+msgid "``BOKEH_PRETTY=true``"
+msgstr ""
+
+#: bokeh.settings:28 of
+msgid "``BOKEH_PY_LOG_LEVEL=debug``"
+msgstr ""
+
+#: bokeh.settings:29 of
+msgid "``BOKEH_RESOURCES=absolute-dev``"
+msgstr ""
+
+#: bokeh.settings:31 bokeh.settings:74 bokeh.settings:78 of
+msgid "Accepted values are ``yes``/``no``, ``true``/``false`` or ``0``/``1``."
+msgstr ""
+
+#: bokeh.settings:34 of
+msgid ""
+"When running server and notebook examples, the ``BOKEH_RESOURCES`` "
+"setting that ``BOKEH_DEV`` sets will cause rendering problems."
+msgstr ""
+
+#: bokeh.settings:37 of
+msgid ""
+"We recommend manually setting ``BOKEH_RESOURCES`` to ``server`` for "
+"server work, and ``inline`` for notebooks (other "
+":class:`~bokeh.resources.Resources` settings may also work)"
+msgstr ""
+
+#: bokeh.settings:41 of
+msgid ""
+"``BOKEH_DOCS_CDN`` --- What version of BokehJS to use when building "
+"sphinx."
+msgstr ""
+
+#: bokeh.settings:43 of
+msgid "See :ref:`bokeh.resources` module reference for full details."
+msgstr ""
+
+#: bokeh.settings:45 of
+msgid ""
+"``BOKEH_DOCS_VERSION`` --- What version of Bokeh to show when building "
+"sphinx docs locally."
+msgstr ""
+
+#: bokeh.settings:47 of
+msgid "Useful for re-deployment purposes."
+msgstr ""
+
+#: bokeh.settings:49 of
+msgid "Set to ``\"local\"`` to use a locally built dev version of BokehJS."
+msgstr ""
+
+#: bokeh.settings:52 of
+msgid ""
+"This variable is only used when building documentation from the "
+"development version."
+msgstr ""
+
+#: bokeh.settings:55 of
+msgid "``BOKEH_LOG_LEVEL`` --- The BokehJS console logging level to use."
+msgstr ""
+
+#: bokeh.settings:57 of
+msgid "Valid values are, in order of increasing severity:"
+msgstr ""
+
+#: bokeh.settings:59 bokeh.settings:84 of
+msgid "``trace``"
+msgstr ""
+
+#: bokeh.settings:60 bokeh.settings:85 of
+msgid "``debug``"
+msgstr ""
+
+#: bokeh.settings:61 bokeh.settings:86 of
+msgid "``info``"
+msgstr ""
+
+#: bokeh.settings:62 bokeh.settings:87 of
+msgid "``warn``"
+msgstr ""
+
+#: bokeh.settings:63 bokeh.settings:88 of
+msgid "``error``"
+msgstr ""
+
+#: bokeh.settings:64 bokeh.settings:89 of
+msgid "``fatal``"
+msgstr ""
+
+#: bokeh.settings:66 of
+msgid "The default logging level is ``info``."
+msgstr ""
+
+#: bokeh.settings:69 of
+msgid ""
+"When running server examples, it is the value of this ``BOKEH_LOG_LEVEL``"
+" that is set for the server that matters."
+msgstr ""
+
+#: bokeh.settings:72 of
+msgid ""
+"``BOKEH_MINIFIED`` --- Whether to emit minified JavaScript for "
+"``bokeh.js``."
+msgstr ""
+
+#: bokeh.settings:76 of
+msgid "``BOKEH_PRETTY`` --- Whether to emit \"pretty printed\" JSON."
+msgstr ""
+
+#: bokeh.settings:80 of
+msgid "``BOKEH_PY_LOG_LEVEL`` --- The Python logging level to set."
+msgstr ""
+
+#: bokeh.settings:82 of
+msgid "As in the JS side, valid values are, in order of increasing severity:"
+msgstr ""
+
+#: bokeh.settings:90 of
+msgid "``none``"
+msgstr ""
+
+#: bokeh.settings:92 of
+msgid "The default logging level is ``none``."
+msgstr ""
+
+#: bokeh.settings:94 of
+msgid "``BOKEH_RESOURCES`` --- What kind of BokehJS resources to configure."
+msgstr ""
+
+#: bokeh.settings:96 of
+msgid ""
+"For example:  ``inline``, ``cdn``, ``server``. See the "
+":class:`~bokeh.core.resources.Resources` class reference for full "
+"details."
+msgstr ""
+
+#: bokeh.settings:99 of
+msgid "``BOKEH_ROOTDIR`` --- Root directory to use with ``relative`` resources."
+msgstr ""
+
+#: bokeh.settings:101 bokeh.settings:113 of
+msgid ""
+"See the :class:`~bokeh.resources.Resources` class reference for full "
+"details."
+msgstr ""
+
+#: bokeh.settings:104 of
+msgid "``BOKEH_SIMPLE_IDS`` --- Whether to generate human-friendly object IDs."
+msgstr ""
+
+#: bokeh.settings:106 of
+msgid ""
+"Accepted values are ``yes``/``no``, ``true``/``false`` or ``0``/``1``. "
+"Normally Bokeh generates UUIDs for object identifiers. Setting this "
+"variable to an affirmative value will result in more friendly simple "
+"numeric IDs counting up from 1000."
+msgstr ""
+
+#: bokeh.settings:111 of
+msgid ""
+"``BOKEH_VERSION`` --- What version of BokehJS to use with ``cdn`` "
+"resources."
+msgstr ""
+

@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/application/handlers/code_runner.rst:4
+msgid "bokeh.application.handlers.code_runner"
+msgstr ""
+
+#: bokeh.application.handlers.code_runner:1 of
+msgid ""
+"Provide a utility class ``CodeRunner`` for use by handlers that execute "
+"Python source code."
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner:1 of
+msgid "Compile and run Python source code."
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner.__init__
+#: bokeh.application.handlers.code_runner.CodeRunner.run of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner.__init__:1 of
+msgid "python source code"
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner.__init__:3 of
+msgid "a filename to use in any debugging or error output"
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner.__init__:5 of
+msgid ""
+"a list of string arguments to make available as ``sys.argv`` when the "
+"code executes"
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner.new_module:1 of
+msgid "Make a fresh module to run in."
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner.new_module
+#: bokeh.application.handlers.code_runner.CodeRunner.reset_run_errors:3 of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner.new_module:3 of
+msgid "Module"
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner.reset_run_errors:1 of
+msgid "Clears any transient error conditions from a previous run."
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner.reset_run_errors:4 of
+msgid "None"
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner.run:1 of
+msgid "Execute the configured source code in a module and run any post checks."
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner.run:4 of
+msgid "a module to execute the configured code in."
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner.run:6 of
+msgid ""
+"a function that can raise an exception if expected post-conditions are "
+"not met after code execution."
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner.error:1 of
+msgid "If code execution fails, may contain a related error message."
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner.error_detail:1 of
+msgid "If code execution fails, may contain a traceback or other details."
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner.failed:1 of
+msgid "``True`` if code execution failed"
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner.path:1 of
+msgid "The path that new modules will be configured with."
+msgstr ""
+
+#: bokeh.application.handlers.code_runner.CodeRunner.source:1 of
+msgid "The configured source code that will be executed when ``run`` is called."
+msgstr ""
+

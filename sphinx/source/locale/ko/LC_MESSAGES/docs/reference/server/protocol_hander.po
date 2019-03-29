@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/server/protocol_hander.rst:4
+msgid "bokeh.server.protocol_handler"
+msgstr ""
+
+#: bokeh.server.protocol_handler:1 of
+msgid ""
+"Encapsulate handling of all Bokeh Protocol messages a Bokeh server may "
+"receive."
+msgstr ""
+
+#: bokeh.server.protocol_handler.ProtocolHandler:1 of
+msgid ""
+"A Bokeh server may be expected to receive any of the following protocol "
+"messages:"
+msgstr ""
+
+#: bokeh.server.protocol_handler.ProtocolHandler:4 of
+msgid "``EVENT``"
+msgstr ""
+
+#: bokeh.server.protocol_handler.ProtocolHandler:5 of
+msgid "``PATCH-DOC``"
+msgstr ""
+
+#: bokeh.server.protocol_handler.ProtocolHandler:6 of
+msgid "``PULL-DOC-REQ``"
+msgstr ""
+
+#: bokeh.server.protocol_handler.ProtocolHandler:7 of
+msgid "``PUSH-DOC``"
+msgstr ""
+
+#: bokeh.server.protocol_handler.ProtocolHandler:8 of
+msgid "``SERVER-INFO-REQ``"
+msgstr ""
+
+#: bokeh.server.protocol_handler.ProtocolHandler:10 of
+msgid ""
+"The job of ``ProtocolHandler`` is to direct incoming messages to the "
+"right specialized handler for each message type. When the server receives"
+" a new message on a connection it will call ``handler`` with the message "
+"and the connection that the message arrived on. Most messages are "
+"ultimately handled by the ``ServerSession`` class, but some simpler "
+"messages types such as ``SERVER-INFO-REQ`` may be handled directly by "
+"``ProtocolHandler``."
+msgstr ""
+
+#: bokeh.server.protocol_handler.ProtocolHandler:17 of
+msgid "Any unexpected messages will result in a ``ProtocolError``."
+msgstr ""
+
+#: bokeh.server.protocol_handler.ProtocolHandler.handle:1 of
+msgid "Delegate a received message to the appropriate handler."
+msgstr ""
+
+#: bokeh.server.protocol_handler.ProtocolHandler.handle of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.server.protocol_handler.ProtocolHandler.handle:3 of
+msgid "The message that was receive that needs to be handled"
+msgstr ""
+
+#: bokeh.server.protocol_handler.ProtocolHandler.handle:5 of
+msgid "The connection that received this message"
+msgstr ""
+
+#: bokeh.server.protocol_handler.ProtocolHandler.handle of
+msgid "raises"
+msgstr ""
+
+#: bokeh.server.protocol_handler.ProtocolHandler.handle:8 of
+msgid ":exc:`ProtocolError`"
+msgstr ""
+

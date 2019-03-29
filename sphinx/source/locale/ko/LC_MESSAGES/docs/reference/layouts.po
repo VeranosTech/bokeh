@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/layouts.rst:4
+msgid "bokeh.layouts"
+msgstr ""
+
+#: bokeh.layouts:1 of
+msgid "Functions for arranging bokeh layout objects."
+msgstr ""
+
+#: bokeh.layouts.GridSpec:1 of
+msgid "Simplifies grid layout specification."
+msgstr ""
+
+#: bokeh.layouts.Spacer:1 of
+msgid "Bases: :class:`bokeh.models.layouts.LayoutDOM`"
+msgstr ""
+
+#: bokeh.layouts.Spacer:1 of
+msgid "A container for space used to fill an empty spot in a row or column."
+msgstr ""
+
+#: bokeh.layouts.column:1 of
+msgid ""
+"Create a column of Bokeh Layout objects. Forces all objects to have the "
+"same sizing_mode, which is required for complex layouts to work."
+msgstr ""
+
+#: bokeh.layouts.column bokeh.layouts.gridplot bokeh.layouts.layout
+#: bokeh.layouts.row bokeh.layouts.widgetbox of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.layouts.column:4 of
+msgid ""
+"A list of instances for the column. Can be any of the following - "
+":class:`~bokeh.models.plots.Plot`, "
+":class:`~bokeh.models.widgets.widget.Widget`, "
+":class:`~bokeh.models.layouts.Row`, "
+":class:`~bokeh.models.layouts.Column`, "
+":class:`~bokeh.models.tools.ToolbarBox`, "
+":class:`~bokeh.models.layouts.Spacer`."
+msgstr ""
+
+#: bokeh.layouts.column:12 bokeh.layouts.gridplot:13 bokeh.layouts.layout:11
+#: bokeh.layouts.row:12 bokeh.layouts.widgetbox:5 of
+msgid ""
+"How will the items in the layout resize to fill the available space. "
+"Default is ``\"fixed\"``. For more information on the different modes see"
+" :attr:`~bokeh.models.layouts.LayoutDOM.sizing_mode` description on "
+":class:`~bokeh.models.layouts.LayoutDOM`."
+msgstr ""
+
+#: bokeh.layouts.column bokeh.layouts.gridplot bokeh.layouts.layout
+#: bokeh.layouts.row bokeh.layouts.widgetbox of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.layouts.column:19 of
+msgid "A column of LayoutDOM objects all with the same sizing_mode."
+msgstr ""
+
+#: bokeh.layouts.column bokeh.layouts.gridplot bokeh.layouts.layout
+#: bokeh.layouts.row bokeh.layouts.widgetbox of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.layouts.column:23 bokeh.layouts.gridplot:48 bokeh.layouts.layout:22
+#: bokeh.layouts.row:23 bokeh.layouts.widgetbox:16 of
+msgid "Examples"
+msgstr ""
+
+#: bokeh.layouts.gridplot:1 of
+msgid "Create a grid of plots rendered on separate canvases."
+msgstr ""
+
+#: bokeh.layouts.gridplot:3 of
+msgid ""
+"The ``gridplot`` function builds a single toolbar for all the plots in "
+"the grid. ``gridplot`` is designed to layout a set of plots. For general "
+"grid layout, use the :func:`~bokeh.layouts.layout` function."
+msgstr ""
+
+#: bokeh.layouts.gridplot:7 of
+msgid ""
+"An array of plots to display in a grid, given as a list of lists of Plot "
+"objects. To leave a position in the grid empty, pass None for that "
+"position in the children list. OR list of "
+":class:`~bokeh.models.plots.Plot` if called with ncols. OR an instance of"
+" GridSpec."
+msgstr ""
+
+#: bokeh.layouts.gridplot:19 of
+msgid ""
+"Where the toolbar will be located, with respect to the grid. Default is "
+"``above``. If set to None, no toolbar will be attached to the grid."
+msgstr ""
+
+#: bokeh.layouts.gridplot:23 of
+msgid ""
+"Specify the number of columns you would like in your grid. You must only "
+"pass an un-nested list of plots (as opposed to a list of lists of plots) "
+"when using ncols."
+msgstr ""
+
+#: bokeh.layouts.gridplot:27 of
+msgid "The width you would like all your plots to be"
+msgstr ""
+
+#: bokeh.layouts.gridplot:29 of
+msgid "The height you would like all your plots to be."
+msgstr ""
+
+#: bokeh.layouts.gridplot:31 of
+msgid ""
+"A dictionary of options that will be used to construct the grid's toolbar"
+" (an instance of :class:`~bokeh.models.tools.ToolbarBox`). If none is "
+"supplied, ToolbarBox's defaults will be used."
+msgstr ""
+
+#: bokeh.layouts.gridplot:36 of
+msgid "Combine tools from all child plots into a single toolbar."
+msgstr ""
+
+#: bokeh.layouts.gridplot:40 of
+msgid ""
+"A row or column containing the grid toolbar and the grid     of plots "
+"(depending on whether the toolbar is left/right or     above/below. The "
+"grid is always a Column of Rows of plots."
+msgstr ""
+
+#: bokeh.layouts.gridplot:43 of
+msgid "A row or column containing the grid toolbar and the grid"
+msgstr ""
+
+#: bokeh.layouts.gridplot:43 of
+msgid ""
+"of plots (depending on whether the toolbar is left/right or above/below. "
+"The grid is always a Column of Rows of plots."
+msgstr ""
+
+#: bokeh.layouts.layout:1 of
+msgid "Create a grid-based arrangement of Bokeh Layout objects."
+msgstr ""
+
+#: bokeh.layouts.layout:3 of
+msgid ""
+"A list of lists of instances for a grid layout. Can be any of the "
+"following - :class:`~bokeh.models.plots.Plot`, "
+":class:`~bokeh.models.widgets.widget.Widget`, "
+":class:`~bokeh.models.layouts.Row`, "
+":class:`~bokeh.models.layouts.Column`, "
+":class:`~bokeh.models.tools.ToolbarBox`, "
+":class:`~bokeh.models.layouts.Spacer`."
+msgstr ""
+
+#: bokeh.layouts.layout:18 of
+msgid ""
+"A column of ``Row`` layouts of the children, all with the same "
+"sizing_mode."
+msgstr ""
+
+#: bokeh.layouts.row:1 of
+msgid ""
+"Create a row of Bokeh Layout objects. Forces all objects to have the same"
+" sizing_mode, which is required for complex layouts to work."
+msgstr ""
+
+#: bokeh.layouts.row:4 of
+msgid ""
+"A list of instances for the row. Can be any of the following - "
+":class:`~bokeh.models.plots.Plot`, "
+":class:`~bokeh.models.widgets.widget.Widget`, "
+":class:`~bokeh.models.layouts.Row`, "
+":class:`~bokeh.models.layouts.Column`, "
+":class:`~bokeh.models.tools.ToolbarBox`, "
+":class:`~bokeh.models.layouts.Spacer`."
+msgstr ""
+
+#: bokeh.layouts.row:19 of
+msgid "A row of LayoutDOM objects all with the same sizing_mode."
+msgstr ""
+
+#: bokeh.layouts.widgetbox:1 of
+msgid "Create a column of bokeh widgets with predefined styling."
+msgstr ""
+
+#: bokeh.layouts.widgetbox:3 of
+msgid "A list of widgets."
+msgstr ""
+
+#: bokeh.layouts.widgetbox:12 of
+msgid "A column layout of widget instances all with the same ``sizing_mode``."
+msgstr ""
+

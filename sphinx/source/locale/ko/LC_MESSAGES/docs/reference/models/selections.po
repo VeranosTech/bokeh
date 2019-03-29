@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/selections.rst:4
+msgid "bokeh.models.selections"
+msgstr ""
+
+#: bokeh.models.selections.IntersectRenderers:1
+#: bokeh.models.selections.UnionRenderers:1 of
+msgid "Bases: :class:`bokeh.models.selections.SelectionPolicy`"
+msgstr ""
+
+#: bokeh.models.selections.IntersectRenderers:1 of
+msgid ""
+"When a data source is shared between multiple renderers, a row in the "
+"data source will only be selected if that point for each renderer is "
+"selected. The selection is made from the intersection of hit test results"
+" from all renderers."
+msgstr ""
+
+#: bokeh.models.selections.Selection:1
+#: bokeh.models.selections.SelectionPolicy:1 of
+msgid "Bases: :class:`bokeh.model.Model`"
+msgstr ""
+
+#: bokeh.models.selections.Selection:1 of
+msgid ""
+"A Selection represents a portion of the data in a ``DataSource``, which "
+"can be visually manipulated in a plot."
+msgstr ""
+
+#: bokeh.models.selections.Selection:4 of
+msgid ""
+"Selections are typically created by selecting points in a plot with a "
+"``SelectTool``, but can also be programmatically specified."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.Int`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The indices included in a selection."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Dict` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.Seq` ( :class:`~bokeh.core.properties.Int`"
+"  ) )"
+msgstr ""
+
+#: bokeh.models.selections.SelectionPolicy:2 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: bokeh.models.selections.UnionRenderers:1 of
+msgid ""
+"When a data source is shared between multiple renderers, selecting a "
+"point on from any renderer will cause that row in the data source to be "
+"selected. The selection is made from the union of hit test results from "
+"all renderers."
+msgstr ""
+

@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/server/util.rst:4
+msgid "bokeh.server.util"
+msgstr ""
+
+#: bokeh.server.util:1 of
+msgid ""
+"Provide some utility functions useful for implementing different "
+"components in ``bokeh.server``."
+msgstr ""
+
+#: bokeh.server.util.bind_sockets:1 of
+msgid "Bind a socket to a port on an address."
+msgstr ""
+
+#: bokeh.server.util.bind_sockets bokeh.server.util.check_whitelist
+#: bokeh.server.util.create_hosts_whitelist bokeh.server.util.match_host of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.server.util.bind_sockets:3 of
+msgid "An address to bind a port on, e.g. ``\"localhost\"``"
+msgstr ""
+
+#: bokeh.server.util.bind_sockets:5 of
+msgid ""
+"A port number to bind.  Pass 0 to have the OS automatically choose a free"
+" port."
+msgstr ""
+
+#: bokeh.server.util.bind_sockets:5 of
+msgid "A port number to bind."
+msgstr ""
+
+#: bokeh.server.util.bind_sockets:7 of
+msgid "Pass 0 to have the OS automatically choose a free port."
+msgstr ""
+
+#: bokeh.server.util.bind_sockets:10 of
+msgid ""
+"This function returns a 2-tuple with the new socket as the first element,"
+" and the port that was bound as the second. (Useful when passing 0 as a "
+"port number to bind any free port.)"
+msgstr ""
+
+#: bokeh.server.util.bind_sockets bokeh.server.util.check_whitelist
+#: bokeh.server.util.create_hosts_whitelist bokeh.server.util.match_host of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.server.util.bind_sockets:14 of
+msgid "(socket, port)"
+msgstr ""
+
+#: bokeh.server.util.check_whitelist:1 of
+msgid "Check a given request host against a whitelist."
+msgstr ""
+
+#: bokeh.server.util.check_whitelist:3 of
+msgid ""
+"A host string to compare against a whitelist.  If the host does not "
+"specify a port, then ``\":80\"`` is implicitly assumed."
+msgstr ""
+
+#: bokeh.server.util.check_whitelist:3 of
+msgid "A host string to compare against a whitelist."
+msgstr ""
+
+#: bokeh.server.util.check_whitelist:5 of
+msgid ""
+"If the host does not specify a port, then ``\":80\"`` is implicitly "
+"assumed."
+msgstr ""
+
+#: bokeh.server.util.check_whitelist:8 of
+msgid "A list of host patterns to match against"
+msgstr ""
+
+#: bokeh.server.util.check_whitelist:11 of
+msgid ""
+"``True``, if ``host`` matches any pattern in ``whitelist``, otherwise "
+"``False``"
+msgstr ""
+
+#: bokeh.server.util.create_hosts_whitelist:1 of
+msgid ""
+"This whitelist can be used to restrict websocket or other connections to "
+"only those explicitly originating from approved hosts."
+msgstr ""
+
+#: bokeh.server.util.create_hosts_whitelist:4 of
+msgid ""
+"A list of string `<name>` or `<name>:<port>` values to add to the "
+"whitelist.  If no port is specified in a host string, then ``\":80\"``  "
+"is implicitly assumed."
+msgstr ""
+
+#: bokeh.server.util.create_hosts_whitelist:4 of
+msgid ""
+"A list of string `<name>` or `<name>:<port>` values to add to the "
+"whitelist."
+msgstr ""
+
+#: bokeh.server.util.create_hosts_whitelist:7 of
+msgid ""
+"If no port is specified in a host string, then ``\":80\"``  is implicitly"
+" assumed."
+msgstr ""
+
+#: bokeh.server.util.create_hosts_whitelist:10 of
+msgid ""
+"If ``host_list`` is empty or ``None``, then the whitelist will be the "
+"single item list `` [ 'localhost:<port>' ]``  If ``host_list`` is not "
+"empty, this parameter has no effect."
+msgstr ""
+
+#: bokeh.server.util.create_hosts_whitelist:10 of
+msgid ""
+"If ``host_list`` is empty or ``None``, then the whitelist will be the "
+"single item list `` [ 'localhost:<port>' ]``"
+msgstr ""
+
+#: bokeh.server.util.create_hosts_whitelist:13 of
+msgid "If ``host_list`` is not empty, this parameter has no effect."
+msgstr ""
+
+#: bokeh.server.util.create_hosts_whitelist:16 of
+msgid "list[str]"
+msgstr ""
+
+#: bokeh.server.util.create_hosts_whitelist of
+msgid "raises"
+msgstr ""
+
+#: bokeh.server.util.create_hosts_whitelist:18 of
+msgid "ValueError, if host or port values are invalid"
+msgstr ""
+
+#: bokeh.server.util.create_hosts_whitelist:22 of
+msgid ""
+"If any host in ``host_list`` contains a wildcard ``*`` a warning will be "
+"logged regarding permissive websocket connections."
+msgstr ""
+
+#: bokeh.server.util.match_host:1 of
+msgid "Match a host string against a pattern"
+msgstr ""
+
+#: bokeh.server.util.match_host:3 of
+msgid "A hostname to compare to the given pattern"
+msgstr ""
+
+#: bokeh.server.util.match_host:5 of
+msgid ""
+"A string representing a hostname pattern, possibly including wildcards "
+"for ip address octets or ports."
+msgstr ""
+
+#: bokeh.server.util.match_host:9 of
+msgid ""
+"This function will return ``True`` if the hostname matches the pattern, "
+"including any wildcards. If the pattern contains a port, the host string "
+"must also contain a matching port."
+msgstr ""
+
+#: bokeh.server.util.match_host:13 of
+msgid "bool"
+msgstr ""
+
+#: bokeh.server.util.match_host:16 of
+msgid "Examples"
+msgstr ""
+

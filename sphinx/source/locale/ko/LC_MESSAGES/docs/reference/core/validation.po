@@ -1,0 +1,450 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/core/validation.rst:4
+msgid "bokeh.core.validation"
+msgstr ""
+
+#: bokeh.core.validation:1 of
+msgid ""
+"The validation module provides the capability to perform integrity checks"
+" on an entire collection of Bokeh models."
+msgstr ""
+
+#: bokeh.core.validation:4 of
+msgid ""
+"To create a Bokeh visualization, the central task is to assemble a "
+"collection model objects from |bokeh.models| into a graph that represents"
+" the scene that should be created in the client. It is possible to to "
+"this \"by hand\", using the model objects directly. However, to make this"
+" process easier, Bokeh provides higher level interfaces such as "
+"|bokeh.plotting| for users."
+msgstr ""
+
+#: bokeh.core.validation:10 of
+msgid ""
+"These interfaces automate common \"assembly\" steps, to ensure a Bokeh "
+"object graph is created in a consistent, predictable way. However, "
+"regardless of what interface is used, it is possible to put Bokeh models "
+"together in ways that are incomplete, or that do not make sense in some "
+"way."
+msgstr ""
+
+#: bokeh.core.validation:15 of
+msgid ""
+"To assist with diagnosing potential problems, Bokeh performs a validation"
+" step when outputting a visualization for display. This module contains "
+"error and warning codes as well as helper functions for defining "
+"validation checks."
+msgstr ""
+
+#: bokeh.core.validation:19 of
+msgid ""
+"One use case for warnings is to loudly point users in the right direction"
+" when they accidentally do something that they probably didn't mean to do"
+" - this is the case for EMPTY_LAYOUT for instance. Since warnings don't "
+"necessarily indicate misuse, they are configurable. To silence a warning,"
+" use the silence function provided."
+msgstr ""
+
+#: ../../source/docs/reference/core/validation.rst:11
+msgid "Error Codes"
+msgstr ""
+
+#: bokeh.core.validation.errors:1 of
+msgid ""
+"These define the standard error codes and messages for Bokeh validation "
+"checks."
+msgstr ""
+
+#: bokeh.core.validation.errors:6 of
+msgid "1001 *(BAD_COLUMN_NAME)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:5 of
+msgid ""
+"A glyph has a property set to a field name that does not correspond to "
+"any column in the |GlyphRenderer|'s data source."
+msgstr ""
+
+#: bokeh.core.validation.errors:9 of
+msgid "1002 *(MISSING_GLYPH)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:9 of
+msgid "A |GlyphRenderer| has no glyph configured."
+msgstr ""
+
+#: bokeh.core.validation.errors:12 of
+msgid "1003 *(NO_SOURCE_FOR_GLYPH)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:12 of
+msgid "A |GlyphRenderer| has no data source configured."
+msgstr ""
+
+#: bokeh.core.validation.errors:16 of
+msgid "1004 *(REQUIRED_RANGE)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:15 of
+msgid ""
+"A |Plot| is missing one or more required default ranges (will result in "
+"blank plot)."
+msgstr ""
+
+#: bokeh.core.validation.errors:22 of
+msgid "1005 *(MISSING_GOOGLE_API_KEY)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:19 of
+msgid ""
+"Google Maps API now requires an API key for all use. See "
+"https://developers.google.com/maps/documentation/javascript/get-api-key "
+"for more information on how to obtain your own, to use for the "
+"``api_key`` property of your Google Map plot ."
+msgstr ""
+
+#: bokeh.core.validation.errors:26 of
+msgid "1006 *(NON_MATCHING_DATA_SOURCES_ON_LEGEND_ITEM_RENDERERS)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:25 of
+msgid ""
+"All data_sources on ``LegendItem.renderers`` must match when "
+"LegendItem.label is type field."
+msgstr ""
+
+#: bokeh.core.validation.errors:30 of
+msgid "1007 *(MISSING_MERCATOR_DIMENSION)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:29 of
+msgid ""
+"``MercatorTicker`` and ``MercatorTickFormatter``models must have their "
+"``dimension`` property set to ``'lat'`` or ``'lon'``."
+msgstr ""
+
+#: bokeh.core.validation.errors:34 of
+msgid "1008 *(REQUIRED_SCALE)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:33 of
+msgid ""
+"A |Scale| on is missing one or more required default scales (will result "
+"in blank plot)."
+msgstr ""
+
+#: bokeh.core.validation.errors:38 of
+msgid "1009 *(INCOMPATIBLE_SCALE_AND_RANGE)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:37 of
+msgid ""
+"A |Scale| type is incompatible with one or more ranges on the same plot "
+"dimension (will result in blank plot)."
+msgstr ""
+
+#: bokeh.core.validation.errors:42 of
+msgid "1010 *(CDSVIEW_SOURCE_DOESNT_MATCH)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:41 of
+msgid ""
+"A |GlyphRenderer| has a ``CDSView`` whose source doesn't match the "
+"``GlyphRenderer``'s data source."
+msgstr ""
+
+#: bokeh.core.validation.errors:45 of
+msgid "1011 *(MALFORMED_GRAPH_SOURCE)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:45 of
+msgid "The ``GraphSource`` is incorrectly configured."
+msgstr ""
+
+#: bokeh.core.validation.errors:48 of
+msgid "1012 *(INCOMPATIBLE_MAP_RANGE_TYPE)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:48 of
+msgid "Map plots can only support ``Range1d`` types, not data ranges."
+msgstr ""
+
+#: bokeh.core.validation.errors:51 of
+msgid "1013 *(INCOMPATIBLE_POINT_DRAW_RENDERER)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:51 of
+msgid "The ``PointDrawTool`` renderers may only reference ``XYGlyph`` models."
+msgstr ""
+
+#: bokeh.core.validation.errors:54 of
+msgid "1014 *(INCOMPATIBLE_BOX_EDIT_RENDERER)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:54 of
+msgid "The ``BoxEditTool`` renderers may only reference ``Rect`` glyph models."
+msgstr ""
+
+#: bokeh.core.validation.errors:57 of
+msgid "1015 *(INCOMPATIBLE_POLY_DRAW_RENDERER)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:57 of
+msgid ""
+"The ``PolyDrawTool`` renderers may only reference ``MultiLine`` and "
+"``Patches`` glyph models."
+msgstr ""
+
+#: bokeh.core.validation.errors:60 of
+msgid "1016 *(INCOMPATIBLE_POLY_EDIT_RENDERER)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:60 of
+msgid ""
+"The ``PolyEditTool`` renderers may only reference ``MultiLine`` and "
+"``Patches`` glyph models."
+msgstr ""
+
+#: bokeh.core.validation.errors:63 of
+msgid "1017 *(INCOMPATIBLE_POLY_EDIT_VERTEX_RENDERER)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:63 of
+msgid ""
+"The ``PolyEditTool`` vertex_renderer may only reference ``XYGlyph`` "
+"models."
+msgstr ""
+
+#: bokeh.core.validation.errors:66 of
+msgid "1018 *(NO_RANGE_TOOL_RANGES)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:66 of
+msgid ""
+"The ``RangeTool`` must have at least one of ``x_range`` or ``y_range`` "
+"configured"
+msgstr ""
+
+#: bokeh.core.validation.errors:69 of
+msgid "1019 *(DUPLICATE_FACTORS)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:69 of
+msgid ""
+"``FactorRange`` must specify a unique list of categorical factors for an "
+"axis."
+msgstr ""
+
+#: bokeh.core.validation.errors:72 of
+msgid "1020 *(BAD_EXTRA_RANGE_NAME)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:72 of
+msgid ""
+"An extra range name is configured with a name that does not correspond to"
+" any range."
+msgstr ""
+
+#: bokeh.core.validation.errors:75 of
+msgid "1021 *(EQUAL_SLIDER_START_END)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:75 of
+msgid "``noUiSlider`` most have a nonequal start and end."
+msgstr ""
+
+#: bokeh.core.validation.errors:78 bokeh.core.validation.warnings:14 of
+msgid "9999 *(EXT)*"
+msgstr ""
+
+#: bokeh.core.validation.errors:78 of
+msgid "Indicates that a custom error check has failed."
+msgstr ""
+
+#: ../../source/docs/reference/core/validation.rst:20
+msgid "Warning Codes"
+msgstr ""
+
+#: bokeh.core.validation.warnings:1 of
+msgid ""
+"These define the standard warning codes and messages for Bokeh validation"
+" checks."
+msgstr ""
+
+#: bokeh.core.validation.warnings:5 of
+msgid "1000 *(MISSING_RENDERERS)*"
+msgstr ""
+
+#: bokeh.core.validation.warnings:5 of
+msgid "A |Plot| object has no renderers configured (will result in a blank plot)."
+msgstr ""
+
+#: bokeh.core.validation.warnings:8 of
+msgid "1002 *(EMPTY_LAYOUT)*"
+msgstr ""
+
+#: bokeh.core.validation.warnings:8 of
+msgid "A layout model has no children (will result in a blank layout)."
+msgstr ""
+
+#: bokeh.core.validation.warnings:11 of
+msgid "1004 *(BOTH_CHILD_AND_ROOT)*"
+msgstr ""
+
+#: bokeh.core.validation.warnings:11 of
+msgid ""
+"Each component can be rendered in only one place, can't be both a root "
+"and in a layout."
+msgstr ""
+
+#: bokeh.core.validation.warnings:14 of
+msgid "Indicates that a custom warning check has failed."
+msgstr ""
+
+#: ../../source/docs/reference/core/validation.rst:29
+msgid "Helper Functions"
+msgstr ""
+
+#: ../../source/docs/reference/core/validation.rst:31
+msgid ""
+"These helper functions can be used to perform integrity checks on "
+"collections of Bokeh models, or mark methods on Models as warning or "
+"error checks."
+msgstr ""
+
+#: bokeh.core.validation.check.check_integrity:1 of
+msgid "Apply validation and integrity checks to a collection of Bokeh models."
+msgstr ""
+
+#: bokeh.core.validation.check.check_integrity
+#: bokeh.core.validation.check.silence bokeh.core.validation.decorators.error
+#: bokeh.core.validation.decorators.warning of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.core.validation.check.check_integrity:3 of
+msgid "a collection of Models to test"
+msgstr ""
+
+#: bokeh.core.validation.check.check_integrity
+#: bokeh.core.validation.check.silence bokeh.core.validation.decorators.error
+#: bokeh.core.validation.decorators.warning of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.core.validation.check.check_integrity:6 of
+msgid "None"
+msgstr ""
+
+#: bokeh.core.validation.check.check_integrity:8 of
+msgid ""
+"This function will emit log warning and error messages for all error or "
+"warning conditions that are detected. For example, layouts without any "
+"children will trigger a warning:"
+msgstr ""
+
+#: bokeh.core.validation.check.silence:1 of
+msgid "Silence a particular warning on all Bokeh models."
+msgstr ""
+
+#: bokeh.core.validation.check.silence:3 of
+msgid "Bokeh warning to silence"
+msgstr ""
+
+#: bokeh.core.validation.check.silence:5 of
+msgid "Whether or not to silence the warning"
+msgstr ""
+
+#: bokeh.core.validation.check.silence:8 of
+msgid "A set containing the all silenced warnings"
+msgstr ""
+
+#: bokeh.core.validation.check.silence:10 of
+msgid ""
+"This function adds or removes warnings from a set of silencers which is "
+"refered to when running ``check_integrity``. If a warning is added to the"
+" silencers - then it will never be raised."
+msgstr ""
+
+#: bokeh.core.validation.check.silence:20 of
+msgid ""
+"To turn a warning back on use the same method but with the silence "
+"argument set to false"
+msgstr ""
+
+#: bokeh.core.validation.decorators.error:1
+#: bokeh.core.validation.decorators.warning:1 of
+msgid "Decorator to mark a validator method for a Bokeh error condition"
+msgstr ""
+
+#: bokeh.core.validation.decorators.error:3
+#: bokeh.core.validation.decorators.warning:3 of
+msgid ""
+"a code from ``bokeh.validation.errors`` or a string label for a custom "
+"check"
+msgstr ""
+
+#: bokeh.core.validation.decorators.error:6
+#: bokeh.core.validation.decorators.warning:6 of
+msgid "decorator for Bokeh model methods"
+msgstr ""
+
+#: bokeh.core.validation.decorators.error
+#: bokeh.core.validation.decorators.warning of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.core.validation.decorators.error:9
+#: bokeh.core.validation.decorators.warning:9 of
+msgid ""
+"The function that is decorated should have a name that starts with "
+"``_check``, and return a string message in case a bad condition is "
+"detected, and ``None`` if no bad condition is detected."
+msgstr ""
+
+#: bokeh.core.validation.decorators.error:13
+#: bokeh.core.validation.decorators.warning:13 of
+msgid "Examples:"
+msgstr ""
+
+#: bokeh.core.validation.decorators.error:15 of
+msgid ""
+"The first example uses a numeric code for a standard error provided in "
+"``bokeh.validation.errors``. This usage is primarily of interest to Bokeh"
+" core developers."
+msgstr ""
+
+#: bokeh.core.validation.decorators.error:27
+#: bokeh.core.validation.decorators.warning:27 of
+msgid ""
+"The second example shows how a custom warning check can be implemented by"
+" passing an arbitrary string label to the decorator. This usage is "
+"primarily of interest to anyone extending Bokeh with their own custom "
+"models."
+msgstr ""
+
+#: bokeh.core.validation.decorators.warning:15 of
+msgid ""
+"The first example uses a numeric code for a standard warning provided in "
+"``bokeh.validation.warnings``. This usage is primarily of interest to "
+"Bokeh core developers."
+msgstr ""
+

@@ -1,0 +1,1396 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/util.rst:4
+msgid "bokeh.util"
+msgstr ""
+
+#: bokeh.util:1 of
+msgid ""
+"Provide a collection of general utilities useful for implementing Bokeh "
+"functionality."
+msgstr ""
+
+#: bokeh.util:7 of
+msgid "``bokeh.util.browser``"
+msgstr ""
+
+#: bokeh.util.browser:1 of
+msgid "Utility functions for helping with operations involving browsers."
+msgstr ""
+
+#: bokeh.util.browser.DummyWebBrowser:1 of
+msgid "A \"no-op\" web-browser controller."
+msgstr ""
+
+#: bokeh.util.browser.DummyWebBrowser.open:1 of
+msgid "Receive standard arguments and take no action."
+msgstr ""
+
+#: bokeh.util.browser.get_browser_controller:1 of
+msgid "Return a browser controller."
+msgstr ""
+
+#: bokeh.util.browser.get_browser_controller bokeh.util.browser.view
+#: bokeh.util.callback_manager.PropertyCallbackManager.on_change
+#: bokeh.util.callback_manager.PropertyCallbackManager.trigger
+#: bokeh.util.compiler.FromFile bokeh.util.compiler.Inline
+#: bokeh.util.dependencies.detect_phantomjs
+#: bokeh.util.dependencies.import_optional
+#: bokeh.util.dependencies.import_required bokeh.util.hex.axial_to_cartesian
+#: bokeh.util.hex.cartesian_to_axial bokeh.util.hex.hexbin
+#: bokeh.util.serialization.array_encoding_disabled
+#: bokeh.util.serialization.convert_datetime_array
+#: bokeh.util.serialization.decode_base64_dict
+#: bokeh.util.serialization.encode_base64_dict
+#: bokeh.util.serialization.encode_binary_dict
+#: bokeh.util.serialization.serialize_array
+#: bokeh.util.serialization.transform_array
+#: bokeh.util.serialization.transform_array_to_list
+#: bokeh.util.serialization.transform_column_source_data
+#: bokeh.util.serialization.transform_series
+#: bokeh.util.serialization.traverse_data
+#: bokeh.util.session_id.check_session_id_signature
+#: bokeh.util.session_id.generate_session_id bokeh.util.string.decode_utf8
+#: bokeh.util.string.encode_utf8 bokeh.util.string.escape
+#: bokeh.util.string.format_docstring bokeh.util.string.indent
+#: bokeh.util.string.nice_join of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.util.browser.get_browser_controller:3 of
+msgid ""
+"browser name, or ``None`` (default: ``None``) If passed the string "
+"``'none'``, a dummy web browser controller is returned  Otherwise, use "
+"the value to select an appropriate controller using the ``webbrowser`` "
+"standard library module. In the value is ``None`` then a system default "
+"is used."
+msgstr ""
+
+#: bokeh.util.browser.get_browser_controller:3 of
+msgid ""
+"browser name, or ``None`` (default: ``None``) If passed the string "
+"``'none'``, a dummy web browser controller is returned"
+msgstr ""
+
+#: bokeh.util.browser.get_browser_controller:7 of
+msgid ""
+"Otherwise, use the value to select an appropriate controller using the "
+"``webbrowser`` standard library module. In the value is ``None`` then a "
+"system default is used."
+msgstr ""
+
+#: bokeh.util.browser.get_browser_controller:13 of
+msgid ""
+"If the environment variable ``BOKEH_BROWSER`` is set, it will take "
+"precedence."
+msgstr ""
+
+#: bokeh.util.browser.get_browser_controller bokeh.util.browser.view
+#: bokeh.util.callback_manager.PropertyCallbackManager.on_change
+#: bokeh.util.callback_manager.PropertyCallbackManager.trigger
+#: bokeh.util.dependencies.detect_phantomjs
+#: bokeh.util.dependencies.import_optional
+#: bokeh.util.dependencies.import_required bokeh.util.hex.axial_to_cartesian
+#: bokeh.util.hex.cartesian_to_axial bokeh.util.hex.hexbin
+#: bokeh.util.serialization.array_encoding_disabled
+#: bokeh.util.serialization.convert_datetime_array
+#: bokeh.util.serialization.convert_datetime_type
+#: bokeh.util.serialization.convert_timedelta_type
+#: bokeh.util.serialization.decode_base64_dict
+#: bokeh.util.serialization.encode_base64_dict
+#: bokeh.util.serialization.encode_binary_dict
+#: bokeh.util.serialization.is_datetime_type
+#: bokeh.util.serialization.is_timedelta_type
+#: bokeh.util.serialization.make_globally_unique_id
+#: bokeh.util.serialization.make_id bokeh.util.serialization.serialize_array
+#: bokeh.util.serialization.transform_array
+#: bokeh.util.serialization.transform_array_to_list
+#: bokeh.util.serialization.transform_column_source_data
+#: bokeh.util.serialization.transform_series bokeh.util.string.decode_utf8
+#: bokeh.util.string.encode_utf8 bokeh.util.string.escape
+#: bokeh.util.string.format_docstring bokeh.util.string.nice_join of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.util.browser.get_browser_controller:16 of
+msgid "a web browser controller"
+msgstr ""
+
+#: bokeh.util.browser.get_browser_controller
+#: bokeh.util.serialization.convert_datetime_type
+#: bokeh.util.serialization.convert_timedelta_type
+#: bokeh.util.serialization.is_datetime_type
+#: bokeh.util.serialization.is_timedelta_type of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.util.browser.view:1 of
+msgid "Open a browser to view the specified location."
+msgstr ""
+
+#: bokeh.util.browser.view:3 of
+msgid ""
+"Location to open If location does not begin with \"http:\" it is assumed "
+"to be a file path on the local filesystem."
+msgstr ""
+
+#: bokeh.util.browser.view:7 of
+msgid ""
+"what browser to use (default: None) If ``None``, use the system default "
+"browser."
+msgstr ""
+
+#: bokeh.util.browser.view:10 of
+msgid ""
+"How to open the location. Valid values are:  ``'same'`` - open in the "
+"current tab  ``'tab'`` - open a new tab in the current window  "
+"``'window'`` - open in a new window"
+msgstr ""
+
+#: bokeh.util.browser.view:10 of
+msgid "How to open the location. Valid values are:"
+msgstr ""
+
+#: bokeh.util.browser.view:12 of
+msgid "``'same'`` - open in the current tab"
+msgstr ""
+
+#: bokeh.util.browser.view:14 of
+msgid "``'tab'`` - open a new tab in the current window"
+msgstr ""
+
+#: bokeh.util.browser.view:16 of
+msgid "``'window'`` - open in a new window"
+msgstr ""
+
+#: bokeh.util.browser.view:18 of
+msgid ""
+"Whether to automatically raise the location in a new browser window "
+"(default: True)"
+msgstr ""
+
+#: bokeh.util.browser.view:22
+#: bokeh.util.callback_manager.PropertyCallbackManager.on_change:8
+#: bokeh.util.callback_manager.PropertyCallbackManager.trigger:10 of
+msgid "None"
+msgstr ""
+
+#: bokeh.util:15 of
+msgid "``bokeh.util.callback_manager``"
+msgstr ""
+
+#: bokeh.util.callback_manager:1 of
+msgid ""
+"Provides ``PropertyCallbackManager`` and ``EventCallbackManager`` mixin "
+"classes for adding ``on_change`` and ``on_event`` callback interfaces to "
+"classes."
+msgstr ""
+
+#: bokeh.util.callback_manager.EventCallbackManager:1 of
+msgid ""
+"A mixin class to provide an interface for registering and triggering "
+"event callbacks on the Python side."
+msgstr ""
+
+#: bokeh.util.callback_manager.PropertyCallbackManager:1 of
+msgid ""
+"A mixin class to provide an interface for registering and triggering "
+"callbacks."
+msgstr ""
+
+#: bokeh.util.callback_manager.PropertyCallbackManager.on_change:1 of
+msgid "Add a callback on this object to trigger when ``attr`` changes."
+msgstr ""
+
+#: bokeh.util.callback_manager.PropertyCallbackManager.on_change:3 of
+msgid "an attribute name on this object"
+msgstr ""
+
+#: bokeh.util.callback_manager.PropertyCallbackManager.on_change:5 of
+msgid "a callback function to register"
+msgstr ""
+
+#: bokeh.util.callback_manager.PropertyCallbackManager.remove_on_change:1 of
+msgid "Remove a callback from this object"
+msgstr ""
+
+#: bokeh.util.callback_manager.PropertyCallbackManager.trigger:1 of
+msgid "Trigger callbacks for ``attr`` on this object."
+msgstr ""
+
+#: bokeh.util:23 of
+msgid "``bokeh.util.compiler``"
+msgstr ""
+
+#: bokeh.util.compiler:1 of
+msgid "Provide functions and classes to help with various JS and CSS compilation."
+msgstr ""
+
+#: bokeh.util.compiler.CompilationError:1 of
+msgid "A ``RuntimeError`` subclass for reporting JS compilation errors."
+msgstr ""
+
+#: bokeh.util.compiler.AttrDict:1 of
+msgid "Provide a dict subclass that supports access by named attributes."
+msgstr ""
+
+#: bokeh.util.compiler.CoffeeScript:1 of
+msgid "An implementation for a Bokeh custom model in CoffeeScript."
+msgstr ""
+
+#: bokeh.util.compiler.CoffeeScript:4 bokeh.util.compiler.JavaScript:4
+#: bokeh.util.compiler.TypeScript:4 of
+msgid "Example"
+msgstr ""
+
+#: bokeh.util.compiler.CoffeeScript:10 of
+msgid ""
+"Note that ``CoffeeScript`` is the default implementation language for "
+"custom model implementations. The following is equivalent to example "
+"above:"
+msgstr ""
+
+#: bokeh.util.compiler.CustomModel:1 of
+msgid "Represent a custom (user-defined) Bokeh model."
+msgstr ""
+
+#: bokeh.util.compiler.FromFile:1 of
+msgid "A custom model implementation read from a separate source file."
+msgstr ""
+
+#: bokeh.util.compiler.FromFile:3 of
+msgid "The path to the file containing the extension source code"
+msgstr ""
+
+#: bokeh.util.compiler.Implementation:1 of
+msgid "Base class for representing Bokeh custom model implementations."
+msgstr ""
+
+#: bokeh.util.compiler.Inline:1 of
+msgid ""
+"Base class for representing Bokeh custom model implementations that may "
+"be given as inline code in some language."
+msgstr ""
+
+#: bokeh.util.compiler.Inline:4 of
+msgid "The source code for the implementation"
+msgstr ""
+
+#: bokeh.util.compiler.Inline:6 of
+msgid "A file path to a file containing the source text (default: None)"
+msgstr ""
+
+#: bokeh.util.compiler.JavaScript:1 of
+msgid "An implementation for a Bokeh custom model in JavaScript"
+msgstr ""
+
+#: bokeh.util.compiler.Less:1 of
+msgid "An implementation of a Less CSS style sheet."
+msgstr ""
+
+#: bokeh.util.compiler.TypeScript:1 of
+msgid "An implementation for a Bokeh custom model in TypeScript"
+msgstr ""
+
+#: bokeh.util.compiler.bundle_all_models:1 of
+msgid "Create a bundle of all models."
+msgstr ""
+
+#: bokeh.util.compiler.bundle_models:1 of
+msgid "Create a bundle of selected `models`."
+msgstr ""
+
+#: bokeh.util.compiler.calc_cache_key:1 of
+msgid "Generate a key to cache a custom extension implementation with."
+msgstr ""
+
+#: bokeh.util.compiler.calc_cache_key:3 of
+msgid ""
+"There is no metadata other than the Model classes, so this is the only "
+"base to generate a cache key."
+msgstr ""
+
+#: bokeh.util.compiler.calc_cache_key:6 of
+msgid ""
+"We build the model keys from the list of ``model.full_name``. This is not"
+" ideal but possibly a better solution can be found found later."
+msgstr ""
+
+#: bokeh.util.compiler.get_cache_hook:1 of
+msgid ""
+"Returns the current cache hook used to look up the compiled code given "
+"the CustomModel and Implementation"
+msgstr ""
+
+#: bokeh.util.compiler.set_cache_hook:1 of
+msgid ""
+"Sets a compiled model cache hook used to look up the compiled code given "
+"the CustomModel and Implementation"
+msgstr ""
+
+#: bokeh.util:31 of
+msgid "``bokeh.util.dependencies``"
+msgstr ""
+
+#: bokeh.util.dependencies:1 of
+msgid "Utilities for checking dependencies"
+msgstr ""
+
+#: bokeh.util.dependencies.import_optional:1 of
+msgid "Attempt to import an optional dependency."
+msgstr ""
+
+#: bokeh.util.dependencies.import_optional:3 of
+msgid "Silently returns None if the requested module is not available."
+msgstr ""
+
+#: bokeh.util.dependencies.import_optional:5 of
+msgid "name of the optional module to try to import"
+msgstr ""
+
+#: bokeh.util.dependencies.import_optional:8 of
+msgid "imported module or None, if import fails"
+msgstr ""
+
+#: bokeh.util.dependencies.import_required:1 of
+msgid "Attempt to import a required dependency."
+msgstr ""
+
+#: bokeh.util.dependencies.import_required:3 of
+msgid "Raises a RuntimeError if the requested module is not available."
+msgstr ""
+
+#: bokeh.util.dependencies.import_required:5 of
+msgid "name of the required module to try to import"
+msgstr ""
+
+#: bokeh.util.dependencies.import_required:7 of
+msgid "error message to raise when the module is missing"
+msgstr ""
+
+#: bokeh.util.dependencies.import_required:10 of
+msgid "imported module"
+msgstr ""
+
+#: bokeh.util.dependencies.import_required of
+msgid "raises"
+msgstr ""
+
+#: bokeh.util.dependencies.import_required:12 of
+msgid ":exc:`RuntimeError`"
+msgstr ""
+
+#: bokeh.util.dependencies.detect_phantomjs:1 of
+msgid "Detect if PhantomJS is avaiable in PATH, at a minimum version."
+msgstr ""
+
+#: bokeh.util.dependencies.detect_phantomjs:3 of
+msgid "Required minimum version for PhantomJS (mostly for testing)"
+msgstr ""
+
+#: bokeh.util.dependencies.detect_phantomjs:6 of
+msgid "str, path to PhantomJS"
+msgstr ""
+
+#: bokeh.util:39 of
+msgid "``bokeh.util.deprecation``"
+msgstr ""
+
+#: bokeh.util:46 of
+msgid "``bokeh.util.future``"
+msgstr ""
+
+#: bokeh.util.future:1 of
+msgid "Utilities for Py2/Py3 interop."
+msgstr ""
+
+#: bokeh.util.future.with_metaclass:1 of
+msgid "Add metaclasses in both Python 2 and Python 3."
+msgstr ""
+
+#: bokeh.util.future.with_metaclass:3 of
+msgid "Function from jinja2/_compat.py. License: BSD."
+msgstr ""
+
+#: bokeh.util.future.with_metaclass:5 of
+msgid "Use it like this::"
+msgstr ""
+
+#: bokeh.util.future.with_metaclass:16 of
+msgid ""
+"This requires a bit of explanation: the basic idea is to make a dummy "
+"metaclass for one level of class instantiation that replaces itself with "
+"the actual metaclass.  Because of internal type checks we also need to "
+"make sure that we downgrade the custom metaclass for one level to "
+"something closer to type (that's why __call__ and __init__ comes back "
+"from type etc.)."
+msgstr ""
+
+#: bokeh.util.future.with_metaclass:23 of
+msgid ""
+"This has the advantage over six.with_metaclass of not introducing dummy "
+"classes into the final MRO."
+msgstr ""
+
+#: bokeh.util:52 of
+msgid "``bokeh.util.hex``"
+msgstr ""
+
+#: bokeh.util.hex:1 of
+msgid "Functions useful for dealing with hexagonal tilings."
+msgstr ""
+
+#: bokeh.util.hex:3 of
+msgid ""
+"For more information on the concepts employed here, see this informative "
+"page"
+msgstr ""
+
+#: bokeh.util.hex:5 of
+msgid "https://www.redblobgames.com/grids/hexagons/"
+msgstr ""
+
+#: bokeh.util.hex.axial_to_cartesian:1 of
+msgid ""
+"Map axial *(q,r)* coordinates to cartesian *(x,y)* coordinates of tiles "
+"centers."
+msgstr ""
+
+#: bokeh.util.hex.axial_to_cartesian:4 of
+msgid ""
+"This function can be useful for positioning other Bokeh glyphs with "
+"cartesian coordinates in relation to a hex tiling."
+msgstr ""
+
+#: bokeh.util.hex.axial_to_cartesian:7 bokeh.util.hex.cartesian_to_axial:4 of
+msgid "This function was adapted from:"
+msgstr ""
+
+#: bokeh.util.hex.axial_to_cartesian:9 of
+msgid "https://www.redblobgames.com/grids/hexagons/#hex-to-pixel"
+msgstr ""
+
+#: bokeh.util.hex.axial_to_cartesian:11 of
+msgid "A NumPy array of q-coordinates for binning"
+msgstr ""
+
+#: bokeh.util.hex.axial_to_cartesian:13 of
+msgid "A NumPy array of r-coordinates for binning"
+msgstr ""
+
+#: bokeh.util.hex.axial_to_cartesian:15 bokeh.util.hex.cartesian_to_axial:12
+#: bokeh.util.hex.hexbin:11 of
+msgid ""
+"The size of the hexagonal tiling.  The size is defined as the distance "
+"from the center of a hexagon to the top corner for \"pointytop\" "
+"orientation, or from the center to a side corner for \"flattop\" "
+"orientation."
+msgstr ""
+
+#: bokeh.util.hex.axial_to_cartesian:15 bokeh.util.hex.cartesian_to_axial:12
+#: bokeh.util.hex.hexbin:11 of
+msgid "The size of the hexagonal tiling."
+msgstr ""
+
+#: bokeh.util.hex.axial_to_cartesian:17 bokeh.util.hex.cartesian_to_axial:14
+#: bokeh.util.hex.hexbin:13 of
+msgid ""
+"The size is defined as the distance from the center of a hexagon to the "
+"top corner for \"pointytop\" orientation, or from the center to a side "
+"corner for \"flattop\" orientation."
+msgstr ""
+
+#: bokeh.util.hex.axial_to_cartesian:21 bokeh.util.hex.cartesian_to_axial:18 of
+msgid "Whether the hex tile orientation should be \"pointytop\" or \"flattop\"."
+msgstr ""
+
+#: bokeh.util.hex.axial_to_cartesian:24 bokeh.util.hex.cartesian_to_axial:21 of
+msgid ""
+"Scale the hexagons in the \"cross\" dimension.  For \"pointytop\" "
+"orientations, hexagons are scaled in the horizontal direction. For "
+"\"flattop\", they are scaled in vertical direction.  When working with a "
+"plot with ``aspect_scale != 1``, it may be useful to set this value to "
+"match the plot."
+msgstr ""
+
+#: bokeh.util.hex.axial_to_cartesian:24 bokeh.util.hex.cartesian_to_axial:21 of
+msgid "Scale the hexagons in the \"cross\" dimension."
+msgstr ""
+
+#: bokeh.util.hex.axial_to_cartesian:26 bokeh.util.hex.cartesian_to_axial:23 of
+msgid ""
+"For \"pointytop\" orientations, hexagons are scaled in the horizontal "
+"direction. For \"flattop\", they are scaled in vertical direction."
+msgstr ""
+
+#: bokeh.util.hex.axial_to_cartesian:29 bokeh.util.hex.cartesian_to_axial:26 of
+msgid ""
+"When working with a plot with ``aspect_scale != 1``, it may be useful to "
+"set this value to match the plot."
+msgstr ""
+
+#: bokeh.util.hex.axial_to_cartesian:33 bokeh.util.hex.cartesian_to_axial:30 of
+msgid "(array[int], array[int])"
+msgstr ""
+
+#: bokeh.util.hex.cartesian_to_axial:1 of
+msgid ""
+"Map Cartesion *(x,y)* points to axial *(q,r)* coordinates of enclosing "
+"tiles."
+msgstr ""
+
+#: bokeh.util.hex.cartesian_to_axial:6 of
+msgid "https://www.redblobgames.com/grids/hexagons/#pixel-to-hex"
+msgstr ""
+
+#: bokeh.util.hex.cartesian_to_axial:8 of
+msgid "A NumPy array of x-coordinates to convert"
+msgstr ""
+
+#: bokeh.util.hex.cartesian_to_axial:10 of
+msgid "A NumPy array of y-coordinates to convert"
+msgstr ""
+
+#: bokeh.util.hex.hexbin:1 of
+msgid "Perform an equal-weight binning of data points into hexagonal tiles."
+msgstr ""
+
+#: bokeh.util.hex.hexbin:3 of
+msgid ""
+"For more sophisticated use cases, e.g. weighted binning or scaling "
+"individual tiles proportional to some other quantity, consider using "
+"HoloViews."
+msgstr ""
+
+#: bokeh.util.hex.hexbin:7 of
+msgid "A NumPy array of x-coordinates for binning"
+msgstr ""
+
+#: bokeh.util.hex.hexbin:9 of
+msgid "A NumPy array of y-coordinates for binning"
+msgstr ""
+
+#: bokeh.util.hex.hexbin:17 of
+msgid ""
+"Whether the hex tile orientation should be \"pointytop\" or \"flattop\". "
+"(default: \"pointytop\")"
+msgstr ""
+
+#: bokeh.util.hex.hexbin:20 of
+msgid ""
+"Match a plot's aspect ratio scaling.  When working with a plot with "
+"``aspect_scale != 1``, this parameter can be set to match the plot, in "
+"order to draw regular hexagons (instead of \"stretched\" ones).  This is "
+"roughly equivalent to binning in \"screen space\", and it may be better "
+"to use axis-aligned rectangular bins when plot aspect scales are not one."
+msgstr ""
+
+#: bokeh.util.hex.hexbin:20 of
+msgid "Match a plot's aspect ratio scaling."
+msgstr ""
+
+#: bokeh.util.hex.hexbin:22 of
+msgid ""
+"When working with a plot with ``aspect_scale != 1``, this parameter can "
+"be set to match the plot, in order to draw regular hexagons (instead of "
+"\"stretched\" ones)."
+msgstr ""
+
+#: bokeh.util.hex.hexbin:26 of
+msgid ""
+"This is roughly equivalent to binning in \"screen space\", and it may be "
+"better to use axis-aligned rectangular bins when plot aspect scales are "
+"not one."
+msgstr ""
+
+#: bokeh.util.hex.hexbin:31 of
+msgid ""
+"DataFrame  The resulting DataFrame will have columns *q* and *r* that "
+"specify hexagon tile locations in axial coordinates, and a column "
+"*counts* that provides the count for each tile."
+msgstr ""
+
+#: bokeh.util.hex.hexbin:31 of
+msgid "DataFrame"
+msgstr ""
+
+#: bokeh.util.hex.hexbin:33 of
+msgid ""
+"The resulting DataFrame will have columns *q* and *r* that specify "
+"hexagon tile locations in axial coordinates, and a column *counts* that "
+"provides the count for each tile."
+msgstr ""
+
+#: bokeh.util.hex.hexbin:38 of
+msgid "Hex binning only functions on linear scales, i.e. not on log plots."
+msgstr ""
+
+#: bokeh.util:60 of
+msgid "``bokeh.util.logconfig``"
+msgstr ""
+
+#: bokeh.util.logconfig:1 of
+msgid "Configure the logging system for Bokeh."
+msgstr ""
+
+#: bokeh.util.logconfig:3 of
+msgid ""
+"By default, logging is not configured, to allow users of Bokeh to have "
+"full control over logging policy. However, it is useful to be able to "
+"enable logging arbitrarily during when developing Bokeh. This can be "
+"accomplished by setting the environment variable ``BOKEH_PY_LOG_LEVEL``. "
+"Valid values are, in order of increasing severity:"
+msgstr ""
+
+#: bokeh.util.logconfig:9 of
+msgid "``debug``"
+msgstr ""
+
+#: bokeh.util.logconfig:10 of
+msgid "``info``"
+msgstr ""
+
+#: bokeh.util.logconfig:11 of
+msgid "``warn``"
+msgstr ""
+
+#: bokeh.util.logconfig:12 of
+msgid "``error``"
+msgstr ""
+
+#: bokeh.util.logconfig:13 of
+msgid "``fatal``"
+msgstr ""
+
+#: bokeh.util.logconfig:14 of
+msgid "``none``"
+msgstr ""
+
+#: bokeh.util.logconfig:16 of
+msgid "The default logging level is ``none``."
+msgstr ""
+
+#: bokeh.util.logconfig.basicConfig:1 of
+msgid ""
+"A logging.basicConfig() wrapper that also undoes the default Bokeh-"
+"specific configuration."
+msgstr ""
+
+#: bokeh.util:68 of
+msgid "``bokeh.util.options``"
+msgstr ""
+
+#: bokeh.util.options:1 of
+msgid ""
+"Utilities for specifying, validating, and documenting configuration "
+"options."
+msgstr ""
+
+#: bokeh.util.options.Options:1 of
+msgid ""
+"Leverage the Bokeh properties type system for specifying and validating "
+"configuration options."
+msgstr ""
+
+#: bokeh.util.options.Options:4 of
+msgid ""
+"Subclasses of ``Options`` specify a set of configuration options using "
+"standard Bokeh properties:"
+msgstr ""
+
+#: bokeh.util.options.Options:15 of
+msgid ""
+"Then a ``ConnectOpts`` can be created by passing a dictionary containing "
+"keys and values corresponding to the configuration options, as well as "
+"any additional keys and values. The items corresponding to the properties"
+" on ``ConnectOpts`` will be ***removed*** from the dictionary. This can "
+"be useful for functions that accept their own set of config keyword "
+"arguments in addition to some set of Bokeh model properties."
+msgstr ""
+
+#: bokeh.util:76 of
+msgid "``bokeh.util.paths``"
+msgstr ""
+
+#: bokeh.util.paths.serverdir:1 of
+msgid "Get the location of the server subpackage"
+msgstr ""
+
+#: bokeh.util.paths.bokehjsdir:1 of
+msgid ""
+"Get the location of the bokehjs source files. If dev is True, the files "
+"in bokehjs/build are preferred. Otherwise uses the files in "
+"bokeh/server/static."
+msgstr ""
+
+#: bokeh.util:84 of
+msgid "``bokeh.util.serialization``"
+msgstr ""
+
+#: bokeh.util.serialization:1 of
+msgid ""
+"Functions for helping with serialization and deserialization of Bokeh "
+"objects."
+msgstr ""
+
+#: bokeh.util.serialization:4 of
+msgid ""
+"Certain NunPy array dtypes can be serialized to a binary format for "
+"performance and efficiency. The list of supported dtypes is:"
+msgstr ""
+
+#: bokeh.util.serialization:7
+#: bokeh.util.serialization.array_encoding_disabled:5 of
+msgid "``np.float32``"
+msgstr ""
+
+#: bokeh.util.serialization:8
+#: bokeh.util.serialization.array_encoding_disabled:6 of
+msgid "``np.float64``"
+msgstr ""
+
+#: bokeh.util.serialization:9
+#: bokeh.util.serialization.array_encoding_disabled:7 of
+msgid "``np.uint8``"
+msgstr ""
+
+#: bokeh.util.serialization:10
+#: bokeh.util.serialization.array_encoding_disabled:8 of
+msgid "``np.int32``"
+msgstr ""
+
+#: bokeh.util.serialization:11
+#: bokeh.util.serialization.array_encoding_disabled:9 of
+msgid "``np.int8``"
+msgstr ""
+
+#: bokeh.util.serialization:12
+#: bokeh.util.serialization.array_encoding_disabled:10 of
+msgid "``np.uint16``"
+msgstr ""
+
+#: bokeh.util.serialization:13
+#: bokeh.util.serialization.array_encoding_disabled:11 of
+msgid "``np.int16``"
+msgstr ""
+
+#: bokeh.util.serialization:14
+#: bokeh.util.serialization.array_encoding_disabled:12 of
+msgid "``np.uint32``"
+msgstr ""
+
+#: bokeh.util.serialization.array_encoding_disabled:1 of
+msgid "Determine whether an array may be binary encoded."
+msgstr ""
+
+#: bokeh.util.serialization.array_encoding_disabled:3 of
+msgid "The NumPy array dtypes that can be encoded are:"
+msgstr ""
+
+#: bokeh.util.serialization.array_encoding_disabled:14 of
+msgid "the array to check"
+msgstr ""
+
+#: bokeh.util.serialization.array_encoding_disabled:17 of
+msgid "bool"
+msgstr ""
+
+#: bokeh.util.serialization.convert_datetime_array:1 of
+msgid "Convert NumPy datetime arrays to arrays to milliseconds since epoch."
+msgstr ""
+
+#: bokeh.util.serialization.convert_datetime_array:3 of
+msgid ""
+"(obj) A NumPy array of datetime to convert  If the value passed in is not"
+" a NumPy array, it will be returned as-is."
+msgstr ""
+
+#: bokeh.util.serialization.convert_datetime_array:3 of
+msgid "(obj) A NumPy array of datetime to convert"
+msgstr ""
+
+#: bokeh.util.serialization.convert_datetime_array:6 of
+msgid "If the value passed in is not a NumPy array, it will be returned as-is."
+msgstr ""
+
+#: bokeh.util.serialization.convert_datetime_array:8 of
+msgid "array"
+msgstr ""
+
+#: bokeh.util.serialization.convert_datetime_type:1 of
+msgid ""
+"Convert any recognized date, time, or datetime value to floating point "
+"milliseconds since epoch."
+msgstr ""
+
+#: bokeh.util.serialization.convert_datetime_type:5
+#: bokeh.util.serialization.convert_timedelta_type:5
+#: bokeh.util.serialization.is_datetime_type:5
+#: bokeh.util.serialization.is_timedelta_type:4 of
+msgid "Arg:"
+msgstr ""
+
+#: bokeh.util.serialization.convert_datetime_type:5
+#: bokeh.util.serialization.convert_timedelta_type:5 of
+msgid "obj (object) : the object to convert"
+msgstr ""
+
+#: bokeh.util.serialization.convert_datetime_type:7
+#: bokeh.util.serialization.convert_timedelta_type:7 of
+msgid "milliseconds"
+msgstr ""
+
+#: bokeh.util.serialization.convert_timedelta_type:1 of
+msgid ""
+"Convert any recognized timedelta value to floating point absolute "
+"milliseconds."
+msgstr ""
+
+#: bokeh.util.serialization.decode_base64_dict:1 of
+msgid "Decode a base64 encoded array into a NumPy array."
+msgstr ""
+
+#: bokeh.util.serialization.decode_base64_dict:3 of
+msgid "encoded array data to decode"
+msgstr ""
+
+#: bokeh.util.serialization.decode_base64_dict:6 of
+msgid "Data should have the format encoded by :func:`encode_base64_dict`."
+msgstr ""
+
+#: bokeh.util.serialization.decode_base64_dict:8 of
+msgid "np.ndarray"
+msgstr ""
+
+#: bokeh.util.serialization.encode_binary_dict:1 of
+msgid "Send a numpy array as an unencoded binary buffer"
+msgstr ""
+
+#: bokeh.util.serialization.encode_base64_dict:3
+#: bokeh.util.serialization.encode_binary_dict:3 of
+msgid "The encoded format is a dict with the following structure:"
+msgstr ""
+
+#: bokeh.util.serialization.encode_base64_dict:13
+#: bokeh.util.serialization.encode_binary_dict:14 of
+msgid "an array to encode"
+msgstr ""
+
+#: bokeh.util.serialization.encode_binary_dict:16 of
+msgid ""
+"Set to add buffers to  **This is an \"out\" parameter**. The values it "
+"contains will be modified in-place."
+msgstr ""
+
+#: bokeh.util.serialization.encode_binary_dict:16 of
+msgid "Set to add buffers to"
+msgstr ""
+
+#: bokeh.util.serialization.encode_binary_dict:18
+#: bokeh.util.serialization.serialize_array:18
+#: bokeh.util.serialization.transform_array:21
+#: bokeh.util.serialization.transform_column_source_data:10
+#: bokeh.util.serialization.transform_series:18 of
+msgid ""
+"**This is an \"out\" parameter**. The values it contains will be modified"
+" in-place."
+msgstr ""
+
+#: bokeh.util.serialization.encode_base64_dict:16
+#: bokeh.util.serialization.encode_binary_dict:22 of
+msgid "dict"
+msgstr ""
+
+#: bokeh.util.serialization.encode_base64_dict:1 of
+msgid "Encode a NumPy array using base64:"
+msgstr ""
+
+#: bokeh.util.serialization.is_datetime_type:1 of
+msgid "Whether an object is any date, time, or datetime type recognized by Bokeh."
+msgstr ""
+
+#: bokeh.util.serialization.is_datetime_type:5
+#: bokeh.util.serialization.is_timedelta_type:4 of
+msgid "obj (object) : the object to test"
+msgstr ""
+
+#: bokeh.util.serialization.is_datetime_type:7 of
+msgid "True if ``obj`` is a datetime type"
+msgstr ""
+
+#: bokeh.util.serialization.is_timedelta_type:1 of
+msgid "Whether an object is any timedelta type recognized by Bokeh."
+msgstr ""
+
+#: bokeh.util.serialization.is_timedelta_type:6 of
+msgid "True if ``obj`` is a timedelta type"
+msgstr ""
+
+#: bokeh.util.serialization.make_globally_unique_id:1 of
+msgid "Return a globally unique UUID."
+msgstr ""
+
+#: bokeh.util.serialization.make_globally_unique_id:3 of
+msgid ""
+"Some situtations, e.g. id'ing dynamically created Divs in HTML documents,"
+" always require globally unique IDs."
+msgstr ""
+
+#: bokeh.util.serialization.make_globally_unique_id:6
+#: bokeh.util.serialization.make_id:8 bokeh.util.string.escape:12 of
+msgid "str"
+msgstr ""
+
+#: bokeh.util.serialization.make_id:1 of
+msgid "Return a new unique ID for a Bokeh object."
+msgstr ""
+
+#: bokeh.util.serialization.make_id:3 of
+msgid ""
+"Normally this function will return simple monotonically increasing "
+"integer IDs (as strings) for identifying Bokeh objects within a Document."
+" However, if it is desirable to have globally unique for every object, "
+"this behavior can be overridden by setting the environment variable "
+"``BOKEH_SIMPLE_IDS=no``."
+msgstr ""
+
+#: bokeh.util.serialization.serialize_array:1 of
+msgid "Transforms a NumPy array into serialized form."
+msgstr ""
+
+#: bokeh.util.serialization.serialize_array:3 of
+msgid "the NumPy array to transform"
+msgstr ""
+
+#: bokeh.util.serialization.serialize_array:5
+#: bokeh.util.serialization.transform_array:8
+#: bokeh.util.serialization.transform_series:5 of
+msgid ""
+"whether to only output to standard lists This function can encode some "
+"dtypes using a binary encoding, but setting this argument to True will "
+"override that and cause only standard Python lists to be emitted. "
+"(default: False)"
+msgstr ""
+
+#: bokeh.util.serialization.serialize_array:10
+#: bokeh.util.serialization.transform_array:13
+#: bokeh.util.serialization.transform_series:10 of
+msgid ""
+"If binary buffers are desired, the buffers parameter may be provided, and"
+" any columns that may be sent as binary buffers will be added to the set."
+" If None, then only base64 encoding will be used (default: None)  If "
+"force_list is True, then this value will be ignored, and no buffers will "
+"be generated.  **This is an \"out\" parameter**. The values it contains "
+"will be modified in-place."
+msgstr ""
+
+#: bokeh.util.serialization.serialize_array:10
+#: bokeh.util.serialization.transform_array:13
+#: bokeh.util.serialization.transform_column_source_data:5
+#: bokeh.util.serialization.transform_series:10 of
+msgid ""
+"If binary buffers are desired, the buffers parameter may be provided, and"
+" any columns that may be sent as binary buffers will be added to the set."
+" If None, then only base64 encoding will be used (default: None)"
+msgstr ""
+
+#: bokeh.util.serialization.serialize_array:15
+#: bokeh.util.serialization.transform_array:18
+#: bokeh.util.serialization.transform_series:15 of
+msgid ""
+"If force_list is True, then this value will be ignored, and no buffers "
+"will be generated."
+msgstr ""
+
+#: bokeh.util.serialization.serialize_array:22
+#: bokeh.util.serialization.transform_array_to_list:6
+#: bokeh.util.serialization.transform_series:22 of
+msgid "list or dict"
+msgstr ""
+
+#: bokeh.util.serialization.transform_array:1 of
+msgid "Transform a NumPy arrays into serialized format"
+msgstr ""
+
+#: bokeh.util.serialization.transform_array:3 of
+msgid "Converts un-serializable dtypes and returns JSON serializable format"
+msgstr ""
+
+#: bokeh.util.serialization.transform_array:6 of
+msgid "a NumPy array to be transformed"
+msgstr ""
+
+#: bokeh.util.serialization.transform_array:25 of
+msgid "JSON"
+msgstr ""
+
+#: bokeh.util.serialization.transform_array_to_list:1 of
+msgid "Transforms a NumPy array into a list of values"
+msgstr ""
+
+#: bokeh.util.serialization.transform_array_to_list:3 of
+msgid "the NumPy array series to transform"
+msgstr ""
+
+#: bokeh.util.serialization.transform_column_source_data:1 of
+msgid "Transform ``ColumnSourceData`` data to a serialized format"
+msgstr ""
+
+#: bokeh.util.serialization.transform_column_source_data:3 of
+msgid "the mapping of names to data columns to transform"
+msgstr ""
+
+#: bokeh.util.serialization.transform_column_source_data:5 of
+msgid ""
+"If binary buffers are desired, the buffers parameter may be provided, and"
+" any columns that may be sent as binary buffers will be added to the set."
+" If None, then only base64 encoding will be used (default: None)  **This "
+"is an \"out\" parameter**. The values it contains will be modified in-"
+"place."
+msgstr ""
+
+#: bokeh.util.serialization.transform_column_source_data:13 of
+msgid ""
+"Optional list of subset of columns to transform. If None, all columns "
+"will be transformed (default: None)"
+msgstr ""
+
+#: bokeh.util.serialization.transform_column_source_data:17 of
+msgid "JSON compatible dict"
+msgstr ""
+
+#: bokeh.util.serialization.traverse_data:1 of
+msgid "Recursively traverse an object until a flat list is found."
+msgstr ""
+
+#: bokeh.util.serialization.traverse_data:3 of
+msgid ""
+"If NumPy is available, the flat list is converted to a numpy array and "
+"passed to transform_array() to handle ``nan``, ``inf``, and ``-inf``."
+msgstr ""
+
+#: bokeh.util.serialization.traverse_data:7 of
+msgid "Otherwise, iterate through all items, converting non-JSON items"
+msgstr ""
+
+#: bokeh.util.serialization.traverse_data:9 of
+msgid "a list of values or lists"
+msgstr ""
+
+#: bokeh.util.serialization.traverse_data:11 of
+msgid "This argument is only useful for testing (default: True)"
+msgstr ""
+
+#: bokeh.util.serialization.transform_series:1 of
+msgid "Transforms a Pandas series into serialized form"
+msgstr ""
+
+#: bokeh.util.serialization.transform_series:3 of
+msgid "the Pandas series to transform"
+msgstr ""
+
+#: bokeh.util:92 of
+msgid "``bokeh.util.session_id``"
+msgstr ""
+
+#: bokeh.util.session_id:1 of
+msgid "Utilities for generating and manipulating session IDs."
+msgstr ""
+
+#: bokeh.util.session_id:3 of
+msgid ""
+"A session ID would typically be associated with each browser tab viewing "
+"an application or plot. Each session has its own state separate from any "
+"other sessions hosted by the server."
+msgstr ""
+
+#: bokeh.util.session_id.check_session_id_signature:1 of
+msgid "Check the signature of a session ID, returning True if it's valid."
+msgstr ""
+
+#: bokeh.util.session_id.check_session_id_signature:3 of
+msgid ""
+"The server uses this function to check whether a session ID was generated"
+" with the correct secret key. If signed sessions are disabled, this "
+"function always returns True."
+msgstr ""
+
+#: bokeh.util.session_id.check_session_id_signature:7 of
+msgid "The session ID to check"
+msgstr ""
+
+#: bokeh.util.session_id.check_session_id_signature:9
+#: bokeh.util.session_id.generate_session_id:16 of
+msgid "Secret key (default: value of 'BOKEH_SECRET_KEY' env var)"
+msgstr ""
+
+#: bokeh.util.session_id.check_session_id_signature:11 of
+msgid ""
+"Whether to check anything (default: value of 'BOKEH_SIGN_SESSIONS' env "
+"var)"
+msgstr ""
+
+#: bokeh.util.session_id.generate_secret_key:1 of
+msgid ""
+"Generate a new securely-generated secret key appropriate for SHA-256 HMAC"
+" signatures. This key could be used to sign Bokeh server session IDs for "
+"example."
+msgstr ""
+
+#: bokeh.util.session_id.generate_session_id:1 of
+msgid "Generate a random session ID."
+msgstr ""
+
+#: bokeh.util.session_id.generate_session_id:3 of
+msgid ""
+"Typically, each browser tab connected to a Bokeh application has its own "
+"session ID.  In production deployments of a Bokeh app, session IDs should"
+" be random and unguessable - otherwise users of the app could interfere "
+"with one another."
+msgstr ""
+
+#: bokeh.util.session_id.generate_session_id:8 of
+msgid ""
+"If session IDs are signed with a secret key, the server can verify that "
+"the generator of the session ID was \"authorized\" (the generator had to "
+"know the secret key). This can be used to have a separate process, such "
+"as another web application, which generates new sessions on a Bokeh "
+"server. This other process may require users to log in before redirecting"
+" them to the Bokeh server with a valid session ID, for example."
+msgstr ""
+
+#: bokeh.util.session_id.generate_session_id:18 of
+msgid ""
+"Whether to sign the session ID (default: value of 'BOKEH_SIGN_SESSIONS' "
+"env var)"
+msgstr ""
+
+#: bokeh.util:100 of
+msgid "``bokeh.util.string``"
+msgstr ""
+
+#: bokeh.util.string:1 of
+msgid "Functions useful for string manipulations or encoding."
+msgstr ""
+
+#: bokeh.util.string.decode_utf8:1 of
+msgid "Decode a sequence of bytes to a UTF-8 string"
+msgstr ""
+
+#: bokeh.util.string.decode_utf8:3 of
+msgid "the bytes to decode"
+msgstr ""
+
+#: bokeh.util.string.decode_utf8:6 of
+msgid "UTF-8 string"
+msgstr ""
+
+#: bokeh.util.string.encode_utf8:1 of
+msgid "Encode a UTF-8 string to a sequence of bytes."
+msgstr ""
+
+#: bokeh.util.string.encode_utf8:3 of
+msgid "the string to encode"
+msgstr ""
+
+#: bokeh.util.string.encode_utf8:6 of
+msgid "bytes"
+msgstr ""
+
+#: bokeh.util.string.escape:1 of
+msgid "Perform HTML-safe escaping."
+msgstr ""
+
+#: bokeh.util.string.escape:3 of
+msgid ""
+"Replaces special characters \"&\", \"<\" and \">\" to HTML-safe "
+"sequences, and optionally translates quote characters."
+msgstr ""
+
+#: bokeh.util.string.escape:6 of
+msgid "a string to escape"
+msgstr ""
+
+#: bokeh.util.string.escape:8 of
+msgid "which quote characters to replace (default: (\"'\", '\"'))"
+msgstr ""
+
+#: bokeh.util.string.format_docstring:1 of
+msgid "Safely format docstrings."
+msgstr ""
+
+#: bokeh.util.string.format_docstring:3 of
+msgid ""
+"When Python is executed with the ``-OO`` option, doc strings are removed "
+"and replaced the value ``None``. This function guards against applying "
+"the string formatting options in that case."
+msgstr ""
+
+#: bokeh.util.string.format_docstring:7 of
+msgid "The docstring to format, or ``None``"
+msgstr ""
+
+#: bokeh.util.string.format_docstring:9 bokeh.util.string.format_docstring:11
+#: of
+msgid "string formatting arguments for the docsring"
+msgstr ""
+
+#: bokeh.util.string.format_docstring:14 of
+msgid "str or None"
+msgstr ""
+
+#: bokeh.util.string.indent:1 of
+msgid "Indent all the lines in a given block of text by a specified amount."
+msgstr ""
+
+#: bokeh.util.string.indent:3 of
+msgid "The text to indent"
+msgstr ""
+
+#: bokeh.util.string.indent:5 of
+msgid "The amount to indent each line by (default: 2)"
+msgstr ""
+
+#: bokeh.util.string.indent:7 of
+msgid "What character to fill the indentation with (default: \" \")"
+msgstr ""
+
+#: bokeh.util.string.nice_join:1 of
+msgid ""
+"Join together sequences of strings into English-friendly phrases using "
+"the conjunction ``or`` when appropriate."
+msgstr ""
+
+#: bokeh.util.string.nice_join:4 of
+msgid "a sequence of strings to nicely join"
+msgstr ""
+
+#: bokeh.util.string.nice_join:6 of
+msgid "a sequence delimiter to use (default: \", \")"
+msgstr ""
+
+#: bokeh.util.string.nice_join:8 of
+msgid ""
+"a conjuction to use for the last two items, or None to reproduce basic "
+"join behaviour (default: \"or\")"
+msgstr ""
+
+#: bokeh.util.string.nice_join:12 of
+msgid "a joined string"
+msgstr ""
+
+#: bokeh.util.string.nice_join:15 of
+msgid "Examples"
+msgstr ""
+
+#: bokeh.util.string.snakify:1 of
+msgid "Convert CamelCase to snake_case."
+msgstr ""
+
+#: bokeh.util:108 of
+msgid "``bokeh.util.tornado``"
+msgstr ""
+
+#: bokeh.util.tornado:1 of
+msgid "Internal utils related to Tornado"
+msgstr ""
+
+#: bokeh.util.tornado.yield_for_all_futures:1 of
+msgid "Converts result into a Future by collapsing any futures inside result."
+msgstr ""
+
+#: bokeh.util.tornado.yield_for_all_futures:3 of
+msgid ""
+"If result is a Future we yield until it's done, then if the value inside "
+"the Future is another Future we yield until it's done as well, and so on."
+msgstr ""
+
+#: bokeh.util:116 of
+msgid "``bokeh.util.terminal``"
+msgstr ""
+
+#: bokeh.util.terminal:1 of
+msgid "Provide utilities for formatting terminal output."
+msgstr ""
+
+#: bokeh.util:124 of
+msgid "``bokeh.util.version``"
+msgstr ""
+
+#: bokeh.util.version:1 of
+msgid "Provide a version for the Bokeh library."
+msgstr ""
+
+#: bokeh.util.version:3 of
+msgid ""
+"This module uses `versioneer`_ to manage version strings. During "
+"development, `versioneer`_ will compute a version string from the current"
+" git revision. For packaged releases based off tags, the version string "
+"is hard coded in the files packaged for distribution."
+msgstr ""
+
+#: bokeh.util.version:10 of
+msgid "The full version string for this installed Bokeh library"
+msgstr ""
+
+#: bokeh.util.version:15 of
+msgid "Functions:"
+msgstr ""
+
+#: bokeh.util.version:15 of
+msgid "base_version:"
+msgstr ""
+
+#: bokeh.util.version:14 of
+msgid ""
+"Return the base version string, without any \"dev\", \"rc\" or local "
+"build information appended."
+msgstr ""
+
+#: bokeh.util:132 of
+msgid "``bokeh.util.warnings``"
+msgstr ""
+
+#: bokeh.util.warnings:1 of
+msgid "Provide Bokeh-specific warning subclasses."
+msgstr ""
+
+#: bokeh.util.warnings:3 of
+msgid ""
+"The primary use of these subclasses to to force them to be "
+"unconditionally displayed to users by default."
+msgstr ""
+
+#: bokeh.util.warnings.BokehDeprecationWarning:1 of
+msgid "A Bokeh-specific ``DeprecationWarning`` subclass."
+msgstr ""
+
+#: bokeh.util.warnings.BokehDeprecationWarning:3 of
+msgid "Used to selectively filter Bokeh deprecations for unconditional display."
+msgstr ""
+
+#: bokeh.util.warnings.BokehUserWarning:1 of
+msgid "A Bokeh-specific ``UserWarning`` subclass."
+msgstr ""
+
+#: bokeh.util.warnings.BokehUserWarning:3 of
+msgid "Used to selectively filter Bokeh warnings for unconditional display."
+msgstr ""
+

@@ -1,0 +1,427 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/document/events.rst:4
+msgid "bokeh.document.events"
+msgstr ""
+
+#: bokeh.document.events:1 of
+msgid "Provide events that represent various changes to Bokeh Documents."
+msgstr ""
+
+#: bokeh.document.events:3 of
+msgid ""
+"These events are used internally to signal changes to Documents. For "
+"information about user-facing (e.g. UI or tool) events, see the reference"
+" for :ref:`bokeh.events`."
+msgstr ""
+
+#: bokeh.document.events.ColumnDataChangedEvent:1 of
+msgid ""
+"A concrete event representing efficiently replacing *all* existing data "
+"for a :class:`~bokeh.models.sources.ColumnDataSource`"
+msgstr ""
+
+#: bokeh.document.events.ColumnDataChangedEvent.__init__
+#: bokeh.document.events.ColumnDataChangedEvent.generate
+#: bokeh.document.events.ColumnsPatchedEvent.__init__
+#: bokeh.document.events.ColumnsPatchedEvent.generate
+#: bokeh.document.events.ColumnsStreamedEvent.__init__
+#: bokeh.document.events.ColumnsStreamedEvent.generate
+#: bokeh.document.events.DocumentChangedEvent.__init__
+#: bokeh.document.events.DocumentPatchedEvent.generate
+#: bokeh.document.events.ModelChangedEvent.__init__
+#: bokeh.document.events.ModelChangedEvent.generate
+#: bokeh.document.events.RootAddedEvent.__init__
+#: bokeh.document.events.RootAddedEvent.generate
+#: bokeh.document.events.RootRemovedEvent.__init__
+#: bokeh.document.events.RootRemovedEvent.generate
+#: bokeh.document.events.SessionCallbackAdded.__init__
+#: bokeh.document.events.SessionCallbackRemoved.__init__
+#: bokeh.document.events.TitleChangedEvent.__init__
+#: bokeh.document.events.TitleChangedEvent.generate of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.document.events.ColumnDataChangedEvent.__init__:1
+#: bokeh.document.events.ColumnsPatchedEvent.__init__:1
+#: bokeh.document.events.ColumnsStreamedEvent.__init__:1
+#: bokeh.document.events.DocumentChangedEvent.__init__:1
+#: bokeh.document.events.ModelChangedEvent.__init__:1
+#: bokeh.document.events.RootAddedEvent.__init__:1
+#: bokeh.document.events.RootRemovedEvent.__init__:1
+#: bokeh.document.events.SessionCallbackAdded.__init__:1
+#: bokeh.document.events.SessionCallbackRemoved.__init__:1
+#: bokeh.document.events.TitleChangedEvent.__init__:1 of
+msgid "A Bokeh document that is to be updated."
+msgstr ""
+
+#: bokeh.document.events.ColumnDataChangedEvent.__init__:5 of
+msgid ""
+"optional explicit list of column names to update. If None, all columns "
+"will be updated (default: None)"
+msgstr ""
+
+#: bokeh.document.events.ColumnDataChangedEvent.__init__:8
+#: bokeh.document.events.ColumnsPatchedEvent.__init__:7
+#: bokeh.document.events.ColumnsStreamedEvent.__init__:13
+#: bokeh.document.events.ModelChangedEvent.__init__:19
+#: bokeh.document.events.RootAddedEvent.__init__:5
+#: bokeh.document.events.RootRemovedEvent.__init__:5
+#: bokeh.document.events.TitleChangedEvent.__init__:5 of
+msgid ""
+"This is used to prevent \"boomerang\" updates to Bokeh apps. (default: "
+"None)  See :class:`~bokeh.document.events.DocumentChangedEvent` for more "
+"details."
+msgstr ""
+
+#: bokeh.document.events.ColumnDataChangedEvent.__init__:8
+#: bokeh.document.events.ColumnsPatchedEvent.__init__:7
+#: bokeh.document.events.ColumnsStreamedEvent.__init__:13
+#: bokeh.document.events.DocumentChangedEvent.__init__:3
+#: bokeh.document.events.ModelChangedEvent.__init__:19
+#: bokeh.document.events.RootAddedEvent.__init__:5
+#: bokeh.document.events.RootRemovedEvent.__init__:5
+#: bokeh.document.events.TitleChangedEvent.__init__:5 of
+msgid ""
+"This is used to prevent \"boomerang\" updates to Bokeh apps. (default: "
+"None)"
+msgstr ""
+
+#: bokeh.document.events.ColumnDataChangedEvent.__init__:11
+#: bokeh.document.events.ColumnsPatchedEvent.__init__:10
+#: bokeh.document.events.ColumnsStreamedEvent.__init__:16
+#: bokeh.document.events.ModelChangedEvent.__init__:22
+#: bokeh.document.events.RootAddedEvent.__init__:8
+#: bokeh.document.events.RootRemovedEvent.__init__:8
+#: bokeh.document.events.TitleChangedEvent.__init__:8 of
+msgid "See :class:`~bokeh.document.events.DocumentChangedEvent` for more details."
+msgstr ""
+
+#: bokeh.document.events.ColumnDataChangedEvent.__init__:14
+#: bokeh.document.events.ColumnsPatchedEvent.__init__:13
+#: bokeh.document.events.ColumnsStreamedEvent.__init__:19
+#: bokeh.document.events.DocumentChangedEvent.__init__:13
+#: bokeh.document.events.ModelChangedEvent.__init__:25
+#: bokeh.document.events.RootAddedEvent.__init__:11
+#: bokeh.document.events.RootRemovedEvent.__init__:11
+#: bokeh.document.events.TitleChangedEvent.__init__:11 of
+msgid ""
+"A callable that will invoke any Model callbacks that should be executed "
+"in response to the change that triggered this event. (default: None)"
+msgstr ""
+
+#: bokeh.document.events.ColumnDataChangedEvent.dispatch:1
+#: bokeh.document.events.ColumnsPatchedEvent.dispatch:1
+#: bokeh.document.events.ColumnsStreamedEvent.dispatch:1
+#: bokeh.document.events.DocumentChangedEvent.dispatch:1
+#: bokeh.document.events.DocumentPatchedEvent.dispatch:1
+#: bokeh.document.events.ModelChangedEvent.dispatch:1
+#: bokeh.document.events.SessionCallbackAdded.dispatch:1
+#: bokeh.document.events.SessionCallbackRemoved.dispatch:1 of
+msgid "Dispatch handling of this event to a receiver."
+msgstr ""
+
+#: bokeh.document.events.ColumnDataChangedEvent.dispatch:3 of
+msgid "This method will invoke ``receiver._column_data_changed`` if it exists."
+msgstr ""
+
+#: bokeh.document.events.ColumnDataChangedEvent.generate:1
+#: bokeh.document.events.ColumnsPatchedEvent.generate:1
+#: bokeh.document.events.ColumnsStreamedEvent.generate:1
+#: bokeh.document.events.DocumentPatchedEvent.generate:1
+#: bokeh.document.events.ModelChangedEvent.generate:1
+#: bokeh.document.events.RootAddedEvent.generate:1
+#: bokeh.document.events.RootRemovedEvent.generate:1
+#: bokeh.document.events.TitleChangedEvent.generate:1 of
+msgid ""
+"Create a JSON representation of this event suitable for sending to "
+"clients."
+msgstr ""
+
+#: bokeh.document.events.ColumnDataChangedEvent.generate:13
+#: bokeh.document.events.ColumnsPatchedEvent.generate:12
+#: bokeh.document.events.ColumnsStreamedEvent.generate:13
+#: bokeh.document.events.DocumentPatchedEvent.generate:6
+#: bokeh.document.events.ModelChangedEvent.generate:4
+#: bokeh.document.events.RootAddedEvent.generate:11
+#: bokeh.document.events.RootRemovedEvent.generate:11
+#: bokeh.document.events.TitleChangedEvent.generate:11 of
+msgid ""
+"If the event requires references to certain models in order to function, "
+"they may be collected here.  **This is an \"out\" parameter**. The values"
+" it contains will be modified in-place."
+msgstr ""
+
+#: bokeh.document.events.ColumnDataChangedEvent.generate:13
+#: bokeh.document.events.ColumnsPatchedEvent.generate:12
+#: bokeh.document.events.ColumnsStreamedEvent.generate:13
+#: bokeh.document.events.DocumentPatchedEvent.generate:6
+#: bokeh.document.events.ModelChangedEvent.generate:4
+#: bokeh.document.events.RootAddedEvent.generate:11
+#: bokeh.document.events.RootRemovedEvent.generate:11
+#: bokeh.document.events.TitleChangedEvent.generate:11 of
+msgid ""
+"If the event requires references to certain models in order to function, "
+"they may be collected here."
+msgstr ""
+
+#: bokeh.document.events.ColumnDataChangedEvent.generate:16
+#: bokeh.document.events.ColumnDataChangedEvent.generate:22
+#: bokeh.document.events.ColumnsPatchedEvent.generate:15
+#: bokeh.document.events.ColumnsPatchedEvent.generate:21
+#: bokeh.document.events.ColumnsStreamedEvent.generate:16
+#: bokeh.document.events.ColumnsStreamedEvent.generate:22
+#: bokeh.document.events.DocumentPatchedEvent.generate:9
+#: bokeh.document.events.DocumentPatchedEvent.generate:15
+#: bokeh.document.events.ModelChangedEvent.generate:7
+#: bokeh.document.events.ModelChangedEvent.generate:13
+#: bokeh.document.events.RootAddedEvent.generate:14
+#: bokeh.document.events.RootAddedEvent.generate:20
+#: bokeh.document.events.RootRemovedEvent.generate:14
+#: bokeh.document.events.RootRemovedEvent.generate:20
+#: bokeh.document.events.TitleChangedEvent.generate:14
+#: bokeh.document.events.TitleChangedEvent.generate:20 of
+msgid ""
+"**This is an \"out\" parameter**. The values it contains will be modified"
+" in-place."
+msgstr ""
+
+#: bokeh.document.events.ColumnDataChangedEvent.generate:19
+#: bokeh.document.events.ColumnsPatchedEvent.generate:18
+#: bokeh.document.events.ColumnsStreamedEvent.generate:19
+#: bokeh.document.events.DocumentPatchedEvent.generate:12
+#: bokeh.document.events.ModelChangedEvent.generate:10
+#: bokeh.document.events.RootAddedEvent.generate:17
+#: bokeh.document.events.RootRemovedEvent.generate:17
+#: bokeh.document.events.TitleChangedEvent.generate:17 of
+msgid ""
+"If the event needs to supply any additional Bokeh protocol buffers, they "
+"may be added to this set.  **This is an \"out\" parameter**. The values "
+"it contains will be modified in-place."
+msgstr ""
+
+#: bokeh.document.events.ColumnDataChangedEvent.generate:19
+#: bokeh.document.events.ColumnsPatchedEvent.generate:18
+#: bokeh.document.events.ColumnsStreamedEvent.generate:19
+#: bokeh.document.events.DocumentPatchedEvent.generate:12
+#: bokeh.document.events.ModelChangedEvent.generate:10
+#: bokeh.document.events.RootAddedEvent.generate:17
+#: bokeh.document.events.RootRemovedEvent.generate:17
+#: bokeh.document.events.TitleChangedEvent.generate:17 of
+msgid ""
+"If the event needs to supply any additional Bokeh protocol buffers, they "
+"may be added to this set."
+msgstr ""
+
+#: bokeh.document.events.ColumnsStreamedEvent:1 of
+msgid ""
+"A concrete event representing efficiently streaming new data to a "
+":class:`~bokeh.models.sources.ColumnDataSource`"
+msgstr ""
+
+#: bokeh.document.events.ColumnsStreamedEvent.__init__:3 of
+msgid "The data source to stream new data to."
+msgstr ""
+
+#: bokeh.document.events.ColumnsStreamedEvent.__init__:5 of
+msgid ""
+"New data to stream.  If a DataFrame, will be stored as ``{c: df[c] for c "
+"in df.columns}``"
+msgstr ""
+
+#: bokeh.document.events.ColumnsStreamedEvent.__init__:5 of
+msgid "New data to stream."
+msgstr ""
+
+#: bokeh.document.events.ColumnsStreamedEvent.__init__:7 of
+msgid "If a DataFrame, will be stored as ``{c: df[c] for c in df.columns}``"
+msgstr ""
+
+#: bokeh.document.events.ColumnsStreamedEvent.__init__:9 of
+msgid ""
+"A rollover limit. If the data source columns exceed this limit, earlier "
+"values will be discarded to maintain the column length under the limit."
+msgstr ""
+
+#: bokeh.document.events.ColumnsStreamedEvent.dispatch:3 of
+msgid "This method will invoke ``receiver._columns_streamed`` if it exists."
+msgstr ""
+
+#: bokeh.document.events.ColumnsPatchedEvent:1 of
+msgid ""
+"A concrete event representing efficiently applying data patches to a "
+":class:`~bokeh.models.sources.ColumnDataSource`"
+msgstr ""
+
+#: bokeh.document.events.ColumnsPatchedEvent.__init__:3 of
+msgid "The data source to apply patches to."
+msgstr ""
+
+#: bokeh.document.events.ColumnsPatchedEvent.dispatch:3 of
+msgid "This method will invoke ``receiver._columns_patched`` if it exists."
+msgstr ""
+
+#: bokeh.document.events.DocumentChangedEvent:1 of
+msgid ""
+"Base class for all internal events representing a change to a Bokeh "
+"Document."
+msgstr ""
+
+#: bokeh.document.events.DocumentChangedEvent.__init__:3 of
+msgid ""
+"This is used to prevent \"boomerang\" updates to Bokeh apps. (default: "
+"None)  In the context of a Bokeh server application, incoming updates to "
+"properties will be annotated with the session that is doing the updating."
+" This value is propagated through any subsequent change notifications "
+"that the update triggers. The session can compare the event setter to "
+"itself, and suppress any updates that originate from itself."
+msgstr ""
+
+#: bokeh.document.events.DocumentChangedEvent.__init__:6 of
+msgid ""
+"In the context of a Bokeh server application, incoming updates to "
+"properties will be annotated with the session that is doing the updating."
+" This value is propagated through any subsequent change notifications "
+"that the update triggers. The session can compare the event setter to "
+"itself, and suppress any updates that originate from itself."
+msgstr ""
+
+#: bokeh.document.events.DocumentChangedEvent.dispatch:3 of
+msgid "This method will invoke ``receiver._document_changed`` if it exists."
+msgstr ""
+
+#: bokeh.document.events.DocumentPatchedEvent:1 of
+msgid ""
+"A Base class for events that represent updating Bokeh Models and their "
+"properties."
+msgstr ""
+
+#: bokeh.document.events.DocumentPatchedEvent.dispatch:3 of
+msgid "This method will invoke ``receiver._document_patched`` if it exists."
+msgstr ""
+
+#: bokeh.document.events.DocumentPatchedEvent.generate:4 of
+msgid "*Sub-classes must implement this method.*"
+msgstr ""
+
+#: bokeh.document.events.ModelChangedEvent:1 of
+msgid ""
+"A concrete event representing updating an attribute and value of a "
+"specific Bokeh Model."
+msgstr ""
+
+#: bokeh.document.events.ModelChangedEvent:4 of
+msgid ""
+"This is the \"standard\" way of updating most Bokeh model attributes. For"
+" special casing situations that can optimized (e.g. streaming, etc.), a "
+"``hint`` may be supplied that overrides normal mechanisms."
+msgstr ""
+
+#: bokeh.document.events.ModelChangedEvent.__init__:3 of
+msgid "A Model to update"
+msgstr ""
+
+#: bokeh.document.events.ModelChangedEvent.__init__:5 of
+msgid "The name of the attribute to update on the model."
+msgstr ""
+
+#: bokeh.document.events.ModelChangedEvent.__init__:7 of
+msgid "The old value of the attribute"
+msgstr ""
+
+#: bokeh.document.events.ModelChangedEvent.__init__:9 of
+msgid "The new value of the attribute"
+msgstr ""
+
+#: bokeh.document.events.ModelChangedEvent.__init__:11 of
+msgid ""
+"A serialized (JSON) version of the new value. It may be ``None`` if a "
+"hint is supplied."
+msgstr ""
+
+#: bokeh.document.events.ModelChangedEvent.__init__:14 of
+msgid ""
+"When appropriate, a secondary event may be supplied that modifies the "
+"normal update process. For example, in order to stream or patch data more"
+" efficiently than the standard update mechanism."
+msgstr ""
+
+#: bokeh.document.events.ModelChangedEvent.dispatch:3 of
+msgid "This method will invoke ``receiver._document_model_dhanged`` if it exists."
+msgstr ""
+
+#: bokeh.document.events.RootAddedEvent:1 of
+msgid ""
+"A concrete event representing a change to add a new Model to a Document's"
+" collection of \"root\" models."
+msgstr ""
+
+#: bokeh.document.events.RootAddedEvent.__init__:3 of
+msgid "The Bokeh Model to add as a Document root."
+msgstr ""
+
+#: bokeh.document.events.RootRemovedEvent:1 of
+msgid ""
+"A concrete event representing a change to remove an existing Model from a"
+" Document's collection of \"root\" models."
+msgstr ""
+
+#: bokeh.document.events.RootRemovedEvent.__init__:3 of
+msgid "The Bokeh Model to remove as a Document root."
+msgstr ""
+
+#: bokeh.document.events.SessionCallbackAdded:1 of
+msgid ""
+"A concrete event representing a change to add a new callback (e.g. "
+"periodic, timeout, or \"next tick\") to a Document."
+msgstr ""
+
+#: bokeh.document.events.SessionCallbackAdded.__init__:3 of
+msgid "The callback to add"
+msgstr ""
+
+#: bokeh.document.events.SessionCallbackAdded.dispatch:3 of
+msgid "This method will invoke ``receiver._session_callback_added`` if it exists."
+msgstr ""
+
+#: bokeh.document.events.SessionCallbackRemoved:1 of
+msgid ""
+"A concrete event representing a change to remove an existing callback "
+"(e.g. periodic, timeout, or \"next tick\") from a Document."
+msgstr ""
+
+#: bokeh.document.events.SessionCallbackRemoved.__init__:3 of
+msgid "The callback to remove"
+msgstr ""
+
+#: bokeh.document.events.SessionCallbackRemoved.dispatch:3 of
+msgid ""
+"This method will invoke ``receiver._session_callback_removed`` if it "
+"exists."
+msgstr ""
+
+#: bokeh.document.events.TitleChangedEvent:1 of
+msgid "A concrete event representing a change to the title of a Bokeh Document."
+msgstr ""
+
+#: bokeh.document.events.TitleChangedEvent.__init__:3 of
+msgid "The new title to set on the Document"
+msgstr ""
+

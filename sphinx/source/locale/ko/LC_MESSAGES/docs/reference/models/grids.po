@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/grids.rst:4
+msgid "bokeh.models.grids"
+msgstr ""
+
+#: bokeh.models.grids:1 of
+msgid "A guide renderer for displaying grid lines on Bokeh plots."
+msgstr ""
+
+#: bokeh.models.grids.Grid:1 of
+msgid "Bases: :class:`bokeh.models.renderers.GuideRenderer`"
+msgstr ""
+
+#: bokeh.models.grids.Grid:1 of
+msgid ""
+"Display horizontal or vertical grid lines at locations given by a "
+"supplied ``Ticker``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.NumberSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill alpha of alternating bands between Grid lines."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.ColorSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill color of alternating bands between Grid lines."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Auto` , "
+":class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.Float` , "
+":class:`~bokeh.core.properties.Float`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Bounds for the rendered grid lines. By default, a grid will look for a "
+"corresponding axis to ask for bounds. If one cannot be found, the grid "
+"will span the entire visible range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Which dimension the Axis Grid lines will intersect. The x-axis is "
+"dimension 0 (vertical Grid lines) and the y-axis is dimension 1 "
+"(horizontal Grid lines)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha of the Grid lines."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LineCap`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap of the Grid lines."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color of the Grid lines."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.DashPattern`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash of the Grid lines."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset of the Grid lines."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LineJoin`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join of the Grid lines."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width of the Grid lines."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha of the minor Grid lines."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap of the minor Grid lines."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color of the minor Grid lines."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash of the minor Grid lines."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset of the minor Grid lines."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join of the minor Grid lines."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width of the minor Grid lines."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.tickers.Ticker`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The Ticker to use for computing locations for the Grid lines."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A particular (named) x-range to use for computing screen locations when "
+"rendering a grid on the plot. If unset, use the default x-range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A particular (named) y-range to use for computing screen locations when "
+"rendering a grid on the plot. If unset, use the default y-range."
+msgstr ""
+

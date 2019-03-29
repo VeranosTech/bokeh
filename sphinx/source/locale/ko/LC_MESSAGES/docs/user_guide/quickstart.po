@@ -1,0 +1,602 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/quickstart.rst:4
+msgid "Quickstart"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:6
+msgid ""
+"Bokeh is an interactive visualization library that targets modern web "
+"browsers for presentation. Bokeh provides elegant, concise construction "
+"of versatile graphics with high-performance interactivity over very large"
+" or streaming datasets in a quick and easy way from Python (or other "
+"languages)."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:11
+msgid ""
+"To offer both simplicity and the powerful and flexible features needed "
+"for advanced customizations, Bokeh exposes two interface levels to users:"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:16
+msgid "|bokeh.models|"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:15
+msgid ""
+"A *low-level* interface that provides the most flexibility to application"
+" developers."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:19
+msgid "|bokeh.plotting|"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:19
+msgid "A *higher-level* interface centered around composing visual glyphs."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:21
+msgid "This Quickstart focuses on the |bokeh.plotting| interface."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:26
+msgid "Installation"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:28
+msgid ""
+"There are multiple ways to install Bokeh, and we recommend the easiest "
+"one, which is to use the `Anaconda Python distribution`_ and enter this "
+"command at a Bash or Windows command prompt:"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:36
+msgid ""
+"This installs all the dependencies that Bokeh needs. Anaconda minimizes "
+"installation effort on all platforms and configurations, including "
+"Windows, and also installs the examples into the ``examples/`` "
+"subdirectory of your Anaconda or Miniconda installation directory."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:41
+msgid ""
+"If you are confident that you have installed all needed dependencies, "
+"such as NumPy, you may instead use ``pip`` at the command line:"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:49
+msgid ""
+"The ``pip`` method does not install the examples. Clone the Git "
+"repository and look in the ``examples/`` directory of the checkout to see"
+" examples."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:55
+msgid "Getting Started"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:57
+msgid ""
+"Bokeh is a large library that exposes many capabilities, so this section "
+"is only a quick tour of some common Bokeh use cases and workflows. For "
+"more detailed information please consult the full :ref:`userguide`."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:61
+msgid "Let's begin with some examples."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:63
+msgid ""
+"Plotting data in basic Python lists as a line plot including zoom, pan, "
+"save, and other tools is simple and straightforward:"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:87
+msgid ""
+"When you execute this script, you will see that a new output file "
+"``\"lines.html\"`` is created, and that a browser automatically opens a "
+"new tab to display it. (For presentation purposes we have included the "
+"plot output directly inline in this document.)"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:92
+msgid "The basic steps to creating plots with the |bokeh.plotting| interface are:"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:96
+msgid "Prepare some data"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:95
+msgid ""
+"In this case plain python lists, but could also be NumPy arrays or Pandas"
+" series."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:100
+msgid "Tell Bokeh where to generate output"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:99
+msgid ""
+"In this case using |output_file|, with the filename ``\"lines.html\"``. "
+"Another option is |output_notebook| for use in Jupyter notebooks."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:104
+msgid "Call |figure|"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:103
+msgid ""
+"This creates a plot with typical default options and easy customization "
+"of title, tools, and axes labels."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:108
+msgid "Add renderers"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:107
+msgid ""
+"In this case, we use |Figure.line| for our data, specifying visual "
+"customizations like colors, legends and widths."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:112
+msgid "Ask Bokeh to |show| or |save| the results."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:111
+msgid ""
+"These functions save the plot to an HTML file and optionally display it "
+"in a browser."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:114
+msgid ""
+"Steps three and four can be repeated to create more than one plot, as "
+"shown in some of the examples below."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:117
+msgid ""
+"The |bokeh.plotting| interface is also quite handy if we need to "
+"customize the output a bit more by adding more data series, glyphs, "
+"logarithmic axis, and so on. It's also possible to easily combine "
+"multiple glyphs together on one plot as shown below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:157
+msgid "Jupyter Notebooks"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:159
+msgid "At this point we should mention Jupyter notebooks."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:161
+msgid ""
+"Jupyter notebooks are a common tool for exploratory data analysis, widely"
+" used across the PyData community. Bokeh integrates seamlessly with "
+"Jupyter notebooks. To view the above examples in a notebook, you would "
+"only change |output_file| to a call to |output_notebook| instead."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:166
+msgid ""
+"You can interact directly with `live tutorial notebooks`_ hosted online "
+"by MyBinder. Static versions of these may be viewed at the `Bokeh "
+"NBViewer Gallery`_."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:170
+msgid ""
+"The `Bokeh GitHub repository`_ also has a number of example notebooks in "
+"the ``examples/howto`` directory. After cloning the repository, navigate "
+"there and run:"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:177
+msgid ""
+"You can open and interact with any of the notebooks listed in the index "
+"page that automatically opens up. In particular, you might check out "
+"these examples, which show how Bokeh can be used together with Jupyter "
+"interactive widgets:"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:183
+msgid ":bokeh-tree:`examples/howto/notebook_comms/Jupyter Interactors.ipynb`"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:182
+msgid ""
+"A basic example that combines Bokeh's interactive capabilities with "
+"Jupyter's dropdowns and sliders."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:187
+msgid ":bokeh-tree:`examples/howto/notebook_comms/Numba Image Example.ipynb`"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:186
+msgid ""
+"A more advanced example that uses Numba to efficiently perform image "
+"processing interactively based on Jupyter widget controls."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:191
+msgid ""
+"Note that Bokeh plots cannot be displayed inline in notebook previews on "
+"GitHub. Bokeh uses JavaScript code to render plots and GitHub scrubs all "
+"JavaScript from previewed content."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:198
+msgid "Other Languages"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:200
+msgid ""
+"Bokeh's architecture makes it possible to create bindings for Bokeh in "
+"other languages, and in fact several already exist. The core are heavily "
+"invested in Python, but having many language options is a compelling "
+"feature. Here are some of the other ways to use Bokeh:"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:205
+msgid "`Bokeh for R`_"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:206
+msgid "`Bokeh for Scala`_"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:211
+msgid "Sample Data"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:213
+msgid ""
+"Some of the examples included in the Bokeh source make use of sample data"
+" files that are distributed separately. To download this data, execute "
+"the following commands at a Bash or Windows command prompt:"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:224
+msgid "Concepts"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:226
+msgid ""
+"Let's consider the plots above, and use them to help define some core "
+"concepts."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:229
+msgid "Plot"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:231
+msgid ""
+"Plots are a central concept in Bokeh. They are containers that hold all "
+"the various objects (renderers, guides, data, and tools) that comprise "
+"the final visualization that is presented to users. The |bokeh.plotting| "
+"interface provides a |figure| function to help with assembling all the "
+"necessary objects."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:237
+msgid "Glyphs"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:239
+msgid ""
+"Glyphs are the basic visual marks that Bokeh can display. At the lowest "
+"level, there are **glyph objects**, such as |Line|. If you are using the "
+"low-level |bokeh.models| interface, it is your responsibility to create "
+"and coordinate all the various Bokeh objects, including glyph objects and"
+" their data sources. To make life easier, the |bokeh.plotting| interface "
+"exposes higher-level **glyph methods** such as the |Figure.line| method "
+"used in the first example. The second example also adds in calls to "
+"|Figure.circle| to display circle and line glyphs together on the same "
+"plot. Besides lines and circles, Bokeh makes many additional |glyphs| and"
+" |markers| available."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:249
+msgid ""
+"The visual appearance of a glyph is tied directly to the data values that"
+" are associated with the glyph's various attributes. In the example above"
+" we see that positional attributes like `x` and `y` can be set to vectors"
+" of data. But glyphs also have some combination of |line_props|, "
+"|fill_props|, and |text_props| to control their appearance. All of these "
+"attributes can be set with \"vectorized\" values as well. We will show "
+"examples of this below."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:257
+msgid "Guides and Annotations"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:259
+msgid ""
+"Bokeh plots can also have other visual components that aid presentation "
+"or help the user make comparisons. These fall into two categories. "
+"**Guides** are visual aids that help users judge distances, angles, etc. "
+"These include grid lines or bands, axes (such as linear, log, or "
+"datetime) that may have ticks and tick labels as well. **Annotations** "
+"are visual aids that label or name parts of the plot. These include "
+"titles, legends, etc."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:267
+msgid "Ranges"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:269
+msgid ""
+"Ranges describe the data-space bounds of a plot. By default, plots "
+"generated with the |bokeh.plotting| interface come configured with "
+":class:`DataRange1d <bokeh.models.ranges.DataRange1d>` objects that try "
+"to automatically set the plot bounds to encompass all the available data."
+" But it is possible to supply explicit :class:`Range1d "
+"<bokeh.models.ranges.Range1d>` objects for fixed bounds. As a convenience"
+" these can also typically be spelled as 2-tuples or lists::"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:280
+msgid "Resources"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:282
+msgid ""
+"To generate plots, the client library BokehJS JavaScript and CSS code "
+"must be loaded into the browser. By default, the |output_file| function "
+"will load BokehJS from http://cdn.pydata.org . However, you can also "
+"configure Bokeh to generate static HTML files with BokehJS resources "
+"embedded directly inside, by passing the argument ``mode=\"inline\"`` to "
+"the |output_file| function."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:289
+msgid "More examples"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:291
+msgid ""
+"Here are a few more examples to demonstrate other common tasks and use "
+"cases with the |bokeh.plotting| interface."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:297
+msgid "Vectorized colors and sizes"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:299
+msgid ""
+"This example shows how it is possible to provide sequences of data values"
+" for glyph attributes like ``fill_color`` and ``radius``. Other things to"
+" look out for in this example:"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:303
+msgid "supplying an explicit list of tool names to |figure|"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:304
+msgid "fetching BokehJS resources from CDN using the ``mode`` argument"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:305
+msgid "setting the ``x_range`` and ``y_range`` explicitly"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:306
+msgid "turning a line *off* (by setting its value to ``None``)"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:307
+msgid "using NumPy arrays for supplying data"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:342
+msgid "Linked panning and brushing"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:344
+msgid ""
+"Linking together various aspects of different plots can be a useful "
+"technique for data visualization. In Bokeh, such linkages are typically "
+"accomplished by *sharing* some plot component between plots. Below is an "
+"example that demonstrates **linked panning** (where changing the range of"
+" one plot causes others to update) by sharing range objects between the "
+"plots. Some other things to look out for in this example:"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:351
+msgid "calling |figure| multiple times to create multiple plots"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:352
+msgid "using |gridplot| to arrange several plots in an array"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:353
+msgid ""
+"showing new glyphs using new glyph methods |Figure.triangle| and "
+"|Figure.square|"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:355
+msgid "hiding the toolbar by setting ``toolbar_location`` to ``None``"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:356
+msgid ""
+"setting convenience arguments ``color`` (sets both ``line_color`` and "
+"``fill_color``) and ``alpha`` (sets both ``line_alpha`` and "
+"``fill_alpha``)"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:396
+msgid ""
+"Although the toolbar is hidden, the pan tool is still present and active."
+" Click and drag the above plots to pan them, and see how their ranges are"
+" linked together."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:400
+msgid ""
+"Another linkage that is often useful is **linked brushing** (where a "
+"selection on one plot causes a selection to update on other plots). Below"
+" is an example that demonstrates linked brushing by sharing a "
+"|ColumnDataSource| between two plots:"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:440
+msgid ""
+"Choose the box or lasso select tool, and click and drag to make a "
+"selection on one plot, which will update the selection on the other plot."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:447
+msgid "Datetime axes"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:449
+msgid ""
+"Dealing with date and time series is another common task. Bokeh has a "
+"sophisticated |DatetimeAxis| that can change the displayed ticks based on"
+" the current scale of the plot. There are some inputs for which Bokeh "
+"will automatically default to |DatetimeAxis|, but you can always "
+"explicitly ask for one by passing the value ``\"datetime\"`` to  the "
+"``x_axis_type`` or ``y_axis_type`` parameters to |figure|. A few things "
+"of interest to look out for in this example:"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:457
+msgid "setting the ``plot_width`` and ``plot_height`` arguments to |figure|"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:458
+msgid ""
+"customizing plots and other objects by assigning values to their "
+"attributes"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:459
+msgid ""
+"accessing guides and annotations with convenience |Figure| attributes: "
+"|legend|, |grid|, |xgrid|, |ygrid|, |axis|, |xaxis|, |yaxis|"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:503
+msgid "Bokeh Application Server"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:505
+msgid ""
+"Bokeh also comes with an optional server component, the Bokeh Server. It "
+"is possible to create many interesting and interactive visualizations "
+"without using the Bokeh server, as we have seen above. However, the Bokeh"
+" server affords many novel and powerful capabilities, including:"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:510
+msgid "UI widgets and plot selections driving computations and plot updates."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:511
+msgid "Intelligent server-side downsampling of large datasets."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:512
+msgid "Streaming data automatically updating plots."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:513
+msgid "Sophisticated glyph re-writing and transformations for \"Big Data\"."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:514
+msgid "Plot and dashboard publishing for wider audiences."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:516
+msgid ""
+"Details of Bokeh server usage require more space than a Quickstart "
+"allows, but you can see (and interact with) a simple Bokeh server app "
+"below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:540
+msgid ""
+"More examples of hosted Bokeh applications can be found in the "
+":ref:`gallery_server_examples` section of the :ref:`gallery`. For "
+"information about how to use the server and write Bokeh server plots and "
+"apps, consult the :ref:`userguide_server` section of the "
+":ref:`userguide`."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:549
+msgid "What's next?"
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:551
+msgid "This Quickstart barely scratches the surface of Bokeh capability."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:553
+msgid ""
+"For more information about the different plotting APIs Bokeh offers, "
+"using the Bokeh server, and how to embed Bokeh plots in your own apps and"
+" documents, check out the :ref:`userguide`. For detailed information "
+"about all modules, classes, models, and objects, consult the "
+":ref:`refguide`. If you are interested in learning how to build and "
+"develop Bokeh, or for information about how to create a new language "
+"binding, see the :ref:`devguide`."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:561
+msgid ""
+"To see ready-made examples of how you might use Bokeh with your own data,"
+" check out the :ref:`gallery`. To see detailed examples and walkthroughs "
+"as well as find exercises for learning Bokeh by doing, work through the "
+"`live Tutorial notebooks`_."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:566
+msgid ""
+"For questions and technical assistance, come join the `Bokeh mailing "
+"list`_."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:568
+msgid "Visit the `Bokeh GitHub repository`_ and try the examples."
+msgstr ""
+
+#: ../../source/docs/user_guide/quickstart.rst:570
+msgid "Be sure to follow us on Twitter `@bokehplots <Twitter_>`_!"
+msgstr ""
+

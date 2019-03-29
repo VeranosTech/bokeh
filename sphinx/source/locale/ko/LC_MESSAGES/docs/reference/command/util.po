@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/command/util.rst:4
+msgid "bokeh.command.util"
+msgstr ""
+
+#: bokeh.command.util:1 of
+msgid "Provide utility functions for implementing the ``bokeh`` command."
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_application:1 of
+msgid ""
+"Return a Bokeh application built using a single handler for a script, "
+"notebook, or directory."
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_application:4 of
+msgid ""
+"In general a Bokeh :class:`~bokeh.application.application.Application` "
+"may have any number of handlers to initialize "
+":class:`~bokeh.document.Document` objects for new client sessions. "
+"However, in many cases only a single handler is needed. This function "
+"examines the ``path`` provided, and returns an ``Application`` "
+"initialized with one of the following handlers:"
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_application:10 of
+msgid ""
+":class:`~bokeh.application.handlers.script.ScriptHandler` when ``path`` "
+"is to a ``.py`` script."
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_application:13 of
+msgid ""
+":class:`~bokeh.application.handlers.notebook.NotebookHandler` when "
+"``path`` is to an ``.ipynb`` Jupyter notebook."
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_application:16 of
+msgid ""
+":class:`~bokeh.application.handlers.directory.DirectoryHandler` when "
+"``path`` is to a directory containing a ``main.py`` script."
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_application
+#: bokeh.command.util.build_single_handler_applications bokeh.command.util.die
+#: bokeh.command.util.report_server_init_errors of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_application:19 of
+msgid "path to a file or directory for creating a Bokeh application."
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_application:22 of
+msgid "command line arguments to pass to the application handler"
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_application
+#: bokeh.command.util.build_single_handler_applications of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_application:26 of
+msgid ":class:`~bokeh.application.application.Application`"
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_application
+#: bokeh.command.util.build_single_handler_applications of
+msgid "raises"
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_application:28
+#: bokeh.command.util.build_single_handler_applications:17 of
+msgid ":exc:`RuntimeError`"
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_application:31 of
+msgid "Notes"
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_application:32 of
+msgid ""
+"If ``path`` ends with a file ``main.py`` then a warning will be printed "
+"regarding running directory-style apps by passing the directory instead."
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_applications:1 of
+msgid ""
+"Return a dictionary mapping routes to Bokeh applications built using "
+"single handlers, for specified files or directories."
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_applications:4 of
+msgid ""
+"This function iterates over ``paths`` and ``argvs`` and calls "
+":func:`~bokeh.command.util.build_single_handler_application` on each to "
+"generate the mapping."
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_applications:8 of
+msgid "paths to files or directories for creating Bokeh applications."
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_applications:11 of
+msgid ""
+"mapping of paths to command line arguments to pass to the handler for "
+"each path"
+msgstr ""
+
+#: bokeh.command.util.build_single_handler_applications:15 of
+msgid "dict[str, Application]"
+msgstr ""
+
+#: bokeh.command.util.die:1 of
+msgid "Print an error message and exit."
+msgstr ""
+
+#: bokeh.command.util.die:3 of
+msgid ""
+"This function will call ``sys.exit`` with the given ``status`` and the "
+"process will terminate."
+msgstr ""
+
+#: bokeh.command.util.die:6 of
+msgid "error message to print"
+msgstr ""
+
+#: bokeh.command.util.die:8 of
+msgid "the exit status to pass to ``sys.exit``"
+msgstr ""
+
+#: bokeh.command.util.report_server_init_errors:1 of
+msgid ""
+"A context manager to help print more informative error messages when a "
+"``Server`` cannot be started due to a network problem."
+msgstr ""
+
+#: bokeh.command.util.report_server_init_errors:4
+#: bokeh.command.util.report_server_init_errors:6 of
+msgid "network address that the server will be listening on"
+msgstr ""
+
+#: bokeh.command.util.report_server_init_errors:10 of
+msgid "Example"
+msgstr ""
+
+#: bokeh.command.util.report_server_init_errors:16 of
+msgid ""
+"If there are any errors (e.g. port or address in already in use) then a "
+"critical error will be logged and the process will terminate with a call "
+"to ``sys.exit(1)``"
+msgstr ""
+

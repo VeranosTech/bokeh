@@ -1,0 +1,234 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide.rst:4
+msgid "User Guide"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:6
+msgid ""
+"This user guide is intended to walk you through many common tasks that "
+"you might want to accomplish using Bokeh. The guide is arranged by topic:"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:11
+msgid ":ref:`userguide_quickstart`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:11
+msgid "Get set up and running quickly."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:14
+msgid ":ref:`userguide_concepts`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:14
+msgid "Learn important foundational concepts about how Bokeh is organized."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:18
+msgid ":ref:`userguide_plotting`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:17
+msgid ""
+"Make different kinds of plots using the simple but flexible glyph methods"
+" from the |bokeh.plotting| interface."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:22
+msgid ":ref:`userguide_data`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:21
+msgid ""
+"Provide data or subsets of data for plots and tables and share data "
+"between plots."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:25
+msgid ":ref:`userguide_layout`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:25
+msgid "Combine multiple plots and widgets into specified layouts."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:29
+msgid ":ref:`userguide_categorical`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:28
+msgid ""
+"Handle categorical data with a variety of different techniques such as "
+"bar charts, categorical heatmaps, visual dodging, and jitter."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:32
+msgid ":ref:`userguide_graph`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:32
+msgid ""
+"Create network graph visualizations with configurable node and edge "
+"interactions."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:35
+msgid ":ref:`userguide_geo`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:35
+msgid "Working with geographical data---Google Maps, GeoJSON, Tile Rendering."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:39
+msgid ":ref:`userguide_tools`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:38
+msgid ""
+"Make interactive tools (like pan, zoom, select, and others) available on "
+"your plots."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:43
+msgid ":ref:`userguide_styling`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:42
+msgid ""
+"Customize every visual aspect of Bokeh plots---axes, grids, labels, "
+"glyphs, and more."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:47
+msgid ":ref:`userguide_annotations`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:46
+msgid ""
+"Add informational annotations, such as labels, arrows, and legends to "
+"plots."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:51
+msgid ":ref:`userguide_interaction`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:50
+msgid ""
+"Create more sophisticated interactions including widgets or linked "
+"panning and selection."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:55
+msgid ":ref:`userguide_server`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:54
+msgid ""
+"Deploy the Bokeh Server to build and publish sophisticated data "
+"applications."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:58
+msgid ":ref:`userguide_notebook`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:58
+msgid "Display interactive plots inside Jupyter notebooks."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:61
+msgid ":ref:`userguide_export`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:61
+msgid "Learn how to export Bokeh layouts as PNGs and SVGs."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:65
+msgid ":ref:`userguide_embed`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:64
+msgid ""
+"Embed static or server-based Bokeh plots and widgets into HTML documents "
+"in a variety of ways."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:69
+msgid ":ref:`userguide_cli`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:68
+msgid "Use Bokeh's capabilities from the command line with the ``bokeh`` command."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:72
+msgid ":ref:`userguide_extensions`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:72
+msgid "Add new capability to Bokeh with custom user extensions."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:75
+msgid ":ref:`userguide_compat`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:75
+msgid "Use Bokeh together with libraries such as `Datashader`_ and  `HoloViews`_."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:78
+msgid ":ref:`userguide_webgl`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:78
+msgid "Improve performance for large datasets by using WebGL."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:81
+msgid ":ref:`userguide_bokehjs`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:81
+msgid "Create plots in JavaScript by using BokehJS directly."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:84
+msgid ":ref:`userguide_info`"
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:84
+msgid "See where to go next for more information and examples."
+msgstr ""
+
+#: ../../source/docs/user_guide.rst:86
+msgid ""
+"The examples in the user guide are written to be as minimal as possible, "
+"while illustrating how to accomplish a single task within Bokeh. With a "
+"handful of exceptions, no outside libraries such as NumPy or Pandas,are "
+"required to run the examples as written. However, Bokeh works well with "
+"NumPy, Pandas, or almost any array or table-like data structure."
+msgstr ""
+

@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/application/handlers/notebook.rst:4
+msgid "bokeh.application.handlers.notebook"
+msgstr ""
+
+#: bokeh.application.handlers.notebook:1 of
+msgid ""
+"Provide a Bokeh Application Handler to build up documents by running the "
+"code from Jupyter notebook (``.ipynb``) files."
+msgstr ""
+
+#: bokeh.application.handlers.notebook:4 of
+msgid ""
+"This handler is configured with the filename of a Jupyter notebook. When "
+"a Bokeh application calls ``modify_doc``, the code from all the notebook "
+"cells is collected and executed to process a new Document for a session. "
+"When the notebook code is executed, the Document being modified will be "
+"available as ``curdoc``, and any optionally provided ``args`` will be "
+"available as ``sys.argv``."
+msgstr ""
+
+#: bokeh.application.handlers.notebook.NotebookHandler:1 of
+msgid ""
+"A Handler that uses code in a Jupyter notebook for modifying Bokeh "
+"Documents."
+msgstr ""
+
+#: bokeh.application.handlers.notebook.NotebookHandler.__init__:1 of
+msgid "Keywords:"
+msgstr ""
+
+#: bokeh.application.handlers.notebook.NotebookHandler.__init__:2 of
+msgid "filename (str) : a path to a Jupyter notebook (\".ipynb\") file"
+msgstr ""
+

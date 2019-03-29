@@ -1,0 +1,293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/widgets.inputs.rst:4
+msgid "bokeh.models.widgets.inputs"
+msgstr ""
+
+#: bokeh.models.widgets.inputs:1 of
+msgid "Various kinds of input widgets and form controls."
+msgstr ""
+
+#: bokeh.models.widgets.inputs.AutocompleteInput:1
+#: bokeh.models.widgets.inputs.PasswordInput:1
+#: bokeh.models.widgets.inputs.TextAreaInput:1 of
+msgid "Bases: :class:`bokeh.models.widgets.inputs.TextInput`"
+msgstr ""
+
+#: bokeh.models.widgets.inputs.AutocompleteInput:1 of
+msgid "Single-line input widget with auto-completion."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.String`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A list of completion strings. This will be used to guide the user upon "
+"typing the beginning of a desired value."
+msgstr ""
+
+#: bokeh.models.widgets.inputs.ColorPicker:1
+#: bokeh.models.widgets.inputs.DatePicker:1
+#: bokeh.models.widgets.inputs.MultiSelect:1
+#: bokeh.models.widgets.inputs.Select:1 bokeh.models.widgets.inputs.Spinner:1
+#: bokeh.models.widgets.inputs.TextInput:1 of
+msgid "Bases: :class:`bokeh.models.widgets.inputs.InputWidget`"
+msgstr ""
+
+#: bokeh.models.widgets.inputs.ColorPicker:1 of
+msgid "Color picker widget"
+msgstr ""
+
+#: bokeh.models.widgets.inputs.ColorPicker:4 of
+msgid ""
+"This widget as a limited support on *Internet Explorer* (it will be "
+"displayed as a simple text input)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.callbacks.Callback`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A callback to run in the browser whenever the current date value changes."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.ColorHex`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The initial color of the picked color (named or hexadecimal)"
+msgstr ""
+
+#: bokeh.models.widgets.inputs.DatePicker:1 of
+msgid "Calendar-based date picker widget."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Date`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Optional latest allowable date."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Optional earliest allowable date."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The initial or picked date."
+msgstr ""
+
+#: bokeh.models.widgets.inputs.InputWidget:1 of
+msgid "Bases: :class:`bokeh.models.widgets.widget.Widget`"
+msgstr ""
+
+#: bokeh.models.widgets.inputs.InputWidget:1 of
+msgid "Abstract base class for input widgets."
+msgstr ""
+
+#: bokeh.models.widgets.inputs.InputWidget:5 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Widget's label."
+msgstr ""
+
+#: bokeh.models.widgets.inputs.MultiSelect:1 of
+msgid "Multi-select widget."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A callback to run in the browser whenever the current selection value "
+"changes."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.String`  ) ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Available selection options. Options may be provided either as a list of "
+"possible string values, or as a list of tuples, each of the form "
+"``(value, label)``. In the latter case, the visible widget text for each "
+"value will be corresponding given label."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The number of visible options in the dropdown list. (This uses the "
+"``select`` HTML element's ``size`` attribute. Some browsers might not "
+"show less than 3 options.)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Initial or selected values."
+msgstr ""
+
+#: bokeh.models.widgets.inputs.PasswordInput:1 of
+msgid ""
+"Single-line password input widget. Note: Despite ``PasswordInput`` "
+"inheriting from ``TextInput`` the password cannot be inspected on the "
+"field ``value``. Also, note that this field functionally just hides the "
+"input on the browser, transmitting safely a password as a callback, e.g.,"
+" to a bokeh server would require some secure connection."
+msgstr ""
+
+#: bokeh.models.widgets.inputs.Select:1 of
+msgid "Single-select widget."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A callback to run in the browser whenever the current Select dropdown "
+"value changes."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Int` , "
+":class:`~bokeh.core.properties.String`  ), "
+":class:`~bokeh.core.properties.String`  ) ) ), "
+":class:`~bokeh.core.properties.Dict` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Int` , "
+":class:`~bokeh.core.properties.String`  ), "
+":class:`~bokeh.core.properties.String`  ) ) ) ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Available selection options. Options may be provided either as a list of "
+"possible string values, or as a list of tuples, each of the form "
+"``(value, label)``. In the latter case, the visible widget text for each "
+"value will be corresponding given label. Option groupings can be provided"
+" by supplying a dictionary object whose values are in the aforementioned "
+"list format"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Initial or selected value."
+msgstr ""
+
+#: bokeh.models.widgets.inputs.Spinner:1 of
+msgid "Spinner widget for numerical inputs"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A callback to run in the browser whenever the user unfocuses the "
+"``SpinBox`` widget by hitting Enter or clicking outside of the box area."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Float`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Optional highest allowable value."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Optional lowest allowable value."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The step added or subtracted to the current value"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The initial value of the spinner"
+msgstr ""
+
+#: bokeh.models.widgets.inputs.TextInput:1 of
+msgid "Single-line input widget."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A callback to run in the browser whenever the user unfocuses the "
+"``TextInput`` widget by hitting Enter or clicking outside of the text box"
+" area."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Placeholder for empty input field"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Initial or entered text value."
+msgstr ""
+
+#: bokeh.models.widgets.inputs.TextAreaInput:1 of
+msgid "Multi-line input widget."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Specifies the width of the text area (in average character width). "
+"Default: 20"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Max count of characters in field"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Specifies the height of the text area (in lines). Default: 2"
+msgstr ""
+

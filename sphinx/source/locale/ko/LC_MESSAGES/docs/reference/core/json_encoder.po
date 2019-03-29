@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/core/json_encoder.rst:4
+msgid "bokeh.core.json_encoder"
+msgstr ""
+
+#: bokeh.core.json_encoder:1 of
+msgid ""
+"Provide a functions and classes to implement a custom JSON encoder for "
+"serializing objects for BokehJS."
+msgstr ""
+
+#: bokeh.core.json_encoder:4 of
+msgid ""
+"The primary interface is provided by the |serialize_json| function, which"
+" uses the custom |BokehJSONEncoder| to produce JSON output."
+msgstr ""
+
+#: bokeh.core.json_encoder:7 of
+msgid "In general, functions in this module convert values in the following way:"
+msgstr ""
+
+#: bokeh.core.json_encoder:9 of
+msgid ""
+"Datetime values (Python, Pandas, NumPy) are converted to floating point "
+"milliseconds since epoch."
+msgstr ""
+
+#: bokeh.core.json_encoder:12 of
+msgid "TimeDelta values are converted to absolute floating point milliseconds."
+msgstr ""
+
+#: bokeh.core.json_encoder:14 of
+msgid "RelativeDelta values are converted to dictionaries."
+msgstr ""
+
+#: bokeh.core.json_encoder:16 of
+msgid "Decimal values are converted to floating point."
+msgstr ""
+
+#: bokeh.core.json_encoder:18 of
+msgid ""
+"Sequences (Pandas Series, NumPy arrays, python sequences) that are passed"
+" though this interface are converted to lists. Note, however, that arrays"
+" in data sources inside Bokeh Documents are converted elsewhere, and by "
+"default use a binary encoded format."
+msgstr ""
+
+#: bokeh.core.json_encoder:23 of
+msgid ""
+"Bokeh ``Model`` instances are usually serialized elsewhere in the context"
+" of an entire Bokeh Document. Models passed trough this interface are "
+"converted to references."
+msgstr ""
+
+#: bokeh.core.json_encoder:27 of
+msgid ""
+"``HasProps`` (that are not Bokeh models) are converted to key/value dicts"
+" or all their properties and values."
+msgstr ""
+
+#: bokeh.core.json_encoder:30 of
+msgid "``Color`` instances are converted to CSS color values."
+msgstr ""
+
+#: bokeh.core.json_encoder.serialize_json:1 of
+msgid ""
+"Return a serialized JSON representation of objects, suitable to send to "
+"BokehJS."
+msgstr ""
+
+#: bokeh.core.json_encoder.serialize_json:4 of
+msgid ""
+"This function is typically used to serialize single python objects in the"
+" manner expected by BokehJS. In particular, many datetime values are "
+"automatically normalized to an expected format. Some Bokeh objects can "
+"also be passed, but note that Bokeh models are typically properly "
+"serialized in the context of an entire Bokeh document."
+msgstr ""
+
+#: bokeh.core.json_encoder.serialize_json:10 of
+msgid ""
+"The resulting JSON always has sorted keys. By default. the output is as "
+"compact as possible unless pretty output or indentation is requested."
+msgstr ""
+
+#: bokeh.core.json_encoder.BokehJSONEncoder.default
+#: bokeh.core.json_encoder.BokehJSONEncoder.transform_python_types
+#: bokeh.core.json_encoder.serialize_json of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.core.json_encoder.serialize_json:13 of
+msgid "the object to serialize to JSON format"
+msgstr ""
+
+#: bokeh.core.json_encoder.serialize_json:15 of
+msgid ""
+"Whether to generate prettified output. If ``True``, spaces are added "
+"after added after separators, and indentation and newlines are applied. "
+"(default: False)  Pretty output can also be enabled with the environment "
+"variable ``BOKEH_PRETTY``, which overrides this argument, if set."
+msgstr ""
+
+#: bokeh.core.json_encoder.serialize_json:15 of
+msgid ""
+"Whether to generate prettified output. If ``True``, spaces are added "
+"after added after separators, and indentation and newlines are applied. "
+"(default: False)"
+msgstr ""
+
+#: bokeh.core.json_encoder.serialize_json:19 of
+msgid ""
+"Pretty output can also be enabled with the environment variable "
+"``BOKEH_PRETTY``, which overrides this argument, if set."
+msgstr ""
+
+#: bokeh.core.json_encoder.serialize_json:22 of
+msgid ""
+"Amount of indentation to use in generated JSON output. If ``None`` then "
+"no indentation is used, unless pretty output is enabled, in which case "
+"two spaces are used. (default: None)"
+msgstr ""
+
+#: bokeh.core.json_encoder.serialize_json:27 of
+msgid ""
+"Any additional keyword arguments are passed to ``json.dumps``, except for"
+" some that  are computed internally, and cannot be overridden:"
+msgstr ""
+
+#: bokeh.core.json_encoder.serialize_json:30 of
+msgid "allow_nan"
+msgstr ""
+
+#: bokeh.core.json_encoder.serialize_json:31 of
+msgid "indent"
+msgstr ""
+
+#: bokeh.core.json_encoder.serialize_json:32 of
+msgid "separators"
+msgstr ""
+
+#: bokeh.core.json_encoder.serialize_json:33 of
+msgid "sort_keys"
+msgstr ""
+
+#: bokeh.core.json_encoder.serialize_json:36 of
+msgid "Examples"
+msgstr ""
+
+#: bokeh.core.json_encoder.BokehJSONEncoder:1 of
+msgid ""
+"A custom ``json.JSONEncoder`` subclass for encoding objects in accordance"
+" with the BokehJS protocol."
+msgstr ""
+
+#: bokeh.core.json_encoder.BokehJSONEncoder.default:1 of
+msgid "The required ``default`` method for ``JSONEncoder`` subclasses."
+msgstr ""
+
+#: bokeh.core.json_encoder.BokehJSONEncoder.default:3
+#: bokeh.core.json_encoder.BokehJSONEncoder.transform_python_types:4 of
+msgid ""
+"The object to encode. Anything not specifically handled in this method is"
+" passed on to the default system JSON encoder."
+msgstr ""
+
+#: bokeh.core.json_encoder.BokehJSONEncoder.transform_python_types:1 of
+msgid ""
+"Handle special scalars such as (Python, NumPy, or Pandas) datetimes, or "
+"Decimal values."
+msgstr ""
+

@@ -1,0 +1,459 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/data.rst:4
+msgid "Providing Data for Plots and Tables"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:6
+msgid ""
+"No data visualization is possible without the underlying data to be "
+"represented. In this section, the various ways of providing data for "
+"plots is explained, from passing data values directly to creating a "
+"|ColumnDataSource| and filtering using a |CDSView|."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:12
+msgid "Providing data directly"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:14
+msgid ""
+"In Bokeh, it is possible to pass lists of values directly into plotting "
+"functions. In the example below, the data, ``x_values`` and ``y_values``,"
+" are passed directly to the ``circle`` plotting method (see "
+":ref:`userguide_plotting` for more examples)."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:28
+msgid ""
+"When you pass in data like this, Bokeh works behind the scenes to make a "
+"|ColumnDataSource| for you. But learning to create and use the "
+"|ColumnDataSource| will enable you access more advanced capabilities, "
+"such as streaming data, sharing data between plots, and filtering data."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:34
+msgid "ColumnDataSource"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:36
+msgid ""
+"The |ColumnDataSource| is the core of most Bokeh plots, providing the "
+"data that is visualized by the glyphs of the plot. With the "
+"|ColumnDataSource|, it is easy to share data between multiple plots and "
+"widgets, such as the |DataTable|. When the same |ColumnDataSource| is "
+"used to drive multiple renderers, selections of the data source are also "
+"shared. Thus it is possible to use a select tool to choose data points "
+"from one plot and have them automatically highlighted in a second plot "
+"(:ref:`userguide_data_linked_selection`)."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:44
+msgid ""
+"At the most basic level, a |ColumnDataSource| is simply a mapping between"
+" column names and lists of data. The |ColumnDataSource| takes a ``data`` "
+"parameter which is a dict, with string column names as keys and lists (or"
+" arrays) of data values as values. If one positional argument is passed "
+"in to the |ColumnDataSource| initializer, it will be taken as ``data``. "
+"Once the |ColumnDataSource| has been created, it can be passed into the "
+"``source`` parameter of plotting methods which allows you to pass a "
+"column's name as a stand in for the data values:"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:65
+msgid ""
+"There is an implicit assumption that all the columns in a given "
+"``ColumnDataSource`` all have the same length at all times. For this "
+"reason, it is usually preferable to update the ``.data`` property of a "
+"data source \"all at once\"."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:71
+msgid "Pandas"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:73
+msgid ""
+"The ``data`` parameter can also be a Pandas ``DataFrame`` or ``GroupBy`` "
+"object."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:79
+msgid ""
+"If a ``DataFrame`` is used, the CDS will have columns corresponding to "
+"the columns of the ``DataFrame``. The index of the ``DataFrame`` will be "
+"reset, so if the ``DataFrame`` has a named index column, then CDS will "
+"also have a column with this name. However, if the index name is "
+"``None``, then the CDS will be assigned a generic name. It will be "
+"``index`` if it is available, and ``level_0`` otherwise."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:86
+msgid "Pandas MultiIndex"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:87
+msgid ""
+"All ``MultiIndex`` columns and indices will be flattened before forming "
+"the ``ColumnsDataSource``. For the index, an index of tuples will be "
+"created, and the names of the ``MultiIndex`` joined with an underscore. "
+"The column names will also be joined with an underscore. For example:"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:99
+msgid ""
+"will result in a column named ``index`` with ``[(A, B), (A, C), (A, D)]``"
+" and columns named ``a_b``, ``b_a``, and ``b_b``. This process will fail "
+"for non-string column names, so flatten the ``DataFrame`` manually in "
+"that case."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:104
+msgid "Pandas GroupBy"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:111
+msgid ""
+"If a ``GroupBy`` object is used, the CDS will have columns corresponding "
+"to the result of calling ``group.describe()``. The ``describe`` method "
+"generates columns for statistical measures such as ``mean`` and ``count``"
+" for all the non-grouped original columns. The resulting ``DataFrame`` "
+"has ``MultiIndex`` columns with the original column name and the computed"
+" measure, so it will be flattened using the aforementioned scheme. For "
+"example, if a ``DataFrame`` has columns ``'year'`` and ``'mpg'``. Then "
+"passing ``df.groupby('year')`` to a CDS will result in columns such as "
+"``'mpg_mean'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:119
+msgid ""
+"Note this capability to adapt ``GroupBy`` objects may only work with "
+"Pandas ``>=0.20.0``."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:122
+msgid "Streaming"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:124
+msgid ""
+"|ColumnDataSource| streaming is an efficient way to append new data to a "
+"CDS. By using the ``stream`` method, Bokeh only sends new data to the "
+"browser instead of the entire dataset. The ``stream`` method takes a "
+"``new_data`` parameter containing a dict mapping column names to "
+"sequences of data to be appended to the respective columns. It "
+"additionally takes an optional argument ``rollover``, which is the "
+"maximum length of data to keep (data from the beginning of the column "
+"will be discarded). The default ``rollover`` value of None allows data to"
+" grow unbounded."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:143
+msgid "For an example that uses streaming, see :bokeh-tree:`examples/app/ohlc`."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:146
+msgid "Patching"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:148
+msgid ""
+"|ColumnDataSource| patching is an efficient way to update slices of a "
+"data source. By using the ``patch`` method, Bokeh only needs to send new "
+"data to the browser instead of the entire dataset. The ``patch`` method "
+"should be passed a dict mapping column names to list of tuples that "
+"represent a patch change to apply."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:153
+msgid "The tuples that describe patch changes are of the form:"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:163
+msgid "For a full example, see :bokeh-tree:`examples/howto/patch_app.py`."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:166
+msgid "Transforming Data"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:168
+msgid ""
+"We have seen above how data can be added to a ``ColumnDataSource`` to "
+"drive Bokeh plots. This can include raw data or data that we explicitly "
+"transform ourselves, for example a column of colors created to control "
+"how the Markers in a scatter plot should be shaded. It is also possible "
+"to specify transforms that only occur in the browser. This can be useful "
+"to reduce both code (i.e. not having to color map data by hand) as well "
+"as the amount of data that has to be sent into the browser (only the raw "
+"data is sent, and colormapping occurs in the client)."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:177
+msgid ""
+"In this section we examine some of the different transform objects that "
+"are available."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:181
+msgid "Colors"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:183
+msgid ""
+"To perform linear colormapping in the browser, the "
+":func:`~bokeh.transform.linear_cmap` function may be used. It accepts the"
+" name of a ``ColumnDataSource`` column to colormap, a palette (which can "
+"be a built-in palette name, or an actual list of colors), and min/max "
+"values for the color mapping range. The result can be passed to a color "
+"property on glyphs:"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:193
+msgid "A complete example is shown here:"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:198
+msgid ""
+"Besides :func:`~bokeh.transform.linear_cmap` there is also "
+":func:`~bokeh.transform.log_cmap` to perform color mapping on a log "
+"scale, as well as :func:`~bokeh.transform.factor_cmap` to colormap "
+"categorical data (see the example below)."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:204
+msgid "Markers"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:206
+msgid ""
+"It is also possible to map categorical data to marker types. The example "
+"below shows the use of :func:`~bokeh.transform.factor_mark` to display "
+"different markers or different categories in the input data. It also "
+"demonstrates the use of :func:`~bokeh.transform.factor_cmap` to colormap "
+"those same categories:"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:215
+msgid ""
+"The :func:`~bokeh.transform.factor_mark` transform is primarily only "
+"useful with the ``scatter`` glyph method, since only the ``Scatter`` "
+"glyph can be parameterized by marker type."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:220
+msgid "CustomJSTransform"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:222
+msgid ""
+"In addition to built-in transforms above, there is also a "
+"``CustomJSTransform`` that allows for specifying arbitrary JavaScript "
+"code to perform a transform step on ColumnDataSource data. Typically, the"
+" ``v_func`` (for \"vectorized\" function) is provided. (Less commonly a "
+"scalar equivalent ``func`` may also be needed). The ``v_func`` code "
+"should expect an array of inputs in the variable ``xs``, and return a "
+"JavaScript array with the transformed values:"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:244
+msgid ""
+"The above code converts raw price data into a sequence of normalized "
+"returns relative to the first data point. The full result is shown below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:252
+msgid "Filtering Data"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:254
+msgid ""
+"It's often desirable to focus in on a portion of data that has been "
+"subsampled or filtered from a larger dataset. Bokeh allows you to specify"
+" a view of a data source that represents a subset of data. By having a "
+"view of the data source, the underlying data doesn't need to be changed "
+"and can be shared across plots. The view consists of one or more filters "
+"that select the rows of the data source that should be bound to a "
+"specific glyph."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:260
+msgid ""
+"To plot with a subset of data, you can create a |CDSView| and pass it in "
+"as a ``view`` argument to the renderer-adding methods on the |Figure|, "
+"such as ``figure.circle``. The |CDSView| has two properties, ``source`` "
+"and ``filters``. ``source`` is the |ColumnDataSource| that the view is "
+"associated with. ``filters`` is a list of |Filter| objects, listed and "
+"described below."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:278
+msgid "IndexFilter"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:280
+msgid ""
+"The |IndexFilter| is the simplest filter type. It has an ``indices`` "
+"property which is a list of integers that are the indices of the data you"
+" want to be included in the plot."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:288
+msgid "BooleanFilter"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:290
+msgid ""
+"A |BooleanFilter| selects rows from a data source through a list of True "
+"or False values in its ``booleans`` property."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:297
+msgid "GroupFilter"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:299
+msgid ""
+"The |GroupFilter| allows you to select rows from a dataset that have a "
+"specific value for a categorical variable. The |GroupFilter| has two "
+"properties, ``column_name``, the name of column in the "
+"|ColumnDataSource|, and ``group``, the value of the column to select for."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:303
+msgid ""
+"In the example below, ``flowers`` contains a categorical variable "
+"``species`` which is either ``setosa``, ``versicolor``, or ``virginica``."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:310
+msgid "CustomJSFilter"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:312
+msgid ""
+"You can also create a |CustomJSFilter| with your own functionality. To do"
+" this, use JavaScript, TypeScript or CoffeeScript to write code that "
+"returns either a list of indices or a list of booleans that represents "
+"the filtered subset. The |ColumnDataSource| that is associated with the "
+"|CDSView| this filter is added to will be available at render time with "
+"the variable ``source``."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:319
+msgid "Javascript"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:321
+msgid ""
+"To create a |CustomJSFilter| with custom functionality written in "
+"JavaScript, pass in the JavaScript code as a string to the parameter "
+"``code``:"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:341
+msgid "Coffeescript"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:343
+msgid ""
+"You can also write code for the ``CustomJSFilter`` in `CoffeeScript`_, "
+"and use the ``from_coffeescript`` class method, which accepts the "
+"``code`` parameter:"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:357
+msgid "AjaxDataSource"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:359
+msgid ""
+"Bokeh server applications make it simple to update and stream data to "
+"data sources, but sometimes it is desirable to have similar functionality"
+" in standalone documents. The "
+":class:`~bokeh.models.sources.AjaxDataSource` provides this capability."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:364
+msgid ""
+"The ``AjaxDataSource`` is configured with a URL to a REST endpoint and a "
+"polling interval. In the browser, the data source will request data from "
+"the endpoint at the specified interval and update the data locally. "
+"Existing data may either be replaced entirely, or appended to (up to a "
+"configurable ``max_size``). The endpoint that is supplied should return a"
+" JSON dict that matches the standard ``ColumnDataSource`` format:"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:378
+msgid ""
+"Otherwise, using an ``AjaxDataSource`` is identical to using a standard "
+"``ColumnDataSource``:"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:389
+msgid ""
+"A full example (shown below) can be seen at :bokeh-"
+"tree:`examples/howto/ajax_source.py`"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:397
+msgid "Linked selection"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:399
+msgid ""
+"Using the same |ColumnDataSource| in the two plots below allows their "
+"selections to be shared."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:408
+msgid "Linked selection with filtered data"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:410
+msgid ""
+"With the ability to specify a subset of data to be used for each glyph "
+"renderer, it is easy to share data between plots even when the plots use "
+"different subsets of data. By using the same |ColumnDataSource|, "
+"selections and hovered inspections of that data source are automatically "
+"shared."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:415
+msgid ""
+"In the example below, a |CDSView| is created for the second plot that "
+"specifies the subset of data in which the y values are either greater "
+"than 250 or less than 100. Selections in either plot are automatically "
+"reflected in the other. And hovering on a point in one plot will "
+"highlight the corresponding point in the other plot if it exists."
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:424
+msgid "Other Data Types"
+msgstr ""
+
+#: ../../source/docs/user_guide/data.rst:426
+msgid ""
+"Bokeh also has the capability to render network graph data and "
+"geographical data. For more information about how to set up the data for "
+"these types of plots, see :ref:`userguide_graph` and "
+":ref:`userguide_geo`."
+msgstr ""
+

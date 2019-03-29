@@ -1,0 +1,321 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/resources.rst:4
+msgid "bokeh.resources"
+msgstr ""
+
+#: bokeh.resources:1 of
+msgid ""
+"The resources module provides the Resources class for easily configuring "
+"how BokehJS code and CSS resources should be located, loaded, and "
+"embedded in Bokeh documents."
+msgstr ""
+
+#: bokeh.resources:5 of
+msgid "Also provides some pre-configured Resources objects."
+msgstr ""
+
+#: bokeh.resources:9 of
+msgid "load minified BokehJS from CDN"
+msgstr ""
+
+#: bokeh.resources:13 of
+msgid "provide minified BokehJS from library static directory"
+msgstr ""
+
+#: bokeh.resources.Resources:1 of
+msgid ""
+"The Resources class encapsulates information relating to loading or "
+"embedding Bokeh Javascript and CSS."
+msgstr ""
+
+#: bokeh.resources.CSSResources bokeh.resources.JSResources
+#: bokeh.resources.Resources of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.resources.Resources:4 of
+msgid ""
+"how should Bokeh JS and CSS be included in output  See below for "
+"descriptions of available modes"
+msgstr ""
+
+#: bokeh.resources.Resources:4 of
+msgid "how should Bokeh JS and CSS be included in output"
+msgstr ""
+
+#: bokeh.resources.CSSResources:5 bokeh.resources.JSResources:5
+#: bokeh.resources.Resources:6 of
+msgid "See below for descriptions of available modes"
+msgstr ""
+
+#: bokeh.resources.Resources:8 of
+msgid ""
+"what version of Bokeh JS and CSS to load  Only valid with the ``'cdn'`` "
+"mode"
+msgstr ""
+
+#: bokeh.resources.Resources:8 of
+msgid "what version of Bokeh JS and CSS to load"
+msgstr ""
+
+#: bokeh.resources.CSSResources:9 bokeh.resources.JSResources:9
+#: bokeh.resources.Resources:10 of
+msgid "Only valid with the ``'cdn'`` mode"
+msgstr ""
+
+#: bokeh.resources.Resources:12 of
+msgid ""
+"root directory for loading Bokeh JS and CSS assets  Only valid with "
+"``'relative'`` and ``'relative-dev'`` modes"
+msgstr ""
+
+#: bokeh.resources.Resources:12 of
+msgid "root directory for loading Bokeh JS and CSS assets"
+msgstr ""
+
+#: bokeh.resources.CSSResources:13 bokeh.resources.JSResources:13
+#: bokeh.resources.Resources:14 of
+msgid "Only valid with ``'relative'`` and ``'relative-dev'`` modes"
+msgstr ""
+
+#: bokeh.resources.Resources:16 of
+msgid "whether JavaScript and CSS should be minified or not (default: True)"
+msgstr ""
+
+#: bokeh.resources.CSSResources:17 bokeh.resources.Resources:18 of
+msgid ""
+"URL and port of Bokeh Server to load resources from  Only valid with "
+"``'server'`` and ``'server-dev'`` modes"
+msgstr ""
+
+#: bokeh.resources.CSSResources:17 bokeh.resources.Resources:18 of
+msgid "URL and port of Bokeh Server to load resources from"
+msgstr ""
+
+#: bokeh.resources.CSSResources:19 bokeh.resources.JSResources:25
+#: bokeh.resources.Resources:20 of
+msgid "Only valid with ``'server'`` and ``'server-dev'`` modes"
+msgstr ""
+
+#: bokeh.resources.CSSResources:22 bokeh.resources.JSResources:28
+#: bokeh.resources.Resources:23 of
+msgid ""
+"The following **mode** values are available for configuring a Resource "
+"object:"
+msgstr ""
+
+#: bokeh.resources.JSResources:30 bokeh.resources.Resources:25 of
+msgid "``'inline'`` configure to provide entire Bokeh JS and CSS inline"
+msgstr ""
+
+#: bokeh.resources.JSResources:31 bokeh.resources.Resources:26 of
+msgid ""
+"``'cdn'`` configure to load Bokeh JS and CSS from "
+"``http://cdn.pydata.org``"
+msgstr ""
+
+#: bokeh.resources.CSSResources:26 bokeh.resources.JSResources:32
+#: bokeh.resources.Resources:27 of
+msgid "``'server'`` configure to load from a Bokeh Server"
+msgstr ""
+
+#: bokeh.resources.JSResources:33 bokeh.resources.Resources:28 of
+msgid "``'server-dev'`` same as ``server`` but supports non-minified assets"
+msgstr ""
+
+#: bokeh.resources.CSSResources:28 bokeh.resources.JSResources:34
+#: bokeh.resources.Resources:29 of
+msgid "``'relative'`` configure to load relative to the given directory"
+msgstr ""
+
+#: bokeh.resources.JSResources:35 bokeh.resources.Resources:30 of
+msgid "``'relative-dev'`` same as ``relative`` but supports non-minified assets"
+msgstr ""
+
+#: bokeh.resources.CSSResources:30 bokeh.resources.JSResources:36
+#: bokeh.resources.Resources:31 of
+msgid ""
+"``'absolute'`` configure to load from the installed Bokeh library static "
+"directory"
+msgstr ""
+
+#: bokeh.resources.JSResources:37 bokeh.resources.Resources:32 of
+msgid "``'absolute-dev'`` same as ``absolute`` but supports non-minified assets"
+msgstr ""
+
+#: bokeh.resources.CSSResources:33 bokeh.resources.JSResources:39
+#: bokeh.resources.Resources:34 of
+msgid ""
+"Once configured, a Resource object exposes the following public "
+"attributes:"
+msgstr ""
+
+#: bokeh.resources.Resources:38 of
+msgid "any raw JS that needs to be placed inside ``<script>`` tags"
+msgstr ""
+
+#: bokeh.resources.CSSResources:37 bokeh.resources.JSResources:43
+#: bokeh.resources.Resources:42 of
+msgid "any raw CSS that needs to be places inside ``<style>`` tags"
+msgstr ""
+
+#: bokeh.resources.Resources:46 of
+msgid "URLs of any JS files that need to be loaded by ``<script>`` tags"
+msgstr ""
+
+#: bokeh.resources.CSSResources:41 bokeh.resources.JSResources:47
+#: bokeh.resources.Resources:50 of
+msgid "URLs of any CSS files that need to be loaded by ``<link>`` tags"
+msgstr ""
+
+#: bokeh.resources.CSSResources:45 bokeh.resources.JSResources:51
+#: bokeh.resources.Resources:54 of
+msgid "any informational messages concerning this configuration"
+msgstr ""
+
+#: bokeh.resources.CSSResources:47 bokeh.resources.JSResources:53
+#: bokeh.resources.Resources:56 of
+msgid ""
+"These attributes are often useful as template parameters when embedding "
+"Bokeh plots."
+msgstr ""
+
+#: bokeh.resources.JSResources:1 of
+msgid ""
+"The Resources class encapsulates information relating to loading or "
+"embedding Bokeh Javascript."
+msgstr ""
+
+#: bokeh.resources.JSResources:3 of
+msgid ""
+"How should Bokeh JS be included in output  See below for descriptions of "
+"available modes"
+msgstr ""
+
+#: bokeh.resources.JSResources:3 of
+msgid "How should Bokeh JS be included in output"
+msgstr ""
+
+#: bokeh.resources.JSResources:7 of
+msgid "what version of Bokeh JS to load  Only valid with the ``'cdn'`` mode"
+msgstr ""
+
+#: bokeh.resources.JSResources:7 of
+msgid "what version of Bokeh JS to load"
+msgstr ""
+
+#: bokeh.resources.JSResources:11 of
+msgid ""
+"root directory for loading Bokeh JS assets  Only valid with "
+"``'relative'`` and ``'relative-dev'`` modes"
+msgstr ""
+
+#: bokeh.resources.JSResources:11 of
+msgid "root directory for loading Bokeh JS assets"
+msgstr ""
+
+#: bokeh.resources.JSResources:15 of
+msgid "whether JavaScript should be minified or not (default: True)"
+msgstr ""
+
+#: bokeh.resources.JSResources:17 of
+msgid ""
+"URL and port of Bokeh Server to load resources from (default: None)  If "
+"``None``, absoute URLs based on the default server configuration will be "
+"generated.  ``root_url`` can also be the empty string, in which case "
+"relative URLs, e.g., \"static/css/bokeh.min.js\", are generated.  Only "
+"valid with ``'server'`` and ``'server-dev'`` modes"
+msgstr ""
+
+#: bokeh.resources.JSResources:17 of
+msgid "URL and port of Bokeh Server to load resources from (default: None)"
+msgstr ""
+
+#: bokeh.resources.JSResources:19 of
+msgid ""
+"If ``None``, absoute URLs based on the default server configuration will "
+"be generated."
+msgstr ""
+
+#: bokeh.resources.JSResources:22 of
+msgid ""
+"``root_url`` can also be the empty string, in which case relative URLs, "
+"e.g., \"static/css/bokeh.min.js\", are generated."
+msgstr ""
+
+#: bokeh.resources.CSSResources:1 of
+msgid ""
+"The CSSResources class encapsulates information relating to loading or "
+"embedding Bokeh client-side CSS."
+msgstr ""
+
+#: bokeh.resources.CSSResources:3 of
+msgid ""
+"how should Bokeh CSS be included in output  See below for descriptions of"
+" available modes"
+msgstr ""
+
+#: bokeh.resources.CSSResources:3 of
+msgid "how should Bokeh CSS be included in output"
+msgstr ""
+
+#: bokeh.resources.CSSResources:7 of
+msgid "what version of Bokeh CSS to load  Only valid with the ``'cdn'`` mode"
+msgstr ""
+
+#: bokeh.resources.CSSResources:7 of
+msgid "what version of Bokeh CSS to load"
+msgstr ""
+
+#: bokeh.resources.CSSResources:11 of
+msgid ""
+"root directory for loading BokehJS resources  Only valid with "
+"``'relative'`` and ``'relative-dev'`` modes"
+msgstr ""
+
+#: bokeh.resources.CSSResources:11 of
+msgid "root directory for loading BokehJS resources"
+msgstr ""
+
+#: bokeh.resources.CSSResources:15 of
+msgid "whether CSS should be minified or not (default: True)"
+msgstr ""
+
+#: bokeh.resources.CSSResources:24 of
+msgid "``'inline'`` configure to provide entire BokehJS code and CSS inline"
+msgstr ""
+
+#: bokeh.resources.CSSResources:25 of
+msgid "``'cdn'`` configure to load Bokeh CSS from ``http://cdn.pydata.org``"
+msgstr ""
+
+#: bokeh.resources.CSSResources:27 of
+msgid "``'server-dev'`` same as ``server`` but supports non-minified CSS"
+msgstr ""
+
+#: bokeh.resources.CSSResources:29 of
+msgid "``'relative-dev'`` same as ``relative`` but supports non-minified CSS"
+msgstr ""
+
+#: bokeh.resources.CSSResources:31 of
+msgid "``'absolute-dev'`` same as ``absolute`` but supports non-minified CSS"
+msgstr ""
+

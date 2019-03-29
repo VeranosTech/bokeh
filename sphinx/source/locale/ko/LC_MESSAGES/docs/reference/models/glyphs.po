@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/glyphs.rst:4
+msgid "bokeh.models.glyphs"
+msgstr ""
+
+#: bokeh.models.glyphs:1 of
+msgid ""
+"Display a variety of visual shapes whose attributes can be associated "
+"with data columns from ``ColumnDataSources``."
+msgstr ""
+
+#: bokeh.models.glyphs:4 of
+msgid "The full list of glyphs built into Bokeh is given below:"
+msgstr ""
+
+#: bokeh.models.glyphs:6 of
+msgid ":class:`~bokeh.models.glyphs.AnnularWedge`"
+msgstr ""
+
+#: bokeh.models.glyphs:7 of
+msgid ":class:`~bokeh.models.glyphs.Annulus`"
+msgstr ""
+
+#: bokeh.models.glyphs:8 of
+msgid ":class:`~bokeh.models.glyphs.Arc`"
+msgstr ""
+
+#: bokeh.models.glyphs:9 of
+msgid ":class:`~bokeh.models.glyphs.Bezier`"
+msgstr ""
+
+#: bokeh.models.glyphs:10 of
+msgid ":class:`~bokeh.models.glyphs.Ellipse`"
+msgstr ""
+
+#: bokeh.models.glyphs:11 of
+msgid ":class:`~bokeh.models.glyphs.HBar`"
+msgstr ""
+
+#: bokeh.models.glyphs:12 of
+msgid ":class:`~bokeh.models.glyphs.HexTile`"
+msgstr ""
+
+#: bokeh.models.glyphs:13 of
+msgid ":class:`~bokeh.models.glyphs.Image`"
+msgstr ""
+
+#: bokeh.models.glyphs:14 of
+msgid ":class:`~bokeh.models.glyphs.ImageRGBA`"
+msgstr ""
+
+#: bokeh.models.glyphs:15 of
+msgid ":class:`~bokeh.models.glyphs.ImageURL`"
+msgstr ""
+
+#: bokeh.models.glyphs:16 of
+msgid ":class:`~bokeh.models.glyphs.Line`"
+msgstr ""
+
+#: bokeh.models.glyphs:17 of
+msgid ":class:`~bokeh.models.glyphs.MultiLine`"
+msgstr ""
+
+#: bokeh.models.glyphs:18 of
+msgid ":class:`~bokeh.models.glyphs.MultiPolygons`"
+msgstr ""
+
+#: bokeh.models.glyphs:19 of
+msgid ":class:`~bokeh.models.glyphs.Oval`"
+msgstr ""
+
+#: bokeh.models.glyphs:20 of
+msgid ":class:`~bokeh.models.glyphs.Patch`"
+msgstr ""
+
+#: bokeh.models.glyphs:21 of
+msgid ":class:`~bokeh.models.glyphs.Patches`"
+msgstr ""
+
+#: bokeh.models.glyphs:22 of
+msgid ":class:`~bokeh.models.glyphs.Quad`"
+msgstr ""
+
+#: bokeh.models.glyphs:23 of
+msgid ":class:`~bokeh.models.glyphs.Quadratic`"
+msgstr ""
+
+#: bokeh.models.glyphs:24 of
+msgid ":class:`~bokeh.models.glyphs.Ray`"
+msgstr ""
+
+#: bokeh.models.glyphs:25 of
+msgid ":class:`~bokeh.models.glyphs.Rect`"
+msgstr ""
+
+#: bokeh.models.glyphs:26 of
+msgid ":class:`~bokeh.models.glyphs.Segment`"
+msgstr ""
+
+#: bokeh.models.glyphs:27 of
+msgid ":class:`~bokeh.models.glyphs.Step`"
+msgstr ""
+
+#: bokeh.models.glyphs:28 of
+msgid ":class:`~bokeh.models.glyphs.Text`"
+msgstr ""
+
+#: bokeh.models.glyphs:29 of
+msgid ":class:`~bokeh.models.glyphs.VBar`"
+msgstr ""
+
+#: bokeh.models.glyphs:30 of
+msgid ":class:`~bokeh.models.glyphs.Wedge`"
+msgstr ""
+
+#: bokeh.models.glyphs:32 of
+msgid ""
+"All these glyphs share a minimal common interface through their base "
+"class ``Glyph``:"
+msgstr ""
+
+#: bokeh.models.glyphs.Glyph:1 of
+msgid "Base class for all glyph models."
+msgstr ""
+
+#: bokeh.models.glyphs.Glyph:5 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+

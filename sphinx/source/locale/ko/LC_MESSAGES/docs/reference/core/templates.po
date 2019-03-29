@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/core/templates.rst:4
+msgid "bokeh.core.templates"
+msgstr ""
+
+#: bokeh.core.templates:1 of
+msgid ""
+"Provide Jinja2 templates used by Bokeh to embed Bokeh documents and "
+"models in various ways."
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "Renders JavaScript code for \"autoloading\"."
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid ""
+"The code automatically and asynchronously loads BokehJS (if necessary) "
+"and then replaces the AUTOLOAD_TAG ``<script>`` tag that calls it with "
+"the rendered model."
+msgstr ""
+
+#: ../../<bokeh-jinja>
+msgid "Parameters"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "the unique id for the script tag"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "URLs of JS files making up Bokeh library"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "CSS urls to inject"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid ""
+"Renders ``<script>`` tags that automatically load BokehJS (if necessary) "
+"and then renders a Bokeh model or document. The document may be specified"
+" as either an embedded doc ID or a server session ID. If a specific model"
+" ID is not specified, the entire document will be rendered."
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "path to AUTOLOAD script"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "the a unique id for the script tag"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid ""
+"The Bokeh model id for the object to render (if missing, render the whole"
+" doc; if present, only render the one model)"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "The id of the embedded Bokeh document to render"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid ""
+"This script injects a ``<div>`` in place, so must be placed under "
+"``<body>``."
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid ""
+"Renders HTML that loads Bokeh CSS according to the configuration in a "
+"Resources object."
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "a list of URIs for CSS files to include"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "a list of raw CSS snippets to put between ``<style>`` tags"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "Renders Bokeh models into a basic .html file."
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "value for ``<title>`` tags"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "typically the output of RESOURCES"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "typically the output of PLOT_SCRIPT"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid ""
+"Users can customize the file output by providing their own Jinja2 "
+"template that accepts these same parameters."
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid ""
+"Renders HTML that loads BokehJS JavaScript code and CSS according to the "
+"configuration in a Resources object."
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "a list of URIs for JS files to include"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "a list of raw JS snippets to put between ``<style>`` tags"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid ""
+"Renders HTML for loading BokehJS JavaScript code and CSS into a Jupyter "
+"Notebook according to a Resources object."
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "whether to display verbose info about BokehJS configuration, etc"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "the current version of Bokeh"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "information about the location, version, etc. of BokehJS code"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "information about the location, version, etc. of BokehJS css"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "a list of warnings to display to user"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "Renders a basic plot div, that can be used in conjunction with PLOT_JS."
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid ""
+"a unique identifier for the ``<div>`` a PLOT_JS template should be "
+"configured with the same ``elementid``"
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "Renders a ``<script>`` tag for raw JavaScript code."
+msgstr ""
+
+#: ../../<bokeh-jinja>:1
+msgid "raw JavaScript code to put in the tag."
+msgstr ""
+

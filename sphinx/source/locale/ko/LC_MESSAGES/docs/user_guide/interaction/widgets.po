@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:4
+msgid "Adding Widgets"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:6
+msgid ""
+"Widgets are interactive controls that can be added to Bokeh applications "
+"to provide a front end user interface to a visualization. They can drive "
+"new computations, update plots, and connect to other programmatic "
+"functionality. When used with the Bokeh server, widgets can run arbitrary"
+" Python code, enabling complex applications. Widgets can also be used "
+"without the Bokeh server in standalone HTML documents through the "
+"browser's Javascript runtime."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:13
+msgid ""
+"To use widgets, you must add them to your document and define their "
+"functionality. Widgets can be added directly to the document root or "
+"nested inside a layout. There are two ways to program a widget's "
+"functionality:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:17
+msgid ""
+"Use the ``CustomJS`` callback (see "
+":ref:`userguide_interaction_jscallbacks`). This will work in standalone "
+"HTML documents."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:18
+msgid ""
+"Use ``bokeh serve`` to start the Bokeh server and set up event handlers "
+"with ``.on_change`` (or for some widgets, ``.on_click``)."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:20
+msgid ""
+"Event handlers are user-defined Python functions that can be attached to "
+"widgets. These functions are then called when certain attributes on the "
+"widget are changed. The necessary function signature of event handlers is"
+" determined by how they are attached to widgets (whether they are passed "
+"through ``.on_change`` or ``.on_click``)."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:25
+msgid ""
+"All widgets have an ``.on_change`` method that takes an attribute name "
+"and one or more event handlers as parameters. These handlers are expected"
+" to have the function signature, ``(attr, old, new)``, where ``attr`` "
+"refers to the changed attribute's name, and ``old`` and ``new`` refer to "
+"the previous and updated values of the attribute. ``.on_change`` must be "
+"used when you need the previous value of an attribute."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:39
+msgid ""
+"Additionally, some widgets, including the button, dropdown, and checkbox,"
+" have an ``.on_click`` method that takes an event handler as its only "
+"parameter. For the Button, this handler is called without parameters. For"
+" the other widgets with ``.on_click``, the handler is passed the new "
+"attribute value."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:52
+msgid ""
+"Bokeh provides a simple default set of widgets, largely based off the "
+"Bootstrap JavaScript library. In the future, it will be possible for "
+"users to wrap and use other widget libraries, or their own custom "
+"widgets."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:56
+msgid ""
+"For more information about the attributes to watch using ``.on_change`` "
+"or whether ``.on_click`` is available, go to the :ref:`refguide`. Widgets"
+" can be found under :ref:`bokeh.models`."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:60
+msgid "Button"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:62
+msgid "Bokeh provides a simple Button:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:68
+msgid "Checkbox Button Group"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:70
+msgid ""
+"Bokeh also provides a checkbox button group, that can have multiple "
+"options selected simultaneously:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:77
+msgid "Checkbox Group"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:79
+msgid "A standard checkbox:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:85
+msgid "Data Table"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:87
+msgid ""
+"Bokeh provides a sophisticated data table widget based on SlickGrid. Note"
+" that since the table is configured with a data source object, any plots "
+"that share this data source will automatically have selections linked "
+"between the plot and the table (even in static HTML documents)."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:96
+msgid "Dropdown Menu"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:98
+msgid "It is also possible to include Dropdown menus:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:104
+msgid "MultiSelect"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:106
+msgid "A multi-select widget to present multiple available options:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:112
+msgid "Radio Button Group"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:114
+msgid "A radio button group can have at most one selected button at at time:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:120
+msgid "Radio Group"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:122
+msgid "A radio group uses standard radio button appearance:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:128
+msgid "Select"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:130
+msgid "A single selection widget:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:136
+msgid "Slider"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:138
+msgid ""
+"The Bokeh slider can be configured with ``start`` and ``end`` values, a "
+"``step`` size, an initial ``value`` and a ``title``:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:145
+msgid "RangeSlider"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:147
+msgid ""
+"The Bokeh range-slider can be configured with ``start`` and ``end`` "
+"values, a ``step`` size, an initial ``value`` and a ``title``:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:154
+msgid "Tab Panes"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:156
+msgid "Tab panes allow multiple plots or layouts to be show in selectable tabs:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:162
+msgid "TextInput"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:164
+msgid "A widget for collecting a line of text from a user:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:170
+msgid "Toggle Button"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:172
+msgid "The toggle button holds an on/off state:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:178
+msgid "Div"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:180
+msgid "A widget for displaying text that can support HTML in a <div> tag:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:186
+msgid "Paragraph"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:188
+msgid "A widget for displaying a block of text in an HTML <p> tag:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:194
+msgid "PreText"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/widgets.rst:196
+msgid ""
+"A widget for displaying a block of pre-formatted text in an HTML <pre> "
+"tag:"
+msgstr ""
+

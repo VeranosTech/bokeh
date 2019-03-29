@@ -1,0 +1,1572 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/annotations.rst:4
+msgid "bokeh.models.annotations"
+msgstr ""
+
+#: bokeh.models.annotations:1 of
+msgid ""
+"Renderers for various kinds of annotations that can be added to Bokeh "
+"plots"
+msgstr ""
+
+#: bokeh.models.annotations.Annotation:1 of
+msgid "Bases: :class:`bokeh.models.renderers.Renderer`"
+msgstr ""
+
+#: bokeh.models.annotations.Annotation:1 of
+msgid "Base class for all annotation models."
+msgstr ""
+
+#: bokeh.models.annotations.Annotation:5
+#: bokeh.models.annotations.TextAnnotation:5 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: bokeh.models.annotations.Arrow:1 bokeh.models.annotations.Band:1
+#: bokeh.models.annotations.BoxAnnotation:1 bokeh.models.annotations.ColorBar:1
+#: bokeh.models.annotations.Legend:1 bokeh.models.annotations.PolyAnnotation:1
+#: bokeh.models.annotations.Slope:1 bokeh.models.annotations.Span:1
+#: bokeh.models.annotations.TextAnnotation:1
+#: bokeh.models.annotations.ToolbarPanel:1 bokeh.models.annotations.Tooltip:1
+#: bokeh.models.annotations.Whisker:1 of
+msgid "Bases: :class:`bokeh.models.annotations.Annotation`"
+msgstr ""
+
+#: bokeh.models.annotations.Arrow:1 of
+msgid "Render an arrow as an annotation."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.arrow_heads.ArrowHead`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Instance of ``ArrowHead``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.SpatialUnits`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The unit type for the end_x and end_y attributes. Interpreted as \"data "
+"space\" units by default."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.NumberSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha values for the arrow body."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LineCap`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap values for the arrow body."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.ColorSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color values for the arrow body."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.DashPattern`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash values for the arrow body."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset values for the arrow body."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LineJoin`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join values for the arrow body."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width values for the arrow body."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.sources.DataSource`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Local data source to use when rendering annotations on the plot."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The unit type for the start_x and start_y attributes. Interpreted as "
+"\"data space\" units by default."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The x-coordinates to locate the end of the arrows."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A particular (named) x-range to use for computing screen locations when "
+"rendering annotations on the plot. If unset, use the default x-range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The x-coordinates to locate the start of the arrows."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The y-coordinates to locate the end of the arrows."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A particular (named) y-range to use for computing screen locations when "
+"rendering annotations on the plot. If unset, use the default y-range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The y-coordinates to locate the start of the arrows."
+msgstr ""
+
+#: bokeh.models.annotations.Band:1 of
+msgid "Render a filled area band along a dimension."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.UnitsSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The orthogonal coordinates of the upper and lower values."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.Dimension`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The direction of the band can be specified by setting this property to "
+"\"height\" (``y`` direction) or \"width\" (``x`` direction)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill alpha values for the band."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill color values for the band."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha values for the band."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap values for the band."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color values for the band."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash values for the band."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset values for the band."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join values for the band."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width values for the band."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The coordinates of the lower portion of the filled area band."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The coordinates of the upper portion of the filled area band."
+msgstr ""
+
+#: bokeh.models.annotations.BoxAnnotation:1 of
+msgid "Render a shaded rectangular region as an annotation."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Auto` , "
+":class:`~bokeh.core.properties.NumberSpec`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The y-coordinates of the bottom edge of the box annotation."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Datetime values are also accepted, but note that they are immediately "
+"converted to milliseconds-since-epoch."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The unit type for the bottom attribute. Interpreted as \"data space\" "
+"units by default."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill alpha values for the box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill color values for the box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The x-coordinates of the left edge of the box annotation."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The unit type for the left attribute. Interpreted as \"data space\" units"
+" by default."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha values for the box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap values for the box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color values for the box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash values for the box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset values for the box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join values for the box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width values for the box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.RenderMode`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Specifies whether the box is rendered as a canvas element or as an css "
+"element overlaid on the canvas. The default mode is \"canvas\"."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The line_dash and line_dash_offset attributes aren't supported if the "
+"render_mode is set to \"css\""
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The x-coordinates of the right edge of the box annotation."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The unit type for the right attribute. Interpreted as \"data space\" "
+"units by default."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The y-coordinates of the top edge of the box annotation."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The unit type for the top attribute. Interpreted as \"data space\" units "
+"by default."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A particular (named) x-range to use for computing screen locations when "
+"rendering box annotations on the plot. If unset, use the default x-range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A particular (named) y-range to use for computing screen locations when "
+"rendering box annotations on the plot. If unset, use the default y-range."
+msgstr ""
+
+#: bokeh.models.annotations.ColorBar:1 of
+msgid "Render a color bar based on a color mapper."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill alpha for the color bar background style."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill color for the color bar background style."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha for the color scale bar outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap for the color scale bar outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color for the color scale bar outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash for the color scale bar outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset for the color scale bar outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join for the color scale bar outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width for the color scale bar outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha for the color bar border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap for the color bar border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color for the color bar border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash for the color bar border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset for the color bar border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join for the color bar border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width for the color bar border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.mappers.ContinuousColorMapper`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A continuous color mapper containing a color palette to render."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"If the `low` and `high` attributes of the ``ColorMapper`` aren't set, "
+"ticks and tick labels won't be rendered. Additionally, if a ``LogTicker``"
+" is passed to the `ticker` argument and either or both of the logarithms "
+"of `low` and `high` values of the color_mapper are non-numeric (i.e. "
+"`low=0`), the tick and tick labels won't be rendered."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.formatters.TickFormatter`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A ``TickFormatter`` to use for formatting the visual appearance of ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Auto` , "
+":class:`~bokeh.core.properties.Int`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The height (in pixels) that the color scale should occupy."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The distance (in pixels) to separate the tick labels from the color bar."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LegendLocation`  ), "
+":class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.Float` , "
+":class:`~bokeh.core.properties.Float`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The location where the color bar should draw itself. It's either one of "
+"``bokeh.core.enums.LegendLocation``'s enumerated values, or a ``(x, y)`` "
+"tuple indicating an absolute location absolute location in screen "
+"coordinates (pixels from the bottom-left corner)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"If the color bar is placed in a side panel, the location will likely have"
+" to be set to `(0,0)`."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Dict` ( "
+":class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Float` , "
+":class:`~bokeh.core.properties.String`  ), "
+":class:`~bokeh.core.properties.String`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Provide explicit tick label values for specific tick locations that "
+"override normal formatting."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.TextAlign`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text align of the major tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text alpha of the major tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.TextBaseline`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text baseline of the major tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text color of the major tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font of the major tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.FontSizeSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font size of the major tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.FontStyle`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font style of the major tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Float`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text line height of the major tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The distance (in pixels) that major ticks should extend into the main "
+"plot area."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha of the major ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap of the major ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color of the major ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash of the major ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset of the major ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join of the major ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width of the major ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The distance (in pixels) that major ticks should extend out of the main "
+"plot area."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Amount of margin (in pixels) around the outside of the color bar."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The distance (in pixels) that minor ticks should extend into the main "
+"plot area."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha of the minor ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap of the minor ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color of the minor ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash of the minor ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset of the minor ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join of the minor ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width of the minor ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.Orientation`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Whether the color bar should be oriented vertically or horizontally."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Amount of padding (in pixels) between the color scale and color bar "
+"border."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The alpha with which to render the color scale."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.tickers.ContinuousTicker`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A Ticker to use for computing locations of axis components."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The title text to render."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The distance (in pixels) to separate the title from the color bar."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text align values for the title text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text alpha values for the title text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text baseline values for the title text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text color values for the title text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font values for the title text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font size values for the title text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font style values for the title text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text line height values for the title text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The width (in pixels) that the color scale should occupy."
+msgstr ""
+
+#: bokeh.models.annotations.Label:1 bokeh.models.annotations.LabelSet:1
+#: bokeh.models.annotations.Title:1 of
+msgid "Bases: :class:`bokeh.models.annotations.TextAnnotation`"
+msgstr ""
+
+#: bokeh.models.annotations.Label:1 of
+msgid "Render a single text label as an annotation."
+msgstr ""
+
+#: bokeh.models.annotations.Label:3 of
+msgid ""
+"``Label`` will render a single text label at given ``x`` and ``y`` "
+"coordinates, which can be in either screen (pixel) space, or data (axis "
+"range) space."
+msgstr ""
+
+#: bokeh.models.annotations.Label:7 of
+msgid ""
+"The label can also be configured with a screen space offset from ``x`` "
+"and ``y``, by using the ``x_offset`` and ``y_offset`` properties."
+msgstr ""
+
+#: bokeh.models.annotations.Label:10 of
+msgid "Additionally, the label can be rotated with the ``angle`` property."
+msgstr ""
+
+#: bokeh.models.annotations.Label:12 bokeh.models.annotations.LabelSet:17 of
+msgid ""
+"There are also standard text, fill, and line properties to control the "
+"appearance of the text, its background, as well as the rectangular "
+"bounding box border."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Angle`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The angle to rotate the text, as measured from the horizontal."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The center of rotation for canvas and css render_modes is different. For "
+"`render_mode=\"canvas\"` the label is rotated from the top-left corner of"
+" the annotation, while for `render_mode=\"css\"` the annotation is "
+"rotated around it's center."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.AngleUnits`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Acceptable values for units are ``\"rad\"`` and ``\"deg\"``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill alpha values for the text bounding box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill color values for the text bounding box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha values for the text bounding box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap values for the text bounding box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color values for the text bounding box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash values for the text bounding box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset values for the text bounding box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join values for the text bounding box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width values for the text bounding box."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text value to render."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text align values for the text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text alpha values for the text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text baseline values for the text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text color values for the text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font values for the text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font size values for the text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font style values for the text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text line height values for the text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The x-coordinate in screen coordinates to locate the text anchors."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Offset value to apply to the x-coordinate."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This is useful, for instance, if it is desired to \"float\" text a fixed "
+"distance in screen units from a given data position."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A particular (named) x-range to use for computing screen location when "
+"rendering an annotation on the plot. If unset, use the default x-range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The unit type for the x attribute. Interpreted as \"data space\" units by"
+" default."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The y-coordinate in screen coordinates to locate the text anchors."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Offset value to apply to the y-coordinate."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A particular (named) y-range to use for computing screen location when "
+"rendering an annotation on the plot. If unset, use the default y-range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The unit type for the y attribute. Interpreted as \"data space\" units by"
+" default."
+msgstr ""
+
+#: bokeh.models.annotations.LabelSet:1 of
+msgid "Render multiple text labels as annotations."
+msgstr ""
+
+#: bokeh.models.annotations.LabelSet:3 of
+msgid ""
+"``LabelSet`` will render multiple text labels at given ``x`` and ``y`` "
+"coordinates, which can be in either screen (pixel) space, or data (axis "
+"range) space. In this case (as opposed to the single ``Label`` model), "
+"``x`` and ``y`` can also be the name of a column from a "
+":class:`~bokeh.models.sources.ColumnDataSource`, in which case the labels"
+" will be \"vectorized\" using coordinate values from the specified "
+"columns."
+msgstr ""
+
+#: bokeh.models.annotations.LabelSet:10 of
+msgid ""
+"The label can also be configured with a screen space offset from ``x`` "
+"and ``y``, by using the ``x_offset`` and ``y_offset`` properties. These "
+"offsets may be vectorized by giving the name of a data source column."
+msgstr ""
+
+#: bokeh.models.annotations.LabelSet:14 of
+msgid ""
+"Additionally, the label can be rotated with the ``angle`` property (which"
+" may also be a column name.)"
+msgstr ""
+
+#: bokeh.models.annotations.LabelSet:21 of
+msgid "The data source is provided by setting the ``source`` property."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.AngleSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The angles to rotate the text, as measured from the horizontal."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.StringSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text values to render."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The x-coordinates to locate the text anchors."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Offset values to apply to the x-coordinates."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The unit type for the ``xs`` attribute. Interpreted as \"data space\" "
+"units by default."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The y-coordinates to locate the text anchors."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Offset values to apply to the y-coordinates."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The unit type for the ``ys`` attribute. Interpreted as \"data space\" "
+"units by default."
+msgstr ""
+
+#: bokeh.models.annotations.Legend:1 of
+msgid "Render informational legends for a plot."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill alpha for the legend background style."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill color for the legend background style."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha for the legend border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap for the legend border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color for the legend border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash for the legend border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset for the legend border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join for the legend border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width for the legend border outline."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LegendClickPolicy`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Defines what happens when a lengend's item is clicked."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The height (in pixels) that the rendered legend glyph should occupy."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The width (in pixels) that the rendered legend glyph should occupy."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The fill alpha for the legend item style when inactive. These control an "
+"overlay on the item that can be used to obscure it when the corresponding"
+" glyph is inactive (e.g. by making it semi-transparent)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The fill color for the legend item style when inactive. These control an "
+"overlay on the item that can be used to obscure it when the corresponding"
+" glyph is inactive (e.g. by making it semi-transparent)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.annotations.LegendItem`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A list of :class:`~bokeh.model.annotations.LegendItem` instances to be "
+"rendered in the legend."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "This can be specified explicitly, for instance:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"But as a convenience, can also be given more compactly as a list of "
+"tuples:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "where each tuple is of the form: *(label, renderers)*."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The minimum height (in pixels) of the area that legend labels should "
+"occupy."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The distance (in pixels) to separate the label from its associated glyph."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text align for the legend labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text alpha for the legend labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text baseline for the legend labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text color for the legend labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font for the legend labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font size for the legend labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font style for the legend labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text line height for the legend labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The minimum width (in pixels) of the area that legend labels should "
+"occupy."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The location where the legend should draw itself. It's either one of "
+"``bokeh.core.enums.LegendLocation``'s enumerated values, or a ``(x, y)`` "
+"tuple indicating an absolute location absolute location in screen "
+"coordinates (pixels from the bottom-left corner)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Amount of margin around the legend."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether the legend entries should be placed vertically or horizontally "
+"when they are drawn."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Amount of padding around the contents of the legend. Only applicable when"
+" when border is visible, otherwise collapses to 0."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Amount of spacing (in pixels) between legend entries."
+msgstr ""
+
+#: bokeh.models.annotations.LegendItem:1 of
+msgid "Bases: :class:`bokeh.model.Model`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The column data index to use for drawing the representative items."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"If None (the default), then Bokeh will automatically choose an index to "
+"use. If the label does not refer to a data column name, this is typically"
+" the first data point in the data source. Otherwise, if the label does "
+"refer to a column name, the legend will have \"groupby\" behavior, and "
+"will choose and display representative points from every \"group\" in the"
+" column."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "If set to a number, Bokeh will use that number as the index in all cases."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A label for this legend. Can be a string, or a column of a "
+"ColumnDataSource. If ``label`` is a field, then it must be in the "
+"renderers' data_source."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.renderers.GlyphRenderer`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A list of the glyph renderers to draw in the legend. If ``label`` is a "
+"field, then all data_sources of renderers must be the same."
+msgstr ""
+
+#: bokeh.models.annotations.PolyAnnotation:1 of
+msgid "Render a shaded polygonal region as an annotation."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill alpha values for the polygon."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill color values for the polygon."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha values for the polygon."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap values for the polygon."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color values for the polygon."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash values for the polygon."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset values for the polygon."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join values for the polygon."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width values for the polygon."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.Float`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The x-coordinates of the region to draw."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The y-coordinates of the region to draw."
+msgstr ""
+
+#: bokeh.models.annotations.Slope:1 of
+msgid "Render a sloped line as an annotation."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The gradient of the line, in data units"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha values for the line."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap values for the line."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color values for the line."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash values for the line."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset values for the line."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join values for the line."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width values for the line."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The y intercept of the line, in data units"
+msgstr ""
+
+#: bokeh.models.annotations.Span:1 of
+msgid "Render a horizontal or vertical line span."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The direction of the span can be specified by setting this property to "
+"\"height\" (``y`` direction) or \"width\" (``x`` direction)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha values for the span."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap values for the span."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color values for the span."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash values for the span."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset values for the span."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join values for the span."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width values for the span."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The location of the span, along ``dimension``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The unit type for the location attribute. Interpreted as \"data space\" "
+"units by default."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Specifies whether the span is rendered as a canvas element or as a CSS "
+"element overlaid on the canvas. The default mode is \"canvas\"."
+msgstr ""
+
+#: bokeh.models.annotations.TextAnnotation:1 of
+msgid "Base class for text annotation models such as labels and titles."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Specifies whether the text is rendered as a canvas element or as a CSS "
+"element overlaid on the canvas. The default mode is \"canvas\"."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The CSS labels won't be present in the output using the \"save\" tool."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Not all visual styling properties are supported if the render_mode is set"
+" to \"css\". The border_line_dash property isn't fully supported and "
+"border_line_dash_offset isn't supported at all. Setting text_alpha will "
+"modify the opacity of the entire background box and border in addition to"
+" the text. Finally, clipping Label annotations inside of the plot area "
+"isn't supported in \"css\" mode."
+msgstr ""
+
+#: bokeh.models.annotations.Title:1 of
+msgid "Render a single title box as an annotation."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Alignment of the text in its enclosing space, *along* the direction of "
+"the text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Offset the text by a number of pixels (can be positive or negative). "
+"Shifts the text in different directions based on the location of the "
+"title:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "above: shifts title right"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "right: shifts title down"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "below: shifts title right"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "left: shifts title up"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An alpha value to use to fill text with."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Acceptable values are floating point numbers between 0 (transparent) and "
+"1 (opaque)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A color to use to fill text with."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Acceptable values are:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "any of the 147 named `CSS colors`_, e.g ``'green'``, ``'indigo'``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "an RGB(A) hex value, e.g., ``'#FF0000'``, ``'#44444444'``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "a 3-tuple of integers (r,g,b) between 0 and 255"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"a 4-tuple of (r,g,b,a) where r,g,b are integers between 0..255 and a is "
+"between 0..1"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Name of a font to use for rendering text, e.g., ``'times'``, "
+"``'helvetica'``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A style to use for rendering text."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``'normal'`` normal text"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``'italic'`` *italic text*"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``'bold'`` **bold text**"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.VerticalAlign`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Alignment of the text in its enclosing space, *across* the direction of "
+"the text."
+msgstr ""
+
+#: bokeh.models.annotations.Tooltip:1 of
+msgid "Render a tooltip."
+msgstr ""
+
+#: bokeh.models.annotations.Tooltip:4 of
+msgid ""
+"This model is currently managed by BokehJS and is not useful directly "
+"from python."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.TooltipAttachment`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether the tooltip should be displayed to the left or right of the "
+"cursor position or above or below it, or if it should be automatically "
+"placed in the horizontal or vertical dimension."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Bool`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Whether to display outside a central plot frame area."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Whether tooltip's arrow should be shown."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.tools.Toolbar`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A toolbar to display."
+msgstr ""
+
+#: bokeh.models.annotations.Whisker:1 of
+msgid "Render a whisker along a dimension."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The direction of the whisker can be specified by setting this property to"
+" \"height\" (``y`` direction) or \"width\" (``x`` direction)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha values for the whisker body."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap values for the whisker body."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color values for the whisker body."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash values for the whisker body."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset values for the whisker body."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join values for the whisker body."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width values for the whisker body."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The coordinates of the lower end of the whiskers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The coordinates of the upper end of the whiskers."
+msgstr ""
+

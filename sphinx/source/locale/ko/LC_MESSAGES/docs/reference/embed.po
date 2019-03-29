@@ -1,0 +1,395 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/embed.rst:4
+msgid "bokeh.embed"
+msgstr ""
+
+#: bokeh.embed:1 of
+msgid ""
+"Provide functions for embedding Bokeh standalone and server content in "
+"web pages."
+msgstr ""
+
+#: bokeh.embed.autoload_static:1 of
+msgid ""
+"Return JavaScript code and a script tag that can be used to embed Bokeh "
+"Plots."
+msgstr ""
+
+#: bokeh.embed.autoload_static:4 of
+msgid "The data for the plot is stored directly in the returned JavaScript code."
+msgstr ""
+
+#: bokeh.embed.autoload_static bokeh.embed.components bokeh.embed.file_html
+#: bokeh.embed.json_item bokeh.embed.server_document bokeh.embed.server_session
+#: of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.embed.autoload_static bokeh.embed.components bokeh.embed.file_html
+#: bokeh.embed.json_item bokeh.embed.server_document bokeh.embed.server_session
+#: of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.embed.autoload_static:13 of
+msgid ""
+"JavaScript code to be saved at ``script_path`` and a ``<script>`` tag to "
+"load it"
+msgstr ""
+
+#: bokeh.embed.autoload_static of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.embed.autoload_static of
+msgid "raises"
+msgstr ""
+
+#: bokeh.embed.autoload_static:17 of
+msgid ":exc:`ValueError`"
+msgstr ""
+
+#: bokeh.embed.components:1 of
+msgid ""
+"Return HTML components to embed a Bokeh plot. The data for the plot is "
+"stored directly in the returned HTML."
+msgstr ""
+
+#: bokeh.embed.components:4 of
+msgid "An example can be found in examples/embed/embed_multiple.py"
+msgstr ""
+
+#: bokeh.embed.components:6 of
+msgid ""
+"The returned components assume that BokehJS resources are **already "
+"loaded**. The html template in which they will be embedded needs to "
+"include the following links and scripts tags. The widgets and tables "
+"resources are only necessary if the components make use of widgets and "
+"tables."
+msgstr ""
+
+#: bokeh.embed.components:27 of
+msgid ""
+"Note that in Jupyter Notebooks, it is not possible to use components and "
+"show in the same notebook cell."
+msgstr ""
+
+#: bokeh.embed.components:30 of
+msgid ""
+"A single Model, a list/tuple of Models, or a dictionary of keys and "
+"Models."
+msgstr ""
+
+#: bokeh.embed.components:32 of
+msgid ""
+"If True, the returned javascript is wrapped in a script tag. (default: "
+"True)"
+msgstr ""
+
+#: bokeh.embed.components:35 of
+msgid ""
+"If True, returns ``<div>`` strings. Otherwise, return dicts that can be "
+"used to build your own divs. (default: True)  If False, the returned "
+"dictionary contains the following information:  .. code-block:: python"
+"      {         'modelid':  'The model ID, used with "
+"Document.get_model_by_id',         'elementid': 'The css identifier the "
+"BokehJS will look for to target the plot',         'docid': 'Used by "
+"Bokeh to find the doc embedded in the returned script',     }"
+msgstr ""
+
+#: bokeh.embed.components:35 of
+msgid ""
+"If True, returns ``<div>`` strings. Otherwise, return dicts that can be "
+"used to build your own divs. (default: True)"
+msgstr ""
+
+#: bokeh.embed.components:39 of
+msgid "If False, the returned dictionary contains the following information:"
+msgstr ""
+
+#: bokeh.embed.components:49 bokeh.embed.file_html:25 bokeh.embed.json_item:8
+#: of
+msgid ""
+"Defaults to the ``Theme`` instance in the current document. Setting this "
+"to ``None`` uses the default theme or the theme already specified in the "
+"document. Any other value must be an instance of the ``Theme`` class."
+msgstr ""
+
+#: bokeh.embed.components:55 of
+msgid "UTF-8 encoded *(script, div[s])* or *(raw_script, plot_info[s])*"
+msgstr ""
+
+#: bokeh.embed.components:58 bokeh.embed.components:73 of
+msgid "Examples"
+msgstr ""
+
+#: bokeh.embed.components:59 of
+msgid "With default wrapping parameter values:"
+msgstr ""
+
+#: bokeh.embed.components:74 of
+msgid "With wrapping parameters set to ``False``:"
+msgstr ""
+
+#: bokeh.embed.file_html:1 of
+msgid "Return an HTML document that embeds Bokeh Model or Document objects."
+msgstr ""
+
+#: bokeh.embed.file_html:3 of
+msgid ""
+"The data for the plot is stored directly in the returned HTML, with "
+"support for customizing the JS/CSS resources independently and "
+"customizing the jinja2 template."
+msgstr ""
+
+#: bokeh.embed.file_html:7 of
+msgid "Bokeh object or objects to render typically a Model or Document"
+msgstr ""
+
+#: bokeh.embed.file_html:10 of
+msgid "A resource configuration for Bokeh JS & CSS assets."
+msgstr ""
+
+#: bokeh.embed.file_html:12 of
+msgid ""
+"A title for the HTML document ``<title>`` tags or None. (default: None)  "
+"If None, attempt to automatically find the Document title from the given "
+"plot objects."
+msgstr ""
+
+#: bokeh.embed.file_html:12 of
+msgid "A title for the HTML document ``<title>`` tags or None. (default: None)"
+msgstr ""
+
+#: bokeh.embed.file_html:14 of
+msgid ""
+"If None, attempt to automatically find the Document title from the given "
+"plot objects."
+msgstr ""
+
+#: bokeh.embed.file_html:17 of
+msgid ""
+"HTML document template (default: FILE) A Jinja2 Template, see "
+"bokeh.core.templates.FILE for the required template parameters"
+msgstr ""
+
+#: bokeh.embed.file_html:21 of
+msgid ""
+"variables to be used in the Jinja2 template. If used, the following "
+"variable names will be overwritten: title, bokeh_js, bokeh_css, "
+"plot_script, plot_div"
+msgstr ""
+
+#: bokeh.embed.file_html:30 of
+msgid ""
+"Normally generating standalone HTML from a Bokeh Document that has Python"
+" callbacks will result in a warning stating that the callbacks cannot "
+"function. However, this warning can be suppressed by setting this value "
+"to True (default: False)"
+msgstr ""
+
+#: bokeh.embed.file_html:36 of
+msgid "UTF-8 encoded HTML"
+msgstr ""
+
+#: bokeh.embed.json_item:1 of
+msgid "Return a JSON block that can be used to embed standalone Bokeh content."
+msgstr ""
+
+#: bokeh.embed.json_item:3 of
+msgid "The Bokeh object to embed"
+msgstr ""
+
+#: bokeh.embed.json_item:5 of
+msgid ""
+"A div id to embed the model into. If None, the target id must be supplied"
+" in the JavaScript call."
+msgstr ""
+
+#: bokeh.embed.json_item:14 of
+msgid "JSON-like"
+msgstr ""
+
+#: bokeh.embed.json_item:16 of
+msgid ""
+"This function returns a JSON block that can be consumed by the BokehJS "
+"function ``Bokeh.embed.embed_item``. As an example, a Flask endpoint for "
+"``/plot`` might return the following content to embed a Bokeh plot into a"
+" div with id *\"myplot\"*:"
+msgstr ""
+
+#: bokeh.embed.json_item:28 of
+msgid ""
+"Then a web page can retrieve this JSON and embed the plot by calling "
+"``Bokeh.embed.embed_item``:"
+msgstr ""
+
+#: bokeh.embed.json_item:39 of
+msgid ""
+"Alternatively, if is more convenient to supply the target div id directly"
+" in the page source, that is also possible. If `target_id` is omitted in "
+"the call to this function:"
+msgstr ""
+
+#: bokeh.embed.json_item:47 of
+msgid "Then the value passed to ``embed_item`` is used:"
+msgstr ""
+
+#: bokeh.embed.server_document:1 of
+msgid "Return a script tag that embeds content from a Bokeh server."
+msgstr ""
+
+#: bokeh.embed.server_document:3 bokeh.embed.server_session:7 of
+msgid ""
+"Bokeh apps embedded using these methods will NOT set the browser window "
+"title."
+msgstr ""
+
+#: bokeh.embed.server_document:5 bokeh.embed.server_session:19 of
+msgid ""
+"A URL to a Bokeh application on a Bokeh server (default: \"default\")  If"
+" ``\"default\"`` the default URL ``http://localhost:5006/`` will be used."
+msgstr ""
+
+#: bokeh.embed.server_document:5 bokeh.embed.server_session:19 of
+msgid "A URL to a Bokeh application on a Bokeh server (default: \"default\")"
+msgstr ""
+
+#: bokeh.embed.server_document:7 bokeh.embed.server_session:21 of
+msgid ""
+"If ``\"default\"`` the default URL ``http://localhost:5006/`` will be "
+"used."
+msgstr ""
+
+#: bokeh.embed.server_document:9 bokeh.embed.server_session:23 of
+msgid ""
+"Whether to use relative URLs for resources.  If ``True`` the links "
+"generated for resources such a BokehJS JavaScript and CSS will be "
+"relative links.  This should normally be set to ``False``, but must be "
+"set to ``True`` in situations where only relative URLs will work. E.g. "
+"when running the Bokeh behind reverse-proxies under certain "
+"configurations"
+msgstr ""
+
+#: bokeh.embed.server_document:9 bokeh.embed.server_session:23 of
+msgid "Whether to use relative URLs for resources."
+msgstr ""
+
+#: bokeh.embed.server_document:11 bokeh.embed.server_session:25 of
+msgid ""
+"If ``True`` the links generated for resources such a BokehJS JavaScript "
+"and CSS will be relative links."
+msgstr ""
+
+#: bokeh.embed.server_document:14 bokeh.embed.server_session:28 of
+msgid ""
+"This should normally be set to ``False``, but must be set to ``True`` in "
+"situations where only relative URLs will work. E.g. when running the "
+"Bokeh behind reverse-proxies under certain configurations"
+msgstr ""
+
+#: bokeh.embed.server_document:19 bokeh.embed.server_session:33 of
+msgid ""
+"A string specifying what resources need to be loaded along with the "
+"document.  If ``default`` then the default JS/CSS bokeh files will be "
+"loaded.  If None then none of the resource files will be loaded. This is "
+"useful if you prefer to serve those resource files via other means (e.g. "
+"from a caching server). Be careful, however, that the resource files "
+"you'll load separately are of the same version as that of the server's, "
+"otherwise the rendering may not work correctly."
+msgstr ""
+
+#: bokeh.embed.server_document:19 bokeh.embed.server_session:33 of
+msgid ""
+"A string specifying what resources need to be loaded along with the "
+"document."
+msgstr ""
+
+#: bokeh.embed.server_document:22 bokeh.embed.server_session:36 of
+msgid "If ``default`` then the default JS/CSS bokeh files will be loaded."
+msgstr ""
+
+#: bokeh.embed.server_document:24 bokeh.embed.server_session:38 of
+msgid ""
+"If None then none of the resource files will be loaded. This is useful if"
+" you prefer to serve those resource files via other means (e.g. from a "
+"caching server). Be careful, however, that the resource files you'll load"
+" separately are of the same version as that of the server's, otherwise "
+"the rendering may not work correctly."
+msgstr ""
+
+#: bokeh.embed.server_document:35 bokeh.embed.server_session:45 of
+msgid "A ``<script>`` tag that will embed content from a Bokeh Server."
+msgstr ""
+
+#: bokeh.embed.server_session:1 of
+msgid ""
+"Return a script tag that embeds content from a specific existing session "
+"on a Bokeh server."
+msgstr ""
+
+#: bokeh.embed.server_session:4 of
+msgid ""
+"This function is typically only useful for serving from a a specific "
+"session that was previously created using the ``bokeh.client`` API."
+msgstr ""
+
+#: bokeh.embed.server_session:10 of
+msgid ""
+"Typically you will not want to save or re-use the output of this function"
+" for different or multiple page loads."
+msgstr ""
+
+#: bokeh.embed.server_session:13 of
+msgid ""
+"The object to render from the session, or None. (default: None)  If None,"
+" the entire document will be rendered."
+msgstr ""
+
+#: bokeh.embed.server_session:13 of
+msgid "The object to render from the session, or None. (default: None)"
+msgstr ""
+
+#: bokeh.embed.server_session:15 of
+msgid "If None, the entire document will be rendered."
+msgstr ""
+
+#: bokeh.embed.server_session:17 of
+msgid "A server session ID"
+msgstr ""
+
+#: bokeh.embed.server_session:45 of
+msgid ""
+"A ``<script>`` tag that will embed content from a Bokeh Server.  .. "
+"warning::     It is typically a bad idea to re-use the same "
+"``session_id`` for     every page load. This is likely to create "
+"scalability and security     problems, and will cause \"shared Google "
+"doc\" behavior, which is     probably not desired."
+msgstr ""
+
+#: bokeh.embed.server_session:48 of
+msgid ""
+"It is typically a bad idea to re-use the same ``session_id`` for every "
+"page load. This is likely to create scalability and security problems, "
+"and will cause \"shared Google doc\" behavior, which is probably not "
+"desired."
+msgstr ""
+

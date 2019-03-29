@@ -1,0 +1,395 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/colors.rst:4
+msgid "bokeh.colors"
+msgstr ""
+
+#: bokeh.colors:1 of
+msgid ""
+"Provide classes for representing RGB(A) and HSL(A) colors, as well as "
+"define common named colors."
+msgstr ""
+
+#: ../../source/docs/reference/colors.rst:11
+msgid "bokeh.colors.Color"
+msgstr ""
+
+#: bokeh.colors.color:1 of
+msgid "Provide a base class for representing color values."
+msgstr ""
+
+#: bokeh.colors.color.Color:1 of
+msgid "A base class for representing color objects."
+msgstr ""
+
+#: bokeh.colors.color.Color.clamp:1 bokeh.colors.hsl.HSL.clamp:1
+#: bokeh.colors.rgb.RGB.clamp:1 of
+msgid ""
+"Clamp numeric values to be non-negative, an optionally, less than a given"
+" maximum."
+msgstr ""
+
+#: bokeh.colors.color.Color.clamp bokeh.colors.color.Color.darken
+#: bokeh.colors.color.Color.from_hsl bokeh.colors.color.Color.from_rgb
+#: bokeh.colors.color.Color.lighten bokeh.colors.hsl.HSL.__init__
+#: bokeh.colors.hsl.HSL.clamp bokeh.colors.hsl.HSL.darken
+#: bokeh.colors.hsl.HSL.from_hsl bokeh.colors.hsl.HSL.from_rgb
+#: bokeh.colors.hsl.HSL.lighten bokeh.colors.rgb.RGB.__init__
+#: bokeh.colors.rgb.RGB.clamp bokeh.colors.rgb.RGB.darken
+#: bokeh.colors.rgb.RGB.from_hsl bokeh.colors.rgb.RGB.from_rgb
+#: bokeh.colors.rgb.RGB.lighten of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.colors.color.Color.clamp:4 bokeh.colors.hsl.HSL.clamp:4
+#: bokeh.colors.rgb.RGB.clamp:4 of
+msgid "A number to clamp."
+msgstr ""
+
+#: bokeh.colors.color.Color.clamp:6 bokeh.colors.hsl.HSL.clamp:6
+#: bokeh.colors.rgb.RGB.clamp:6 of
+msgid ""
+"A max bound to to clamp to. If None, there is no upper bound, and values "
+"are only clamped to be non-negative. (default: None)"
+msgstr ""
+
+#: bokeh.colors.color.Color.clamp bokeh.colors.color.Color.darken
+#: bokeh.colors.color.Color.from_hsl bokeh.colors.color.Color.from_rgb
+#: bokeh.colors.color.Color.lighten bokeh.colors.color.Color.to_css
+#: bokeh.colors.color.Color.to_hsl bokeh.colors.color.Color.to_rgb
+#: bokeh.colors.hsl.HSL.clamp bokeh.colors.hsl.HSL.copy
+#: bokeh.colors.hsl.HSL.darken bokeh.colors.hsl.HSL.from_hsl
+#: bokeh.colors.hsl.HSL.from_rgb bokeh.colors.hsl.HSL.lighten
+#: bokeh.colors.hsl.HSL.to_css bokeh.colors.hsl.HSL.to_hsl
+#: bokeh.colors.hsl.HSL.to_rgb bokeh.colors.rgb.RGB.clamp
+#: bokeh.colors.rgb.RGB.copy bokeh.colors.rgb.RGB.darken
+#: bokeh.colors.rgb.RGB.from_hsl bokeh.colors.rgb.RGB.from_rgb
+#: bokeh.colors.rgb.RGB.lighten bokeh.colors.rgb.RGB.to_css
+#: bokeh.colors.rgb.RGB.to_hex bokeh.colors.rgb.RGB.to_hsl
+#: bokeh.colors.rgb.RGB.to_rgb of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.colors.color.Color.clamp:10 bokeh.colors.hsl.HSL.clamp:10
+#: bokeh.colors.rgb.RGB.clamp:10 of
+msgid "float"
+msgstr ""
+
+#: bokeh.colors.color.Color.copy:1 of
+msgid "Copy this color."
+msgstr ""
+
+#: bokeh.colors.color.Color.copy:3 bokeh.colors.color.Color.from_hsl:3
+#: bokeh.colors.color.Color.from_rgb:3 bokeh.colors.color.Color.to_css:3
+#: bokeh.colors.color.Color.to_hsl:3 bokeh.colors.color.Color.to_rgb:3 of
+msgid "*Subclasses must implement this method.*"
+msgstr ""
+
+#: bokeh.colors.color.Color.darken:1 bokeh.colors.hsl.HSL.darken:1
+#: bokeh.colors.rgb.RGB.darken:1 of
+msgid "Darken (reduce the luminance) of this color."
+msgstr ""
+
+#: bokeh.colors.color.Color.darken:3 bokeh.colors.hsl.HSL.darken:3
+#: bokeh.colors.rgb.RGB.darken:3 of
+msgid "Amount to reduce the luminance by (clamped above zero)"
+msgstr ""
+
+#: bokeh.colors.color.Color.darken:6 bokeh.colors.color.Color.from_hsl:8
+#: bokeh.colors.color.Color.from_rgb:8 bokeh.colors.color.Color.lighten:6
+#: bokeh.colors.hsl.HSL.darken:6 bokeh.colors.hsl.HSL.lighten:6
+#: bokeh.colors.rgb.RGB.darken:6 bokeh.colors.rgb.RGB.lighten:6 of
+msgid "Color"
+msgstr ""
+
+#: bokeh.colors.color.Color.from_hsl:1 of
+msgid "Create a new color by converting from an HSL color."
+msgstr ""
+
+#: bokeh.colors.color.Color.from_hsl:5 of
+msgid "A color to convert from HSL"
+msgstr ""
+
+#: bokeh.colors.color.Color.from_rgb:1 of
+msgid "Create a new color by converting from an RGB color."
+msgstr ""
+
+#: bokeh.colors.color.Color.from_rgb:5 of
+msgid "A color to convert from RGB"
+msgstr ""
+
+#: bokeh.colors.color.Color.lighten:1 bokeh.colors.hsl.HSL.lighten:1
+#: bokeh.colors.rgb.RGB.lighten:1 of
+msgid "Lighten (increase the luminance) of this color."
+msgstr ""
+
+#: bokeh.colors.color.Color.lighten:3 bokeh.colors.hsl.HSL.lighten:3
+#: bokeh.colors.rgb.RGB.lighten:3 of
+msgid "Amount to increase the luminance by (clamped above zero)"
+msgstr ""
+
+#: bokeh.colors.color.Color.to_css:1 of
+msgid "Return a CSS representation of this color."
+msgstr ""
+
+#: bokeh.colors.color.Color.to_css:5 of
+msgid "str"
+msgstr ""
+
+#: bokeh.colors.color.Color.to_hsl:1 bokeh.colors.color.Color.to_rgb:1 of
+msgid "Create a new HSL color by converting from this color."
+msgstr ""
+
+#: bokeh.colors.color.Color.to_hsl:5 bokeh.colors.hsl.HSL.copy:3
+#: bokeh.colors.hsl.HSL.from_hsl:6 bokeh.colors.hsl.HSL.from_rgb:6
+#: bokeh.colors.hsl.HSL.to_hsl:3 bokeh.colors.hsl.HSL.to_rgb:4 of
+msgid "HSL"
+msgstr ""
+
+#: bokeh.colors.color.Color.to_rgb:5 bokeh.colors.rgb.RGB.copy:3
+#: bokeh.colors.rgb.RGB.from_hsl:6 bokeh.colors.rgb.RGB.to_hsl:3
+#: bokeh.colors.rgb.RGB.to_rgb:3 of
+msgid ":class:`~bokeh.colors.rgb.RGB`"
+msgstr ""
+
+#: ../../source/docs/reference/colors.rst:20
+msgid "bokeh.colors.HSL"
+msgstr ""
+
+#: bokeh.colors.hsl:1 of
+msgid "Provide a class to represent colors with HSL (Hue, Saturation, Value)."
+msgstr ""
+
+#: bokeh.colors.hsl.HSL:1 of
+msgid "Represent colors by specifying their Hue, Saturation, and lightness."
+msgstr ""
+
+#: bokeh.colors.hsl.HSL:3 bokeh.colors.rgb.RGB:3 of
+msgid ""
+"Alpha values may also optionally be provided. Otherwise, alpha values "
+"default to 1."
+msgstr ""
+
+#: bokeh.colors.hsl.HSL.__init__:1 of
+msgid "The Hue, in [0, 360]"
+msgstr ""
+
+#: bokeh.colors.hsl.HSL.__init__:3 of
+msgid "The Saturation, in [0, 1]"
+msgstr ""
+
+#: bokeh.colors.hsl.HSL.__init__:5 of
+msgid "The lightness, in [0, 1]"
+msgstr ""
+
+#: bokeh.colors.hsl.HSL.__init__:7 bokeh.colors.rgb.RGB.__init__:7 of
+msgid "An alpha value for this color in [0, 1] (default: 1.0)"
+msgstr ""
+
+#: bokeh.colors.hsl.HSL.copy:1 bokeh.colors.rgb.RGB.copy:1 of
+msgid "Return a copy of this color value."
+msgstr ""
+
+#: bokeh.colors.hsl.HSL.from_hsl:1 of
+msgid "Copy an HSL color from another HSL color value."
+msgstr ""
+
+#: bokeh.colors.hsl.HSL.from_hsl:3 of
+msgid "The HSL color to copy."
+msgstr ""
+
+#: bokeh.colors.hsl.HSL.from_rgb:1 of
+msgid "Create an HSL color from an RGB color value."
+msgstr ""
+
+#: bokeh.colors.hsl.HSL.from_rgb:3 of
+msgid "The RGB color to convert."
+msgstr ""
+
+#: bokeh.colors.hsl.HSL.to_css:1 of
+msgid "Generate the CSS representation of this HSL color."
+msgstr ""
+
+#: bokeh.colors.hsl.HSL.to_css:3 of
+msgid "str, ``\"hsl(...)\"`` or ``\"hsla(...)\"``"
+msgstr ""
+
+#: bokeh.colors.hsl.HSL.to_hsl:1 of
+msgid "Return a HSL copy for this HSL color."
+msgstr ""
+
+#: bokeh.colors.hsl.HSL.to_rgb:1 of
+msgid ""
+"Return a corresponding :class:`~bokeh.colors.rgb.RGB` color for this HSL "
+"color."
+msgstr ""
+
+#: ../../source/docs/reference/colors.rst:29
+msgid "bokeh.colors.RGB"
+msgstr ""
+
+#: bokeh.colors.rgb.RGB:1 of
+msgid "Represent colors by specifying their Red, Green, and Blue channels."
+msgstr ""
+
+#: bokeh.colors.rgb.RGB.__init__:1 of
+msgid "The value for the red channel in [0, 255]"
+msgstr ""
+
+#: bokeh.colors.rgb.RGB.__init__:3 of
+msgid "The value for the green channel in [0, 255]"
+msgstr ""
+
+#: bokeh.colors.rgb.RGB.__init__:5 of
+msgid "The value for the blue channel in [0, 255]"
+msgstr ""
+
+#: bokeh.colors.rgb.RGB.from_hsl:1 of
+msgid "Create an RGB color from an HSL color value."
+msgstr ""
+
+#: bokeh.colors.rgb.RGB.from_hsl:3 of
+msgid "The HSL color to convert."
+msgstr ""
+
+#: bokeh.colors.rgb.RGB.from_rgb:1 of
+msgid "Copy an RGB color from another RGB color value."
+msgstr ""
+
+#: bokeh.colors.rgb.RGB.from_rgb:3 of
+msgid "The RGB color to copy."
+msgstr ""
+
+#: bokeh.colors.rgb.RGB.from_rgb:6 of
+msgid "RGB"
+msgstr ""
+
+#: bokeh.colors.rgb.RGB.to_css:1 of
+msgid "Generate the CSS representation of this RGB color."
+msgstr ""
+
+#: bokeh.colors.rgb.RGB.to_css:3 of
+msgid "str, ``\"rgb(...)\"`` or ``\"rgba(...)\"``"
+msgstr ""
+
+#: bokeh.colors.rgb.RGB.to_hex:1 of
+msgid "Return a hex color string for this RGB color."
+msgstr ""
+
+#: bokeh.colors.rgb.RGB.to_hex:3 of
+msgid ""
+"Any alpha value on this color is discarded, only hex color strings for "
+"the RGB components are returned."
+msgstr ""
+
+#: bokeh.colors.rgb.RGB.to_hex:6 of
+msgid "str, ``\"#RRGGBB\"``"
+msgstr ""
+
+#: bokeh.colors.rgb.RGB.to_hsl:1 of
+msgid "Return a corresponding HSL color for this RGB color."
+msgstr ""
+
+#: bokeh.colors.rgb.RGB.to_rgb:1 of
+msgid "Return a RGB copy for this RGB color."
+msgstr ""
+
+#: ../../source/docs/reference/colors.rst:38
+msgid "bokeh.colors.groups"
+msgstr ""
+
+#: bokeh.colors.groups:1 of
+msgid "Organize CSS named colors into useful groups according to general hue."
+msgstr ""
+
+#: bokeh.colors.groups.black:1 of
+msgid ""
+"CSS \"Black\" Color Group as defined by "
+"https://www.w3schools.com/colors/colors_groups.asp"
+msgstr ""
+
+#: bokeh.colors.groups.blue:1 of
+msgid ""
+"CSS \"Blue\" Color Group as defined by "
+"https://www.w3schools.com/colors/colors_groups.asp"
+msgstr ""
+
+#: bokeh.colors.groups.brown:1 of
+msgid ""
+"CSS \"Brown\" Color Group as defined by "
+"https://www.w3schools.com/colors/colors_groups.asp"
+msgstr ""
+
+#: bokeh.colors.groups.cyan:1 of
+msgid ""
+"CSS \"Cyan\" Color Group as defined by "
+"https://www.w3schools.com/colors/colors_groups.asp"
+msgstr ""
+
+#: bokeh.colors.groups.green:1 of
+msgid ""
+"CSS \"Green\" Color Group as defined by "
+"https://www.w3schools.com/colors/colors_groups.asp"
+msgstr ""
+
+#: bokeh.colors.groups.orange:1 of
+msgid ""
+"CSS \"Orange\" Color Group as defined by "
+"https://www.w3schools.com/colors/colors_groups.asp"
+msgstr ""
+
+#: bokeh.colors.groups.pink:1 of
+msgid ""
+"CSS \"Pink\" Color Group as defined by "
+"https://www.w3schools.com/colors/colors_groups.asp"
+msgstr ""
+
+#: bokeh.colors.groups.purple:1 of
+msgid ""
+"CSS \"Purple\" Color Group as defined by "
+"https://www.w3schools.com/colors/colors_groups.asp"
+msgstr ""
+
+#: bokeh.colors.groups.red:1 of
+msgid ""
+"CSS \"Red\" Color Group as defined by "
+"https://www.w3schools.com/colors/colors_groups.asp"
+msgstr ""
+
+#: bokeh.colors.groups.white:1 of
+msgid ""
+"CSS \"White\" Color Group as defined by "
+"https://www.w3schools.com/colors/colors_groups.asp"
+msgstr ""
+
+#: bokeh.colors.groups.yellow:1 of
+msgid ""
+"CSS \"Yellow\" Color Group as defined by "
+"https://www.w3schools.com/colors/colors_groups.asp"
+msgstr ""
+
+#: ../../source/docs/reference/colors.rst:46
+msgid "bokeh.colors.named"
+msgstr ""
+
+#: bokeh.colors.named:1 of
+msgid "Provide the standard 147 CSS (X11) named colors."
+msgstr ""
+

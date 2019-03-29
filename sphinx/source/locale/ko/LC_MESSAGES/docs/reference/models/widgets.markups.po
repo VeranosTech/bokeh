@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/widgets.markups.rst:4
+msgid "bokeh.models.widgets.markups"
+msgstr ""
+
+#: bokeh.models.widgets.markups:1 of
+msgid "Various kinds of markup (static content) widgets."
+msgstr ""
+
+#: bokeh.models.widgets.markups:4 of
+msgid ""
+"The explicit purpose of these Bokeh Models is to embed *raw HTML text* "
+"for a browser to execute. If any portion of the text is derived from "
+"untrusted user inputs, then you must take appropriate care to sanitize "
+"the user input prior to passing to Bokeh."
+msgstr ""
+
+#: bokeh.models.widgets.markups.Div:1 bokeh.models.widgets.markups.Paragraph:1
+#: of
+msgid "Bases: :class:`bokeh.models.widgets.markups.Markup`"
+msgstr ""
+
+#: bokeh.models.widgets.markups.Div:1 of
+msgid "A block (div) of text."
+msgstr ""
+
+#: bokeh.models.widgets.markups.Div:3 of
+msgid "This Bokeh model corresponds to an HTML ``<div>`` element."
+msgstr ""
+
+#: bokeh.models.widgets.markups.Div:8 bokeh.models.widgets.markups.Paragraph:8
+#: bokeh.models.widgets.markups.PreText:8 of
+msgid "Example"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Bool`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether the contents should be rendered as raw text or as interpreted "
+"HTML. The default value is ``False``, meaning contents are rendered as "
+"HTML."
+msgstr ""
+
+#: bokeh.models.widgets.markups.Markup:1 of
+msgid "Bases: :class:`bokeh.models.widgets.widget.Widget`"
+msgstr ""
+
+#: bokeh.models.widgets.markups.Markup:1 of
+msgid "Base class for Bokeh models that represent HTML markup elements."
+msgstr ""
+
+#: bokeh.models.widgets.markups.Markup:3 of
+msgid "Markups include e.g., ``<div>``, ``<p>``, and ``<pre>``."
+msgstr ""
+
+#: bokeh.models.widgets.markups.Markup:7 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Dict` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.Any`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Raw CSS style declaration. Note this may be web browser dependent."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The contents of the widget."
+msgstr ""
+
+#: bokeh.models.widgets.markups.Paragraph:1 of
+msgid "A block (paragraph) of text."
+msgstr ""
+
+#: bokeh.models.widgets.markups.Paragraph:3 of
+msgid "This Bokeh model corresponds to an HTML ``<p>`` element."
+msgstr ""
+
+#: bokeh.models.widgets.markups.PreText:1 of
+msgid "Bases: :class:`bokeh.models.widgets.markups.Paragraph`"
+msgstr ""
+
+#: bokeh.models.widgets.markups.PreText:1 of
+msgid "A block (paragraph) of pre-formatted text."
+msgstr ""
+
+#: bokeh.models.widgets.markups.PreText:3 of
+msgid "This Bokeh model corresponds to an HTML ``<pre>`` element."
+msgstr ""
+

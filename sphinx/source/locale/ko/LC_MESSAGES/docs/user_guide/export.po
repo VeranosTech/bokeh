@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/export.rst:4
+msgid "Exporting Plots"
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:7
+msgid "Additional dependencies"
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:9
+msgid ""
+"In order to use the |export| functions, users have to install some "
+"additional dependencies. These dependencies can be installed via conda:"
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:16
+msgid "Alternatively, you can install phantomjs from npm via"
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:22
+msgid ""
+"Note that the minimum compatible version of PhantomJS is 2.1, regardless "
+"of how it is installed."
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:28
+msgid "PNG Generation"
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:30
+msgid ""
+"Bokeh can generate RGBA-format Portable Network Graphics (PNG) images "
+"from layouts using the |export_png| function. This functionality uses a "
+"headless browser called WebKit to render the layout in memory and then "
+"capture a screenshot. The generated image will be of the same dimensions "
+"as the source layout."
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:36
+msgid ""
+"In order to create a PNG with a transparent background, users should set "
+"the ``Plot.background_fill_color`` and ``Plot.border_fill_color`` "
+"properties to ``None``."
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:41
+#: ../../source/docs/user_guide/export.rst:81
+msgid "Limitations"
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:43
+msgid ""
+"Responsive sizing_modes may generate layouts with unexpected size and "
+"aspect ratios. It is recommended to use the default ``fixed`` sizing "
+"mode. Also, glyphs that are rendered via webgl won't be included in the "
+"generated PNG, so it's suggested to use the default ``Plot.webgl=True`` "
+"attribute."
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:49
+#: ../../source/docs/user_guide/export.rst:90
+msgid "Example usage"
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:51
+msgid "Usage is similar to the |save| and |show| functions."
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:64
+msgid "SVG Generation"
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:66
+msgid ""
+"Bokeh also supports replacing the HTML5 Canvas plot output with an SVG "
+"element that can be edited in image editing programs such as Adobe "
+"Illustrator and/or converted to PDFs. This functionality uses a "
+"JavaScript library called canvas2svg to mock the normal Canvas element "
+"and its methods with an SVG element."
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:72
+msgid ""
+"The SVG output isn't as performant as the default Canvas backend when it "
+"comes to rendering large number of glyphs or handling lots of user "
+"interactions like panning."
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:76
+msgid ""
+"Like PNGs, in order to create a SVG with a transparent background, users "
+"should set the ``Plot.background_fill_color`` and "
+"``Plot.border_fill_color`` properties to ``None``."
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:83
+msgid ""
+"It's not possible to create a single SVG for a layout of plots, as each "
+"plot is it's own distinct SVG element. Alternatively, it's possible to "
+"download a SVG plot using a SaveTool from the toolbar. However, currently"
+" an SVG export of a plot with a toolbar will have a blank area where the "
+"toolbar was rendered in the browser."
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:92
+msgid ""
+"The SVG backend is activated by setting the ``Plot.output_backend`` "
+"attribute to ``\"svg\"``."
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:103
+msgid "Exporting a SVG Image"
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:105
+msgid ""
+"The simplest method to manually export a SVG plot is to install a browser"
+" bookmarklet from the New York Times called `SVG-Crowbar`_. When clicked,"
+" it runs a snippet of JavaScript and adds a prompt on the page to "
+"download the plot. It's written to work with Chrome and should work with "
+"Firefox in most cases."
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:111
+msgid ""
+"Alternatively, it's possible to download a SVG plot using the "
+"``SaveTool``, but the toolbar isn't captured though it figures into the "
+"plot layout solver calculations. It's not great, but a workable option."
+msgstr ""
+
+#: ../../source/docs/user_guide/export.rst:115
+msgid ""
+"For headless export, there's a utility function, |export_svgs|, which "
+"similar usage to the |save| and |show| functions. This function will "
+"download all of SVG-enabled plots within a layout as distinct SVG files."
+msgstr ""
+

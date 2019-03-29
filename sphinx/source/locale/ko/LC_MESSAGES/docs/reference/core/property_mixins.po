@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/core/property_mixins.rst:4
+msgid "bokeh.core.property_mixins"
+msgstr ""
+
+#: bokeh.core.property_mixins:1 of
+msgid "Mix-in classes that bulk add groups of properties to Bokeh models."
+msgstr ""
+
+#: bokeh.core.property_mixins:3 of
+msgid ""
+"Some groups of properties often show up in Bokeh models together. For "
+"instance, any model that exposes a fill color property for use when "
+"rendering will almost always want to expose a fill alpha as well. To "
+"reduce boilerplate code and simplify defining models with these sets of "
+"properties, use the mix-in classes in this module:"
+msgstr ""
+
+#: bokeh.core.property_mixins:9 of
+msgid "|FillProps| --- properties for fill color and alpha"
+msgstr ""
+
+#: bokeh.core.property_mixins:11 of
+msgid "|LineProps| --- properties for line color, dashing, width, etc."
+msgstr ""
+
+#: bokeh.core.property_mixins:13 of
+msgid "|TextProps| --- properties for text color, font, etc."
+msgstr ""
+
+#: bokeh.core.property_mixins:15 of
+msgid ""
+"To include these properties in a Bokeh model, use the |Include| property "
+"as shown here:"
+msgstr ""
+
+#: bokeh.core.property_mixins:26 of
+#, python-format
+msgid ""
+"This adds all the fill properties ``fill_color`` and ``fill_alpha`` to "
+"this model with one simple statement. Note that the help string contains "
+"a placeholder format `%s`. When docs for this class are rendered by the "
+":ref:`bokeh.sphinxext.bokeh_model` Sphinx extension, the placeholder will"
+" be replaced with more information specific to each property. The setting"
+" ``use_prefix`` means that the names of the properties added to "
+"``SomeGlyph`` are exactly ``fill_alpha`` and ``fill_color``. Some "
+"situations require a different usage, for more information see the docs "
+"for |Include|."
+msgstr ""
+
+#: bokeh.core.property_mixins.FillProps:1
+#: bokeh.core.property_mixins.ScalarFillProps:1 of
+msgid "Properties relevant to rendering fill regions."
+msgstr ""
+
+#: bokeh.core.property_mixins.FillProps:3
+#: bokeh.core.property_mixins.ScalarFillProps:3 of
+msgid "Mirrors the BokehJS ``properties.Fill`` class."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.NumberSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An alpha value to use to fill paths with."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Acceptable values are floating point numbers between 0 (transparent) and "
+"1 (opaque)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.ColorSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A color to use to fill paths with."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Acceptable values are:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "any of the 147 named `CSS colors`_, e.g ``'green'``, ``'indigo'``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "an RGB(A) hex value, e.g., ``'#FF0000'``, ``'#44444444'``"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "a 3-tuple of integers (r,g,b) between 0 and 255"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"a 4-tuple of (r,g,b,a) where r,g,b are integers between 0..255 and a is "
+"between 0..1"
+msgstr ""
+
+#: bokeh.core.property_mixins.LineProps:1
+#: bokeh.core.property_mixins.ScalarLineProps:1 of
+msgid "Properties relevant to rendering path operations."
+msgstr ""
+
+#: bokeh.core.property_mixins.LineProps:3
+#: bokeh.core.property_mixins.ScalarLineProps:3 of
+msgid "Mirrors the BokehJS ``properties.Line`` class."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An alpha value to use to stroke paths with."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A color to use to stroke paths with."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Stroke width in units of pixels."
+msgstr ""
+
+#: bokeh.core.property_mixins.ScalarTextProps:1
+#: bokeh.core.property_mixins.TextProps:1 of
+msgid "Properties relevant to rendering text."
+msgstr ""
+
+#: bokeh.core.property_mixins.ScalarTextProps:3
+#: bokeh.core.property_mixins.TextProps:3 of
+msgid "Mirrors the BokehJS ``properties.Text`` class."
+msgstr ""
+
+#: bokeh.core.property_mixins.ScalarTextProps:6
+#: bokeh.core.property_mixins.TextProps:6 of
+msgid ""
+"There is currently only support for filling text. An interface to stroke "
+"the outlines of text has not yet been exposed."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An alpha value to use to fill text with."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A color to use to fill text with."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Percent`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "An alpha value to use to %s with."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Color`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#, python-format
+msgid "A color to use to %s with."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Float`"
+msgstr ""
+

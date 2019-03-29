@@ -1,0 +1,206 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/widgets.sliders.rst:4
+msgid "bokeh.models.widgets.sliders"
+msgstr ""
+
+#: bokeh.models.widgets.sliders:1 of
+msgid "Various kinds of slider widgets."
+msgstr ""
+
+#: bokeh.models.widgets.sliders.AbstractSlider:1 of
+msgid "Bases: :class:`bokeh.models.widgets.widget.Widget`"
+msgstr ""
+
+#: bokeh.models.widgets.sliders.AbstractSlider:2 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Color`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.callbacks.Callback`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A callback to run in the browser whenever the current Slider value "
+"changes."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.SliderCallbackPolicy`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"When the callback is initiated. This parameter can take on only one of "
+"three options:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"\"continuous\": the callback will be executed immediately for each "
+"movement of the slider"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"\"throttle\": the callback will be executed at most every "
+"``callback_throttle`` milliseconds."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"\"mouseup\": the callback will be executed only once when the slider is "
+"released."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The \"mouseup\" policy is intended for scenarios in which the callback is"
+" expensive in time."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Callback policy currently apply to JS callbacks"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Float`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Number of milliseconds to pause between callback calls as the slider is "
+"moved."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( Enumeration(ltr, "
+"rtl) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Bool`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Whether or not show slider's value."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Slider's label."
+msgstr ""
+
+#: bokeh.models.widgets.sliders.DateRangeSlider:1
+#: bokeh.models.widgets.sliders.DateSlider:1
+#: bokeh.models.widgets.sliders.RangeSlider:1
+#: bokeh.models.widgets.sliders.Slider:1 of
+msgid "Bases: :class:`bokeh.models.widgets.sliders.AbstractSlider`"
+msgstr ""
+
+#: bokeh.models.widgets.sliders.Slider:1 of
+msgid "Slider-based number selection widget."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The maximum allowable value."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The minimum allowable value."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The step between consecutive values."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Initial or selected value."
+msgstr ""
+
+#: bokeh.models.widgets.sliders.RangeSlider:1 of
+msgid "Range-slider based number range selection widget."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.Float` , "
+":class:`~bokeh.core.properties.Float`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Initial or selected range."
+msgstr ""
+
+#: bokeh.models.widgets.sliders.DateSlider:1 of
+msgid "Slider-based date selection widget."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Date`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: bokeh.models.widgets.sliders.DateRangeSlider:1 of
+msgid "Slider-based date range selection widget."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.Date` , "
+":class:`~bokeh.core.properties.Date`  )"
+msgstr ""
+
+#: bokeh.models.widgets.sliders.DateRangeSlider.value_as_date:1 of
+msgid ""
+"Convenience property to retrieve the value tuple as a tuple of date "
+"objects."
+msgstr ""
+
+#: bokeh.models.widgets.sliders.DateRangeSlider.value_as_date:4 of
+msgid "Added in version 1.1"
+msgstr ""
+
+#: bokeh.models.widgets.sliders.DateRangeSlider.value_as_datetime:1 of
+msgid ""
+"Convenience property to retrieve the value tuple as a tuple of datetime "
+"objects."
+msgstr ""
+

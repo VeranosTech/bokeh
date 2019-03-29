@@ -1,0 +1,329 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/core/property/bases.rst:4
+msgid "bokeh.core.property.bases"
+msgstr ""
+
+#: bokeh.core.property.bases:1 of
+msgid "Provide base classes for the Bokeh property system."
+msgstr ""
+
+#: bokeh.core.property.bases:4 of
+msgid ""
+"These classes form part of the very low-level machinery that implements "
+"the Bokeh model and property system. It is unlikely that any of these "
+"classes or their methods will be applicable to any standard usage or to "
+"anyone who is not directly developing on Bokeh's own infrastructure."
+msgstr ""
+
+#: bokeh.core.property.bases.ContainerProperty:1 of
+msgid "A base class for Container-like type properties."
+msgstr ""
+
+#: bokeh.core.property.bases.PrimitiveProperty:1 of
+msgid "A base class for simple property types."
+msgstr ""
+
+#: bokeh.core.property.bases.PrimitiveProperty:3 of
+msgid ""
+"Subclasses should define a class attribute ``_underlying_type`` that is a"
+" tuple of acceptable type values for the property."
+msgstr ""
+
+#: bokeh.core.property.bases.PrimitiveProperty:7 of
+msgid "Example"
+msgstr ""
+
+#: bokeh.core.property.bases.PrimitiveProperty:8 of
+msgid "A trivial version of a ``Float`` property might look like:"
+msgstr ""
+
+#: bokeh.core.property.bases.PrimitiveProperty.from_json:1
+#: bokeh.core.property.bases.Property.from_json:1 of
+msgid "Convert from JSON-compatible values into a value for this property."
+msgstr ""
+
+#: bokeh.core.property.bases.PrimitiveProperty.from_json:3
+#: bokeh.core.property.bases.Property.from_json:3 of
+msgid "JSON-compatible values are: list, dict, number, string, bool, None"
+msgstr ""
+
+#: bokeh.core.property.bases.PrimitiveProperty.validate:1
+#: bokeh.core.property.bases.Property.validate:1 of
+msgid "Determine whether we can set this property from this value."
+msgstr ""
+
+#: bokeh.core.property.bases.PrimitiveProperty.validate:3
+#: bokeh.core.property.bases.Property.validate:3 of
+msgid "Validation happens before transform()"
+msgstr ""
+
+#: bokeh.core.property.bases.PrimitiveProperty.validate
+#: bokeh.core.property.bases.Property
+#: bokeh.core.property.bases.Property.accepts
+#: bokeh.core.property.bases.Property.asserts
+#: bokeh.core.property.bases.Property.is_valid
+#: bokeh.core.property.bases.Property.make_descriptors
+#: bokeh.core.property.bases.Property.transform
+#: bokeh.core.property.bases.Property.validate of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.core.property.bases.PrimitiveProperty.validate:5
+#: bokeh.core.property.bases.Property.is_valid:3
+#: bokeh.core.property.bases.Property.validate:5 of
+msgid "the value to validate against this property type"
+msgstr ""
+
+#: bokeh.core.property.bases.PrimitiveProperty.validate:7
+#: bokeh.core.property.bases.Property.validate:7 of
+msgid ""
+"whether to construct detailed exceptions  Generating detailed type "
+"validation error messages can be expensive. When doing type checks "
+"internally that will not escape exceptions to users, these messages can "
+"be skipped by setting this value to False (default: True)"
+msgstr ""
+
+#: bokeh.core.property.bases.PrimitiveProperty.validate:7
+#: bokeh.core.property.bases.Property.validate:7 of
+msgid "whether to construct detailed exceptions"
+msgstr ""
+
+#: bokeh.core.property.bases.PrimitiveProperty.validate:9
+#: bokeh.core.property.bases.Property.validate:9 of
+msgid ""
+"Generating detailed type validation error messages can be expensive. When"
+" doing type checks internally that will not escape exceptions to users, "
+"these messages can be skipped by setting this value to False (default: "
+"True)"
+msgstr ""
+
+#: bokeh.core.property.bases.PrimitiveProperty.validate
+#: bokeh.core.property.bases.Property.accepts
+#: bokeh.core.property.bases.Property.asserts
+#: bokeh.core.property.bases.Property.is_valid
+#: bokeh.core.property.bases.Property.make_descriptors
+#: bokeh.core.property.bases.Property.matches
+#: bokeh.core.property.bases.Property.transform
+#: bokeh.core.property.bases.Property.validate
+#: bokeh.core.property.bases.validation_on of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.core.property.bases.PrimitiveProperty.validate:15
+#: bokeh.core.property.bases.Property.validate:15 of
+msgid "None"
+msgstr ""
+
+#: bokeh.core.property.bases.PrimitiveProperty.validate
+#: bokeh.core.property.bases.Property.validate of
+msgid "raises"
+msgstr ""
+
+#: bokeh.core.property.bases.PrimitiveProperty.validate:17
+#: bokeh.core.property.bases.Property.validate:17 of
+msgid "ValueError if the value is not valid for this property type"
+msgstr ""
+
+#: bokeh.core.property.bases.Property:1 of
+msgid ""
+"Base class for Bokeh property instances, which can be added to Bokeh "
+"Models."
+msgstr ""
+
+#: bokeh.core.property.bases.Property:4 of
+msgid ""
+"A default value for attributes created from this property to have "
+"(default: None)"
+msgstr ""
+
+#: bokeh.core.property.bases.Property:7 of
+msgid ""
+"A documentation string for this property. It will be automatically used "
+"by the :ref:`bokeh.sphinxext.bokeh_prop` extension when generating Spinx "
+"documentation. (default: None)"
+msgstr ""
+
+#: bokeh.core.property.bases.Property:11 of
+msgid ""
+"Whether attributes created from this property should be included in "
+"serialization (default: True)"
+msgstr ""
+
+#: bokeh.core.property.bases.Property:14 of
+msgid ""
+"Whether attributes created from this property are read-only. (default: "
+"False)"
+msgstr ""
+
+#: bokeh.core.property.bases.Property.__init__:1 of
+msgid "Initialize self.  See help(type(self)) for accurate signature."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.__str__:1 of
+msgid "Return str(self)."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.accepts:1 of
+msgid "Declare that other types may be converted to this property type."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.accepts:3 of
+msgid "A type that may be converted automatically to this property type."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.accepts:6 of
+msgid ""
+"A function accepting ``value`` to perform conversion of the value to this"
+" property type."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.accepts:10
+#: bokeh.core.property.bases.Property.asserts:16 of
+msgid "self"
+msgstr ""
+
+#: bokeh.core.property.bases.Property.asserts:1 of
+msgid "Assert that prepared values satisfy given conditions."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.asserts:3 of
+msgid ""
+"Assertions are intended in enforce conditions beyond simple value type "
+"validation. For instance, this method can be use to assert that the "
+"columns of a ``ColumnDataSource`` all collectively have the same length "
+"at all times."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.asserts:8 of
+msgid ""
+"A function accepting ``(obj, value)`` that returns True if the value "
+"passes the assertion, or False otherwise."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.asserts:11 of
+msgid ""
+"A message to print in case the assertion fails, or a function accepting "
+"``(obj, name, value)`` to call in in case the assertion fails."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.is_valid:1 of
+msgid "Whether the value passes validation"
+msgstr ""
+
+#: bokeh.core.property.bases.Property.is_valid:6 of
+msgid "True if valid, False otherwise"
+msgstr ""
+
+#: bokeh.core.property.bases.Property.make_descriptors:1 of
+msgid ""
+"Return a list of ``BasicPropertyDescriptor`` instances to install on a "
+"class, in order to delegate attribute access to this property."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.make_descriptors:4 of
+msgid "the name of the property these descriptors are for"
+msgstr ""
+
+#: bokeh.core.property.bases.Property.make_descriptors:7 of
+msgid "list[BasicPropertyDescriptor]"
+msgstr ""
+
+#: bokeh.core.property.bases.Property.make_descriptors:9 of
+msgid ""
+"The descriptors returned are collected by the ``MetaHasProps`` metaclass "
+"and added to ``HasProps`` subclasses during class creation."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.matches:1 of
+msgid "Whether two parameters match values."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.matches:3 of
+msgid ""
+"If either ``new`` or ``old`` is a NumPy array or Pandas Series or Index, "
+"then the result of ``np.array_equal`` will determine if the values match."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.matches:6 of
+msgid "Otherwise, the result of standard Python equality will be returned."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.matches:8 of
+msgid "True, if new and old match, False otherwise"
+msgstr ""
+
+#: bokeh.core.property.bases.Property.serialize_value:1 of
+msgid "Change the value into a JSON serializable format."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.themed_default:1 of
+msgid "The default, transformed by prepare_value() and the theme overrides."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.transform:1 of
+msgid "Change the value into the canonical format for this property."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.transform:3 of
+msgid "the value to apply transformation to."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.transform:6 of
+msgid "transformed value"
+msgstr ""
+
+#: bokeh.core.property.bases.Property.transform of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.core.property.bases.Property.wrap:1 of
+msgid "Some property types need to wrap their values in special containers, etc."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.readonly:1 of
+msgid "Whether this property is read-only."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.readonly:3 of
+msgid ""
+"Read-only properties may only be modified by the client (i.e., by BokehJS"
+" in the browser)."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.serialized:1 of
+msgid "Whether the property should be serialized when serializing an object."
+msgstr ""
+
+#: bokeh.core.property.bases.Property.serialized:3 of
+msgid ""
+"This would be False for a \"virtual\" or \"convenience\" property that "
+"duplicates information already available in other properties, for "
+"example."
+msgstr ""
+
+#: bokeh.core.property.bases.validation_on:1 of
+msgid "Check if property validation is currently active"
+msgstr ""
+
+#: bokeh.core.property.bases.validation_on:3 of
+msgid "bool"
+msgstr ""
+

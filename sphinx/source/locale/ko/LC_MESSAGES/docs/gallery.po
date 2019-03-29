@@ -1,0 +1,250 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/gallery.rst:6
+msgid "Gallery"
+msgstr ""
+
+#: ../../source/docs/gallery.rst:11
+msgid "Server App Examples"
+msgstr ""
+
+#: ../../source/docs/gallery.rst:13
+msgid ""
+"The examples linked below all show off usage of the Bokeh server. The "
+"Bokeh server provides a place where interesting things can happen---data "
+"can be updated to in turn update the plot, and UI and selection events "
+"can be processed to trigger more visual updates."
+msgstr ""
+
+#: ../../source/docs/gallery.rst:205
+msgid "Notebook Examples"
+msgstr ""
+
+#: ../../source/docs/gallery.rst:207
+msgid ""
+"A large number of static examples may be viewed directly online (or "
+"downloaded and executed locally) at the `Bokeh NBViewer Gallery`_."
+msgstr ""
+
+#: ../../source/docs/gallery.rst:214
+msgid "Standalone Examples"
+msgstr ""
+
+#: ../../source/docs/gallery.rst:216
+msgid ""
+"All of the examples below are located in the :bokeh-tree:`examples` "
+"subdirectory of your Bokeh checkout. By \"standalone\" we mean that these"
+" examples make no use of the Bokeh server. These plots still have many "
+"interactive tools and features, including linked panning and brushing, "
+"and hover inspectors."
+msgstr ""
+
+#: ../../source/docs/gallery.rst:222
+msgid "Click on an image below to see its code and interact with the live plot."
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|iris|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|ridgeplot|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|hexbin|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|hex_tile|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|bar_colormapped|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|bar_intervals|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|range_tool|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|pie_chart|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|bar_mixed|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|bar_nested_colormapped|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|categorical|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|bar_pandas_groupby_colormapped|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|bar_pandas_groupby_nested|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|bar_stacked|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|bar_stacked_split|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|categorical_scatter_jitter|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|bar_nested|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|candlestick|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|legend|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|bar_colors|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|box_annotation|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|les_mis|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|bar_dodged|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|unemployment|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|stocks|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|streamline|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|quiver|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|image_rgba|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|dot|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|periodic|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|histogram|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|image|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|slider|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|jitter|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|lorenz|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|color_scatter|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|color_sliders|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|iris_splom|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|anscombe|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|texas|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|markers|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|burtin|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|bar_basic|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|stacked_area|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|elements|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|boxplot|"
+msgstr ""
+
+#: ../../<bokeh-gallery>:1
+msgid "|logaxis|"
+msgstr ""
+

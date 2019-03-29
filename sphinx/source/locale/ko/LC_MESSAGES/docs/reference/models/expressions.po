@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/expressions.rst:4
+msgid "bokeh.models.expressions"
+msgstr ""
+
+#: bokeh.models.expressions:1 of
+msgid ""
+"Represent array expressions to be computed on the client (browser) side "
+"by BokehJS."
+msgstr ""
+
+#: bokeh.models.expressions:4 of
+msgid ""
+"Expression models are useful as ``DataSpec`` values when it is desired "
+"that the array values be computed in the browser:"
+msgstr ""
+
+#: bokeh.models.expressions:11 of
+msgid "or using the ``expr`` convenience function:"
+msgstr ""
+
+#: bokeh.models.expressions:19 of
+msgid ""
+"In this case, the values of the ``x`` coordinates will be computed in the"
+" browser by the JavaScript implementation of ``some_expression`` using a "
+"``ColumnDataSource`` as input."
+msgstr ""
+
+#: bokeh.models.expressions.CumSum:1 bokeh.models.expressions.Stack:1 of
+msgid "Bases: :class:`bokeh.models.expressions.Expression`"
+msgstr ""
+
+#: bokeh.models.expressions.CumSum:1 of
+msgid ""
+"An expression for generating arrays by cumulatively summing a single "
+"column from a ``ColumnDataSource``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The name of a ``ColumnDataSource`` column to cumulatively sum for new "
+"values."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Bool`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether to include zero at the start of the result. Note that the length "
+"of the result is always the same as the input column. Therefore if this "
+"property is True, then the last value of the column will not be included "
+"in the sum."
+msgstr ""
+
+#: bokeh.models.expressions.Expression:1 of
+msgid "Bases: :class:`bokeh.model.Model`"
+msgstr ""
+
+#: bokeh.models.expressions.Expression:1 of
+msgid ""
+"Base class for ``Expression`` models that represent a computation to be "
+"carried out on the client-side."
+msgstr ""
+
+#: bokeh.models.expressions.Expression:4 of
+msgid "JavaScript implementations should implement the following methods:"
+msgstr ""
+
+#: bokeh.models.expressions.Expression:12 of
+msgid ""
+"If you wish for results to be cached per source and updated only if the "
+"source changes, implement ``_v_compute: (source)`` instead."
+msgstr ""
+
+#: bokeh.models.expressions.Expression:17 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: bokeh.models.expressions.Stack:1 of
+msgid ""
+"An expression for generating arrays by summing different columns from a "
+"``ColumnDataSource``."
+msgstr ""
+
+#: bokeh.models.expressions.Stack:4 of
+msgid ""
+"This expression is useful for implementing stacked bar charts at a low "
+"level."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Seq` ( "
+":class:`~bokeh.core.properties.String`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A sequence of fields from a ``ColumnDataSource`` to sum (elementwise). "
+"For example:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Will compute an array of values (in the browser) by adding the elements "
+"of the ``'sales'`` and ``'marketing'`` columns of a data source."
+msgstr ""
+

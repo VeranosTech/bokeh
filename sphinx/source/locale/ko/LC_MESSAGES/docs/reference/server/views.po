@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/server/views.rst:2
+msgid "bokeh.server.views"
+msgstr ""
+
+#: ../../source/docs/reference/server/views.rst:5
+msgid "autoload_js_handler"
+msgstr ""
+
+#: bokeh.server.views.autoload_js_handler:1 bokeh.server.views.doc_handler:1
+#: bokeh.server.views.static_handler:1 of
+msgid "Provide a request handler that returns a page displaying a document."
+msgstr ""
+
+#: bokeh.server.views.autoload_js_handler.AutoloadJsHandler:1 of
+msgid "Implements a custom Tornado handler for the autoload JS chunk"
+msgstr ""
+
+#: ../../source/docs/reference/server/views.rst:11
+msgid "doc_handler"
+msgstr ""
+
+#: bokeh.server.views.doc_handler.DocHandler:1
+#: bokeh.server.views.metadata_handler.MetadataHandler:1
+#: bokeh.server.views.session_handler.SessionHandler:1 of
+msgid "Implements a custom Tornado handler for document display page"
+msgstr ""
+
+#: ../../source/docs/reference/server/views.rst:17
+msgid "autoload_metadata_handler"
+msgstr ""
+
+#: bokeh.server.views.metadata_handler:1 of
+msgid ""
+"Provide a request handler that returns a json with metadata information "
+"from the application"
+msgstr ""
+
+#: ../../source/docs/reference/server/views.rst:23
+msgid "root_handler"
+msgstr ""
+
+#: bokeh.server.views.root_handler:1 of
+msgid ""
+"Provide a Request handler that lists the application (if more than one) "
+"or (if only one) redirects to the route of that applications."
+msgstr ""
+
+#: bokeh.server.views.root_handler.RootHandler:1 of
+msgid ""
+"Implements a custom Tornado handler to display the available applications"
+" If only one application it redirects to that application route"
+msgstr ""
+
+#: ../../source/docs/reference/server/views.rst:29
+msgid "session_handler"
+msgstr ""
+
+#: bokeh.server.views.session_handler:1 of
+msgid "Abstract request handler that handles bokeh-session-id"
+msgstr ""
+
+#: ../../source/docs/reference/server/views.rst:35
+msgid "static_handler"
+msgstr ""
+
+#: bokeh.server.views.static_handler.StaticHandler:1 of
+msgid ""
+"Implements a custom Tornado static file handler for BokehJS JavaScript "
+"and CSS resources."
+msgstr ""
+
+#: ../../source/docs/reference/server/views.rst:41
+msgid "ws"
+msgstr ""
+
+#: bokeh.server.views.ws:1 of
+msgid "Provide a web socket handler for the Bokeh Server application."
+msgstr ""
+
+#: bokeh.server.views.ws.WSHandler:1 of
+msgid "Implements a custom Tornado WebSocketHandler for the Bokeh Server."
+msgstr ""
+
+#: bokeh.server.views.ws.WSHandler.check_origin:1 of
+msgid "Implement a check_origin policy for Tornado to call."
+msgstr ""
+
+#: bokeh.server.views.ws.WSHandler.check_origin:3 of
+msgid ""
+"The suplied origin will be compared to the Bokeh server whitelist. If the"
+" origin is not allow, an error will be logged and ``False`` will be "
+"returned."
+msgstr ""
+
+#: bokeh.server.views.ws.WSHandler.check_origin
+#: bokeh.server.views.ws.WSHandler.on_message
+#: bokeh.server.views.ws.WSHandler.send_message of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.server.views.ws.WSHandler.check_origin:6 of
+msgid "The URL of the connection origin"
+msgstr ""
+
+#: bokeh.server.views.ws.WSHandler.check_origin
+#: bokeh.server.views.ws.WSHandler.open of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.server.views.ws.WSHandler.check_origin:9 of
+msgid "bool, True if the connection is allowed, False otherwise"
+msgstr ""
+
+#: bokeh.server.views.ws.WSHandler.on_close:1 of
+msgid "Clean up when the connection is closed."
+msgstr ""
+
+#: bokeh.server.views.ws.WSHandler.on_message:1 of
+msgid "Process an individual wire protocol fragment."
+msgstr ""
+
+#: bokeh.server.views.ws.WSHandler.on_message:3 of
+msgid ""
+"The websocket RFC specifies opcodes for distinguishing text frames from "
+"binary frames. Tornado passes us either a text or binary string depending"
+" on that opcode, we have to look at the type of the fragment to see what "
+"we got."
+msgstr ""
+
+#: bokeh.server.views.ws.WSHandler.on_message:8 of
+msgid "wire fragment to process"
+msgstr ""
+
+#: bokeh.server.views.ws.WSHandler.on_pong:1 of
+msgid "Invoked when the response to a ping frame is received."
+msgstr ""
+
+#: bokeh.server.views.ws.WSHandler.open:1 of
+msgid "Initialize a connection to a client."
+msgstr ""
+
+#: bokeh.server.views.ws.WSHandler.open:3 of
+msgid "None"
+msgstr ""
+
+#: bokeh.server.views.ws.WSHandler.send_message:1 of
+msgid "Send a Bokeh Server protocol message to the connected client."
+msgstr ""
+
+#: bokeh.server.views.ws.WSHandler.send_message:3 of
+msgid "a message to send"
+msgstr ""
+
+#: bokeh.server.views.ws.WSHandler.write_message:1 of
+msgid ""
+"Override parent write_message with a version that acquires a write lock "
+"before writing."
+msgstr ""
+

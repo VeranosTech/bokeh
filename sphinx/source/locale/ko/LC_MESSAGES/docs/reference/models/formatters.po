@@ -1,0 +1,1303 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/formatters.rst:4
+msgid "bokeh.models.formatters"
+msgstr ""
+
+#: bokeh.models.formatters:1 of
+msgid ""
+"Models for controlling the text and visual formatting of tick labels on "
+"Bokeh plot axes."
+msgstr ""
+
+#: bokeh.models.formatters.TickFormatter:1 of
+msgid "Bases: :class:`bokeh.model.Model`"
+msgstr ""
+
+#: bokeh.models.formatters.TickFormatter:1 of
+msgid "A base class for all tick formatter types."
+msgstr ""
+
+#: bokeh.models.formatters.TickFormatter:5 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: bokeh.models.formatters.BasicTickFormatter:1
+#: bokeh.models.formatters.CategoricalTickFormatter:1
+#: bokeh.models.formatters.DatetimeTickFormatter:1
+#: bokeh.models.formatters.FuncTickFormatter:1
+#: bokeh.models.formatters.LogTickFormatter:1
+#: bokeh.models.formatters.NumeralTickFormatter:1
+#: bokeh.models.formatters.PrintfTickFormatter:1 of
+msgid "Bases: :class:`bokeh.models.formatters.TickFormatter`"
+msgstr ""
+
+#: bokeh.models.formatters.BasicTickFormatter:1 of
+msgid ""
+"Display tick values from continuous ranges as \"basic numbers\", using "
+"scientific notation when appropriate by default."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Limit the use of scientific notation to when::"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Auto` , "
+":class:`~bokeh.core.properties.Int`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "How many digits of precision to display in tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Bool`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether to ever display scientific notation. If ``True``, then when to "
+"use scientific notation is controlled by ``power_limit_low`` and "
+"``power_limit_high``."
+msgstr ""
+
+#: bokeh.models.formatters.MercatorTickFormatter:1 of
+msgid "Bases: :class:`bokeh.models.formatters.BasicTickFormatter`"
+msgstr ""
+
+#: bokeh.models.formatters.MercatorTickFormatter:1 of
+msgid "A ``TickFormatter`` for values in WebMercator units."
+msgstr ""
+
+#: bokeh.models.formatters.MercatorTickFormatter:3 of
+msgid ""
+"Some map plot types internally use WebMercator to describe coordinates, "
+"plot bounds, etc. These units are not very human-friendly. This tick "
+"formatter will convert WebMercator units into Latitude and Longitude for "
+"display on axes."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LatLon`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Specify whether to format ticks for Latitude or Longitude."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Projected coordinates are not separable, computing Latitude and Longitude"
+" tick labels from Web Mercator requires considering coordinates from both"
+" dimensions together. Use this property to specify which result should be"
+" used for display."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Typically, if the formatter is for an x-axis, then dimension should be "
+"``\"lon\"`` and if the formatter is for a y-axis, then the dimension "
+"should be `\"lat\"``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"In order to prevent hard to debug errors, there is no default value for "
+"dimension. Using an un-configured ``MercatorTickFormatter`` will result "
+"in a validation error and a JavaScript console error."
+msgstr ""
+
+#: bokeh.models.formatters.NumeralTickFormatter:1 of
+msgid "Tick formatter based on a human-readable format string."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The number format, as defined in the following tables:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "**NUMBERS**:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Number"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Format"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "String"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "10000"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0,0.0000'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "10,000.0000"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "10000.23"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0,0'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "10,000"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'+0,0'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "+10,000"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-10000"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0,0.0'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-10,000.0"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "10000.1234"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0.000'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "10000.123"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0[.]00000'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "10000.12340"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'(0,0.0000)'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "(10,000.0000)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-0.23"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'.00'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-.23"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'(.00)'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "(.23)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "0.23"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0.00000'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "0.23000"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0.0[0000]'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1230974"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0.0a'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1.2m"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1460"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0 a'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1 k"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-104000"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0a'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-104k"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0o'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1st"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "52"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "52nd"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "23"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "23rd"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "100"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "100th"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "**CURRENCY**:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1000.234"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'$0,0.00'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "$1,000.23"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1000.2"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0,0[.]00 $'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1,000.20 $"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "1001"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'$ 0,0[.]00'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "$ 1,001"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-1000.234"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'($0,0)'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "($1,000)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'$0.00'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-$1000.23"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'($ 0.00 a)'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "$ 1.23 m"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "**BYTES**:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0b'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "100B"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "2048"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0 b'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "2 KB"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "7884486213"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0.0b'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "7.3GB"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "3467479682787"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0.000 b'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "3.154 TB"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "**PERCENTAGES**:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0%'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "100%"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "0.974878234"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0.000%'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "97.488%"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-0.43"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'0 %'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "-43 %"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "0.43"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'(0.000 %)'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "43.000 %"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "**TIME**:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "25"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "'00:00:00'"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "0:00:25"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "238"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "0:03:58"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "63846"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "17:44:06"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "For the complete specification, see http://numbrojs.com/format.html"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.NumeralLanguage`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The language to use for formatting language-specific features (e.g. "
+"thousands separator)."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.RoundingFunction`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Rounding functions (round, floor, ceil) and their synonyms (nearest, "
+"rounddown, roundup)."
+msgstr ""
+
+#: bokeh.models.formatters.PrintfTickFormatter:1 of
+msgid "Tick formatter based on a printf-style format string."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The number format, as defined as follows: the placeholder in the format "
+"string is marked by % and is followed by one or more of these elements, "
+"in this order:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An optional ``+`` sign"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Causes the result to be preceded with a plus or minus sign on numeric "
+"values. By default, only the ``-`` sign is used on negative numbers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An optional padding specifier"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Specifies what (if any) character to use for padding. Possible values are"
+" 0 or any other character preceded by a ``'`` (single quote). The default"
+" is to pad with spaces."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An optional ``-`` sign"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Causes sprintf to left-align the result of this placeholder. The default "
+"is to right-align the result."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An optional number"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Specifies how many characters the result should have. If the value to be "
+"returned is shorter than this number, the result will be padded."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An optional precision modifier"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Consists of a ``.`` (dot) followed by a number, specifies how many digits"
+" should be displayed for floating point numbers. When used on a string, "
+"it causes the result to be truncated."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A type specifier"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Can be any of:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``%`` --- yields a literal ``%`` character"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``b`` --- yields an integer as a binary number"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``c`` --- yields an integer as the character with that ASCII value"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``d`` or ``i`` --- yields an integer as a signed decimal number"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``e`` --- yields a float using scientific notation"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``u`` --- yields an integer as an unsigned decimal number"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``f`` --- yields a float as is"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``o`` --- yields an integer as an octal number"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``s`` --- yields a string as is"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``x`` --- yields an integer as a hexadecimal number (lower-case)"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``X`` --- yields an integer as a hexadecimal number (upper-case)"
+msgstr ""
+
+#: bokeh.models.formatters.LogTickFormatter:1 of
+msgid "Display tick values from continuous ranges as powers of some base."
+msgstr ""
+
+#: bokeh.models.formatters.LogTickFormatter:4 of
+msgid "Most often useful in conjunction with a ``LogTicker``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.tickers.Ticker`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The corresponding ``LogTicker``, used to determine the correct base to "
+"use. If unset, the formatter will use base 10 as a default."
+msgstr ""
+
+#: bokeh.models.formatters.CategoricalTickFormatter:1 of
+msgid "Display tick values from categorical ranges as string values."
+msgstr ""
+
+#: bokeh.models.formatters.FuncTickFormatter:1 of
+msgid "Display tick values that are formatted by a user-defined function."
+msgstr ""
+
+#: bokeh.models.formatters.FuncTickFormatter:4 of
+msgid ""
+"The explicit purpose of this Bokeh Model is to embed *raw JavaScript "
+"code* for a browser to execute. If any part of the code is derived from "
+"untrusted user inputs, then you must take appropriate care to sanitize "
+"the user input prior to passing to Bokeh."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Dict` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.AnyRef`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A mapping of names to Python objects. In particular those can be bokeh's "
+"models. These objects are made available to the formatter's code snippet "
+"as the values of named parameters to the callback."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A snippet of JavaScript code that reformats a single tick to the desired "
+"format. The variable ``tick`` will contain the unformatted tick value and"
+" can be expected to be present in the code snippet namespace at render "
+"time."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Additionally available variables are:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``ticks``, an array of all axis ticks as positioned by the ticker,"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "``index``, the position of ``tick`` within ``ticks``, and"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "the keys of ``args`` mapping, if any."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Finding yourself needing to cache an expensive ``ticks``-dependent "
+"computation, you can store it on the ``this`` variable."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+#: bokeh.models.formatters.FuncTickFormatter.from_coffeescript:6
+#: bokeh.models.formatters.FuncTickFormatter.from_py_func:6 of
+msgid "Example:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Enables or disables automatic insertion of ``\"use strict\";`` into "
+"``code``."
+msgstr ""
+
+#: bokeh.models.formatters.FuncTickFormatter.from_coffeescript:1 of
+msgid ""
+"Create a FuncTickFormatter instance from a CoffeeScript snippet. The "
+"function body is translated to JavaScript using node. The variable "
+"``tick`` will contain the unformatted tick value and can be expected to "
+"be present in the code snippet namespace at render time."
+msgstr ""
+
+#: bokeh.models.formatters.FuncTickFormatter.from_py_func:1 of
+msgid ""
+"Create a ``FuncTickFormatter`` instance from a Python function. The "
+"function is translated to JavaScript using PScript. The variable ``tick``"
+" will contain the unformatted tick value and can be expected to be "
+"present in the function namespace at render time."
+msgstr ""
+
+#: bokeh.models.formatters.FuncTickFormatter.from_py_func:15 of
+msgid ""
+"The python function must have no positional arguments. It's possible to "
+"pass Bokeh models (e.g. a ``ColumnDataSource``) as keyword arguments to "
+"the function."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:1 of
+msgid ""
+"A ``TickFormatter`` for displaying datetime values nicely across a range "
+"of scales."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:4 of
+msgid ""
+"``DatetimeTickFormatter`` has the following properties (listed together "
+"with their default values) that can be used to control the formatting of "
+"axis ticks at different scales scales:"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:30 of
+msgid ""
+"Each scale property can be set to format or list of formats to use for "
+"formatting datetime tick values that fall in in that \"time scale\". By "
+"default, only the first format string passed for each time scale will be "
+"used. By default, all leading zeros are stripped away from the formatted "
+"labels."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:36 of
+msgid "This list of supported `strftime`_ formats is reproduced below."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:40 of
+msgid "%a"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:39 of
+msgid ""
+"The abbreviated name of the day of the week according to the current "
+"locale."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:44 of
+msgid "%A"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:43 of
+msgid "The full name of the day of the week according to the current locale."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:47 of
+msgid "%b"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:47 of
+msgid "The abbreviated month name according to the current locale."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:50 of
+msgid "%B"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:50 of
+msgid "The full month name according to the current locale."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:54 of
+#, python-format
+msgid "%c"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:53 of
+msgid "The preferred date and time representation for the current locale."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:57 of
+msgid "%C"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:57 of
+msgid "The century number (year/100) as a 2-digit integer."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:60 of
+#, python-format
+msgid "%d"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:60 of
+msgid "The day of the month as a decimal number (range 01 to 31)."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:66 of
+msgid "%D"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:63 of
+#, python-format
+msgid ""
+"Equivalent to %m/%d/%y.  (Americans should note that in many other "
+"countries %d/%m/%y is rather common. This means that in international "
+"context this format is ambiguous and should not be used.)"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:70 of
+#, python-format
+msgid "%e"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:69 of
+#, python-format
+msgid ""
+"Like %d, the day of the month as a decimal number, but a leading zero is "
+"replaced by a space."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:75 of
+#, python-format
+msgid "%f"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:73 of
+msgid ""
+"Microsecond as a decimal number, zero-padded on the left (range "
+"000000-999999). This is an extension to the set of directives available "
+"to `timezone`_."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:78 of
+#, python-format
+msgid "%F"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:78 of
+#, python-format
+msgid "Equivalent to %Y-%m-%d (the ISO 8601 date format)."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:85 of
+#, python-format
+msgid "%G"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:81 of
+msgid ""
+"The ISO 8601 week-based year with century as a decimal number. The "
+"4-digit year corresponding to the ISO week number (see %V). This has the "
+"same format and value as %Y, except that if the ISO week number belongs "
+"to the previous or next year, that year is used instead."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:88 of
+#, python-format
+msgid "%g"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:88 of
+#, python-format
+msgid "Like %G, but without century, that is, with a 2-digit year (00-99)."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:91 of
+msgid "%h"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:91 of
+msgid "Equivalent to %b."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:95 of
+msgid "%H"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:94 of
+msgid "The hour as a decimal number using a 24-hour clock (range 00 to 23)."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:99 of
+msgid "%I"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:98 of
+msgid "The hour as a decimal number using a 12-hour clock (range 01 to 12)."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:102 of
+msgid "%j"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:102 of
+msgid "The day of the year as a decimal number (range 001 to 366)."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:106 of
+msgid "%k"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:105 of
+msgid ""
+"The hour (24-hour clock) as a decimal number (range 0 to 23). Single "
+"digits are preceded by a blank.  (See also %H.)"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:110 of
+msgid "%l"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:109 of
+msgid ""
+"The hour (12-hour clock) as a decimal number (range 1 to 12). Single "
+"digits are preceded by a blank.  (See also %I.)  (TZ)"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:113 of
+msgid "%m"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:113 of
+msgid "The month as a decimal number (range 01 to 12)."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:116 of
+msgid "%M"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:116 of
+msgid "The minute as a decimal number (range 00 to 59)."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:120 of
+msgid "%n"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:119 of
+msgid ""
+"A newline character. Bokeh text does not currently support newline "
+"characters."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:127 of
+msgid "%N"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:123 of
+msgid ""
+"Nanosecond as a decimal number, zero-padded on the left (range "
+"000000000-999999999). Supports a padding width specifier, i.e. %3N "
+"displays 3 leftmost digits. However, this is only accurate to the "
+"millisecond level of precision due to limitations of `timezone`_."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:132 of
+msgid "%p"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:130 of
+msgid ""
+"Either \"AM\" or \"PM\" according to the given time value, or the "
+"corresponding strings for the current locale.  Noon is treated as \"PM\" "
+"and midnight as \"AM\"."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:136 of
+msgid "%P"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:135 of
+msgid ""
+"Like %p but in lowercase: \"am\" or \"pm\" or a corresponding string for "
+"the current locale."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:140 of
+#, python-format
+msgid "%r"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:139 of
+msgid ""
+"The time in a.m. or p.m. notation.  In the POSIX locale this is "
+"equivalent to %I:%M:%S %p."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:144 of
+msgid "%R"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:143 of
+msgid ""
+"The time in 24-hour notation (%H:%M). For a version including the "
+"seconds, see %T below."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:148 of
+#, python-format
+msgid "%s"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:147 of
+msgid "The number of seconds since the Epoch, 1970-01-01 00:00:00 +0000 (UTC)."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:152 of
+msgid "%S"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:151 of
+msgid ""
+"The second as a decimal number (range 00 to 60).  (The range is up to 60 "
+"to allow for occasional leap seconds.)"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:156 of
+msgid "%t"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:155 of
+msgid "A tab character. Bokeh text does not currently support tab characters."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:159 of
+msgid "%T"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:159 of
+msgid "The time in 24-hour notation (%H:%M:%S)."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:163 of
+#, python-format
+msgid "%u"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:162 of
+msgid ""
+"The day of the week as a decimal, range 1 to 7, Monday being 1. See also "
+"%w."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:168 of
+msgid "%U"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:166 of
+msgid ""
+"The week number of the current year as a decimal number, range 00 to 53, "
+"starting with the first Sunday as the first day of week 01.  See also %V "
+"and %W."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:173 of
+msgid "%V"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:171 of
+msgid ""
+"The ISO 8601 week number (see NOTES) of the current year as a decimal "
+"number, range 01 to 53, where week 1 is the first week that has at least "
+"4 days in the new year.  See also %U and %W."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:177 of
+msgid "%w"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:176 of
+#, python-format
+msgid ""
+"The day of the week as a decimal, range 0 to 6, Sunday being 0. See also "
+"%u."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:182 of
+msgid "%W"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:180 of
+msgid ""
+"The week number of the current year as a decimal number, range 00 to 53, "
+"starting with the first Monday as the first day of week 01."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:186 of
+#, python-format
+msgid "%x"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:185 of
+msgid "The preferred date representation for the current locale without the time."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:190 of
+#, python-format
+msgid "%X"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:189 of
+msgid "The preferred time representation for the current locale without the date."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:193 of
+msgid "%y"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:193 of
+msgid "The year as a decimal number without a century (range 00 to 99)."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:196 of
+msgid "%Y"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:196 of
+msgid "The year as a decimal number including the century."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:200 of
+msgid "%z"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:199 of
+msgid ""
+"The +hhmm or -hhmm numeric timezone (that is, the hour and minute offset "
+"from UTC)."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:203 of
+msgid "%Z"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:203 of
+msgid "The timezone name or abbreviation."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:206 of
+#, python-format
+msgid "%%"
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:206 of
+msgid "A literal '%' character."
+msgstr ""
+
+#: bokeh.models.formatters.DatetimeTickFormatter:209 of
+msgid ""
+"The client library BokehJS uses the `timezone`_ library to format "
+"datetimes. The inclusion of the list below is based on the claim that "
+"`timezone`_ makes to support \"the full compliment of GNU date format "
+"specifiers.\" However, this claim has not been tested exhaustively "
+"against this list. If you find formats that do not function as expected, "
+"please submit a `github issue`_, so that the documentation can be updated"
+" appropriately."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.String`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Formats for displaying datetime values in the ``days`` range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"See the :class:`~bokeh.models.formatters.DatetimeTickFormatter` help for "
+"a list of all supported formats."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Formats for displaying datetime values in the ``hourmin`` (for combined "
+"hours and minutes) range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Formats for displaying datetime values in the ``hours`` range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Formats for displaying datetime values in the ``microseconds`` range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Formats for displaying datetime values in the ``milliseconds`` range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Formats for displaying datetime values in the ``minsec`` (for combined "
+"minutes and seconds) range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Formats for displaying datetime values in the ``minutes`` range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Formats for displaying datetime values in the ``months`` range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Formats for displaying datetime values in the ``seconds`` range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Formats for displaying datetime values in the ``years`` range."
+msgstr ""
+

@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/themes.rst:4
+msgid "bokeh.themes"
+msgstr ""
+
+#: bokeh.themes:1 of
+msgid "Provide access to built-in themes:"
+msgstr ""
+
+#: bokeh.themes:4 of
+msgid "CALIBER"
+msgstr ""
+
+#: bokeh.themes:22 of
+msgid "DARK_MINIMAL"
+msgstr ""
+
+#: bokeh.themes:41 of
+msgid "LIGHT_MINIMAL"
+msgstr ""
+
+#: bokeh.themes:58 of
+msgid "as well as the ``Theme`` class that can be used to create new Themes."
+msgstr ""
+
+#: bokeh.themes.Theme:1 of
+msgid "Provide new default values for Bokeh models."
+msgstr ""
+
+#: bokeh.themes.Theme:3 of
+msgid ""
+"Bokeh Model properties all have some built-in default value. If a "
+"property has not been explicitly set (e.g. ``m.foo = 10``) then accessing"
+" the property with return the default value. It may be useful for users "
+"to be able to specify a different set of default values than the built-in"
+" default. The ``Theme`` class allows collections of custom default values"
+" to be easily applied to Bokeh documents."
+msgstr ""
+
+#: bokeh.themes.Theme:10 of
+msgid ""
+"The ``Theme`` class can be constructed either from a YAML file or from a "
+"JSON dict (but not both). The data should have a top level ``attrs`` key,"
+" followed by"
+msgstr ""
+
+#: bokeh.themes.Theme:14 of
+msgid "Examples of both formats are shown below."
+msgstr ""
+
+#: bokeh.themes.Theme of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.themes.Theme:16 of
+msgid "path to a YAML theme file"
+msgstr ""
+
+#: bokeh.themes.Theme:18 of
+msgid "a JSON dictionary specifying theme values"
+msgstr ""
+
+#: bokeh.themes.Theme of
+msgid "raises"
+msgstr ""
+
+#: bokeh.themes.Theme:21 of
+msgid ":exc:`ValueError` -- If neither ``filename`` or ``json`` is supplied."
+msgstr ""
+
+#: bokeh.themes.Theme:24 of
+msgid "Examples"
+msgstr ""
+
+#: bokeh.themes.Theme:25 of
+msgid ""
+"Themes are specified by providing a top-level key ``attrs`` which has "
+"blocks for Model types to be themed. Each block has keys and values that "
+"specify the new property defaults for that type."
+msgstr ""
+
+#: bokeh.themes.Theme:29 of
+msgid ""
+"Here is an example theme in YAML format that sets various visual "
+"properties for all figures, grids, and titles:"
+msgstr ""
+
+#: bokeh.themes.Theme:45 of
+msgid "Here is the same theme, in JSON format:"
+msgstr ""
+

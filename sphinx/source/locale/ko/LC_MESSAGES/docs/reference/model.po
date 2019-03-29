@@ -1,0 +1,369 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/model.rst:4
+msgid "bokeh.model"
+msgstr ""
+
+#: bokeh.model:1 of
+msgid ""
+"Provide a base class for all objects (called Bokeh Models) that can go in"
+" a Bokeh |Document|."
+msgstr ""
+
+#: bokeh.model.Model:1 of
+msgid ""
+"Bases: :class:`bokeh.core.has_props.HasProps`, "
+":class:`bokeh.util.callback_manager.PropertyCallbackManager`, "
+":class:`bokeh.util.callback_manager.EventCallbackManager`"
+msgstr ""
+
+#: bokeh.model.Model:1 of
+msgid "Base class for all objects stored in Bokeh  |Document| instances."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Dict` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.callbacks.CustomJS`  ) ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A mapping of event names to lists of ``CustomJS`` callbacks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Typically, rather then modifying this property directly, callbacks should"
+" be added using the ``Model.js_on_event`` method:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A mapping of attribute names to lists of ``CustomJS`` callbacks, to be "
+"set up on BokehJS side when the document is created."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Typically, rather then modifying this property directly, callbacks should"
+" be added using the ``Model.js_on_change`` method:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An arbitrary, user-supplied name for this model."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This name can be useful when querying the document to retrieve specific "
+"Bokeh models."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"No uniqueness guarantees or other conditions are enforced on any names "
+"that are provided, nor is the name used directly by Bokeh for any reason."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.String`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"List of events that are subscribed to by Python callbacks. This is the "
+"set of events that will be communicated from BokehJS back to Python for "
+"this model."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Any`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"An optional list of arbitrary, user-supplied values to attach to this "
+"model."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This data can be useful when querying the document to retrieve specific "
+"Bokeh models:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Or simply a convenient way to attach any necessary metadata to a model "
+"that can be accessed by ``CustomJS`` callbacks, etc."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"No uniqueness guarantees or other conditions are enforced on any tags "
+"that are provided, nor are the tags used directly by Bokeh for any "
+"reason."
+msgstr ""
+
+#: bokeh.model.Model.js_link:1 of
+msgid "Link two Bokeh model properties using JavaScript."
+msgstr ""
+
+#: bokeh.model.Model.js_link:3 of
+msgid ""
+"This is a convenience method that simplifies adding a CustomJS callback "
+"to update one Bokeh model property whenever another changes value."
+msgstr ""
+
+#: bokeh.model.Model.js_link bokeh.model.Model.on_change
+#: bokeh.model.Model.select bokeh.model.Model.set_select
+#: bokeh.model.Model.to_json bokeh.model.Model.to_json_string
+#: bokeh.model.collect_models bokeh.model.get_class of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.model.Model.js_link:6 of
+msgid "The name of a Bokeh property on this model"
+msgstr ""
+
+#: bokeh.model.Model.js_link:8 of
+msgid "A Bokeh model to link to self.attr"
+msgstr ""
+
+#: bokeh.model.Model.js_link:10 of
+msgid "The property on ``other`` to link together"
+msgstr ""
+
+#: bokeh.model.Model.js_link:13 of
+msgid "Added in version 1.1"
+msgstr ""
+
+#: bokeh.model.Model.js_link bokeh.model.get_class of
+msgid "raises"
+msgstr ""
+
+#: bokeh.model.Model.js_link:15 of
+msgid ":exc:`ValueError`"
+msgstr ""
+
+#: bokeh.model.Model.js_link:18 of
+msgid "Examples"
+msgstr ""
+
+#: bokeh.model.Model.js_link:19 of
+msgid "This code with ``js_link``:"
+msgstr ""
+
+#: bokeh.model.Model.js_link:25 of
+msgid "is equivalent to the following:"
+msgstr ""
+
+#: bokeh.model.Model.js_on_change:1 of
+msgid "Attach a ``CustomJS`` callback to an arbitrary BokehJS model event."
+msgstr ""
+
+#: bokeh.model.Model.js_on_change:3 of
+msgid ""
+"On the BokehJS side, change events for model properties have the form "
+"``\"change:property_name\"``. As a convenience, if the event name passed "
+"to this method is also the name of a property on the model, then it will "
+"be prefixed with ``\"change:\"`` automatically:"
+msgstr ""
+
+#: bokeh.model.Model.js_on_change:14 of
+msgid ""
+"However, there are other kinds of events that can be useful to respond "
+"to, in addition to property change events. For example to run a callback "
+"whenever data is streamed to a ``ColumnDataSource``, use the "
+"``\"stream\"`` event on the source:"
+msgstr ""
+
+#: bokeh.model.Model.on_change:1 of
+msgid "Add a callback on this object to trigger when ``attr`` changes."
+msgstr ""
+
+#: bokeh.model.Model.on_change:3 of
+msgid "an attribute name on this object"
+msgstr ""
+
+#: bokeh.model.Model.on_change:5 of
+msgid "callback functions to register"
+msgstr ""
+
+#: bokeh.model.Model.on_change bokeh.model.Model.select
+#: bokeh.model.Model.select_one bokeh.model.Model.set_select
+#: bokeh.model.collect_models bokeh.model.get_class of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.model.Model.on_change:8 bokeh.model.Model.set_select:9 of
+msgid "None"
+msgstr ""
+
+#: bokeh.model.Model.on_change:10 of
+msgid "Example:"
+msgstr ""
+
+#: bokeh.model.Model.references:1 of
+msgid "Returns all ``Models`` that this object has references to."
+msgstr ""
+
+#: bokeh.model.Model.select:1 of
+msgid ""
+"Query this object and all of its references for objects that match the "
+"given selector."
+msgstr ""
+
+#: bokeh.model.Model.select:7 of
+msgid "seq[Model]"
+msgstr ""
+
+#: bokeh.model.Model.select_one:1 of
+msgid ""
+"Query this object and all of its references for objects that match the "
+"given selector.  Raises an error if more than one object is found.  "
+"Returns single matching object, or None if nothing is found :param "
+"selector: :type selector: JSON-like"
+msgstr ""
+
+#: bokeh.model.Model.select_one:7 of
+msgid "Model"
+msgstr ""
+
+#: bokeh.model.Model.set_select:1 of
+msgid ""
+"Update objects that match a given selector with the specified "
+"attribute/value updates."
+msgstr ""
+
+#: bokeh.model.Model.to_json:1 of
+msgid ""
+"Returns a dictionary of the attributes of this object, containing only "
+"\"JSON types\" (string, number, boolean, none, dict, list)."
+msgstr ""
+
+#: bokeh.model.Model.to_json:5 of
+msgid ""
+"References to other objects are serialized as \"refs\" (just the object "
+"ID and type info), so the deserializer will need to separately have the "
+"full attributes of those other objects."
+msgstr ""
+
+#: bokeh.model.Model.to_json:10 of
+msgid ""
+"There's no corresponding ``from_json()`` because to deserialize an object"
+" is normally done in the context of a Document (since the Document can "
+"resolve references)."
+msgstr ""
+
+#: bokeh.model.Model.to_json:14 bokeh.model.Model.to_json_string:12 of
+msgid "For most purposes it's best to serialize and deserialize entire documents."
+msgstr ""
+
+#: bokeh.model.Model.to_json:17 bokeh.model.Model.to_json_string:15 of
+msgid "whether to include attributes that haven't been changed from the default"
+msgstr ""
+
+#: bokeh.model.Model.to_json_string:1 of
+msgid "Returns a JSON string encoding the attributes of this object."
+msgstr ""
+
+#: bokeh.model.Model.to_json_string:3 of
+msgid ""
+"References to other objects are serialized as references (just the object"
+" ID and type info), so the deserializer will need to separately have the "
+"full attributes of those other objects."
+msgstr ""
+
+#: bokeh.model.Model.to_json_string:8 of
+msgid ""
+"There's no corresponding ``from_json_string()`` because to deserialize an"
+" object is normally done in the context of a Document (since the Document"
+" can resolve references)."
+msgstr ""
+
+#: bokeh.model.Model.document:1 of
+msgid "The |Document| this model is attached to (can be ``None``)"
+msgstr ""
+
+#: bokeh.model.Model.ref:1 of
+msgid "A Bokeh protocol \"reference\" to this model, i.e. a dict of the form:"
+msgstr ""
+
+#: bokeh.model.Model.ref:11 of
+msgid "Additionally there may be a `subtype` field if this model is a subtype."
+msgstr ""
+
+#: bokeh.model.collect_models:1 of
+msgid ""
+"Collect a duplicate-free list of all other Bokeh models referred to by "
+"this model, or by any of its references, etc."
+msgstr ""
+
+#: bokeh.model.collect_models:4 of
+msgid ""
+"Iterate over ``input_values`` and descend through their structure "
+"collecting all nested ``Models`` on the go. The resulting list is "
+"duplicate-free based on objects' identifiers."
+msgstr ""
+
+#: bokeh.model.collect_models:8 of
+msgid "Bokeh models to collect other models from"
+msgstr ""
+
+#: bokeh.model.collect_models:11 of
+msgid "all models reachable from this one."
+msgstr ""
+
+#: bokeh.model.collect_models bokeh.model.get_class of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.model.get_class:1 of
+msgid "Look up a Bokeh model class, given its view model name."
+msgstr ""
+
+#: bokeh.model.get_class:3 of
+msgid "A view model name for a Bokeh model to look up"
+msgstr ""
+
+#: bokeh.model.get_class:6 of
+msgid "the model class corresponding to ``view_model_name``"
+msgstr ""
+
+#: bokeh.model.get_class:9 of
+msgid "KeyError, if the model cannot be found"
+msgstr ""
+
+#: bokeh.model.get_class:12 of
+msgid "Example"
+msgstr ""
+

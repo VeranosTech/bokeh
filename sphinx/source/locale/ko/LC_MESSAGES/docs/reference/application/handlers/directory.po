@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/application/handlers/directory.rst:4
+msgid "bokeh.application.handlers.directory"
+msgstr ""
+
+#: bokeh.application.handlers.directory:1 of
+msgid ""
+"Provide a Bokeh Application Handler to build up documents by running the "
+"code from ``main.py`` or ``main.ipynb`` files in specified directories."
+msgstr ""
+
+#: bokeh.application.handlers.directory:4 of
+msgid "The directory may also optionally contain:"
+msgstr ""
+
+#: bokeh.application.handlers.directory:6 of
+msgid ""
+"A ``server_lifecyle.py`` module to provide lifecycle callbacks for the "
+"application and sessions."
+msgstr ""
+
+#: bokeh.application.handlers.directory:9 of
+msgid ""
+"A ``static`` subdirectory containing app-specific static resources to "
+"serve."
+msgstr ""
+
+#: bokeh.application.handlers.directory:12 of
+msgid ""
+"A ``theme.yaml`` file containing a Bokeh theme to automatically apply to "
+"all new documents."
+msgstr ""
+
+#: bokeh.application.handlers.directory:15 of
+msgid "A ``templates`` subdirectory containing templates for app display"
+msgstr ""
+
+#: bokeh.application.handlers.directory:17 of
+msgid "A full directory layout might look like:"
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler:1 of
+msgid "Load an application directory which modifies a Document."
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler.__init__:3 of
+msgid "Keywords:"
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler.__init__:2 of
+msgid ""
+"filename (str) : a path to an application directory with either "
+"\"main.py\" or \"main.ipynb\""
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler.__init__:4 of
+msgid ""
+"argv (list[str], optional) : a list of string arguments to make available"
+" as sys.argv to main.py"
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler.modify_document:1 of
+msgid ""
+"Execute the configured ``main.py`` or ``main.ipynb`` to modify the "
+"document."
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler.modify_document:4 of
+msgid ""
+"This method will also search the app directory for any theme or template "
+"files, and automatically configure the document with them if they are "
+"found."
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler.on_server_loaded:1 of
+msgid ""
+"Execute `on_server_unloaded`` from ``server_lifecycle.py`` (if it is "
+"defined) when the server is first started."
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler.on_server_loaded
+#: bokeh.application.handlers.directory.DirectoryHandler.on_server_unloaded
+#: bokeh.application.handlers.directory.DirectoryHandler.on_session_created
+#: bokeh.application.handlers.directory.DirectoryHandler.on_session_destroyed
+#: of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler.on_server_unloaded:1
+#: of
+msgid ""
+"Execute ``on_server_unloaded`` from ``server_lifecycle.py`` (if it is "
+"defined) when the server cleanly exits. (Before stopping the server's "
+"``IOLoop``.)"
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler.on_server_unloaded:9
+#: of
+msgid ""
+"In practice this code may not run, since servers are often killed by a "
+"signal."
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler.on_session_created:1
+#: of
+msgid ""
+"Execute ``on_session_created`` from ``server_lifecycle.py`` (if it is "
+"defined) when a new session is created."
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler.on_session_destroyed:1
+#: of
+msgid ""
+"Execute ``on_session_destroyed`` from ``server_lifecycle.py`` (if it is "
+"defined) when a session is destroyed."
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler.url_path:1 of
+msgid ""
+"The last path component for the basename of the path to the configured "
+"directory."
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler.error:1 of
+msgid "If the handler fails, may contain a related error message."
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler.error_detail:1 of
+msgid "If the handler fails, may contain a traceback or other details."
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler.failed:1 of
+msgid "``True`` if the handler failed to modify the doc"
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler.safe_to_fork:1 of
+msgid "Whether it is still safe for the Bokeh server to fork new workers."
+msgstr ""
+
+#: bokeh.application.handlers.directory.DirectoryHandler.safe_to_fork:3 of
+msgid ""
+"``False`` if the configured code (script, notebook, etc.) has already "
+"been run."
+msgstr ""
+

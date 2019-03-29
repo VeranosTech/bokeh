@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/application/handlers/server_lifecylce.rst:4
+msgid "bokeh.application.handlers.server_lifecycle"
+msgstr ""
+
+#: bokeh.application.handlers.server_lifecycle:1 of
+msgid ""
+"Bokeh Application Handler to look for Bokeh server lifecycle callbacks in"
+" a specified Python module."
+msgstr ""
+
+#: bokeh.application.handlers.server_lifecycle.ServerLifecycleHandler:1 of
+msgid "Load a script which contains server lifecycle callbacks."
+msgstr ""
+
+#: bokeh.application.handlers.server_lifecycle.ServerLifecycleHandler.__init__
+#: of
+msgid "Keyword Arguments"
+msgstr ""
+
+#: bokeh.application.handlers.server_lifecycle.ServerLifecycleHandler.__init__:1
+#: of
+msgid "path to a module to load lifecycle callbacks from"
+msgstr ""
+
+#: bokeh.application.handlers.server_lifecycle.ServerLifecycleHandler.__init__:3
+#: of
+msgid ""
+"a list of string arguments to use as ``sys.argv`` when the callback code "
+"is executed. (default: [])"
+msgstr ""
+
+#: bokeh.application.handlers.server_lifecycle.ServerLifecycleHandler.url_path:1
+#: of
+msgid ""
+"The last path component for the basename of the path to the callback "
+"module."
+msgstr ""
+
+#: bokeh.application.handlers.server_lifecycle.ServerLifecycleHandler.error:1
+#: of
+msgid "If the handler fails, may contain a related error message."
+msgstr ""
+
+#: bokeh.application.handlers.server_lifecycle.ServerLifecycleHandler.error_detail:1
+#: of
+msgid "If the handler fails, may contain a traceback or other details."
+msgstr ""
+
+#: bokeh.application.handlers.server_lifecycle.ServerLifecycleHandler.failed:1
+#: of
+msgid "``True`` if the lifecycle callbacks failed to execute"
+msgstr ""
+

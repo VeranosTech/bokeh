@@ -1,0 +1,210 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/markers.rst:4
+msgid "bokeh.models.markers"
+msgstr ""
+
+#: bokeh.models.markers:1 of
+msgid ""
+"Display a variety of simple scatter marker shapes whose attributes can be"
+" associated with data columns from ``ColumnDataSources``."
+msgstr ""
+
+#: bokeh.models.markers:4 of
+msgid "The full list of markers built into Bokeh is given below:"
+msgstr ""
+
+#: bokeh.models.markers:6 of
+msgid ":class:`~bokeh.models.markers.Asterisk`"
+msgstr ""
+
+#: bokeh.models.markers:7 of
+msgid ":class:`~bokeh.models.markers.Circle`"
+msgstr ""
+
+#: bokeh.models.markers:8 of
+msgid ":class:`~bokeh.models.markers.CircleCross`"
+msgstr ""
+
+#: bokeh.models.markers:9 of
+msgid ":class:`~bokeh.models.markers.CircleX`"
+msgstr ""
+
+#: bokeh.models.markers:10 of
+msgid ":class:`~bokeh.models.markers.Cross`"
+msgstr ""
+
+#: bokeh.models.markers:11 of
+msgid ":class:`~bokeh.models.markers.Dash`"
+msgstr ""
+
+#: bokeh.models.markers:12 of
+msgid ":class:`~bokeh.models.markers.Diamond`"
+msgstr ""
+
+#: bokeh.models.markers:13 of
+msgid ":class:`~bokeh.models.markers.DiamondCross`"
+msgstr ""
+
+#: bokeh.models.markers:14 of
+msgid ":class:`~bokeh.models.markers.Hex`"
+msgstr ""
+
+#: bokeh.models.markers:15 of
+msgid ":class:`~bokeh.models.markers.InvertedTriangle`"
+msgstr ""
+
+#: bokeh.models.markers:16 of
+msgid ":class:`~bokeh.models.markers.Square`"
+msgstr ""
+
+#: bokeh.models.markers:17 of
+msgid ":class:`~bokeh.models.markers.SquareCross`"
+msgstr ""
+
+#: bokeh.models.markers:18 of
+msgid ":class:`~bokeh.models.markers.SquareX`"
+msgstr ""
+
+#: bokeh.models.markers:19 of
+msgid ":class:`~bokeh.models.markers.Triangle`"
+msgstr ""
+
+#: bokeh.models.markers:20 of
+msgid ":class:`~bokeh.models.markers.X`"
+msgstr ""
+
+#: bokeh.models.markers:22 of
+msgid ""
+"Markers are all subclasses of ``Glyph``. Additionally, they all share the"
+" same common interface providing fill and line properties provided by "
+"their base class ``Marker``. Note that a few glyphs, ``Cross`` and ``X``,"
+" only draw lines. For these the fill property values are ignored. Also "
+"note that the ``Circle`` glyph has some additional properties such as "
+"``radius`` that other markers do not."
+msgstr ""
+
+#: bokeh.models.markers.Marker:1 of
+msgid ""
+"Base class for glyphs that are simple markers with line and fill "
+"properties, located at an (x, y) location with a specified size."
+msgstr ""
+
+#: bokeh.models.markers.Marker:6 of
+msgid ""
+"For simplicity, all markers have both line and fill properties declared, "
+"however some markers (`Asterisk`, `Cross`, `X`) only draw lines. For "
+"these markers, the fill values are simply ignored."
+msgstr ""
+
+#: bokeh.models.markers.Marker:13 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.AngleSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The angles to rotate the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.NumberSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill alpha values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.ColorSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill color values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LineCap`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.DashPattern`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LineJoin`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.ScreenDistanceSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The size (diameter) values for the markers in screen space units."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The x-axis coordinates for the center of the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The y-axis coordinates for the center of the markers."
+msgstr ""
+

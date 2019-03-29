@@ -1,0 +1,566 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/sources.rst:4
+msgid "bokeh.models.sources"
+msgstr ""
+
+#: bokeh.models.sources.RemoteSource:1
+#: bokeh.models.sources.ServerSentDataSource:1 of
+msgid "Bases: :class:`bokeh.models.sources.WebSource`"
+msgstr ""
+
+#: bokeh.models.sources.ServerSentDataSource:1 of
+msgid ""
+"A data source that can populate columns by receiving server sent events "
+"endpoints."
+msgstr ""
+
+#: bokeh.models.sources.AjaxDataSource:1 of
+msgid "Bases: :class:`bokeh.models.sources.RemoteSource`"
+msgstr ""
+
+#: bokeh.models.sources.AjaxDataSource:1 of
+msgid ""
+"A data source that can populate columns by making Ajax calls to REST "
+"endpoints."
+msgstr ""
+
+#: bokeh.models.sources.AjaxDataSource:4 of
+msgid ""
+"The ``AjaxDataSource`` can be especially useful if you want to make a "
+"standalone document (i.e. not backed by the Bokeh server) that can still "
+"dynamically update using an existing REST API."
+msgstr ""
+
+#: bokeh.models.sources.AjaxDataSource:8 of
+msgid ""
+"The response from the REST API should match the ``.data`` property of a "
+"standard ``ColumnDataSource``, i.e. a JSON dict that maps names to arrays"
+" of values:"
+msgstr ""
+
+#: bokeh.models.sources.AjaxDataSource:19 of
+msgid ""
+"Alternatively, if the REST API returns a different format, a ``CustomJS``"
+" callback can be provided to convert the REST response into Bokeh format,"
+" via the ``adapter`` property of this data source."
+msgstr ""
+
+#: bokeh.models.sources.AjaxDataSource:23 of
+msgid "A full example can be seen at :bokeh-tree:`examples/howto/ajax_source.py`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Set the \"contentType\" parameter for the Ajax request."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Dict` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.String`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Specify HTTP headers to set for the Ajax request."
+msgstr ""
+
+#: ../../<bokeh-prop>:1 bokeh.models.sources.ColumnDataSource.patch:70
+#: bokeh.models.sources.ColumnDataSource.stream:22 of
+msgid "Example:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Bool`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Whether to include an ``If-Modified-Since`` header in Ajax requests to "
+"the server. If this header is supported by the server, then only new data"
+" since the last request will be returned."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( Enumeration(POST,"
+" GET) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Specify the HTTP method to use for the Ajax request (GET or POST)"
+msgstr ""
+
+#: bokeh.models.sources.CDSView:1 bokeh.models.sources.DataSource:1 of
+msgid "Bases: :class:`bokeh.model.Model`"
+msgstr ""
+
+#: bokeh.models.sources.CDSView:1 of
+msgid "A view into a ``ColumnDataSource`` that represents a row-wise subset."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.filters.Filter`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "List of filters that the view comprises."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.sources.ColumnarDataSource`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The ``ColumnDataSource`` associated with this view. Used to determine the"
+" length of the columns."
+msgstr ""
+
+#: bokeh.models.sources.ColumnarDataSource:1 of
+msgid "Bases: :class:`bokeh.models.sources.DataSource`"
+msgstr ""
+
+#: bokeh.models.sources.ColumnarDataSource:1 of
+msgid ""
+"A base class for data source types, which can be mapped onto a columnar "
+"format."
+msgstr ""
+
+#: bokeh.models.sources.ColumnarDataSource:6 bokeh.models.sources.DataSource:5
+#: bokeh.models.sources.RemoteSource:9 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.selections.SelectionPolicy`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"An instance of a ``SelectionPolicy`` that determines how selections are "
+"set."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource:1
+#: bokeh.models.sources.GeoJSONDataSource:1 of
+msgid "Bases: :class:`bokeh.models.sources.ColumnarDataSource`"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource:1 of
+msgid "Maps names of columns to sequences or arrays."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource:3 of
+msgid ""
+"The ``ColumnDataSource`` is a fundamental data structure of Bokeh. Most "
+"plots, data tables, etc. will be driven by a ``ColumnDataSource``."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource:6 of
+msgid ""
+"If the ``ColumnDataSource`` initializer is called with a single argument "
+"that can be any of the following:"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource:9 of
+msgid ""
+"A Python ``dict`` that maps string names to sequences of values, e.g. "
+"lists, arrays, etc."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource:19 of
+msgid ""
+"``ColumnDataSource`` only creates a shallow copy of ``data``. Use e.g. "
+"``ColumnDataSource(copy.deepcopy(data))`` if initializing from another "
+"``ColumnDataSource.data`` object that you want to keep independent."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource:23 of
+msgid "A Pandas ``DataFrame`` object"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource:29 of
+msgid ""
+"In this case the CDS will have columns corresponding to the columns of "
+"the ``DataFrame``. If the ``DataFrame`` columns have multiple levels, "
+"they will be flattened using an underscore (e.g. "
+"level_0_col_level_1_col). The index of the ``DataFrame`` will be "
+"flattened to an ``Index`` of tuples if it's a ``MultiIndex``, and then "
+"reset using ``reset_index``. The result will be a column with the same "
+"name if the index was named, or level_0_name_level_1_name if it was a "
+"named ``MultiIndex``. If the ``Index`` did not have a name or the "
+"``MultiIndex`` name could not be flattened/determined, the "
+"``reset_index`` function will name the index column ``index``, or "
+"``level_0`` if the name ``index`` is not available."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource:40 of
+msgid "A Pandas ``GroupBy`` object"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource:46 of
+msgid ""
+"In this case the CDS will have columns corresponding to the result of "
+"calling ``group.describe()``. The ``describe`` method generates columns "
+"for statistical measures such as ``mean`` and ``count`` for all the non-"
+"grouped original columns. The CDS columns are formed by joining original "
+"column names with the computed measure. For example, if a ``DataFrame`` "
+"has columns ``'year'`` and ``'mpg'``. Then passing ``df.groupby('year')``"
+" to a CDS will result in columns such as ``'mpg_mean'``"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource:55 of
+msgid ""
+"If the ``GroupBy.describe`` result has a named index column, then CDS "
+"will also have a column with this name. However, if the index name (or "
+"any subname of a ``MultiIndex``) is ``None``, then the CDS will have a "
+"column generically named ``index`` for the index."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource:60 of
+msgid ""
+"Note this capability to adapt ``GroupBy`` objects may only work with "
+"Pandas ``>=0.20.0``."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource:64 of
+msgid ""
+"There is an implicit assumption that all the columns in a given "
+"``ColumnDataSource`` all have the same length at all times. For this "
+"reason, it is usually preferable to update the ``.data`` property of a "
+"data source \"all at once\"."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.ColumnData` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.Seq` ( :class:`~bokeh.core.properties.Any`"
+"  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Mapping of column names to sequences of data. The data can be, e.g, "
+"Python lists or tuples, NumPy arrays, etc."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.__init__:1 of
+msgid ""
+"If called with a single argument that is a dict or ``pandas.DataFrame``, "
+"treat that implicitly as the \"data\" attribute."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.add:1 of
+msgid "Appends a new column of data to the data source."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.add
+#: bokeh.models.sources.ColumnDataSource.from_df
+#: bokeh.models.sources.ColumnDataSource.from_groupby
+#: bokeh.models.sources.ColumnDataSource.patch
+#: bokeh.models.sources.ColumnDataSource.remove
+#: bokeh.models.sources.ColumnDataSource.stream of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.add:3 of
+msgid "new data to add"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.add:5 of
+msgid ""
+"column name to use. If not supplied, generate a name of the form \"Series"
+" ####\""
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.add
+#: bokeh.models.sources.ColumnDataSource.from_df
+#: bokeh.models.sources.ColumnDataSource.from_groupby
+#: bokeh.models.sources.ColumnDataSource.patch
+#: bokeh.models.sources.ColumnDataSource.remove
+#: bokeh.models.sources.ColumnDataSource.stream
+#: bokeh.models.sources.ColumnDataSource.to_df of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.add:9 of
+msgid "the column name used"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.add of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.from_df:1 of
+msgid ""
+"Create a ``dict`` of columns from a Pandas ``DataFrame``, suitable for "
+"creating a ``ColumnDataSource``."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.from_df:4
+#: bokeh.models.sources.ColumnDataSource.from_groupby:7 of
+msgid "data to convert"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.from_df:7
+#: bokeh.models.sources.ColumnDataSource.from_groupby:10 of
+msgid "dict[str, np.array]"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.from_groupby:1 of
+msgid ""
+"Create a ``dict`` of columns from a Pandas ``GroupBy``, suitable for "
+"creating a ``ColumnDataSource``."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.from_groupby:4 of
+msgid "The data generated is the result of running ``describe`` on the group."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch:1 of
+msgid "Efficiently update data source columns at specific locations"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch:3 of
+msgid ""
+"If it is only necessary to update a small subset of data in a "
+"``ColumnDataSource``, this method can be used to efficiently update only "
+"the subset, instead of requiring the entire data set to be sent."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch:7 of
+msgid ""
+"This method should be passed a dictionary that maps column names to lists"
+" of tuples that describe a patch change to apply. To replace individual "
+"items in columns entirely, the tuples should be of the form:"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch:20 of
+msgid ""
+"Values at an index or slice will be replaced with the corresponding new "
+"values."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch:23 of
+msgid ""
+"In the case of columns whose values are other arrays or lists, (e.g. "
+"image or patches glyphs), it is also possible to patch \"subregions\". In"
+" this case the first item of the tuple should be a whose first element is"
+" the index of the array item in the CDS patch, and whose subsequent "
+"elements are integer indices or slices into the array item:"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch:41 of
+msgid ""
+"Imagining a list of 2d NumPy arrays, the patch above is roughly "
+"equivalent to:"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch:50 of
+msgid ""
+"There are some limitations to the kinds of slices and data that can be "
+"accepted."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch:53 of
+msgid ""
+"Negative ``start``, ``stop``, or ``step`` values for slices will result "
+"in a ``ValueError``."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch:56 of
+msgid "In a slice, ``start > stop`` will result in a ``ValueError``"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch:58 of
+msgid "When patching 1d or 2d subitems, the subitems must be NumPy arrays."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch:60 of
+msgid ""
+"New values must be supplied as a **flattened one-dimensional array** of "
+"the appropriate size."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch:63 of
+msgid "lists of patches for each column"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch:66
+#: bokeh.models.sources.ColumnDataSource.remove:6
+#: bokeh.models.sources.ColumnDataSource.stream:18 of
+msgid "None"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch
+#: bokeh.models.sources.ColumnDataSource.stream of
+msgid "raises"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch:68
+#: bokeh.models.sources.ColumnDataSource.stream:20 of
+msgid ":exc:`ValueError`"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch:72 of
+msgid ""
+"The following example shows how to patch entire column elements. In this "
+"case,"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch:85 of
+msgid "After this operation, the value of the ``source.data`` will be:"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.patch:91 of
+msgid ""
+"For a more comprehensive complete example, see :bokeh-"
+"tree:`examples/howto/patch_app.py`."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.remove:1 of
+msgid "Remove a column of data."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.remove:3 of
+msgid "name of the column to remove"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.remove:9 of
+msgid "If the column name does not exist, a warning is issued."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.stream:1 of
+msgid "Efficiently update data source columns with new append-only data."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.stream:3 of
+msgid ""
+"In cases where it is necessary to update data columns in, this method can"
+" efficiently send only the new data, instead of requiring the entire data"
+" set to be re-sent."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.stream:7 of
+msgid ""
+"a mapping of column names to sequences of new data to append to each "
+"column.  All columns of the data source must be present in ``new_data``, "
+"with identical-length append data."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.stream:7 of
+msgid ""
+"a mapping of column names to sequences of new data to append to each "
+"column."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.stream:10 of
+msgid ""
+"All columns of the data source must be present in ``new_data``, with "
+"identical-length append data."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.stream:13 of
+msgid ""
+"A maximum column size, above which data from the start of the column "
+"begins to be discarded. If None, then columns will continue to grow "
+"unbounded (default: None)"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.to_df:1 of
+msgid "Convert this data source to pandas ``DataFrame``."
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.to_df:3 of
+msgid "DataFrame"
+msgstr ""
+
+#: bokeh.models.sources.ColumnDataSource.column_names:1 of
+msgid "A list of the column names in this data source."
+msgstr ""
+
+#: bokeh.models.sources.DataSource:1 of
+msgid "A base class for data source types."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.callbacks.Callback`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A callback to run in the browser whenever the selection is changed."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.selections.Selection`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A Selection that indicates selected indices on this ``DataSource``."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.JSON`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"GeoJSON that contains features for plotting. Currently "
+"``GeoJSONDataSource`` can only process a ``FeatureCollection`` or "
+"``GeometryCollection``."
+msgstr ""
+
+#: bokeh.models.sources.RemoteSource:1 of
+msgid ""
+"Base class for remote column data sources that can update from data URLs "
+"at prescribed time intervals."
+msgstr ""
+
+#: bokeh.models.sources.RemoteSource:5 of
+msgid "This base class is typically not useful to instantiate on its own."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A polling interval (in milliseconds) for updating data source."
+msgstr ""
+

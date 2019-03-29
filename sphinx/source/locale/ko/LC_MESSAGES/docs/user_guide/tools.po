@@ -1,0 +1,1436 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/tools.rst:4
+msgid "Configuring Plot Tools"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:6
+msgid ""
+"Bokeh comes with a number of interactive tools that can be used to report"
+" information, to change plot parameters such as zoom level or range "
+"extents, or to add, edit, or delete glyphs. Tools can be grouped into "
+"four basic categories:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:21
+msgid "Gestures"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:12
+msgid ""
+"These are tools that respond to single gestures, such as a pan movement. "
+"The types of gesture tools are:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:15
+msgid ":ref:`userguide_tools_pandrag`"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:16
+msgid ":ref:`userguide_tools_clicktap`"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:17
+msgid ":ref:`userguide_tools_scrollpinch`"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:19
+msgid ""
+"For each type of gesture, one tool can be active at any given time, and "
+"the active tool is indicated on the toolbar by a highlight next to to the"
+" tool icon."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:25
+msgid ":ref:`userguide_tools_actions`"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:24
+msgid ""
+"These  are immediate or modal operations that are only activated when "
+"their button in the toolbar is pressed, such as the ``ResetTool``."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:29
+msgid ":ref:`userguide_tools_inspectors`"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:28
+msgid ""
+"These are passive tools that report information or annotate plots in some"
+" way, such as the ``HoverTool`` or ``CrosshairTool``."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:35
+msgid ":ref:`userguide_tools_edit`"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:32
+msgid ""
+"These are sophisticated multi-gesture tools that can add, delete, or "
+"modify glyphs on a plot. Since they may respond to several gestures at "
+"once, an edit tool will potentially deactivate multiple single-gesture "
+"tools at once when it is activated."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:37
+msgid ""
+"In addition to information about all the individual tools, this chapter "
+"describes how the toolbar may be configured."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:43
+msgid "Positioning the Toolbar"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:45
+msgid ""
+"By default, Bokeh plots come with a toolbar above the plot. In this "
+"section you will learn how to specify a different location for the "
+"toolbar, or to remove it entirely."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:49
+msgid ""
+"The toolbar location can be specified by passing the ``toolbar_location``"
+" parameter to the |figure| function. Valid values are:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:52
+msgid "``\"above\"``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:53
+msgid "``\"below\"``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:54
+msgid "``\"left\"``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:55
+msgid "``\"right\"``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:57
+msgid "If you would like to hide the toolbar entirely, pass ``None``."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:59
+msgid ""
+"Below is some code that positions the toolbar below the plot. Try running"
+" the code and changing the ``toolbar_location`` value."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:65
+msgid ""
+"Note that the toolbar position clashes with the default axes, in this "
+"case setting the ``toolbar_sticky`` option to ``False`` will move the "
+"toolbar to outside of the region where the axis is drawn."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:75
+msgid "Specifying Tools"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:77
+msgid ""
+"At the lowest ``bokeh.models`` level, tools are added to a ``Plot`` by "
+"passing instances of ``Tool`` objects to the ``add_tools`` method:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:86
+msgid ""
+"This explicit way of adding tools works with any Bokeh ``Plot`` or "
+"``Plot`` subclass, such as ``Figure``."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:89
+msgid ""
+"Tools can be specified by passing the ``tools`` parameter to the |figure|"
+" function. The tools parameter accepts a list of tool objects, for "
+"instance:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:96
+msgid ""
+"Tools can also be supplied conveniently with a comma-separate string "
+"containing tool shortcut names:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:103
+msgid "However, this method does not allow setting properties of the tools."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:105
+msgid ""
+"Finally, it is also always possible to add new tools to a plot by passing"
+" a tool object to the ``add_tools`` method of a plot. This can also be "
+"done in conjunction with the ``tools`` keyword described above:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:119
+msgid "Setting the Active Tools"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:121
+msgid ""
+"Bokeh toolbars can have (at most) one active tool from each kind of "
+"gesture (drag, scroll, tap). By default, Bokeh will use a default pre-"
+"defined order of preference to choose one of each kind from the set of "
+"configured tools, to be active."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:126
+msgid ""
+"However it is possible to exert control over which tool is active. At the"
+" lowest ``bokeh.models`` level, this is accomplished by using the "
+"``active_drag``, ``active_inspect``, ``active_scroll``, and "
+"``active_tap`` properties of ``Toolbar``. These properties can take the "
+"following values:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:131
+msgid "``None`` --- there is no active tool of this kind"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:132
+msgid ""
+"``\"auto\"`` --- Bokeh chooses a tool of this kind to be active (possibly"
+" none)"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:133
+msgid "a ``Tool`` instance --- Bokeh sets the given tool to be the active tool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:135
+msgid ""
+"Additionally, the ``active_inspect`` tool may accept: * A sequence of "
+"``Tool`` instances to be set as the active tools"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:138
+msgid "As an example:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:155
+msgid "The default value for all of these properties is ``\"auto\"``."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:157
+msgid ""
+"Active tools can be specified by passing the these properties as keyword "
+"arguments to the |figure| function. It is also possible to pass any one "
+"of the string names for, ease of configuration:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:169
+msgid "Pan/Drag Tools"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:171
+msgid ""
+"These tools are employed by panning (on touch devices) or left-dragging "
+"(on mouse devices). Only one pan/drag tool may be active at a time. Where"
+" applicable, Pan/Drag tools will respect any max and min values set on "
+"ranges."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:176
+msgid "BoxSelectTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:178
+msgid "name: ``'box_select'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:179
+msgid "icon: |box_select_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:181
+msgid ""
+"The box selection tool allows the user to define a rectangular selection "
+"region by left-dragging a mouse, or dragging a finger across the plot "
+"area. The box select tool may be configured to select across only one "
+"dimension by setting the ``dimensions`` property to ``width`` or "
+"``height`` instead of the default ``both``."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:188
+#: ../../source/docs/user_guide/tools.rst:211
+#: ../../source/docs/user_guide/tools.rst:261
+msgid ""
+"To make a multiple selection, press the SHIFT key. To clear the "
+"selection, press the ESC key."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:192
+msgid "BoxZoomTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:194
+msgid "name: ``'box_zoom'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:195
+msgid "icon: |box_zoom_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:197
+msgid ""
+"The box zoom tool allows the user to define a rectangular region to zoom "
+"the plot bounds too, by left-dragging a mouse, or dragging a finger "
+"across the plot area."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:202
+msgid "LassoSelectTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:204
+msgid "name: ``'lasso_select'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:205
+msgid "icon: |lasso_select_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:207
+msgid ""
+"The lasso selection tool allows the user to define an arbitrary region "
+"for selection by left-dragging a mouse, or dragging a finger across the "
+"plot area."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:215
+msgid "PanTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:217
+msgid "name: ``'pan'``, ``'xpan'``, ``'ypan'``,"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:218
+msgid "icon: |pan_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:220
+msgid ""
+"The pan tool allows the user to pan the plot by left-dragging a mouse or "
+"dragging a finger across the plot region."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:223
+msgid ""
+"It is also possible to constrain the pan tool to only act on either just "
+"the x-axis or just the y-axis by setting the ``dimensions`` property to a"
+" list containing ``width`` or ``height``. Additionally, there are tool "
+"aliases ``'xpan'`` and ``'ypan'``, respectively."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:231
+msgid "Click/Tap Tools"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:233
+msgid ""
+"These tools are employed by tapping (on touch devices) or left-clicking "
+"(on mouse devices). Only one click/tap tool may be active at a time."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:237
+msgid "PolySelectTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:239
+msgid "name: ``'poly_select'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:240
+msgid "icon: |poly_select_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:242
+msgid ""
+"The polygon selection tool allows the user to define an arbitrary "
+"polygonal region for selection by left-clicking a mouse, or tapping a "
+"finger at different locations."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:247
+msgid ""
+"Complete the selection by making a double left-click or tapping. To make "
+"a multiple selection, press the SHIFT key. To clear the selection, press "
+"the ESC key."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:252
+msgid "TapTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:254
+msgid "name: ``'tap'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:255
+msgid "icon: |tap_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:257
+msgid ""
+"The tap selection tool allows the user to select at single points by "
+"clicking a left mouse button, or tapping with a finger."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:267
+msgid "Scroll/Pinch Tools"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:269
+msgid ""
+"These tools are employed by pinching (on touch devices) or scrolling (on "
+"mouse devices). Only one scroll/pinch tool may be active at a time."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:273
+msgid "WheelZoomTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:275
+msgid "name: ``'wheel_zoom'``, ``'xwheel_zoom'``, ``'ywheel_zoom'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:276
+msgid "icon: |wheel_zoom_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:278
+msgid ""
+"The wheel zoom tool will zoom the plot in and out, centered on the "
+"current mouse location. It will respect any min and max values and ranges"
+" preventing zooming in and out beyond these."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:282
+msgid ""
+"It is also possible to constraint the wheel zoom tool to only act on "
+"either just the x-axis or just the y-axis by setting the ``dimensions`` "
+"property to a list containing ``width`` or ``height``. Additionally, "
+"there are tool aliases ``'xwheel_zoom'`` and ``'ywheel_zoom'``, "
+"respectively."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:288
+msgid "WheelPanTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:290
+msgid "name: ``'xwheel_pan'``, ``'ywheel_pan'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:291
+msgid "icon: |wheel_pan_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:293
+msgid ""
+"The wheel pan tool will translate the plot window along the specified "
+"dimension without changing the window's aspect ratio. The tool will "
+"respect any min and max values and ranges preventing panning beyond these"
+" values."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:300
+msgid "Actions"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:302
+msgid ""
+"Actions are operations that are activated only when their button in the "
+"toolbar is tapped or clicked. They are typically modal or immediate-"
+"acting."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:306
+msgid "UndoTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:308
+msgid "name: ``'undo'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:309
+msgid "icon: |undo_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:311
+msgid "The undo tool allows to restore previous state of the plot."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:314
+msgid "RedoTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:316
+msgid "name: ``'redo'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:317
+msgid "icon: |redo_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:319
+msgid "The redo tool reverses the last action performed by undo tool."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:322
+msgid "ResetTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:324
+msgid "name: ``'reset'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:325
+msgid "icon: |reset_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:327
+msgid "The reset tool will restore the plot ranges to their original values."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:330
+msgid "SaveTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:332
+msgid "name: ``'save'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:333
+msgid "icon: |save_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:335
+msgid ""
+"The save tool pops up a modal dialog that allows the user to save a PNG "
+"image of the plot."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:339
+msgid "ZoomInTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:341
+msgid "name: ``'zoom_in'``, ``'xzoom_in'``, ``'yzoom_in'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:342
+msgid "icon: |zoom_in_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:344
+msgid ""
+"The zoom-in tool will increase the zoom of the plot. It will respect any "
+"min and max values and ranges preventing zooming in and out beyond these."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:347
+#: ../../source/docs/user_guide/tools.rst:361
+msgid ""
+"It is also possible to constraint the wheel zoom tool to only act on "
+"either just the x-axis or just the y-axis by setting the ``dimensions`` "
+"property to a list containing ``width`` or ``height``. Additionally, "
+"there are tool aliases ``'xzoom_in'`` and ``'yzoom_in'``, respectively."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:353
+msgid "ZoomOutTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:355
+msgid "name: ``'zoom_out'``, ``'xzoom_out'``, ``'yzoom_out'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:356
+msgid "icon: |zoom_out_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:358
+msgid ""
+"The zoom-out tool will decrease the zoom level of the plot. It will "
+"respect any min and max values and ranges preventing zooming in and out "
+"beyond these."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:369
+msgid "Inspectors"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:371
+msgid ""
+"Inspectors are passive tools that annotate or otherwise report "
+"information about the plot, based on the current cursor position. Any "
+"number of inspectors may be active at any given time. The inspectors menu"
+" in the toolbar allows users to toggle the active state of any inspector."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:377
+msgid "CrosshairTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:379
+msgid "name: ``'crosshair'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:380
+msgid "menu icon: |crosshair_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:382
+msgid ""
+"Th crosshair tool draws a crosshair annotation over the plot, centered on"
+" the current mouse position. The crosshair tool draw dimensions may be "
+"configured by setting the ``dimensions`` property to one of the "
+"enumerated values ``width``, ``height``, or ``both``."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:388
+msgid "HoverTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:390
+msgid "name: ``'hover'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:391
+msgid "menu icon: |hover_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:393
+msgid ""
+"The hover tool is a passive inspector tool. It is generally on at all "
+"times, but can be configured in the inspector’s menu associated with the "
+"toolbar."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:399
+msgid "Basic Tooltips"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:401
+msgid ""
+"By default, the hover tool will generate a \"tabular\" tooltip where each"
+" row contains a label, and its associated value. The labels and values "
+"are supplied as a list of *(label, value)* tuples. For instance, the "
+"tooltip below on the left was created with the accompanying ``tooltips`` "
+"definition on the right."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:422
+msgid "|hover_basic|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:429
+msgid ""
+"Field names that begin with ``$`` are \"special fields\". These often "
+"correspond to values that are intrinsic to the plot, such as the "
+"coordinates of the mouse in data or screen space. These special fields "
+"are listed here:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst
+msgid "``$index``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:434
+msgid "index of selected point in the data source"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst
+msgid "``$name``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:436
+msgid "value of the ``name`` property of the hovered glyph renderer"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst
+msgid "``$x``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:438
+msgid "x-coordinate under the cursor in data space"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst
+msgid "``$y``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:440
+msgid "y-coordinate under the cursor in data space"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst
+msgid "``$sx``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:442
+msgid "x-coordinate under the cursor in screen (canvas) space"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst
+msgid "``$sy``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:444
+msgid "y-coordinate under the cursor in screen (canvas) space"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:446
+msgid "The ``name`` property of the glyph that is hovered over"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst
+msgid "``$color``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:448
+msgid ""
+"colors from a data source, with the syntax: "
+"``$color[options]:field_name``. The available options are: ``hex`` (to "
+"display the color as a hex value), and ``swatch`` to also display a small"
+" color swatch."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:452
+msgid ""
+"Field names that begin with ``@`` are associated with columns in a "
+"``ColumnDataSource``. For instance the field name ``\"@price\"`` will "
+"display values from the ``\"price\"`` column whenever a hover is "
+"triggered. If the hover is for the 17th glyph, then the hover tooltip "
+"will correspondingly display the 17th price value."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:458
+msgid ""
+"Note that if a column name contains spaces, the it must be supplied by "
+"surrounding it in curly braces, e.g. ``@{adjusted close}`` will display "
+"values from a column named ``\"adjusted close\"``."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:462
+msgid ""
+"Sometimes (especially with stacked charts) it is desirable to allow the "
+"name of the column be specified indirectly. The field name ``@$name`` is "
+"distinguished in that it will look up the ``name`` field on the hovered "
+"glyph renderer, and use that value as the column name. For instance, if a"
+" user hovers with the name ``\"US East\"``, then ``@$name`` is equivalent"
+" to ``@{US East}``."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:469
+msgid ""
+"Here is a complete example of how to configure and use the hover tool by "
+"setting the ``tooltips`` argument to ``figure``:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:476
+msgid "Hit-testing Behavior"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:478
+msgid ""
+"The hover tool displays informational tooltips associated with individual"
+" glyphs. These tooltips can be configured to activate in in different "
+"ways with a ``mode`` property:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst
+msgid "``\"mouse\"``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:483
+msgid "only when the mouse is directly over a glyph"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst
+msgid "``\"vline\"``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:486
+msgid "whenever the a vertical line from the mouse position intersects a glyph"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst
+msgid "``\"hline\"``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:489
+msgid "whenever the a horizontal line from the mouse position intersects a glyph"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:491
+msgid ""
+"The default configuration is ``mode = \"mouse\"``. This can be observed "
+"in the :ref:`basic_tooltips` example above. The example below in "
+":ref:`formatting_tooltip_fields` demonstrates an example that sets ``mode"
+" = \"vline\"``."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:499
+msgid "Formatting Tooltip Fields"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:501
+msgid ""
+"By default, values for fields (e.g. ``@foo``) are displayed in a basic "
+"numeric format. However it is possible to control the formatting of "
+"values more precisely. Fields can be modified by appending a format "
+"specified to the end in curly braces. Some examples are below."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:514
+msgid ""
+"The examples above all use the default formatting scheme. But there are "
+"other formatting schemes that can be specified for interpreting format "
+"strings:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst
+msgid "``\"numeral\"``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:519
+msgid ""
+"Provides a wide variety of formats for numbers, currency, bytes, times, "
+"and percentages. The full set of formats can be found in the "
+"|NumeralTickFormatter| reference documentation."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst
+msgid "``\"datetime\"``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:524
+msgid ""
+"Provides formats for date and time values. The full set of formats is "
+"listed in the |DatetimeTickFormatter| reference documentation."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst
+msgid "``\"printf\"``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:528
+msgid ""
+"Provides formats similar to C-style \"printf\" type specifiers. See the "
+"|PrintfTickFormatter| reference documentation for complete details."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:531
+msgid ""
+"These are supplied by configuring the ``formatters`` property of a hover "
+"tool. This property maps column names to format schemes. For example, to "
+"use the ``\"datetime\"`` scheme for formatting a column ``\"close "
+"date\"``, set the value:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:540
+msgid ""
+"If no formatter is specified for a column name, the default "
+"``\"numeral\"`` formatter is assumed."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:543
+msgid ""
+"Note that format specifications are also compatible with column names "
+"that have spaces. For example ```@{adjusted close}{($ 0.00 a)}`` applies "
+"a format to a column named \"adjusted close\"."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:547
+msgid ""
+"The example code below shows explicitly configuring a ``HoverTool`` with "
+"different formatters for different fields:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:569
+msgid ""
+"You can see the output generated by this configuration by hovering the "
+"mouse over the plot below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:575
+msgid ""
+"Using the |CustomJSHover| model, it is also possible to use JavaScript to"
+" specify a custom formatter that can display derived quantities in the "
+"tooltip."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:581
+msgid "Image Hover"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:583
+msgid ""
+"The hover tool can be used to inspect image glyphs which may contain "
+"layers of data in the corresponding ``ColumnDataSource``:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:589
+msgid ""
+"In this example, three image patterns are defined named ``ramp``, "
+"``steps`` and ``bitmask``. The hover tooltip shows the index of the "
+"image, the name of the pattern, the ``x`` and ``y`` position of the "
+"cursor as well as the corresponding value and value squared."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:597
+msgid "Custom Tooltip"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:599
+msgid ""
+"It is also possible to supply a custom HTML template for a tooltip. To do"
+" this, pass an HTML string, with the Bokeh tooltip field name symbols "
+"wherever substitutions are desired. All of the information above "
+"regarding formats, etc. still applies. Note that you can also use the "
+"``{safe}`` format after the column name to disable the escaping of HTML "
+"in the data source. An example is shown below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:613
+msgid "Edit Tools"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:615
+msgid ""
+"The edit tools provide functionality for drawing and editing glyphs "
+"client-side by adding, modifying and deleting ``ColumnDataSource`` data."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:619
+msgid "All the edit tools share a small number of key bindings:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:622
+msgid "SHIFT"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:622
+msgid "Modifier key to add to selection or start drawing"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:625
+msgid "BACKSPACE"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:625
+msgid "Deletes the selected glyphs"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:628
+msgid "ESC"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:628
+msgid "Clear the selection"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:631
+msgid ""
+"On MacBooks and some other keyboards the BACKSPACE key is labelled "
+"\"delete\"."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:635
+msgid "BoxEditTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:637
+msgid "name: ``'box_edit'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:638
+msgid "menu icon: |box_edit_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:640
+msgid ""
+"The BoxEditTool allows drawing, dragging and deleting ``Rect`` glyphs on "
+"one or more renderers by editing the underlying ``ColumnDataSource`` "
+"data. Like other drawing tools, the renderers that are to be edited must "
+"be supplied explicitly as a list:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:651
+msgid ""
+"The tool will automatically modify the columns on the data source "
+"corresponding to the ``x``, ``y``, ``width`` and ``height`` values of the"
+" glyph. Any additional columns in the data source will be padded with the"
+" declared ``empty_value``, when adding a new box. When drawing a new box "
+"the data will always be added to the ``ColumnDataSource`` on the first "
+"supplied renderer."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:658
+msgid ""
+"It is also often useful to limit the number of elements that can be "
+"drawn, e.g. when specifying a specific number of regions of interest. "
+"Using the ``num_objects`` property we can ensure that once the limit has "
+"been reached the oldest box will be popped off the queue to make space "
+"for the new box being added."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:669
+msgid ""
+"The animation above shows the supported tool actions, highlighting mouse "
+"actions with a circle around the cursor and key strokes by showing the "
+"pressed keys. The ``BoxEditTool`` can **Add**, **Move** and **Delete** "
+"boxes on plots:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:677
+msgid "Add box"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:675
+msgid ""
+"Hold shift then click and drag anywhere on the plot or double tap once to"
+" start drawing, move the mouse and double tap again to finish drawing."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:681
+msgid "Move box"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:680
+msgid ""
+"Click and drag an existing box, the box will be dropped once you let go "
+"of the mouse button."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:685
+msgid "Delete box"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:684
+msgid ""
+"Tap a box to select it then press BACKSPACE key while the mouse is within"
+" the plot area."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:687
+msgid "To **Move** or **Delete** multiple boxes at once:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:692
+#: ../../source/docs/user_guide/tools.rst:812
+msgid "Move selection"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:690
+msgid ""
+"Select box(es) with SHIFT+tap (or another selection tool) then drag "
+"anywhere on the plot. Selecting and then dragging on a specific box will "
+"move both."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:696
+#: ../../source/docs/user_guide/tools.rst:754
+#: ../../source/docs/user_guide/tools.rst:816
+msgid "Delete selection"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:695
+msgid ""
+"Select box(es) with SHIFT+tap (or another selection tool) then press "
+"BACKSPACE while the mouse is within the plot area."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:703
+msgid "FreehandDrawTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:705
+msgid "name: ``'freehand_draw'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:706
+msgid "menu icon: |freehand_draw_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:708
+msgid ""
+"The ``FreehandDrawTool`` allows freehand drawing of lines and polygons "
+"using the ``Patches`` and ``MultiLine`` glyphs, by editing the underlying"
+" ``ColumnDataSource`` data. Like other drawing tools, the renderers that "
+"are to be edited must be supplied explicitly as a list:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:719
+#: ../../source/docs/user_guide/tools.rst:834
+msgid ""
+"The tool will automatically modify the columns on the data source "
+"corresponding to the ``xs`` and ``ys`` values of the glyph. Any "
+"additional columns in the data source will be padded with the declared "
+"``empty_value``, when adding a new point. Any newly added patch or multi-"
+"line will be inserted on the ``ColumnDataSource`` of the first supplied "
+"renderer."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:726
+#: ../../source/docs/user_guide/tools.rst:841
+msgid ""
+"It is also often useful to limit the number of elements that can be "
+"drawn, e.g. when specifying a specific number of regions of interest. "
+"Using the ``num_objects`` property we can ensure that once the limit has "
+"been reached the oldest patch/multi-line will be popped off the queue to "
+"make space for the new patch/multi-line being added."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:737
+msgid ""
+"The animation above shows the supported tool actions, highlighting mouse "
+"actions with a circle around the cursor and key strokes by showing the "
+"pressed keys. The ``PolyDrawTool`` can **Draw** and **Delete** patches "
+"and multi-lines:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:744
+msgid "Draw patch/multi-line"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:743
+msgid ""
+"Click and drag to start drawing and release the mouse button to finish "
+"drawing"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:750
+#: ../../source/docs/user_guide/tools.rst:873
+msgid "Delete patch/multi-line"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:747
+msgid ""
+"Tap a line or patch to select it then press BACKSPACE key while the mouse"
+" is within the plot area."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:750
+msgid "To **Delete** multiple patches/lines at once:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:753
+msgid ""
+"Select patches/lines with SHIFT+tap (or another selection tool) then "
+"press BACKSPACE while the mouse is within the plot area."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:757
+msgid "PointDrawTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:759
+msgid "name: ``'point_draw'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:760
+msgid "menu icon: |point_draw_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:762
+msgid ""
+"The ``PointDrawTool`` allows adding, dragging and deleting point-like "
+"glyphs (of ``XYGlyph`` type) on one or more renderers by editing the "
+"underlying ``ColumnDataSource`` data. Like other drawing tools, the "
+"renderers that are to be edited must be supplied explicitly as a list:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:774
+msgid ""
+"The tool will automatically modify the columns on the data source "
+"corresponding to the ``x`` and ``y`` values of the glyph. Any additional "
+"columns in the data source will be padded with the declared "
+"``empty_value``, when adding a new point. Any newly added points will be "
+"inserted on the ``ColumnDataSource`` of the first supplied renderer."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:781
+msgid ""
+"It is also often useful to limit the number of elements that can be "
+"drawn.  Using the ``num_objects`` property we can ensure that once the "
+"limit has been reached the oldest point will be popped off the queue to "
+"make space for the new point being added."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:791
+msgid ""
+"The animation above shows the supported tool actions, highlighting mouse "
+"actions with a circle around the cursor and key strokes by showing the "
+"pressed keys. The PointDrawTool can **Add**, **Move** and **Delete** "
+"point-like glyphs on plots:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:797
+msgid "Add point"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:797
+msgid "Tap anywhere on the plot"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:801
+msgid "Move point"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:800
+msgid ""
+"Tap and drag an existing point, the point will be dropped once you let go"
+" of the mouse button."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:805
+msgid "Delete point"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:804
+msgid ""
+"Tap a point to select it then press BACKSPACE key while the mouse is "
+"within the plot area."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:807
+msgid "To **Move** or **Delete** multiple points at once:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:810
+msgid ""
+"Select point(s) with SHIFT+tap (or another selection tool) then drag "
+"anywhere on the plot. Selecting and then dragging a specific point will "
+"move both."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:815
+msgid ""
+"Select point(s) with SHIFT+tap (or another selection tool) then press "
+"BACKSPACE while the mouse is within the plot area."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:823
+msgid "PolyDrawTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:825
+msgid "name: ``'poly_draw'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:826
+msgid "menu icon: |poly_draw_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:828
+msgid ""
+"The ``PolyDrawTool`` allows drawing, selecting and deleting ``Patches`` "
+"and ``MultiLine`` glyphs on one or more renderers by editing the "
+"underlying ``ColumnDataSource`` data. Like other drawing tools, the "
+"renderers that are to be edited must be supplied explicitly as a list."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:847
+msgid ""
+"If a ``vertex_renderer`` with an point-like glyph is supplied the "
+"PolyDrawTool will use it to display the vertices of the multi-"
+"lines/patches on all supplied renderers. This also enables the ability to"
+" snap to existing vertices while drawing."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:857
+msgid ""
+"The animation above shows the supported tool actions, highlighting mouse "
+"actions with a circle around the cursor and key strokes by showing the "
+"pressed keys. The ``PolyDrawTool`` can **Add**, **Move** and **Delete** "
+"patches and multi-lines:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:865
+msgid "Add patch/multi-line"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:863
+msgid ""
+"Double tap to add the first vertex, then use tap to add each subsequent "
+"vertex, to finalize the draw action double tap to insert the final vertex"
+" or press the ESC key."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:869
+msgid "Move patch/multi-line"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:868
+msgid ""
+"Tap and drag an existing patch/multi-line, the point will be dropped once"
+" you let go of the mouse button."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:872
+msgid ""
+"Tap a patch/multi-line to select it then press BACKSPACE key while the "
+"mouse is within the plot area."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:880
+msgid "PolyEditTool"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:882
+msgid "name: ``'poly_edit'``"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:883
+msgid "menu icon: |poly_edit_icon|"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:885
+msgid ""
+"The PolyEditTool allows editing the vertices of one or more ``Patches`` "
+"or ``MultiLine`` glyphs. The glyphs to be edited can be defined via the "
+"``renderers`` property and the renderer for the vertices can be defined "
+"via the ``vertex_renderer``, which must render a point-like Glyph (of "
+"``XYGlyph`` type)."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:891
+msgid ""
+"The tool will automatically modify the columns on the data source "
+"corresponding to the ``xs`` and ``ys`` values of the glyph. Any "
+"additional columns in the data source will be padded with the declared "
+"``empty_value``, when adding a new point."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:901
+msgid ""
+"The animation above shows the supported tool actions, highlighting mouse "
+"actions with a circle around the cursor and key strokes by showing the "
+"pressed keys. The ``PolyEditTool`` can **Add**, **Move** and **Delete** "
+"vertices on existing patches and multi-lines:"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:907
+msgid "Show vertices"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:907
+msgid "Double tap an existing patch or multi-line"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:912
+msgid "Add vertex"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:910
+msgid ""
+"Double tap an existing vertex to select it, the tool will draw the next "
+"point, to add it tap in a new location. To finish editing and add a point"
+" double tap otherwise press the ESC key to cancel."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:916
+msgid "Move vertex"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:915
+msgid "Drag an existing vertex and let go of the mouse button to release it."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:920
+msgid "Delete vertex"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:919
+msgid ""
+"After selecting one or more vertices press BACKSPACE while the mouse "
+"cursor is within the plot area."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:929
+msgid "Controlling Level of Detail"
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:931
+msgid ""
+"Although the HTML canvas can comfortably display tens or even hundreds of"
+" thousands of glyphs, doing so can have adverse affects on interactive "
+"performance. In order to accommodate large-ish (but not enormous) data "
+"sizes, Bokeh plots offer \"Level of Detail\" (LOD) capability in the "
+"client."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:937
+msgid ""
+"Another option, when dealing with very large data volumes, is to use the "
+"Bokeh Server to perform downsampling on data before it is sent to the "
+"browser. Such an approach is unavoidable past a certain data size. See "
+":ref:`userguide_server` for more information."
+msgstr ""
+
+#: ../../source/docs/user_guide/tools.rst:942
+msgid ""
+"The basic idea is that during interactive operations (e.g., panning or "
+"zooming), the plot only draws some small fraction of data points. This "
+"hopefully allows the general sense of the interaction to be preserved "
+"mid-flight, while maintaining interactive performance. There are four "
+"properties on |Plot| objects that control LOD behavior:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "Decimation factor to use when applying level-of-detail decimation."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Interval (in ms) during which an interactive tool event will enable "
+"level-of-detail downsampling."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A number of data points, above which level-of-detail downsampling may be "
+"performed by glyph renderers. Set to ``None`` to disable any level-of-"
+"detail downsampling."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Timeout (in ms) for checking whether interactive tool events are still "
+"occurring. Once level-of-detail mode is enabled, a check is made every "
+"``lod_timeout`` ms. If no interactive tool events have happened, level-"
+"of-detail mode is disabled."
+msgstr ""
+

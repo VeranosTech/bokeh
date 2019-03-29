@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/geo.rst:4
+msgid "Mapping Geo Data"
+msgstr ""
+
+#: ../../source/docs/user_guide/geo.rst:6
+msgid ""
+"Bokeh has started adding support for working with Geographical data. "
+"There are a number of powerful features already available, but we still "
+"have more to add. Please tell use your use cases through the `mailing "
+"list`_ or on `github`_ so that we can continue to build out these "
+"features to meet your needs."
+msgstr ""
+
+#: ../../source/docs/user_guide/geo.rst:14
+msgid "Tile Provider Maps"
+msgstr ""
+
+#: ../../source/docs/user_guide/geo.rst:16
+msgid ""
+"Bokeh plots can also consume XYZ tile services which use the Web Mercator"
+" projection. The module :ref:`bokeh.tile_providers` contains several pre-"
+"configured tile sources with appropriate attribution which can be added "
+"to a plot using the :func:`~bokeh.models.plots.Plot.add_tile` method."
+msgstr ""
+
+#: ../../source/docs/user_guide/geo.rst:24
+msgid ""
+"Notice also that passing ``x_axis_type=\"mercator\"`` and "
+"``y_axis_type=\"mercator\"`` to ``figure`` generate axes with latitude "
+"and longitute labels, instead of raw Web Mercator coordinates."
+msgstr ""
+
+#: ../../source/docs/user_guide/geo.rst:31
+msgid "Google Maps"
+msgstr ""
+
+#: ../../source/docs/user_guide/geo.rst:33
+msgid ""
+"Bokeh can also plot glyphs over a Google Map using the "
+":func:`~bokeh.plotting.gmap.gmap` function. You must pass this function "
+"`Google API Key`_ in order for it to work, as well as any "
+":class:`~bokeh.models.map_plots.GMapOptions` to configure the Google Map "
+"underlay."
+msgstr ""
+
+#: ../../source/docs/user_guide/geo.rst:42
+msgid ""
+"Google has its own terms of service for using Google Maps API and any use"
+" of Bokeh with Google Maps must be within Google's Terms of Service"
+msgstr ""
+
+#: ../../source/docs/user_guide/geo.rst:48
+msgid "GeoJSON Data"
+msgstr ""
+
+#: ../../source/docs/user_guide/geo.rst:50
+msgid ""
+"`GeoJSON`_ is a popular open standard for representing geographical "
+"features with JSON. It describes points, lines and polygons (called "
+"Patches in Bokeh) as a collection of features. Each feature can also have"
+" a set of properties."
+msgstr ""
+
+#: ../../source/docs/user_guide/geo.rst:54
+msgid ""
+"Bokeh's ``GeoJSONDataSource`` can be used almost seamlessly in place of "
+"Bokeh's ``ColumnDataSource``. For example:"
+msgstr ""
+
+#: ../../source/docs/user_guide/geo.rst:61
+msgid ""
+"It is important to note that behind the scenes, Bokeh converts the "
+"GeoJSON coordinates into columns called `x` and `y` or `xs` and `ys`) "
+"(depending on whether the features are Points, Lines, MultiLines, "
+"Polygons or MultiPolygons). *Properties with clashing names will be "
+"overridden when the GeoJSON is converted, and should be avoided*."
+msgstr ""
+

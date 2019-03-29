@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/server/contexts.rst:4
+msgid "bokeh.server.contexts"
+msgstr ""
+
+#: bokeh.server.contexts:1 of
+msgid "Provides the Application, Server, and Session context classes."
+msgstr ""
+
+#: bokeh.server.contexts.ApplicationContext:1 of
+msgid ""
+"Server-side holder for ``bokeh.application.Application`` plus any "
+"associated data. This holds data that's global to all sessions, while "
+"``ServerSession`` holds data specific to an \"instance\" of the "
+"application."
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_next_tick_callback:1 of
+msgid "Add a callback to be run on the next tick of the event loop."
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_next_tick_callback:3
+#: bokeh.server.contexts.BokehServerContext.add_periodic_callback:3
+#: bokeh.server.contexts.BokehServerContext.add_timeout_callback:3
+#: bokeh.server.contexts.BokehServerContext.remove_next_tick_callback:4
+#: bokeh.server.contexts.BokehServerContext.remove_periodic_callback:3
+#: bokeh.server.contexts.BokehServerContext.remove_timeout_callback:4
+#: bokeh.server.contexts.BokehServerContext.sessions:3
+#: bokeh.server.contexts.BokehSessionContext.with_locked_document:4 of
+msgid "*Subclasses must implement this method.*"
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_next_tick_callback
+#: bokeh.server.contexts.BokehServerContext.add_periodic_callback
+#: bokeh.server.contexts.BokehServerContext.add_timeout_callback
+#: bokeh.server.contexts.BokehServerContext.remove_next_tick_callback
+#: bokeh.server.contexts.BokehServerContext.remove_periodic_callback
+#: bokeh.server.contexts.BokehServerContext.remove_timeout_callback
+#: bokeh.server.contexts.BokehSessionContext.with_locked_document of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_next_tick_callback:5 of
+msgid ""
+"a callback to add  The callback will execute on the next tick of the "
+"event loop, and should have the form ``def callback()`` (i.e. it should "
+"not accept any arguments)"
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_next_tick_callback:5
+#: bokeh.server.contexts.BokehServerContext.add_periodic_callback:5
+#: bokeh.server.contexts.BokehServerContext.add_timeout_callback:5 of
+msgid "a callback to add"
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_next_tick_callback:7 of
+msgid ""
+"The callback will execute on the next tick of the event loop, and should "
+"have the form ``def callback()`` (i.e. it should not accept any "
+"arguments)"
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_next_tick_callback
+#: bokeh.server.contexts.BokehServerContext.add_periodic_callback
+#: bokeh.server.contexts.BokehServerContext.add_timeout_callback
+#: bokeh.server.contexts.BokehSessionContext.with_locked_document of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_next_tick_callback:12 of
+msgid "an ID that can be used with ``remove_next_tick_callback``."
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_periodic_callback:1 of
+msgid "Add a callback to be run periodically until it is removed."
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_periodic_callback:5 of
+msgid ""
+"a callback to add  The callback will execute periodically on the event "
+"loop as specified, and should have the form ``def callback()`` (i.e. it "
+"should not accept any arguments)"
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_periodic_callback:7 of
+msgid ""
+"The callback will execute periodically on the event loop as specified, "
+"and should have the form ``def callback()`` (i.e. it should not accept "
+"any arguments)"
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_periodic_callback:11 of
+msgid "number of milliseconds to wait between executing the callback."
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_periodic_callback:15 of
+msgid "an ID that can be used with ``remove_periodic_callback``."
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_timeout_callback:1 of
+msgid "Add a callback to be run once after timeout_milliseconds."
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_timeout_callback:5 of
+msgid ""
+"a callback to add  The callback will execute once on the event loop after"
+" the timeout has passed, and should have the form ``def callback()`` "
+"(i.e. it should not accept any arguments)"
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_timeout_callback:7 of
+msgid ""
+"The callback will execute once on the event loop after the timeout has "
+"passed, and should have the form ``def callback()`` (i.e. it should not "
+"accept any arguments)"
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_timeout_callback:11 of
+msgid "number of milliseconds to wait before executing the callback."
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.add_timeout_callback:15 of
+msgid "an ID that can be used with ``remove_timeout_callback``."
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.remove_next_tick_callback:1 of
+msgid "Remove a callback added with ``add_next_tick_callback``, before it runs."
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.remove_next_tick_callback:6 of
+msgid "the ID returned from ``add_next_tick_callback``"
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.remove_periodic_callback:1 of
+msgid "Removes a callback added with ``add_periodic_callback``."
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.remove_periodic_callback:5 of
+msgid "the ID returned from ``add_periodic_callback``"
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.remove_timeout_callback:1 of
+msgid "Remove a callback added with ``add_timeout_callback``, before it runs."
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.remove_timeout_callback:6 of
+msgid "the ID returned from ``add_timeout_callback``"
+msgstr ""
+
+#: bokeh.server.contexts.BokehServerContext.sessions:1 of
+msgid "``SessionContext`` instances belonging to this application."
+msgstr ""
+
+#: bokeh.server.contexts.BokehSessionContext.with_locked_document:1 of
+msgid ""
+"Runs a function with the document lock held, passing the document to the "
+"function."
+msgstr ""
+
+#: bokeh.server.contexts.BokehSessionContext.with_locked_document:6 of
+msgid ""
+"function that takes a single parameter (the Document) and returns "
+"``None`` or a ``Future``"
+msgstr ""
+
+#: bokeh.server.contexts.BokehSessionContext.with_locked_document:10 of
+msgid "a ``Future`` containing the result of the function"
+msgstr ""
+
+#: bokeh.server.contexts.BokehSessionContext.destroyed:1 of
+msgid "If ``True``, the session has been discarded and cannot be used."
+msgstr ""
+
+#: bokeh.server.contexts.BokehSessionContext.destroyed:3 of
+msgid ""
+"A new session with the same ID could be created later but this instance "
+"will not come back to life."
+msgstr ""
+

@@ -1,0 +1,377 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/server/tornado.rst:4
+msgid "bokeh.server.tornado"
+msgstr ""
+
+#: bokeh.server.tornado:1 of
+msgid "Provides the Bokeh Server Tornado application."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:1 of
+msgid "A Tornado Application used to implement the Bokeh Server."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado
+#: bokeh.server.tornado.BokehTornado.get_session
+#: bokeh.server.tornado.BokehTornado.get_sessions
+#: bokeh.server.tornado.BokehTornado.resources
+#: bokeh.server.tornado.BokehTornado.stop of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:3 of
+msgid ""
+"A map from paths to ``Application`` instances.  If the value is a single "
+"Application, then the following mapping is generated:  .. code-block:: "
+"python      applications = { '/' : applications }  When a connection "
+"comes in to a given path, the associate Application is used to generate a"
+" new document for the session."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:3 of
+msgid "A map from paths to ``Application`` instances."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:5 of
+msgid ""
+"If the value is a single Application, then the following mapping is "
+"generated:"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:12 of
+msgid ""
+"When a connection comes in to a given path, the associate Application is "
+"used to generate a new document for the session."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:15 of
+msgid "A URL prefix to use for all Bokeh server paths. (default: None)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:17 of
+msgid ""
+"A list of hosts that can connect to the websocket.  This is typically "
+"required when embedding a Bokeh server app in an external web site using "
+":func:`~bokeh.embed.server_document` or similar.  If None, "
+"``[\"localhost\"]`` will be assumed (default: None)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:17 of
+msgid "A list of hosts that can connect to the websocket."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:19 of
+msgid ""
+"This is typically required when embedding a Bokeh server app in an "
+"external web site using :func:`~bokeh.embed.server_document` or similar."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:23 of
+msgid "If None, ``[\"localhost\"]`` will be assumed (default: None)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:25 of
+msgid ""
+"A list of tuples of (str, http or websocket handler)  Use this argument "
+"to add additional endpoints to custom deployments of the Bokeh Server.  "
+"If None, then ``[]`` will be used. (default: None)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:25 of
+msgid "A list of tuples of (str, http or websocket handler)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:27 of
+msgid ""
+"Use this argument to add additional endpoints to custom deployments of "
+"the Bokeh Server."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:30 of
+msgid "If None, then ``[]`` will be used. (default: None)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:32 of
+msgid ""
+"A secret key for signing session IDs.  Defaults to the current value of "
+"the environment variable ``BOKEH_SECRET_KEY``"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:32 of
+msgid "A secret key for signing session IDs."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:34 of
+msgid ""
+"Defaults to the current value of the environment variable "
+"``BOKEH_SECRET_KEY``"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:37 of
+msgid ""
+"Whether to cryptographically sign session IDs  Defaults to the current "
+"value of the environment variable ``BOKEH_SIGN_SESSIONS``. If ``True``, "
+"then ``secret_key`` must also be provided (either via environment setting"
+" or passed as a parameter value)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:37 of
+msgid "Whether to cryptographically sign session IDs"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:39 of
+msgid ""
+"Defaults to the current value of the environment variable "
+"``BOKEH_SIGN_SESSIONS``. If ``True``, then ``secret_key`` must also be "
+"provided (either via environment setting or passed as a parameter value)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:44 of
+msgid "Whether to generate a session ID if one is not provided (default: True)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:47 of
+msgid ""
+"Number of milliseconds between keep-alive pings (default: 37000)  Pings "
+"normally required to keep the websocket open. Set to 0 to disable pings."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:47 of
+msgid "Number of milliseconds between keep-alive pings (default: 37000)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:49 of
+msgid ""
+"Pings normally required to keep the websocket open. Set to 0 to disable "
+"pings."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:52 of
+msgid ""
+"Number of milliseconds between checking for unused sessions (default: "
+"17000)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:55 of
+msgid "Number of milliseconds for unused session lifetime (default: 15000)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:57 of
+msgid "Number of milliseconds between logging stats (default: 15000)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:59 of
+msgid ""
+"Number of milliseconds between logging memory information (default: 0)  "
+"Enabling this feature requires the optional dependency ``psutil`` to be "
+"installed."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:59 of
+msgid "Number of milliseconds between logging memory information (default: 0)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:61 of
+msgid ""
+"Enabling this feature requires the optional dependency ``psutil`` to be "
+"installed."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:64 of
+msgid ""
+"Whether to generate an index of running apps in the ``RootHandler`` "
+"(default: True)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:67 of
+msgid ""
+"Path to a Jinja2 template to serve as the index for \"/\" if use_index is"
+" True. If None, the basic built in app index template is used. (default: "
+"None)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:71 of
+msgid ""
+"When there is only a single running application, whether to redirect "
+"requests to ``\"/\"`` to that application automatically (default: True)  "
+"If there are multiple Bokeh applications configured, this option has no "
+"effect."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:71 of
+msgid ""
+"When there is only a single running application, whether to redirect "
+"requests to ``\"/\"`` to that application automatically (default: True)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:75 of
+msgid ""
+"If there are multiple Bokeh applications configured, this option has no "
+"effect."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:78 of
+msgid ""
+"Set the Tornado ``websocket_max_message_size`` value. (default: "
+"20*1024*1024)  NOTE: This setting has effect ONLY for Tornado>=4.5"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:78 of
+msgid ""
+"Set the Tornado ``websocket_max_message_size`` value. (default: "
+"20*1024*1024)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:81 of
+msgid "NOTE: This setting has effect ONLY for Tornado>=4.5"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado:84 of
+msgid ""
+"Any additional keyword arguments are passed to "
+"``tornado.web.Application``."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.get_session:1 of
+msgid "Get an active a session by name application path and session ID."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.get_session:3 of
+msgid ""
+"The configured application path for the application to return a session "
+"for."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.get_session:6 of
+msgid "The session ID of the session to retrieve."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.get_session
+#: bokeh.server.tornado.BokehTornado.get_sessions
+#: bokeh.server.tornado.BokehTornado.stop of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.get_session:9 of
+msgid "ServerSession"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.get_sessions:1 of
+msgid "Gets all currently active sessions for an application."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.get_sessions:3 of
+msgid ""
+"The configured application path for the application to return sessions "
+"for."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.get_sessions:7 of
+msgid "list[ServerSession]"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.initialize:1 of
+msgid "Start a Bokeh Server Tornado Application on a given Tornado IOLoop."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.resources:1 of
+msgid ""
+"Provide a :class:`~bokeh.resources.Resources` that specifies where Bokeh "
+"application sessions should load BokehJS resources from."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.resources:4 of
+msgid ""
+"An absolute URL prefix to use for locating resources. If None, relative "
+"URLs are used (default: None)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.start:1 of
+msgid "Start the Bokeh Server application."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.start:3 of
+msgid ""
+"Starting the Bokeh Server Tornado application will run periodic callbacks"
+" for stats logging, cleanup, pinging, etc. Additionally, any startup "
+"hooks defined by the configured Bokeh applications will be run."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.stop:1 of
+msgid "Stop the Bokeh Server application."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.stop:3 of
+msgid "whether to wait for orderly cleanup (default: True)"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.stop:6 of
+msgid "None"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.app_paths:1 of
+msgid ""
+"A list of all application paths for all Bokeh applications configured on "
+"this Bokeh server instance."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.generate_session_ids:1 of
+msgid ""
+"Whether this Bokeh Server Tornado Application has been configured to "
+"automatically generate session IDs."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.index:1 of
+msgid "Path to a Jinja2 template to serve as the index \"/\""
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.io_loop:1 of
+msgid ""
+"The Tornado IOLoop that this  Bokeh Server Tornado Application is running"
+" on."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.prefix:1 of
+msgid ""
+"A URL prefix for this Bokeh Server Tornado Application to use for all "
+"paths"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.secret_key:1 of
+msgid ""
+"A secret key for this Bokeh Server Tornado Application to use when "
+"signing session IDs, if configured."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.sign_sessions:1 of
+msgid ""
+"Whether this Bokeh Server Tornado Application has been configured to "
+"cryptographically sign session IDs"
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.sign_sessions:4 of
+msgid "If ``True``, then ``secret_key`` must also have been configured."
+msgstr ""
+
+#: bokeh.server.tornado.BokehTornado.websocket_origins:1 of
+msgid "A list of websocket origins permitted to connect to this server."
+msgstr ""
+

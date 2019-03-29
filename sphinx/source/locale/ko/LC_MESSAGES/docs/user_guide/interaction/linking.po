@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/interaction/linking.rst:4
+msgid "Linking Behavior"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/linking.rst:6
+msgid ""
+"It's often useful to link plots to add connected interactivity between "
+"plots. This section shows an easy way to do it using the |bokeh.plotting|"
+" interface."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/linking.rst:12
+msgid "Linked Panning"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/linking.rst:14
+msgid ""
+"It's often desired to link pan or zooming actions across many plots. All "
+"that is needed to enable this feature is to share range objects between "
+"|figure| calls."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/linking.rst:21
+msgid ""
+"Now you have learned how to link panning between multiple plots with the "
+"|bokeh.plotting| interface."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/linking.rst:27
+msgid "Linked Brushing"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/linking.rst:29
+msgid ""
+"Linked brushing in Bokeh is expressed by sharing data sources between "
+"glyph renderers. This is all Bokeh needs to understand that selections "
+"acted on one glyph must pass to all other glyphs that share that same "
+"source. To see how linked selection extends to glyph renderers that plot "
+"only a subset of data from a data source, see "
+":ref:`userguide_data_linked_selection_with_filtering`."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/linking.rst:35
+msgid ""
+"The following code shows an example of linked brushing between circle "
+"glyphs on two different |figure| calls."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/linking.rst:44
+msgid "Linked Properties"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/linking.rst:46
+msgid ""
+"It is also possible to link values of Bokeh model properties together so "
+"that they remain synchronized, using the ``js_link`` method. The example "
+"below links a circle glyph radius to the value of a Slider widget:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/linking.rst:53
+msgid ""
+"The linking is accomplished in JavaScript, so this method works in "
+"standalone Bokeh documents, or in Bokeh server applications."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/linking.rst:56
+msgid ""
+"See :ref:`userguide_interaction_widgets` for more information about "
+"different widgets, and :ref:`userguide_interaction_jscallbacks` for more "
+"information about creating arbitrary JavaScript callbacks."
+msgstr ""
+

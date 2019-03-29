@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/client.rst:4
+msgid "bokeh.client"
+msgstr ""
+
+#: bokeh.client:1 of
+msgid ""
+"Provides client API for connecting to a Bokeh server from a Python "
+"process."
+msgstr ""
+
+#: bokeh.client:4 of
+msgid "The primary uses for the ``bokeh.client`` are:"
+msgstr ""
+
+#: bokeh.client:6 of
+msgid "Implementing testing infrastructure around Bokeh applications"
+msgstr ""
+
+#: bokeh.client:7 of
+msgid ""
+"Creating and customizing specific sessions of a Bokeh application running"
+" *in a Bokeh Server*, before passing them to a viewer."
+msgstr ""
+
+#: bokeh.client:10 of
+msgid ""
+"While it is also possible to run Bokeh application code \"outside\" a "
+"Bokeh server using ``bokeh.client``, this practice is **HIGHLY "
+"DISCOURAGED**."
+msgstr ""
+

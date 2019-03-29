@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/interaction/legends.rst:4
+msgid "Interactive Legends"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/legends.rst:6
+msgid ""
+":ref:`userguide_plotting_legends` added to Bokeh plots can be made "
+"interactive so that clicking or tapping on the legend entries will hide "
+"or mute the corresponding glyph in a plot. These modes are activated by "
+"setting the ``click_policy`` property on a "
+":class:`~bokeh.models.annotation.Legend` to either ``\"hide\"`` or "
+"``\"mute\"``."
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/legends.rst:13
+msgid ""
+"Interactive legend features currently work on \"per-glyph\" legends. "
+"Legends that are created by specifying a column to automatically group do"
+" no yet work with the features described below"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/legends.rst:18
+msgid "Hiding Glyphs"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/legends.rst:20
+msgid ""
+"Sometimes it is desirable to be able to hide glyphs by clicking on an "
+"entry in a ``Legend``. In Bokeh this can be accomplished by setting the "
+"legend ``click_policy`` property to ``\"hide\"`` as shown in the example "
+"below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/legends.rst:28
+msgid "Muting Glyphs"
+msgstr ""
+
+#: ../../source/docs/user_guide/interaction/legends.rst:30
+msgid ""
+"Other times it is preferable for legend interaction to mute a glyph, "
+"instead of hiding it entirely. In this case, set ``click_policy`` "
+"property to ``\"mute\"``. Additionally, the visual properties of a "
+"\"muted glyph\" also need to be specified. In general this is does in "
+"exactly the same way as for "
+":ref:`userguide_styling_selected_unselected_glyphs` or "
+":ref:`userguide_styling_hover_inspections`. In the example below, "
+"``muted_alpha=0.2`` and ``muted_color=color`` are passed to ``circle`` to"
+" specify that muted lines should be drawn with a low alpha muted glyph."
+msgstr ""
+

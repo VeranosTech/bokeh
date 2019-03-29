@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/index.rst:2
+msgid "Welcome to Bokeh"
+msgstr ""
+
+#: ../../source/index.rst:6
+msgid ""
+"Bokeh is an interactive visualization library that targets modern web "
+"browsers for presentation. Its goal is to provide elegant, concise "
+"construction of versatile graphics, and to extend this capability with "
+"high-performance interactivity over very large or streaming datasets. "
+"Bokeh can help anyone who would like to quickly and easily create "
+"interactive plots, dashboards, and data applications."
+msgstr ""
+
+#: ../../source/index.rst:13
+msgid ""
+"To get started using Bokeh to make your visualizations, start with the "
+":ref:`userguide`."
+msgstr ""
+
+#: ../../source/index.rst:16
+msgid ""
+"For examples of how you might use Bokeh with your own data, check out the"
+" :ref:`gallery`."
+msgstr ""
+
+#: ../../source/index.rst:19
+msgid ""
+"For detailed information about specific Bokeh components, consult the "
+":ref:`refguide`."
+msgstr ""
+
+#: ../../source/index.rst:22
+msgid ""
+"If you are interested in contributing to Bokeh, or extending the library,"
+" see the :ref:`devguide`."
+msgstr ""
+
+#: ../../source/index.rst:35
+msgid ""
+"Bokeh is a fiscally sponsored project of `NumFOCUS`_, a nonprofit "
+"dedicated to supporting the open source scientific computing community. "
+"If you like Bokeh and want to support our mission, please consider making"
+" a `donation`_ to support our efforts."
+msgstr ""
+

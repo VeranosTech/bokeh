@@ -1,0 +1,598 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/axes.rst:4
+msgid "bokeh.models.axes"
+msgstr ""
+
+#: bokeh.models.axes:1 of
+msgid "Guide renderers for various kinds of axes that can be added to Bokeh plots"
+msgstr ""
+
+#: bokeh.models.axes.Axis:1 of
+msgid "Bases: :class:`bokeh.models.renderers.GuideRenderer`"
+msgstr ""
+
+#: bokeh.models.axes.Axis:1 of
+msgid "A base class that defines common properties for all axis types."
+msgstr ""
+
+#: bokeh.models.axes.Axis:5 bokeh.models.axes.ContinuousAxis:5 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A text label for the axis, displayed parallel to the axis rule."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"LaTeX notation is not currently supported; please see :bokeh-issue:`647` "
+"to track progress or contribute."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The distance in pixels that the axis labels should be offset from the "
+"tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.TextAlign`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text align of the axis label."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.NumberSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text alpha of the axis label."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.TextBaseline`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text baseline of the axis label."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.ColorSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text color of the axis label."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font of the axis label."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.FontSizeSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font size of the axis label."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.FontStyle`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font style of the axis label."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Float`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text line height of the axis label."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha of the axis line."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LineCap`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap of the axis line."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color of the axis line."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.DashPattern`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash of the axis line."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset of the axis line."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LineJoin`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join of the axis line."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width of the axis line."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Auto` , "
+":class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.Float` , "
+":class:`~bokeh.core.properties.Float`  ), "
+":class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.Datetime` , "
+":class:`~bokeh.core.properties.Datetime`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Bounds for the rendered axis. If unset, the axis will span the entire "
+"plot in the given dimension."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Float` , "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.String`  ), "
+":class:`~bokeh.core.properties.Tuple` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.String`  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Set to specify a fixed coordinate location to draw the axis. The "
+"direction of ticks and major labels is determined by the side panel that "
+"the axis belongs to."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Axes labels are suppressed when axes are positioned at fixed locations "
+"inside the central plot area."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.formatters.TickFormatter`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A ``TickFormatter`` to use for formatting the visual appearance of ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Enum` ( Enumeration(horizontal, vertical) "
+"), :class:`~bokeh.core.properties.Float`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"What direction the major label text should be oriented. If a number is "
+"supplied, the angle of the text is measured from horizontal."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Dict` ( "
+":class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Float` , "
+":class:`~bokeh.core.properties.String`  ), "
+":class:`~bokeh.core.properties.String`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Provide explicit tick label values for specific tick locations that "
+"override normal formatting."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The distance in pixels that the major tick labels should be offset from "
+"the associated ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text align of the major tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text alpha of the major tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text baseline of the major tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text color of the major tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font of the major tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font size of the major tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font style of the major tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text line height of the major tick labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The distance in pixels that major ticks should extend into the main plot "
+"area."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha of the major ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap of the major ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color of the major ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash of the major ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset of the major ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join of the major ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width of the major ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The distance in pixels that major ticks should extend out of the main "
+"plot area."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The distance in pixels that minor ticks should extend into the main plot "
+"area."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha of the minor ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap of the minor ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color of the minor ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash of the minor ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset of the minor ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join of the minor ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width of the minor ticks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.tickers.Ticker`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A Ticker to use for computing locations of axis components."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The property may also be passed a sequence of floating point numbers as a"
+" shorthand for creating and configuring a ``FixedTicker``, e.g. the "
+"following code"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "is equivalent to:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A particular (named) x-range to use for computing screen locations when "
+"rendering an axis on the plot. If unset, use the default x-range."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A particular (named) y-range to use for computing screen locations when "
+"rendering an axis on the plot. If unset, use the default y-range."
+msgstr ""
+
+#: bokeh.models.axes.CategoricalAxis:1 bokeh.models.axes.ContinuousAxis:1 of
+msgid "Bases: :class:`bokeh.models.axes.Axis`"
+msgstr ""
+
+#: bokeh.models.axes.CategoricalAxis:1 of
+msgid "An axis that displays ticks and labels for categorical ranges."
+msgstr ""
+
+#: bokeh.models.axes.CategoricalAxis:3 of
+msgid ""
+"The ``CategoricalAxis`` can handle factor ranges with up to two levels of"
+" nesting, including drawing a separator line between top-level groups of "
+"factors."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.TickLabelOrientation`  ), "
+":class:`~bokeh.core.properties.Float`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "What direction the group label text should be oriented."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"If a number is supplied, the angle of the text is measured from "
+"horizontal."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This property always applies to factors in the outermost level of "
+"nesting. If the list of categorical factors is flat (i.e. no nesting) "
+"then this property has no effect."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text align of the group categorical labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text alpha of the group categorical labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text baseline of the group categorical labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text color of the group categorical labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font of the group categorical labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font size of the group categorical labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font style of the group categorical labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text line height of the group categorical labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha of the separator line between top-level categorical groups."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "This property always applies to factors in the outermost level of nesting."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap of the separator line between top-level categorical groups."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color of the separator line between top-level categorical groups."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash of the separator line between top-level categorical groups."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The line dash offset of the separator line between top-level categorical "
+"groups."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join of the separator line between top-level categorical groups."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width of the separator line between top-level categorical groups."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "What direction the subgroup label text should be oriented."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This property always applies to factors in the middle level of nesting. "
+"If the list of categorical factors is has only zero or one levels of "
+"nesting, then this property has no effect."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text align of the subgroup categorical labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text alpha of the subgroup categorical labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text baseline of the subgroup categorical labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text color of the subgroup categorical labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font of the subgroup categorical labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font size of the subgroup categorical labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text font style of the subgroup categorical labels."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The text line height of the subgroup categorical labels."
+msgstr ""
+
+#: bokeh.models.axes.ContinuousAxis:1 of
+msgid "A base class for all numeric, non-categorical axes types."
+msgstr ""
+
+#: bokeh.models.axes.DatetimeAxis:1 bokeh.models.axes.MercatorAxis:1 of
+msgid "Bases: :class:`bokeh.models.axes.LinearAxis`"
+msgstr ""
+
+#: bokeh.models.axes.DatetimeAxis:1 of
+msgid ""
+"A ``LinearAxis`` that picks nice numbers for tick locations on a datetime"
+" scale. Configured with a ``DatetimeTickFormatter`` by default."
+msgstr ""
+
+#: bokeh.models.axes.LinearAxis:1 bokeh.models.axes.LogAxis:1 of
+msgid "Bases: :class:`bokeh.models.axes.ContinuousAxis`"
+msgstr ""
+
+#: bokeh.models.axes.LinearAxis:1 of
+msgid ""
+"An axis that picks nice numbers for tick locations on a linear scale. "
+"Configured with a ``BasicTickFormatter`` by default."
+msgstr ""
+
+#: bokeh.models.axes.LogAxis:1 of
+msgid ""
+"An axis that picks nice numbers for tick locations on a log scale. "
+"Configured with a ``LogTickFormatter`` by default."
+msgstr ""
+
+#: bokeh.models.axes.MercatorAxis:1 of
+msgid ""
+"An axis that picks nice numbers for tick locations on a Mercator scale. "
+"Configured with a ``MercatorTickFormatter`` by default."
+msgstr ""
+
+#: bokeh.models.axes.MercatorAxis of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.models.axes.MercatorAxis:4 of
+msgid ""
+"Whether this axis will display latitude or longitude values. (default: "
+"'lat')"
+msgstr ""
+

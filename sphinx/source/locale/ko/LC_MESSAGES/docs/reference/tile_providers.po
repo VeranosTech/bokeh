@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../docstring ../../source/docs/reference/tile_providers.rst:4
+#: bokeh.tile_providers:6 of
+msgid "bokeh.tile_providers"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers:1 of
+msgid "Pre-configured tile sources for common third party tile services."
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers of
+msgid "module"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers:10 of
+msgid "Use this function to retrieve an instance of a predefined tile provider."
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers of
+msgid "Parameters"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers:12 of
+msgid ""
+"Name of the tile provider to supply. Use tile_providers.Vendors enum, or "
+"the name of a provider as string"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers of
+msgid "Returns"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers:16 of
+msgid "The desired tile provider instance"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers of
+msgid "Return type"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers of
+msgid "raises"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers:19 of
+msgid "ValueError, if the provider can not be found"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers:20 of
+msgid "ValueError, if the attribution for that provider can not be found"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers:23 of
+msgid "Example"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers:34 of
+msgid "Tile Source for CartoDB Tile Service"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers of
+msgid "Warns"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers:36 bokeh.tile_providers:46
+#: bokeh.tile_providers:56 bokeh.tile_providers:66 bokeh.tile_providers:76
+#: bokeh.tile_providers:86 bokeh.tile_providers:96 of
+msgid ""
+"**BokehDeprecationWarning** -- Deprecated in bokeh 1.1.0. Use "
+"get_provider instead"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers:44 of
+msgid "Tile Source for CartoDB Tile Service (tiles at 'retina' resolution)"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers:54 bokeh.tile_providers:64 of
+msgid "Tile Source for Stamen Terrain Service"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers:74 of
+msgid "Tile Source for Stamen Toner Service"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers:84 of
+msgid ""
+"Tile Source for Stamen Toner Background Service which does not include "
+"labels"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers:94 of
+msgid "Tile Source for Stamen Toner Service which includes only labels"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers:102 of
+msgid "Additional information available at:"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers:104 of
+msgid "Stamen tile service - http://maps.stamen.com/"
+msgstr ""
+
+#: ../../docstring bokeh.tile_providers:105 of
+msgid "CartoDB tile service - https://carto.com/location-data-services/basemaps/"
+msgstr ""
+

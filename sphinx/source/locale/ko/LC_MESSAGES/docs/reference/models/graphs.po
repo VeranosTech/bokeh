@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/graphs.rst:4
+msgid "bokeh.models.graphs"
+msgstr ""
+
+#: bokeh.models.graphs.EdgesAndLinkedNodes:1
+#: bokeh.models.graphs.NodesAndLinkedEdges:1 bokeh.models.graphs.NodesOnly:1 of
+msgid "Bases: :class:`bokeh.models.graphs.GraphHitTestPolicy`"
+msgstr ""
+
+#: bokeh.models.graphs.EdgesAndLinkedNodes:1 of
+msgid ""
+"With the ``EdgesAndLinkedNodes`` policy, inspection or selection of graph"
+" edges will result in the inspection or selection of the edge and of the "
+"linked graph nodes. There is no direct selection or inspection of graph "
+"nodes."
+msgstr ""
+
+#: bokeh.models.graphs.GraphHitTestPolicy:1
+#: bokeh.models.graphs.LayoutProvider:1 of
+msgid "Bases: :class:`bokeh.model.Model`"
+msgstr ""
+
+#: bokeh.models.graphs.GraphHitTestPolicy:2
+#: bokeh.models.graphs.LayoutProvider:2 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: bokeh.models.graphs.NodesAndLinkedEdges:1 of
+msgid ""
+"With the ``NodesAndLinkedEdges`` policy, inspection or selection of graph"
+" nodes will result in the inspection or selection of the node and of the "
+"linked graph edges. There is no direct selection or inspection of graph "
+"edges."
+msgstr ""
+
+#: bokeh.models.graphs.NodesOnly:1 of
+msgid ""
+"With the ``NodesOnly`` policy, only graph nodes are able to be selected "
+"and inspected. There is no selection or inspection of graph edges."
+msgstr ""
+
+#: bokeh.models.graphs.StaticLayoutProvider:1 of
+msgid "Bases: :class:`bokeh.models.graphs.LayoutProvider`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Dict` ( "
+":class:`~bokeh.core.properties.Either` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.Int`  ), "
+":class:`~bokeh.core.properties.Seq` ( :class:`~bokeh.core.properties.Any`"
+"  ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"The coordinates of the graph nodes in cartesian space. The dictionary "
+"keys correspond to a node index and the values are a two element sequence"
+" containing the x and y coordinates of the node."
+msgstr ""
+

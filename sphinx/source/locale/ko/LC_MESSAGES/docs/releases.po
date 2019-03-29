@@ -1,0 +1,4650 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/releases/1.1.0.rst:4
+msgid "1.1.0"
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:6
+msgid "Bokeh Version ``1.1.0`` (January 2019) primarily"
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:11
+msgid "`Migration Guide <releases.html#release-1-1-0-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:14
+msgid "New in 1.1"
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:16
+msgid ""
+"The ``js_link`` function was added to make it simpler to link two Bokeh "
+"model properties together:"
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:23
+msgid "See :ref:`userguide_interaction_linked_properties` for more information."
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:25
+msgid ""
+"The ``Slider.value_as_date`` method was added to conveniently retrieve "
+"Slider values as date objects when appropriate."
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:56
+#: ../../source/docs/releases/1.1.0.rst:29
+msgid "Deprecations"
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:31
+msgid ""
+"The following features or APIs were deprecated in version 1.1 and will be"
+" removed in a future 2.0 release:"
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:34
+msgid ""
+"Support for CoffeeScript in ``CustomJS`` or custom extensions. Use "
+"JavaScript or Typescript instead."
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:37
+msgid ""
+"Support for ``ClientSession.loop_until_closed``. This function is "
+"intented to support testing only, and will be removed from the public "
+"API. Bokeh applications should be run directly on a Bokeh server."
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:41
+msgid ""
+"Support for \"transpiling\" Python code to JavaScript. All "
+"``from_py_func`` methods will be removed. Use JavaScript or Typescript "
+"instead."
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:45
+msgid "Changes to bokeh.sphinxext"
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:47
+msgid ""
+"In order to support a longer term goal of moving Bokeh docs to "
+"`ReadTheDocs`_, some changes to the ``bokeh-plot`` Sphinx directive were "
+"necessary. These are:"
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:50
+msgid ""
+"Plot script files are now always placed immediately adjacent to the "
+"document they are for, and loaded using relative URLs."
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:53
+msgid ""
+"The config values ``bokeh_plot_pyfile_include_dirs`` and "
+"``bokeh_plot_use_relative_paths`` are no longer needed. Setting them will"
+" have no effect (but will not break existing builds). These config values"
+" will be removed in a future 2.0 release."
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:58
+msgid ""
+"We believe that there are very few users of ``bokeh.sphinxext`` outside "
+"the project itself, and that these changes will not cause any breakage "
+"for any of those users. However, please reach out for support if any "
+"unforseen issues arise."
+msgstr ""
+
+#: ../../source/docs/releases/1.0.4.rst:4
+msgid "1.0.4"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.4.rst:6
+msgid ""
+"Bokeh Version ``1.0.4`` (January 2019) primarily addresses a security "
+"issue regarding ``yaml.load`` (:bokeh-issue:`8541`)."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.13.rst:12
+#: ../../source/docs/releases/1.0.1.rst:15
+#: ../../source/docs/releases/1.0.2.rst:13
+#: ../../source/docs/releases/1.0.3.rst:13
+#: ../../source/docs/releases/1.0.4.rst:9
+msgid "For full details see the :bokeh-tree:`CHANGELOG`."
+msgstr ""
+
+#: ../../source/docs/releases/1.0.3.rst:4
+msgid "1.0.3"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.3.rst:6
+msgid ""
+"Bokeh Version ``1.0.3`` (December 2018) is a micro bugfix and feature "
+"release."
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:8
+#: ../../source/docs/releases/1.0.1.rst:8
+#: ../../source/docs/releases/1.0.2.rst:8
+#: ../../source/docs/releases/1.0.3.rst:8
+msgid "Some of the highlights include:"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.3.rst:10
+msgid "Enable Copy-and-Paste from ``DataTable`` (:bokeh-issue:`7762`)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.3.rst:11
+msgid "Add a Multi-line ``TextAreaInput`` widget (:bokeh-issue:`2828`)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.2.rst:4
+msgid "1.0.2"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.2.rst:6
+msgid ""
+"Bokeh Version ``1.0.2`` (November 2018) is a micro bugfix and feature "
+"release."
+msgstr ""
+
+#: ../../source/docs/releases/1.0.2.rst:10
+msgid "Expose configurable ``DataTable`` row height (:bokeh-issue:`8411`)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.2.rst:11
+msgid "Fix issue with legends and empty scatter glyphs (:bokeh-issue:`8395`)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.1.rst:4
+msgid "1.0.1"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.1.rst:6
+msgid "Bokeh Version ``1.0.1`` (October 2018) is a micro bugfix release."
+msgstr ""
+
+#: ../../source/docs/releases/1.0.1.rst:10
+msgid "Small fixes for ``export_png`` (:bokeh-issue:`8362`, :bokeh-issue:`8374`)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.1.rst:11
+msgid "Better cleanup for ``DocumentLifeCycleHandler`` (:bokeh-issue:`8367`)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.1.rst:12
+msgid "Fix issue with oval, ellipse legends (:bokeh-issue:`8375`)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.1.rst:13
+msgid "Recognized CSS rgb(a) strings for colors (:bokeh-issue:`4096`)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:4
+msgid "1.0.0"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:6
+msgid ""
+"Bokeh Version ``1.0.0`` (October 2018) is a major milestone of the Bokeh "
+"project."
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:10
+msgid "Support for ``MultiPolygons`` with holes (:bokeh-issue:`2321`)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:11
+msgid ""
+"Fixes and improvements to `DataTable` (:bokeh-issue:`6454`, :bokeh-"
+"issue:`7116`, :bokeh-issue:`7417`, :bokeh-issue:`8021`, :bokeh-"
+"issue:`8040`, :bokeh-issue:`8050`, :bokeh-issue:`8201`)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:12
+msgid "``CustomAction`` for user-defined Toolbar buttons (:bokeh-issue:`8099`)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:13
+msgid "Plain JSON export/embed functions (:bokeh-issue:`5231`)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:14
+msgid ""
+"Toolbar ``autohide`` property to hide toolbars when not in us(:bokeh-"
+"issue:`8284`)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:15
+msgid ""
+"Callback to allow ``AjaxDataSource`` to adapt JSON responses (:bokeh-"
+"issue:`8321`)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:16
+msgid "``Scatter`` glyph for parameterizable marker type (:bokeh-issue:`5884`)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:17
+msgid ""
+"Reuse webdrivers for faster PNG/SVG export by default (:bokeh-"
+"issue:`8329`)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:18
+msgid ""
+"Improved testing capabilities (:bokeh-issue:`2596`, :bokeh-issue:`8078`, "
+":bokeh-issue:`8139`, :bokeh-issue:`8146`, :bokeh-issue:`8217`, :bokeh-"
+"issue:`8225`)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:19
+msgid "Faster import times (:bokeh-issue:`8309`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:23
+#: ../../source/docs/releases/0.13.0.rst:13
+#: ../../source/docs/releases/1.0.0.rst:21
+msgid ""
+"And several other bug fixes and docs additions. For full details see the "
+":bokeh-tree:`CHANGELOG`."
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:27
+msgid "`Migration Guide <releases.html#release-1-0-0-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:30
+msgid "Handling of Selections"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:32
+msgid ""
+"Previous versions of Bokeh mistakenly had code paths that could replace "
+"data source ``Selection`` objects with entirely new instances. This was a"
+" mistake, and resulted in several regressions and other problems. "
+"Unfortunately, the problem persisted for a few releases, and now that the"
+" situation has been fixed, it will require some code changes for some "
+"users to adapt to correct usage."
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:38
+msgid ""
+"In general, you should NOT ever listen for a change of selections objects"
+" themselves, i.e. do not do this (anymore):"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:45
+msgid ""
+"Instead, you should listen for changes to the individual properties that "
+"are on ``Selection`` objects. For instance, to execute a callback when "
+"the ``indices`` on a selection change, (e.g. when a selection is made on "
+"a scatter plot), do this:"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:54
+msgid ""
+"Any code that looks like the first version above should be updated to use"
+" the second version. This applies to both Python or JavaScript callbacks "
+"for selections."
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:58
+msgid ""
+"While this breaking incompatibility is regretable, there are now much "
+"more extensive integration tests in place to maintain that the second "
+"version will always function as expected from now on."
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:63
+msgid "New Dependencies"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:65
+msgid "\"Pillow>=4.0\" has been added to the list of Bokeh runtime dependencies."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:72
+#: ../../source/docs/releases/1.0.0.rst:68
+msgid "Examples"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:70
+msgid "The following examples have been removed or updated:"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:72
+msgid ""
+"*app/pivot*: This large example was unfocused and unmaintained and has "
+"been removed"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:74
+msgid "*embed/simple*: Old example removed"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:75
+msgid ""
+"*howto/us_marriages_divorces*: Redundant notebook removed, script moved "
+"to *plotting/file/us_marriages_divorces_hover.py*"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:77
+msgid "*models/file/colorspec.py* Old example removed"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:78
+msgid "*models/file/external_resources.py* Moved to *latex_extension.py*"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:79
+msgid "*models/file/glyph1.py* Moved to *basic_plot.py*"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:80
+msgid "*models/file/grid.py* Old example removed"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:81
+msgid "*models/file/line.py* Old example removed"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:82
+msgid ""
+"*models/file/transform_jitter_coffee.py* Discouraged coffeescript example"
+" removed"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:83
+msgid "*plotting/file/bar_chart.py* Removed old/duplicative example"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:84
+msgid "*plotting/file/brewer.py*: Moved to *stacked_area.py*"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:85
+msgid "*plotting/file/bollinger.py* Old example removed"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:86
+msgid "*plotting/file/joyplot.py* Moved to *ridgeplot.py*"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:89
+msgid "Pretty printing functions"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:91
+msgid ""
+"The ``pprint`` and ``pretty`` methods depended on IPython pretty-printing"
+" in order to function. Recent changes to IPython pretty-printing "
+"machinery made it impossible to use unless the \"pretty\" repr was also "
+"enabled. This caused ipython console to be spammed with very large "
+"amounts of output, making it unusable. As a result, both ``pprint`` and "
+"``pretty`` methods have been removed. A \"pretty\" HTML repr still "
+"functions in Jupyter notebooks. This change is not expected to affect any"
+" normal usage."
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:100
+msgid "Bokeh Object IDs"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:102
+msgid ""
+"Previously Bokeh generated unique UUIDs for every Bokeh object. Starting "
+"with this release, Bokeh generates simple increasing integer IDs by "
+"default. You can set the environment variable ``BOKEH_SIMPLE_IDS=no`` to "
+"restore the previous behavior. The generation of simple IDs is faster "
+"than UUIDs, otherwise this change is not expected to affect any normal "
+"usage. However, if you are creating Bokeh objects for a single Document "
+"in separate processes, i.e. by using the ``multiprocessing`` module, then"
+" you will want to turn off simple IDs. (This is expected to be a rare and"
+" unusual usage.)"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:112
+msgid "``bokeh.util.plot_utils``"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:114
+msgid ""
+"The ``bokeh.util.plot_utils`` module has been removed. This module "
+"contained only private functions used internally. This change is not "
+"expected to affect any normal usage."
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:119
+msgid "``bokeh.server.application_context``"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:121
+msgid ""
+"The ``bokeh.server.application_context`` module has been renamed to "
+"``bokeh.server.contexts``.  This change is not expected to affect any "
+"normal usage."
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:126
+msgid "``arguments`` parameter for ``server_session``"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:128
+msgid ""
+"The ``server_session`` function accepted an ``arguments`` parameter that "
+"did not (and could not) have any actual effect. It has been removed, "
+"immediately. Since the parameter did not function, it is not expected "
+"that this change will affect any normal usage."
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:134
+msgid "Codebase Tests"
+msgstr ""
+
+#: ../../source/docs/releases/1.0.0.rst:136
+msgid ""
+"The Pytest \"quality\" mark has been changed to \"codebase\". Now to run "
+"the codebase tests, execute ``py.test -m codebase``. If you have "
+"installed a pre-commit hook to run quality tests before allowing a "
+"commit, the hook code should be updated as above. This change is only "
+"expected to affect those who are developing the Bokeh codebase."
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:4
+msgid "0.13.0"
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:6
+msgid ""
+"Bokeh Version ``0.13.0`` (June 2018) is an incremental update that adds a"
+" few new features and fixes several bugs. Some of the highlights include:"
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:9
+msgid "Improved hover tool fields for common stacked bar plot cases"
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:10
+msgid ""
+"New ``CumSum`` transform to generate values from cumulative sums of CDS "
+"columns on the client side."
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:19
+msgid "`Migration Guide <releases.html#release-0-13-0-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:21
+msgid ""
+"NOTE: the 0.13.x series is a final series of small releases leading to a "
+"1.0 release. For more information see the `project roadmap`_."
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:25
+msgid "Max Websocket Message Size"
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:27
+msgid ""
+"A new command line option ``--websocket-max-message-size`` for the Bokeh "
+"server can be used to configure the Tornado "
+"``websocket_max_message_size`` option. The default value is now 20mb, an "
+"increase from the previous 10mb implicit default."
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:33
+msgid "New Hover fields"
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:35
+msgid "Two new hover tooltip fields are now available:"
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:37
+msgid ""
+"``$name`` will preint the value of the ``name`` property of a glyph that "
+"is being hovered over."
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:40
+msgid ""
+"``@$name`` will look up values from a column like a normal ``@`` field, "
+"but will use ``$name`` as the name of the column."
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:43
+msgid "Both of these are espeically useful in conjunction with stacked bar plots."
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:46
+msgid "BokehJS Build"
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:48
+msgid ""
+"The ``gulp`` tool was previously used as the build system for BokehJS. "
+"This has been replaced with a smaller and simpler build script. This "
+"greatly reduced the number of dependencies required to build BokehJS and "
+"a completely clean NPM package security audit was obtained as a side "
+"effect."
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:53
+msgid ""
+"To build now, run the commandf ``node make build`` instead of ``gulp "
+"build``. Task names remained unchanged. If you want preserve the old "
+"workflow, e.g. to aid ``git bisect``, it is suggested to create an alias "
+"for ``node make``, e.g. in bash this would be ``alias gulp='node make'``."
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:59
+msgid "Line Join Default"
+msgstr ""
+
+#: ../../source/docs/releases/0.13.0.rst:61
+msgid ""
+"The default ``line_join`` style has been changed from ``miter`` to "
+"``bevel``, to avoid exaggerating corners where connected lines meet at a "
+"sharp angle. The HTML Canvas ``miterLimit`` property is meant to prevent "
+"such issues, but it does not appear to be respected by current browsers."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:4
+msgid "0.12.16"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:6
+msgid ""
+"Bokeh Version ``0.12.16`` (May 2018) is an incremental update that adds a"
+" few new features and fixes several bugs. Some of the highlights include:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:9
+msgid "Hover tools now work with image glyphs (:bokeh-issue:`3886`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:11
+msgid "BokehJS exposes a public ``reset`` method for Plots (:bokeh-issue:`5071`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:13
+msgid "Categorical tick labels at all levels may be rotates (:bokeh-issue`7643`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:15
+msgid ""
+"New ``CustomJSHover`` for highly customized tooltip fields (:bokeh-"
+"issue:`7647`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:17
+msgid "Axes may now have fixed positions inside plots (:bokeh-issue:`113`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:19
+msgid ""
+"Small zoom tool enhancements (:bokeh-issue:`3126`, :bokeh-issue:`3125`, "
+":bokeh-issue:`2427`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:21
+msgid ""
+"``MultiLine`` and ``Patches`` now function with categorical ranges "
+"(:bokeh-issue:`7462`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:29
+msgid "`Migration Guide <releases.html#release-0-12-16-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:31
+msgid ""
+"NOTE: the 0.12.x series is the last planned release series before a "
+"version 1.0 release. For more information see the `project roadmap`_."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:16
+#: ../../source/docs/releases/0.12.14.rst:23
+#: ../../source/docs/releases/0.12.16.rst:35
+#: ../../source/docs/releases/0.12.7.rst:74
+msgid "Deprecations Removed"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:37
+msgid ""
+"The following functions, arguments, or features have were previously "
+"deprecated with warnings and instructions for new usage, and have now "
+"been permanently removed:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:41
+msgid "``--host`` argument to ``bokeh serve``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:42
+msgid "``responsive`` argument to plots and layout functions"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:43
+msgid "``Plot.toolbar_sticky`` property"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:44
+msgid "``Tool.plot`` property"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:45
+msgid "``bokeh.sampledata.population.load_population`` function"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:46
+msgid "``bokeh.util.notebook`` module"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:49
+msgid "Release History"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:51
+msgid ""
+"To support publishing all release information on one page, the "
+"``bokeh_index_toctree`` module and contents have been immediately moved "
+"to ``bokeh_releases``. Since this facility had no use outside building "
+"official Bokeh documentation, no deprecation was given."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:57
+msgid "CDS ``column_names`` property"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:59
+msgid ""
+"``ColumnDataSource`` models had a Bokeh property ``column_names`` for "
+"specifying the list of column names in ``source.data``. This information "
+"was duplicative and had to be explicitly maintained in a fragile way. It "
+"has been replaced by read-only properties in both Python and JavaScript "
+"that always accurately report the current column names automatically. "
+"Setting ``column_names`` is no longer supported, however as this "
+"possibility has never been officially documented or demonstrated, it is "
+"not expected to affect any standard usage."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:68
+msgid "Tools ``renderers`` property"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:70
+msgid ""
+"Previously the default value, an empty list, corresponded to "
+"automatically choosing all available renderers for hit testing. Now, a "
+"new default value ``\"auto\"`` is used for that, so that an empty list "
+"can mean \"hit test no renderers\". A value of ``None`` may also be used "
+"to indicate no hit testing should occur. Since there is typically no "
+"reason to explicitly set a property to its default value, it is not "
+"expected that this change impacts any standard usage."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:79
+msgid "bokehjs' source directory renamed"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:81
+msgid ""
+"To finalize the rewrite of bokehjs in TypeScript, the source directory "
+"was renamed from ``src/coffee`` to ``src/lib``. This change affects only "
+"bokehjs' contributors or other advanced users (e.g. when repackaging "
+"bokehjs with Webpack or other JavaScript module bundler)."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:87
+msgid "``BOKEH_DOCS_MISSING_API_KEY_OK`` environment variable"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:89
+msgid ""
+"This environment variable is no longer used by Bokeh. Previously, the "
+"``bokeh.sphinxext`` plot directive would always fail by default if a "
+"``GOOGLE_API_KEY`` environment variable was not defined, and this "
+"environment variable could be set to override that default behavior. Now,"
+" builds will succeed by default, even witout a Google API key defined "
+"(but Google Maps plots will not fully render). To require an API be "
+"defined (i.e. to restore the previous behavior) you can now set "
+"``bokeh_missing_google_api_key_ok = False`` in the Sphinx config file."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:4
+msgid "0.12.15"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:6
+msgid ""
+"Bokeh Version ``0.12.15`` (Mar 2018) is an incremental update that adds a"
+" few important features and fixes several bugs. Some of the highlights "
+"include:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:10
+msgid ""
+"Addressed several WebGL bugs (:bokeh-issue:`6867`, :bokeh-issue:`7087`, "
+":bokeh-issue:`7211`, :bokeh-issue:`7681`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:12
+msgid ""
+"Switched to Chrome headless for CI image tests, will support better WebGL"
+" testing (:bokeh-issue:`6594`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:14
+msgid ""
+"Updated data source selections to be proper Bokeh models (:bokeh-"
+"issue:`6845`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:16
+msgid ""
+"Fixed memory leaks with certain kinds of Bokeh server usage (:bokeh-"
+"issue:`7468`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:18
+msgid ""
+"Added new glyphs for hexagon markers and hex tiles, and a new ``hexbin`` "
+"method :bokeh-issue:`7638`, (:bokeh-issue:`4786`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:20
+msgid "Completed BokehJS port to TypeScript (:bokeh-issue:`6481`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.11.rst:15
+#: ../../source/docs/releases/0.12.14.rst:14
+#: ../../source/docs/releases/0.12.15.rst:22
+#: ../../source/docs/releases/0.12.4.rst:18
+#: ../../source/docs/releases/0.12.7.rst:32
+#: ../../source/docs/releases/0.12.9.rst:13
+msgid ""
+"Many other small bugfixes and docs additions. For full details see the "
+":bokeh-tree:`CHANGELOG`."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:25
+msgid ""
+"Additionally, we are pleased to announce `Bokeh joins NumFOCUS Sponsored "
+"Projects`_."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:32
+msgid "`Migration Guide <releases.html#release-0-12-15-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:35
+msgid "DataTable"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:37
+msgid ""
+"The mis-named property ``DataTable.row_header`` has been deprecated. This"
+" property confusingly controlled the presence of an index column in a "
+"DataTable. Now, use the ``index_position`` property to specify where an "
+"index column should be located in the table (use ``None`` to suppress the"
+" index column)."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:43
+msgid ""
+"Additionally, new properties ``index_header`` and ``index_width`` are now"
+" available to further customize the index column appearance."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:47
+msgid "Selections"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:49
+msgid ""
+"The handling of selections has needed attention in Bokeh for some time. "
+"This release adds a new Bokeh model "
+":class:`~bokeh.models.selections.Selection` to represent selections on "
+"data sources. Having a proper Bokeh model makes selections simpler to use"
+" and to synchronize in apps than the previous \"bare dict\" that "
+"represented selections."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:55
+msgid ""
+"The new :class:`~bokeh.models.selections.Selection` model is found in the"
+" same location on data sources, i.e. ``source.selected``. It has the "
+"following properties:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:70
+msgid ""
+"In the near future, a property ``image_indices`` will be added to support"
+" hit testing of image glyphs."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:73
+msgid ""
+"All code should update to use these new properties. For now *read only* "
+"access to things like ``selected['1d'].indicies`` will continue to "
+"function as before for compatibility. However, programmtically *setting* "
+"selections must now go through the mode properties, i.e. ``.indices``, "
+"``.line_indices``, etc."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:80
+msgid "Grid Bounds"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:82
+msgid ""
+"Grids now automatically defer to any existing axis bounds when their own "
+"bounds are set to `\"auto\"`. Previously grids used always used the full "
+"range bounds. This change makes it simpler to have axes and grids both "
+"use a consistent set of bounds."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:88
+msgid "Minor Ticks"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:90
+msgid ""
+"Minor ticks are no longer displayed outside explicitly set axis bounds. "
+"Previously minor ticks would display one extra \"major tick\" distance "
+"outside explicit range bounds."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:95
+msgid "NO_DATA_RENDERERS"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:97
+msgid ""
+"This validation warning resulted in false or irrelevant warnings in many "
+"reasonable configurations, and has been removed."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:101
+msgid "Document and ServerContext callbacks"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:103
+msgid ""
+"All `Document` and `ServerContext` methods that add callbacks can now add"
+" the same callback multiple times. Methods that remove callbacks now "
+"receive the value returned from a previous method call that added the "
+"callback. Example:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:119
+msgid "Sphinx Version"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.15.rst:121
+msgid ""
+"The `bokeh.sphinxext` Sphinx extension has been updated to work with "
+"currnt versions. Sphinx >= 1.6 is now required to use the extension."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:4
+msgid "0.12.14"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:6
+msgid ""
+"Bokeh Version ``0.12.14`` (Feb 2018) is an incremental update that adds a"
+" few important features and fixes several bugs. Some of the highlights "
+"include:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:10
+msgid ""
+"Addition of several tools to draw and edit point, rect, multi-line and "
+"patches glyphs (:bokeh-issue:`6370`) by modifying the underlying "
+"ColumnDataSource."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:20
+msgid "`Migration Guide <releases.html#release-0-12-14-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:25
+msgid "The following deprecated features have been removed in this release:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:27
+msgid "`DynamicImageRenderer` (consider GeoViews_ instead)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:28
+msgid "BokehJS support for `*.tsx` templates (not typically user-facing)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:29
+msgid "`autoload_server` (use `server_document` or `server_session` instead)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:32
+msgid "New Runtime Dependency"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:34
+msgid ""
+"The package ``packaging``, available via both conda and pip, was added as"
+" a new runtime dependency."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:38
+msgid "Mapping of Unknown Catgorical Factors"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:40
+msgid ""
+"Previously, data (e.g in a CDS column) referring to a categorical factor "
+"that did not exist in the relevant ``FactorRange``, would cause an error "
+"in the browser. Now, any such attempted mappings will silently return "
+"``NaN``. Any data points with these factors as coordinates will not "
+"render."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:45
+msgid ""
+"The practical motivation for this change is that updating a "
+"``FactorRange`` to have a new set of factors could result in an "
+"inconsistency triggering the error condition, causing plots to fail to "
+"render. With this change, the use-case of updating factor ranges should "
+"work more smoothly, however there will be no immediate indication of "
+"problems in case \"bad\" factors are included accidentally in data other "
+"than the data points not being rendered."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:53
+msgid "Change To Text Glyph Legend"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:55
+msgid ""
+"Previously Text Glyphs added to legends would always unconditionally "
+"render the word \"text\" as the visual symbol, which was not useful. Now,"
+" text glyphs render an empty space in legends. This is helpful when it is"
+" desired to use an interactive legend mute or hide both a primary glyph, "
+"as well as some associated text that goes with it. For more discssion, "
+"see :bokeh-issue:`7337`."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:62
+msgid "MercatorTileSource change"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:64
+msgid ""
+"`MercatorTileSource` models previously snapped to the closest zoom level "
+"resulting in user supplied axis ranges to be largely ignored. The default"
+" behavior has now been changed from snapping to the closest zoom level to"
+" simply maintaining the correct aspect ratio, while keeping the user "
+"defined bounds contained within the axis ranges."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:71
+msgid ""
+"The old behavior may be restored by setting enabling the `snap_to_zoom` "
+"property."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:75
+msgid "Defining views' CSS classes"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:77
+msgid ""
+"This was previously done through `MyView.prototype.className`, which "
+"didn't respect class structure, so it was often necessary to duplicate "
+"CSS rules in sub-views. The new approach is to override `css_classes()` "
+"method, e.g.:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:89
+msgid "This change affects only creators of custom extensions."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:92
+msgid "``HasProps.initialize()``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.14.rst:94
+msgid ""
+"Previously ``HasProps.initialize()`` took `attrs` and `options` as its "
+"arguments. This was nearly never used and so it was removed. The "
+"preferred way to configure values of attributes is to use bokehjs' "
+"properties system. This change affects only creators of custom "
+"extensions."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.13.rst:4
+msgid "0.12.13"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.13.rst:6
+msgid ""
+"Bokeh Version ``0.12.13`` (Dec 2017) is a targeted bugfix release that "
+"addresses two issues:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.13.rst:9
+msgid "``push_notebook`` regression in ``0.12.11``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.13.rst:10
+msgid "Windows package install failures due to reserved \"aux\" filename"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.13.rst:17
+msgid "`Migration Guide <releases.html#release-0-12-13-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.11.rst:24
+#: ../../source/docs/releases/0.12.13.rst:20
+msgid "BokehJS Changes"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.13.rst:22
+msgid ""
+"BokehJS doesn't require custom styles to make \"responsive\" layout modes"
+" work anymore. This means that there are no additional styles added a "
+"page, like margins. This results in margins working differently and now "
+"default to browser defaults. If you want to restore the previous "
+"behavior, then add the following to your HTML:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.11.rst:4
+msgid "0.12.11"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.11.rst:6
+msgid ""
+"Bokeh Version ``0.12.11`` (Nov 2017) is an incremental update that adds a"
+" few important features and fixes several bugs. Some of the highlights "
+"include:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.11.rst:9
+msgid "``Step`` glyph for step lines added (:bokeh-issue:`3644`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.11.rst:11
+msgid "Level-of-Detail works with linked plots (:bokeh-issue:`5937`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.11.rst:13
+msgid ""
+"Bokeh applications in notebooks made simpler to create (:bokeh-"
+"issue:`6565`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.11.rst:21
+msgid "`Migration Guide <releases.html#release-0-12-11-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.11.rst:26
+msgid ""
+"To help with the eventual migration to TypeScript, we have switched to "
+"the new CoffeeScript compiler. This should be completely transparent to "
+"standard users but custom extensions may need small changes in some "
+"specific cases, for example, the \"Ion Range Slider\" required the "
+"following change:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.11.rst:38
+msgid ""
+"Shorthand initialization syntax for `Range1d(start, end)` in bokehjs was "
+"removed due to technical difficulties. Use full `new Range1d({start, "
+"end})` syntax instead. The short syntax may be restored at some point as "
+"a part of `bokeh-api` package."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.11.rst:43
+msgid ""
+"The coordinate system of canvas layout and related infrastructure "
+"(positioning, hit testing, etc.) is new \"screen\", where the origin is "
+"left-top corner of the canvas. This change shouldn't affect users, "
+"however it affects custom model developers. Follow updated examples for "
+"new development patterns."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:4
+msgid "0.12.10"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:6
+msgid ""
+"Bokeh Version ``0.12.10`` (Oct 2017) is an incremental update that adds a"
+" few important features and fixes several bugs. For full details see the "
+":bokeh-tree:`CHANGELOG`."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:13
+msgid "`Migration Guide <releases.html#release-0-12-10-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:18
+msgid "The following previous deprecations have been removed:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:20
+msgid ""
+"``app_path`` from functions in ``bokeh.client.session`` and "
+"``bokeh.embed``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:21
+msgid "``standalone_html_page_for_models`` from ``bokeh.embed``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:22
+msgid ""
+"``'patch'`` and ``'stream'`` event names (use ``'patching'`` and "
+"``'streaming'``)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:23
+msgid ""
+"``webgl``, ``x_mapper_type``, ``y_mapper_type``, and ``tool_events`` from"
+" ``Plot``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:24
+msgid ""
+"Glyphs methods now only accept either all sequence literals, OR all "
+"column names"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:25
+msgid "``ResizeTool`` (previously made a no-op) has been removed"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:28
+#: ../../source/docs/releases/0.12.5.rst:46
+#: ../../source/docs/releases/0.12.7.rst:89
+msgid "New Deprecations"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:30
+msgid ""
+"The boolean ``responsive`` parameter to ``Figure`` and ``bokeh.layouts`` "
+"has been deprecated. The ``sizing_mode`` enum should be used instead. Use"
+" ``sizing_mode='fixed'`` for ``responsive=False`` and "
+"``sizing_mode='scale_width'`` for ``responsive=True`` instead."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:35
+msgid ""
+"The function ``bokeh.sampledata.population.load_population`` has been "
+"deprecated. Use the attribute ``bokeh.sampledata.population.data`` "
+"instead."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:39
+msgid "Code Moves"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:41
+msgid ""
+"The module ``bokeh.util.notebook`` has been deprecated. The functions it "
+"contains have been moved to ``bokeh.io.notebook``."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:44
+msgid "The function ``bokeh.io.set_curdoc`` is now ``bokeh.io.doc.set_curdoc``."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:46
+msgid ""
+"Named color *objects* now live in ``bokeh.colors.named`` instead of "
+"directly in ``bokeh.colors``. Additionally color utilities such as "
+"``NamedColor`` have been moved inside the package, and marked as internal"
+" API. Using string names for colors works exactly as before."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:52
+msgid "Dead Code Removal"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:54
+msgid "The following unused code was removed immediately:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:56
+msgid "``Aggregation`` from ``bokeh.core.enums``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:57
+msgid "PyPy detection functions from ``bokeh.util``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:58
+msgid "Zeppelin related code (support should come from external notebook hook)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.10.rst:60
+msgid ""
+"Additionally the attribute ``bokeh.__base_version__`` was removed. "
+"Computing it at all times made importing Bokeh take substantial fractions"
+" of a second longer than necessary. It is not expected this change should"
+" affect any users, but if you need this value, the "
+"``bokeh.util.version.base_version`` function can be used."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:4
+msgid "0.12.9"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:6
+msgid ""
+"Bokeh Version ``0.12.9`` (Sep 2017) is an incremental update that adds a "
+"few important features and fixes several bugs. Some of the highlights "
+"include:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:9
+msgid "JupyterLab integration with the `jupyterlab_bokeh`_ extension"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:10
+msgid "Efficient binary transport for sending arrays to clients"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:11
+msgid "Improvements to new Graph/Network capability"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:19
+msgid "`Migration Guide <releases.html#release-0-12-9-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:22
+msgid "Deprecated ``bokeh.charts`` support removed"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:24
+msgid ""
+"The ``bokeh.charts`` module, which was simply a compatibility shim to "
+"load the separate ``bkcharts`` package, has been removed. Additionally, "
+"Bokeh itself no longer lists ``bkcharts`` as a dependency. In order to "
+"continue using ``bkcharts`` code, the ``bkcharts`` package must be "
+"installed separately."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:30
+msgid "Deprecated MPL compatibility removed"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:32
+msgid ""
+"The ``bokeh.mpl`` module and all supporting code in ``bokeh.core.compat``"
+" has been removed. Bokeh no longer offers or attempts any automatic MPL "
+"conversion."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:36
+msgid "Table Date Formatter Changes"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:38
+msgid ""
+"A regression in ``0.12.7`` caused the ``DateFormatter`` to stop "
+"functioning. The problem has been fixed, however instead of the "
+"previously accepted JQuery style formats, the``format`` property now only"
+" accepts"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:42
+msgid ""
+"standard `strftime`_ format strings (making it consistent with "
+"``DatetimeTickFormatter``)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:44
+msgid "any of the following additional predefined formats names:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:47
+msgid "Format name(s)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:47
+msgid "Format string"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:47
+msgid "Example Output"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:49
+msgid "``ATOM`` / ``W3C`` / ``RFC-3339`` / ``ISO-8601``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:49
+#, python-format
+msgid "``\"%Y-%m-%d\"``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:49
+msgid "2014-03-01"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:50
+msgid "``COOKIE``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:50
+#, python-format
+msgid "``\"%a, %d %b %Y\"``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:50
+msgid "Sat, 01 Mar 2014"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:51
+msgid "``RFC-850``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:51
+#, python-format
+msgid "``\"%A, %d-%b-%y\"``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:51
+msgid "Saturday, 01-Mar-14"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:52
+msgid "``RFC-1123`` / ``RFC-2822``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:52
+#, python-format
+msgid "``\"%a, %e %b %Y\"``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:52
+msgid "Sat, 1 Mar 2014"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:53
+msgid "``RSS`` / ``RFC-822`` / ``RFC-1036``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:53
+#, python-format
+msgid "``\"%a, %e %b %y\"``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:53
+msgid "Sat, 1 Mar 14"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:54
+msgid "``TIMESTAMP``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:54
+msgid "(ms since epoch)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:54
+msgid "1393632000000"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:57
+msgid ""
+"Note that the previously available format name ``TICKS`` is no longer "
+"supported."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:61
+msgid "Old Testing Functions Removed"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:63
+msgid ""
+"The functions ``bokeh.test`` and ``bokeh.util.testing.runtests`` have "
+"been removed immediately. Tests should be run as described in the "
+"`testing section`_ of the Developer's Guide."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:67
+msgid ""
+"The function ``bokeh.util.testing.print_versions`` has been removed "
+"immediately. The ``bokeh info`` command (or ``python -m bokeh info``) "
+"should be used instead."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:72
+msgid "Refactor of ``bokeh.client`` and ``bokeh.document``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:74
+msgid ""
+"The ``bokeh.client`` and ``bokeh.document`` packages were refactored, to "
+"make maintenance and testing simpler, and to improve overall code "
+"quality. No commonly used or demonstrated public APIs were affected, (no "
+"example code required any changes). The other files that were moved or "
+"changed are not expected to impact user code."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:81
+msgid "End of Official Support for Python 3.4"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.9.rst:83
+msgid ""
+"Starting with this release, Bokeh is no longer continuously tested "
+"against Python 3.4. Use of Bokeh with Python 3.4 will very likely still "
+"work, but there are no longer any guarantees backed by CI testing."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:4
+msgid "0.12.7"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:6
+msgid ""
+"Bokeh Version ``0.12.7`` (Aug 2017) is an incremental update that adds a "
+"few important features and fixes several bugs. Some of the highlights "
+"include:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:9
+msgid ""
+"Support graphs/trees/networks (:bokeh-issue:`187`) including configurable"
+" and extendable policies for highlighting and selection."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:11
+msgid "Filterable/Sliceable CDS views (:bokeh-issue:`4070`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:12
+msgid "Pass HTTP request args to embedded sessions (:bokeh-issue:`5992`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:13
+msgid ""
+"New :class:`~bokeh.models.expressions.Expression` models for client-side "
+"computations, including :class:`~bokeh.models.expressions.Stack`, for "
+"stacking CDS columns."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:16
+msgid ""
+"New module :ref:`bokeh.transform` with helper functions for simplifying "
+"``DataSpec`` expressions, including  :func:`~bokeh.transform.jitter`, "
+":func:`~bokeh.transform.dodge`, :func:`~bokeh.transform.factor_cmap`, "
+"etc."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:19
+msgid ""
+"Added :func:`~bokeh.plotting.figure.Figure.hbar_stack` and "
+":func:`~bokeh.plotting.figure.Figure.vbar_stack` to greatly simplify "
+"creation of stacked bar charts."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:22
+msgid "Improvements for using Bokeh with Categorical data:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:24
+msgid "Support multi-level categories and hierarchical axes"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:25
+msgid "Arbitrary limits on category names (e.g. no ``':'``) have been lifted"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:26
+msgid ""
+"Optional Pandas integration creates CDS from directly from ``GroupBy`` "
+"objects"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:28
+msgid ""
+"Categorical Bar, Heatmap and Scatter plots easier to create with stable "
+"``bokeh.plotting`` APIs"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:30
+msgid "New User's Guide chapter :ref:`userguide_categorical`"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:38
+msgid "`Migration Guide <releases.html#release-0-12-7-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:41
+msgid "Breakage Related to Categoricals Overhaul"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:43
+msgid ""
+"Bokeh support for Categorical data has needed attention for some time. "
+"The release brings improvements that *dramatically* improve the user "
+"experience when using categorical data with Bokeh. For details and "
+"examples, see the new User's Guide chapter :ref:`userguide_categorical`."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:48
+msgid ""
+"At this point we endeavor to minimize breakage, and to provide managed "
+"deprecation cycles when things must change. However, in this instance, "
+"some minor *immediate* breaking changes were unavoidable:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:52
+msgid ""
+"``min_interval`` and ``max_interval`` on ``FactorRange`` are now given in"
+" synthetic coordinate units."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:55
+msgid "``bounds`` on ``FactorRange`` are now given in synthetic coordinate units."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:59
+msgid "New Embed Functions for Bokeh Applications"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:61
+msgid ""
+"Two new embed functions similar to ``autoload_server`` are added, that "
+"have simpler APIs and are more focused:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:64
+msgid ""
+":func:`bokeh.embed.server_document` for embedding new sessions for entire"
+" Bokeh documents in HTML pages. (More common)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:67
+msgid ""
+":func:`bokeh.embed.server_session` for embedding existing sessions for "
+"specified Bokeh models in HTML pages (Less common)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:70
+msgid ""
+"Additionally, with these new methods one may choose to not load the "
+"JS/CSS resource files by passing ``resources=\"none\"`` as a parameter."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:76
+msgid "The following previously deprecated modules or features have been removed:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:78
+msgid "``bokeh.icons`` module"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:80
+msgid "Legacy anchor and legend locations ``left_center`` and ``right_center``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:82
+msgid "``ImageRGBA.rows`` and ``ImageRGBA.cols`` properties"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:84
+msgid "``HBox`` and ``VBox`` in ``bokeh.layouts``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:86
+msgid "``validate`` keyword argument for ``bokeh.io.save``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:91
+msgid ""
+"``bokeh.embed.autoload_server`` has been deprecated and replaced with the"
+" two simpler functions :func:`~bokeh.embed.server_document` and "
+":func:`~bokeh.embed.server_session` described above."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:95
+msgid ""
+"``bokeh.models.tools.tool_events`` has been deprecated. Users should "
+"instead use the ``SelectionGeometry`` event present on ``Plot`` or "
+"``Figure``."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:98
+msgid ""
+"``DynamicImageRenderer`` and ``Plot.add_dyanamic_image`` have been "
+"deprecated. For GIS-related use-cases built on top of Bokeh, consider "
+"using GeoViews_, or creating a `Custom Extension`_."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:102
+msgid ""
+"``ResizeTool`` is deprecated and also *immediately* is a NO-OP on the "
+"Python side. ``ResizeTool`` has been removed from BokehJS entirely."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:106
+msgid "BokehJS Widgets Bundle Split"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:108
+msgid ""
+"The `bokeh-widgets` bundle was split into ``bokeh-widgets`` and ``bokeh-"
+"tables``. This is to reduce the weight of the main widgets' bundle. Bokeh"
+" includes ``bokeh-tables`` automatically when necessary, so this change "
+"should be transparent for most users. However, users of custom templates "
+"or other advanced embedding scenarios (including the use of "
+"``components``) may be affected. In short, if your application is "
+"responsible for loading Bokeh resources, then it should take care of "
+"loading the ``bokeh-tables`` as well."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:117
+msgid "TapTool Callback Calling Convention"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:119
+msgid ""
+"The TapTool strayed from usual callback calling convention by passing a "
+"glyph data source as ``cb_obj``. This has been rectified, and now the "
+"tool follows the usual convetion: the tool itself is passed as ``cb_obj``"
+" and the data source is passed as part of the optional ``cb_data``. "
+"Existing usage of ``OpenURL`` is unaffected by this change, but any "
+"``CustomJS`` callbacks used with the tap tool will need to be updated to "
+"reflect this change."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:127
+msgid "DataTable Selection Highlighting Signal"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:129
+msgid ""
+"The DataTable now responds to the signal ``source.change.emit()``, "
+"instead of ``source.properties.selected.change.emit()``, to visually "
+"highlight the rows in the DataTable that are part of the selection. If "
+"you have used ``source.properties.selected.change.emit()`` in CustomJS "
+"code, you will need to change it to ``source.change.emit()``."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:135
+msgid ""
+"The DataTable responds automatically to changes in its data source's "
+"``selected`` property. However, because of Bokeh's change detection "
+"machinery, only a replacement of the ``selected`` property causes a "
+"change signal to be emitted, and not a partial update (e.g. "
+"``source.selected['1d']['indices'] = [1, 2]``). If you use a partial "
+"update in CustomJS code, you will need to emit the change signal "
+"yourself:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:149
+msgid "Refactoring of ``bokeh.server`` contents"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:151
+msgid ""
+"The ``bokeh.server`` module was refactored in order to be easier to "
+"document and maintain, as well as simpler for user's to use in more "
+"sophisticated use cases. These changes are not expected to impact "
+"standard usage of Bokeh in any way:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:156
+msgid "All protocol-related code was moved to a new module ``bokeh.protocol``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:158
+msgid ""
+"The ``Server`` class was split into ``Server`` (no API changes) and a new"
+" ``BaseServer`` that can be used when explicit coordination of low level "
+"Tornado components is required."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:162
+msgid ""
+"Missing sections added to reference guide, and docsctring coverage "
+"greatly expanded."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.7.rst:165
+msgid ""
+"Old cruft code to handle Tornado < 4.3 (which is no longer supported) was"
+" removed."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:4
+msgid "0.12.6"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:6
+msgid ""
+"Bokeh Version ``0.12.6`` (Jun 2017) is an incremental update that adds a "
+"few important features and fixes several bugs. Some of the highlights "
+"include:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:9
+msgid "Headless, programmatic export of SVG and PNG images (:bokeh-issue:`538`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:10
+msgid ""
+"New annotations ``Band`` and ``Whisker`` for displaying error estimates "
+"(:bokeh-issue:`2352`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:12
+msgid ""
+"Fine-grained sub-element patching for images and other \"multi\" glyphs "
+"(:bokeh-issue:`6285`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:14
+msgid ""
+"Hover hit-testing extended to segments and all markers (:bokeh-"
+"issue:`5907`, :bokeh-issue:`5907`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:16
+msgid ""
+"Fixes for sorting and selecting from DataTables (:bokeh-issue:`3564`, "
+":bokeh-issue:`6115`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:18
+msgid ""
+"Large cleanup and refactor of the layout system (:bokeh-issue:`4764`, "
+":bokeh-issue:`4810`, :bokeh-issue:`5131`, :bokeh-issue:`5518`, :bokeh-"
+"issue:`6213`, :bokeh-issue:`6287`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:21
+msgid ""
+"Improved formatting options for hover tool fields and axis tick labels "
+"(:bokeh-issue:`1239`, :bokeh-issue:`1671`, :bokeh-issue:`2595`, :bokeh-"
+"issue:`6079`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:24
+#: ../../source/docs/releases/0.12.6.rst:25
+msgid ""
+"Many other bugfixes and docs additions are also included. For full "
+"details see the :bokeh-tree:`CHANGELOG`."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:31
+msgid "`Migration Guide <releases.html#release-0-12-6-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:21
+#: ../../source/docs/releases/0.12.4.rst:25
+#: ../../source/docs/releases/0.12.5.rst:40
+#: ../../source/docs/releases/0.12.6.rst:33
+msgid ""
+"As the project approaches a 1.0 release, it is necessary to make some "
+"changes to bring interfaces and functionality up to a point that can be "
+"maintained long-term. We try to limit such changes as much as possible, "
+"and have a period of deprecation."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:39
+msgid "New deprecations"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:41
+msgid ""
+"The ``Plot.webgl`` property has been deprecated in place of a new "
+"property ``Plot.output_backend`` in order to avoid conflicts between "
+"WebGL and a new SVG backend. If you are using ``plot.webgl = True``, you "
+"should switch to setting ``plot.output_backend = \"webgl\"`` for the "
+"future."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:47
+msgid "Old deprecations removed"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:49
+msgid ""
+"All previous deprecations up to ``0.12.3`` have be removed. Below is the "
+"complete list of removals."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:52
+msgid "Deprecated ``Button.type`` property has been removed."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:53
+msgid ""
+"Deprecated ``Legend`` properties: ``legends``, ``legend_margin``, "
+"``legend_padding``, ``legend_spacing`` have been removed."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:55
+msgid "Deprecated ``DatetimeTickFormatter.formats`` property has been removed."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:56
+msgid "``Tool`` dimensions may not only be specified with enum values."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:59
+msgid "New models for Scales"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:61
+msgid "The following BokehJS classes have been moved and renamed:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:64
+#: ../../source/docs/releases/0.12.6.rst:99
+#: ../../source/docs/releases/0.12.6.rst:123
+msgid "Old"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:64
+#: ../../source/docs/releases/0.12.6.rst:99
+#: ../../source/docs/releases/0.12.6.rst:123
+msgid "New"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:66
+msgid "``mappers/LinearMapper``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:66
+msgid "``scales/LinearScale``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:67
+msgid "``mappers/LogMapper``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:67
+msgid "``scales/LogScale``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:68
+msgid "``mappers/CategoricalMapper``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:68
+msgid "``scales/CategoricalScale``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:71
+msgid ""
+"Previously, these Mapper classes were internal implementation details. "
+"The new Scale classes are first-class Bokeh models and are accessible "
+"from Python. This was done to facilitate future work supporting custom, "
+"user-defined scales."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:76
+msgid ""
+"There is a new Plot validation check to ensure that Scales and Ranges on "
+"a dimension are compatible. By default, ``Plot`` models are configured "
+"with ``LinearScale`` models which (along with ``LogScale`` models) are "
+"compatible with ``Range1d`` and ``DataRange1d`` range models."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:81
+msgid ""
+"One inevitable breaking change is that users employing a ``FactorRange`` "
+"in the ``bokeh.model`` API will have to specify a ``CategoricalScale`` on"
+" the same dimension. For example:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:92
+msgid ""
+"The ``bokeh.plotting.figure`` function should this range and scale "
+"compatibility handling automagically in most cases."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:95
+msgid ""
+"As part of this work, some BokehJS attributes were renamed to be "
+"consistent with the new terminology:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:101
+msgid "``CartesianFrame.x_mappers``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:101
+msgid "``CartesianFrame.xscales``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:102
+msgid "``CartesianFrame.y_mappers``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:102
+msgid "``CartesianFrame.yscales``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:103
+msgid "``GlyphRenderer.xmapper``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:103
+msgid "``GlyphRenderer.xscale``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:104
+msgid "``GlyphRenderer.ymapper``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:104
+msgid "``GlyphRenderer.yscale``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:107
+msgid ""
+"Since these attributes may be present in user code (e.g CustomJS "
+"callbacks or extensions), the old names will continue to work for some "
+"time, with a deprecation warning in the JS console."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:112
+msgid "New signaling API"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:114
+msgid ""
+"Previously BokehJS used Backbone events for communication between models."
+" As part of an ongoing migration to TypeScript, the Backbone dependency "
+"was removed, and the relevant portion replaces with a minimal, type-safe "
+"API for signaling."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:119
+msgid ""
+"This change primarily affects contributors working on BokehJS and writers"
+" of extensions."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:125
+msgid "``@listenTo(obj, 'change', fn)``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:125
+msgid "``@connect(obj.change, fn)``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:126
+msgid "``@listenTo(obj, 'change:attr', fn)``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:126
+msgid "``@connect(obj.properties.attr.change, fn)``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:127
+msgid "``obj.trigger('change', arg)``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:127
+msgid "``obj.change.emit(arg)``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:128
+msgid "``obj.trigger('change:attr', arg)``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:128
+msgid "``obj.properties.attr.change.emit(arg)``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:132
+msgid "Python Datetime handling"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:134
+msgid ""
+"Bokeh has not handled Python datetime values consistently with NumPy "
+"``datetime64``. Bokeh aims to treat all datetime values \"as-is\", but in"
+" some cases a local timezone conversion could affect Python datetime "
+"values. This has been corrected. In case there is code that depends on "
+"the erroneous behavior, please note that the new behavior is effective "
+"immediately and is now maintained under test to be consistent with NumPy "
+"values. See the issue :bokeh-issue:`5499` for more details."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:143
+msgid "Layout API and behaviour changes"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.6.rst:145
+msgid ""
+"Layout was previously handled on document level and there was one solver "
+"per document. This was changed to one solver per root, so document isn't "
+"anymore responsible for any layout related stuff. All logic and APIs were"
+" moved to views, specifically to ``LayoutDOM``. For example, if your code"
+" relied on ``document.resize(width, height)``, then you should use "
+"``view.resize(width, height)``, where ``view`` is an associated view of "
+"any of ``document``'s root models. Views can be obtained through "
+"``Bokeh.index``. To resize all roots use"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:4
+msgid "0.12.5"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:6
+msgid ""
+"Bokeh Version ``0.12.5`` (Mar 2017) is an incremental update that adds a "
+"few important features and fixes several bugs. Some of the highlights "
+"include:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:9
+msgid ""
+"New general capability for Python/JS events (:bokeh-issue:`3210`, :bokeh-"
+"issue:`3748`, :bokeh-issue:`5278`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:11
+msgid ""
+"Bokeh apps easily viewable inline in Jupyter Notebooks (:bokeh-"
+"issue:`3461`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:12
+msgid "Confusing ``--host`` parameter no longer necessary (:bokeh-issue:`5692`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:13
+msgid ""
+"Interactive legends can now control glyph visibility (:bokeh-"
+"issue:`2274`, :bokeh-issue:`3715`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:15
+msgid ""
+"Many fixes and improvements to ``GMapPlot`` including a new ``gmap`` "
+"function for creating Google Maps plots easily (:bokeh-issue:`2822`, "
+":bokeh-issue:`2940`, :bokeh-issue:`3737`, :bokeh-issue:`4835`, :bokeh-"
+"issue:`5592`, :bokeh-issue:`5826`, :bokeh-issue:`5845`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:19
+msgid "``CustomJSTransform`` now available for CDS columns (:bokeh-issue:`5015`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:20
+msgid "Sophisticated \"pivot\" example app contributed (:bokeh-issue:`5894`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:21
+msgid ""
+"Themes now work with ``components`` and in Jupyter notebooks (:bokeh-"
+"issue:`4722`, :bokeh-issue:`4952`, )"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:30
+msgid "`Migration Guide <releases.html#release-0-12-5-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:45
+#: ../../source/docs/releases/0.12.0.rst:48
+#: ../../source/docs/releases/0.12.5.rst:33
+msgid "Known Issues"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:35
+msgid ""
+"The ClientSession APIs defined in `bokeh.client.session`, such as "
+"`push_session`, don't currently support the new `on_event` interface for "
+"UI event callbacks in Bokeh Server application. You may track the issue "
+"on GitHub (:bokeh-issue:`6092`)."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:48
+msgid "**MPL COMPATIBLITY IS DEPRECATED**"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:50
+msgid ""
+"Bokeh's MPL compatibility was implemented using a third-party library "
+"that only exposes a small fraction of all Matplotlib functionality, and "
+"is now no longer being actively maintained. The Bokeh team unfortunately "
+"does not have the resources to continue supporting this functionality, "
+"which was never more than *extremely* limited in capability, and often "
+"produced substandard results. Accordingly, in order to support the long "
+"term health of the project, it has been decided to remove all MPL "
+"compatibility support on the occasion of a 1.0 release. Any code that "
+"currently uses ``to_bokeh`` will continue to work with a deprecation "
+"warning until that time."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:60
+msgid ""
+"The ``bokeh.embed.standalone_html_page_for_models`` method has been "
+"deprecated in place of ``bokeh.embed.file_html``. For details see :bokeh-"
+"pull:`5978`."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:63
+msgid ""
+"The ``validate`` keyword argument to ``bokeh.io.save`` has been "
+"deprecated. Future usage of ``bokeh.io.save`` will always validate the "
+"document before outputting a file."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:68
+msgid "Deprecations removed"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:70
+msgid ""
+"All previous deprecations up to ``0.12.0`` have be removed. Below is the "
+"complete list of removals."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:73
+msgid "Modules and functions and classes that have been removed:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:76
+msgid "Functions Removed"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:76
+msgid "Modules Removed"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:76
+msgid "Classes Removed"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:78
+msgid "``bokeh.embed.components``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:80
+#: ../../source/docs/releases/0.12.5.rst:78
+msgid "``bokeh.browserlib``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:78
+msgid "``bokeh.core.properties.TitleProp``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:79
+msgid "``bokeh.charts.hplot``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:82
+#: ../../source/docs/releases/0.12.5.rst:79
+msgid "``bokeh.mixins``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:79
+msgid "``bokeh.models.layouts.GridPlot``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:80
+msgid "``bokeh.charts.vplot``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:83
+#: ../../source/docs/releases/0.12.5.rst:80
+msgid "``bokeh.plotting_helpers``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:80
+msgid "``bokeh.models.layouts.VBoxForm``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:81
+msgid "``bokeh.io.hplot``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:81
+#: ../../source/docs/releases/0.12.5.rst:81
+msgid "``bokeh.properties``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:82
+msgid "``bokeh.io.vplot``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:84
+#: ../../source/docs/releases/0.12.5.rst:82
+msgid "``bokeh.templates``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:83
+msgid "``bokeh.io.vform``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:84
+msgid "``bokeh.plotting.hplot``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:85
+msgid "``bokeh.plotting.vplot``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:88
+msgid ""
+"The methods ``bokeh.document.add`` and ``push_notebook`` of "
+"``ColumnDataSource`` have been removed."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:91
+msgid ""
+"The ``bokeh.io.output_server`` function has been also been removed. "
+"Additionally, ``bokeh.io.push`` and other supporting functions or "
+"properties that are useless without ``output_server`` have been removed. "
+"This includes any transitive imports of these functions from other "
+"modules."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:97
+msgid ""
+"Additionally, the property ``bokeh.charts.builder.Builder.sort_legend`` "
+"was removed, as well as the following properties of ``Plot``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:100
+msgid "``border_fill``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:101
+msgid "``background_fill``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:102
+msgid "``logo``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:103
+msgid "``responsive``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:104
+msgid "``title_text_align``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:105
+msgid "``title_text_alpha``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:106
+msgid "``title_text_baseline``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:107
+msgid "``title_text_color``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:108
+msgid "``title_text_font``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:109
+msgid "``title_text_font_size``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:112
+msgid "Host Parameter Obsoleted"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:113
+msgid ""
+"The ``--host`` parameter is now unnecessary. For compatibility, supplying"
+" it will currently cause a warning to be displayed, but it will otherwise"
+" be ignored, and apps will run as normal. In a future release, supplying "
+"it will result in an error."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:118
+msgid ""
+"The ``--host`` parameter for the Bokeh server was confusing and difficult"
+" to explain. As long as the Bokeh server relied on the HTTP \"host\" "
+"header to provide URLs to resources, the ``--host`` parameter was a "
+"necessary precaution against certain kinds of HTTP spoofing attacks. "
+"However, the Bokeh server has been updated to no longer require the use "
+"of the \"host\" header (and this is maintained under test). Accordingly, "
+"there is no need to have any check on the value of the \"host\" header, "
+"and so ``--host`` is no longer needed."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:127
+msgid "Document and Model Refactoring"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:129
+msgid ""
+"In order that ``document.py`` and ``models.py`` only contain things that "
+"might be of usual interest to users, some changes and rearrangements were"
+" made."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:132
+msgid ""
+"The ``abstract`` class decorator was moved from ``models.py`` to "
+"``has_props.py``. The class decorator now also adds an admonition to the "
+"docstring of any class marked abstract that it is not useful to "
+"instantiate directly."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:137
+msgid "The metaclass ``Viewable`` has been renamed to ``MetaModel``."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:139
+msgid ""
+"The ``document.py`` module has been split up, and parts that would not be"
+" of normal interest to most users have been moved to better locations."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:142
+msgid ""
+"These changes are not expected to impact user code in any way. For "
+"complete details see :bokeh-pull:`5786`."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:146
+msgid "JQuery and underscore.js removed from BokehJS"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:148
+msgid ""
+"JQuery has been removed as a build dependency of BokehJS. The variable "
+"`Bokeh.$` is no longer available. If you require JQuery (i.e. for a "
+"custom extension or when using the JavaScript API) you will need to "
+"provide it explicitly."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:153
+msgid ""
+"underscore.js has been removed as a build dependency of BokehJS. The "
+"variable `Bokeh._` is no longer available. If you require underscore.js "
+"(i.e. for a custom extension or when using the JavaScript API) you will "
+"need to provide it explicitly."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:158
+#, python-format
+msgid ""
+"Both of these removals together result in a ~10% reduction in the size of"
+" the minified BokehJS library."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:162
+msgid "Default tooltip position for lines changed to nearest point"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:164
+msgid ""
+"When showing tooltips for lines, the new default is to label the nearest "
+"point, instead of the previous point, which used to be the default."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:168
+msgid "HTTP Request information for apps limited to query arguments"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:170
+msgid ""
+"The ``request`` previously attribute was added to session contexts as a "
+"way to expose HTTP query parameters. It was discovered that providing the"
+" entire request is not compatible with the usage of ``--num-procs``. A "
+"method was found to satisfy the original feature request for query "
+"arguments, together with ``--num-procs`` (but *only* for query "
+"arguments). Accordingly the only attribute that can now be accessed on "
+"``request`` is ``.arguments``, e.g.:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:181
+msgid ""
+"Attempting to access any other attribute on ``request`` will result in an"
+" error."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:187
+msgid "Default save file"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:189
+msgid ""
+"If user-specified or default destination cannot be written to, a "
+"temporary file is generated instead. This mostly affects using "
+"``output_file`` in an interactive session which formerly could result in "
+"a ``PermissionError``. For details see :bokeh-pull:`5942`."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:194
+msgid ""
+"The ``bokeh.io.save`` method will now only accept a ``LayoutDOM`` object "
+"and no longer a ``Document`` object for its ``obj`` argument. This aligns"
+" the ``bokeh.io.save`` argument types with ``bokeh.io.show``."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:199
+msgid "Reorganization of bokeh's examples"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:201
+msgid ""
+"Low-level examples, located under ``examples/models``, were split into "
+"``file`` and ``server`` examples and are available under "
+"``examples/models/file`` and ``examples/models/server`` respectively "
+"(similarly to plotting examples)."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:206
+msgid "Enabling WebGL via URL parameters disallowed"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.5.rst:208
+msgid ""
+"Previously it was possible to enable WebGL with ``?webgl=1`` URL "
+"parameter. With addition of a separate ``bokeh-gl`` bundle, this usage is"
+" no longer supportable. WebGL rendering is still configurable using the "
+"``Plot.webgl`` property."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:4
+msgid "0.12.4"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:6
+msgid ""
+"Bokeh Version ``0.12.4`` (Jan 2017) is an incremental update that adds a "
+"few important features and fixes several bugs. Some of the highlights "
+"include:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:9
+msgid "Efficient binary array protocol. (:bokeh-issue:`2204`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:10
+msgid ""
+"A general mechanism to add ``CustomJS`` callbacks to any property. "
+"(:bokeh-issue:`5498`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:11
+msgid ""
+"Several fixes to log plots. (:bokeh-issue:`2789`, :bokeh-issue:`3834`, "
+":bokeh-issue:`5389`, :bokeh-issue:`5549`, :bokeh-issue:`5576`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:12
+msgid ""
+"Fixes related to custom extensions. (:bokeh-issue:`5315`, :bokeh-"
+"issue:`5590`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:13
+msgid ""
+"Guidance and examples for embedding a Bokeh server directly in standalone"
+" scripts, Jupyter notebooks, and Tornado and Flask applications."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:14
+msgid ""
+"Support for read-only (client-side) properties, e.g. plot inner "
+"dimensions (:bokeh-issue:`5199`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:15
+msgid ""
+"Improved documentation for the :ref:`bokeh.palettes` module. (:bokeh-"
+"issue:`5619`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:16
+msgid ""
+"Major refactor of ``bokeh.core`` including expanded documentation and "
+"tests (:bokeh-issue:`5626`, :bokeh-issue:`5627`)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:23
+msgid "`Migration Guide <releases.html#release-0-12-4-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:31
+msgid "Broken Dialog Removed"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:33
+msgid ""
+"The ``Dialog`` widget has been broken for some time. Due to lack of user "
+"reports about it, and because custom extensions now provide a path for "
+"users to integrate third party JS dialog libaries, this widget has been "
+"removed immediately."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:39
+msgid "Custom Extension Import/Export"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:41
+msgid ""
+"BokehJS is making a slow migration to TypeScript to support long-term "
+"stability and maintainability. This necessitates some short term changes "
+"for writing custom extensions."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:45
+msgid ""
+"JavaScript extension code with ``requires`` and ``module.exports``, such "
+"as:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:57
+msgid "should be re-written as:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:67
+msgid "Legend Locations"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:69
+msgid "To improve consistency, the following locations names have changed:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:72
+msgid "old location name"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:72
+msgid "new location name"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:74
+msgid "``left_center``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:74
+msgid "``center_left``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:75
+msgid "``right_center``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:75
+msgid "``center_right``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:78
+msgid ""
+"The old location names will continue to work for some time with a "
+"deprecation warning."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:82
+msgid "App Current Directory"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:84
+msgid ""
+"Directory style apps no longer ``chdir`` into the app directory. The "
+"module attribute ``__file__`` should be used to construct any file paths "
+"relative to ``main.py`` for use with ``open``, etc."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:89
+msgid "Window Titles"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:91
+msgid ""
+"Bokeh apps embedded with ``autoload_server`` will no longer set the "
+"browser window title."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:95
+msgid "Positional Argument Order For ``hbar``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:97
+msgid ""
+"In order to provide much improved interactive help (true function "
+"signatures and rich auto-generated docstrings) the order of the ``left`` "
+"and ``right`` parameters to ``hbar`` had to be swapped (cannot have non-"
+"default args after a default arg). The new function signature is:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:107
+msgid "Old ``bokeh-server`` Command Removed"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:109
+msgid ""
+"Since 0.11, the old ``bokeh-server`` command remained and only printed a "
+"message directing to information about using ``bokeh serve``. It has been"
+" removed completely."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:114
+msgid "Cruft ``auto`` Functions removed"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:116
+msgid ""
+"The following functions in ``bokeh.io`` were long unused and have been "
+"removed: ``autoadd``, ``autopush``, and ``autosave``."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:120
+msgid "Eco Templates No Longer Supported"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:122
+msgid ""
+"BokehJS has migrated to using ``.tsx`` templates. Provisional support for"
+" including ``.eco`` templates has been removed from both BokehJS and the "
+"Bokeh Python library."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:127
+msgid "Base64 serialisation and Python 3.3"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:129
+msgid ""
+"The addition a binary protocol that uses a base 64 encoding for NumPy "
+"arrays means that Bokeh will *not* function with NumPy arrays on Python "
+"3.3, due to a bug in Python. A possible workaround is to convert all "
+"arrays to plain python lists. As a reminder, Bokeh official support "
+"includes Python 2.7 and 3.4+ only."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:135
+msgid "BokehJS BackboneView ``$`` Removed"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:137
+msgid ""
+"In part of a longer effort to remove the JQuery dependency from BokehJS "
+"entirely, the ``$`` attribute that BokehJS added to ``BackboneView`` has "
+"been removed. Use e.g., ``@$el.find`` instead."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:141
+msgid "Additionally, use of ``Bokeh.$`` and ``Bokeh._``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:144
+msgid "Refactor of ``bokeh.core``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:146
+msgid ""
+"It is expected that all of these these changes should be below the level "
+"that standard users will ever be exposed to. These changes are listed "
+"here for completeness."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:150
+msgid ""
+"The overly large ``bokeh.core.properties`` module has been split up. This"
+" improves maintainability and allows the contents of "
+"``bokeh.core.properties`` to limited to things of that might be useful to"
+" users writing custom models. The new file structure:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:155
+msgid "``bokeh.core.has_props``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:81
+#: ../../source/docs/releases/0.12.4.rst:156
+msgid "``bokeh.core.properties``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:157
+msgid "``bokeh.core.property.bases``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:158
+msgid "``bokeh.core.property.containers``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:159
+msgid "``bokeh.core.property.descriptors``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:160
+msgid "``bokeh.core.property.descriptor_factory``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:161
+msgid "``bokeh.core.property.override``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:163
+msgid ""
+"The following class names have been changed to improve intent and clarity"
+" (i.e. only things that are actually Python descriptors are named "
+"\"Descriptor\"):"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:167
+msgid "old class name"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:167
+msgid "new class name"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:169
+msgid "``PropertyFactory``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:169
+msgid "``PropertyDescriptorFactory``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:170
+msgid "``PropertyDescriptor``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:170
+msgid "``Property``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:171
+msgid "``ParameterizedPropertyDescriptor``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:171
+msgid "``ParameterizedProperty``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:172
+msgid "``BasicProperty``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:172
+msgid "``BasicPropertyDescriptor``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:173
+msgid "``DataSpecProperty``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:173
+msgid "``DataSpecPropertyDescriptor``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:174
+msgid "``UnitsSpecProperty``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:174
+msgid "``UnitsSpecPropertyDescriptor``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:177
+msgid ""
+"The following unused and non-useful properties were removed in this "
+"effort: ``Align``, ``Event``, ``Function``, and ``This``."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:180
+msgid ""
+"The default value for the ``owner`` parameter of the ``__get__`` method "
+"on property descriptors was an unnecessary change to the standard Python "
+"descriptor protocol, and has been removed."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.4.rst:184
+msgid ""
+"Additionally, the ``HasProps.set`` method has been removed. The name "
+"caused problems with the Sphinx docs build, and it was an unnecessary "
+"duplicate of ``HasProps.update`` (which should be used instead)."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:4
+msgid "0.12.3"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:6
+msgid ""
+"Bokeh Version ``0.12.3`` (Oct 2016) is a minor, incremental update that "
+"adds a few new small features and fixes several bugs. Some of the "
+"highlights include:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:9
+msgid "BokehJS reduced in size by nearly twenty percent"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:10
+msgid "New Categorical color mapper"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:11
+msgid "Tap tool and tooltips working for VBar and HBar"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:12
+msgid "Better hover tool support for some Charts"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:13
+msgid "Auto-generate legends from data in a column"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:14
+msgid "Many small bugfixes"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:19
+msgid "`Migration Guide <releases.html#release-0-12-3-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:27
+msgid "Specifying Font Sizes"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:29
+msgid ""
+"Setting text font size properties directly as strings (e.g. "
+"``font_size=\"10pt\"``) has been UN-DEPRECATED. This usage will continue "
+"to work, without any further deprecation warning. "
+"(https://github.com/bokeh/bokeh/pull/5274)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:35
+msgid "output_server"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:37
+msgid ""
+"The ``output_server`` function is deprecated and will be removed in the "
+"near future. Use ``bokeh.client`` functions such as ``push_session`` "
+"instead. (https://github.com/bokeh/bokeh/pull/5225)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:42
+msgid "Glyph Methods and Data Sources"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:44
+msgid ""
+"It is now deprecated to supply both sequence literals and an explicit "
+"source to glyph methods. For example:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:51
+msgid "Either provide only sequence literals, e.g:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:57
+msgid "or put all data into the explicitly provided source, e.g:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:63
+msgid ""
+"The older usage will continue to function for some time with a "
+"deprecation warning, and will result in an error in a future release. "
+"(https://github.com/bokeh/bokeh/pull/5187)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:68
+msgid "FuncTickFormatter"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:70
+msgid ""
+"`FuncTickFormatter` instances using JavaScript or CoffeeScript now "
+"require code snippets (i.e., function bodies) instead of full function "
+"definitions. Additionally, these formatters now accept Bokeh models as "
+"arguments so that the models can be readily available to the formatter "
+"function code. (https://github.com/bokeh/bokeh/pull/4659/files)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:77
+msgid "Legend"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:79
+msgid ""
+"Several legend properties had duplicative ``legend_`` prefixes. The "
+"following property names have been changed:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:83
+msgid "old property name"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:83
+msgid "new property name"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:85
+msgid "``legend_margin``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:85
+msgid "``margin``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:86
+msgid "``legend_padding``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:86
+msgid "``padding``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:87
+msgid "``legend_spacing``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:87
+msgid "``spacing``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:90
+msgid ""
+"The old property names will continue to work for some time with a "
+"deprecation warning."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:93
+msgid ""
+"Additionally, the ``legends`` property of Legend has been renamed to "
+"``items``, and given a new type. The new type now accepts a list of "
+"``LegendItem models``, instead of a list of tuples. The previous format "
+"is still accepted for convenience and compatibility and values are "
+"converted automatically. The ``legends`` property  will also continue to "
+"work for some time with a deprecation "
+"warning.(https://github.com/bokeh/bokeh/pull/5229)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:101
+msgid "Dimensions"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:103
+msgid ""
+"Specifying dimensions for tools has changed. The ``'x'`` and ``'y'`` "
+"aliases for ``'width'`` and ``'height'`` have been **immediately "
+"removed**. Additionally, instead of ``List(Enum(Dimension)``, dimensions "
+"are now specified more simply as ``Enum(Dimension)`` with valid values "
+"``\"width\"``, ``\"height\"``, and ``\"both\"``. The previous format will"
+" continue to work for some time and be converted automatically with a "
+"deprecation warning. (https://github.com/bokeh/bokeh/pull/5225)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:113
+msgid "BokehJS Notes"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:115
+msgid ""
+"The BokehJS codebase organization has been cleaned up. The file "
+"``common/hittest.coffee`` has been moved to ``core/hittest.coffee``. "
+"Other files that are unlikely to be used directly by users have also been"
+" moved. (https://github.com/bokeh/bokeh/pull/5266)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:121
+msgid ""
+"The BokehJS class ``GlyphView`` no longer inherits from "
+"``Renderer.View``, it now subclasses ``BokehView``. "
+"(https://github.com/bokeh/bokeh/pull/5189)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:125
+msgid ""
+"The BokehJS palettes are now only available in the ``bokeh-api.js`` "
+"bundle, and not in ``bokeh.[min].js`` "
+"(https://github.com/bokeh/bokeh/pull/5183)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.3.rst:129
+msgid ""
+"The BokehJS bundle ``bokeh-compiler.js`` has been removed completely. All"
+" Coffeescript code (for extension modules, etc.) is now pre-compiled by "
+"the Bokeh Python library. (https://github.com/bokeh/bokeh/pull/4946)"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.2.rst:4
+msgid "0.12.2"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.2.rst:6
+msgid ""
+"Bokeh version 0.12.2 (Sept 2016) is aminor update that adds a few \"small"
+" in footprint, but big in impact\" features and several bug fixes "
+"including:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.2.rst:9
+msgid "Client-side color mapping support for all glyphs"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.2.rst:10
+msgid "New color bar annotation"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.2.rst:11
+msgid ""
+"Support for loading external resources in custom models - Check out the "
+"new LaTeX example at: `LaTeX`_"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.2.rst:13
+msgid "Hit-testing support for MultiLine glyphs"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.2.rst:14
+msgid "Improved hover tooltip default styling"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.2.rst:15
+msgid "Addition of the Brewer qualitative color palettes"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.2.rst:16
+msgid "Fix intermittent issues with BokehJS loading in Jupyter Notebooks"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.2.rst:17
+msgid "Split of the Bokeh JS API into a stand-alone bundle"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:40
+#: ../../source/docs/releases/0.12.2.rst:18
+msgid "Many small bug fixes"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.2.rst:23
+msgid "`Migration Guide <releases.html#release-0-12-2-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.2.rst:26
+msgid "Jupyter Notebook output changes"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.2.rst:28
+msgid ""
+"As part of the changes to ensure that the BokehJS client library has "
+"loaded before attempting to render plots in the notebook, a new "
+"``notebook_handle`` argument was added to the ``bokeh.io.show`` method. "
+"When set to ``True`` (with ``output_notebook`` enabled), the ``show`` "
+"method will return a handle that can be used with ``push_notebook``."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.2.rst:34
+msgid ""
+"For users who rely on the notebook handles to update plots out of their "
+"render order, you'll have to add ``notebook_handle=True`` to your "
+"``show`` invocations like below:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.2.rst:51
+msgid "BokehJS API Changes"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.2.rst:53
+msgid ""
+"In order to shrink the size of the main BokehJS library and reduce "
+"pageload times, the Bokeh JS API has been separated into it's own bokeh-"
+"api(.min).js bundle. For users requiring the JS API, it will be necessary"
+" to add the new resource to their HTML templates."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.1.rst:4
+msgid "0.12.1"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.1.rst:6
+msgid ""
+"Bokeh Version ``0.12.1`` (Jul 2016) is a minor, incremental update that "
+"adds a few new small features and fixes several bugs. Some of the "
+"highlights include:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.1.rst:9
+msgid ""
+"Add ``.patch`` method to ``ColumnDataSource`` for efficient partial "
+"updates."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.1.rst:10
+msgid "Add ``.visible`` property to all glyphs for easy on/off capability."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.1.rst:11
+msgid "Add qualitative Brewer colormapps to ``bokeh.palettes``."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.1.rst:12
+msgid "Add new ``VBar`` and ``HBar`` glyph types."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.1.rst:13
+msgid "Update BokehJS to use use RBush 2.0.1 for more efficient spatial indexing."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.1.rst:14
+msgid "Restore ``ResizeTool`` functionality for simple layouts."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.1.rst:15
+msgid "Fix Windows support for conda build, docs build, and running unit tests."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.1.rst:16
+msgid ""
+"Fix a bug in the HTML template for ``autoload_server`` causing incorrect "
+"layouts."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.1.rst:17
+msgid ""
+"Fix a bug in the toolbar CSS, causing it to interfere with hit testing "
+"and selection."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.1.rst:18
+msgid "Fix WebGL support for Safari, and WebGL bug affecting line thickness."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.1.rst:19
+msgid "Fix intermittent issues with BokehJS loading in Jupyter notebooks."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:4
+msgid "0.12.0"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:6
+msgid ""
+"Bokeh Version ``0.12.0`` (Jun 2016) is a large release with many new "
+"improvements:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:9
+msgid "Responsive layout and styling improvements throughout"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:10
+msgid "BokehJS plotting and charts APIs for pure JS dev"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:11
+msgid "Legends can be placed outside / next to the central plot area"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:12
+msgid "Expanded WebGL support to all markers, fixed webgl bugs"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:13
+msgid "New color palettes: Viridis, Magma, Inferno, and Plasma"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:14
+msgid "New model types:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:16
+msgid "Arrow, Title, and Label annotations"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:17
+msgid "LogColorMapper for scaled color mapping"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:18
+msgid "FuncTickFormatter for simpler custom ticking"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:20
+msgid "Support for computed transforms (e.g. Jitter) on data columns"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:21
+msgid "Documentation improvements:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:23
+msgid "re-done user gude sections for layout"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:24
+msgid "new user guide sections for JS APIs"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:25
+msgid "new user guide sections for custom extensions"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:27
+msgid "Server features:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:29
+msgid "unlocked callbacks for use with threads"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:30
+msgid "\"--num-threads\" option for simpler deployment"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:31
+msgid "new index landing page listing installed aps"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:26
+#: ../../source/docs/releases/0.12.0.rst:33
+msgid "UX improvements"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:35
+msgid "toolbar moved to the right, and made sticky, by default"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:36
+msgid "left aligned title, closer in, by default"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:37
+msgid "smaller, italic axes labels"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:39
+msgid "New hosted demos at https://demo.bokehplots.com"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:45
+msgid "`Migration Guide <releases.html#release-0-12-0-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:50
+msgid ""
+"Currently the most reliable sizing modes for layouts are \"fixed\" and "
+"\"scale_width\". Other modes may work, or may produce undesired effects. "
+"Work on layout is still ongoing. Support for \"mixes\" sizing modes will "
+"come in a future release. Additionally, the ``ResizeTool`` does not "
+"function reliably with responsive layout, and will most likely be "
+"deprecated in a future release."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:58
+msgid "Google Maps"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:60
+msgid ""
+"Google has made a change to their terms of use for google maps, and "
+"\"effective immediately\", ALL google maps API calls MUST have an API "
+"key, or they will not function:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:64
+msgid ""
+"http://googlegeodevelopers.blogspot.mx/2016/06/building-for-scale-"
+"updates-to-google.html"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:66
+msgid ""
+"All Bokeh ``GMapPlot`` models must have their ``api_key`` property set, "
+"or they will not function properly. PLEASE NOTE: all previously created "
+"GMap plots from *any* previous version of Bokeh are affect by this TOS "
+"change."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:74
+msgid ""
+"All WebGL examples have been moved under ``examples/webgl``. The "
+"``timeout.py`` and ``random_tiles`` app examples have been removed in "
+"favor of new, better examples. Several examples of new layout capability "
+"are under ``examples/howto/layout``."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:80
+msgid "BokehJS"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:82
+msgid ""
+"The mechanism for declaring properties on BokehJS has changed, with the "
+"addition of the ``@define``, ``@override`` and ``@internal`` methods. "
+"This may affect existing custom extesnions. Until now, BokehJS details "
+"were considered an internal implementation detail. In the future, more "
+"attention will be given to BokehJS stability."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:89
+msgid "Deprecations and Compatibility"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:91
+msgid ""
+"The new layout work was a large undertaking. As a result, there are many "
+"deprecations, including `hplot`, `vplot`, etc. Almost all old functions "
+"will continue to function, while issuing deprecation  warnings. However, "
+"there are newer functions that should be preferred. The most up-to-date "
+"guidance for layout going forward is at:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:97
+msgid "https://bokeh.pydata.org/en/latest/docs/user_guide/layout.html"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:99
+msgid ""
+"In most cases it was possible to move forward with a deprecation, for the"
+" time being, but there are two small hard compatibility breaks that could"
+" not be avoided:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:104
+msgid "``Plot.title``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:106
+msgid ""
+"This attribute is now a ``Title`` object. It is no longer possible to "
+"set, e.g. ``p.title = \"some text\"`` as a string value. Instead, you "
+"must do:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:109
+msgid "p.title.text = \"some_text\""
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:111
+msgid ""
+"It is still possible to pass the `title`` keyword argument a string value"
+" to ``figure`` and Charts, as a convenience. Additionally all other title"
+" related properties on ``Plot``, e.g ``title_text_color`` continue to "
+"work for now, while issuing deprecation warnings."
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:117
+msgid "``session.show``"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:119
+msgid ""
+"The ``ClientSession.show`` method must now be explicitly passed the thing"
+" to be shown. It is no longer possible to call, e.g. ``session.show()`` "
+"without a parameter. Instead, you must do:"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.0.rst:123
+msgid "session.show(plot)"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:4
+msgid "0.11.1"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:6
+msgid ""
+"Bokeh version ``0.11.1`` (Feb 2016) focuses on providing bug fixes, small"
+" features, and documentation improvements. Highlights include:"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:9
+msgid "settings and documentation for Bokeh server behind an SSL terminated proxy"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:10
+msgid "bugfixes:"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:12
+msgid "MultiSelect works"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:13
+msgid "Oval legend renders correctly"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:14
+msgid "Plot title orientation setting works"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:15
+msgid "Annulus glyph works on IE/Edge"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:17
+msgid "features:"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:19
+msgid "preview of new streaming API in OHLC demo"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:20
+msgid "undo/redo tool add, reset tool now resets plot size"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:21
+msgid "\"bokeh static\" and \"bokeh sampledata\" commands"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:22
+msgid "can now create Bokeh apps directly from Jupyter Notebooks"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:23
+msgid "headers and content type now configurable on AjaxDataSource"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:25
+msgid ""
+"Additionally some internal work has started to refactor and clean up "
+"BokehJS to bring the class and file structure into closer alignment with "
+"the Bokeh python library."
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:32
+msgid "`Migration Guide <releases.html#release-0-11-1-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:34
+msgid ""
+"Range update callbacks now return the range object as cb_obj (not the "
+"plot)"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:35
+msgid ""
+"Layouts (HBox, VBox, VBoxForm) have been moved from bokeh.models.widgets "
+"to bokeh.models.layouts, but continue to be importable from bokeh.models"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:37
+msgid ""
+"BlazeDataSource has been removed; it will be maintained by the Blaze team"
+" in the future."
+msgstr ""
+
+#: ../../source/docs/releases/0.11.1.rst:39
+msgid ""
+"The broken BokehJS API has been removed. We are actively seeking a "
+"champion/maintainer for a new BokehJS API."
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:4
+msgid "0.11.0"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:6
+msgid ""
+"Bokeh Version ``0.11.0`` (Jan 2016) is a large release with many new "
+"improvements"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:8
+msgid "New Tornado and websocket-based Bokeh Server"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:10
+msgid "``bokeh`` command line tool for creating applications"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:11
+msgid "expanded docs including deployment guidance"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:12
+msgid "video demonstrations and tutorials"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:13
+msgid "supports async, periodic, timeout and model event callbacks"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:14
+msgid "python client API"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:16
+msgid "User-Defined Models allowing anyone to extend Bokeh"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:17
+msgid "GeoJSON data source and map tiles renderer"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:18
+msgid "WebGL support for rendering lines"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:19
+msgid "Python -> JS compilation for CustomJS callbacks (Py3 only for now)"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:20
+msgid "New general push_notebook() based on Jupyter comms"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:21
+msgid "Updates to charts"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:23
+msgid "all legacy charts converted"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:24
+msgid "more examples and expanded docs"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:28
+msgid "configurable and \"auto\" range bounds"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:29
+msgid "wheel zoom scroll capture turned off by default"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:30
+msgid "hover policy for glyphs"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:31
+msgid "responsive improvements"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:33
+msgid "Known issues"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:35
+msgid "annulus glyph does not render correctly on IE and Edge"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:37
+msgid "many small bug fixes"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:42
+msgid "`Migration Guide <releases.html#release-0-11-0-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:47
+msgid ""
+"Server output in the Jupyter notebook with output_server is currently not"
+" functioning correctly, and will be fixed in a follow on 0.11.1 release "
+"shortly. However, new notebook comms can enable many of the same kinds of"
+" interactions and notebook-based apps without a Bokeh server."
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:52
+msgid ""
+"The Image glyph does not currently work with the Bokeh server, and will "
+"be fixed in a follow on 0.11.1 release shortly."
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:58
+msgid ""
+"The previous Flask-based ``bokeh-server`` has been completely removed and"
+" replaced with the new ``bokeh serve`` based on Tornado and a websocket "
+"protocol. If you require to use ``bokeh-server`` you will have to remain "
+"on Bokeh version ``0.10.0`` or lower."
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:63
+msgid ""
+"All \"old-style\" charts in ``bokeh._legacy_charts`` have been updated to"
+" use the more consistent and powerful ``bokeh.charts`` interface, and "
+"``bokeh._legacy_charts`` has been removed."
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:67
+msgid ""
+"Bokeh deprecation warnings, which are not enabled by default python, have"
+" now been unconditionally enabled and are always displayed."
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:70
+msgid ""
+"``ColumnDataSource.push_notebook()`` has been deprecated (but still "
+"works) in favor of the more general ``bokeh.io.push_notebook()`` base on "
+"Jupyter notebook websocket comms."
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:74
+msgid ""
+"The following modules have been deprecated (but still work), with new "
+"counterparts as described in this table:"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:78
+#: ../../source/docs/releases/0.11.0.rst:91
+msgid "Old location"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:78
+#: ../../source/docs/releases/0.11.0.rst:91
+msgid "New location"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:80
+msgid "``bokeh.util.browser``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:82
+msgid "``bokeh.core.property_mixins``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:83
+msgid "``bokeh.plotting.helpers``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:84
+msgid "``bokeh.core.templates``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:87
+msgid ""
+"Additionally, the following modules that should not be of interest to "
+"general users have been moved immediately, without deprecation:"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:93
+msgid "``bokeh._json_encoder``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:93
+msgid "``bokeh.core.json_encoder``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:94
+msgid "``bokeh.compat``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:94
+msgid "``bokeh.core.compat``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:95
+msgid "``bokeh.enums``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:95
+msgid "``bokeh.core.enums``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:96
+msgid "``bokeh.query``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:96
+msgid "``bokeh.core.query``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:97
+msgid "``bokeh.state``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:97
+msgid "``bokeh.core.state``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:98
+msgid "``bokeh.validation``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:98
+msgid "``bokeh.core.validation``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:101
+msgid ""
+"If you have been using ``file_html`` and manually passing in "
+"``js_resources`` or ``css_resources``, your call will no longer work. You"
+" can still do this, but you pass a tuple to the ``resources`` argument."
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:106
+msgid "Before:"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:108
+msgid ""
+"``html = file_html(layout, None, title=title, template=template, "
+"js_resources=js_resources, css_resources=css_resources)``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:110
+msgid "v0.11:"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:112
+msgid ""
+"``html = file_html(layout, resources=(js_resources, css_resources), "
+"title=title, template=template)``"
+msgstr ""
+
+#: ../../source/docs/releases/0.11.0.rst:114
+msgid ""
+"Note you can pass ``None`` in place of either ``js_resources`` or "
+"``css_resources``."
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:4
+msgid "0.10.0"
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:6
+msgid ""
+"Bokeh ``0.10.0`` (Sep 2015) provides several new features such as WebGL "
+"support, a new refactored and more powerful chart interface and "
+"responsive plots. Also bugfixes and enhancements in our documentation, "
+"testing and build machinery, and examples."
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:11
+msgid ""
+"Initial webgl support (check our new examples: maps city, iris blend, "
+"scatter 10K, clustering.py)"
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:12
+msgid ""
+"New charts interface supporting aggregation (see our new Bars, BoxPlot, "
+"Histogram and Scatter examples)"
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:13
+msgid "Responsive plots"
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:14
+msgid ""
+"Lower-level jsresources & cssresources (allow more subtle uses of "
+"resources)"
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:15
+msgid "Several test machinery fixes"
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:16
+msgid "Several build machinery enhancements"
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:17
+msgid "More pytest-related fixes and enhancements"
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:18
+msgid "More docs fixes and enhancements"
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:19
+msgid "Now the glyph methods return the glyph renderer (not the plot)"
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:20
+msgid "Gmap points moves consistently"
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:21
+msgid "Added alpha control for imageurl objects"
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:22
+msgid "Removed python33 testing and packaging"
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:23
+msgid "Removed multiuserblazeserver"
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:28
+msgid "`Migration Guide <releases.html#release-0-10-0-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:30
+msgid ""
+"This release introduced a new, often requested style of chart interface "
+"that is centered around Pandas DataFrames.  All of \"old style\" charts "
+"in the ``bokeh.charts`` interface have been moved to "
+"``bokeh._legacy_charts``, which  will eventually be removed, when all "
+"charts have been updated. To continue to use the old charts, "
+"replace``bokeh.charts`` with ``bokeh._legacy_charts``, e.g.:"
+msgstr ""
+
+#: ../../source/docs/releases/0.10.0.rst:41
+msgid "becomes"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.3.rst:4
+msgid "0.9.3"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.3.rst:6
+msgid ""
+"Bokeh ``0.9.3`` (Aug 2015) provides several usability enhancements, "
+"better docs, new examples, a lot of bug fixes and an improved testing "
+"machinery (using pytest and selenium-based test)."
+msgstr ""
+
+#: ../../source/docs/releases/0.9.3.rst:10
+msgid "Support horizontal or vertical spans"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.3.rst:11
+msgid "Provide raw_components version of bokeh.embed.components"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.3.rst:12
+msgid "Prevent Bokeh from eating scroll events if wheel tool is not active"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.3.rst:13
+msgid ""
+"bokeh.models.actions are now called bokeh.models.callbacks and Callback "
+"is now CustomJS"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.3.rst:14
+msgid "Additional validation warnings"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.3.rst:15
+msgid "Cleaned up gulp source mapping"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.3.rst:16
+msgid "Fixes in our build machinery"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.3.rst:17
+msgid "Cleaned up models section of the reference guide"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.3.rst:18
+msgid "Use pytest instead of nose"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.3.rst:19
+msgid "Beginning to add selenium tests"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.2.rst:4
+msgid "0.9.2"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.2.rst:6
+msgid ""
+"Bokeh ``0.9.2`` (Jul 2015) provides several bugfixes. Additionally, the "
+"MPL compatibility layer was updated."
+msgstr ""
+
+#: ../../source/docs/releases/0.9.2.rst:9
+msgid "Several nan-related fixes including the slow rendering of plots"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.2.rst:10
+msgid "Removed some unused dependencies"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.2.rst:11
+msgid "Fixes in our automated release process"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.2.rst:12
+msgid "Fixed the patchs vanishing on selection"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.2.rst:13
+msgid "More control over ticks and gridlines"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.2.rst:14
+msgid "MPL compatibility updated"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.2.rst:15
+msgid "Several examples updated"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.1.rst:4
+msgid "0.9.1"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.1.rst:6
+msgid ""
+"Bokeh ``0.9.1`` (Jul 2015) focused on extending Bokeh's new callback "
+"system by adding more places where callbacks can be used, expanding and "
+"improving the new User's Guide, exposing better ways to embed Bokeh plots"
+" and widgets into your own layouts, and providing validation error and "
+"warning feedback to diagnose problems."
+msgstr ""
+
+#: ../../source/docs/releases/0.9.1.rst:12
+msgid "New callbacks options for hover, selection, and range updates"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.1.rst:13
+msgid "Documentation for widgets and new callbacks in the User's Guide"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.1.rst:14
+msgid "Much more flexible embed.components that can embed multiple objects"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.1.rst:15
+msgid "Implemented a validation framework to provide errors and warnings"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.1.rst:16
+msgid "More than 30 smaller bugfixes"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.0.rst:4
+msgid "0.9.0"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.0.rst:6
+msgid ""
+"Bokeh ``0.9.9`` (May 2015) provides sophisticated interactions in static "
+"plots using a new Callback Action, a complete rewrite of the User guide "
+"and big BokehJS refactoring switching to use browserify."
+msgstr ""
+
+#: ../../source/docs/releases/0.9.0.rst:10
+msgid "Callback Action, serverless interactivity in static plots"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.0.rst:11
+msgid "Hover inspection along lines"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.0.rst:12
+msgid "Client side LOD downsampling for interactive tools"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.0.rst:13
+msgid "Full User guide rewrite"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.0.rst:14
+msgid "Reduce BokehJS boilerplate and switch to use browserify"
+msgstr ""
+
+#: ../../source/docs/releases/0.9.0.rst:15
+msgid "Several example bugfixes"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.2.rst:4
+msgid "0.8.2"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.2.rst:6
+msgid ""
+"Bokeh ``0.8.2`` (Mar 2015) is a quick release focused on some "
+"refactoring, bug fixes and improved documentation."
+msgstr ""
+
+#: ../../source/docs/releases/0.8.2.rst:9
+msgid "Collect implicit interfaces into a single bokeh.io module"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.2.rst:10
+msgid "Fixed notebook css issues"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.2.rst:11
+msgid "Update notebooks to be compatible with IPython 3.0"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.2.rst:12
+msgid "Easy bokeh applet generation using the simpleapp module"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.2.rst:13
+msgid "Develop installation enhancements"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.2.rst:14
+msgid "A new User guide intro and some other docs styling enhancements"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.2.rst:15
+msgid "Some other minor examples bugfixes"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.1.rst:4
+msgid "0.8.1"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.1.rst:6
+msgid ""
+"Bokeh ``0.8.1``  (Feb 2015) is focused on stability, bug fixes and "
+"improved documentation."
+msgstr ""
+
+#: ../../source/docs/releases/0.8.1.rst:9
+msgid "Fixed HoverTool"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.1.rst:10
+msgid "Fixed Abstract rendering implementation and docs"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.1.rst:11
+msgid "Fixed chart gallery and docs"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.1.rst:12
+msgid "Removed leftovers from the old plotting API implementation"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.1.rst:13
+msgid "Some other minor docs fixes"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.0.rst:4
+msgid "0.8.0"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.0.rst:6
+msgid "Bokeh ``0.8.0`` (Feb 2015) includes many major new features:"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.0.rst:8
+msgid ""
+"New and updated language bindings: R, JavaScript, Julia, Scala, and Lua "
+"now available"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.0.rst:9
+msgid "Better bokeh-server experience:"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.0.rst:11
+msgid "live gallery for server apps and examples!"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.0.rst:12
+msgid "new \"publish\" mode Bokeh plots and apps"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.0.rst:13
+msgid "docs and advice for real-world deployments"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.0.rst:15
+msgid ""
+"Simpler and more easily extensible charts architecture, with new Horizon "
+"chart"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.0.rst:16
+msgid "Dramatic build and documentation improvements:"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.0.rst:18
+#, python-format
+msgid "100% complete reference guide"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.0.rst:19
+msgid "full docs and BokehJS version deployed for every \"dev\" build and RC"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.0.rst:20
+msgid "sphinx extensions for easy inline plots"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.0.rst:22
+msgid ""
+"Shaded grid bands, configurable hover tool, and pan/zoom for categorical "
+"plots"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.0.rst:23
+msgid "Improved and more robust crossfilter"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.0.rst:24
+msgid "AjaxDataSource for clients to stream data without a Bokeh server"
+msgstr ""
+
+#: ../../source/docs/releases/0.8.0.rst:26
+msgid ""
+"In addition, many bugfixes and small features, both old and new --- over "
+"100 issues --- were closed for this release! Additionally several new "
+"contributors helped out in a big way. Special thanks to Sarah Bird, "
+"Mathieu Drapeau, Samantha Hughes, and Nick Roth."
+msgstr ""
+
+#: ../../source/docs/releases/0.7.1.rst:4
+msgid "0.7.1"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.1.rst:6
+msgid ""
+"Bokeh ``0.7.1`` (Jan 2015) focused on stability, bug fixes, improved "
+"documentation and better examples."
+msgstr ""
+
+#: ../../source/docs/releases/0.7.1.rst:9
+msgid ""
+"Several bokeh.charts bug fixes and enhancements, such as configurable "
+"tools"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.1.rst:10
+msgid "Docs improvements, in particular, documenting json for bokeh.models"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.1.rst:11
+msgid "Mpl compatibility improved, now returning the plot object"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.1.rst:12
+msgid "A lot of encoding fixes, including fixes in some of our sample data"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.1.rst:13
+msgid ""
+"Faster runs in TravisCI using the new docker-based containerized "
+"infrastructure"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.1.rst:14
+msgid ""
+"New and improved examples, such as the Interactive Image Processing with "
+"Numba and Bokeh notebook"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.0.rst:4
+msgid "0.7.0"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.0.rst:6
+msgid ""
+"Bokeh ``0.7.0`` (Dec 2014) focused on new features and capability, "
+"particularly arounduser interface and experience:"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.0.rst:9
+msgid "IPython widgets and animations without a Bokeh server"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.0.rst:10
+msgid "Touch UI working for tools on mobile devices"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.0.rst:11
+msgid "Vastly improved linked data table"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.0.rst:12
+msgid "More new (and improving) bokeh.charts (high level charting interface)"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.0.rst:13
+msgid "Color mappers on the python side"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.0.rst:14
+msgid "Improved toolbar"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.0.rst:15
+msgid "Many new tools: lasso, poly, and point selection, crosshair inspector"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.0.rst:20
+msgid "`Migration Guide <releases.html#release-0-7-0-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.0.rst:22
+msgid ""
+"Additionally, note that the \"implicit\" plotting interface of "
+"plotting.py has been deprecated, and will be removed in Bokeh 0.8. In a "
+"nutshell, code such as:"
+msgstr ""
+
+#: ../../source/docs/releases/0.7.0.rst:34
+msgid "Should be replaced with the more explicit code:"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.1.rst:4
+msgid "0.6.1"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.1.rst:6
+msgid "Bokeh ``0.6.1`` (Sep 2014) is a minor release."
+msgstr ""
+
+#: ../../source/docs/releases/0.6.1.rst:8
+msgid "Toolbar enhancements"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.1.rst:9
+msgid "bokeh-server fixes"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.1.rst:10
+msgid "Improved documentation"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.1.rst:11
+msgid "Button widgets"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.1.rst:12
+msgid "Google map support in the Python side"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.1.rst:13
+msgid "Code cleanup in the JS side and examples"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.1.rst:14
+msgid "New examples"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.0.rst:4
+msgid "0.6.0"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.0.rst:6
+msgid "Bokeh ``0.6.0`` (Sep 2014) is an incremental update:"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.0.rst:8
+msgid ""
+"Abstract Rendering recipes for large data sets: isocontour, heatmap, "
+"hdalpha"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.0.rst:9
+msgid "Improved, configurable tool bar for plots"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.0.rst:10
+msgid "Full Python 3 support for bokeh-server"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.0.rst:11
+msgid "Much expanded User Guide"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.0.rst:12
+msgid "Support for multiple axes"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.0.rst:13
+msgid "Plot object graph query interface"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.0.rst:14
+msgid "New charts in bokeh.charts: TimeSeries and Categorical HeatMap"
+msgstr ""
+
+#: ../../source/docs/releases/0.6.0.rst:15
+msgid "Hit-testing for patch glyphs"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.2.rst:4
+msgid "0.5.2"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.2.rst:6
+msgid "Bokeh ``0.5.2`` (Aug 2014) is an incremental update:"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.2.rst:8
+msgid "New Layout system"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.2.rst:9
+msgid "Improved automate testing infrastructure"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.2.rst:10
+msgid "AR testing, server-side downsample fixes and ISO Contours"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.2.rst:11
+msgid "New \"dashboard-like\" example: examples/app/applet/stock_example.py"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.1.rst:4
+msgid "0.5.1"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.1.rst:6
+msgid "Bokeh ``0.5.1`` (Jul 2014) is an incremental update:"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.1.rst:8
+msgid "Hover activated by default"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.1.rst:9
+msgid "Boxplot in bokeh.charts"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.1.rst:10
+msgid "Better messages when you forgot to start the bokeh-server"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.1.rst:11
+msgid "Fixed some packaging bugs"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.1.rst:12
+msgid "Fixed NBviewer rendering"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.1.rst:13
+msgid "Fixed some Unicodeencodeerror"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.0.rst:4
+msgid "0.5.0"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.0.rst:6
+msgid "Bokeh ``0.5.0`` (Jul 2014) adds the following features:"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.0.rst:8
+msgid "Widgets"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.0.rst:9
+msgid "Initial AR integration"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.0.rst:10
+msgid "bokeh.charts (scatter, bar, histogram)"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.0.rst:11
+msgid "improved embedding API"
+msgstr ""
+
+#: ../../source/docs/releases/0.5.0.rst:12
+msgid "minor ticks, plot frame, and log axes"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.4.rst:4
+msgid "0.4.4"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.4.rst:6
+msgid "Bokeh ``0.4.4`` (Apr 2014) is a minor release:"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.4.rst:8
+msgid "Improved MPL interface, subplots, styling plus more examples"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.4.rst:9
+msgid "TravisCI testing integration"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.4.rst:10
+msgid "Tool enhancements, constrained pan/zoom, more hover glyphs"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.4.rst:11
+msgid "Server remote data and downsampling examples"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.4.rst:12
+msgid "Initial work for Bokeh \"app\" concept"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.2.rst:4
+msgid "0.4.2"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.2.rst:6
+msgid "Bokeh ``0.4.2`` (Mar 2014) is a minor release:"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.2.rst:8
+msgid "Improved MPL interface, PolyCollection plus examples"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.2.rst:9
+msgid "Extensive tutorial with exercises and solutions"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.2.rst:10
+msgid "%bokeh magic for IPython notebook"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.2.rst:11
+msgid "InMemory storage backend for bokeh-server (usable without Redis)"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.1.rst:4
+msgid "0.4.1"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.1.rst:6
+msgid "Bokeh ``0.4.1`` (Feb 2014) is a minor release:"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.1.rst:8
+msgid "Improved MPL interface, LineCollection plus examples"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.1.rst:9
+msgid "Scala interface"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.1.rst:10
+msgid "Categorical axes and ranges"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.1.rst:11
+msgid "Hover tool"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.1.rst:12
+msgid "Improved pan/zoom tool interactions"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.0.rst:4
+msgid "0.4.0"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.0.rst:6
+msgid ""
+"Bokeh ``0.4.4`` (Feb 2014) is an incremental release with several "
+"important new pieces of work:"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.0.rst:9
+msgid "Preliminary work on Matplotlib support: convert MPL figures to Bokeh plots"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.0.rst:10
+msgid "Tool improvements:"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.0.rst:12
+msgid "\"always on\" pan tool and wheel zoom tool"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.0.rst:13
+msgid "box zoom tool"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.0.rst:14
+msgid "viewport reset tool"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.0.rst:16
+msgid "Enhanced datetime axis, with better performance and nicer ticking"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.0.rst:17
+msgid ""
+"Expanded testing, including TravisCI integrations and static image output"
+" using PhantomJS"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.0.rst:18
+msgid "RGBA and color mapped image plots now available from Python"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.0.rst:19
+msgid "Python 3 support!"
+msgstr ""
+
+#: ../../source/docs/releases/0.4.0.rst:20
+msgid ""
+"Vastly improved documentation for glyphs, with inline examples and "
+"JSFiddle integration"
+msgstr ""
+
+#: ../../source/docs/releases/0.3.0.rst:4
+msgid "0.3.0"
+msgstr ""
+
+#: ../../source/docs/releases/0.3.0.rst:6
+msgid "Bokeh ``0.3.0`` (Nov 2013) is a minor release:"
+msgstr ""
+
+#: ../../source/docs/releases/0.3.0.rst:8
+msgid "refactor bokehjs to use grunt for coffee build"
+msgstr ""
+
+#: ../../source/docs/releases/0.3.0.rst:9
+msgid "merge bokeh and bokehjs repositories"
+msgstr ""
+
+#: ../../source/docs/releases/0.3.0.rst:10
+msgid "various bug fixes"
+msgstr ""
+
+#: ../../source/docs/releases/0.3.0.rst:11
+msgid "additional and improved examples and docs"
+msgstr ""
+
+#: ../../source/docs/releases/0.2.0.rst:4
+msgid "0.2.0"
+msgstr ""
+
+#: ../../source/docs/releases/0.2.0.rst:6
+msgid "Bokeh ``0.2.0`` (Oct 2013) is a minor release:"
+msgstr ""
+
+#: ../../source/docs/releases/0.2.0.rst:8
+msgid ""
+"bokeh.plotting interface for schematized plotting, that wraps the low-"
+"level interface"
+msgstr ""
+
+#: ../../source/docs/releases/0.2.0.rst:9
+msgid "Performance improvements in BokehJS"
+msgstr ""
+
+#: ../../source/docs/releases/0.2.0.rst:10
+msgid "Fixed rendering glitches for HiDPI/Retina displays"
+msgstr ""
+
+#: ../../source/docs/releases/0.2.0.rst:11
+msgid "Greatly improved Python interface architecture"
+msgstr ""
+
+#: ../../source/docs/releases/0.2.0.rst:12
+msgid "Many more examples, much improved docs"
+msgstr ""
+
+#: ../../source/docs/releases/0.1.0.rst:4
+msgid "0.1.0"
+msgstr ""
+
+#: ../../source/docs/releases/0.1.0.rst:6
+msgid ""
+"Bokeh ``0.1.0`` (Apr 2013) is the initial public release of the Bokeh "
+"project:"
+msgstr ""
+
+#: ../../source/docs/releases/0.1.0.rst:8
+msgid ""
+"Basic low-level interface, consisting of wrapper objects for BokehJS "
+"rendering primitives, glyphs, tools"
+msgstr ""
+
+#: ../../source/docs/releases/0.1.0.rst:9
+msgid ""
+"Beginnings of the ggplot-style interface that wraps the low-level "
+"interface"
+msgstr ""
+
+#: ../../source/docs/releases/0.1.0.rst:10
+msgid "Simple line/scatter/bar/image plots with a Matplotlib-like interface"
+msgstr ""
+
+#: ../../source/docs/releases/0.1.0.rst:11
+msgid "Static HTML output"
+msgstr ""
+
+#: ../../source/docs/releases/0.1.0.rst:12
+msgid "Live server output"
+msgstr ""
+
+#: ../../source/docs/releases/0.1.0.rst:13
+msgid "IPython notebook embedding capability"
+msgstr ""
+
+#: ../../source/docs/releases/0.1.0.rst:14
+msgid "Table widget"
+msgstr ""
+
+#: ../../source/docs/releases/0.1.0.rst:15
+msgid "Pan, Zoom, Select, Resize tools"
+msgstr ""
+
+#: ../../source/docs/releases/0.1.0.rst:16
+msgid "initial Python implementation of Abstract Rendering"
+msgstr ""
+

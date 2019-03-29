@@ -1,0 +1,1032 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/io.rst:4
+msgid "bokeh.io"
+msgstr ""
+
+#: bokeh.io.curdoc:1 bokeh.io.doc.curdoc:1 of
+msgid "Return the document for the current default state."
+msgstr ""
+
+#: bokeh.io.curdoc bokeh.io.doc.curdoc bokeh.io.doc.set_curdoc
+#: bokeh.io.export.export_png bokeh.io.export.export_svgs
+#: bokeh.io.export.get_screenshot_as_png bokeh.io.export_png
+#: bokeh.io.export_svgs bokeh.io.install_notebook_hook
+#: bokeh.io.notebook.get_comms:7 bokeh.io.notebook.install_notebook_hook
+#: bokeh.io.notebook.load_notebook bokeh.io.notebook.push_notebook
+#: bokeh.io.notebook.run_notebook_hook bokeh.io.notebook.show_app
+#: bokeh.io.output.output_file bokeh.io.output.output_notebook
+#: bokeh.io.output.reset_output bokeh.io.output_file bokeh.io.output_notebook
+#: bokeh.io.push_notebook bokeh.io.save bokeh.io.saving.save bokeh.io.show
+#: bokeh.io.showing.show bokeh.io.state.State.output_notebook
+#: bokeh.io.state.State.reset bokeh.io.state.curstate
+#: bokeh.io.util.default_filename of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.io.curdoc:3 bokeh.io.doc.curdoc:3 of
+msgid "the current default document object."
+msgstr ""
+
+#: bokeh.io.curdoc bokeh.io.doc.curdoc bokeh.io.export.export_png
+#: bokeh.io.export.export_svgs bokeh.io.export.get_screenshot_as_png
+#: bokeh.io.export_png bokeh.io.export_svgs bokeh.io.save bokeh.io.saving.save
+#: bokeh.io.state.curstate of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.io.export.export_png:1 bokeh.io.export_png:1 of
+msgid "Export the ``LayoutDOM`` object or document as a PNG."
+msgstr ""
+
+#: bokeh.io.export.export_png:3 bokeh.io.export_png:3 of
+msgid ""
+"If the filename is not given, it is derived from the script name (e.g. "
+"``/foo/myplot.py`` will create ``/foo/myplot.png``)"
+msgstr ""
+
+#: bokeh.io.doc.set_curdoc bokeh.io.export.export_png
+#: bokeh.io.export.export_svgs bokeh.io.export.get_screenshot_as_png
+#: bokeh.io.export_png bokeh.io.export_svgs bokeh.io.install_notebook_hook
+#: bokeh.io.notebook.get_comms bokeh.io.notebook.install_notebook_hook
+#: bokeh.io.notebook.load_notebook bokeh.io.notebook.push_notebook
+#: bokeh.io.notebook.run_notebook_hook bokeh.io.notebook.show_app
+#: bokeh.io.output.output_file bokeh.io.output.output_notebook
+#: bokeh.io.output_file bokeh.io.output_notebook bokeh.io.push_notebook
+#: bokeh.io.save bokeh.io.saving.save bokeh.io.show bokeh.io.showing.show
+#: bokeh.io.state.State.output_file bokeh.io.util.default_filename of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.io.export.export_png:6 bokeh.io.export.get_screenshot_as_png:3
+#: bokeh.io.export_png:6 of
+msgid "a Layout (Row/Column), Plot or Widget object or Document to export."
+msgstr ""
+
+#: bokeh.io.export.export_png:9 bokeh.io.export.export_svgs:9
+#: bokeh.io.export_png:9 bokeh.io.export_svgs:9 of
+msgid ""
+"filename to save document under (default: None) If None, infer from the "
+"filename."
+msgstr ""
+
+#: bokeh.io.export.export_png:12 bokeh.io.export.export_svgs:12
+#: bokeh.io.export_png:12 bokeh.io.export_svgs:12 of
+msgid ""
+"the desired height of the exported layout obj only if it's a Plot "
+"instance. Otherwise the height kwarg is ignored."
+msgstr ""
+
+#: bokeh.io.export.export_png:15 bokeh.io.export.export_svgs:15
+#: bokeh.io.export_png:15 bokeh.io.export_svgs:15 of
+msgid ""
+"the desired width of the exported layout obj only if it's a Plot "
+"instance. Otherwise the width kwarg is ignored."
+msgstr ""
+
+#: bokeh.io.export.export_png:18 bokeh.io.export.export_svgs:18
+#: bokeh.io.export.get_screenshot_as_png:6 bokeh.io.export_png:18
+#: bokeh.io.export_svgs:18 of
+msgid "a selenium webdriver instance to use to export the image."
+msgstr ""
+
+#: bokeh.io.export.export_png:22 bokeh.io.export_png:22 of
+msgid "the filename where the static file is saved."
+msgstr ""
+
+#: bokeh.io.export.export_png:26 bokeh.io.export.export_svgs:27
+#: bokeh.io.export.get_screenshot_as_png:14 bokeh.io.export_png:26
+#: bokeh.io.export_svgs:27 of
+msgid ""
+"Responsive sizing_modes may generate layouts with unexpected size and "
+"aspect ratios. It is recommended to use the default ``fixed`` sizing "
+"mode."
+msgstr ""
+
+#: bokeh.io.export.export_svgs:1 bokeh.io.export_svgs:1 of
+msgid ""
+"Export the SVG-enabled plots within a layout. Each plot will result in a "
+"distinct SVG file."
+msgstr ""
+
+#: bokeh.io.export.export_svgs:4 bokeh.io.export_svgs:4 of
+msgid ""
+"If the filename is not given, it is derived from the script name (e.g. "
+"``/foo/myplot.py`` will create ``/foo/myplot.svg``)"
+msgstr ""
+
+#: bokeh.io.export.export_svgs:7 bokeh.io.export_svgs:7 bokeh.io.save:9
+#: bokeh.io.saving.save:9 of
+msgid "a Layout (Row/Column), Plot or Widget object to display"
+msgstr ""
+
+#: bokeh.io.export.export_svgs:22 bokeh.io.export_svgs:22 of
+msgid "the list of filenames where the SVGs files are saved."
+msgstr ""
+
+#: bokeh.io.install_notebook_hook:1 bokeh.io.notebook.install_notebook_hook:1
+#: of
+msgid "Install a new notebook display hook."
+msgstr ""
+
+#: bokeh.io.install_notebook_hook:3 bokeh.io.notebook.install_notebook_hook:3
+#: of
+msgid ""
+"Bokeh comes with support for Jupyter notebooks built-in. However, there "
+"are other kinds of notebooks in use by different communities. This "
+"function provides a mechanism for other projects to instruct Bokeh how to"
+" display content in other notebooks."
+msgstr ""
+
+#: bokeh.io.install_notebook_hook:8 bokeh.io.notebook.install_notebook_hook:8
+#: of
+msgid ""
+"This function is primarily of use to developers wishing to integrate "
+"Bokeh with new notebook types."
+msgstr ""
+
+#: bokeh.io.install_notebook_hook:11 bokeh.io.notebook.install_notebook_hook:11
+#: of
+msgid ""
+"A name for the notebook type, e.e. ``'Jupyter'`` or ``'Zeppelin'``  If "
+"the name has previously been installed, a ``RuntimeError`` will be "
+"raised, unless ``overwrite=True``"
+msgstr ""
+
+#: bokeh.io.install_notebook_hook:11 bokeh.io.notebook.install_notebook_hook:11
+#: of
+msgid "A name for the notebook type, e.e. ``'Jupyter'`` or ``'Zeppelin'``"
+msgstr ""
+
+#: bokeh.io.install_notebook_hook:13 bokeh.io.notebook.install_notebook_hook:13
+#: of
+msgid ""
+"If the name has previously been installed, a ``RuntimeError`` will be "
+"raised, unless ``overwrite=True``"
+msgstr ""
+
+#: bokeh.io.install_notebook_hook:16 bokeh.io.notebook.install_notebook_hook:16
+#: of
+msgid ""
+"A function for loading BokehJS in a notebook type. The function will be "
+"called with the following arguments:  .. code-block:: python      load("
+"         resources,   # A Resources object for how to load BokehJS"
+"         verbose,     # Whether to display verbose loading banner"
+"         hide_banner, # Whether to hide the output banner entirely"
+"         load_timeout # Time after which to report a load fail error     "
+")"
+msgstr ""
+
+#: bokeh.io.install_notebook_hook:16 bokeh.io.notebook.install_notebook_hook:16
+#: of
+msgid ""
+"A function for loading BokehJS in a notebook type. The function will be "
+"called with the following arguments:"
+msgstr ""
+
+#: bokeh.io.install_notebook_hook:28 bokeh.io.notebook.install_notebook_hook:28
+#: of
+msgid ""
+"A function for displaying Bokeh standalone documents in the notebook "
+"type. This function will be called with the following arguments:  .. "
+"code-block:: python      show_doc(         obj,            # the Bokeh "
+"object to display         state,          # current bokeh.io \"state\""
+"         notebook_handle # whether a notebook handle was requested     )"
+"  If the notebook platform is capable of supporting in-place updates to "
+"plots then this function may return an opaque notebook handle that can  "
+"be used for that purpose. The handle will be returned by ``show()``, and "
+"can be used by as appropriate to update plots, etc. by additional "
+"functions in the library that installed the hooks."
+msgstr ""
+
+#: bokeh.io.install_notebook_hook:28 bokeh.io.notebook.install_notebook_hook:28
+#: of
+msgid ""
+"A function for displaying Bokeh standalone documents in the notebook "
+"type. This function will be called with the following arguments:"
+msgstr ""
+
+#: bokeh.io.install_notebook_hook:40 bokeh.io.notebook.install_notebook_hook:40
+#: of
+msgid ""
+"If the notebook platform is capable of supporting in-place updates to "
+"plots then this function may return an opaque notebook handle that can  "
+"be used for that purpose. The handle will be returned by ``show()``, and "
+"can be used by as appropriate to update plots, etc. by additional "
+"functions in the library that installed the hooks."
+msgstr ""
+
+#: bokeh.io.install_notebook_hook:46 bokeh.io.notebook.install_notebook_hook:46
+#: of
+msgid ""
+"A function for displaying Bokeh applications in the notebook type. This "
+"function will be called with the following arguments:  .. code-block:: "
+"python      show_app(         app,          # the Bokeh Application to "
+"display         state,        # current bokeh.io \"state\"         "
+"notebook_url, # URL to the current active notebook page         **kw"
+"          # any backend-specific keywords passed as-is     )"
+msgstr ""
+
+#: bokeh.io.install_notebook_hook:46 bokeh.io.notebook.install_notebook_hook:46
+#: of
+msgid ""
+"A function for displaying Bokeh applications in the notebook type. This "
+"function will be called with the following arguments:"
+msgstr ""
+
+#: bokeh.io.install_notebook_hook:58 bokeh.io.notebook.install_notebook_hook:58
+#: of
+msgid ""
+"Whether to allow an existing hook to be overwritten by a new definition "
+"(default: False)"
+msgstr ""
+
+#: bokeh.io.doc.set_curdoc:6 bokeh.io.install_notebook_hook:62
+#: bokeh.io.notebook.install_notebook_hook:62
+#: bokeh.io.notebook.load_notebook:16 bokeh.io.notebook.push_notebook:22
+#: bokeh.io.notebook.show_app:25 bokeh.io.output.output_file:21
+#: bokeh.io.output.output_notebook:17 bokeh.io.output.reset_output:3
+#: bokeh.io.output_file:21 bokeh.io.output_notebook:17
+#: bokeh.io.push_notebook:22 bokeh.io.state.State.output_notebook:8
+#: bokeh.io.state.State.reset:7 of
+msgid "None"
+msgstr ""
+
+#: bokeh.io.install_notebook_hook bokeh.io.notebook.install_notebook_hook
+#: bokeh.io.notebook.run_notebook_hook bokeh.io.util.default_filename of
+msgid "raises"
+msgstr ""
+
+#: bokeh.io.install_notebook_hook:64 bokeh.io.notebook.install_notebook_hook:64
+#: of
+msgid ""
+":exc:`RuntimeError` -- If ``notebook_type`` is already installed and "
+"``overwrite=False``"
+msgstr ""
+
+#: bokeh.io.notebook.push_notebook:1 bokeh.io.push_notebook:1 of
+msgid ""
+"Update Bokeh plots in a Jupyter notebook output cells with new data or "
+"property values."
+msgstr ""
+
+#: bokeh.io.notebook.push_notebook:4 bokeh.io.push_notebook:4 of
+msgid ""
+"When working the the notebook, the ``show`` function can be passed the "
+"argument ``notebook_handle=True``, which will cause it to return a handle"
+" object that can be used to update the Bokeh output later. When "
+"``push_notebook`` is called, any property updates (e.g. plot titles or "
+"data source values, etc.) since the last call to ``push_notebook`` or the"
+" original ``show`` call are applied to the Bokeh output in the previously"
+" rendered Jupyter output cell."
+msgstr ""
+
+#: bokeh.io.notebook.push_notebook:12 bokeh.io.push_notebook:12 of
+msgid ""
+"Several example notebooks can be found in the GitHub repository in the "
+":bokeh-tree:`examples/howto/notebook_comms` directory."
+msgstr ""
+
+#: bokeh.io.notebook.push_notebook:15 bokeh.io.push_notebook:15 of
+msgid ""
+"A :class:`~bokeh.document.Document` to push from. If None, uses "
+"``curdoc()``. (default: None)"
+msgstr ""
+
+#: bokeh.io.notebook.push_notebook:18 bokeh.io.push_notebook:18 of
+msgid ""
+"A :class:`State` object. If None, then the current default state (set by "
+"``output_file``, etc.) is used. (default: None)"
+msgstr ""
+
+#: bokeh.io.notebook.push_notebook:25 bokeh.io.push_notebook:25 of
+msgid "Examples"
+msgstr ""
+
+#: bokeh.io.notebook.push_notebook:26 bokeh.io.push_notebook:26 of
+msgid "Typical usage is typically similar to this:"
+msgstr ""
+
+#: bokeh.io.output.output_file:1 bokeh.io.output_file:1 of
+msgid ""
+"Configure the default output state to generate output saved to a file "
+"when :func:`show` is called."
+msgstr ""
+
+#: bokeh.io.output.output_file:4 bokeh.io.output_file:4 of
+msgid ""
+"Does not change the current ``Document`` from ``curdoc()``. File and "
+"notebook output may be active at the same time, so e.g., this does not "
+"clear the effects of ``output_notebook()``."
+msgstr ""
+
+#: bokeh.io.output.output_file:8 bokeh.io.output_file:8
+#: bokeh.io.state.State.output_file:8 of
+msgid "a filename for saving the HTML document"
+msgstr ""
+
+#: bokeh.io.output.output_file:10 bokeh.io.output_file:10 of
+msgid "a title for the HTML document (default: \"Bokeh Plot\")"
+msgstr ""
+
+#: bokeh.io.output.output_file:12 bokeh.io.output_file:12 of
+msgid ""
+"how to include BokehJS (default: ``'cdn'``) One of: ``'inline'``, "
+"``'cdn'``, ``'relative(-dev)'`` or ``'absolute(-dev)'``. See "
+":class:`bokeh.resources.Resources` for more details."
+msgstr ""
+
+#: bokeh.io.output.output_file:16 bokeh.io.output_file:16 of
+msgid ""
+"root directory to use for 'absolute' resources. (default: None) This "
+"value is ignored for other resource types, e.g. ``INLINE`` or ``CDN``."
+msgstr ""
+
+#: bokeh.io.output.output_file:24 bokeh.io.output.output_notebook:20
+#: bokeh.io.output_file:24 bokeh.io.output_notebook:20 of
+msgid ""
+"Generally, this should be called at the beginning of an interactive "
+"session or the top of a script."
+msgstr ""
+
+#: bokeh.io.output.output_file:28 bokeh.io.output_file:28 of
+msgid ""
+"This output file will be overwritten on every save, e.g., each time "
+"show() or save() is invoked."
+msgstr ""
+
+#: bokeh.io.output.output_notebook:1 bokeh.io.output_notebook:1 of
+msgid ""
+"Configure the default output state to generate output in notebook cells "
+"when :func:`show` is called. Note that, :func:`show` may be called "
+"multiple times in a single cell to display multiple objects in the output"
+" cell. The objects will be displayed in order."
+msgstr ""
+
+#: bokeh.io.output.output_notebook:6 bokeh.io.output_notebook:6 of
+msgid "How and where to load BokehJS from (default: CDN)"
+msgstr ""
+
+#: bokeh.io.output.output_notebook:8 bokeh.io.output_notebook:8 of
+msgid "whether to display detailed BokehJS banner (default: False)"
+msgstr ""
+
+#: bokeh.io.notebook.load_notebook:7 bokeh.io.output.output_notebook:10
+#: bokeh.io.output_notebook:10 of
+msgid "whether to hide the Bokeh banner (default: False)"
+msgstr ""
+
+#: bokeh.io.notebook.load_notebook:9 bokeh.io.output.output_notebook:12
+#: bokeh.io.output_notebook:12 of
+msgid "Timeout in milliseconds when plots assume load timed out (default: 5000)"
+msgstr ""
+
+#: bokeh.io.output.output_notebook:14 bokeh.io.output_notebook:14 of
+msgid "Notebook type (default: jupyter)"
+msgstr ""
+
+#: bokeh.io.save:1 bokeh.io.saving.save:1 of
+msgid "Save an HTML file with the data for the current document."
+msgstr ""
+
+#: bokeh.io.save:3 bokeh.io.saving.save:3 of
+msgid ""
+"Will fall back to the default output state (or an explicitly provided "
+":class:`State` object) for ``filename``, ``resources``, or ``title`` if "
+"they are not provided. If the filename is not given and not provided via "
+"output state, it is derived from the script name (e.g. ``/foo/myplot.py``"
+" will create ``/foo/myplot.html``)"
+msgstr ""
+
+#: bokeh.io.save:11 bokeh.io.saving.save:11 of
+msgid ""
+"filename to save document under (default: None) If None, use the default "
+"state configuration."
+msgstr ""
+
+#: bokeh.io.save:14 bokeh.io.saving.save:14 of
+msgid ""
+"A Resources config to use (default: None) If None, use the default state "
+"configuration, if there is one. otherwise use ``resources.INLINE``."
+msgstr ""
+
+#: bokeh.io.save:18 bokeh.io.saving.save:18 of
+msgid ""
+"a title for the HTML document (default: None)    If None, use the default"
+" state title value, if there is one.    Otherwise, use \"Bokeh Plot\"  "
+"state (State, optional) :    A :class:`State` object. If None, then the "
+"current default    implicit state is used. (default: None)."
+msgstr ""
+
+#: bokeh.io.save:21 bokeh.io.saving.save:21 of
+msgid "a title for the HTML document (default: None)"
+msgstr ""
+
+#: bokeh.io.save:20 bokeh.io.saving.save:20 of
+msgid ""
+"If None, use the default state title value, if there is one. Otherwise, "
+"use \"Bokeh Plot\""
+msgstr ""
+
+#: bokeh.io.save:24 bokeh.io.saving.save:24 of
+msgid "state (State, optional) :"
+msgstr ""
+
+#: bokeh.io.save:24 bokeh.io.saving.save:24 of
+msgid ""
+"A :class:`State` object. If None, then the current default implicit state"
+" is used. (default: None)."
+msgstr ""
+
+#: bokeh.io.save:28 bokeh.io.saving.save:28 of
+msgid "the filename where the HTML file is saved."
+msgstr ""
+
+#: bokeh.io.show:1 bokeh.io.showing.show:1 of
+msgid "Immediately display a Bokeh object or application."
+msgstr ""
+
+#: bokeh.io.show:3 bokeh.io.showing.show:3 of
+msgid ""
+":func:`show` may be called multiple times in a single Jupyter notebook "
+"cell to display multiple objects. The objects are displayed in order."
+msgstr ""
+
+#: bokeh.io.show:6 bokeh.io.showing.show:6 of
+msgid ""
+"A Bokeh object to display.  Bokeh plots, widgets, layouts (i.e. rows and "
+"columns) may be passed to ``show`` in order to display them. When "
+"``output_file`` has been called, the output will be to an HTML file, "
+"which is also opened in a new browser window or tab. When "
+"``output_notebook`` has been called in a Jupyter notebook, the output "
+"will be inline in the associated notebook output cell.  In a Jupyter "
+"notebook, a Bokeh application or callable may also be passed. A callable "
+"will be turned into an Application using a ``FunctionHandler``. The "
+"application will be run and displayed inline in the associated notebook "
+"output cell."
+msgstr ""
+
+#: bokeh.io.show:6 bokeh.io.showing.show:6 of
+msgid "A Bokeh object to display."
+msgstr ""
+
+#: bokeh.io.show:8 bokeh.io.showing.show:8 of
+msgid ""
+"Bokeh plots, widgets, layouts (i.e. rows and columns) may be passed to "
+"``show`` in order to display them. When ``output_file`` has been called, "
+"the output will be to an HTML file, which is also opened in a new browser"
+" window or tab. When ``output_notebook`` has been called in a Jupyter "
+"notebook, the output will be inline in the associated notebook output "
+"cell."
+msgstr ""
+
+#: bokeh.io.show:15 bokeh.io.showing.show:15 of
+msgid ""
+"In a Jupyter notebook, a Bokeh application or callable may also be "
+"passed. A callable will be turned into an Application using a "
+"``FunctionHandler``. The application will be run and displayed inline in "
+"the associated notebook output cell."
+msgstr ""
+
+#: bokeh.io.show:20 bokeh.io.showing.show:20 of
+msgid ""
+"Specify the browser to use to open output files(default: None)  For file "
+"output, the **browser** argument allows for specifying which browser to "
+"display in, e.g. \"safari\", \"firefox\", \"opera\", \"windows-default\"."
+" Not all platforms may support this option, see the documentation for the"
+" standard library webbrowser_ module for more information"
+msgstr ""
+
+#: bokeh.io.show:20 bokeh.io.showing.show:20 of
+msgid "Specify the browser to use to open output files(default: None)"
+msgstr ""
+
+#: bokeh.io.show:22 bokeh.io.showing.show:22 of
+msgid ""
+"For file output, the **browser** argument allows for specifying which "
+"browser to display in, e.g. \"safari\", \"firefox\", \"opera\", "
+"\"windows-default\". Not all platforms may support this option, see the "
+"documentation for the standard library webbrowser_ module for more "
+"information"
+msgstr ""
+
+#: bokeh.io.show:28 bokeh.io.showing.show:28 of
+msgid ""
+"Specify the browser mode to use for output files (default: \"tab\")  For "
+"file output, opens or raises the browser window showing the current "
+"output file.  If **new** is 'tab', then opens a new tab. If **new** is "
+"'window', then opens a new window."
+msgstr ""
+
+#: bokeh.io.show:28 bokeh.io.showing.show:28 of
+msgid "Specify the browser mode to use for output files (default: \"tab\")"
+msgstr ""
+
+#: bokeh.io.show:30 bokeh.io.showing.show:30 of
+msgid ""
+"For file output, opens or raises the browser window showing the current "
+"output file.  If **new** is 'tab', then opens a new tab. If **new** is "
+"'window', then opens a new window."
+msgstr ""
+
+#: bokeh.io.show:34 bokeh.io.showing.show:34 of
+msgid ""
+"Whether to create a notebook interaction handle (default: False)  For "
+"notebook output, toggles whether a handle which can be used with "
+"``push_notebook`` is returned. Note that notebook handles only apply to "
+"standalone plots, layouts, etc. They do not apply when showing "
+"Applications in the notebook."
+msgstr ""
+
+#: bokeh.io.show:34 bokeh.io.showing.show:34 of
+msgid "Whether to create a notebook interaction handle (default: False)"
+msgstr ""
+
+#: bokeh.io.show:36 bokeh.io.showing.show:36 of
+msgid ""
+"For notebook output, toggles whether a handle which can be used with "
+"``push_notebook`` is returned. Note that notebook handles only apply to "
+"standalone plots, layouts, etc. They do not apply when showing "
+"Applications in the notebook."
+msgstr ""
+
+#: bokeh.io.show:41 bokeh.io.showing.show:41 of
+msgid ""
+"Location of the Jupyter notebook page (default: \"localhost:8888\")  When"
+" showing Bokeh applications, the Bokeh server must be explicitly "
+"configured to allow connections originating from different URLs. This "
+"parameter defaults to the standard notebook host and port. If you are "
+"running on a different location, you will need to supply this value for "
+"the application to display properly. If no protocol is supplied in the "
+"URL, e.g. if it is of the form \"localhost:8888\", then \"http\" will be "
+"used.  ``notebook_url`` can also be a function that takes one int for the"
+" bound server port.  If the port is provided, the function needs to "
+"generate the full public URL to the bokeh server.  If None is passed, the"
+" function is to generate the origin URL."
+msgstr ""
+
+#: bokeh.io.show:41 bokeh.io.showing.show:41 of
+msgid "Location of the Jupyter notebook page (default: \"localhost:8888\")"
+msgstr ""
+
+#: bokeh.io.show:43 bokeh.io.showing.show:43 of
+msgid ""
+"When showing Bokeh applications, the Bokeh server must be explicitly "
+"configured to allow connections originating from different URLs. This "
+"parameter defaults to the standard notebook host and port. If you are "
+"running on a different location, you will need to supply this value for "
+"the application to display properly. If no protocol is supplied in the "
+"URL, e.g. if it is of the form \"localhost:8888\", then \"http\" will be "
+"used."
+msgstr ""
+
+#: bokeh.io.show:51 bokeh.io.showing.show:51 of
+msgid ""
+"``notebook_url`` can also be a function that takes one int for the bound "
+"server port.  If the port is provided, the function needs to generate the"
+" full public URL to the bokeh server.  If None is passed, the function is"
+" to generate the origin URL."
+msgstr ""
+
+#: bokeh.io.show:57 bokeh.io.showing.show:57 of
+msgid "Some parameters are only useful when certain output modes are active:"
+msgstr ""
+
+#: bokeh.io.show:59 bokeh.io.showing.show:59 of
+msgid ""
+"The ``browser`` and ``new`` parameters only apply when ``output_file`` is"
+" active."
+msgstr ""
+
+#: bokeh.io.show:62 bokeh.io.showing.show:62 of
+msgid ""
+"The ``notebook_handle`` parameter only applies when ``output_notebook`` "
+"is active, and non-Application objects are being shown. It is only "
+"supported to Jupyter notebook, raise exception for other notebook types "
+"when it is True."
+msgstr ""
+
+#: bokeh.io.show:66 bokeh.io.showing.show:66 of
+msgid ""
+"The ``notebook_url`` parameter only applies when showing Bokeh "
+"Applications in a Jupyter notebook."
+msgstr ""
+
+#: bokeh.io.show:69 bokeh.io.showing.show:69 of
+msgid ""
+"Any additional keyword arguments are passed to "
+":class:`~bokeh.server.Server` when showing a Bokeh app (added in version "
+"1.1)"
+msgstr ""
+
+#: bokeh.io.show:72 bokeh.io.showing.show:72 of
+msgid ""
+"When in a Jupyter notebook (with ``output_notebook`` enabled) and "
+"``notebook_handle=True``, returns a handle that can be used by "
+"``push_notebook``, None otherwise."
+msgstr ""
+
+#: ../../source/docs/reference/io.rst:13
+msgid "bokeh.io.doc"
+msgstr ""
+
+#: bokeh.io.doc.set_curdoc:1 of
+msgid "Configure the current document (returned by curdoc())."
+msgstr ""
+
+#: bokeh.io.doc.set_curdoc:3 of
+msgid "Document we will output."
+msgstr ""
+
+#: bokeh.io.doc.set_curdoc:9 of
+msgid "Calling this function will replace any existing document."
+msgstr ""
+
+#: ../../source/docs/reference/io.rst:21
+msgid "bokeh.io.export"
+msgstr ""
+
+#: bokeh.io.export.create_webdriver:1 of
+msgid "Create a new webdriver."
+msgstr ""
+
+#: bokeh.io.export.create_webdriver:4 of
+msgid "Here for compatibility. Prefer methods on the webdriver_control object."
+msgstr ""
+
+#: bokeh.io.export.get_screenshot_as_png:1 of
+msgid "Get a screenshot of a ``LayoutDOM`` object."
+msgstr ""
+
+#: bokeh.io.export.get_screenshot_as_png:10 of
+msgid "a pillow image loaded from PNG."
+msgstr ""
+
+#: ../../source/docs/reference/io.rst:29
+msgid "bokeh.io.notebook"
+msgstr ""
+
+#: bokeh.io.notebook.destroy_server:1 of
+msgid ""
+"Given a UUID id of a div removed or replaced in the Jupyter notebook, "
+"destroy the corresponding server sessions and stop it."
+msgstr ""
+
+#: bokeh.io.notebook.get_comms:1 of
+msgid ""
+"Create a Jupyter comms object for a specific target, that can be used to "
+"update Bokeh documents in the Jupyter notebook."
+msgstr ""
+
+#: bokeh.io.notebook.get_comms:4 of
+msgid "the target name the Comms object should connect to"
+msgstr ""
+
+#: bokeh.io.notebook.get_comms:8 of
+msgid "Jupyter Comms"
+msgstr ""
+
+#: bokeh.io.notebook.load_notebook:1 of
+msgid "Prepare the IPython notebook for displaying Bokeh plots."
+msgstr ""
+
+#: bokeh.io.notebook.load_notebook:3 of
+msgid "how and where to load BokehJS from (default: CDN)"
+msgstr ""
+
+#: bokeh.io.notebook.load_notebook:5 of
+msgid "whether to report detailed settings (default: False)"
+msgstr ""
+
+#: bokeh.io.notebook.load_notebook:13 of
+msgid ""
+"Clearing the output cell containing the published BokehJS resources HTML "
+"code may cause Bokeh CSS styling to be removed."
+msgstr ""
+
+#: bokeh.io.notebook.run_notebook_hook:1 of
+msgid "Run an installed notebook hook with supplied arguments."
+msgstr ""
+
+#: bokeh.io.notebook.run_notebook_hook:3 of
+msgid "Name of an existing installed notebook hook"
+msgstr ""
+
+#: bokeh.io.notebook.run_notebook_hook:5 of
+msgid "Name of the hook action to execute, ``'doc'`` or ``'app'``"
+msgstr ""
+
+#: bokeh.io.notebook.run_notebook_hook:8 of
+msgid ""
+"All other arguments and keyword arguments are passed to the hook action "
+"exactly as supplied."
+msgstr ""
+
+#: bokeh.io.notebook.run_notebook_hook:11 of
+msgid "Result of the hook action, as-is"
+msgstr ""
+
+#: bokeh.io.notebook.run_notebook_hook:13 of
+msgid ":exc:`RunetimeError` -- If the hook or specific action is not installed"
+msgstr ""
+
+#: bokeh.io.notebook.show_app:1 of
+msgid "Embed a Bokeh server application in a Jupyter Notebook output cell."
+msgstr ""
+
+#: bokeh.io.notebook.show_app:3 of
+msgid "A Bokeh Application to embed inline in a Jupyter notebook."
+msgstr ""
+
+#: bokeh.io.notebook.show_app:5 of
+msgid "** Unused **"
+msgstr ""
+
+#: bokeh.io.notebook.show_app:7 of
+msgid ""
+"The URL of the notebook server that is running the embedded app.  If "
+"``notebook_url`` is a string, the value string is parsed to construct the"
+" origin and full server URLs.  If notebook_url is a callable, it must "
+"accept one parameter, which will be the server port, or None. If passed a"
+" port, the callable must generate the server URL, otherwise if passed "
+"None, it must generate the origin URL for the server."
+msgstr ""
+
+#: bokeh.io.notebook.show_app:7 of
+msgid "The URL of the notebook server that is running the embedded app."
+msgstr ""
+
+#: bokeh.io.notebook.show_app:9 of
+msgid ""
+"If ``notebook_url`` is a string, the value string is parsed to construct "
+"the origin and full server URLs."
+msgstr ""
+
+#: bokeh.io.notebook.show_app:12 of
+msgid ""
+"If notebook_url is a callable, it must accept one parameter, which will "
+"be the server port, or None. If passed a port, the callable must generate"
+" the server URL, otherwise if passed None, it must generate the origin "
+"URL for the server."
+msgstr ""
+
+#: bokeh.io.notebook.show_app:17 of
+msgid ""
+"A port for the embedded server will listen on.  By default the port is 0,"
+" which results in the server listening on a random dynamic port."
+msgstr ""
+
+#: bokeh.io.notebook.show_app:17 of
+msgid "A port for the embedded server will listen on."
+msgstr ""
+
+#: bokeh.io.notebook.show_app:19 of
+msgid ""
+"By default the port is 0, which results in the server listening on a "
+"random dynamic port."
+msgstr ""
+
+#: bokeh.io.notebook.show_app:23 of
+msgid ""
+"Any additional keyword arguments are passed to "
+":class:`~bokeh.server.Server` (added in version 1.1)"
+msgstr ""
+
+#: ../../source/docs/reference/io.rst:37
+msgid "bokeh.io.output"
+msgstr ""
+
+#: bokeh.io.output.reset_output:1 of
+msgid "Clear the default state of all output modes."
+msgstr ""
+
+#: ../../source/docs/reference/io.rst:45
+msgid "bokeh.io.saving"
+msgstr ""
+
+#: ../../source/docs/reference/io.rst:53
+msgid "bokeh.io.showing"
+msgstr ""
+
+#: ../../source/docs/reference/io.rst:61
+msgid "bokeh.io.state"
+msgstr ""
+
+#: bokeh.io.state:1 of
+msgid "Encapsulate implicit state that is useful for Bokeh plotting APIs."
+msgstr ""
+
+#: bokeh.io.state:4 of
+msgid ""
+"While ``State`` objects can also be manipulated explicitly, they are "
+"automatically configured when the functions "
+":func:`~bokeh.io.output_file`, etc. from :ref:`bokeh.io` are used, so "
+"this is not necessary under typical usage."
+msgstr ""
+
+#: bokeh.io.state:9 of
+msgid "Generating output for Bokeh plots requires coordinating several things:"
+msgstr ""
+
+#: bokeh.io.state:13 of
+msgid ":class:`~bokeh.document.Document`"
+msgstr ""
+
+#: bokeh.io.state:12 of
+msgid ""
+"Groups together Bokeh models that may be shared between plots (e.g., "
+"range or data source objects) into one common strucure."
+msgstr ""
+
+#: bokeh.io.state:17 of
+msgid ":class:`~bokeh.resources.Resources`"
+msgstr ""
+
+#: bokeh.io.state:16 of
+msgid ""
+"Control how JavaScript and CSS for the client library BokehJS are "
+"included and used in the generated output."
+msgstr ""
+
+#: bokeh.io.state:19 of
+msgid ""
+"It is possible to handle the configuration of these things manually, and "
+"some examples of doing this can be found in ``examples/models`` "
+"directory. When developing sophisticated applications, it may be "
+"necessary or desirable to work at this level. However, for general use "
+"this would quickly become burdensome. This module provides a ``State`` "
+"class that encapsulates these objects and ensures their proper "
+"configuration in many common usage scenarios."
+msgstr ""
+
+#: bokeh.io.state.State:1 of
+msgid "Manage state related to controlling Bokeh output."
+msgstr ""
+
+#: bokeh.io.state.State.output_file:1 of
+msgid "Configure output to a standalone HTML file."
+msgstr ""
+
+#: bokeh.io.state.State.output_file:3 of
+msgid ""
+"Calling ``output_file`` not clear the effects of any other calls to "
+"``output_notebook``, etc. It adds an additional output destination "
+"(publishing to HTML files). Any other active output modes continue to be "
+"active."
+msgstr ""
+
+#: bokeh.io.state.State.output_file:10 of
+msgid "a title for the HTML document"
+msgstr ""
+
+#: bokeh.io.state.State.output_file:12 of
+msgid ""
+"how to include BokehJS (default: ``'cdn'``)  One of: ``'inline'``, "
+"``'cdn'``, ``'relative(-dev)'`` or ``'absolute(-dev)'``. See "
+":class:`~bokeh.resources.Resources` for more details."
+msgstr ""
+
+#: bokeh.io.state.State.output_file:12 of
+msgid "how to include BokehJS (default: ``'cdn'``)"
+msgstr ""
+
+#: bokeh.io.state.State.output_file:14 of
+msgid ""
+"One of: ``'inline'``, ``'cdn'``, ``'relative(-dev)'`` or "
+"``'absolute(-dev)'``. See :class:`~bokeh.resources.Resources` for more "
+"details."
+msgstr ""
+
+#: bokeh.io.state.State.output_file:18 of
+msgid ""
+"root dir to use for absolute resources (default: None)  This value is "
+"ignored for other resource types, e.g. ``INLINE`` or ``CDN``."
+msgstr ""
+
+#: bokeh.io.state.State.output_file:18 of
+msgid "root dir to use for absolute resources (default: None)"
+msgstr ""
+
+#: bokeh.io.state.State.output_file:21 of
+msgid ""
+"This value is ignored for other resource types, e.g. ``INLINE`` or "
+"``CDN``."
+msgstr ""
+
+#: bokeh.io.state.State.output_file:25 of
+msgid ""
+"The specified output file will be overwritten on every save, e.g., every "
+"time ``show()`` or ``save()`` is called."
+msgstr ""
+
+#: bokeh.io.state.State.output_notebook:1 of
+msgid "Generate output in notebook cells."
+msgstr ""
+
+#: bokeh.io.state.State.output_notebook:3 of
+msgid ""
+"Calling ``output_notebook`` not clear the effects of any other calls to "
+"``output_file``, etc. It adds an additional output destination "
+"(publishing to notebook output cells). Any other active output modes "
+"continue to be active."
+msgstr ""
+
+#: bokeh.io.state.State.reset:1 of
+msgid ""
+"Deactivate all currently active output modes and set ``curdoc()`` to a "
+"fresh empty ``Document``."
+msgstr ""
+
+#: bokeh.io.state.State.reset:4 of
+msgid ""
+"Subsequent calls to ``show()`` will not render until a new output mode is"
+" activated."
+msgstr ""
+
+#: bokeh.io.state.State.document:1 of
+msgid ""
+"A default :class:`~bokeh.document.Document` to use for all output "
+"operations."
+msgstr ""
+
+#: bokeh.io.state.State.file:1 of
+msgid "A dict with the default configuration for file output (READ ONLY)"
+msgstr ""
+
+#: bokeh.io.state.State.file:3 of
+msgid "The dictionary value has the following form:"
+msgstr ""
+
+#: bokeh.io.state.State.notebook:1 of
+msgid "Whether to generate notebook output on show operations. (READ ONLY)"
+msgstr ""
+
+#: bokeh.io.state.State.notebook_type:1 of
+msgid "Notebook type"
+msgstr ""
+
+#: bokeh.io.state.curstate:1 of
+msgid "Return the current State object"
+msgstr ""
+
+#: bokeh.io.state.curstate:3 of
+msgid "the current default State object"
+msgstr ""
+
+#: ../../source/docs/reference/io.rst:69
+msgid "bokeh.io.util"
+msgstr ""
+
+#: bokeh.io.util.default_filename:1 of
+msgid ""
+"Generate a default filename with a given extension, attempting to use the"
+" filename of the currently running process, if possible."
+msgstr ""
+
+#: bokeh.io.util.default_filename:4 of
+msgid ""
+"If the filename of the current process is not available (or would not be "
+"writable), then a temporary file with the given extension is returned."
+msgstr ""
+
+#: bokeh.io.util.default_filename:7 of
+msgid "the desired extension for the filename"
+msgstr ""
+
+#: bokeh.io.util.default_filename:10 of
+msgid "str"
+msgstr ""
+
+#: bokeh.io.util.default_filename:12 of
+msgid ":exc:`RuntimeError` -- If the extensions requested is \".py\""
+msgstr ""
+
+#: bokeh.io.util.detect_current_filename:1 of
+msgid "Attempt to return the filename of the currently running Python process"
+msgstr ""
+
+#: bokeh.io.util.detect_current_filename:3 of
+msgid "Returns None if the filename cannot be detected."
+msgstr ""
+
+#: bokeh.io.util.temp_filename:1 of
+msgid "Generate a temporary, writable filename with the given extension"
+msgstr ""
+

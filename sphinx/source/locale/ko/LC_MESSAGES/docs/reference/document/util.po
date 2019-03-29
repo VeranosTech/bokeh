@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/document/util.rst:4
+msgid "bokeh.document.util"
+msgstr ""
+
+#: bokeh.document.util:1 of
+msgid ""
+"Provide ancillary utility functions useful for manipulating Bokeh "
+"documents."
+msgstr ""
+
+#: bokeh.document.util.initialize_references_json:1 of
+msgid ""
+"Given a JSON representation of the models in a graph, and new model "
+"objects, set the properties on the models from the JSON"
+msgstr ""
+
+#: bokeh.document.util.initialize_references_json
+#: bokeh.document.util.instantiate_references_json
+#: bokeh.document.util.references_json of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.document.util.initialize_references_json:4 of
+msgid ""
+"JSON specifying attributes and values to initialize new model objects "
+"with."
+msgstr ""
+
+#: bokeh.document.util.initialize_references_json:7 of
+msgid ""
+"A dictionary mapping model IDs to newly created (but not yet initialized)"
+" Bokeh models.  **This is an \"out\" parameter**. The values it contains "
+"will be modified in-place."
+msgstr ""
+
+#: bokeh.document.util.initialize_references_json:7 of
+msgid ""
+"A dictionary mapping model IDs to newly created (but not yet initialized)"
+" Bokeh models."
+msgstr ""
+
+#: bokeh.document.util.initialize_references_json:10 of
+msgid ""
+"**This is an \"out\" parameter**. The values it contains will be modified"
+" in-place."
+msgstr ""
+
+#: bokeh.document.util.initialize_references_json:13 of
+msgid ""
+"This is used to prevent \"boomerang\" updates to Bokeh apps. (default: "
+"None)  In the context of a Bokeh server application, incoming updates to "
+"properties will be annotated with the session that is doing the updating."
+" This value is propagated through any subsequent change notifications "
+"that the update triggers. The session can compare the event setter to "
+"itself, and suppress any updates that originate from itself."
+msgstr ""
+
+#: bokeh.document.util.initialize_references_json:13 of
+msgid ""
+"This is used to prevent \"boomerang\" updates to Bokeh apps. (default: "
+"None)"
+msgstr ""
+
+#: bokeh.document.util.initialize_references_json:16 of
+msgid ""
+"In the context of a Bokeh server application, incoming updates to "
+"properties will be annotated with the session that is doing the updating."
+" This value is propagated through any subsequent change notifications "
+"that the update triggers. The session can compare the event setter to "
+"itself, and suppress any updates that originate from itself."
+msgstr ""
+
+#: bokeh.document.util.instantiate_references_json:1 of
+msgid ""
+"Given a JSON representation of all the models in a graph, return a dict "
+"of new model objects."
+msgstr ""
+
+#: bokeh.document.util.instantiate_references_json:4 of
+msgid "JSON specifying new Bokeh models to create"
+msgstr ""
+
+#: bokeh.document.util.instantiate_references_json
+#: bokeh.document.util.references_json of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.document.util.instantiate_references_json:7 of
+msgid "dict[str, Model]"
+msgstr ""
+
+#: bokeh.document.util.references_json:1 of
+msgid ""
+"Given a list of all models in a graph, return JSON representing them and "
+"their properties."
+msgstr ""
+
+#: bokeh.document.util.references_json:4 of
+msgid "A list of models to convert to JSON"
+msgstr ""
+
+#: bokeh.document.util.references_json:7 of
+msgid "list"
+msgstr ""
+

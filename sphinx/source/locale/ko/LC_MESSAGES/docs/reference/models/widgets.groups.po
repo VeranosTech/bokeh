@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/widgets.groups.rst:4
+msgid "bokeh.models.widgets.groups"
+msgstr ""
+
+#: bokeh.models.widgets.groups.AbstractGroup:1 of
+msgid "Bases: :class:`bokeh.models.widgets.widget.Widget`"
+msgstr ""
+
+#: bokeh.models.widgets.groups.AbstractGroup:1 of
+msgid "Abstract base class for all kinds of groups."
+msgstr ""
+
+#: bokeh.models.widgets.groups.AbstractGroup:5
+#: bokeh.models.widgets.groups.ButtonGroup:5
+#: bokeh.models.widgets.groups.Group:6 of
+msgid ""
+"This is an abstract base class used to help organize the hierarchy of "
+"Bokeh model types. **It is not useful to instantiate on its own.**"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.callbacks.Callback`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A callback to run in the browser whenever a button group is manipulated."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.String`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "List of text labels contained in this group."
+msgstr ""
+
+#: bokeh.models.widgets.groups.AbstractGroup.js_on_click:1
+#: bokeh.models.widgets.groups.AbstractGroup.on_click:1 of
+msgid ""
+"Set up a handler for button check/radio box clicks including the selected"
+" indices."
+msgstr ""
+
+#: bokeh.models.widgets.groups.AbstractGroup.on_click of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.models.widgets.groups.AbstractGroup.on_click:4 of
+msgid "handler function to call when button is clicked."
+msgstr ""
+
+#: bokeh.models.widgets.groups.AbstractGroup.on_click of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.models.widgets.groups.AbstractGroup.on_click:7 of
+msgid "None"
+msgstr ""
+
+#: bokeh.models.widgets.groups.ButtonGroup:1 of
+msgid ""
+"Bases: :class:`bokeh.models.widgets.groups.AbstractGroup`, "
+":class:`bokeh.models.widgets.buttons.ButtonLike`"
+msgstr ""
+
+#: bokeh.models.widgets.groups.ButtonGroup:1 of
+msgid "Abstract base class for groups with items rendered as buttons."
+msgstr ""
+
+#: bokeh.models.widgets.groups.CheckboxButtonGroup:1
+#: bokeh.models.widgets.groups.RadioButtonGroup:1 of
+msgid "Bases: :class:`bokeh.models.widgets.groups.ButtonGroup`"
+msgstr ""
+
+#: bokeh.models.widgets.groups.CheckboxButtonGroup:1 of
+msgid "A group of check boxes rendered as toggle buttons."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Int`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The list of indices of selected check boxes."
+msgstr ""
+
+#: bokeh.models.widgets.groups.CheckboxGroup:1
+#: bokeh.models.widgets.groups.RadioGroup:1 of
+msgid "Bases: :class:`bokeh.models.widgets.groups.Group`"
+msgstr ""
+
+#: bokeh.models.widgets.groups.CheckboxGroup:1 of
+msgid "A group of check boxes."
+msgstr ""
+
+#: bokeh.models.widgets.groups.Group:1 of
+msgid "Bases: :class:`bokeh.models.widgets.groups.AbstractGroup`"
+msgstr ""
+
+#: bokeh.models.widgets.groups.Group:1 of
+msgid "Abstract base class for groups with items rendered as check/radio boxes."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Bool`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Should items be arrange vertically (``False``) or horizontally in-line "
+"(``True``)."
+msgstr ""
+
+#: bokeh.models.widgets.groups.RadioButtonGroup:1 of
+msgid "A group of radio boxes rendered as toggle buttons."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The index of the selected radio box, or ``None`` if nothing is selected."
+msgstr ""
+
+#: bokeh.models.widgets.groups.RadioGroup:1 of
+msgid "A group of radio boxes."
+msgstr ""
+

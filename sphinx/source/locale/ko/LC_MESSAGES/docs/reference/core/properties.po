@@ -1,0 +1,844 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/core/properties.rst:4
+msgid "bokeh.core.properties"
+msgstr ""
+
+#: ../../source/docs/reference/core/properties.rst:6
+msgid ""
+"In order to streamline and automate the creation and use of models that "
+"can for describing plots and scenes, Bokeh provides a collection of "
+"properties and property mixins. Property classes provide automatic "
+"validation and serialization for a large collection of useful types. "
+"Mixin and container classes provide for easy bulk addition of properties "
+"to model classes."
+msgstr ""
+
+#: bokeh.core.properties:1 of
+msgid "Provide property types for Bokeh models"
+msgstr ""
+
+#: bokeh.core.properties:3 of
+msgid ""
+"Properties are objects that can be assigned as class attributes on Bokeh "
+"models, to provide automatic serialization, validation, and "
+"documentation."
+msgstr ""
+
+#: bokeh.core.properties:6 of
+msgid "This documentation is broken down into the following sections:"
+msgstr ""
+
+#: bokeh.core.properties:12 of
+msgid "Overview"
+msgstr ""
+
+#: bokeh.core.properties:14 of
+msgid ""
+"There are many property types defined in the module, for example ``Int`` "
+"to represent integral values, ``Seq`` to represent sequences (e.g. lists "
+"or tuples, etc.). Properties can also be combined: ``Seq(Float)`` "
+"represents a sequence of floating point values."
+msgstr ""
+
+#: bokeh.core.properties:19 of
+msgid ""
+"For example, the following defines a model that has integer, string, and "
+"list[float] properties:"
+msgstr ""
+
+#: bokeh.core.properties:29 of
+msgid ""
+"As seen, properties can be declared as just the property type, e.g. ``foo"
+" = Int``, in which case the properties are automatically instantiated on "
+"new Model objects. Or the property can be instantiated on the class, and "
+"configured with default values and help strings."
+msgstr ""
+
+#: bokeh.core.properties:34 of
+msgid ""
+"The properties of this class can be initialized by specifying keyword "
+"arguments to the initializer:"
+msgstr ""
+
+#: bokeh.core.properties:41 of
+msgid "But also by setting the attributes on an instance:"
+msgstr ""
+
+#: bokeh.core.properties:47 of
+msgid ""
+"Attempts to set a property to a value of the wrong type will result in a "
+"``ValueError`` exception:"
+msgstr ""
+
+#: bokeh.core.properties:59 of
+msgid ""
+"Models with properties know how to serialize themselves, to be understood"
+" by BokehJS. Additionally, any help strings provided on properties can be"
+" easily and automatically extracted with the Sphinx extensions in the "
+":ref:`bokeh.sphinxext` module."
+msgstr ""
+
+#: bokeh.core.properties:66 of
+msgid "Basic Properties"
+msgstr ""
+
+#: bokeh.core.properties.Angle:1 of
+msgid "Accept floating point angle values."
+msgstr ""
+
+#: bokeh.core.properties.Angle:3 of
+msgid ""
+"``Angle`` is equivalent to :class:`~bokeh.core.properties.Float` but is "
+"provided for cases when it is more semantically meaningful."
+msgstr ""
+
+#: bokeh.core.properties.Angle bokeh.core.properties.Any
+#: bokeh.core.properties.Bool bokeh.core.properties.Complex
+#: bokeh.core.properties.Float bokeh.core.properties.Int
+#: bokeh.core.properties.Interval bokeh.core.properties.JSON
+#: bokeh.core.properties.Percent bokeh.core.properties.Regex
+#: bokeh.core.properties.Size bokeh.core.properties.String
+#: bokeh.core.properties.expr bokeh.core.properties.field
+#: bokeh.core.properties.validate bokeh.core.properties.value of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.core.properties.Angle:6 bokeh.core.properties.Any:5
+#: bokeh.core.properties.Bool:3 bokeh.core.properties.Complex:3
+#: bokeh.core.properties.Float:3 bokeh.core.properties.Int:3
+#: bokeh.core.properties.JSON:7 bokeh.core.properties.Percent:6
+#: bokeh.core.properties.Regex:3 bokeh.core.properties.Size:3
+#: bokeh.core.properties.String:3 of
+msgid ""
+"A default value for attributes created from this property to have "
+"(default: None)"
+msgstr ""
+
+#: bokeh.core.properties.Angle:9 bokeh.core.properties.Any:8
+#: bokeh.core.properties.Bool:6 bokeh.core.properties.Complex:6
+#: bokeh.core.properties.Float:6 bokeh.core.properties.Int:6
+#: bokeh.core.properties.JSON:10 bokeh.core.properties.Percent:9
+#: bokeh.core.properties.Regex:6 bokeh.core.properties.Size:6
+#: bokeh.core.properties.String:6 of
+msgid ""
+"A documentation string for this property. It will be automatically used "
+"by the :ref:`bokeh.sphinxext.bokeh_prop` extension when generating Spinx "
+"documentation. (default: None)"
+msgstr ""
+
+#: bokeh.core.properties.Angle:13 bokeh.core.properties.Any:12
+#: bokeh.core.properties.Bool:10 bokeh.core.properties.Complex:10
+#: bokeh.core.properties.Float:10 bokeh.core.properties.Int:10
+#: bokeh.core.properties.JSON:14 bokeh.core.properties.Percent:13
+#: bokeh.core.properties.Regex:10 bokeh.core.properties.Size:10
+#: bokeh.core.properties.String:10 of
+msgid ""
+"Whether attributes created from this property should be included in "
+"serialization (default: True)"
+msgstr ""
+
+#: bokeh.core.properties.Angle:16 bokeh.core.properties.Any:15
+#: bokeh.core.properties.Bool:13 bokeh.core.properties.Complex:13
+#: bokeh.core.properties.Float:13 bokeh.core.properties.Int:13
+#: bokeh.core.properties.JSON:17 bokeh.core.properties.Percent:16
+#: bokeh.core.properties.Regex:13 bokeh.core.properties.Size:13
+#: bokeh.core.properties.String:13 of
+msgid ""
+"Whether attributes created from this property are read-only. (default: "
+"False)"
+msgstr ""
+
+#: bokeh.core.properties.Any:1 of
+msgid "Accept all values."
+msgstr ""
+
+#: bokeh.core.properties.Any:3 of
+msgid "The ``Any`` property does not do any validation or transformation."
+msgstr ""
+
+#: bokeh.core.properties.Any:20 bokeh.core.properties.Auto:6
+#: bokeh.core.properties.Bool:18 bokeh.core.properties.Byte:4
+#: bokeh.core.properties.Color:13 bokeh.core.properties.Float:18
+#: bokeh.core.properties.Int:18 bokeh.core.properties.Interval:13
+#: bokeh.core.properties.Override:14 bokeh.core.properties.Percent:21
+#: bokeh.core.properties.Regex:18 bokeh.core.properties.Size:18
+#: bokeh.core.properties.String:18 bokeh.core.properties.validate:9
+#: bokeh.core.properties.value:18
+#: bokeh.core.properties.without_property_validation:4 of
+msgid "Example"
+msgstr ""
+
+#: bokeh.core.properties.AnyRef:1 of
+msgid "Accept all values and force reference discovery."
+msgstr ""
+
+#: bokeh.core.properties.Auto:1 of
+msgid "Accepts only the string \"auto\"."
+msgstr ""
+
+#: bokeh.core.properties.Auto:3 of
+msgid "Useful for properties that can be configured to behave \"automatically\"."
+msgstr ""
+
+#: bokeh.core.properties.Auto:7 of
+msgid ""
+"This property is often most useful in conjunction with the "
+":class:`~bokeh.core.properties.Either` property."
+msgstr ""
+
+#: bokeh.core.properties.Bool:1 of
+msgid "Accept boolean values."
+msgstr ""
+
+#: bokeh.core.properties.Byte:1 of
+msgid "Accept integral byte values (0-255)."
+msgstr ""
+
+#: bokeh.core.properties.Color:1 of
+msgid "Accept color values in a variety of ways."
+msgstr ""
+
+#: bokeh.core.properties.Color:3 of
+msgid ""
+"For colors, because we support named colors and hex values prefaced with "
+"a \"#\", when we are handed a string value, there is a little "
+"interpretation: if the value is one of the 147 SVG named colors or it "
+"starts with a \"#\", then it is interpreted as a value."
+msgstr ""
+
+#: bokeh.core.properties.Color:8 of
+msgid ""
+"If a 3-tuple is provided, then it is treated as an RGB (0..255). If a "
+"4-tuple is provided, then it is treated as an RGBa (0..255), with alpha "
+"as a float between 0 and 1.  (This follows the HTML5 Canvas API.)"
+msgstr ""
+
+#: bokeh.core.properties.Complex:1 of
+msgid "Accept complex floating point values."
+msgstr ""
+
+#: bokeh.core.properties.DashPattern:1 of
+msgid "Accept line dash specifications."
+msgstr ""
+
+#: bokeh.core.properties.DashPattern:3 of
+msgid ""
+"Express patterns that describe line dashes.  ``DashPattern`` values can "
+"be specified in a variety of ways:"
+msgstr ""
+
+#: bokeh.core.properties.DashPattern:6 of
+msgid "An enum: \"solid\", \"dashed\", \"dotted\", \"dotdash\", \"dashdot\""
+msgstr ""
+
+#: bokeh.core.properties.DashPattern:7 of
+msgid ""
+"a tuple or list of integers in the `HTML5 Canvas dash specification "
+"style`_. Note that if the list of integers has an odd number of elements,"
+" then it is duplicated, and that duplicated list becomes the new dash "
+"list."
+msgstr ""
+
+#: bokeh.core.properties.DashPattern:11 of
+msgid ""
+"To indicate that dashing is turned off (solid lines), specify the empty "
+"list []."
+msgstr ""
+
+#: bokeh.core.properties.Date:1 of
+msgid "Accept Date (but not DateTime) values."
+msgstr ""
+
+#: bokeh.core.properties.Datetime:1 of
+msgid "Accept Datetime values."
+msgstr ""
+
+#: bokeh.core.properties.Either:1 of
+msgid "Accept values according to a sequence of other property types."
+msgstr ""
+
+#: bokeh.core.properties.Either:3 of
+msgid "Example:"
+msgstr ""
+
+#: bokeh.core.properties.Enum:1 of
+msgid "Accept values from enumerations."
+msgstr ""
+
+#: bokeh.core.properties.Enum:3 of
+msgid ""
+"The first value in enumeration is used as the default value, unless the "
+"``default`` keyword argument is used."
+msgstr ""
+
+#: bokeh.core.properties.Enum:6 of
+msgid "See :ref:`bokeh.core.enums` for more information."
+msgstr ""
+
+#: bokeh.core.properties.Float:1 of
+msgid "Accept floating point values."
+msgstr ""
+
+#: bokeh.core.properties.Image:1 of
+msgid "Accept image file types, e.g PNG, JPEG, TIFF, etc."
+msgstr ""
+
+#: bokeh.core.properties.Image:3 of
+msgid "This property can be configured with:"
+msgstr ""
+
+#: bokeh.core.properties.Image:5 of
+msgid "A string filename to be loaded with ``PIL.Image.open``"
+msgstr ""
+
+#: bokeh.core.properties.Image:6 of
+msgid "An RGB(A) NumPy array, will be converted to PNG"
+msgstr ""
+
+#: bokeh.core.properties.Image:7 of
+msgid "A ``PIL.Image.Image`` object"
+msgstr ""
+
+#: bokeh.core.properties.Image:9 of
+msgid "In all cases, the image data is serialized as a Base64 encoded string."
+msgstr ""
+
+#: bokeh.core.properties.Instance:1 of
+msgid "Accept values that are instances of |HasProps|."
+msgstr ""
+
+#: bokeh.core.properties.Int:1 of
+msgid "Accept signed integer values."
+msgstr ""
+
+#: bokeh.core.properties.Interval:1 of
+msgid "Accept numeric values that are contained within a given interval."
+msgstr ""
+
+#: bokeh.core.properties.Interval:3 of
+msgid "numeric types for the range, e.g. ``Int``, ``Float``"
+msgstr ""
+
+#: bokeh.core.properties.Interval:5 of
+msgid ""
+"A minimum allowable value for the range. Values less than ``start`` will "
+"result in validation errors."
+msgstr ""
+
+#: bokeh.core.properties.Interval:8 of
+msgid ""
+"A maximum allowable value for the range. Values greater than ``end`` will"
+" result in validation errors."
+msgstr ""
+
+#: bokeh.core.properties.JSON:1 of
+msgid "Accept JSON string values."
+msgstr ""
+
+#: bokeh.core.properties.JSON:3 of
+msgid ""
+"The value is transmitted and received by BokehJS as a *string* containing"
+" JSON content. i.e., you must use ``JSON.parse`` to unpack the value into"
+" a JavaScript hash."
+msgstr ""
+
+#: bokeh.core.properties.MinMaxBounds:1 of
+msgid "Accept (min, max) bounds tuples for use with Ranges."
+msgstr ""
+
+#: bokeh.core.properties.MinMaxBounds:3 of
+msgid ""
+"Bounds are provided as a tuple of ``(min, max)`` so regardless of whether"
+" your range is increasing or decreasing, the first item should be the "
+"minimum value of the range and the second item should be the maximum. "
+"Setting min > max will result in a ``ValueError``."
+msgstr ""
+
+#: bokeh.core.properties.MinMaxBounds:7 of
+msgid ""
+"Setting bounds to None will allow your plot to pan/zoom as far as you "
+"want. If you only want to constrain one end of the plot, you can set min "
+"or max to ``None`` e.g. ``DataRange1d(bounds=(None, 12))``"
+msgstr ""
+
+#: bokeh.core.properties.Percent:1 of
+msgid "Accept floating point percentage values."
+msgstr ""
+
+#: bokeh.core.properties.Percent:3 of
+msgid ""
+"``Percent`` can be useful and semantically meaningful for specifying "
+"things like alpha values and extents."
+msgstr ""
+
+#: bokeh.core.properties.RGB:1 of
+msgid "Accept colors.RGB values."
+msgstr ""
+
+#: bokeh.core.properties.Regex:1 of
+msgid "Accept strings that match a given regular expression."
+msgstr ""
+
+#: bokeh.core.properties.Size:1 of
+msgid "Accept non-negative numeric values."
+msgstr ""
+
+#: bokeh.core.properties.String:1 of
+msgid "Accept string values."
+msgstr ""
+
+#: bokeh.core.properties.Struct:1 of
+msgid "Accept values that are structures."
+msgstr ""
+
+#: bokeh.core.properties.TimeDelta:1 of
+msgid "Accept TimeDelta values."
+msgstr ""
+
+#: bokeh.core.properties:99 of
+msgid "Container Properties"
+msgstr ""
+
+#: bokeh.core.properties.Array:1 of
+msgid "Accept NumPy array values."
+msgstr ""
+
+#: bokeh.core.properties.ColumnData:1 of
+msgid ""
+"Accept a Python dictionary suitable as the ``data`` attribute of a "
+":class:`~bokeh.models.sources.ColumnDataSource`."
+msgstr ""
+
+#: bokeh.core.properties.ColumnData:4 of
+msgid ""
+"This class is a specialization of ``Dict`` that handles efficiently "
+"encoding columns that are NumPy arrays."
+msgstr ""
+
+#: bokeh.core.properties.Dict:1 of
+msgid "Accept Python dict values."
+msgstr ""
+
+#: bokeh.core.properties.Dict:3 of
+msgid ""
+"If a default value is passed in, then a shallow copy of it will be used "
+"for each new use of this property."
+msgstr ""
+
+#: bokeh.core.properties.List:1 of
+msgid "Accept Python list values."
+msgstr ""
+
+#: bokeh.core.properties.RelativeDelta:1 of
+msgid "Accept RelativeDelta dicts for time delta values."
+msgstr ""
+
+#: bokeh.core.properties.Seq:1 of
+msgid "Accept non-string ordered sequences of values, e.g. list, tuple, array."
+msgstr ""
+
+#: bokeh.core.properties.Tuple:1 of
+msgid "Accept Python tuple values."
+msgstr ""
+
+#: bokeh.core.properties:110 of
+msgid "DataSpec Properties"
+msgstr ""
+
+#: bokeh.core.properties.AngleSpec:1 of
+msgid ""
+"A |DataSpec| property that accepts numeric fixed values, and also "
+"provides an associated units property to store angle units."
+msgstr ""
+
+#: bokeh.core.properties.AngleSpec:4 of
+msgid "Acceptable values for units are ``\"rad\"`` and ``\"deg\"``."
+msgstr ""
+
+#: bokeh.core.properties.ColorSpec:1 of
+msgid "A |DataSpec| property that accepts |Color| fixed values."
+msgstr ""
+
+#: bokeh.core.properties.ColorSpec:3 of
+msgid ""
+"The ``ColorSpec`` property attempts to first interpret string values as "
+"colors. Otherwise, string values are interpreted as field names. For "
+"example:"
+msgstr ""
+
+#: bokeh.core.properties.ColorSpec:15 of
+msgid ""
+"This automatic interpretation can be override using the dict format "
+"directly, or by using the |field| function:"
+msgstr ""
+
+#: bokeh.core.properties.DataDistanceSpec:1 of
+msgid ""
+"A |DataSpec| property that accepts numeric fixed values for data-space "
+"distances, and also provides an associated units property that reports "
+"``\"data\"`` as the units."
+msgstr ""
+
+#: bokeh.core.properties.DataDistanceSpec:6 of
+msgid "Units are always ``\"data\"``."
+msgstr ""
+
+#: bokeh.core.properties.DataSpec:1 of
+msgid ""
+"Base class for properties that accept either a fixed value, or a string "
+"name that references a column in a "
+":class:`~bokeh.models.sources.ColumnDataSource`."
+msgstr ""
+
+#: bokeh.core.properties.DataSpec:5 of
+msgid ""
+"Many Bokeh models have properties that a user might want to set either to"
+" a single fixed value, or to have the property take values from some "
+"column in a data source. As a concrete example consider a glyph with an "
+"``x`` property for location. We might want to set all the glyphs that get"
+" drawn to have the same location, say ``x=10``. It would be convenient to"
+"  just be able to write:"
+msgstr ""
+
+#: bokeh.core.properties.DataSpec:16 of
+msgid ""
+"Alternatively, maybe the each glyph that gets drawn should have a "
+"different location, according to the \"pressure\" column of a data "
+"source. In this case we would like to be able to write:"
+msgstr ""
+
+#: bokeh.core.properties.DataSpec:24 of
+msgid ""
+"Bokeh ``DataSpec`` properties (and subclasses) afford this ease of and "
+"consistency of expression. Ultimately, all ``DataSpec`` properties "
+"resolve to dictionary values, with either a ``\"value\"`` key, or a "
+"``\"field\"`` key, depending on how it is set."
+msgstr ""
+
+#: bokeh.core.properties.DataSpec:29 of
+msgid "For instance:"
+msgstr ""
+
+#: bokeh.core.properties.DataSpec:37 of
+msgid ""
+"When these underlying dictionary dictionary values are received in the "
+"browser, BokehJS knows how to interpret them and take the correct, "
+"expected action (i.e., draw the glyph at ``x=10``, or draw the glyph with"
+" ``x`` coordinates from the \"pressure\" column). In this way, both use-"
+"cases may be expressed easily in python, without having to handle "
+"anything differently, from the user perspective."
+msgstr ""
+
+#: bokeh.core.properties.DataSpec:44 of
+msgid ""
+"It is worth noting that ``DataSpec`` properties can also be set directly "
+"with properly formed dictionary values:"
+msgstr ""
+
+#: bokeh.core.properties.DataSpec:53 of
+msgid ""
+"Setting the property directly as a dict can be useful in certain "
+"situations. For instance some ``DataSpec`` subclasses also add a "
+"``\"units\"`` key to the dictionary. This key is often set automatically,"
+" but the dictionary format provides a direct mechanism to override as "
+"necessary. Additionally, ``DataSpec`` can have a ``\"transform\"`` key, "
+"that specifies a client-side transform that should be applied to any "
+"fixed or field values before they are uses. As an example, you might want"
+" to apply a ``Jitter`` transform to the ``x`` values:"
+msgstr ""
+
+#: bokeh.core.properties.DataSpec:66 of
+msgid ""
+"Note that ``DataSpec`` is not normally useful on its own. Typically, a "
+"model will define properties using one of the sublclasses such as "
+":class:`~bokeh.core.properties.NumberSpec` or "
+":class:`~bokeh.core.properties.ColorSpec`. For example, a Bokeh model "
+"with ``x``, ``y`` and ``color`` properties that can handle fixed values "
+"or columns automatically might look like:"
+msgstr ""
+
+#: bokeh.core.properties.DistanceSpec:1 of
+msgid ""
+"A |DataSpec| property that accepts numeric fixed values or strings that "
+"refer to columns in a :class:`~bokeh.models.sources.ColumnDataSource`, "
+"and also provides an associated units property to store units "
+"information. Acceptable values for units are ``\"screen\"`` and "
+"``\"data\"``."
+msgstr ""
+
+#: bokeh.core.properties.FontSizeSpec:1 of
+msgid "A |DataSpec| property that accepts font-size fixed values."
+msgstr ""
+
+#: bokeh.core.properties.FontSizeSpec:3 of
+msgid ""
+"The ``FontSizeSpec`` property attempts to first interpret string values "
+"as font sizes (i.e. valid CSS length values). Otherwise string values are"
+" interpreted as field names. For example:"
+msgstr ""
+
+#: bokeh.core.properties.FontSizeSpec:15 of
+msgid "A full list of all valid CSS length units can be found here:"
+msgstr ""
+
+#: bokeh.core.properties.FontSizeSpec:17 of
+msgid "https://drafts.csswg.org/css-values/#lengths"
+msgstr ""
+
+#: bokeh.core.properties.MarkerSpec:1 of
+msgid "A |DataSpec| property that accepts marker types as fixed values."
+msgstr ""
+
+#: bokeh.core.properties.MarkerSpec:3 of
+msgid ""
+"The ``MarkerSpec`` property attempts to first interpret string values as "
+"marker types. Otherwise string values are interpreted as field names. For"
+" example:"
+msgstr ""
+
+#: bokeh.core.properties.NumberSpec:1 of
+msgid "A |DataSpec| property that accepts numeric and datetime fixed values."
+msgstr ""
+
+#: bokeh.core.properties.NumberSpec:3 of
+msgid ""
+"By default, date and datetime values are immediately converted to "
+"milliseconds since epoch. It is possible to disable processing of "
+"datetime values by passing ``accept_datetime=False``."
+msgstr ""
+
+#: bokeh.core.properties.NumberSpec:7 of
+msgid ""
+"By default, timedelta values are immediately converted to absolute "
+"milliseconds.  It is possible to disable processing of timedelta values "
+"by passing ``accept_timedelta=False``"
+msgstr ""
+
+#: bokeh.core.properties.NumberSpec:11 of
+msgid "Timedelta values are interpreted as absolute milliseconds."
+msgstr ""
+
+#: bokeh.core.properties.ScreenDistanceSpec:1 of
+msgid ""
+"A |DataSpec| property that accepts numeric fixed values for screen "
+"distances, and also provides an associated units property that reports "
+"``\"screen\"`` as the units."
+msgstr ""
+
+#: bokeh.core.properties.ScreenDistanceSpec:6 of
+msgid "Units are always ``\"screen\"``."
+msgstr ""
+
+#: bokeh.core.properties.StringSpec:1 of
+msgid "A |DataSpec| property that accepts string fixed values."
+msgstr ""
+
+#: bokeh.core.properties.StringSpec:3 of
+msgid ""
+"Because acceptable fixed values and field names are both strings, it can "
+"be necessary explicitly to disambiguate these possibilities. By default, "
+"string values are interpreted as fields, but the |value| function can be "
+"used to specify that a string should interpreted as a value:"
+msgstr ""
+
+#: bokeh.core.properties.UnitsSpec:1 of
+msgid ""
+"A |DataSpec| property that accepts numeric fixed values, and also "
+"provides an associated units property to store units information."
+msgstr ""
+
+#: bokeh.core.properties:125 of
+msgid "Helpers"
+msgstr ""
+
+#: bokeh.core.properties.expr:1 of
+msgid ""
+"Convenience function to explicitly return an \"expr\" specification for a"
+" Bokeh :class:`~bokeh.core.properties.DataSpec` property."
+msgstr ""
+
+#: bokeh.core.properties.expr:4 of
+msgid "a computed expression for a ``DataSpec`` property."
+msgstr ""
+
+#: bokeh.core.properties.expr:7 bokeh.core.properties.field:7
+#: bokeh.core.properties.value:6 of
+msgid "a transform to apply (default: None)"
+msgstr ""
+
+#: bokeh.core.properties.expr bokeh.core.properties.field
+#: bokeh.core.properties.value of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.core.properties.expr:10 of
+msgid "``{ \"expr\": expression }``"
+msgstr ""
+
+#: bokeh.core.properties.expr bokeh.core.properties.field
+#: bokeh.core.properties.value of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.core.properties.expr:14 bokeh.core.properties.field:14 of
+msgid ""
+"This function is included for completeness. String values for property "
+"specifications are by default interpreted as field names."
+msgstr ""
+
+#: bokeh.core.properties.field:1 of
+msgid ""
+"Convenience function to explicitly return a \"field\" specification for a"
+" Bokeh :class:`~bokeh.core.properties.DataSpec` property."
+msgstr ""
+
+#: bokeh.core.properties.field:4 of
+msgid "name of a data source field to reference for a ``DataSpec`` property."
+msgstr ""
+
+#: bokeh.core.properties.field:10 of
+msgid "``{ \"field\": name }``"
+msgstr ""
+
+#: bokeh.core.properties.value:1 of
+msgid ""
+"Convenience function to explicitly return a \"value\" specification for a"
+" Bokeh :class:`~bokeh.core.properties.DataSpec` property."
+msgstr ""
+
+#: bokeh.core.properties.value:4 of
+msgid "a fixed value to specify for a ``DataSpec`` property."
+msgstr ""
+
+#: bokeh.core.properties.value:9 of
+msgid "``{ \"value\": name }``"
+msgstr ""
+
+#: bokeh.core.properties.value:13 of
+msgid ""
+"String values for property specifications are by default interpreted as "
+"field names. This function is especially useful when you want to specify "
+"a fixed value with text properties."
+msgstr ""
+
+#: bokeh.core.properties:132 of
+msgid "Special Properties"
+msgstr ""
+
+#: bokeh.core.properties.Include:1 of
+msgid "Include \"mix-in\" property collection in a Bokeh model."
+msgstr ""
+
+#: bokeh.core.properties.Include:3 of
+msgid "See :ref:`bokeh.core.property_mixins` for more details."
+msgstr ""
+
+#: bokeh.core.properties.Override:1 of
+msgid "Override attributes of Bokeh property in derived Models."
+msgstr ""
+
+#: bokeh.core.properties.Override:3 of
+msgid ""
+"When subclassing a Bokeh Model, it may be desirable to change some of the"
+" attributes of the property itself, from those on the base class. This is"
+" accomplished using the ``Override`` class."
+msgstr ""
+
+#: bokeh.core.properties.Override:7 of
+msgid ""
+"Currently, ``Override`` can only be use to override the ``default`` value"
+" for the property."
+msgstr ""
+
+#: bokeh.core.properties.Override of
+msgid "Keyword Arguments"
+msgstr ""
+
+#: bokeh.core.properties.Override:10 of
+msgid "a default value for this property on a subclass"
+msgstr ""
+
+#: bokeh.core.properties.Override:15 of
+msgid "Consider the following class definitions:"
+msgstr ""
+
+#: bokeh.core.properties.Override:28 of
+msgid ""
+"The parent class has an integer property ``foo`` with default value 10.  "
+"The child class uses the following code:"
+msgstr ""
+
+#: bokeh.core.properties.Override:35 of
+msgid ""
+"to specify that the default value for the ``foo`` property should be 20 "
+"on instances of the child class:"
+msgstr ""
+
+#: bokeh.core.properties:138 of
+msgid "Validation Control"
+msgstr ""
+
+#: bokeh.core.properties:140 of
+msgid ""
+"By default, Bokeh properties perform type validation on values. This "
+"helps to ensure the consistency of any data exchanged between Python and "
+"JavaScript, as well as provide detailed and immediate feedback to users "
+"if they attempt to set values of the wrong type. However, these type "
+"checks incur some overhead. In some cases it may be desirable to turn off"
+" validation in specific places, or even entirely, in order to boost "
+"performance. The following API is available to control when type "
+"validation occurs."
+msgstr ""
+
+#: bokeh.core.properties.validate:1 of
+msgid "Control validation of bokeh properties"
+msgstr ""
+
+#: bokeh.core.properties.validate:3 of
+msgid "This can be used as a context manager, or as a normal callable"
+msgstr ""
+
+#: bokeh.core.properties.validate:5 of
+msgid "Whether validation should occur or not"
+msgstr ""
+
+#: bokeh.core.properties.validate:19 of
+msgid ""
+":func:`~bokeh.core.property.bases.validation_on`: check the state of "
+"validation"
+msgstr ""
+
+#: bokeh.core.properties.validate:21 of
+msgid ""
+":func:`~bokeh.core.properties.without_property_validation`: function "
+"decorator"
+msgstr ""
+
+#: bokeh.core.properties.without_property_validation:1 of
+msgid "Turn off property validation during update callbacks"
+msgstr ""
+
+#: bokeh.core.properties.without_property_validation:11 of
+msgid ""
+":class:`~bokeh.core.properties.validate`: context mangager for more fine-"
+"grained control"
+msgstr ""
+

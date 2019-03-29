@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/driving.rst:4
+msgid "bokeh.driving"
+msgstr ""
+
+#: bokeh.driving:1 of
+msgid ""
+"Provide a set of decorators useful for repeatedly updating a a function "
+"parameter in a specified way each time the function is called."
+msgstr ""
+
+#: bokeh.driving:5 of
+msgid ""
+"These decorators can be especially useful in conjunction with periodic "
+"callbacks in a Bokeh server application."
+msgstr ""
+
+#: bokeh.driving:9 of
+msgid "Example"
+msgstr ""
+
+#: bokeh.driving:10 of
+msgid ""
+"As an example, consider the ``bounce`` forcing function, which advances a"
+" sequence forwards and backwards:"
+msgstr ""
+
+#: bokeh.driving:21 of
+msgid ""
+"If this function is repeatedly called, it will print the following "
+"sequence on standard out:"
+msgstr ""
+
+#: bokeh.driving.bounce:1 of
+msgid ""
+"Return a driver function that can advance a \"bounced\" sequence of "
+"values."
+msgstr ""
+
+#: bokeh.driving.bounce bokeh.driving.cosine bokeh.driving.force
+#: bokeh.driving.linear bokeh.driving.repeat bokeh.driving.sine of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.driving.bounce:10 bokeh.driving.repeat:9 of
+msgid "a sequence of values for the driver to bounce"
+msgstr ""
+
+#: bokeh.driving.cosine:1 of
+msgid "Return a driver function that can advance a sequence of cosine values."
+msgstr ""
+
+#: bokeh.driving.cosine:7 of
+msgid "a frequency for the cosine driver"
+msgstr ""
+
+#: bokeh.driving.cosine:9 of
+msgid "an amplitude for the cosine driver"
+msgstr ""
+
+#: bokeh.driving.cosine:11 of
+msgid "a phase offset to start the cosine driver with"
+msgstr ""
+
+#: bokeh.driving.cosine:13 bokeh.driving.sine:13 of
+msgid "a global offset to add to the driver values"
+msgstr ""
+
+#: bokeh.driving.count:1 of
+msgid "Return a driver function that can advance a simple count."
+msgstr ""
+
+#: bokeh.driving.force:1 of
+msgid ""
+"Return a decorator that can \"force\" a function with an arbitrary "
+"supplied generator"
+msgstr ""
+
+#: bokeh.driving.force:4 of
+msgid "generator to drive f with"
+msgstr ""
+
+#: bokeh.driving.force of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.driving.force:7 of
+msgid "decorator"
+msgstr ""
+
+#: bokeh.driving.linear:1 of
+msgid "Return a driver function that can advance a sequence of linear values."
+msgstr ""
+
+#: bokeh.driving.linear:7 of
+msgid "a slope for the linear driver"
+msgstr ""
+
+#: bokeh.driving.linear:9 of
+msgid "an offset for the linear driver"
+msgstr ""
+
+#: bokeh.driving.repeat:1 of
+msgid "Return a driver function that can advance a repeated of values."
+msgstr ""
+
+#: bokeh.driving.sine:1 of
+msgid "Return a driver function that can advance a sequence of sine values."
+msgstr ""
+
+#: bokeh.driving.sine:7 of
+msgid "a frequency for the sine driver"
+msgstr ""
+
+#: bokeh.driving.sine:9 of
+msgid "an amplitude for the sine driver"
+msgstr ""
+
+#: bokeh.driving.sine:11 of
+msgid "a phase offset to start the sine driver with"
+msgstr ""
+

@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/dev_guide.rst:4
+msgid "Developer Guide"
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:6
+msgid ""
+"Bokeh is an open source project and we love having new contributors. "
+"Hopefully, you will find all the information you need in the following "
+"pages, linked below and in the sidebar to the left. If not, please "
+"`contact the developers`_ with any questions."
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:11
+msgid ""
+"The software development process for Bokeh is outlined in `Bokeh "
+"Enhancement Proposal 1`_. All changes, enhancements, and bugfixes should "
+"generally go through the process outlined there."
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:15
+msgid ""
+"The process for creating, distributing, and announcing final releases of "
+"Bokeh is outlined in `Bokeh Enhancement Proposal 2`_."
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:21
+msgid ":ref:`devguide_setup`"
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:21
+msgid "Installation of everything needed to be able to develop Bokeh and BokehJS."
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:24
+msgid ":ref:`devguide_envvars`"
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:24
+msgid "Environment settings useful for testing and debugging Bokeh."
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:27
+msgid ":ref:`devguide_testing`"
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:27
+msgid "Local and continuous integration testing infrastructure."
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:30
+msgid ":ref:`devguide_documentation`"
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:30
+msgid "Style guide and best practices for authoring documentation for Bokeh."
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:33
+msgid ":ref:`devguide_models`"
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:33
+msgid "Overview of Bokeh's declarative model system for interfacing with BokehJS."
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:36
+msgid ":ref:`devguide_server`"
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:36
+msgid "Architecture and implementation notes for the Bokeh server."
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:39
+msgid ":ref:`devguide_bindings`"
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:39
+msgid "Guidance for integrating Bokeh into other languages."
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:42
+msgid ":ref:`devguide_bokehjs`"
+msgstr ""
+
+#: ../../source/docs/dev_guide.rst:42
+msgid "Information specific to developing BokehJS."
+msgstr ""
+

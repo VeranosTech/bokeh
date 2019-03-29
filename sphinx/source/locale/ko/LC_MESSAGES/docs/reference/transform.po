@@ -1,0 +1,218 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/transform.rst:4
+msgid "bokeh.transform"
+msgstr ""
+
+#: bokeh.transform:1 of
+msgid ""
+"Helper functions for applying client-side computations such as "
+"transformations to data fields or ``ColumnDataSource`` expressions."
+msgstr ""
+
+#: bokeh.transform.cumsum:1 of
+msgid ""
+"Create a Create a ``DataSpec`` dict to generate a ``CumSum`` expression "
+"for a ``ColumnDataSource``."
+msgstr ""
+
+#: bokeh.transform.cumsum:5 bokeh.transform.stack:5 of
+msgid "Examples"
+msgstr ""
+
+#: bokeh.transform.cumsum:12 of
+msgid ""
+"will generate a ``CumSum`` expressions that sum the ``\"angle\"`` column "
+"of a data source. For the ``start_angle`` value, the cumulative sums will"
+" start with a zero value. For ``start_angle``, no initial zero will be "
+"added (i.e. the sums will start with the first angle value, and include "
+"the last)."
+msgstr ""
+
+#: bokeh.transform.dodge:1 bokeh.transform.jitter:1 of
+msgid ""
+"Create a ``DataSpec`` dict to apply a client-side ``Jitter`` "
+"transformation to a ``ColumnDataSource`` column."
+msgstr ""
+
+#: bokeh.transform.dodge bokeh.transform.factor_cmap
+#: bokeh.transform.factor_mark bokeh.transform.jitter
+#: bokeh.transform.linear_cmap bokeh.transform.log_cmap
+#: bokeh.transform.transform of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.transform.dodge:4 bokeh.transform.factor_cmap:5
+#: bokeh.transform.factor_mark:9 bokeh.transform.jitter:4
+#: bokeh.transform.linear_cmap:4 bokeh.transform.log_cmap:4 of
+msgid "a field name to configure ``DataSpec`` with"
+msgstr ""
+
+#: bokeh.transform.dodge:6 of
+msgid "the fixed offset to add to column data"
+msgstr ""
+
+#: bokeh.transform.dodge:8 bokeh.transform.jitter:13 of
+msgid ""
+"a range to use for computing synthetic coordinates when necessary, e.g. a"
+" ``FactorRange`` when the column data is categorical (default: None)"
+msgstr ""
+
+#: bokeh.transform.dodge bokeh.transform.factor_cmap
+#: bokeh.transform.factor_mark bokeh.transform.jitter bokeh.transform.transform
+#: of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.transform.dodge:13 bokeh.transform.factor_cmap:22
+#: bokeh.transform.factor_mark:23 bokeh.transform.jitter:18
+#: bokeh.transform.transform:9 of
+msgid "dict"
+msgstr ""
+
+#: bokeh.transform.factor_cmap:1 of
+msgid ""
+"Create a ``DataSpec`` dict to apply a client-side "
+"``CategoricalColorMapper`` transformation to a ``ColumnDataSource`` "
+"column."
+msgstr ""
+
+#: bokeh.transform.factor_cmap:7 bokeh.transform.linear_cmap:6
+#: bokeh.transform.log_cmap:6 of
+msgid "a list of colors to use for colormapping"
+msgstr ""
+
+#: bokeh.transform.factor_cmap:9 bokeh.transform.factor_mark:13 of
+msgid "a sequences of categorical factors corresponding to the palette"
+msgstr ""
+
+#: bokeh.transform.factor_cmap:12 bokeh.transform.factor_mark:16 of
+msgid ""
+"a start slice index to apply when the column data has factors with "
+"multiple levels. (default: 0)"
+msgstr ""
+
+#: bokeh.transform.factor_cmap:15 bokeh.transform.factor_mark:19 of
+msgid ""
+"an end slice index to apply when the column data has factors with "
+"multiple levels. (default: None)"
+msgstr ""
+
+#: bokeh.transform.factor_cmap:18 bokeh.transform.linear_cmap:22
+#: bokeh.transform.log_cmap:22 of
+msgid ""
+"a default color to use when mapping data from a column does not succeed "
+"(default: \"gray\")"
+msgstr ""
+
+#: bokeh.transform.factor_mark:1 of
+msgid ""
+"Create a ``DataSpec`` dict to apply a client-side "
+"``CategoricalMarkerMapper`` transformation to a ``ColumnDataSource`` "
+"column."
+msgstr ""
+
+#: bokeh.transform.factor_mark:6 of
+msgid ""
+"This transform is primarily only useful with ``scatter``, which can be "
+"parameterized by glyph type."
+msgstr ""
+
+#: bokeh.transform.factor_mark:11 of
+msgid "a list of markers to use map to"
+msgstr ""
+
+#: bokeh.transform.jitter:6 of
+msgid "the width of the random distribution to apply"
+msgstr ""
+
+#: bokeh.transform.jitter:8 of
+msgid "an offset to apply (default: 0)"
+msgstr ""
+
+#: bokeh.transform.jitter:10 of
+msgid "``\"uniform\"`` or ``\"normal\"`` (default: ``\"uniform\"``)"
+msgstr ""
+
+#: bokeh.transform.linear_cmap:1 of
+msgid ""
+"Create a ``DataSpec`` dict to apply a client-side ``LinearColorMapper`` "
+"transformation to a ``ColumnDataSource`` column."
+msgstr ""
+
+#: bokeh.transform.linear_cmap:8 bokeh.transform.log_cmap:8 of
+msgid ""
+"a minimum value of the range to map into the palette. Values below this "
+"are clamped to ``low``."
+msgstr ""
+
+#: bokeh.transform.linear_cmap:11 bokeh.transform.log_cmap:11 of
+msgid ""
+"a maximum value of the range to map into the palette. Values above this "
+"are clamped to ``high``."
+msgstr ""
+
+#: bokeh.transform.linear_cmap:14 bokeh.transform.log_cmap:14 of
+msgid ""
+"color to be used if data is lower than ``low`` value. If None, values "
+"lower than ``low`` are mapped to the first color in the palette. "
+"(default: None)"
+msgstr ""
+
+#: bokeh.transform.linear_cmap:18 bokeh.transform.log_cmap:18 of
+msgid ""
+"color to be used if data is higher than ``high`` value. If None, values "
+"higher than ``high`` are mapped to the last color in the palette. "
+"(default: None)"
+msgstr ""
+
+#: bokeh.transform.log_cmap:1 of
+msgid ""
+"Create a ``DataSpec`` dict to apply a client-side ``LogColorMapper`` "
+"transformation to a ``ColumnDataSource`` column."
+msgstr ""
+
+#: bokeh.transform.stack:1 of
+msgid ""
+"Create a Create a ``DataSpec`` dict to generate a ``Stack`` expression "
+"for a ``ColumnDataSource``."
+msgstr ""
+
+#: bokeh.transform.stack:10 of
+msgid ""
+"will generate a ``Stack`` that sums the ``\"sales\"`` and "
+"``\"marketing\"`` columns of a data source, and use those values as the "
+"``top`` coordinate for a ``VBar``."
+msgstr ""
+
+#: bokeh.transform.transform:1 of
+msgid ""
+"Create a ``DataSpec`` dict to apply an arbitrary client-side "
+"``Transform`` to a ``ColumnDataSource`` column."
+msgstr ""
+
+#: bokeh.transform.transform:4 of
+msgid "A field name to configure ``DataSpec`` with"
+msgstr ""
+
+#: bokeh.transform.transform:6 of
+msgid "A transforms to apply to that field"
+msgstr ""
+

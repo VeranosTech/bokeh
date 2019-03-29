@@ -1,0 +1,676 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/models/markers/x.rst:4
+msgid "bokeh.models.markers.X"
+msgstr ""
+
+#: bokeh.models.markers.X:1 of
+msgid "Render a 'X' cross markers."
+msgstr ""
+
+#: bokeh.models.markers.X:4 of
+msgid "Example"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.AngleSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The angles to rotate the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.NumberSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill alpha values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.ColorSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The fill color values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Dict` ( "
+":class:`~bokeh.core.properties.String` , "
+":class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Instance` ( "
+":class:`~bokeh.models.callbacks.CustomJS`  ) ) )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "A mapping of event names to lists of ``CustomJS`` callbacks."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Typically, rather then modifying this property directly, callbacks should"
+" be added using the ``Model.js_on_event`` method:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"A mapping of attribute names to lists of ``CustomJS`` callbacks, to be "
+"set up on BokehJS side when the document is created."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Typically, rather then modifying this property directly, callbacks should"
+" be added using the ``Model.js_on_change`` method:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line alpha values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LineCap`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line cap values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line color values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.DashPattern`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.Int`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line dash offset values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.Enum` ( "
+":class:`~bokeh.core.enums.LineJoin`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line join values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The line width values for the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.String`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "An arbitrary, user-supplied name for this model."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This name can be useful when querying the document to retrieve specific "
+"Bokeh models."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"No uniqueness guarantees or other conditions are enforced on any names "
+"that are provided, nor is the name used directly by Bokeh for any reason."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "*property type:* :class:`~bokeh.core.properties.ScreenDistanceSpec`"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The size (diameter) values for the markers in screen space units."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.String`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"List of events that are subscribed to by Python callbacks. This is the "
+"set of events that will be communicated from BokehJS back to Python for "
+"this model."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"*property type:* :class:`~bokeh.core.properties.List` ( "
+":class:`~bokeh.core.properties.Any`  )"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"An optional list of arbitrary, user-supplied values to attach to this "
+"model."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"This data can be useful when querying the document to retrieve specific "
+"Bokeh models:"
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"Or simply a convenient way to attach any necessary metadata to a model "
+"that can be accessed by ``CustomJS`` callbacks, etc."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"No uniqueness guarantees or other conditions are enforced on any tags "
+"that are provided, nor are the tags used directly by Bokeh for any "
+"reason."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The x-axis coordinates for the center of the markers."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid "The y-axis coordinates for the center of the markers."
+msgstr ""
+
+#: bokeh.models.markers.X.apply_theme:1 of
+msgid ""
+"Apply a set of theme values which will be used rather than defaults, but "
+"will not override application-set values."
+msgstr ""
+
+#: bokeh.models.markers.X.apply_theme:4 of
+msgid ""
+"The passed-in dictionary may be kept around as-is and shared with other "
+"instances to save memory (so neither the caller nor the |HasProps| "
+"instance should modify it)."
+msgstr ""
+
+#: bokeh.models.markers.X.apply_theme bokeh.models.markers.X.equals
+#: bokeh.models.markers.X.js_link bokeh.models.markers.X.lookup
+#: bokeh.models.markers.X.on_change bokeh.models.markers.X.properties
+#: bokeh.models.markers.X.properties_with_values
+#: bokeh.models.markers.X.query_properties_with_values
+#: bokeh.models.markers.X.select bokeh.models.markers.X.set_from_json
+#: bokeh.models.markers.X.set_select bokeh.models.markers.X.to_json
+#: bokeh.models.markers.X.to_json_string
+#: bokeh.models.markers.X.update_from_json of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.models.markers.X.apply_theme:8 of
+msgid "theme values to use in place of defaults"
+msgstr ""
+
+#: bokeh.models.markers.X.apply_theme bokeh.models.markers.X.dataspecs
+#: bokeh.models.markers.X.dataspecs_with_props bokeh.models.markers.X.equals
+#: bokeh.models.markers.X.lookup bokeh.models.markers.X.on_change
+#: bokeh.models.markers.X.properties
+#: bokeh.models.markers.X.properties_containers
+#: bokeh.models.markers.X.properties_with_refs
+#: bokeh.models.markers.X.properties_with_values
+#: bokeh.models.markers.X.query_properties_with_values
+#: bokeh.models.markers.X.select bokeh.models.markers.X.select_one
+#: bokeh.models.markers.X.set_from_json bokeh.models.markers.X.set_select
+#: bokeh.models.markers.X.themed_values bokeh.models.markers.X.unapply_theme
+#: bokeh.models.markers.X.update bokeh.models.markers.X.update_from_json of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.models.markers.X.apply_theme:11 bokeh.models.markers.X.on_change:8
+#: bokeh.models.markers.X.set_from_json:20 bokeh.models.markers.X.set_select:9
+#: bokeh.models.markers.X.unapply_theme:3 bokeh.models.markers.X.update:3
+#: bokeh.models.markers.X.update_from_json:19 of
+msgid "None"
+msgstr ""
+
+#: bokeh.models.markers.X.dataspecs:1 of
+msgid "Collect the names of all ``DataSpec`` properties on this class."
+msgstr ""
+
+#: bokeh.models.markers.X.dataspecs:3
+#: bokeh.models.markers.X.dataspecs_with_props:4
+#: bokeh.models.markers.X.properties_containers:3
+#: bokeh.models.markers.X.properties_with_refs:4
+#: bokeh.models.markers.X.properties_with_values:3 of
+msgid ""
+"This method *always* traverses the class hierarchy and includes "
+"properties defined on any parent classes."
+msgstr ""
+
+#: bokeh.models.markers.X.dataspecs:6 of
+msgid "names of ``DataSpec`` properties"
+msgstr ""
+
+#: bokeh.models.markers.X.dataspecs bokeh.models.markers.X.dataspecs_with_props
+#: bokeh.models.markers.X.lookup bokeh.models.markers.X.properties
+#: bokeh.models.markers.X.properties_containers
+#: bokeh.models.markers.X.properties_with_refs
+#: bokeh.models.markers.X.properties_with_values
+#: bokeh.models.markers.X.query_properties_with_values of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.models.markers.X.dataspecs_with_props:1 of
+msgid ""
+"Collect a dict mapping the names of all ``DataSpec`` properties on this "
+"class to the associated properties."
+msgstr ""
+
+#: bokeh.models.markers.X.dataspecs_with_props:7 of
+msgid "mapping of names and ``DataSpec`` properties"
+msgstr ""
+
+#: bokeh.models.markers.X.equals:1 of
+msgid "Structural equality of models."
+msgstr ""
+
+#: bokeh.models.markers.X.equals:3 of
+msgid "the other instance to compare to"
+msgstr ""
+
+#: bokeh.models.markers.X.equals:6 of
+msgid "True, if properties are structurally equal, otherwise False"
+msgstr ""
+
+#: bokeh.models.markers.X.js_link:1 of
+msgid "Link two Bokeh model properties using JavaScript."
+msgstr ""
+
+#: bokeh.models.markers.X.js_link:3 of
+msgid ""
+"This is a convenience method that simplifies adding a CustomJS callback "
+"to update one Bokeh model property whenever another changes value."
+msgstr ""
+
+#: bokeh.models.markers.X.js_link:6 of
+msgid "The name of a Bokeh property on this model"
+msgstr ""
+
+#: bokeh.models.markers.X.js_link:8 of
+msgid "A Bokeh model to link to self.attr"
+msgstr ""
+
+#: bokeh.models.markers.X.js_link:10 of
+msgid "The property on ``other`` to link together"
+msgstr ""
+
+#: bokeh.models.markers.X.js_link:13 of
+msgid "Added in version 1.1"
+msgstr ""
+
+#: bokeh.models.markers.X.js_link of
+msgid "raises"
+msgstr ""
+
+#: bokeh.models.markers.X.js_link:15 of
+msgid ":exc:`ValueError`"
+msgstr ""
+
+#: bokeh.models.markers.X.js_link:18 bokeh.models.markers.X.update:6 of
+msgid "Examples"
+msgstr ""
+
+#: bokeh.models.markers.X.js_link:19 of
+msgid "This code with ``js_link``:"
+msgstr ""
+
+#: bokeh.models.markers.X.js_link:25 of
+msgid "is equivalent to the following:"
+msgstr ""
+
+#: bokeh.models.markers.X.js_on_change:1 of
+msgid "Attach a ``CustomJS`` callback to an arbitrary BokehJS model event."
+msgstr ""
+
+#: bokeh.models.markers.X.js_on_change:3 of
+msgid ""
+"On the BokehJS side, change events for model properties have the form "
+"``\"change:property_name\"``. As a convenience, if the event name passed "
+"to this method is also the name of a property on the model, then it will "
+"be prefixed with ``\"change:\"`` automatically:"
+msgstr ""
+
+#: bokeh.models.markers.X.js_on_change:14 of
+msgid ""
+"However, there are other kinds of events that can be useful to respond "
+"to, in addition to property change events. For example to run a callback "
+"whenever data is streamed to a ``ColumnDataSource``, use the "
+"``\"stream\"`` event on the source:"
+msgstr ""
+
+#: bokeh.models.markers.X.lookup:1 of
+msgid ""
+"Find the ``PropertyDescriptor`` for a Bokeh property on a class, given "
+"the property name."
+msgstr ""
+
+#: bokeh.models.markers.X.lookup:4 of
+msgid "name of the property to search for"
+msgstr ""
+
+#: bokeh.models.markers.X.lookup:7 of
+msgid "descriptor for property named ``name``"
+msgstr ""
+
+#: bokeh.models.markers.X.on_change:1 of
+msgid "Add a callback on this object to trigger when ``attr`` changes."
+msgstr ""
+
+#: bokeh.models.markers.X.on_change:3 of
+msgid "an attribute name on this object"
+msgstr ""
+
+#: bokeh.models.markers.X.on_change:5 of
+msgid "callback functions to register"
+msgstr ""
+
+#: bokeh.models.markers.X.on_change:10 of
+msgid "Example:"
+msgstr ""
+
+#: bokeh.models.markers.X.properties:1 of
+msgid "Collect the names of properties on this class."
+msgstr ""
+
+#: bokeh.models.markers.X.properties:3 of
+msgid ""
+"This method *optionally* traverses the class hierarchy and includes "
+"properties defined on any parent classes."
+msgstr ""
+
+#: bokeh.models.markers.X.properties:6 of
+msgid ""
+"Whether to include properties defined on parent classes in the results. "
+"(default: True)"
+msgstr ""
+
+#: bokeh.models.markers.X.properties:10 of
+msgid "property names"
+msgstr ""
+
+#: bokeh.models.markers.X.properties_containers:1 of
+msgid "Collect the names of all container properties on this class."
+msgstr ""
+
+#: bokeh.models.markers.X.properties_containers:6 of
+msgid "names of container properties"
+msgstr ""
+
+#: bokeh.models.markers.X.properties_with_refs:1 of
+msgid ""
+"Collect the names of all properties on this class that also have "
+"references."
+msgstr ""
+
+#: bokeh.models.markers.X.properties_with_refs:7 of
+msgid "names of properties that have references"
+msgstr ""
+
+#: bokeh.models.markers.X.properties_with_values:1 of
+msgid "Collect a dict mapping property names to their values."
+msgstr ""
+
+#: bokeh.models.markers.X.properties_with_values:6 of
+msgid ""
+"Non-serializable properties are skipped and property values are in "
+"\"serialized\" format which may be slightly different from the values you"
+" would normally read from the properties; the intent of this method is to"
+" return the information needed to losslessly reconstitute the object "
+"instance."
+msgstr ""
+
+#: bokeh.models.markers.X.properties_with_values:12 of
+msgid ""
+"Whether to include properties that haven't been explicitly set since the "
+"object was created. (default: True)"
+msgstr ""
+
+#: bokeh.models.markers.X.properties_with_values:16 of
+msgid "mapping from property names to their values"
+msgstr ""
+
+#: bokeh.models.markers.X.query_properties_with_values:1 of
+msgid "Query the properties values of |HasProps| instances with a predicate."
+msgstr ""
+
+#: bokeh.models.markers.X.query_properties_with_values:4 of
+msgid "A callable that accepts property descriptors and returns True or False"
+msgstr ""
+
+#: bokeh.models.markers.X.query_properties_with_values:7 of
+msgid ""
+"Whether to include properties that have not been explicitly set by a user"
+" (default: True)"
+msgstr ""
+
+#: bokeh.models.markers.X.query_properties_with_values:11 of
+msgid "mapping of property names and values for matching properties"
+msgstr ""
+
+#: bokeh.models.markers.X.references:1 of
+msgid "Returns all ``Models`` that this object has references to."
+msgstr ""
+
+#: bokeh.models.markers.X.remove_on_change:1 of
+msgid "Remove a callback from this object"
+msgstr ""
+
+#: bokeh.models.markers.X.select:1 of
+msgid ""
+"Query this object and all of its references for objects that match the "
+"given selector."
+msgstr ""
+
+#: bokeh.models.markers.X.select:7 of
+msgid "seq[Model]"
+msgstr ""
+
+#: bokeh.models.markers.X.select_one:1 of
+msgid ""
+"Query this object and all of its references for objects that match the "
+"given selector.  Raises an error if more than one object is found.  "
+"Returns single matching object, or None if nothing is found :param "
+"selector: :type selector: JSON-like"
+msgstr ""
+
+#: bokeh.models.markers.X.select_one:7 of
+msgid "Model"
+msgstr ""
+
+#: bokeh.models.markers.X.set_from_json:1 of
+msgid "Set a property value on this object from JSON."
+msgstr ""
+
+#: bokeh.models.markers.X.set_from_json:3 of
+msgid "(str) : name of the attribute to set"
+msgstr ""
+
+#: bokeh.models.markers.X.set_from_json:4 of
+msgid "(JSON-value) : value to set to the attribute to"
+msgstr ""
+
+#: bokeh.models.markers.X.set_from_json:5
+#: bokeh.models.markers.X.update_from_json:4 of
+msgid ""
+"Mapping of model ids to models (default: None)  This is needed in cases "
+"where the attributes to update also have values that have references."
+msgstr ""
+
+#: bokeh.models.markers.X.set_from_json:5
+#: bokeh.models.markers.X.update_from_json:4 of
+msgid "Mapping of model ids to models (default: None)"
+msgstr ""
+
+#: bokeh.models.markers.X.set_from_json:7
+#: bokeh.models.markers.X.update_from_json:6 of
+msgid ""
+"This is needed in cases where the attributes to update also have values "
+"that have references."
+msgstr ""
+
+#: bokeh.models.markers.X.set_from_json:10
+#: bokeh.models.markers.X.update_from_json:9 of
+msgid ""
+"This is used to prevent \"boomerang\" updates to Bokeh apps.  In the "
+"context of a Bokeh server application, incoming updates to properties "
+"will be annotated with the session that is doing the updating. This value"
+" is propagated through any subsequent change notifications that the "
+"update triggers. The session can compare the event setter to itself, and "
+"suppress any updates that originate from itself."
+msgstr ""
+
+#: bokeh.models.markers.X.set_from_json:10
+#: bokeh.models.markers.X.update_from_json:9 of
+msgid "This is used to prevent \"boomerang\" updates to Bokeh apps."
+msgstr ""
+
+#: bokeh.models.markers.X.set_from_json:12
+#: bokeh.models.markers.X.update_from_json:11 of
+msgid ""
+"In the context of a Bokeh server application, incoming updates to "
+"properties will be annotated with the session that is doing the updating."
+" This value is propagated through any subsequent change notifications "
+"that the update triggers. The session can compare the event setter to "
+"itself, and suppress any updates that originate from itself."
+msgstr ""
+
+#: bokeh.models.markers.X.set_select:1 of
+msgid ""
+"Update objects that match a given selector with the specified "
+"attribute/value updates."
+msgstr ""
+
+#: bokeh.models.markers.X.themed_values:1 of
+msgid "Get any theme-provided overrides."
+msgstr ""
+
+#: bokeh.models.markers.X.themed_values:3 of
+msgid ""
+"Results are returned as a dict from property name to value, or ``None`` "
+"if no theme overrides any values for this instance."
+msgstr ""
+
+#: bokeh.models.markers.X.themed_values:6 of
+msgid "dict or None"
+msgstr ""
+
+#: bokeh.models.markers.X.to_json:1 of
+msgid ""
+"Returns a dictionary of the attributes of this object, containing only "
+"\"JSON types\" (string, number, boolean, none, dict, list)."
+msgstr ""
+
+#: bokeh.models.markers.X.to_json:5 of
+msgid ""
+"References to other objects are serialized as \"refs\" (just the object "
+"ID and type info), so the deserializer will need to separately have the "
+"full attributes of those other objects."
+msgstr ""
+
+#: bokeh.models.markers.X.to_json:10 of
+msgid ""
+"There's no corresponding ``from_json()`` because to deserialize an object"
+" is normally done in the context of a Document (since the Document can "
+"resolve references)."
+msgstr ""
+
+#: bokeh.models.markers.X.to_json:14 bokeh.models.markers.X.to_json_string:12
+#: of
+msgid "For most purposes it's best to serialize and deserialize entire documents."
+msgstr ""
+
+#: bokeh.models.markers.X.to_json:17 bokeh.models.markers.X.to_json_string:15
+#: of
+msgid "whether to include attributes that haven't been changed from the default"
+msgstr ""
+
+#: bokeh.models.markers.X.to_json_string:1 of
+msgid "Returns a JSON string encoding the attributes of this object."
+msgstr ""
+
+#: bokeh.models.markers.X.to_json_string:3 of
+msgid ""
+"References to other objects are serialized as references (just the object"
+" ID and type info), so the deserializer will need to separately have the "
+"full attributes of those other objects."
+msgstr ""
+
+#: bokeh.models.markers.X.to_json_string:8 of
+msgid ""
+"There's no corresponding ``from_json_string()`` because to deserialize an"
+" object is normally done in the context of a Document (since the Document"
+" can resolve references)."
+msgstr ""
+
+#: bokeh.models.markers.X.unapply_theme:1 of
+msgid "Remove any themed values and restore defaults."
+msgstr ""
+
+#: bokeh.models.markers.X.update:1 of
+msgid "Updates the object's properties from the given keyword arguments."
+msgstr ""
+
+#: bokeh.models.markers.X.update:7 of
+msgid "The following are equivalent:"
+msgstr ""
+
+#: bokeh.models.markers.X.update_from_json:1 of
+msgid "Updates the object's properties from a JSON attributes dictionary."
+msgstr ""
+
+#: bokeh.models.markers.X.update_from_json:3 of
+msgid "(JSON-dict) : attributes and values to update"
+msgstr ""
+
+#: bokeh.models.markers.X.document:1 of
+msgid "The |Document| this model is attached to (can be ``None``)"
+msgstr ""
+
+#: bokeh.models.markers.X.ref:1 of
+msgid "A Bokeh protocol \"reference\" to this model, i.e. a dict of the form:"
+msgstr ""
+
+#: bokeh.models.markers.X.ref:11 of
+msgid "Additionally there may be a `subtype` field if this model is a subtype."
+msgstr ""
+

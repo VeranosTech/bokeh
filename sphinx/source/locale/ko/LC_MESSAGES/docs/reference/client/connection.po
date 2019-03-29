@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/client/connection.rst:4
+msgid "bokeh.client.connection"
+msgstr ""
+
+#: bokeh.client.connection:1 of
+msgid ""
+"Implements a very low level facility for communicating with a Bokeh "
+"Server."
+msgstr ""
+
+#: bokeh.client.connection:4 of
+msgid ""
+"Users will always want to use "
+":class:`~bokeh.client.session.ClientSession` instead for standard usage."
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection:1 of
+msgid ""
+"A Bokeh low-level class used to implement ``ClientSession``; use "
+"``ClientSession`` to connect to the server."
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.__init__:1 of
+msgid "Opens a websocket connection to the server."
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.close:1 of
+msgid "Close the Websocket connection."
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.force_roundtrip:1 of
+msgid ""
+"Force a round-trip request/reply to the server, sometimes needed to avoid"
+" race conditions. Mostly useful for testing."
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.force_roundtrip:4 of
+msgid ""
+"Outside of test suites, this method hurts performance and should not be "
+"needed."
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.force_roundtrip
+#: bokeh.client.connection.ClientConnection.pull_doc
+#: bokeh.client.connection.ClientConnection.push_doc
+#: bokeh.client.connection.ClientConnection.request_server_info of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.force_roundtrip:7
+#: bokeh.client.connection.ClientConnection.pull_doc:6 of
+msgid "None"
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.loop_until_closed:1 of
+msgid ""
+"Execute a blocking loop that runs and executes event callbacks until the "
+"connection is closed (e.g. by hitting Ctrl-C)."
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.loop_until_closed:4 of
+msgid ""
+"While this method can be used to run Bokeh application code \"outside\" "
+"the Bokeh server, this practice is HIGHLY DISCOURAGED for any real use "
+"case."
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.pull_doc:1 of
+msgid "Pull a document from the server, overwriting the passed-in document"
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.pull_doc
+#: bokeh.client.connection.ClientConnection.push_doc of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.pull_doc:3 of
+msgid "(Document) The document to overwrite with server content."
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.push_doc:1 of
+msgid "Push a document to the server, overwriting any existing server-side doc."
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.push_doc:3 of
+msgid "(Document) A Document to push to the server"
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.push_doc:6 of
+msgid "The server reply"
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.request_server_info:1 of
+msgid "Ask for information about the server."
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.request_server_info:3 of
+msgid "A dictionary of server attributes."
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.connected:1 of
+msgid ""
+"Whether we've connected the Websocket and have exchanged initial "
+"handshake messages."
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.io_loop:1 of
+msgid "The Tornado ``IOLoop`` this connection is using."
+msgstr ""
+
+#: bokeh.client.connection.ClientConnection.url:1 of
+msgid "The URL of the websocket this Connection is to."
+msgstr ""
+

@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/webgl.rst:4
+msgid "Speeding up with WebGL"
+msgstr ""
+
+#: ../../source/docs/user_guide/webgl.rst:6
+msgid ""
+"When visualizing large datasets with Bokeh, the interaction can become "
+"rather slow. To counter this, one can enable WebGL, which allows "
+"rendering some glyph types on graphics hardware."
+msgstr ""
+
+#: ../../source/docs/user_guide/webgl.rst:11
+msgid "What is WebGL?"
+msgstr ""
+
+#: ../../source/docs/user_guide/webgl.rst:13
+msgid ""
+"WebGL is a JavaScript API that allows rendering content in the browser "
+"via the Graphics Processing Unit (GPU), without the need for plugins. "
+"WebGL is standardized and available in all modern browsers."
+msgstr ""
+
+#: ../../source/docs/user_guide/webgl.rst:18
+msgid "How to enable WebGL"
+msgstr ""
+
+#: ../../source/docs/user_guide/webgl.rst:20
+msgid ""
+"To enable WebGL, set the plot's ``output_backend`` property to "
+"``\"webgl\"``:"
+msgstr ""
+
+#: ../../source/docs/user_guide/webgl.rst:28
+msgid "Support"
+msgstr ""
+
+#: ../../source/docs/user_guide/webgl.rst:30
+msgid ""
+"Only a subset of Bokeh's objects are capable of rendering in WebGL. "
+"Currently supported are the circle and line glyphs, and most markers "
+"supported by ``scatter()`` (asterisk, circle, square, diamond, triangle, "
+"inverted_triangle, cross, circle_cross, square_cross, diamond_cross, x, "
+"square_x, circle_x). You can safely combine multiple glyphs in a plot, "
+"even if some are rendered in WebGL, and some are not."
+msgstr ""
+
+#: ../../source/docs/user_guide/webgl.rst:37
+msgid ""
+"The performance improvements when using WebGL varies per situation. Due "
+"to overhead in some places of BokehJS, we can currently not benefit from "
+"the full speed that you might expect from WebGL. This is also something "
+"we plan to improve over time."
+msgstr ""
+
+#: ../../source/docs/user_guide/webgl.rst:43
+msgid "Notes"
+msgstr ""
+
+#: ../../source/docs/user_guide/webgl.rst:45
+msgid ""
+"Glyphs drawn using WebGL are drawn on top of glyphs that are not drawn in"
+" WebGL."
+msgstr ""
+
+#: ../../source/docs/user_guide/webgl.rst:47
+msgid ""
+"When the scale is non-linear (e.g. log), the system falls back to 2D "
+"rendering."
+msgstr ""
+
+#: ../../source/docs/user_guide/webgl.rst:49
+msgid ""
+"Making a selections of markers on Internet Explorer will reduce the size "
+"of the markers to 1 pixel (looks like a bug in IE)."
+msgstr ""
+
+#: ../../source/docs/user_guide/webgl.rst:53
+msgid "Examples"
+msgstr ""
+

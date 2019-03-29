@@ -1,0 +1,324 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/bokehjs.rst:4
+msgid "Developing with JavaScript"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:6
+msgid ""
+"In order to create interactive plots and applications in the browser, "
+"Bokeh has a client-side library, BokehJS, to do all the work of drawing "
+"and rendering and event handling in a browser. The Bokeh Python library, "
+"and libraries for :ref:`userguide_quickstart_other_languages` such as R, "
+"Scala, and Julia, are primarily a means to interact with BokehJS "
+"conveniently at a high level, without needing to explicitly worry about "
+"JavaScript or web development. However, BokehJS has its own API, and it "
+"is possible to do pure JavaScript development using BokehJS directly. "
+"Additionally, :ref:`userguide_extensions` with custom models typically "
+"requires interacting with BokehJS directly as well."
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:17
+msgid ""
+"The BokehJS APIs are new as of version ``0.12`` and may undergo some "
+"changes before a ``1.0`` release."
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:21
+msgid "Obtaining BokehJS"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:23
+msgid ""
+"BokehJS is made available via CDN and ``npm``. See the "
+":ref:`install_bokehjs` section of the :ref:`installation` page for more "
+"details."
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:30
+msgid "Low Level Models"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:32
+msgid ""
+"The low level models for building up plots and applications (e.g. guides "
+"and glyphs and widgets, etc.) generally match the Bokeh Python models "
+"exactly. Accordingly, the :ref:`refguide` is a primary resource for "
+"answering questions about BokehJS models, even though it is presented "
+"from a Python perspective."
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:38
+msgid ""
+"Unlike the hierarchical organization of the Python library, all of the "
+"JavaScript models are all in one flat ``Bokeh`` module. Typically any "
+"Python ``ClassName`` is available as ``Bokeh.ClassName`` from JavaScript."
+" The complete list of models available from JavaScript can be seen at "
+":bokeh-tree:`bokehjs/src/lib/api/models.ts`."
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:44
+msgid ""
+"When creating models from JavaScript, all of the keyword arguments that "
+"would get passed to the Python object initializer are passed as a "
+"JavaScript object. Here is a comparison of how to create a `Range1d` "
+"model. First, in python:"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:53
+msgid "and the corresponding JavaScript version:"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:59
+msgid ""
+"This pattern holds in general. Once created, Bokeh model properties are "
+"set in exactly the same way in both languages. To set the ``end`` value "
+"to 30 on the `Range1d` from above, use ``xdr.end = 30`` in either Python "
+"or JavaScript."
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:64
+msgid ""
+"As an example, here is an example that creates a plot with axes, grids, "
+"and a line glyph from scratch. Comparison with examples in :bokeh-"
+"tree:`examples/models` will show that the translation from Python to "
+"JavaScript at this level is nearly one-to-one:"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:76
+msgid "Interfaces"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:78
+msgid ""
+"Similar to the Python Bokeh library, BokehJS provides various higher "
+"level interfaces for interacting with and composing the low level model "
+"objects. These higher level interfaces currently comprise  "
+"``Bokeh.Plotting`` and ``Bokeh.Charts``."
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:84
+msgid ""
+"As of ``0.12.2`` the APIs described below have been split into BokehJS "
+"API, in the ``bokeh-api.js`` file, which must be imported in addition to "
+"``bokeh.js``."
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:91
+msgid "``Bokeh.Plotting``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:93
+msgid ""
+"The JavaScript ``Bokeh.Plotting`` API is a port of the Python "
+"``bokeh.plotting`` interface. Accordingly, the information in the "
+":ref:`userguide_plotting` section of the User Guide can be a useful "
+"reference in addition to the material here."
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:98
+msgid ""
+"Here is an example that is very similar the Python example :bokeh-"
+"tree:`examples/plotting/file/color_scatter.py`:"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:145
+msgid "``Bokeh.Charts``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:147
+msgid ""
+"The JavaScript ``Bokeh.Charts`` API is a high-level interface for "
+"charting that is unique to BokehJS. Currently , there are two high level "
+"charts supported: ``pie`` and ``bar``."
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:154
+msgid "``Bokeh.Charts.pie``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:156
+msgid "To create pie charts using ``Bokeh.Charts.pie``, the basic usage is:"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:162
+msgid ""
+"Where ``data`` is a JavaScript object that has ``labels`` and ``values`` "
+"keys, and ``options`` is an object that has any of the following optional"
+" keys:"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst
+msgid "``width``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:166
+#: ../../source/docs/user_guide/bokehjs.rst:243
+msgid "*number* --- chart width in pixels"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst
+msgid "``height``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:167
+#: ../../source/docs/user_guide/bokehjs.rst:244
+msgid "*number* --- chart height in pixels"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst
+msgid "``inner_radius``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:168
+msgid "*number* --- inner radius for wedges in pixels"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst
+msgid "``outer_radius``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:169
+msgid "*number* --- outer radius for wedges in pixels"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst
+msgid "``start_angle``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:170
+msgid "*number* --- start angle for wedges in radians"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst
+msgid "``end_angle``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:171
+msgid "*number* --- end angle for wedges in radians"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst
+msgid "``center``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:172
+msgid "*[number, number]* --- ``(x, y)`` location of the pie center in pixels"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst
+msgid "``palette``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:173
+#: ../../source/docs/user_guide/bokehjs.rst:248
+msgid ""
+"*Palette | Array<Color>* --- a named palette, or list of colors to "
+"colormap the values"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst
+msgid "``slice_labels``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:174
+msgid ""
+"*\"labels\" | \"values\" | \"percentages\"* --- what the tooltip should "
+"show"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:176
+msgid ""
+"By default, plots created ``Bokeh.Charts.pie`` automatically add a "
+"tooltip and hover policy. Here is some example code that demonstrates the"
+" ``pie`` function, with the plot it generates shown below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:216
+msgid "``Bokeh.Charts.bar``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:218
+msgid "To create bar charts using ``Bokeh.Charts.bar``, the basic usage is:"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:224
+msgid ""
+"Where ``data`` is a JavaScript array that has as elements lists that are "
+"\"rows\" from a data table. The first \"row\" should contain the column "
+"headers. H Here is an example that might represent sales data from "
+"different regions for different years:"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:240
+msgid ""
+"Similar to ``pie``, the ``options`` parameter is an object that has any "
+"of the following optional keys:"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst
+msgid "``stacked``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:245
+msgid "*boolean* --- whether the bars should be stacked or not"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst
+msgid "``orientation``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:246
+msgid "*\"horizontal\" | \"vertical\"* --- how the bars should be oriented"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst
+msgid "``bar_width``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:247
+msgid "*number* --- width of each bar in pixels"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst
+msgid "``axis_number_format``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:249
+msgid "*string* --- a format string to use for axis ticks"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:251
+msgid ""
+"By default, plots created ``Bokeh.Charts.bar`` automatically add a "
+"tooltip and hover policy. Here is some example code that demonstrates the"
+" ``bar`` function, with the plot it generates shown below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:289
+msgid "``Minimal Complete Example``"
+msgstr ""
+
+#: ../../source/docs/user_guide/bokehjs.rst:291
+msgid ""
+"A minimal example follows, demonstrating a proper import of the "
+"libraries, and dynamic creation and modification of plots."
+msgstr ""
+

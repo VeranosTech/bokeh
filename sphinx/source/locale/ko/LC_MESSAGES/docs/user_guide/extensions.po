@@ -1,0 +1,290 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/extensions.rst:4
+msgid "Extending Bokeh"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:6
+msgid ""
+"Bokeh comes with a rich variety of built-in types that can be used to "
+"make sophisticated interactive visualizations and data applications in "
+"the browser. However, there are capabilities and features that users may "
+"desire, which may not make it into the core library, either because they "
+"are too specialized, or for lack of resources. Fortunately, it is "
+"possible to extend Bokeh by creating custom user extensions."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:13
+msgid "Modify the behavior of existing Bokeh models"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:14
+msgid "Add new models to connect third-party JavaScript libraries to Python"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:15
+msgid "Create highly specialized models for domain specific use-cases."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:17
+msgid ""
+"Custom extensions can be made and used with standard releases, and do not"
+" require setting up a development environment or building anything from "
+"source. They provide the easiest way to get involved in Bokeh "
+"development. By lowering the bar for extending Bokeh, users are afforded "
+"the ability to \"try out\" new features and functionality (which might "
+"some day be candidates for adding to the core library) without having to "
+"wait on the core team."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:27
+msgid "Structure of Bokeh Models"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:32
+msgid "Python Models"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:34
+msgid ""
+"For the most part, Python Bokeh models are completely declarative "
+"classes. Custom extensions are created by making a subclass "
+":class:`~bokeh.model.Model` (or one of its subclasses), and including "
+"special class attributes to declare the properties that are mirrored on "
+"the JavaScript side. All of the available property types are documented "
+"in the :ref:`bokeh.core.properties` section of the Reference Guide."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:41
+msgid ""
+"A small example that creates a Custom readout for a slider is presented "
+"below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:55
+msgid ""
+"Since we would like to create a custom extension that can participate in "
+"DOM layout, we subclass from :class:`~bokeh.models.layouts.HTMLBox`. We "
+"also added two properties: a :class:`~bokeh.core.properties.String` to "
+"configure a text message for the readout, and an "
+":class:`~bokeh.core.properties.Instance` that can hold a "
+":class:`~bokeh.models.widgets.inputs.Slider`. The JavaScript ``Slider`` "
+"object that corresponds to the Python ``Slider`` will be made available "
+"to use."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:66
+msgid "JavaScript Models and Views"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:68
+msgid ""
+"While the Python side is mostly declarative, without much or any real "
+"code, the JavaScript side requires code to implement the model. When "
+"appropriate, code for a corresponding view must also be provided."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:72
+msgid ""
+"Below is an annotated TypeScript implementation for ``Custom`` and its "
+"``CustomView``. For built-in models, this code is included directly in "
+"the final BokehJS scripts. We will see how to connect this code to custom"
+" extensions in the next section."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:78
+msgid ""
+"BokehJS was originally written in `CoffeeScript`_, but was ported to "
+"`TypeScript`_. Accordingly, the guidance here is presented in TypeScript."
+" However, custom extensions can be written in CoffeeScript or pure "
+"JavaScript as well."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:148
+msgid "Putting it Together"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:150
+msgid ""
+"For built-in Bokeh models, the implementation in BokehJS is automatically"
+" matched with the corresponding Python model by the build process. In "
+"order connect JavaScript implementations to Python models, one additional"
+" step is needed. The Python class should have have a class attribute "
+"called ``__implementation__`` whose value is the TypeScript (or "
+"JavaScript or CoffeeScript) code that the defines the client-side model "
+"as well as any optional views."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:158
+msgid ""
+"Assuming the TypeScript code above was saved in a file ``custom.ts``, "
+"then the complete Python class might look like:"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:174
+msgid ""
+"Then, if this class is defined in a Python module ``custom.py`` then the "
+"custom extension can now be used exactly like any built-in Bokeh model:"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:191
+msgid ""
+"Which results in the output below. The JavaScript code for the "
+"implementation is automatically included in the rendered document. Scrub "
+"the slider to see the special header update as the slider moves:"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:201
+msgid "Specifying Implementation Languages"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:203
+msgid ""
+"If the value of ``__implementation__`` is a single line that ends in one "
+"of the know extensions ``.coffee``, ``.js``, or ``.ts`` then the it is "
+"interpreted as a filename. The corresponding file is opened and its "
+"contents are compiled appropriately according to the file extension."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:208
+msgid ""
+"Otherwise, if the implementation is inline in the class, the language for"
+" the source code may be explicitly provided by using the classes "
+"``CoffeeScript``, ``JavaScript``, or ``TypeScript``, e.g."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:218
+msgid ""
+"Otherwise, if a plain string is given, it is assumed to be "
+"``CoffeeScript``."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:223
+msgid "Supplying External Resources"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:225
+msgid ""
+"As part of implementing a custom model in Bokeh, there may be the need to"
+" include third-party Javascript libraries or CSS resources. Bokeh "
+"supports supplying external resources through the Python class attributes"
+" ``__javascript__`` and ``__css__`` of custom models."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:230
+msgid ""
+"Including the URL paths to external resources will causes Bokeh to add "
+"the resources to the html document head, causing the Javascript library "
+"to be available in the global namespace and the custom CSS styling to be "
+"applied."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:234
+msgid ""
+"One example is including the JS and CSS files for `KaTeX`_ (a Javascript-"
+"based typesetting library that supports LaTeX) in order to create a "
+"``LatexLabel`` custom model."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:250
+msgid ""
+"See the LaTeX example in the extensions gallery below to see the full "
+"implementation and resulting output."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:256
+msgid "Integration with Bokeh Server"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:258
+msgid ""
+"No special work or modification is needed to integrate custom user "
+"extensions with the Bokeh server. As for standalone documents, the "
+"JavaScript implementation is automatically included in the rendered "
+"application. Additionally the standard synchronization of Bokeh model "
+"properties that happens for all built-in models happens transparently for"
+" custom user extensions as well."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:268
+msgid "Examples"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:270
+msgid ""
+"Here we present some complete examples to serve as a reference. It is "
+"hoped that the information in this section is a useful point of departure"
+" for anyone creating a custom extensions. However, creating extensions is"
+" a somewhat advanced topic. In many cases, it will be required to study "
+"the source code of the base classes in :bokeh-"
+"tree:`bokehjs/src/lib/models`."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:276
+msgid ""
+"For any questions that remain, please contact any of the sources in "
+":ref:`userguide_info`.Collaborating with the community will help make "
+"additions and improvements to this section for future users."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:290
+msgid ":ref:`userguide_extensions_examples_ticking`"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:289
+msgid ""
+"Subclass built-in Bokeh models for axis ticking to customize their "
+"behaviour."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:293
+msgid ":ref:`userguide_extensions_examples_tool`"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:293
+msgid "Make a completely new tool that can draw on a plot canvas."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:297
+msgid ":ref:`userguide_extensions_examples_wrapping`"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:296
+msgid ""
+"Connect Python to a third-party JavaScript library by wrapping it with a "
+"Bokeh custom extension."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:300
+msgid ":ref:`userguide_extensions_examples_latex`"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:300
+msgid "Include a third-party JavaScript library in order to render LaTeX."
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:303
+msgid ":ref:`userguide_extensions_examples_widget`"
+msgstr ""
+
+#: ../../source/docs/user_guide/extensions.rst:303
+msgid "Include a third-party JavaScript library in an extension widget."
+msgstr ""
+

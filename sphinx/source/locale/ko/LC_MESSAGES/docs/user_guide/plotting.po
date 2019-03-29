@@ -1,0 +1,643 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/user_guide/plotting.rst:4
+msgid "Plotting with Basic Glyphs"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:9
+msgid "Creating Figures"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:11
+msgid ""
+"Note that Bokeh plots created using the |bokeh.plotting| interface come "
+"with a default set of tools, and default visual styles. See "
+":ref:`userguide_styling` for information about how to customize the "
+"visual style of plots, and :ref:`userguide_tools` for information about "
+"changing or specifying tools."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:19
+msgid "Scatter Markers"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:21
+msgid "To scatter circle markers on a plot, use the |circle| method of |Figure|:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:26
+msgid "Similarly, to scatter square markers, use the |square| method of |Figure|:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:31
+msgid ""
+"There are lots of marker types available in Bokeh, you can see details "
+"and example plots for all of them by clicking on entries in the list "
+"below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:37
+msgid "|asterisk|"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:38
+msgid "|circle|"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:39
+msgid "|circle_cross|"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:40
+msgid "|circle_x|"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:41
+msgid "|cross|"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:42
+msgid "|dash|"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:43
+msgid "|diamond|"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:44
+msgid "|diamond_cross|"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:45
+msgid "|inverted_triangle|"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:46
+msgid "|square|"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:47
+msgid "|square_cross|"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:48
+msgid "|square_x|"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:49
+msgid "|triangle|"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:50
+msgid "|x|"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:52
+msgid ""
+"All the markers have the same set of properties: ``x``, ``y``, ``size`` "
+"(in :ref:`screen units <userguide_styling_units>`), and ``angle`` "
+"(radians by default). Additionally, |circle| has a ``radius`` property "
+"that can be used to specify :ref:`data-space units "
+"<userguide_styling_units>`."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:60
+msgid "Line Glyphs"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:63
+msgid "Single Lines"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:65
+msgid ""
+"Below is an example that shows how to generate a single line glyph from "
+"one dimensional sequences of *x* and *y* points using the |line| glyph "
+"method:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:73
+msgid "Step Lines"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:75
+msgid ""
+"For some kinds of data, it may be more appropriate to draw discrete steps"
+" between data points, instead of connecting points with linear segments. "
+"The |step| glyph method can be used to accomplish this:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:82
+msgid ""
+"Step levels can be drawn before, after, or centered on the x-coordinates,"
+" as condfigured by the ``mode`` parameter."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:86
+msgid "Multiple Lines"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:88
+msgid ""
+"Sometimes it is useful to plot multiple lines all at once. This can be "
+"accomplished with the |multi_line| glyph method:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:95
+msgid ""
+"This glyph is unlike most other glyphs. Instead of accepting a one "
+"dimensional list or array of scalar values, it accepts a \"list of "
+"lists\" for x and y positions of each line, parameters xs and ys. "
+"multi_line also expects a scalar value or a list of scalers per each line"
+" for parameters such as color, alpha, linewidth, etc. Similarily, a "
+"ColumnDataSource may be used consisting of a \"list of lists\" and a "
+"lists of scalars where the length of the list of scalars and length of "
+"lists must match."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:105
+#: ../../source/docs/user_guide/plotting.rst:212
+msgid "Missing Points"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:107
+msgid ""
+"``NaN`` values can be passed to |line| and |multi_line| glyphs. In this "
+"case, you end up with single logical line objects, that have multiple "
+"disjoint components when rendered:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:117
+msgid "Bars and Rectangles"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:120
+msgid "Rectangles"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:122
+msgid ""
+"To draw *axis aligned* rectangles (\"quads\") by specifying the ``left``,"
+" ``right``, ``top``, and ``bottom`` positions, use the |quad| glyph "
+"function:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:128
+msgid ""
+"To draw arbitrary rectangles by specifying a center point, width, height,"
+" and angle, use the |rect| glyph function:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:135
+msgid "Bars"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:137
+msgid ""
+"When drawing rectangular bars (often representing intervals) it is often "
+"more convenient to have coordinates that are a hybrid of the two systems "
+"above. Bokeh provides the |hbar| and |vbar| glyphs function for this "
+"purpose."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:142
+msgid ""
+"To draw vertical bars by specifying a (center) x-coordinate, width, and "
+"top and bottom endpoints, use the |vbar| glyph function:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:148
+msgid ""
+"To draw horizontal bars by specifying a (center) y-coordinate, height, "
+"and left and right endpoints, use the |hbar| glyph function:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:158
+msgid "Hex Tiles"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:160
+msgid ""
+"Bokeh can plot hexagonal tiles, which are often used for showing binned "
+"aggregations. The :func:`~bokeh.plotting.figure.Figure.hex_tile` method "
+"takes a `size` parameter to define the size of the hex grid, and `axial "
+"coordinates`_ to specify which tiles are present."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:168
+msgid ""
+"A more realistic example below computes counts per bin using the "
+":func:`~bokeh.util.hex.hexbin` function and plots the colormapped counts:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:174
+msgid ""
+"The above code can be made even simpler by calling the "
+":func:`~bokeh.plotting.figure.Figure.hexbin` method of ``Figure``."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:180
+msgid "Patch Glyphs"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:183
+msgid "Single Patches"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:185
+msgid ""
+"Below is an example that shows how to generate a single polygonal patch "
+"glyph from one dimensional sequences of *x* and *y* points using the "
+"|patch| glyph method:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:193
+msgid "Multiple Patches"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:195
+msgid ""
+"Sometimes it is useful to plot multiple polygonal patches all at once. "
+"This can be accomplished with the |patches| glyph method:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:202
+msgid ""
+"This glyph is unlike most other glyphs. Instead of accepting a one "
+"dimensional list or array of scalar values, it accepts a \"list of "
+"lists\" for x and y positions of each patch, parameters xs and ys. "
+"patches also expects a scalar value or a list of scalers per each patch "
+"for parameters such as color, alpha, linewidth, etc. Similarily, a "
+"ColumnDataSource may be used consisting of a \"list of lists\" and a "
+"lists of scalars where the length of the list of scalars and length of "
+"lists must match."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:214
+msgid ""
+"Just as with |line| and |multi_line|, ``NaN`` values can be passed to "
+"|patch| and |patches| glyphs. In this case, you end up with single "
+"logical patch objects, that have multiple disjoint components when "
+"rendered:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:222
+msgid ""
+"Hit testing on patch objects with ``NaN`` values is not currently "
+"supported."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:228
+msgid "Polygons with Holes"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:230
+msgid ""
+"The |multi_polygons| glyph uses nesting to accept a variety of "
+"information relevant to polygons. Anything that can be rendered as a "
+"|Patches| can also be rendered as |multi_polygons|, but additionally "
+"|multi_polygons| can render holes inside each polygon."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:236
+msgid ""
+"This glyph is unlike most other glyphs. Instead of accepting a one "
+"dimensional list or array of scalar values, it accepts a 3 times nested "
+"list of x and y positions for the exterior and holes composing each "
+"polygon. MultiPolygons also expects a scalar value or a list of scalers "
+"per each item for parameters such as color, alpha, linewidth, etc. "
+"Similarily, one can use a ColumnDataSource consisting of a 3 times nested"
+" list and a list of scalars where the length of the list of scalars and "
+"length of the top level list must match."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:246
+msgid "Simple Polygon"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:248
+msgid ""
+"Below is an example that shows how to generate a single polygon glyph "
+"from 3 times nested one-dimensional sequences of *x* and *y* points using"
+" the |multi_polygons| glyph method:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:256
+msgid "Polygon with Holes"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:258
+msgid ""
+"Below is an example that shows how to generate a single polygon with "
+"holes from three sequences of *x* and *y* points. The first sequence "
+"represents the exterior of the polygon and the following sequences "
+"represent the holes:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:266
+msgid "MultiPolygon with Separate Parts"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:268
+msgid ""
+"Sometimes one conceptual polygon is composed of multiple polygon "
+"geometries. Below is an example that shows how to generate a MultiPolygon"
+" glyph from several sequences of *x* and *y* points. Each item in the "
+"sequence represents a part of the MultiPolygon:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:277
+msgid "Multiple MultiPolygons"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:279
+msgid ""
+"The top level of nesting is used to separate each MultiPolygon from the "
+"others. Each MultiPolygon can be thought of as a row in the data source -"
+" potentially with a corresponding label or color."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:289
+msgid "Ovals and Ellipses"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:291
+msgid ""
+"The |oval| glyph method accepts the same properties as |rect|, but "
+"renders oval shapes:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:297
+msgid ""
+"The |ellipse| glyph accepts the same properties as |oval| and |rect| but "
+"renders ellipse shapes, which are different from oval ones. In "
+"particular, the same value for width and height will render a circle "
+"using the |ellipse| glyph but not the |oval| one:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:308
+msgid "Images"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:310
+msgid ""
+"You can display images on Bokeh plots using the |image|, |image_rgba|, "
+"and |image_url| glyph methods."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:313
+msgid ""
+"The first example here shows how to display images in Bokeh plots from "
+"raw RGBA data using |image_rgba|:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:317
+msgid ""
+"This example depends on the open source NumPy library in order to more "
+"easily generate an array of RGBA data."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:323
+msgid ""
+"The hover tool allows interactive inspection of the values specified at "
+"any chosen pixel. For more information on how to enable hover with "
+"images, please consult the hover tool section of the :ref:`tools user "
+"guide <userguide_tools_inspectors>`."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:332
+msgid "Segments and Rays"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:334
+msgid ""
+"Sometimes it is useful to be able to draw many individual line segments "
+"at once. Bokeh provides the |segment| and |ray| glyph methods to render "
+"these."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:337
+msgid ""
+"The |segment| function accepts start points ``x0``, ``y0`` and end points"
+" ``x1`` and ``y1`` and renders segments between these:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:343
+msgid ""
+"The |ray| function accepts start points ``x``, ``y`` with a ``length`` "
+"(in :ref:`screen units <userguide_styling_units>`) and an ``angle``. The "
+"default ``angle_units`` are ``\"rad\"`` but can also be changed to "
+"``\"deg\"``. To have an \"infinite\" ray, that always extends to the edge"
+" of the plot, specify ``0`` for the length:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:355
+msgid "Wedges and Arcs"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:357
+msgid ""
+"To draw a simple line arc, Bokeh provides the |arc| glyph method, which "
+"accepts ``radius``, ``start_angle``, and ``end_angle`` to determine "
+"position. Additionally, the ``direction`` property determines whether to "
+"render clockwise (``\"clock\"``) or anti-clockwise (``\"anticlock\"``) "
+"between the start and end angles."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:366
+msgid ""
+"The |wedge| glyph method accepts the same properties as |arc|, but "
+"renders a filled wedge instead:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:372
+msgid ""
+"The |annular_wedge| glyph method is similar to |arc|, but draws a filled "
+"area. It accepts a ``inner_radius`` and ``outer_radius`` instead of just "
+"``radius``:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:378
+msgid ""
+"Finally, the |annulus| glyph methods, which accepts ``inner_radius`` and "
+"``outer_radius``, can be used to draw filled rings:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:387
+msgid "Specialized Curves"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:389
+msgid ""
+"Bokeh also provides |quadratic| and |bezier| glyph methods for drawing "
+"parameterized quadratic and cubic curves. These are somewhat uncommon; "
+"please refer to the :ref:`reference documentation <bokeh.plotting>` for "
+"details."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:396
+msgid "Combining Multiple Glyphs"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:398
+msgid ""
+"Combining multiple glyphs on a single plot is a matter of calling more "
+"than one glyph method on a single |Figure|:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:404
+msgid ""
+"This principle holds in general for all the glyph methods in "
+"|bokeh.plotting|. Any number of glyphs may be added to a Bokeh plot."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:411
+msgid "Setting Ranges"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:413
+msgid ""
+"By default, Bokeh will attempt to automatically set the data bounds of "
+"plots to fit snugly around the data. Sometimes you may need to set a "
+"plot's range explicitly. This can be accomplished by setting the "
+"``x_range`` or ``y_range`` properties using a ``Range1d`` object that "
+"gives the *start* and *end* points of the range you want:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:423
+msgid ""
+"As a convenience, the |figure| function can also accept tuples of "
+"*(start, end)* as values for the ``x_range`` or ``y_range`` parameters. "
+"Below is a an example that shows both methods of setting the range:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:430
+msgid ""
+"Ranges also have a ``bounds`` property that allows you to specify limits "
+"of the plot that you do not want the user to be able to pan/zoom beyond."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:441
+msgid "Specifying Axis Types"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:443
+msgid ""
+"All the examples above use the default linear axis. This axis is suitable"
+" for many plots that need to show numerical data on a linear scale. In "
+"other cases you may have categorical data, or need to display numerical "
+"data on a datetime or log scale. This section shows how to specify the "
+"axis type when using |bokeh.plotting| interface."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:452
+msgid "Categorical Axes"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:454
+msgid ""
+"Categorical axes are created by specifying a "
+":class:`~bokeh.models.ranges.FactorRange` for one of the plot ranges (or "
+"a lists of factors to be converted to one). Below is a simple example, "
+"for complete details see :ref:`userguide_categorical`."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:465
+msgid "Datetime Axes"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:467
+msgid ""
+"When dealing with timeseries data, or any data that involves dates or "
+"times, it is desirable to have an axis that can display labels that are "
+"appropriate to different date and time scales."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:472
+msgid ""
+"This example requires a network connection, and depends on the open "
+"source Pandas library in order to more easily present realistic "
+"timeseries data."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:476
+msgid ""
+"We have seen how to use the |figure| function to create plots using the "
+"|bokeh.plotting| interface. This function accepts  ``x_axis_type`` and "
+"``y_axis_type`` as arguments. To specify a datetime axis, pass "
+"``\"datetime\"`` for the value of either of these parameters."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:485
+msgid ""
+"Future versions of Bokeh will attempt to auto-detect situations when "
+"datetime axes are appropriate, and add them automatically by default."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:491
+msgid "Log Scale Axes"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:493
+msgid ""
+"When dealing with data that grows exponentially or is of many orders of "
+"magnitude, it is often necessary to have one axis on a log scale. Another"
+" scenario involves plotting data that has a power law relationship, when "
+"it is desirable to use log scales on both axes."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:498
+msgid ""
+"As we saw above, the |figure| function accepts ``x_axis_type`` and "
+"``y_axis_type`` as arguments. To specify a log axis, pass ``\"log\"`` for"
+" the value of either of these parameters."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:502
+msgid ""
+"By default, log axis ranges are calculated to fit around positive valued "
+"data. To set your own ranges, see the section on "
+":ref:`userguide_plotting_setting_ranges`."
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:511
+msgid "Twin Axes"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:513
+msgid ""
+"It is possible to add multiple axes representing different ranges to a "
+"single plot. To do this, configure the plot with \"extra\" named ranges "
+"in the ``extra_x_range`` and ``extra_y_range`` properties. Then these "
+"named ranges can be referred to when adding new glyph methods, and also "
+"to add new axes objects using the ``add_layout`` method on |Plot|. An "
+"example is given below:"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:526
+msgid "Adding Annotations"
+msgstr ""
+
+#: ../../source/docs/user_guide/plotting.rst:528
+msgid ""
+"The section on adding annotations to plots has moved.  Please see "
+":ref:`userguide_annotations`"
+msgstr ""
+

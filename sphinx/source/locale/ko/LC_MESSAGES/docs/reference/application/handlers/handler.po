@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/application/handlers/handler.rst:4
+msgid "bokeh.application.handlers.handler"
+msgstr ""
+
+#: bokeh.application.handlers.handler:1 of
+msgid "Provide a base class for Bokeh Application handler classes."
+msgstr ""
+
+#: bokeh.application.handlers.handler:3 of
+msgid ""
+"When a Bokeh server session is initiated, the Bokeh server asks the "
+"Application for a new Document to service the session. To do this, the "
+"Application first creates a new empty Document, then it passes this new "
+"Document to the ``modify_document`` method of each of its handlers. When "
+"all handlers have updated the Document, it is used to service the user "
+"session."
+msgstr ""
+
+#: bokeh.application.handlers.handler:9 of
+msgid ""
+"Below is an example outline of a custom handler that might modify "
+"documents based off information in some database:"
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler:1 of
+msgid ""
+"Provide a mechanism for Bokeh applications to build up new Bokeh "
+"Documents."
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.modify_document:1 of
+msgid "Modify an application document in a specified manner."
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.modify_document:3 of
+msgid ""
+"When a Bokeh server session is initiated, the Bokeh server asks the "
+"Application for a new Document to service the session. To do this, the "
+"Application first creates a new empty Document, then it passes this "
+"Document to the ``modify_document`` method of each of its handlers. When "
+"all handlers have updated the Document, it is used to service the user "
+"session."
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.modify_document:10 of
+msgid "*Subclasses must implement this method*"
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.modify_document
+#: bokeh.application.handlers.handler.Handler.on_server_loaded
+#: bokeh.application.handlers.handler.Handler.on_server_unloaded
+#: bokeh.application.handlers.handler.Handler.on_session_created
+#: bokeh.application.handlers.handler.Handler.on_session_destroyed of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.modify_document:12 of
+msgid "A Bokeh Document to update in-place"
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.modify_document of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.modify_document:15 of
+msgid "Document"
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.on_server_loaded:1 of
+msgid "Execute code when the server is first started."
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.on_server_loaded:3 of
+msgid ""
+"Subclasses may implement this method to provide for any one-time "
+"initialization that is necessary after the server starts, but before any "
+"sessions are created."
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.on_server_unloaded:1 of
+msgid ""
+"Execute code when the server cleanly exits. (Before stopping the server's"
+" ``IOLoop``.)"
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.on_server_unloaded:4 of
+msgid ""
+"Subclasses may implement this method to provide for any one-time tear "
+"down that is necessary before the server exits."
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.on_server_unloaded:11 of
+msgid ""
+"In practice this code may not run, since servers are often killed by a "
+"signal."
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.on_session_created:1 of
+msgid "Execute code when a new session is created."
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.on_session_created:3 of
+msgid ""
+"Subclasses may implement this method to provide for any per-session "
+"initialization that is necessary before ``modify_doc`` is called for the "
+"session."
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.on_session_destroyed:1 of
+msgid "Execute code when a session is destroyed."
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.on_session_destroyed:3 of
+msgid ""
+"Subclasses may implement this method to provide for any per-session tear-"
+"down that is necessary when sessions are destroyed."
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.static_path:1 of
+msgid "Return a path to app-specific static resources, if applicable."
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.url_path:1 of
+msgid "Returns a default URL path, if applicable."
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.url_path:3 of
+msgid ""
+"Handlers subclasses may optionally implement this method, to inform the "
+"Bokeh application what URL it should be installed at."
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.url_path:6 of
+msgid ""
+"If multiple handlers specify ``url_path`` the Application will use the "
+"value from the first handler in its list of handlers."
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.error:1 of
+msgid "If the handler fails, may contain a related error message."
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.error_detail:1 of
+msgid "If the handler fails, may contain a traceback or other details."
+msgstr ""
+
+#: bokeh.application.handlers.handler.Handler.failed:1 of
+msgid "``True`` if the handler failed to modify the doc"
+msgstr ""
+

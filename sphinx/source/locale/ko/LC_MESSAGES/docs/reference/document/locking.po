@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/document/locking.rst:4
+msgid "bokeh.document.locking"
+msgstr ""
+
+#: bokeh.document.locking.UnlockedDocumentProxy:1 of
+msgid ""
+"Wrap a Document object so that only methods that can safely be used from "
+"unlocked callbacks or threads are exposed. Attempts to otherwise access "
+"or change the Document results in an exception."
+msgstr ""
+
+#: bokeh.document.locking.UnlockedDocumentProxy.add_next_tick_callback:1 of
+msgid "Add a \"next tick\" callback."
+msgstr ""
+
+#: bokeh.document.locking.UnlockedDocumentProxy.add_next_tick_callback
+#: bokeh.document.locking.UnlockedDocumentProxy.remove_next_tick_callback
+#: bokeh.document.locking.without_document_lock of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.document.locking.UnlockedDocumentProxy.remove_next_tick_callback:1 of
+msgid "Remove a \"next tick\" callback."
+msgstr ""
+
+#: bokeh.document.locking.without_document_lock:1 of
+msgid ""
+"Wrap a callback function to execute without first obtaining the document "
+"lock."
+msgstr ""
+
+#: bokeh.document.locking.without_document_lock:4 of
+msgid "The function to wrap"
+msgstr ""
+
+#: bokeh.document.locking.without_document_lock of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.document.locking.without_document_lock:7 of
+msgid "a function wrapped to execute without a |Document| lock."
+msgstr ""
+
+#: bokeh.document.locking.without_document_lock of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.document.locking.without_document_lock:10 of
+msgid ""
+"While inside an unlocked callback, it is completely *unsafe* to modify "
+"``curdoc()``. The value of ``curdoc()`` inside the callback will be a "
+"specially wrapped version of |Document| that only allows safe operations,"
+" which are:"
+msgstr ""
+
+#: bokeh.document.locking.without_document_lock:15 of
+msgid ":func:`~bokeh.document.Document.add_next_tick_callback`"
+msgstr ""
+
+#: bokeh.document.locking.without_document_lock:16 of
+msgid ":func:`~bokeh.document.Document.remove_next_tick_callback`"
+msgstr ""
+
+#: bokeh.document.locking.without_document_lock:18 of
+msgid ""
+"Only these may be used safely without taking the document lock. To make "
+"other changes to the document, you must add a next tick callback and make"
+" your changes to ``curdoc()`` from that second callback."
+msgstr ""
+
+#: bokeh.document.locking.without_document_lock:22 of
+msgid ""
+"Attempts to otherwise access or change the Document will result in an "
+"exception being raised."
+msgstr ""
+

@@ -1,0 +1,275 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/dev_guide/documentation.rst:4
+msgid "Documentation"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:6
+msgid ""
+"Contributions to Bokeh will only be accepted if they contain sufficient "
+"and appropriate documentation support. This section outlines how to build"
+" and edit documentation locally, as well as describes conventions that "
+"the project adheres to."
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:11
+msgid ""
+"Helping with documentation is one of the most valuable ways to contribute"
+" to a project. It's also a good way to to get started and introduce "
+"yourself as a new contributor. The most likely way for typos or other "
+"small documentation errors to be resolved is for the person who notices "
+"the problem to immediately submit a Pull Request to with a correction. "
+"*This is always appreciated!* In addition to quick fixes, there is also a"
+" list of `Open Docs Issues`_ on GitHub that anyone can look at for tasks "
+"that need help."
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:20
+msgid "Working on Documentation"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:22
+msgid ""
+"Sphinx_ is used to generate HTML documentation. Due to the innate "
+"dependency of Bokeh on JavaScript, no other output formats are supported "
+"by the official build configuration. This section describes how to use "
+"Sphinx to build the Bokeh documentation from source."
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:28
+msgid "Install requirements"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:30
+msgid ""
+"In order to build the docs from source, you should have followed the "
+"instructions in :ref:`devguide_setup`."
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:33
+msgid ""
+"Some of the Bokeh examples in the documentation rely on sample data that "
+"is not included in the Bokeh GitHub repository or released packages, due "
+"to their size."
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:37
+msgid ""
+"Once Bokeh is installed, the sample data can be obtained by executing the"
+" following command at a Bash or Windows prompt:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:44
+msgid ""
+"See :ref:`install_sampledata` for alternative instructions on how to "
+"download the sample data."
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:48
+msgid "Build the Documentation"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:50
+msgid ""
+"To generate the full documentation, first navigate to the  ``sphinx`` "
+"subdirectory of the Bokeh source tree."
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:57
+msgid ""
+"Sphinx uses the ``make`` tool to control the build process. The most "
+"common targets or the Bokeh makefile are:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:62
+msgid "``clean``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:61
+msgid ""
+"Remove all previously built documentation output. All outputs will be "
+"generated from scratch on the next build."
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:66
+msgid "``html``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:65
+msgid ""
+"Build any HTML output that is not built, or needs re-building (e.g. "
+"because the input source file has changed since the last build)"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:71
+msgid "``serve``"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:69
+msgid ""
+"Start a server to serve the docs open a web browser to display. Note that"
+" due to the JavaScript files involved, starting a real server is "
+"necessary to view many portions of the docs fully."
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:73
+msgid ""
+"For example, clean the docs build directory, run the follow command at "
+"the command line:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:80
+msgid ""
+"Multiple targets may be combined in a single `make` invocation. For "
+"instance, executing the following command will clean the docs build, "
+"generate all HTML docs from scratch, then open a browser to display the "
+"results:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:88
+msgid ""
+"By default, built docs will load the most recent BokehJS from CDN. If you"
+" are making local changes to the BokehJS and wish to have the docs use "
+"your locally built BokehJS instead, you can set the environment variable "
+"``BOKEH_DOCS_CDN`` before calling ``make``:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:98
+msgid "Source Code Documentation"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:100
+msgid ""
+"Docstrings and Model help are available from a Python interpreter, but "
+"are also processed by the Sphinx build to automatically generate a "
+"complete :ref:`refguide`."
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:104
+msgid ""
+"Bokeh uses some common conventions to create a consistent documentation "
+"style."
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:107
+msgid "Docstrings"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:109
+msgid ""
+"We use `Sphinx Napoleon`_ to process docstrings for our reference "
+"documentation."
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:112
+msgid ""
+"All docstrings are `Google Style Docstrings`_. Docstrings should "
+"generally begin with a verb stating what the function or method does in a"
+" short statement. For example, the \"verb first\" style is preferred:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:122
+msgid "over the more verbose sentence below:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:130
+msgid ""
+"Docstrings for functions and methods should generally include the "
+"following sections:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:133
+msgid "``Args``  (unless the function takes no arguments)"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:134
+msgid "``Returns`` (even if the function just returns ``None``)"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:136
+msgid ""
+"Short descriptions for parameters should be written in such a way that "
+"inserting an implicit \"IS\" makes a complete sentence. For example:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:144
+msgid ""
+"can be reasonably read as \"title_font IS a font used for the plot "
+"title\"."
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:146
+msgid "A complete example might look like:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:166
+msgid "Models and Properties"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:168
+msgid ""
+"Bokeh's Model system supports its own system for providing detailed "
+"documentation for individual properties. These are given as a ``help`` "
+"argument to the property type, which is interpreted as standard Sphinx "
+"ReST when the reference documentation is built. For example:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:193
+msgid "Narrative Documentation"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:195
+msgid ""
+"The narrative documentation consists of all the documentation that is not"
+" automatically generated from docstrings and Bokeh property helpstrings. "
+"This includes User's Guide, Quickstart, etc. The source code for these "
+"docs are standard Sphinx Restructure Text (ReST) files that are located "
+"under the ``sphinx/source/docs`` subdirectory of the source tree."
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:202
+msgid "Section Headings"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:204
+msgid ""
+"In narrative documentation, headings help the users follow the key points"
+" and sections. The following outlines the headings hierarchy:"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:225
+msgid ""
+"Note that the length of the underline *must* match that of the heading "
+"text, or else the Sphinx build will fail."
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:229
+msgid "Release Notes"
+msgstr ""
+
+#: ../../source/docs/dev_guide/documentation.rst:231
+msgid ""
+"Each release should add a new file under ``sphinx/source/docs/releases`` "
+"that briefly describes the changes in the release including any migration"
+" notes. The filename should be ``<version>.rst``, for example :bokeh-"
+"tree:`sphinx/source/docs/releases/0.12.7.rst`. The Sphinx build will "
+"automatically add this content to the list of all releases."
+msgstr ""
+

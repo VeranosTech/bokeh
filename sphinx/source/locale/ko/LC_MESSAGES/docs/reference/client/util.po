@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) © Copyright 2015-2018, Anaconda and Bokeh Contributors.
+# This file is distributed under the same license as the Bokeh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/reference/client/util.rst:4
+msgid "bokeh.client.util"
+msgstr ""
+
+#: bokeh.client.util:1 of
+msgid "Internal utility functions used by ``bokeh.client``"
+msgstr ""
+
+#: bokeh.client.util.server_url_for_websocket_url:1 of
+msgid ""
+"Convert an ``ws(s)`` URL for a Bokeh server into the appropriate "
+"``http(s)`` URL for the websocket endpoint."
+msgstr ""
+
+#: bokeh.client.util.server_url_for_websocket_url
+#: bokeh.client.util.websocket_url_for_server_url of
+msgid "Parameters"
+msgstr ""
+
+#: bokeh.client.util.server_url_for_websocket_url:4 of
+msgid "An ``ws(s)`` URL ending in ``/ws``"
+msgstr ""
+
+#: bokeh.client.util.server_url_for_websocket_url
+#: bokeh.client.util.websocket_url_for_server_url of
+msgid "Returns"
+msgstr ""
+
+#: bokeh.client.util.server_url_for_websocket_url:7 of
+msgid "The corresponding ``http(s)`` URL."
+msgstr ""
+
+#: bokeh.client.util.server_url_for_websocket_url
+#: bokeh.client.util.websocket_url_for_server_url of
+msgid "Return type"
+msgstr ""
+
+#: bokeh.client.util.server_url_for_websocket_url
+#: bokeh.client.util.websocket_url_for_server_url of
+msgid "raises"
+msgstr ""
+
+#: bokeh.client.util.server_url_for_websocket_url:10
+#: bokeh.client.util.websocket_url_for_server_url:10 of
+msgid ":exc:`ValueError` -- If the input URL is not of the proper form."
+msgstr ""
+
+#: bokeh.client.util.websocket_url_for_server_url:1 of
+msgid ""
+"Convert an ``http(s)`` URL for a Bokeh server websocket endpoint into the"
+" appropriate ``ws(s)`` URL"
+msgstr ""
+
+#: bokeh.client.util.websocket_url_for_server_url:4 of
+msgid "An ``http(s)`` URL"
+msgstr ""
+
+#: bokeh.client.util.websocket_url_for_server_url:7 of
+msgid "The corresponding ``ws(s)`` URL ending in ``/ws``"
+msgstr ""
+
