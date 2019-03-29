@@ -12,7 +12,7 @@ touch .nojekyll
 echo '!build/' >> .gitignore
 
 cd sphinx
-sphinx-build -D language='ko'source build/html
+sphinx-build -D language='ko' source build/html
 cd ..
 
 git add . -A
