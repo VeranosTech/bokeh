@@ -9,10 +9,9 @@ git rebase korean
 
 touch .nojekyll
 
-echo '!/build' >> .gitignore
-
 cd sphinx
 sphinx-build -D language='ko' source build/html
+rm -f .gitignore
 cd ..
 
 git add . -A
