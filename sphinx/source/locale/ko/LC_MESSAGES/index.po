@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../source/index.rst:2
 msgid "Welcome to Bokeh"
-msgstr ""
+msgstr "보케 문서"
 
 #: ../../source/index.rst:6
 msgid ""
