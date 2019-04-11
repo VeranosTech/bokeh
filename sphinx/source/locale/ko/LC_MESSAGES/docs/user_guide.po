@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../source/docs/user_guide.rst:4
 msgid "User Guide"
-msgstr ""
+msgstr "사용자 안내서"
 
 #: ../../source/docs/user_guide.rst:6
 msgid ""
 "This user guide is intended to walk you through many common tasks that "
 "you might want to accomplish using Bokeh. The guide is arranged by topic:"
 msgstr ""
+"이 사용자 안내서는 보케를 사용하기 위해 알아야하는 기본적인 사항들을 다루고 있다. "
+"다음과 같은 순서로 구성된다.:"
 
 #: ../../source/docs/user_guide.rst:11
 msgid ":ref:`userguide_quickstart`"
@@ -33,7 +35,7 @@ msgstr ""
 
 #: ../../source/docs/user_guide.rst:11
 msgid "Get set up and running quickly."
-msgstr ""
+msgstr "초기 셋업 및 실행"
 
 #: ../../source/docs/user_guide.rst:14
 msgid ":ref:`userguide_concepts`"
@@ -41,7 +43,7 @@ msgstr ""
 
 #: ../../source/docs/user_guide.rst:14
 msgid "Learn important foundational concepts about how Bokeh is organized."
-msgstr ""
+msgstr "보케의 구성에 대한 기본적인 중요 개념"
 
 #: ../../source/docs/user_guide.rst:18
 msgid ":ref:`userguide_plotting`"
@@ -52,6 +54,7 @@ msgid ""
 "Make different kinds of plots using the simple but flexible glyph methods"
 " from the |bokeh.plotting| interface."
 msgstr ""
+"|bokeh.plotting| 인터페이스가 제공하는 간단하고 유연한 글리프 메소드로 여러가지 플롯을 만들기 "
 
 #: ../../source/docs/user_guide.rst:22
 msgid ":ref:`userguide_data`"
@@ -62,6 +65,7 @@ msgid ""
 "Provide data or subsets of data for plots and tables and share data "
 "between plots."
 msgstr ""
+"플롯과 테이블에 쓰이는 데이터 집합을 제공하고 공유하기"
 
 #: ../../source/docs/user_guide.rst:25
 msgid ":ref:`userguide_layout`"
@@ -69,7 +73,7 @@ msgstr ""
 
 #: ../../source/docs/user_guide.rst:25
 msgid "Combine multiple plots and widgets into specified layouts."
-msgstr ""
+msgstr "특정 레이아웃에 따라 여러개의 플롯과 위짓을 합치기"
 
 #: ../../source/docs/user_guide.rst:29
 msgid ":ref:`userguide_categorical`"
@@ -80,6 +84,8 @@ msgid ""
 "Handle categorical data with a variety of different techniques such as "
 "bar charts, categorical heatmaps, visual dodging, and jitter."
 msgstr ""
+"바차트, 카테고리 히트맵, visual dodging, jitter 등의 여러가지 테크닉을 사용하여 "
+"카테고리 데이터를 다루"
 
 #: ../../source/docs/user_guide.rst:32
 msgid ":ref:`userguide_graph`"
@@ -90,6 +96,7 @@ msgid ""
 "Create network graph visualizations with configurable node and edge "
 "interactions."
 msgstr ""
+"노드와 간선 상호작용을 보여주는 네트워크 그래프 시각화"
 
 #: ../../source/docs/user_guide.rst:35
 msgid ":ref:`userguide_geo`"
@@ -97,7 +104,7 @@ msgstr ""
 
 #: ../../source/docs/user_guide.rst:35
 msgid "Working with geographical data---Google Maps, GeoJSON, Tile Rendering."
-msgstr ""
+msgstr "Google Maps, GeoJSON, Tile Rendering 등 지형 데이터 다루기"
 
 #: ../../source/docs/user_guide.rst:39
 msgid ":ref:`userguide_tools`"
@@ -108,6 +115,7 @@ msgid ""
 "Make interactive tools (like pan, zoom, select, and others) available on "
 "your plots."
 msgstr ""
+"플롯에 사용할 수 있는 pan, zoom, select 등의 상호작용 도구"
 
 #: ../../source/docs/user_guide.rst:43
 msgid ":ref:`userguide_styling`"
@@ -118,6 +126,7 @@ msgid ""
 "Customize every visual aspect of Bokeh plots---axes, grids, labels, "
 "glyphs, and more."
 msgstr ""
+"axes, grids, labels, glyphs 등 보케 플롯의 모든 시각적 요소 설정하기 "
 
 #: ../../source/docs/user_guide.rst:47
 msgid ":ref:`userguide_annotations`"
@@ -128,6 +137,7 @@ msgid ""
 "Add informational annotations, such as labels, arrows, and legends to "
 "plots."
 msgstr ""
+"labels, arrows, legends 등의 정보 추가하기"
 
 #: ../../source/docs/user_guide.rst:51
 msgid ":ref:`userguide_interaction`"
@@ -138,6 +148,7 @@ msgid ""
 "Create more sophisticated interactions including widgets or linked "
 "panning and selection."
 msgstr ""
+"위짓이나 연결 패닝, 선택 등 복잡한 상호작용 만들기"
 
 #: ../../source/docs/user_guide.rst:55
 msgid ":ref:`userguide_server`"
@@ -148,6 +159,7 @@ msgid ""
 "Deploy the Bokeh Server to build and publish sophisticated data "
 "applications."
 msgstr ""
+"복잡한 데이터베이스 애플리케이션을 위한 보케 서버 배포"
 
 #: ../../source/docs/user_guide.rst:58
 msgid ":ref:`userguide_notebook`"
@@ -155,7 +167,7 @@ msgstr ""
 
 #: ../../source/docs/user_guide.rst:58
 msgid "Display interactive plots inside Jupyter notebooks."
-msgstr ""
+msgstr "주피터 노트북에서 상호작용 플롯 표시하기"
 
 #: ../../source/docs/user_guide.rst:61
 msgid ":ref:`userguide_export`"
@@ -163,7 +175,7 @@ msgstr ""
 
 #: ../../source/docs/user_guide.rst:61
 msgid "Learn how to export Bokeh layouts as PNGs and SVGs."
-msgstr ""
+msgstr "PNG, SVG로 보케 출력하기"
 
 #: ../../source/docs/user_guide.rst:65
 msgid ":ref:`userguide_embed`"
@@ -174,6 +186,7 @@ msgid ""
 "Embed static or server-based Bokeh plots and widgets into HTML documents "
 "in a variety of ways."
 msgstr ""
+"스태틱 임베팅 또는 서버기반 보케 플롯과 위칫을 HTML문서에 넣기"
 
 #: ../../source/docs/user_guide.rst:69
 msgid ":ref:`userguide_cli`"
@@ -181,7 +194,7 @@ msgstr ""
 
 #: ../../source/docs/user_guide.rst:68
 msgid "Use Bokeh's capabilities from the command line with the ``bokeh`` command."
-msgstr ""
+msgstr "커맨드라인에서 ``bokeh``  명령으로 보케 기능 사용하기"
 
 #: ../../source/docs/user_guide.rst:72
 msgid ":ref:`userguide_extensions`"
@@ -189,7 +202,7 @@ msgstr ""
 
 #: ../../source/docs/user_guide.rst:72
 msgid "Add new capability to Bokeh with custom user extensions."
-msgstr ""
+msgstr "사용자 설정 기능을 추가하기"
 
 #: ../../source/docs/user_guide.rst:75
 msgid ":ref:`userguide_compat`"
@@ -197,7 +210,7 @@ msgstr ""
 
 #: ../../source/docs/user_guide.rst:75
 msgid "Use Bokeh together with libraries such as `Datashader`_ and  `HoloViews`_."
-msgstr ""
+msgstr "`Datashader`_\ 와  `HoloViews`_ 라이브러리를 보케와 같이 사용하기 "
 
 #: ../../source/docs/user_guide.rst:78
 msgid ":ref:`userguide_webgl`"
@@ -205,7 +218,7 @@ msgstr ""
 
 #: ../../source/docs/user_guide.rst:78
 msgid "Improve performance for large datasets by using WebGL."
-msgstr ""
+msgstr "WebGL을 사용하여 대규모 데이터셋에 대한 성능 향상"
 
 #: ../../source/docs/user_guide.rst:81
 msgid ":ref:`userguide_bokehjs`"
@@ -213,7 +226,7 @@ msgstr ""
 
 #: ../../source/docs/user_guide.rst:81
 msgid "Create plots in JavaScript by using BokehJS directly."
-msgstr ""
+msgstr "BokehJS를 직접 사용하여 자바스크립트로 플롯 생성하기"
 
 #: ../../source/docs/user_guide.rst:84
 msgid ":ref:`userguide_info`"
@@ -221,7 +234,7 @@ msgstr ""
 
 #: ../../source/docs/user_guide.rst:84
 msgid "See where to go next for more information and examples."
-msgstr ""
+msgstr "더 많은 정보와 예제"
 
 #: ../../source/docs/user_guide.rst:86
 msgid ""
@@ -231,4 +244,6 @@ msgid ""
 "required to run the examples as written. However, Bokeh works well with "
 "NumPy, Pandas, or almost any array or table-like data structure."
 msgstr ""
-
+"사용자 안내서의 예제들은 보케로 한가지 기능을 수행하도록 가능한한 간단하게 작성되었다. "
+"NumPy나 Pandas와 같은 외부 라이브러리의 도움은 거의 받지 않았다. "
+"하지만 보케는 NumPy나 Pandas 또는 기타 테이블 형태의 데이터 구조와 같이 사용하기 좋다. "
