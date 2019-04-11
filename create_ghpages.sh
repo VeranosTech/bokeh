@@ -21,4 +21,4 @@ git reset --hard HEAD
 git clean -f
 git checkout korean
 
-source deactivate
+
