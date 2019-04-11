@@ -1,14 +1,18 @@
 Bokeh
 =====
 
-*Bokeh is a fiscally sponsored project of [NumFOCUS](http://numfocus.org), a nonprofit dedicated to supporting the open-source scientific computing community. If you like Bokeh and would like to support our mission, please consider [making a donation](https://numfocus.salsalabs.org/donate-to-bokeh/index.html).
+*Bokeh is a fiscally sponsored project of [NumFOCUS](http://numfocus.org), a nonprofit dedicated to supporting the open-source scientific computing community. If you like Bokeh and would like to support our mission, please consider [making a donation](https://numfocus.salsalabs.org/donate-to-bokeh/index.html).*
 
 <table>
 
 <tr>
   <td>Latest Release</td>
-  <td><img src="https://badge.fury.io/gh/bokeh%2Fbokeh.svg"
-           alt="Latest release version" /></td>
+  <td>
+    <img src="https://badge.fury.io/gh/bokeh%2Fbokeh.svg" alt="Latest release version" />
+    <a href="https://badge.fury.io/js/bokehjs">
+      <img src="https://badge.fury.io/js/bokehjs.svg" alt="npm version">
+    </a>
+  </td>
 
   <td>Conda</td>
   <td>

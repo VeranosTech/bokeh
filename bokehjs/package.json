@@ -1,6 +1,6 @@
 {
   "name": "bokehjs",
-  "version": "1.1.0dev12",
+  "version": "1.1.0",
   "description": "Interactive, novel data visualization",
   "keywords": [
     "bokeh",
@@ -37,8 +37,9 @@
     "yargs": "^13.2.2",
     "jsdom": "^9.8.3",
     "websocket": "^1.0.28",
-    "typescript": "3.3.3",
+    "typescript": "3.4.1",
     "tslint": "^5.13.1",
+    "tsconfig-paths": "^3.8.0",
     "coffeescript": "^2.3.2",
     "less": "^3.9.0",
     "@types/less": "^3.0.0",
@@ -65,7 +66,6 @@
     "@types/googlemaps": "^3.30.18",
     "@types/hammerjs": "^2.0.36",
     "@types/nouislider": "^9.0.4",
-    "@types/pikaday": "^1.7.4",
     "@types/proj4": "^2.3.2",
     "@types/sprintf-js": "^1.1.2"
   },
@@ -74,12 +74,13 @@
     "canvas2svg": "https://github.com/bokeh/canvas2svg#v1.0.21",
     "es6-promise": "4.2.6",
     "es6-weak-map": "^2.0.2",
+    "es6-map": "^0.1.5",
     "flatbush": "^3.1.1",
     "gloo2": "https://github.com/bokeh/gloo2.git#b41bd5d",
     "hammerjs": "^2.0.4",
     "nouislider": "^10.0.0",
     "numbro": "https://github.com/bokeh/numbro.git#e1b6c52",
-    "pikaday": "^1.8.0",
+    "pikaday": "https://github.com/bokeh/pikaday.git#6b7258e",
     "proj4": "<2.4",
     "slickgrid": "https://github.com/bokeh/SlickGrid.git#d1bd9fa7",
     "sprintf-js": "^1.1.2",
@@ -91,6 +92,6 @@
     "build": "node make build",
     "dev-build": "node make dev-build"
   },
-  "main": "build/js/lib/index.js",
-  "types": "build/js/types/index.d.ts"
+  "main": "build/js/lib/bokeh.js",
+  "types": "build/js/types/bokeh.d.ts"
 }
