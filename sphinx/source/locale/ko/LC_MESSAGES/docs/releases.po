@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"POT-Creation-Date: 2019-04-11 15:37+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,82 +22,125 @@ msgid "1.1.0"
 msgstr ""
 
 #: ../../source/docs/releases/1.1.0.rst:6
-msgid "Bokeh Version ``1.1.0`` (January 2019) primarily"
+msgid ""
+"Bokeh Version ``1.1.0`` (April 2019) is a signiicant release that "
+"primarily addresses the layout system. More than 50 layout-related issues"
+" were closed, addressing bugs, missing features, and performance. Other "
+"topics of this release included:"
 msgstr ""
 
 #: ../../source/docs/releases/1.1.0.rst:11
-msgid "`Migration Guide <releases.html#release-1-1-0-migration>`__"
+msgid ""
+"Hover tool fixes and features :bokeh-issue:`8742`, :bokeh-issue:`8668`, "
+":bokeh-issue:`7991`"
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:12
+msgid ""
+"Widget improvements :bokeh-issue:`7665`, :bokeh-issue:`8717`, :bokeh-"
+"issue:`6822`, :bokeh-issue:`6333`"
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:13
+msgid "Sphinx extensions more generally useable :bokeh-issue:`5955`"
 msgstr ""
 
 #: ../../source/docs/releases/1.1.0.rst:14
-msgid "New in 1.1"
+msgid ""
+"Notebook integration work :bokeh-issue:`8583`, :bokeh-issue:`8681`, "
+":bokeh-issue:`8681`, :bokeh-issue:`8733`"
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:15
+msgid "Live BokehJS examples added to docs :bokeh-issue:`8692`"
 msgstr ""
 
 #: ../../source/docs/releases/1.1.0.rst:16
+msgid "Improved DataTable performance :bokeh-issue:`8227`"
+msgstr ""
+
+#: ../../source/docs/releases/0.12.16.rst:23
+#: ../../source/docs/releases/0.13.0.rst:13
+#: ../../source/docs/releases/1.0.0.rst:21
+#: ../../source/docs/releases/1.1.0.rst:18
+msgid ""
+"And several other bug fixes and docs additions. For full details see the "
+":bokeh-tree:`CHANGELOG`."
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:24
+msgid "`Migration Guide <releases.html#release-1-1-0-migration>`__"
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:27
+msgid "New in 1.1"
+msgstr ""
+
+#: ../../source/docs/releases/1.1.0.rst:29
 msgid ""
 "The ``js_link`` function was added to make it simpler to link two Bokeh "
 "model properties together:"
 msgstr ""
 
-#: ../../source/docs/releases/1.1.0.rst:23
+#: ../../source/docs/releases/1.1.0.rst:36
 msgid "See :ref:`userguide_interaction_linked_properties` for more information."
 msgstr ""
 
-#: ../../source/docs/releases/1.1.0.rst:25
+#: ../../source/docs/releases/1.1.0.rst:38
 msgid ""
 "The ``Slider.value_as_date`` method was added to conveniently retrieve "
 "Slider values as date objects when appropriate."
 msgstr ""
 
 #: ../../source/docs/releases/0.11.0.rst:56
-#: ../../source/docs/releases/1.1.0.rst:29
+#: ../../source/docs/releases/1.1.0.rst:42
 msgid "Deprecations"
 msgstr ""
 
-#: ../../source/docs/releases/1.1.0.rst:31
+#: ../../source/docs/releases/1.1.0.rst:44
 msgid ""
 "The following features or APIs were deprecated in version 1.1 and will be"
 " removed in a future 2.0 release:"
 msgstr ""
 
-#: ../../source/docs/releases/1.1.0.rst:34
+#: ../../source/docs/releases/1.1.0.rst:47
 msgid ""
 "Support for CoffeeScript in ``CustomJS`` or custom extensions. Use "
 "JavaScript or Typescript instead."
 msgstr ""
 
-#: ../../source/docs/releases/1.1.0.rst:37
+#: ../../source/docs/releases/1.1.0.rst:50
 msgid ""
 "Support for ``ClientSession.loop_until_closed``. This function is "
 "intented to support testing only, and will be removed from the public "
 "API. Bokeh applications should be run directly on a Bokeh server."
 msgstr ""
 
-#: ../../source/docs/releases/1.1.0.rst:41
+#: ../../source/docs/releases/1.1.0.rst:54
 msgid ""
 "Support for \"transpiling\" Python code to JavaScript. All "
 "``from_py_func`` methods will be removed. Use JavaScript or Typescript "
 "instead."
 msgstr ""
 
-#: ../../source/docs/releases/1.1.0.rst:45
+#: ../../source/docs/releases/1.1.0.rst:58
 msgid "Changes to bokeh.sphinxext"
 msgstr ""
 
-#: ../../source/docs/releases/1.1.0.rst:47
+#: ../../source/docs/releases/1.1.0.rst:60
 msgid ""
 "In order to support a longer term goal of moving Bokeh docs to "
 "`ReadTheDocs`_, some changes to the ``bokeh-plot`` Sphinx directive were "
 "necessary. These are:"
 msgstr ""
 
-#: ../../source/docs/releases/1.1.0.rst:50
+#: ../../source/docs/releases/1.1.0.rst:63
 msgid ""
 "Plot script files are now always placed immediately adjacent to the "
 "document they are for, and loaded using relative URLs."
 msgstr ""
 
-#: ../../source/docs/releases/1.1.0.rst:53
+#: ../../source/docs/releases/1.1.0.rst:66
 msgid ""
 "The config values ``bokeh_plot_pyfile_include_dirs`` and "
 "``bokeh_plot_use_relative_paths`` are no longer needed. Setting them will"
@@ -105,7 +148,7 @@ msgid ""
 " will be removed in a future 2.0 release."
 msgstr ""
 
-#: ../../source/docs/releases/1.1.0.rst:58
+#: ../../source/docs/releases/1.1.0.rst:71
 msgid ""
 "We believe that there are very few users of ``bokeh.sphinxext`` outside "
 "the project itself, and that these changes will not cause any breakage "
@@ -258,14 +301,6 @@ msgstr ""
 
 #: ../../source/docs/releases/1.0.0.rst:19
 msgid "Faster import times (:bokeh-issue:`8309`)"
-msgstr ""
-
-#: ../../source/docs/releases/0.12.16.rst:23
-#: ../../source/docs/releases/0.13.0.rst:13
-#: ../../source/docs/releases/1.0.0.rst:21
-msgid ""
-"And several other bug fixes and docs additions. For full details see the "
-":bokeh-tree:`CHANGELOG`."
 msgstr ""
 
 #: ../../source/docs/releases/1.0.0.rst:27
@@ -4647,4 +4682,7 @@ msgstr ""
 #: ../../source/docs/releases/0.1.0.rst:16
 msgid "initial Python implementation of Abstract Rendering"
 msgstr ""
+
+#~ msgid "Bokeh Version ``1.1.0`` (January 2019) primarily"
+#~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"POT-Creation-Date: 2019-04-11 15:37+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,7 +96,17 @@ msgid "*property type:* :class:`~bokeh.core.properties.String`"
 msgstr ""
 
 #: ../../<bokeh-prop>:1
-msgid "The contents of the widget."
+msgid "The text or HTML contents of the widget."
+msgstr ""
+
+#: ../../<bokeh-prop>:1
+msgid ""
+"If the HTML content contains elements which size depends on on external, "
+"asynchronously loaded resources, the size of the widget may be computed "
+"incorrectly. This is in particular an issue with images (``<img>``). To "
+"remedy this problem, one either has to set explicit dimensions using CSS "
+"properties, HTML attributes or model's ``width`` and ``height`` "
+"properties, or inline images' contents using data URIs."
 msgstr ""
 
 #: bokeh.models.widgets.markups.Paragraph:1 of
@@ -118,4 +128,7 @@ msgstr ""
 #: bokeh.models.widgets.markups.PreText:3 of
 msgid "This Bokeh model corresponds to an HTML ``<pre>`` element."
 msgstr ""
+
+#~ msgid "The contents of the widget."
+#~ msgstr ""
 

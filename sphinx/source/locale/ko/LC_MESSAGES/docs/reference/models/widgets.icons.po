@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bokeh 1.1.0dev12-5-g50b404880\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-29 15:17+0900\n"
+"POT-Creation-Date: 2019-04-11 15:37+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgid "Various kinds of icon widgets."
 msgstr ""
 
 #: bokeh.models.widgets.icons.AbstractIcon:1 of
-msgid "Bases: :class:`bokeh.models.widgets.widget.Widget`"
+msgid "Bases: :class:`bokeh.model.Model`"
 msgstr ""
 
 #: bokeh.models.widgets.icons.AbstractIcon:1 of
@@ -38,4 +38,7 @@ msgid ""
 "This is an abstract base class used to help organize the hierarchy of "
 "Bokeh model types. **It is not useful to instantiate on its own.**"
 msgstr ""
+
+#~ msgid "Bases: :class:`bokeh.models.widgets.widget.Widget`"
+#~ msgstr ""
 
