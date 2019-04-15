@@ -306,7 +306,7 @@ msgid ""
 "invested in Python, but having many language options is a compelling "
 "feature. Here are some of the other ways to use Bokeh:"
 msgstr ""
-"보케의아키텍처는 다른 언어로 바인딩을 만드는 것을 가능하게 한다. 실제로 여러 언어로 바인딩이 있다. "
+"보케의 아키텍처는 다른 언어로 바인딩을 만드는 것을 가능하게 한다. 실제로 여러 언어로 바인딩이 있다. "
 "핵심은 파이썬에 집중하지만 다른 옵션도 있다. 몇가지 예를 들자면:"
 
 #: ../../source/docs/user_guide/quickstart.rst:205
@@ -339,10 +339,11 @@ msgid ""
 "Let's consider the plots above, and use them to help define some core "
 "concepts."
 msgstr ""
+"위 예제를 참고로하여 몇가지 핵심 개념을 정의한다."
 
 #: ../../source/docs/user_guide/quickstart.rst:229
 msgid "Plot"
-msgstr ""
+msgstr "플롯(plot)"
 
 #: ../../source/docs/user_guide/quickstart.rst:231
 msgid ""
@@ -352,10 +353,13 @@ msgid ""
 "interface provides a |figure| function to help with assembling all the "
 "necessary objects."
 msgstr ""
+"플롯은 보케의 핵심개념이다. 플롯은 모든 객체(렌더러, 가이드, 데이터, 도구)를 포함하는 컨테이너로 "
+"사용자에게 보여지는 최종 시각을 조합한다. |bokeh.plotting| 인터페이스는 이에 필요한 모든 객체를 "
+"조합하는 것을 돕은 |figure| 함수를 제공한다. "
 
 #: ../../source/docs/user_guide/quickstart.rst:237
 msgid "Glyphs"
-msgstr ""
+msgstr "글리프(glyph)"
 
 #: ../../source/docs/user_guide/quickstart.rst:239
 msgid ""
@@ -370,6 +374,11 @@ msgid ""
 "plot. Besides lines and circles, Bokeh makes many additional |glyphs| and"
 " |markers| available."
 msgstr ""
+"글리프는 보케가 표시하는 기본 시각 표시자다. 가장 로우 레벨에서는 |Line|\ 과 같은 글리프 객체가 있다. "
+"만약 로우레벨 |bokeh.models| 인터페이스를 사용하면 데이터 소스와 글리프 객체 보케 객체를 생성하고 조합하는 것은 모두 "
+"사용자의 책임이다. 일을 쉽게 하기위해 |bokeh.plotting| 인터페이스는 첫번째 예제에 쓰인 |Figure.line|\ 와 같은 "
+"하이레벨 글리프 메소드를 제공한다. 두번제 예제에서는 원을 그리기 위한 |Figure.circle| 메서드를 추가하였다. "
+"선과 원 이외에도 다양한 |glyphs|\ 와 |markers|\ 를 제공한다. "
 
 #: ../../source/docs/user_guide/quickstart.rst:249
 msgid ""
@@ -381,10 +390,13 @@ msgid ""
 "attributes can be set with \"vectorized\" values as well. We will show "
 "examples of this below."
 msgstr ""
+"글리프의 외양은 글리프 속성과 연결된 데이터 값에 연동된다. 위 예제에서 `x` 또는 `y` 위치값이 "
+"데이터 벡터로 설정되었다. 글리프는 겉모습을 제어하기 위한 |line_props|, |fill_props|, |text_props| "
+"등의 속성도 가지고 있다. 이러한 속성들도 벡터값으로 설정할 수 있다. 다음 예제에서 살펴 볼 것이다. "
 
 #: ../../source/docs/user_guide/quickstart.rst:257
 msgid "Guides and Annotations"
-msgstr ""
+msgstr "가이드(guide)와 어노테이션(annotation)"
 
 #: ../../source/docs/user_guide/quickstart.rst:259
 msgid ""
@@ -396,10 +408,13 @@ msgid ""
 "are visual aids that label or name parts of the plot. These include "
 "titles, legends, etc."
 msgstr ""
+"보케는 프리젠테이션이나 비교를 돕는 시각적 요소들도 가지고 있다. 사용자가 거리, 각도 등을 볼 수 있게 "
+"돕는 시각요소를 가이드(guide)라고 한다. 그리드 라인, 밴드, 틱과 틱라벨을 가지는 (선형, 로그, 시각)축 등도 모두 가이드이다. "
+"어노테이션은 플롯 라벨이나 각 부분의 이름을 나타내는 시각적 요소이다. 제목, 범례 등이 어노테이션에 포함된다. "
 
 #: ../../source/docs/user_guide/quickstart.rst:267
 msgid "Ranges"
-msgstr ""
+msgstr "레인지(range)"
 
 #: ../../source/docs/user_guide/quickstart.rst:269
 msgid ""
@@ -411,10 +426,14 @@ msgid ""
 "<bokeh.models.ranges.Range1d>` objects for fixed bounds. As a convenience"
 " these can also typically be spelled as 2-tuples or lists::"
 msgstr ""
+"레인지는 플롯의 데이터 범위를 말한다. |bokeh.plotting| 인터페이스에 의해 생성되는 플롯은  디폴트로"
+"모든 데이터를 포함하도록 플롯 범위를 설정하는 :class:`DataRange1d <bokeh.models.ranges.DataRange1d>` 객체를 "
+"가지게 된다. 하지만 고정된 범위를 가지는 :class:`Range1d <bokeh.models.ranges.Range1d>` 객체를 설정할 수도 있다. "
+"편의를 위해 이 값은 튜플이나 리스트로 표시할 수 있다.::"
 
 #: ../../source/docs/user_guide/quickstart.rst:280
 msgid "Resources"
-msgstr ""
+msgstr "리소스"
 
 #: ../../source/docs/user_guide/quickstart.rst:282
 msgid ""
@@ -425,20 +444,25 @@ msgid ""
 "embedded directly inside, by passing the argument ``mode=\"inline\"`` to "
 "the |output_file| function."
 msgstr ""
+"플롯을 생성하기 위해 BokehJS 자바스크립트 라이브러리나 CSS 코드같은 클라이언트 라이브러리가 브라우저에 "
+"로드되어야 한다. |output_file| 함수는 디폴트로 http://cdn.pydata.org 웹주소로부터 BokehJS를 "
+"로드한다. 하지만 |output_file| 함수에 ``mode=\"inline\"`` 인수를 넣어서 BokehJS 리소스를 "
+"포함하도록 임베딩된 스태틱 HTML 파일을 만들 수도 있다. "
 
 #: ../../source/docs/user_guide/quickstart.rst:289
 msgid "More examples"
-msgstr ""
+msgstr "더 많은 예제"
 
 #: ../../source/docs/user_guide/quickstart.rst:291
 msgid ""
 "Here are a few more examples to demonstrate other common tasks and use "
 "cases with the |bokeh.plotting| interface."
 msgstr ""
+"다음은 |bokeh.plotting| 인터페이스를 사용하여 많이 사용되는 업무를 처리한 예제들이다."
 
 #: ../../source/docs/user_guide/quickstart.rst:297
 msgid "Vectorized colors and sizes"
-msgstr ""
+msgstr "색상과 크기 벡터화"
 
 #: ../../source/docs/user_guide/quickstart.rst:299
 msgid ""
@@ -446,30 +470,32 @@ msgid ""
 " for glyph attributes like ``fill_color`` and ``radius``. Other things to"
 " look out for in this example:"
 msgstr ""
+"이 예제는 ``fill_color`` 또는 ``radius`` 글리프 속성으로 벡터화된 데이터 값을 넣을 수 "
+"있다는 것을 보이는 예제이다. 이 예제에서 살펴볼 점을 다음고 같다."
 
 #: ../../source/docs/user_guide/quickstart.rst:303
 msgid "supplying an explicit list of tool names to |figure|"
-msgstr ""
+msgstr "|figure| 함수에 툴 이름을 리스트로 제공"
 
 #: ../../source/docs/user_guide/quickstart.rst:304
 msgid "fetching BokehJS resources from CDN using the ``mode`` argument"
-msgstr ""
+msgstr "``mode`` 인수를 써서 BokehJS 리소스를 CDN으로 제공"
 
 #: ../../source/docs/user_guide/quickstart.rst:305
 msgid "setting the ``x_range`` and ``y_range`` explicitly"
-msgstr ""
+msgstr " ``x_range``, ``y_range`` 값을 명시적으로 설정"
 
 #: ../../source/docs/user_guide/quickstart.rst:306
 msgid "turning a line *off* (by setting its value to ``None``)"
-msgstr ""
+msgstr "선을 ``None`` 값으로 설정하여 안보이게 함"
 
 #: ../../source/docs/user_guide/quickstart.rst:307
 msgid "using NumPy arrays for supplying data"
-msgstr ""
+msgstr "데이터를 제공하는데 NumPy 배열 사용"
 
 #: ../../source/docs/user_guide/quickstart.rst:342
 msgid "Linked panning and brushing"
-msgstr ""
+msgstr "상호연결된 이동 및 브러싱"
 
 #: ../../source/docs/user_guide/quickstart.rst:344
 msgid ""
