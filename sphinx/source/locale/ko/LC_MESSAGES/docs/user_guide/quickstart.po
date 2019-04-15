@@ -531,9 +531,8 @@ msgstr "``toolbar_location``\ 를 ``None``\ 로 설정해서 툴바를 안보이
 
 #: ../../source/docs/user_guide/quickstart.rst:356
 msgid ""
-"setting convenience arguments ``color`` (sets both ``line_color`` and "
-"``fill_color``) and ``alpha`` (sets both ``line_alpha`` and "
-"``fill_alpha``)"
+"setting convenience arguments ``color`` (sets both ``line_color`` and ``fill_color``) "
+"and ``alpha`` (sets both ``line_alpha`` and ``fill_alpha``)"
 msgstr ""
 " ``color`` 속성(``line_color``\ 와 ``fill_color``)과 "
 "``alpha`` 속성(``line_alpha``\ 과 ``fill_alpha``) 설정"
@@ -580,26 +579,31 @@ msgid ""
 msgstr ""
 "날짜와 시간 데이터도 흔히 다루는 데이터 중의 하나이다. 보케는 현재 플롯 스케일에 따라 "
 "틱 표시를 변화시키는 |DatetimeAxis| 요소를 제공한다. "
+"|figure|\ 의 ``x_axis_type`` 또는 ``y_axis_type`` 인수로 ``\"datetime\"`` 값을 "
+"넣어서 명시적으로 시간 축을 설정할 수도 있다. 다음 예제에서 몇가지 재미있는 것을 볼 수 있다.:"
 
 #: ../../source/docs/user_guide/quickstart.rst:457
 msgid "setting the ``plot_width`` and ``plot_height`` arguments to |figure|"
-msgstr ""
+msgstr "|figure|\ 에 ``plot_width`` 및 ``plot_height`` 인수 설정"
 
 #: ../../source/docs/user_guide/quickstart.rst:458
 msgid ""
 "customizing plots and other objects by assigning values to their "
 "attributes"
 msgstr ""
+"플롯과 다른 객체 속성값을 정해서 커스터미이징"
 
 #: ../../source/docs/user_guide/quickstart.rst:459
 msgid ""
 "accessing guides and annotations with convenience |Figure| attributes: "
 "|legend|, |grid|, |xgrid|, |ygrid|, |axis|, |xaxis|, |yaxis|"
 msgstr ""
+"다음 |Figure| 속성으로 가이드와 어노테이션 바꾸기: "
+"|legend|, |grid|, |xgrid|, |ygrid|, |axis|, |xaxis|, |yaxis|"
 
 #: ../../source/docs/user_guide/quickstart.rst:503
 msgid "Bokeh Application Server"
-msgstr ""
+msgstr "보케 애플리케이션 서버"
 
 #: ../../source/docs/user_guide/quickstart.rst:505
 msgid ""
