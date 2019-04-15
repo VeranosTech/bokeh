@@ -136,66 +136,76 @@ msgid ""
 "new tab to display it. (For presentation purposes we have included the "
 "plot output directly inline in this document.)"
 msgstr ""
+"이 스크립트를 실행하면 `\"lines.html\"``\ 이라는 출력 파일이 생기는 것을 볼 수 있다. "
+"그리고 브라우저가 자동으로 새 탭을 열면서 이 파일을 보여준다. (이 문서에서는 설명을 위해 "
+"직접 플롯 출력을 보여주었다.)"
 
 #: ../../source/docs/user_guide/quickstart.rst:92
 msgid "The basic steps to creating plots with the |bokeh.plotting| interface are:"
-msgstr ""
+msgstr "|bokeh.plotting| 인터페이스로 플롯을 생성하는 순서는 다음과 같다.:"
 
 #: ../../source/docs/user_guide/quickstart.rst:96
 msgid "Prepare some data"
-msgstr ""
+msgstr "데이터 준비"
 
 #: ../../source/docs/user_guide/quickstart.rst:95
 msgid ""
 "In this case plain python lists, but could also be NumPy arrays or Pandas"
 " series."
 msgstr ""
+"이 코드에서는 단순한 파이썬 리스트지만 NumPy 배열이나 Pandas 시리즈도 쓸 수 있다."
 
 #: ../../source/docs/user_guide/quickstart.rst:100
 msgid "Tell Bokeh where to generate output"
-msgstr ""
+msgstr "출력 생성 위치 지정"
 
 #: ../../source/docs/user_guide/quickstart.rst:99
 msgid ""
 "In this case using |output_file|, with the filename ``\"lines.html\"``. "
 "Another option is |output_notebook| for use in Jupyter notebooks."
 msgstr ""
+"이 경우에는 파일 ``\"lines.html\"``\ 로 출력하는 |output_file|\ 를 사용한다. "
+"다른 옵션은 주피터 노트북 용 |output_notebook| 명령을 쓰는 것이다. "
 
 #: ../../source/docs/user_guide/quickstart.rst:104
 msgid "Call |figure|"
-msgstr ""
+msgstr "|figure| 호출"
 
 #: ../../source/docs/user_guide/quickstart.rst:103
 msgid ""
 "This creates a plot with typical default options and easy customization "
 "of title, tools, and axes labels."
 msgstr ""
+"이 명령은 제목, 툴, 축 라벨 등 여러가지 커스터마이제이션도 쉽고 디폴값도 가진 플롯을 생성한다. "
 
 #: ../../source/docs/user_guide/quickstart.rst:108
 msgid "Add renderers"
-msgstr ""
+msgstr "렌더러 추가"
 
 #: ../../source/docs/user_guide/quickstart.rst:107
 msgid ""
 "In this case, we use |Figure.line| for our data, specifying visual "
 "customizations like colors, legends and widths."
 msgstr ""
+"이 코드에서는 |Figure.line|  명령을 사용하였다. 또한 색상, 범례, 폭 등을 커스터마이징 하였다. "
 
 #: ../../source/docs/user_guide/quickstart.rst:112
 msgid "Ask Bokeh to |show| or |save| the results."
-msgstr ""
+msgstr "|show| 또는 |save| 명령으로 결과 출력"
 
 #: ../../source/docs/user_guide/quickstart.rst:111
 msgid ""
 "These functions save the plot to an HTML file and optionally display it "
 "in a browser."
 msgstr ""
+"이 함수들은 HTML 파일로 플롯을 저장하고 추가적으로 브라우저에서 보여준다."
 
 #: ../../source/docs/user_guide/quickstart.rst:114
 msgid ""
 "Steps three and four can be repeated to create more than one plot, as "
 "shown in some of the examples below."
 msgstr ""
+"3번쩨와 4번째 단계를 반복하면 다음 예제처럼 하나 이상의 플롯을 그릴 수 있다. "
 
 #: ../../source/docs/user_guide/quickstart.rst:117
 msgid ""
@@ -204,14 +214,16 @@ msgid ""
 "logarithmic axis, and so on. It's also possible to easily combine "
 "multiple glyphs together on one plot as shown below:"
 msgstr ""
+"|bokeh.plotting| 인터페이스를 쓰면 하나 이상의 데이터 시리즈나 글리프, 로그 축 등을 쉽게 추가할 수 있다. "
+"또한 다음 처럼 여러개의 글리프를 하나로 묶어서 보여줄 수도 있다."
 
 #: ../../source/docs/user_guide/quickstart.rst:157
 msgid "Jupyter Notebooks"
-msgstr ""
+msgstr "주피터 노트북"
 
 #: ../../source/docs/user_guide/quickstart.rst:159
 msgid "At this point we should mention Jupyter notebooks."
-msgstr ""
+msgstr "이제 주피터 노트북에 대해 설명한다."
 
 #: ../../source/docs/user_guide/quickstart.rst:161
 msgid ""
@@ -220,6 +232,9 @@ msgid ""
 "Jupyter notebooks. To view the above examples in a notebook, you would "
 "only change |output_file| to a call to |output_notebook| instead."
 msgstr ""
+"주피터 노트북을 파이썬 커뮤니티에서 데이터 분석에 널리 쓰이는 도구이다. "
+"보케는 주피터 노트북과 자연스럽게 통합된다. 위 예제를 노트북에서 보려면 |output_file| 명령을 "
+"|output_notebook| 명령으로 바꾸기만 하면 된다. "
 
 #: ../../source/docs/user_guide/quickstart.rst:166
 msgid ""
@@ -227,6 +242,8 @@ msgid ""
 "by MyBinder. Static versions of these may be viewed at the `Bokeh "
 "NBViewer Gallery`_."
 msgstr ""
+"MyBinder의 `live tutorial notebooks`_\ 에 올라간 예제를 사용해 볼 수 있다. "
+"이 예제의 스태틱 버전은 `Bokeh NBViewer Gallery`_\ 에서 볼 수 있다."
 
 #: ../../source/docs/user_guide/quickstart.rst:170
 msgid ""
@@ -234,6 +251,8 @@ msgid ""
 "the ``examples/howto`` directory. After cloning the repository, navigate "
 "there and run:"
 msgstr ""
+"`Bokeh GitHub repository`_\ 의 ``examples/howto`` 디렉토리에도 다양한 예제 노트북이 있다. "
+"이 레포를 클론해서 해당 디렉토리로 가서 실행해 보라.:"
 
 #: ../../source/docs/user_guide/quickstart.rst:177
 msgid ""
@@ -242,6 +261,8 @@ msgid ""
 "these examples, which show how Bokeh can be used together with Jupyter "
 "interactive widgets:"
 msgstr ""
+"인덱스 패이지에 나열된 노트북을 열어서 작동시킬 수 있다. 특히 보케와 주피터 노트북 위짓이 같이 "
+"사용된 다음 예제에 주목하라."
 
 #: ../../source/docs/user_guide/quickstart.rst:183
 msgid ":bokeh-tree:`examples/howto/notebook_comms/Jupyter Interactors.ipynb`"
