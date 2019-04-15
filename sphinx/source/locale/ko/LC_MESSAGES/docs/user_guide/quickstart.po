@@ -506,24 +506,28 @@ msgid ""
 " one plot causes others to update) by sharing range objects between the "
 "plots. Some other things to look out for in this example:"
 msgstr ""
+"다른 플롯의 여러가지 속성을 상호연결하는 것은 데이터 시각화에서 아주 유용하다. "
+"보케에서느 플롯간에 몇가지 플롯 구성요소를 공유함으로써 이러한 연결을 만들 수 있다. "
+"다음은 두 플롯간에 레인지 객체를 공유함으로써 상호연결된 이동(panning)을 구현하는 예다.:"
 
 #: ../../source/docs/user_guide/quickstart.rst:351
 msgid "calling |figure| multiple times to create multiple plots"
-msgstr ""
+msgstr "|figure| 함수를 여러번 호출해서 복수의 플롯을 생성"
 
 #: ../../source/docs/user_guide/quickstart.rst:352
 msgid "using |gridplot| to arrange several plots in an array"
-msgstr ""
+msgstr "|gridplot| 명령으로 여러개의 플롯을 배열형태로 배치"
 
 #: ../../source/docs/user_guide/quickstart.rst:353
 msgid ""
 "showing new glyphs using new glyph methods |Figure.triangle| and "
 "|Figure.square|"
 msgstr ""
+"|Figure.triangle|, |Figure.square| 등의 글리프 메서드로 새로운 글리프 생성"
 
 #: ../../source/docs/user_guide/quickstart.rst:355
 msgid "hiding the toolbar by setting ``toolbar_location`` to ``None``"
-msgstr ""
+msgstr "``toolbar_location``\ 를 ``None``\ 로 설정해서 툴바를 안보이게 함"
 
 #: ../../source/docs/user_guide/quickstart.rst:356
 msgid ""
@@ -531,6 +535,8 @@ msgid ""
 "``fill_color``) and ``alpha`` (sets both ``line_alpha`` and "
 "``fill_alpha``)"
 msgstr ""
+" ``color`` 속성(``line_color``\ 와 ``fill_color``)과 "
+"``alpha`` 속성(``line_alpha``\ 과 ``fill_alpha``) 설정"
 
 #: ../../source/docs/user_guide/quickstart.rst:396
 msgid ""
@@ -538,6 +544,8 @@ msgid ""
 " Click and drag the above plots to pan them, and see how their ranges are"
 " linked together."
 msgstr ""
+"툴바가 보이지 않지만 이동 도구는 여전히 존재하고 활성화되어 있다. 플롯을 클릭해서 드래그해보면 이동한다. "
+"그리고 양쪽의 레인지가 연결되어 있는 것을 볼 수 있다. "
 
 #: ../../source/docs/user_guide/quickstart.rst:400
 msgid ""
@@ -546,16 +554,19 @@ msgid ""
 " is an example that demonstrates linked brushing by sharing a "
 "|ColumnDataSource| between two plots:"
 msgstr ""
+"또하나 유용한 상호연결은 브러시 상호연결이다. (한 플롯에서 선택하면 다른 플롯에서도 선택됨) "
+"다음은 두 플롯간에 |ColumnDataSource|\ 를 공유함으로써 브러시 상호연결을 구현한 예다.: "
 
 #: ../../source/docs/user_guide/quickstart.rst:440
 msgid ""
 "Choose the box or lasso select tool, and click and drag to make a "
 "selection on one plot, which will update the selection on the other plot."
 msgstr ""
+"박스 선택 도구나 라쏘 선택 도구를 골라서 클릭하고 드래그하여 선택을 하면 다른 플롯에서도 선택영역이 달라진다."
 
 #: ../../source/docs/user_guide/quickstart.rst:447
 msgid "Datetime axes"
-msgstr ""
+msgstr "시간 축"
 
 #: ../../source/docs/user_guide/quickstart.rst:449
 msgid ""
