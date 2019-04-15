@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../source/docs/user_guide/quickstart.rst:4
 msgid "Quickstart"
-msgstr ""
+msgstr "퀵스타트"
 
 #: ../../source/docs/user_guide/quickstart.rst:6
 msgid ""
