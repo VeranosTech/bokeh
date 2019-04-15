@@ -578,6 +578,8 @@ msgid ""
 "``x_axis_type`` or ``y_axis_type`` parameters to |figure|. A few things "
 "of interest to look out for in this example:"
 msgstr ""
+"날짜와 시간 데이터도 흔히 다루는 데이터 중의 하나이다. 보케는 현재 플롯 스케일에 따라 "
+"틱 표시를 변화시키는 |DatetimeAxis| 요소를 제공한다. "
 
 #: ../../source/docs/user_guide/quickstart.rst:457
 msgid "setting the ``plot_width`` and ``plot_height`` arguments to |figure|"
