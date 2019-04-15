@@ -29,12 +29,17 @@ msgid ""
 " or streaming datasets in a quick and easy way from Python (or other "
 "languages)."
 msgstr ""
+"보케는 최신 웹 브라우저에서 표현하는 것을 목표로하는 상호작용형 시각화 라이브러리다. "
+"보케는 대규모 혹은 스트리밍 데이터셋에 대해 파이썬 (또는 다른 언어로) 빠르고 쉽게 다양한 그래픽을 "
+"간결 정확하게 만드는 것을 목표로 한다."
 
 #: ../../source/docs/user_guide/quickstart.rst:11
 msgid ""
 "To offer both simplicity and the powerful and flexible features needed "
 "for advanced customizations, Bokeh exposes two interface levels to users:"
 msgstr ""
+"단순함과 강력함, 그리고 고급 커스터마이징을 위한 유연성을 제공하기 위해 보케는 사용자에게 "
+"두가지 인터페이스 레벨을 제공한다.:"
 
 #: ../../source/docs/user_guide/quickstart.rst:16
 msgid "|bokeh.models|"
@@ -45,6 +50,7 @@ msgid ""
 "A *low-level* interface that provides the most flexibility to application"
 " developers."
 msgstr ""
+"애플리케이션 개발자에게 가장 유연한 환경을 제공하는 로우레벨 인터페이스"
 
 #: ../../source/docs/user_guide/quickstart.rst:19
 msgid "|bokeh.plotting|"
@@ -53,14 +59,15 @@ msgstr ""
 #: ../../source/docs/user_guide/quickstart.rst:19
 msgid "A *higher-level* interface centered around composing visual glyphs."
 msgstr ""
+"시각적 글리프를 조립하기 위한 하이레벨 인터페이스"
 
 #: ../../source/docs/user_guide/quickstart.rst:21
 msgid "This Quickstart focuses on the |bokeh.plotting| interface."
-msgstr ""
+msgstr "이 퀵스타트는 |bokeh.plotting| 인터페이스에 중점을 둔다."
 
 #: ../../source/docs/user_guide/quickstart.rst:26
 msgid "Installation"
-msgstr ""
+msgstr "설치"
 
 #: ../../source/docs/user_guide/quickstart.rst:28
 msgid ""
@@ -68,6 +75,8 @@ msgid ""
 "one, which is to use the `Anaconda Python distribution`_ and enter this "
 "command at a Bash or Windows command prompt:"
 msgstr ""
+"보케를 설치하는 방법은 여러가지이지만 가장 쉬운 방법인 `Anaconda Python distribution`_ 사용을 추천한다. "
+"배시나 윈도우 명령 프롬프트에서 다음 명령을 실행한다.: "
 
 #: ../../source/docs/user_guide/quickstart.rst:36
 msgid ""
@@ -76,12 +85,15 @@ msgid ""
 "Windows, and also installs the examples into the ``examples/`` "
 "subdirectory of your Anaconda or Miniconda installation directory."
 msgstr ""
+"이렇게 하면 보케가 필요로 하는 모든 의존 라이브러리도 설치되낟. 아나콘다를 쓰면 윈도우를 포함하여 "
+"모든 플랫폼과 설정에서 설치가 가장 쉽다. 또한 ``examples/`` 서브디렉토리에 예제들도 설치된다. "
 
 #: ../../source/docs/user_guide/quickstart.rst:41
 msgid ""
 "If you are confident that you have installed all needed dependencies, "
 "such as NumPy, you may instead use ``pip`` at the command line:"
 msgstr ""
+"만약 NumPy 등 모든 필요 퍄키지 설치가 되었다면 ``pip`` 명령을 써도 된다.:"
 
 #: ../../source/docs/user_guide/quickstart.rst:49
 msgid ""
@@ -89,10 +101,12 @@ msgid ""
 "repository and look in the ``examples/`` directory of the checkout to see"
 " examples."
 msgstr ""
+"``pip`` 명령을 쓰면 예제는 설치되지 않는다. 이 경우 예제를 보려면 Git 레포지토리를 클론해서 "
+"``examples/`` 디렉토리를 보아야 한다. "
 
 #: ../../source/docs/user_guide/quickstart.rst:55
 msgid "Getting Started"
-msgstr ""
+msgstr "시작"
 
 #: ../../source/docs/user_guide/quickstart.rst:57
 msgid ""
@@ -100,16 +114,20 @@ msgid ""
 "is only a quick tour of some common Bokeh use cases and workflows. For "
 "more detailed information please consult the full :ref:`userguide`."
 msgstr ""
+"보케는 많은 기능을 제공하는 대형 라이브러리이기 때문에 여기에서는 가장 흔한 사용예를 보인다. "
+"자세한 내용은 :ref:`userguide`\ 를 참조한다. "
 
 #: ../../source/docs/user_guide/quickstart.rst:61
 msgid "Let's begin with some examples."
-msgstr ""
+msgstr "간단한 예제부터 시작하자."
 
 #: ../../source/docs/user_guide/quickstart.rst:63
 msgid ""
 "Plotting data in basic Python lists as a line plot including zoom, pan, "
 "save, and other tools is simple and straightforward:"
 msgstr ""
+"기본적인 파이썬 리스트에 담긴 데이터를 확대, 이동, 저장 등의 도구가 있는 라인 플롯으로 그리는 것은 "
+"아주 간단하다:"
 
 #: ../../source/docs/user_guide/quickstart.rst:87
 msgid ""
